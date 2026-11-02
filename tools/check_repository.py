@@ -40,7 +40,7 @@ def check(root):
                 'src/ps/r33/live.py', 'board/firmware/final.bit',
                 'board/firmware/final.hwh', 'report/design_report.pdf',
                 'report/ai_collaboration_records.md',
-                'skill/pynq_release_check.py', 'docs/known_issues.md']
+                'skill/pynq_release_check.py', 'docs/troubleshooting.md']
     errors = []
     for path in required:
         if not (root / path).is_file():

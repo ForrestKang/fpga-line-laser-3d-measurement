@@ -1,15 +1,16 @@
-# 上板资料
+# 板端文件与运行入口
 
-firmware/ 包含最终保存的 bit/HWH 和原 manifest；通过 build/restore_sources.py 恢复时保留 manifest 所引用的原始文件大小写。
-[Live Runtime](../src/ps/r33/live.py)为实时主入口，replay.py 为真实 PL 回灌入口；具体可用参数以 `python -m r33.live --help` / `python -m r33.replay --help` 为准（在已还原并配置好导入路径的环境）。
-boot_reference/ 是实际 boot/service 源码快照，仅供理解部署关系，不是自动安装指令。旧绝对路径、装置专用标定及清理策略需要逐项复核；没有打包历史授权 proof、motor_standing.json 或 authority.json。
-historical_outputs/ 是旧标定下的结果。原交接包的两项软件绑定差异留在[旧manifest](firmware/history/manifest_before_repair.json)和原检查回执中；`source_freeze.json`保留原硬件冻结来源。修复后的软件组合由当前manifest的`runtime_validation_file`引用[独立运行时验证记录](firmware/runtime_validation.json)，具体测试范围见[验证汇总](../report/release_validation.json)。45份非生成硬件输入及bit/HWH保持不变；本轮没有重新布局布线或上板。
+`firmware/`包含配套bit、HWH、manifest和源码绑定记录。实时程序为[Live Runtime](../src/ps/r33/live.py)，回灌程序为[Replay Runtime](../src/ps/r33/replay.py)。
 
+恢复工程后，在runtime目录查看运行参数：
 
-## 有限的实测证据子集
+```text
+python -B -m r33.live --help
+python -B -m r33.replay --help
+```
 
-evidence/ 的五份 JSON 是原保存板端回执的脱敏提取件，原来源和 SHA、删去字段在 extraction_manifest.json 中。
-包含双采样模式合同试验、两个各200视角的历史运行和已量化点云；没有本轮重新上板。
-NPY 是从回执 BLOB 还原的量化点云，不是板端原始 NPY 的逐字节副本，也不包含全部原图。
-原回执中“完成/已标定”字符串保留为历史结果，不能覆盖当前独立光学精度尚未通过的事实。
-本包没有声称整套历史原始采集数据齐全，也不带传输主机信息、设备权限或自动运动批准。
+`boot_reference/`保存启动服务和部署脚本，包含本装置使用的路径与配置；移植时按[硬件接口](../docs/hardware.md)和[构建部署](../docs/build_and_deploy.md)核对设备、接线与参数。
+
+`evidence/`保存板端回执及[来源清单](evidence/extraction_manifest.json)，`historical_outputs/`保存两个各200视角运行的回执与从数据BLOB恢复的量化点云。文件来源、格式和采集范围由清单记录。
+
+软件与固件的对应关系见[配套记录](firmware/runtime_validation.json)，测试结果见[验证汇总](../report/release_validation.json)。

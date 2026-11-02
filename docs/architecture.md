@@ -25,6 +25,12 @@
 
 测量统计、截面求解和显示模块观察同一几何输出，并使用包的提交/丢弃边界，避免把失败包点集发布为完成结果。
 
+## PL逻辑与时钟域
+
+![PL Logic and Clock Domains](media/pl_logic.svg)
+
+[可编辑Visio源图](media/pl_logic.vsdx)
+
 ## PL与PS边界
 
 正常PL路径中的像素提取、图像分支关联和定点几何均在硬件执行。ARM的[几何接收适配器](../src/ps/r33/geometry_pl_r35.py)核对参数绑定后，选择并解包PL输出的XYZ，不重新执行射线、畸变和旋转运算。[协议解码器](../src/ps/r33/protocol_r35.py)核对几何集合、模式位、状态和计数，并记录实际几何后端。
@@ -42,7 +48,7 @@ ARM仍负责设备管理、参数配置、扫描角度与任务状态、累积�
 
 ## 定点与身份合同
 
-- 二维中心使用Q12；这表示编码分辨率，不等于光学测量精度。
+- 二维中心采用带12位二进制小数的Q12编码，几何输出采用Q16毫米坐标。
 - 几何内部使用Q30，camera和axis坐标输出为有符号Q16。
 - Q30转Q16采用最近偶数舍入，并显式检查范围和溢出。
 - 几何参数通过epoch和SHA绑定。ARM在读取XYZ前核对标定来源、角度与几何配置。
@@ -75,6 +81,6 @@ ARM仍负责设备管理、参数配置、扫描角度与任务状态、累积�
 
 ## 构建配置
 
-[发布构建入口](../build/reproduce.py)默认双方向通道，四个dispatch/banking开关为0。源码保留2/4/8路实验配置，不能将其都写成已通过的发布配置。
+[发布构建入口](../build/reproduce.py)默认双方向通道，四个dispatch/banking开关为0。构建参数与通道路数由Tcl脚本统一设置。
 
-先按[复现说明](../report/reproduction.md)恢复原始文件名和目录，再执行完整构建。主Tcl入口为[Full Build](../src/fpga/scripts/build_final.tcl)；依赖缺失route.dcp的历史seedretry辅助脚本不是推荐入口。
+先按[复现说明](build_and_deploy.md)恢复原始文件名和目录，再执行完整构建。主Tcl入口为[Full Build](../src/fpga/scripts/build_final.tcl)；依赖缺失route.dcp的历史seedretry辅助脚本不是推荐入口。

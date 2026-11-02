@@ -7,34 +7,6 @@
     "sha256": "3eeba68858bc660becc470b6e51ea2639367dc763ba8ea8a96ffafa303b22f8c"
   },
   {
-    "path": "report/history/original_package_readme.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\README.md",
-    "restore": null,
-    "size": 4364,
-    "sha256": "5d2ae4f8f8f0031347585d356d1cb6cc87b2445ed9f2475314f50cf114b36969"
-  },
-  {
-    "path": "report/history/baseline.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\BASELINE.md",
-    "restore": null,
-    "size": 459,
-    "sha256": "6e3c2e4ff0acdacf64006e7f8bf9de8bac450a4c27e9f855e540891bd5eaf918"
-  },
-  {
-    "path": "report/history/report_joint_cal_20261031.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\REPORT_JOINT_CAL_20261031.md",
-    "restore": null,
-    "size": 7337,
-    "sha256": "e6f45b5a8e9085cd0eae6dff7670608336a62cf586e41b4a75930dc803a4b56d"
-  },
-  {
-    "path": "report/history/report_seedretry_20261031.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\REPORT_SEEDRETRY_20261031.md",
-    "restore": null,
-    "size": 3710,
-    "sha256": "d6f212cb2499497b098efb691204765a5d613da7fdba8fc348eaa6a5581cb4e0"
-  },
-  {
     "path": "board/boot_reference/boot/boot.py",
     "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\1_board_image\\boot\\boot.py",
     "restore": "boot_reference/boot/boot.py",
@@ -5965,104 +5937,6 @@
     "sha256": "7327191807544967b02eed147976997ec97a45b72256f30e8a029626bdd80f80"
   },
   {
-    "path": "report/history/docs/board_archive_20261030_01.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\board_archive_20261030_01.md",
-    "restore": null,
-    "size": 2035,
-    "sha256": "9de81c48eb82863b2143ba2c3f6a4555527970c3ec13a51475c0c3dc6817f3fd"
-  },
-  {
-    "path": "report/history/docs/build_clk125.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\build_clk125.md",
-    "restore": null,
-    "size": 863,
-    "sha256": "4bd96ff1fd337cf3f1f5eaf88fb4bc86a95e76a5547d4ce491da81c27566bd4d"
-  },
-  {
-    "path": "report/history/docs/deploy_static_review_20261030.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\deploy_static_review_20261030.md",
-    "restore": null,
-    "size": 10623,
-    "sha256": "d25e9ed4b86d193fa82724d63fc4e54a24177f749f81b37fb31bccdb8100082c"
-  },
-  {
-    "path": "report/history/docs/final_release.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\FINAL_RELEASE.md",
-    "restore": null,
-    "size": 5934,
-    "sha256": "71a4f3ffb3543069e4c5d7f3246e6fbfcd12c6e68b367c3450c0136394efd020"
-  },
-  {
-    "path": "report/history/docs/lane_decision.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\lane_decision.md",
-    "restore": null,
-    "size": 1845,
-    "sha256": "c3d488b76514ee12350c554aca8068738039f75ac29f2952a641f4994d560ec7"
-  },
-  {
-    "path": "report/history/docs/live_mode.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\live_mode.md",
-    "restore": null,
-    "size": 9371,
-    "sha256": "b6b0710adc5c7be8b40bea77e151b553c782c3cb7e8718b1dceebd4d452a4fbe"
-  },
-  {
-    "path": "report/history/docs/remaining_plan.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\remaining_plan.md",
-    "restore": null,
-    "size": 7360,
-    "sha256": "910d062ecbaef90f18955972bc087bc553c36e057b42ad9773ea264235997e28"
-  },
-  {
-    "path": "report/history/docs/runtime_section_final.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\runtime_section_final.md",
-    "restore": null,
-    "size": 5935,
-    "sha256": "4a820b7099025cb628dc4501173ff56a08a94a86b19245b6bf2d6f7f7dfd450e"
-  },
-  {
-    "path": "report/history/docs/scan_preview_views.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\scan_preview_views.md",
-    "restore": null,
-    "size": 2062,
-    "sha256": "16b9347bf5fc361a4953da1452ea6b40f22d2c26893955531515f41d2dfbb4af"
-  },
-  {
-    "path": "report/history/docs/section_integration_review_20261030.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\section_integration_review_20261030.md",
-    "restore": null,
-    "size": 8772,
-    "sha256": "42b368b7094bb2d5da81cc47e91ac8e566af4f5e1bd1cb53049f9b9094736407"
-  },
-  {
-    "path": "report/history/docs/section_measure_design.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\section_measure_design.md",
-    "restore": null,
-    "size": 5154,
-    "sha256": "088af476323473a75bbe864b56980c35bcd206393d5be9218c1a95d2f0d69d26"
-  },
-  {
-    "path": "report/history/docs/section_timing_fix_20261030.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\section_timing_fix_20261030.md",
-    "restore": null,
-    "size": 9656,
-    "sha256": "dbd19244a80ca74946111cd1e04ba028ae312187e05ddf859c8058e9fed76898"
-  },
-  {
-    "path": "report/history/docs/static_board_execution.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\static_board_execution.md",
-    "restore": null,
-    "size": 2304,
-    "sha256": "4ffa91ffb71c8171aca25a671b78cac9cf3cfb95d28b230e581c129a7b256cba"
-  },
-  {
-    "path": "report/history/docs/ui_spec.md",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\4_docs\\docs\\ui_spec.md",
-    "restore": null,
-    "size": 4094,
-    "sha256": "66b72ae8638e31658e4dc421eecb56b361513d99b50da05de78401ecd19618ea"
-  },
-  {
     "path": "board/historical_outputs/scan_models_20261031/accuracy.md",
     "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\5_scan_results_20261031_previous_calibration\\scan_models_20261031\\ACCURACY.md",
     "restore": null,
@@ -6143,8 +6017,8 @@
     "path": "report/design_report.docx",
     "original": "D:\\Workspace\\CodexWork\\scan3d_report_calibration_20261101_01\\智能线激光三维测量系统_技术文档_三样件与标定照片版.docx",
     "restore": null,
-    "size": 10794605,
-    "sha256": "d22cbf0180156a2b773e2d9cc1ec7c33990105d32463c24a37afe4c745bbeb94",
+    "size": 7679972,
+    "sha256": "08a003a7eb6eb27d56591e331589391e5bdf1e62de7f8e7062cc8a41e08966a3",
     "prior_source": {
       "size": 8034702,
       "sha256": "779e9486cc01c58181edb2bf6dfdec116b708ea7bc4ed34f24035d082f3e380e"
@@ -6155,8 +6029,8 @@
     "path": "report/design_report.pdf",
     "original": "D:\\Workspace\\CodexWork\\scan3d_report_calibration_20261101_01\\智能线激光三维测量系统_三样件与标定照片预览.pdf",
     "restore": null,
-    "size": 3068835,
-    "sha256": "dc2eeb48d7230ba8401d75a0d22c5bb41d6fb07ba310d225489dee5b4e089645",
+    "size": 2217784,
+    "sha256": "35b72cab5f81b15864dbcec66755fadcd698add9cf4d108fb76de682296893cb",
     "prior_source": {
       "size": 1818354,
       "sha256": "9e775356a3c1cb960bf0a5eccb7c17ee2208e31e5410ae44170153e04351c263"

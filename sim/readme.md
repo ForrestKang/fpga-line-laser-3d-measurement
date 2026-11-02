@@ -29,4 +29,4 @@ python sim/run_section_rtl.py --work <new_work> --output <new_section_results> -
 路径适配只发生在恢复后的新工作目录，原验证脚本与断言保持在提交包内。
 包内历史验证输入和冻结期望来自 sim/support，source_map.json 记录原路径、SHA 与恢复位置。
 
-旧软件七处失败、字体跳过和空帧冒烟记录继续保留在`results/`。本轮修复了Mock协议字段、注入点检查、参考入口绑定和严格存储版本分派；默认帧质量读取PL摘要，Raw饱和对照需显式诊断。已确认11项配套测试、27个归档primary子例和195包截面RTL通过；完整runtime及整板矩阵最终状态见[验证汇总](../report/release_validation.json)。本轮没有上板或重新实现，45份非生成硬件构建输入保持不变。
+运行时279项、配套11项、截面195包与整链19例测试结果见[验证汇总](../report/release_validation.json)。

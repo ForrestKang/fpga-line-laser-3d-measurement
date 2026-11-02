@@ -10,7 +10,7 @@ python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_buil
 
 `--work`及`--output`必须是新目录。历史`finalize_seedretry.tcl`依赖未随包提供的旧route.dcp，不能用它代替完整源码构建入口。
 
-检查输出日志、综合与布局布线、资源、setup/hold/脉宽、DRC、未约束路径及CDC，再对应bit/HWH和manifest。归档结果是比较基线，不是新构建结果。
+构建输出包括日志、综合与布局布线报告、资源、setup/hold、脉宽、DRC和CDC结果，以及配套bit/HWH和manifest。
 
 ## 固件与ARM组合检查
 
@@ -18,9 +18,9 @@ python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_buil
 python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --runtime-root src/ps
 ```
 
-旧交接包的两项runtime guard差异保留在[原清单](../board/firmware/history/manifest_before_repair.json)和原检查回执中。本轮保留bit/HWH、45份非生成硬件构建输入及旧`source_freeze.json`，修复后的软件组合另立[运行时验证记录](../board/firmware/runtime_validation.json)，由当前manifest的`runtime_validation_file`引用。新旧记录分别说明来源，不能用更新文件摘要替代行为测试。
+当前manifest绑定bit/HWH和运行程序，配套信息见[运行时记录](../board/firmware/runtime_validation.json)。部署前核对文件、原生库架构及设备ABI。
 
-11项离线配套测试和27个归档primary子例已通过；完整软件及RTL矩阵结果见[验证汇总](../report/release_validation.json)。本轮没有重新布局布线或上板。电脑编译的动态库只用于主机测试，板端继续要求对应ARM架构及源/产物身份检查。
+配套检查覆盖协议、寄存器接口和ARM原生库架构，测试结果见[验证汇总](../report/release_validation.json)。电脑与ARM分别构建对应架构的动态库。
 
 ## 板端安装前
 

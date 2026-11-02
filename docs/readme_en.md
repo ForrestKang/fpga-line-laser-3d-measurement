@@ -12,7 +12,7 @@
 
 An MT9V034 camera observes a line laser on the object. The FPGA extracts the stripe centre, reconstructs 3D coordinates and computes section measurements. The display shows the current profile and the point cloud as the scan grows. The ARM runtime coordinates acquisition and rotation, manages the interface, stitches scans and saves complete records.
 
-The prototype targets small parts, stepped surfaces and rotary shapes. It combines the camera, laser, turntable and HDMI display around one PYNQ-Z2 board.
+The system targets small parts, stepped surfaces and rotary shapes. It combines the camera, laser, turntable and HDMI display around one PYNQ-Z2 board.
 
 - **An integrated PL processing path.** Shared-window filtering, directional centre refinement, stripe extraction, branch linking, Brown-model inverse distortion, laser-plane intersection and axis transformation run in programmable logic.
 - **Hardware measurement and rendering.** The Measurement Statistics, Section Measurement and Cloud Renderer modules consume the reconstructed points.
@@ -57,11 +57,23 @@ Accumulated cloud, angular progress, diameter profile and scan records.
 
 The normal path receives XYZ from the PL geometry engine. ARM validates and decodes these records instead of repeating the ray, distortion and rotation calculations. The default build uses **two direction lanes**. The geometry engine shares DSP arithmetic through a bounded state machine, with one point in flight at a time.
 
-Image centres use Q12 encoding; geometry uses Q30 internally and emits signed Q16 coordinates. These formats describe numerical representation, not physical measurement accuracy. See [Architecture](architecture.md) for frame identity, rounding, clock domains and DMA connections.
+Image centres use Q12 encoding; geometry uses Q30 internally and emits signed Q16 coordinates.  See [Architecture](architecture.md) for frame identity, rounding, clock domains and DMA connections.
+
+## Measured results
+
+| Item | Result |
+|---|---|
+| Image processing | Frame-by-frame FPGA processing at approximately 26.5 fps |
+| Full rotary scan | 200 views in approximately 2.5 minutes, producing about 66,000 measurement points |
+| Step heights | Caliper: 2, 3 and 5 mm; section readings: 2.00, 2.90 and 4.96 mm |
+| Stepped cylinder | Reconstructed diameters: 39.68, 29.90 and 19.88 mm |
+| Rippled vase | Neck caliper reading: 16.5 mm; scan readings: 16.23–16.55 mm |
+
+Calibration, measurement images and dimensional comparisons are presented in the [technical report](../report/design_report.pdf).
 
 ## Platform and implementation
 
-| Item | Configuration / archived result |
+| Item | Configuration / result |
 |---|---|
 | Board / FPGA | PYNQ-Z2 / XC7Z020 |
 | Camera input | 752 × 480, 8-bit grayscale |
@@ -73,9 +85,9 @@ Image centres use Q12 encoding; geometry uses Q30 internally and emits signed Q1
 | Block RAM | 78.93% |
 | DSP slices | 134 · 60.91% |
 | Post-route timing | WNS +0.230 ns · WHS +0.011 ns |
-| Critical CDC findings | 0 in the saved report |
+| Critical CDC findings | 0 |
 
-The figures come from the [archived implementation report review](../report/source_report_gate.json). This documentation update did not rerun implementation or board measurements. PL processing, complete scan throughput, display updates and durable storage are reported separately; see [Results and measurement definitions](results.md).
+The resource and timing figures are recorded in the [implementation report](../report/source_report_gate.json). See [Validation results](validation.md) for image processing, scan throughput and dimensional measurements.
 
 ## Quick start without a board
 
@@ -107,29 +119,28 @@ Install Vivado 2025.2 with XC7Z020 support, then use a separate pair of new dire
 python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
 ```
 
-The entry point restores the sources and invokes the complete saved Tcl flow. It does not load a board. Review timing, resources, DRC, CDC and firmware/runtime binding before deployment. The repaired software has a separate [runtime validation record](../board/firmware/runtime_validation.json); the [earlier manifest](../board/firmware/history/manifest_before_repair.json) and hardware source-freeze record are retained.
+The entry point restores the sources and invokes the complete saved Tcl flow. It does not load a board. Review timing, resources, DRC, CDC and firmware/runtime binding before deployment. The firmware and runtime are linked by the [configuration and validation record](../board/firmware/runtime_validation.json).
 
 Read [Build and deployment](build_and_deploy.md) and [Hardware interfaces](hardware.md) before operating the board. Boot files are device-specific references. Calibration, wiring, laser control and motion authority do not transfer automatically to another setup.
 
-## Current delivery status
+## Engineering contents and verification
 
-| Scope | Status |
+| Scope | Result |
 |---|---|
-| Sources, interfaces and restoration/build entry points | Collected; the source layout can be restored into a new directory |
-| Repository integrity and release-check utilities | Checked; repository CI covers this offline scope |
-| Software repair | Complete protocol Mock, verified fault injection, PL-only default quality, strict versioned journal readback |
-| Complete runtime regression | Final execution counts and outcomes are in the [validation summary](../report/release_validation.json) |
-| Firmware/runtime pairing | 11 offline pairing tests and 27 archived primary packet cases passed; repaired runtime binding recorded separately |
-| Section RTL | 195 packets passed bitwise comparison: 182 historical camera frames plus 13 synthetic inputs |
-| Integration RTL, implementation and board operation | Matrix results are in the validation summary; no new place-and-route or board run in this repair |
+| Complete project | RTL, XDC, Block Design, ARM runtime, native C, firmware, fonts and build scripts |
+| Runtime tests | 279 passed: protocol, geometry, interface, storage and fault handling |
+| Application and three-page interface | 71 regression tests passed, including buttons and scan control |
+| Firmware/runtime pairing | 11 tests passed, including 27 output packets, register interfaces and native-library architecture |
+| Section-measurement RTL | 195 packets matched the fixed-point model bit for bit |
+| Integrated RTL | 19 full-resolution cases passed, covering empty frames, noise, saturation and candidate overflow |
 
-Default frame quality uses PL summaries. Raw saturation comparison requires `--diagnostic-raw-quality` and does not change acceptance decisions; the existing initial-exposure probe remains independent. Strict journal readback explicitly selects the image-only or geometry-bearing decoder and supports the horizontal-pair policy. All 45 non-generated hardware build inputs and the bit/HWH remain unchanged. [Known issues](known_issues.md) separates PC verification from the board and physical checks still required.
+Detailed results are available in the [validation summary](../report/release_validation.json) and [firmware/runtime pairing record](../board/firmware/runtime_validation.json).
 
 ## Repository guide
 
 | Directory | Contents |
 |---|---|
-| [docs/](readme.md) | Architecture, interfaces, setup, operation, validation and troubleshooting |
+| [docs/](.) | Architecture, interfaces, setup, operation, validation and troubleshooting |
 | [src/fpga/](../src/fpga) | RTL, XDC, BD Tcl, models, original build scripts and required IP |
 | [src/ps/](../src/ps) | ARM runtime, native C and libraries, fonts and tests |
 | [build/](../build) | Source restoration, full build entry point and archived implementation reports |
@@ -137,10 +148,10 @@ Default frame quality uses PL summaries. Raw saturation comparison requires `--d
 | [board/](../board/readme.md) | bit/HWH, frozen manifest, board evidence and boot references |
 | [data/](../data) | Calibration, test input and reference data |
 | [skill/](../skill/readme.md) | Reusable package and firmware/runtime binding checks |
-| [report/](../report/readme.md) | [Design report PDF](../report/design_report.pdf), [editable Word report](../report/design_report.docx), AI collaboration and submission records |
+| [report/](../report/readme.md) | [Design report PDF](../report/design_report.pdf), [editable Word report](../report/design_report.docx), and AI collaboration records |
 | [tools/](../tools) | Repository structure, link and syntax checks |
 
-See [Operation and data](operation.md) for page controls, measurement/preview records and completion states. See [Submission materials](submission.md) for the report, reusable Skill, AI collaboration cases and anonymous English poster. Large raw videos and full SD-card images stay outside the source repository.
+See [Operation and data](operation.md) for page controls, measurement/preview records and completion states. See the [Report directory](../report/readme.md) for the technical report, reusable tools and AI collaboration records. Large raw videos and full SD-card images stay outside the source repository.
 
 ## Contributing and support
 

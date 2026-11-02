@@ -53,9 +53,21 @@
 
 正常几何坐标由PL产生，ARM解包时核对参数与帧身份。方向核默认两路；几何核复用DSP并采用有界状态机，并非每拍输出一个三维点。详细模块、位宽和时钟域见[系统架构](docs/architecture.md)。
 
+## 实测效果
+
+| 项目 | 结果 |
+|---|---|
+| 图像处理 | FPGA随相机逐帧处理，约26.5帧/s |
+| 整圈扫描 | 200个视角，约2.5分钟，约6.6万个测量点 |
+| 台阶高差 | 卡尺值2、3、5 mm；截面读数2.00、2.90、4.96 mm |
+| 阶梯圆柱 | 三段直径扫描值39.68、29.90、19.88 mm |
+| 波纹花瓶 | 颈部卡尺值16.5 mm；扫描值16.23～16.55 mm |
+
+标定方法、测量图像和尺寸对照见[技术报告](report/design_report.pdf)。
+
 ## 平台与实现结果
 
-| 项目 | 配置 / 已保存结果 |
+| 项目 | 配置 / 结果 |
 |---|---|
 | 开发板 / 器件 | PYNQ-Z2 / XC7Z020 |
 | 相机输入 / 显示 | 752×480、8位灰度 / 1280×720 HDMI |
@@ -64,9 +76,9 @@
 | LUT / FF | 39,111（73.52%）/ 50,902（47.84%）|
 | BRAM / DSP | 78.93% / 134个（60.91%）|
 | 布线后时序 | WNS +0.230 ns，WHS +0.011 ns |
-| CDC Critical | 保存报告为0 |
+| CDC Critical | 0 |
 
-数据来自[归档实现报告复核](report/source_report_gate.json)，不是本次重新构建或新的整链测速。PL图像速度、完整扫描速度、HDMI更新与保存速度分别统计，见[结果口径](docs/results.md)。
+实现结果见[资源与时序报告](report/source_report_gate.json)。系统完成像素处理、三维重建、截面测量、HDMI显示与完整数据保存，处理速度和实物测量结果见[验证结果](docs/validation.md)。
 
 ## 先在电脑运行
 
@@ -90,25 +102,24 @@ python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_r
 
 完整软件回归需要本机C编译器；依赖包括OpenCV，用于真实图像和显示测试。构建出的主机动态库仅用于电脑验证，不能复制到ARM运行。输出目录必须尚不存在。截面195包与整板RTL矩阵的复现命令见[快速开始](docs/getting_started.md)。
 
-## 当前交付状态
+## 工程内容与测试结果
 
-| 范围 | 状态 |
+| 内容 | 结果 |
 |---|---|
-| 源码、接口、恢复与构建入口 | 已归集，可从新目录恢复 |
-| 包完整性与离线发布检查工具 | 已验证；CI只检查这一范围 |
-| 软件修复 | 修复旧Mock协议字段与故障注入检查；默认质量读取PL摘要，Raw饱和统计改为显式诊断 |
-| 完整软件回归 | 已提供全部runtime测试入口；最终实跑结果见[验证汇总](report/release_validation.json) |
-| 固件 / runtime配套 | 11项离线配套测试、27个归档primary子例通过；新软件绑定独立记录，旧清单保留 |
-| 截面RTL | 182帧历史原图和13个合成输入，共195包逐位对照通过 |
-| 整板RTL矩阵 / 实现 / 板端 | 矩阵结果见验证汇总；本轮没有重新布局布线或上板 |
+| 完整工程 | RTL、XDC、BD、ARM运行程序、原生C、bit/HWH、字体及构建脚本齐全 |
+| 运行时测试 | 279项通过，覆盖协议、几何、界面、存储与故障处理 |
+| 入口与三页界面 | 71项回归通过，包含按键、截面和扫描流程 |
+| 软件固件配套 | 11项测试通过，核对27份输出数据包、接口及原生库架构 |
+| 截面测量RTL | 195包与定点模型逐位一致 |
+| 整链RTL | 19例全尺寸输入通过，覆盖空帧、噪声、饱和及候选溢出 |
 
-本轮只在电脑修复与验证。45份非生成硬件构建输入、bit/HWH及旧源码冻结记录保持不变；当前软件组合见[运行时验证记录](board/firmware/runtime_validation.json)。已知问题及现场复验范围见[known_issues.md](docs/known_issues.md)，旧清单和失败记录继续保留。
+测试记录见[验证汇总](report/release_validation.json)，软件与固件对应关系见[配套记录](board/firmware/runtime_validation.json)。
 
 ## 仓库导航
 
 | 目录 | 内容 |
 |---|---|
-| [docs/](docs/readme.md) | 新读者入口、架构、硬件、部署、结果和排障 |
+| [docs/](docs/) | 快速开始、系统架构、硬件接口、部署、操作与排障 |
 | [src/fpga/](src/fpga) | RTL、XDC、BD、模型、原构建脚本与必要IP |
 | [src/ps/](src/ps) | ARM运行时、原生库与C源码、字体和测试 |
 | [build/](build) | 原文件名恢复、一键构建和既有实现报告 |
@@ -116,10 +127,10 @@ python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_r
 | [board/](board/readme.md) | bit/HWH、冻结manifest、板端证据、启动参考 |
 | [data/](data) | 标定、输入与参考数据 |
 | [skill/](skill/readme.md) | 可复用包校验、固件/runtime绑定检查 |
-| [report/](report/readme.md) | [设计报告PDF](report/design_report.pdf)、[Word](report/design_report.docx)、AI协作与提交说明 |
+| [report/](report/readme.md) | [技术报告PDF](report/design_report.pdf)、[Word](report/design_report.docx)及AI协作记录 |
 | [tools/](tools) | 仓库链接、语法及材料自检 |
 
-提交材料总览见[submission.md](docs/submission.md)；代码修改规范见[contributing.md](contributing.md)。大体积原始录像和整卡镜像不放入Git。
+技术报告见[报告目录](report/readme.md)，代码修改规范见[Contributing](contributing.md)。
 
 ## 许可证
 
