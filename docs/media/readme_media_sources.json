@@ -1,0 +1,29 @@
+{
+  "schema": "README_MEDIA_SOURCES_V1",
+  "hardware_photo": {
+    "file": "system_photo.png",
+    "operation": "crop only; original photographed content retained"
+  },
+  "live_page": {
+    "file": "live_page.png",
+    "kind": "software-rendered UI using archived simulation and PL replay data",
+    "source_script": "render_ui_mockups.py",
+    "current_board_capture": false
+  },
+  "section_page": {
+    "file": "section_page.png",
+    "kind": "previous software-rendered section display from saved step capture",
+    "new_measurement": false
+  },
+  "scan_page": {
+    "file": "scan_page.png",
+    "kind": "software-rendered UI using archived cloud; demonstration progress state",
+    "current_board_capture": false
+  },
+  "diagram": {
+    "file": "system_architecture.svg",
+    "spec": "system_architecture.json",
+    "source": "actual RTL and Block Design; functional overview",
+    "geometry_dsp_lane_claim": "two direction lanes; shared geometry engine"
+  }
+}

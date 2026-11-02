@@ -1,0 +1,240 @@
+{
+  "title": "PL Data Plane and ARM Control Plane",
+  "top": "Structured-light measurement system",
+  "theme": "light",
+  "legend": false,
+  "grid": {
+    "cell_w": 226,
+    "cell_h": 92,
+    "gutter_x": 120,
+    "gutter_y": 92,
+    "margin": 40
+  },
+  "domains": {
+    "system": {
+      "freq_mhz": 100,
+      "color": "#E9F4F3",
+      "border": "#307C80"
+    },
+    "processor": {
+      "color": "#EAF0F8",
+      "border": "#3C587D"
+    },
+    "video": {
+      "freq_mhz": 125,
+      "color": "#FBF2E6",
+      "border": "#AD7F3A"
+    }
+  },
+  "groups": {
+    "pl": {
+      "label": "PL: 100 MHz pixel / geometry / measurement"
+    }
+  },
+  "blocks": [
+    {
+      "id": "camera",
+      "label": "MT9V034 Camera",
+      "sublabel": "752 x 480 grayscale",
+      "external": true,
+      "side": "left",
+      "row": 0,
+      "col": 0
+    },
+    {
+      "id": "pixel",
+      "label": "Pixel Pipeline",
+      "sublabel": "Filter / Direction x2 / Branch",
+      "domain": "system",
+      "row": 0,
+      "col": 1,
+      "group": "pl"
+    },
+    {
+      "id": "geometry",
+      "label": "Geometry Engine",
+      "sublabel": "Undistort / Intersect / Rotate",
+      "domain": "system",
+      "row": 0,
+      "col": 2,
+      "group": "pl"
+    },
+    {
+      "id": "measure",
+      "label": "Section Measurement",
+      "sublabel": "Steps / Gaps / Quality",
+      "domain": "system",
+      "row": 0,
+      "col": 3,
+      "group": "pl"
+    },
+    {
+      "id": "arm",
+      "label": "ARM Runtime",
+      "sublabel": "Control / Stitch / Save / UI",
+      "domain": "processor",
+      "row": 1,
+      "col": 0
+    },
+    {
+      "id": "transport",
+      "label": "Frame Transport",
+      "sublabel": "Observation DMA / Shared DDR",
+      "domain": "system",
+      "row": 1,
+      "col": 1
+    },
+    {
+      "id": "renderer",
+      "label": "Cloud Renderer",
+      "sublabel": "Point Buffer / Video Overlay",
+      "domain": "video",
+      "row": 1,
+      "col": 2
+    },
+    {
+      "id": "hdmi",
+      "label": "HDMI Display",
+      "sublabel": "Live / Section / Scan",
+      "external": true,
+      "side": "right",
+      "row": 1,
+      "col": 3
+    },
+    {
+      "id": "storage",
+      "label": "SD Card / Export",
+      "sublabel": "Raw / XYZ / Provenance",
+      "external": true,
+      "side": "bottom",
+      "row": 2,
+      "col": 0
+    },
+    {
+      "id": "ui_video",
+      "label": "UI Video / VDMA",
+      "sublabel": "ARM Framebuffer in DDR",
+      "domain": "video",
+      "row": 2,
+      "col": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "camera",
+      "to": "pixel",
+      "kind": "cdc",
+      "width": 8,
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "pixel",
+      "to": "geometry",
+      "kind": "generic",
+      "width": "Q12",
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "geometry",
+      "to": "measure",
+      "kind": "generic",
+      "width": "XYZ Q16",
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "geometry",
+      "to": "transport",
+      "kind": "generic",
+      "width": "Records",
+      "route": {
+        "mode": "orthogonal"
+      }
+    },
+    {
+      "from": "pixel",
+      "to": "transport",
+      "kind": "axi-stream",
+      "width": 32,
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "transport",
+      "to": "arm",
+      "kind": "axi-mm",
+      "width": "DDR",
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "geometry",
+      "to": "renderer",
+      "kind": "cdc",
+      "width": "Point buffer",
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "arm",
+      "to": "storage",
+      "kind": "generic",
+      "width": "Files",
+      "route": {
+        "mode": "direct"
+      }
+    },
+    {
+      "from": "arm",
+      "to": "ui_video",
+      "kind": "generic",
+      "width": "UI frames",
+      "route": {
+        "mode": "orthogonal"
+      }
+    },
+    {
+      "from": "ui_video",
+      "to": "renderer",
+      "kind": "axi-stream",
+      "width": "Video",
+      "route": {
+        "points": [
+          [
+            612,
+            484
+          ],
+          [
+            845,
+            484
+          ],
+          [
+            845,
+            346
+          ]
+        ]
+      },
+      "label": {
+        "segment": 0,
+        "t": 0.8
+      }
+    },
+    {
+      "from": "renderer",
+      "to": "hdmi",
+      "kind": "generic",
+      "width": "TMDS",
+      "route": {
+        "mode": "direct"
+      }
+    }
+  ]
+}

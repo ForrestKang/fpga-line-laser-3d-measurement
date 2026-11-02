@@ -523,8 +523,8 @@
     },
     {
       "path": "docs/architecture.md",
-      "size": 5857,
-      "sha256": "8ea43eae28567a44ccd8820d989c34b58868b33ba6e238a628947707a8b9cff3"
+      "size": 5364,
+      "sha256": "376b3ae65ab8aff0b14672f6723e7a5751fdefd1f9c4550cd616d5dd1a7c2ce0"
     },
     {
       "path": "docs/build_and_deploy.md",
@@ -552,9 +552,9 @@
       "sha256": "689cd09edf5c464283f5b70d582c6bd93517190ed77c489961d29c1952c34ac8"
     },
     {
-      "path": "docs/media/live_page.jpg",
-      "size": 167976,
-      "sha256": "6e869ef04b835534cfbc0980b506b9db7304cfa860c0a365bea334feeccf4751"
+      "path": "docs/media/live_page.png",
+      "size": 69436,
+      "sha256": "4487300c3e4a8d4f3460bffa5446a95929b56310bd98d17cccab0e92b1979df8"
     },
     {
       "path": "docs/media/poster_en_anonymous.pptx",
@@ -567,9 +567,14 @@
       "sha256": "ecbb6d0685a3b2db85cd8f8a58bbdf86f40c8b15cf7eedb3dd96439770db002b"
     },
     {
-      "path": "docs/media/scan_page.jpg",
-      "size": 181971,
-      "sha256": "345876ee6bd4e0e4f74c38d016b36008ba6857b68523953679c1bd007899f11f"
+      "path": "docs/media/readme_media_sources.json",
+      "size": 994,
+      "sha256": "7fb9f5daf9b01f5c8493d5eba192ed8950ec0ee2fdea33655eb21f53c95348f6"
+    },
+    {
+      "path": "docs/media/scan_page.png",
+      "size": 82293,
+      "sha256": "0b07a9bf1b984904dd417877c90f98c1b967d3b4fb899bc10e756f5d4b6f73fe"
     },
     {
       "path": "docs/media/section_page.png",
@@ -577,9 +582,19 @@
       "sha256": "1f49a67d1a8837dd5c76260e64c9e7ea1f3b5652d524bff9e36a1dd193282dba"
     },
     {
-      "path": "docs/media/system_photo.jpg",
-      "size": 206920,
-      "sha256": "753b7743cfe7bdfb6226bda9d613198162685ac08700887a09e5c7403c7e6f17"
+      "path": "docs/media/system_architecture.json",
+      "size": 4773,
+      "sha256": "4099685eb01f32c9ab7c26b28ec9103f96c23c3c9503838fe8200041ab9082e0"
+    },
+    {
+      "path": "docs/media/system_architecture.svg",
+      "size": 9938,
+      "sha256": "d51a4203d776250a9a897f6496d1a5196b04d92ebb28c21dc742e18c5e86dbbd"
+    },
+    {
+      "path": "docs/media/system_photo.png",
+      "size": 1165318,
+      "sha256": "aa27607f94f3724ba68ccf768cba2ae5de022b42809a384fe41bb914061066d2"
     },
     {
       "path": "docs/operation.md",
@@ -593,8 +608,8 @@
     },
     {
       "path": "docs/readme_en.md",
-      "size": 2741,
-      "sha256": "da6c9a263681896caf13e4361420993d12d38a1a254a3285fb5de96bab1866e3"
+      "size": 9444,
+      "sha256": "8c8a0c414d947593c1fa1660ed61f1290a5608ccc10e7e5ca3bcf468ad0774cb"
     },
     {
       "path": "docs/results.md",
@@ -623,8 +638,8 @@
     },
     {
       "path": "readme.md",
-      "size": 6256,
-      "sha256": "d5f53c33dbc1486473a9defaf8c05b249ffc90f001aba24aaefa70b638240b5d"
+      "size": 6105,
+      "sha256": "7f43e488352c00d509a7a4c267a1d8ae6d53036e413ed6892b150120c8a57b0a"
     },
     {
       "path": "report/ai_collaboration_records.md",
@@ -788,8 +803,8 @@
     },
     {
       "path": "report/repository_and_license.md",
-      "size": 2643,
-      "sha256": "1bd01aeb49a95695150e260d653c014f7bff1a24cfab5ac1c3f3c929899daa43"
+      "size": 2135,
+      "sha256": "f692ec196b7746887c18cfff5b68612f0c425495029c93338f20f41fb8773138"
     },
     {
       "path": "report/reproduction.md",
@@ -894,12 +909,17 @@
     {
       "path": "sim/results/repository_delivery_checks.json",
       "size": 901,
-      "sha256": "f35c719ce61af5741ce99d7903adde21991db3ec4bcf1108ee44bd59bc7fa704"
+      "sha256": "0e8bb0937d8f919e492e2229d1af2cba77091dc8acffa61eaf8768d8a22501c5"
     },
     {
       "path": "sim/results/repository_source_preservation.json",
       "size": 386,
       "sha256": "b3858819a5caadf8fca605f7276f7502c0c2d8449ed2be87b94dbfad3af4d621"
+    },
+    {
+      "path": "sim/results/repository_visual_refresh.json",
+      "size": 979,
+      "sha256": "8826be3dde579125d0a3b46dee56a1d6d2a1c9546204ba9f3bb6d342fdfe15f8"
     },
     {
       "path": "sim/results/rtl_empty_compile.log",

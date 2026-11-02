@@ -6,23 +6,9 @@
 
 相机输入和DDR回放共用PL算法入口。完整通路如下：
 
-```mermaid
-flowchart TD
-    CAM[Camera Capture / CDC FIFO] --> IN[统一像素入口]
-    DDR[DDR Replay / MM2S] --> IN
-    IN --> WIN[Shared Window Filter]
-    WIN --> DIR[Direction Refinement × 2]
-    DIR --> LINK[Stripe Extraction / Branch Linking]
-    LINK --> GEO[Fixed-point Geometry]
-    GEO --> CACHE[Point Cache]
-    CACHE --> PACK[Observation / Geometry Records]
-    PACK --> DMA[DMA / DDR]
-    GEO --> MEAS[Measurement Statistics / Section Measurement]
-    GEO --> VIEW[Cloud Renderer]
-    VDMA[HDMI VDMA] --> VIEW
-    VIEW --> HDMI[HDMI Output]
-    DMA --> PS[ARM Runtime / Storage / Scan Control]
-```
+![System processing architecture](media/system_architecture.svg)
+
+[可编辑架构规格](media/system_architecture.json)
 
 | 功能模块 | 职责 | 实现入口 |
 |---|---|---|

@@ -4,9 +4,11 @@
 
 基于 **PYNQ-Z2** 的小型线激光三维测量装置：相机采集激光条纹，FPGA完成亚像素提取、定点几何和截面统计，屏幕显示当前截面与逐步形成的点云，ARM负责扫描编排、界面、拼接与完整数据保存。
 
-[快速开始](docs/getting_started.md) · [系统架构](docs/architecture.md) · [硬件接口](docs/hardware.md) · [构建与部署](docs/build_and_deploy.md) · [验证结果](docs/validation.md) · [English](docs/readme_en.md)
+**简体中文** | [English](docs/readme_en.md)
 
-![系统实物与HDMI演示](docs/media/system_photo.jpg)
+[快速开始](docs/getting_started.md) · [系统架构](docs/architecture.md) · [硬件接口](docs/hardware.md) · [构建与部署](docs/build_and_deploy.md) · [验证结果](docs/validation.md)
+
+![系统硬件：开发板、相机、线激光与转台](docs/media/system_photo.png)
 
 ## 作品做什么
 
@@ -20,33 +22,34 @@
 
 ## 三种界面
 
-| 实时观测 | 截面测量 | 整圈扫描 |
-|---|---|---|
-| ![实时界面](docs/media/live_page.jpg) | ![截面界面](docs/media/section_page.png) | ![扫描界面](docs/media/scan_page.jpg) |
-| 相机条纹与当前点云 | 截面曲线、台阶与质量 | 扫描进度、累积点云 |
+下面是程序直接生成的界面图，展示实时观测、截面测量和扫描信息。
 
-以上为既有界面与现场素材。尺寸结果和验证条件统一见[验证文档](docs/validation.md)，界面截图不代替测试记录。
+### 实时观测 · BTN1
+
+相机条纹、当前点云及处理状态在同一页显示。
+
+![实时观测界面](docs/media/live_page.png)
+
+### 截面测量 · BTN2
+
+显示截面轮廓、逐级台阶高度、噪声与质量趋势。
+
+![截面测量界面](docs/media/section_page.png)
+
+### 整圈扫描 · BTN3
+
+显示累积点云、角度进度、分层直径和扫描记录。
+
+![整圈扫描界面](docs/media/scan_page.png)
 
 ## 处理分工
 
-```mermaid
-flowchart LR
-    CAM[MT9V034 相机] --> CAP[Camera Capture / CDC]
-    DDR[DDR 回放] --> CAP
-    CAP --> WIN[Shared Window Filter]
-    WIN --> DIR[Direction Refinement ×2]
-    DIR --> EXT[Stripe Extraction / Branch Linking]
-    EXT --> GEO[Fixed-point Geometry]
-    GEO --> MEAS[Measurement / Section]
-    GEO --> VIEW[Cloud Renderer]
-    EXT --> DMA[PFO3 / XYZ DMA]
-    GEO --> DMA
-    DMA --> PS[ARM Runtime]
-    PS --> STORE[Raw / Observations / XYZ / Metadata]
-    PS --> UI[界面与扫描编排]
-    UI --> HDMI[HDMI]
-    VIEW --> HDMI
-```
+![PL与ARM处理分工](docs/media/system_architecture.svg)
+
+| 处理侧 | 主要职责 |
+|---|---|
+| PL | 像素提取、分支与质量、定点几何、截面测量、点云叠加 |
+| ARM | 参数与扫描编排、数据校验、扫描级拼接、页面组织、完整保存 |
 
 正常几何坐标由PL产生，ARM解包时核对参数与帧身份。方向核默认两路；几何核复用DSP并采用有界状态机，并非每拍输出一个三维点。详细模块、位宽和时钟域见[系统架构](docs/architecture.md)。
 
