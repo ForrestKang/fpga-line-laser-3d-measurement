@@ -131,6 +131,7 @@ Read [Build and deployment](build_and_deploy.md) and [Hardware interfaces](hardw
 | Runtime tests | 279 passed: protocol, geometry, interface, storage and fault handling |
 | Application and three-page interface | 71 regression tests passed, including buttons and scan control |
 | Firmware/runtime pairing | 11 tests passed, including 27 output packets, register interfaces and native-library architecture |
+| Reusable PYNQ skill | 4 offline tests passed across two unrelated synthetic projects, including mixed-driver rejection, relocation and standalone use |
 | Section-measurement RTL | 195 packets matched the fixed-point model bit for bit |
 | Integrated RTL | 19 full-resolution cases passed, covering empty frames, noise, saturation and candidate overflow |
 

@@ -1,0 +1,15 @@
+{
+  "schema": "PYNQ_SKILL_PORTABILITY_TESTS_V1",
+  "scope": "offline_manifest_portability_not_board_execution",
+  "tests_run": 4,
+  "passed": 4,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "status": "passed",
+  "evidence_boundary": [
+    "The .bit and .hwh files are synthetic test bytes, not FPGA artifacts for a real design.",
+    "PYNQ-Z1 and Ultra96-V2 are fixture labels used to test that names are not hardcoded; they are not device validation.",
+    "This suite exercises offline manifest portability only and does not execute or validate a board."
+  ]
+}

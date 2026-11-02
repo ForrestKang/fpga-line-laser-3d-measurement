@@ -23,8 +23,8 @@
     },
     {
       "path": ".github/workflows/repository_checks.yml",
-      "size": 1362,
-      "sha256": "adcede1462b46e66bb6b4aba744cd47e9e19f473bf0bbd22fe153a7515c8a26d"
+      "size": 1466,
+      "sha256": "947006a5bec70e310daaa451a90ab2389eea1d1e42c7f21b3c8efe3b04e2e935"
     },
     {
       "path": ".gitignore",
@@ -643,8 +643,8 @@
     },
     {
       "path": "docs/readme_en.md",
-      "size": 10012,
-      "sha256": "0d70f7c325f364ba039eae8cec258bf8e50adb0d1faeac2264f67a9f0dccf9df"
+      "size": 10167,
+      "sha256": "4044062af964f343ca89cc7084a4851523b3d897c7b4dec58143c3143b73ab71"
     },
     {
       "path": "docs/troubleshooting.md",
@@ -663,13 +663,13 @@
     },
     {
       "path": "readme.md",
-      "size": 6843,
-      "sha256": "06ef449c12f7a4c604b08ed8d985ed1cb98ff98259e78d0a2d417c093456d48c"
+      "size": 6980,
+      "sha256": "42522ed86c0160bae13715619dfeb51a3621d222b28cc5294245af90179f8f87"
     },
     {
       "path": "report/ai_collaboration_records.md",
-      "size": 1322,
-      "sha256": "335a64255f6b2ac8560f8099b3b65abfb58c45b3ce4047f2a9ed36245d6b28e5"
+      "size": 1611,
+      "sha256": "6d813cf3da8723e2ce56af591176f23160db59bca76f96721d6fbf345b1ceaab"
     },
     {
       "path": "report/calibration_photos/checkerboard_pairs.png",
@@ -738,8 +738,8 @@
     },
     {
       "path": "report/skill_development.md",
-      "size": 1017,
-      "sha256": "2896f1e0fe6c42434ea8059f48cc62c91ec51bfb99ff802854dc2c4cc59a63ef"
+      "size": 1925,
+      "sha256": "90dcd64ae4ebccdd6d964da82af38b200e3bd96810d2b08b440bbed419fb3959"
     },
     {
       "path": "report/source_report_gate.json",
@@ -1025,6 +1025,11 @@
       "path": "sim/results/runtime_guard_audit.json",
       "size": 1858,
       "sha256": "30f0b251d5d74e2858e8b143fe7d401f4cfe2c5fe1c93eb98e86a01b9570b90f"
+    },
+    {
+      "path": "sim/results/skill_portability.json",
+      "size": 571,
+      "sha256": "f2f92f4f0edc0a206af44185b073f08fb7035b69e2e182bfaff4b8fd158ee15e"
     },
     {
       "path": "sim/run_release_tests.py",
@@ -2313,8 +2318,8 @@
     },
     {
       "path": "skill/pynq_release_check.md",
-      "size": 4650,
-      "sha256": "23f887a63e698509530ef054497ce772f23085024d566bb837771f64faea13da"
+      "size": 3213,
+      "sha256": "e3a26df971c3c356df99b8d9750387005d6b3b949ab3a95ee7b3e8e7bf956657"
     },
     {
       "path": "skill/pynq_release_check.py",
@@ -2323,8 +2328,13 @@
     },
     {
       "path": "skill/readme.md",
-      "size": 2981,
-      "sha256": "70f6f832b9b80fd4f405dabfad32edb17eb2ad001de2c51266b8233eda6d1119"
+      "size": 6201,
+      "sha256": "ed8804da668f95d7be147fe2cfa5fc84e154edf8811328e94e03389f03bb79b8"
+    },
+    {
+      "path": "skill/test_portability.py",
+      "size": 11990,
+      "sha256": "df3366a2e11177953ffe9e57b02802887f4aec7ada1f576632d542edde57f176"
     },
     {
       "path": "skill/test_pynq_release_check.py",
