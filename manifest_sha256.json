@@ -738,8 +738,8 @@
     },
     {
       "path": "report/skill_development.md",
-      "size": 1925,
-      "sha256": "90dcd64ae4ebccdd6d964da82af38b200e3bd96810d2b08b440bbed419fb3959"
+      "size": 2676,
+      "sha256": "af6bc087711fcaa6589d51f685c01538c5c66a631f45647c9019dc11ee127763"
     },
     {
       "path": "report/source_report_gate.json",
@@ -2328,8 +2328,13 @@
     },
     {
       "path": "skill/readme.md",
-      "size": 6201,
-      "sha256": "ed8804da668f95d7be147fe2cfa5fc84e154edf8811328e94e03389f03bb79b8"
+      "size": 12306,
+      "sha256": "9e82351e34edf9f0c1275d172a3128741c6c10a5157a94955abbb32c9a252f59"
+    },
+    {
+      "path": "skill/skill.md",
+      "size": 1752,
+      "sha256": "652213fba5a44e94d9beff659331a45333dd1d88893cbb3573e67b586167fdca"
     },
     {
       "path": "skill/test_portability.py",
