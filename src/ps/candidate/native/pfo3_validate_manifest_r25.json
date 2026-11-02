@@ -1,0 +1,54 @@
+{
+  "schema": "R25_PFO3_BODY_VALIDATOR_LIBRARY_V1",
+  "abi": 65561,
+  "library": "libpfo3_validate_r25.so",
+  "runtime": {
+    "system": "Linux",
+    "machine": "armv7l",
+    "pointer_bits": 32,
+    "byteorder": "little",
+    "python_implementation": "CPython",
+    "python_version": "3.10.4",
+    "numpy_version": "1.21.5",
+    "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+  },
+  "library_sha256": "228e9280ff5b14e4fc63ebe0be1c9c7921178edbfcd2b2592d595524bc1e9916",
+  "source_sha256": "341172ff55e3cb8f31faabf1c91f983f9ae8d7545374f8aa415887f2b8d14cf3",
+  "python_decoder_sha256": "81d715eb05185979c8a1f8dc40a37d27c7dd6d597d5fb1d71ce01fcfdabe699c",
+  "validation": {
+    "runtime": {
+      "system": "Linux",
+      "machine": "armv7l",
+      "pointer_bits": 32,
+      "byteorder": "little",
+      "python_implementation": "CPython",
+      "python_version": "3.10.4",
+      "numpy_version": "1.21.5",
+      "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+    },
+    "library_sha256": "228e9280ff5b14e4fc63ebe0be1c9c7921178edbfcd2b2592d595524bc1e9916",
+    "source_sha256": "341172ff55e3cb8f31faabf1c91f983f9ae8d7545374f8aa415887f2b8d14cf3",
+    "python_decoder_sha256": "81d715eb05185979c8a1f8dc40a37d27c7dd6d597d5fb1d71ce01fcfdabe699c",
+    "passed": true,
+    "full_fields_equal": true,
+    "body_error_classes_equal": true,
+    "max_candidates_equal": true,
+    "uint64_boundary_equal": true,
+    "test_count": 7,
+    "tests": [
+      "test_full_nonempty_exact_arrays_and_immutable_views",
+      "test_every_body_error_class_preserves_python_priority",
+      "test_empty_and_maximum180480_candidates_no_truncation",
+      "test_uint64_products_and_floor_Q12_extreme_are_safe",
+      "test_strict_prefix_crc_identity_and_lengths_remain_python_equivalent",
+      "test_deterministic_single_and_multiple_corruptions_match_error_classes",
+      "test_explicit_library_hash_precondition_and_build_never_overwrite"
+    ],
+    "test_sources_sha256": {
+      "test_pfo3_native_r25.py": "20d7ed7ee136f2a172851e0ed10e003176ee9b7ea9951c5d2154227f844ed2b3",
+      "test_pfo3_regressions_r25.py": "90921553e9100e632ce3a977564725cb0bb93b63991ade66264dbf14add0d6dc"
+    },
+    "unittest_log": "test_full_nonempty_exact_arrays_and_immutable_views (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_every_body_error_class_preserves_python_priority (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_empty_and_maximum180480_candidates_no_truncation (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_uint64_products_and_floor_Q12_extreme_are_safe (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_strict_prefix_crc_identity_and_lengths_remain_python_equivalent (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_deterministic_single_and_multiple_corruptions_match_error_classes (test_pfo3_native_r25.NativeBodyTests) ... ok\ntest_explicit_library_hash_precondition_and_build_never_overwrite (test_pfo3_native_r25.NativeBodyTests) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 10.936s\n\nOK\n",
+    "hardware_access": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+ "solidified_rig2": {
+  "levels": [
+   {
+    "level_from_top": 1,
+    "points": 3243,
+    "h_top": 27.73,
+    "h_bottom": 17.24,
+    "length": 10.49,
+    "offset": 254.129,
+    "line_rms": 0.069,
+    "depth_z": 264.9
+   },
+   {
+    "level_from_top": 2,
+    "points": 2927,
+    "h_top": 15.3,
+    "h_bottom": 4.98,
+    "length": 10.32,
+    "offset": 251.806,
+    "line_rms": 0.149,
+    "depth_z": 262.5
+   },
+   {
+    "level_from_top": 3,
+    "points": 2829,
+    "h_top": 3.13,
+    "h_bottom": -7.07,
+    "length": 10.2,
+    "offset": 248.557,
+    "line_rms": 0.141,
+    "depth_z": 259.4
+   },
+   {
+    "level_from_top": 4,
+    "points": 3760,
+    "h_top": -8.69,
+    "h_bottom": -21.03,
+    "length": 12.35,
+    "offset": 243.31,
+    "line_rms": 0.079,
+    "depth_z": 254.4
+   }
+  ],
+  "pitch_top": [
+   12.43,
+   12.17,
+   11.82
+  ],
+  "pitch_bottom": [
+   12.26,
+   12.05,
+   13.96
+  ],
+  "total_top_to_bottom": 48.76,
+  "in_plane_steps": [
+   -2.323,
+   -3.249,
+   -5.247
+  ],
+  "step_ratio": [
+   2.15,
+   3.0,
+   4.85
+  ],
+  "face_dir_vs_camera_y_deg": 1.15
+ }
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "SUBMISSION_STATIC_CHECKS_V1",
+  "passed": true,
+  "exact_source_copies_verified": 914,
+  "project_inputs_present": 39,
+  "python_syntax_files_checked": 493,
+  "all_names_lowercase_ascii": true,
+  "symlinks": 0,
+  "arm_runtime_tests": {
+    "run": 69,
+    "passed": 61,
+    "failed": 7,
+    "skipped": 1
+  },
+  "rtl_current_smoke": "empty_only_passed",
+  "full_vivado_rebuild_this_task": false,
+  "hardware_commands": 0,
+  "errors": []
+}

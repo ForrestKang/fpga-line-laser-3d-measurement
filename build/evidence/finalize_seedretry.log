@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Oct 31 23:06:33 2026
+# Process ID         : 11560
+# Current directory  : D:/Workspace/CodexWork/scan3d_final_20261029
+# Command line       : vivado.exe -mode batch -nojournal -source scripts/finalize_seedretry.tcl -log logs/finalize_seedretry.log
+# Log file           : D:/Workspace/CodexWork/scan3d_final_20261029/logs/finalize_seedretry.log
+# Journal file       : 
+# Running On         : ChiliChilideLAPTOP
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : Intel(R) Core(TM) i7-14650HX
+# CPU Frequency      : 2419 MHz
+# CPU Physical cores : 16
+# CPU Logical cores  : 24
+# Host memory        : 16944 MB
+# Swap memory        : 28991 MB
+# Total Virtual      : 45935 MB
+# Available Virtual  : 17234 MB
+#-----------------------------------------------------------
+source scripts/finalize_seedretry.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# set build [file join $root build seedretry]
+# set py [auto_execok python]
+# if {$py eq ""} {error "Python required"}
+# puts [exec {*}$py -B [file join $root scripts review_build_final.py] --reports [file join $build reports] --output [file join $build ADMISSION_FINAL.json]]
+{"evidence_kind": "FINAL_FULL_POST_ROUTE_NOT_BOARD", "passed": true, "gates": {"architecture": true, "setup": true, "hold": true, "pulse": true, "cdc": true, "constrained": true, "route": true, "clock_structure": true, "drc": true, "budget": true, "section_present": true, "video_125mhz": true}, "wns_ns": 0.23, "whs_ns": 0.011, "wpws_ns": 0.333, "tns_ns": 0.0, "ths_ns": 0.0, "tpws_ns": 0.0, "cdc_critical": 0, "unconstrained_internal_endpoints": 0, "no_clock": 0, "route_errors": 0, "routable_nets": 86823, "fully_routed_nets": 86823, "timing_checks": {"constant_clock": 0, "pulse_width_clock": 0, "multiple_clock": 0, "generated_clocks": 0, "loops": 0, "partial_input_delay": 0, "partial_output_delay": 0, "latch_loops": 0}, "drc_errors": 0, "drc_total": 301, "drc_summary_sum": 301, "expected_lanes": 2, "direction_lane_ids": [0, 1], "resources": {"lut": 39111, "ff": 50902, "ramb36": 98, "ramb18": 25, "dsp": 134}, "percentages": {"lut": 73.51691729323308, "ff": 47.840225563909776, "bram": 78.92857142857143, "dsp": 60.90909090909091}, "target_note": "70-80 percent is an exploration band per resource, not a utilization average or minimum.", "section_resource_row": "|           section                                                       |                                                       section_measure |       6577 |       6185 |     390 |    2 |  6847 |      2 |      0 |         70 |", "requirements": {"wns_min_ns": 0.0, "wns_target_ns": 0.15, "whs_positive": true, "all_resource_max_percent": 80, "video_clock_mhz": 125}, "video_clock_report_row": "clk_fpga_1                                {0.000 4.000}        8.000           125.000         "}
+# open_checkpoint [file join $build artifacts route.dcp]
+Command: open_checkpoint D:/Workspace/CodexWork/scan3d_final_20261029/build/seedretry/artifacts/route.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 320.840 ; gain = 4.625
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 932.324 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6496 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.258 . Memory (MB): peak = 1111.574 ; gain = 24.492
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.125 . Memory (MB): peak = 1848.383 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1848.383 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1848.383 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1875.797 ; gain = 27.414
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1875.797 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1928.902 ; gain = 53.105
+Read Physdb Files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1928.902 ; gain = 80.520
+Restored from archive | CPU: 4.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1928.902 ; gain = 81.094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 2017.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 725 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 244 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 13 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 432 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 28 instances
+  SRLC32E => SRL16E: 6 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2025.2 (64-bit) build 6299465
+open_checkpoint: Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 2023.164 ; gain = 1715.359
+# set_param general.maxThreads 2
+# write_bitstream -bin_file [file join $build artifacts final.bit]
+Command: write_bitstream -bin_file D:/Workspace/CodexWork/scan3d_final_20261029/build/seedretry/artifacts/final.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vavido/2025.2/Vivado/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream D:/Workspace/CodexWork/scan3d_final_20261029/build/seedretry/artifacts/final.bit...
+Writing bitstream D:/Workspace/CodexWork/scan3d_final_20261029/build/seedretry/artifacts/final.bin...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:01:01 ; elapsed = 00:00:40 . Memory (MB): peak = 2758.379 ; gain = 735.215
+# puts "SEEDRETRY_BIT_COMPLETE_FROM_GATED_ROUTED_DCP"
+SEEDRETRY_BIT_COMPLETE_FROM_GATED_ROUTED_DCP
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 31 23:08:11 2026...

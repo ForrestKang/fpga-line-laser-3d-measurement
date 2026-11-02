@@ -1,0 +1,45 @@
+{
+  "source_file": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\evidence\\board\\seedretry_collect_seed.json",
+  "source_sha256": "58b520f82bb13e6d9e78a11f37f43bb841039cbe88ce29392c15afa8e600adb2",
+  "sanitized_result_extract": true,
+  "removed_source_fields": [
+    "action",
+    "hostkey",
+    "started_ns",
+    "automatic_retry",
+    "machine_id",
+    "boot_id",
+    "command"
+  ],
+  "credential_or_identity_field_names_removed": [
+    "hostkey",
+    "machine_id",
+    "boot_id"
+  ],
+  "license_or_authorization_proof_field_names_found": [],
+  "result_fields": {
+    "passed": true,
+    "wall_s": 6.5149227000000005,
+    "stdout_result_lines": [
+      "SUMMARY {\"phase\": \"stopped\", \"error\": null, \"frames\": 284, \"fps\": 1.7185631999226374, \"stop_reason\": \"requested\", \"timing_median_ms\": {\"capture_ms\": 63.81075699937355, \"pl_ms\": 107.73023049841868, \"frame_age_ms\": 43.49244299919519}, \"live_stream\": {\"started\": true, \"section_offset\": 4294967294, \"packets\": 6810, \"errors\": 0, \"last_dump\": 6805, \"last_copy\": 6805, \"elapsed_s\": 164.36410246300147, \"stopped\": true}, \"pl_view\": {\"inserted\": 625194, \"dropped\": 0, \"frames_committed\": 4304, \"frames_discarded\": 0, \"occupied\": 1276, \"out_of_range\": 647869, \"render_count\": 15119, \"last_render_cycles\": 133066, \"swap_count\": 15118, \"status\": 35389664, \"magic\": 1379151958, \"last_yaw\": 540, \"republish_count\": 4544, \"frozen\": false, \"last_pub_buf\": 0}, \"scan\": {\"state\": \"DONE\", \"phase\": \"complete\", \"views\": 200, \"target_views\": 200, \"visited_views\": 200, \"measured_views\": 200, \"preview_views\": 0, \"skipped_views\": 0, \"coverage_complete\": true, \"invalid_attempts\": 0, \"invalid_retries\": 2, \"last_view\": {\"index\": 200, \"outcome\": \"measured\", \"reason\": null, \"invalid_attempts\": 0, \"motor_id\": 200, \"motor_epoch\": 200, \"motor_steps\": 3600}, \"motion_complete\": true, \"data_complete\": true, \"steps\": 3600, \"angle_deg\": 365.3791936848041, \"deadline_s\": 1200.0, \"axis_status\": \"CALIBRATED\", \"message\": \"revolution complete: 200 measured, 0 preview, 0 skipped; axis calibrated\", \"motor_id\": 200, \"motor_epoch\": 200, \"motor_steps\": 3600}, \"calibration_id\": null}",
+      "CAL {\"calibration_id\": \"R41_LIVE_CAMERA_LASER_CHECKERBOARD_AXIS\", \"axis_status\": \"CALIBRATED_CHECKERBOARD\", \"axis_point_camera_mm\": [21.58574689987726, -32.23218866883344, 263.1050007675116], \"axis_direction_camera\": [-0.03613765401499276, 0.9986095783736293, 0.038379420823336244]}",
+      "TURNTABLE {   \"schema\": \"sl_turntable_model_v1\",   \"axis_point_mm\": [     21.58574689987726,     -32.23218866883344,     263.1050007675116   ],   \"axis_direction\": [     -0.03613765401499277,     0.9986095783736295,     0.03837942082333625   ],   \"rad_per_step\": 0.0017714083189116399,   \"state\": \"assumed_uncalibrated\",   \"source\": \"checkerboard axis\",   \"fingerprint\": \"19ed3d8653ba03ded2d3b544807611272cc7958189f09f40aac8f27f16915501\",   \"steps_per_rev\": 3547.0 } ",
+      "FILE xyz_object_mm.npy 2268992",
+      "FILE xyz_camera_mm.npy 3213280",
+      "VIEWS [[18, 311], [36, 361], [54, 339], [72, 345], [90, 351], [108, 355], [126, 334], [144, 343], [162, 371], [180, 331], [198, 329], [216, 352], [234, 346], [252, 340], [270, 349], [288, 365], [306, 325], [324, 327], [342, 317], [360, 340], [378, 354], [396, 333], [414, 344], [432, 332], [450, 331], [468, 362], [486, 332], [504, 345], [522, 369], [540, 355], [558, 347], [576, 341], [594, 362], [612, 337], [630, 342], [648, 328], [666, 368], [684, 351], [702, 374], [720, 347], [738, 348], [756, 364], [774, 347], [792, 341], [810, 351], [828, 335], [846, 342], [864, 357], [882, 366], [900, 349], [918, 348], [936, 358], [954, 369], [972, 348], [990, 347], [1008, 365], [1026, 365], [1044, 358], [1062, 369], [1080, 372], [1098, 363], [1116, 369], [1134, 360], [1152, 352], [1170, 365], [1188, 366], [1206, 377], [1224, 352], [1242, 358], [1260, 351], [1278, 372], [1296, 356], [1314, 362], [1332, 362], [1350, 358], [1368, 369], [1386, 363], [1404, 344], [1422, 363], [1440, 360], [1458, 363], [1476, 360], [1494, 347], [1512, 370], [1530, 346], [1548, 355], [1566, 385], [1584, 344], [1602, 371], [1620, 363], [1638, 372], [1656, 357], [1674, 353], [1692, 340], [1710, 372], [1728, 351], [1746, 355], [1764, 350], [1782, 359], [1800, 355], [1818, 362], [1836, 375], [1854, 363], [1872, 346], [1890, 357], [1908, 360], [1926, 353], [1944, 364], [1962, 346], [1980, 356], [1998, 375], [2016, 371], [2034, 354], [2052, 350], [2070, 384], [2088, 371], [2106, 356], [2124, 350], [2142, 374], [2160, 355], [2178, 377], [2196, 340], [2214, 350], [2232, 364], [2250, 374], [2268, 378], [2286, 356], [2304, 368], [2322, 351], [2340, 358], [2358, 353], [2376, 349], [2394, 360], [2412, 359], [2430, 360], [2448, 343], [2466, 360], [2484, 346], [2502, 339], [2520, 352], [2538, 355], [2556, 336], [2574, 338], [2592, 339], [2610, 368], [2628, 352], [2646, 351], [2664, 355], [2682, 359], [2700, 359], [2718, 371], [2736, 350], [2754, 354], [2772, 345], [2790, 374], [2808, 372], [2826, 364], [2844, 375], [2862, 363], [2880, 363], [2898, 366], [2916, 360], [2934, 360], [2952, 366], [2970, 331], [2988, 335], [3006, 357], [3024, 351], [3042, 356], [3060, 352], [3078, 357], [3096, 365], [3114, 332], [3132, 362], [3150, 352], [3168, 342], [3186, 356], [3204, 341], [3222, 347], [3240, 374], [3258, 358], [3276, 352], [3294, 347], [3312, 363], [3330, 345], [3348, 363], [3366, 349], [3384, 358], [3402, 363], [3420, 366], [3438, 357], [3456, 358], [3474, 345], [3492, 366], [3510, 360], [3528, 358], [3546, 338], [3564, 336], [3582, 356], [3600, 326]]"
+    ]
+  },
+  "omitted_stdout_line_types": [
+    "BLOB"
+  ],
+  "decoded_blob": {
+    "blob_point_count_tag": 70902,
+    "decoded_packed_bytes": 496314,
+    "encoding": "First 6*N bytes: N x 3 little-endian int16 XYZ values scaled by 0.1 mm; final N bytes: N int8 measurement flags.",
+    "extracted_files": [
+      "seedretry_collect_seed_object_cloud_mm.npy",
+      "seedretry_collect_seed_views.npy"
+    ],
+    "packed_bytes_per_point_total": 7
+  }
+}

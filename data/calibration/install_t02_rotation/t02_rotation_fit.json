@@ -1,0 +1,100 @@
+{
+  "schema": "t02_rotation_fit_v1",
+  "scale": 0.9958244621330906,
+  "axis_point_camera_mm": [
+    21.58574689987726,
+    -32.23218866883344,
+    263.1050007675116
+  ],
+  "axis_direction_camera": [
+    -0.03613765401499276,
+    0.9986095783736293,
+    0.038379420823336244
+  ],
+  "t02_centre_offset_mm": [
+    -2.0385140923984775,
+    -1.4613385439306281
+  ],
+  "base_height_mm": 9.920488308799213,
+  "axis_shift_mm": 9.221194413628934,
+  "axis_tilt_change_deg": 7.852016206647701,
+  "before_odd_views": [
+    {
+      "nominal_d": 20.0,
+      "measured_d": 32.532,
+      "error_d": 12.532,
+      "roundness_rms": 0.255,
+      "height_2_98": 13.44,
+      "points": 3170
+    },
+    {
+      "nominal_d": 30.0,
+      "measured_d": 40.695,
+      "error_d": 10.695,
+      "roundness_rms": 0.213,
+      "height_2_98": 13.3,
+      "points": 2986
+    },
+    {
+      "nominal_d": 40.0,
+      "measured_d": 49.088,
+      "error_d": 9.088,
+      "roundness_rms": 0.29,
+      "height_2_98": 15.35,
+      "points": 3070
+    }
+  ],
+  "after_even_views": [
+    {
+      "nominal_d": 20.0,
+      "measured_d": 20.032,
+      "error_d": 0.032,
+      "roundness_rms": 0.265,
+      "height_2_98": 13.41,
+      "points": 3186
+    },
+    {
+      "nominal_d": 30.0,
+      "measured_d": 30.143,
+      "error_d": 0.143,
+      "roundness_rms": 0.142,
+      "height_2_98": 13.25,
+      "points": 2894
+    },
+    {
+      "nominal_d": 40.0,
+      "measured_d": 39.92,
+      "error_d": -0.08,
+      "roundness_rms": 0.181,
+      "height_2_98": 15.26,
+      "points": 3096
+    }
+  ],
+  "after_odd_views": [
+    {
+      "nominal_d": 20.0,
+      "measured_d": 20.037,
+      "error_d": 0.037,
+      "roundness_rms": 0.259,
+      "height_2_98": 13.38,
+      "points": 3170
+    },
+    {
+      "nominal_d": 30.0,
+      "measured_d": 30.136,
+      "error_d": 0.136,
+      "roundness_rms": 0.138,
+      "height_2_98": 13.24,
+      "points": 2986
+    },
+    {
+      "nominal_d": 40.0,
+      "measured_d": 39.922,
+      "error_d": -0.078,
+      "roundness_rms": 0.175,
+      "height_2_98": 15.28,
+      "points": 3070
+    }
+  ],
+  "note": "calibrated on T02 (even views), checked on odd views of the same T02: not an accuracy test"
+}

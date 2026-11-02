@@ -1,0 +1,135 @@
+{
+  "schema": "r13.point_raster_native.v1",
+  "abi": 1,
+  "library": "point_raster_v1.so",
+  "library_sha256": "107c839d85bf56505675c5614ebac7087c712dda8bf3310ef8a22b82c8329967",
+  "source_sha256": "73aeb98da0c9909cb69841ca2be1a5fc5f397014f12e0bca0076ad6832814217",
+  "runtime": {
+    "system": "Linux",
+    "machine": "armv7l",
+    "pointer_bits": 32,
+    "byteorder": "little",
+    "python_implementation": "CPython",
+    "python_version": "3.10.4",
+    "numpy_version": "1.21.5",
+    "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+  },
+  "build": {
+    "command": [
+      "/usr/bin/gcc",
+      "-O2",
+      "-std=c11",
+      "-fno-fast-math",
+      "-ffp-contract=off",
+      "-fexcess-precision=standard",
+      "-frounding-math",
+      "-fPIC",
+      "-shared",
+      "-Wall",
+      "-Wextra",
+      "/home/xilinx/scan3d_r13_cached_native_20261019T193303Z_3c9c3614/source/structured_light_system_algorithm_v1/src/python/structured_light/scan3d/native/point_raster.c",
+      "-o",
+      "/home/xilinx/scan3d_r13_cached_native_20261019T193303Z_3c9c3614/native_build/point_raster_v1.so",
+      "-lm"
+    ],
+    "compiler_version": "gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+    "returncode": 0,
+    "source_sha256": "73aeb98da0c9909cb69841ca2be1a5fc5f397014f12e0bca0076ad6832814217"
+  },
+  "validation": {
+    "passed": true,
+    "full_panel_pixels_equal": true,
+    "overlap_order_equal": true,
+    "cases": [
+      {
+        "kind": "full_panel",
+        "points": 0,
+        "yaw": -32.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 0,
+        "yaw": 0.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 0,
+        "yaw": 111.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 1,
+        "yaw": -32.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 1,
+        "yaw": 0.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 1,
+        "yaw": 111.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 431,
+        "yaw": -32.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 431,
+        "yaw": 0.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 431,
+        "yaw": 111.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 13260,
+        "yaw": -32.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 13260,
+        "yaw": 0.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "full_panel",
+        "points": 13260,
+        "yaw": 111.0,
+        "pixels_equal": true
+      },
+      {
+        "kind": "repeated_pixels_half_even_boundaries",
+        "points": 8192,
+        "pixels_equal": true
+      }
+    ],
+    "boundary": "Only this recorded NumPy binary/runtime and native library. No cross-version duplicate-index order claim; no hardware or metrology result.",
+    "runtime": {
+      "system": "Linux",
+      "machine": "armv7l",
+      "pointer_bits": 32,
+      "byteorder": "little",
+      "python_implementation": "CPython",
+      "python_version": "3.10.4",
+      "numpy_version": "1.21.5",
+      "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+    },
+    "library_sha256": "107c839d85bf56505675c5614ebac7087c712dda8bf3310ef8a22b82c8329967"
+  }
+}

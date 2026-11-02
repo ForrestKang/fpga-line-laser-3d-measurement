@@ -1,0 +1,200 @@
+{
+ "installed": {
+  "levels": [
+   {
+    "level_from_top": 1,
+    "points": 3321,
+    "h_top": 51.84,
+    "h_bottom": 39.8,
+    "length": 12.04,
+    "offset": 281.695,
+    "line_rms": 0.081,
+    "depth_z": 293.5
+   },
+   {
+    "level_from_top": 2,
+    "points": 2771,
+    "h_top": 37.45,
+    "h_bottom": 26.29,
+    "length": 11.16,
+    "offset": 278.879,
+    "line_rms": 0.177,
+    "depth_z": 289.6
+   },
+   {
+    "level_from_top": 3,
+    "points": 2954,
+    "h_top": 23.98,
+    "h_bottom": 12.75,
+    "length": 11.24,
+    "offset": 275.128,
+    "line_rms": 0.195,
+    "depth_z": 285.0
+   },
+   {
+    "level_from_top": 4,
+    "points": 3710,
+    "h_top": 10.55,
+    "h_bottom": -2.07,
+    "length": 12.62,
+    "offset": 268.784,
+    "line_rms": 0.09,
+    "depth_z": 278.0
+   }
+  ],
+  "pitch_top": [
+   14.39,
+   13.47,
+   13.43
+  ],
+  "pitch_bottom": [
+   13.51,
+   13.54,
+   14.82
+  ],
+  "total_top_to_bottom": 53.91,
+  "in_plane_steps": [
+   -2.816,
+   -3.751,
+   -6.344
+  ],
+  "step_ratio": [
+   2.18,
+   2.91,
+   4.91
+  ],
+  "face_dir_vs_camera_y_deg": 5.22
+ },
+ "scale_0.892": {
+  "levels": [
+   {
+    "level_from_top": 1,
+    "points": 3321,
+    "h_top": 46.23,
+    "h_bottom": 35.5,
+    "length": 10.73,
+    "offset": 251.203,
+    "line_rms": 0.072,
+    "depth_z": 261.7
+   },
+   {
+    "level_from_top": 2,
+    "points": 2771,
+    "h_top": 33.39,
+    "h_bottom": 23.44,
+    "length": 9.95,
+    "offset": 248.692,
+    "line_rms": 0.158,
+    "depth_z": 258.3
+   },
+   {
+    "level_from_top": 3,
+    "points": 2954,
+    "h_top": 21.39,
+    "h_bottom": 11.37,
+    "length": 10.02,
+    "offset": 245.347,
+    "line_rms": 0.174,
+    "depth_z": 254.2
+   },
+   {
+    "level_from_top": 4,
+    "points": 3710,
+    "h_top": 9.41,
+    "h_bottom": -1.85,
+    "length": 11.25,
+    "offset": 239.689,
+    "line_rms": 0.08,
+    "depth_z": 247.9
+   }
+  ],
+  "pitch_top": [
+   12.84,
+   12.0,
+   11.98
+  ],
+  "pitch_bottom": [
+   12.06,
+   12.07,
+   13.22
+  ],
+  "total_top_to_bottom": 48.08,
+  "in_plane_steps": [
+   -2.511,
+   -3.345,
+   -5.658
+  ],
+  "step_ratio": [
+   2.18,
+   2.91,
+   4.91
+  ],
+  "face_dir_vs_camera_y_deg": 5.22
+ },
+ "scale_1.004_tilt": {
+  "levels": [
+   {
+    "level_from_top": 1,
+    "points": 3321,
+    "h_top": 28.91,
+    "h_bottom": 18.15,
+    "length": 10.76,
+    "offset": 254.045,
+    "line_rms": 0.064,
+    "depth_z": 264.9
+   },
+   {
+    "level_from_top": 2,
+    "points": 2771,
+    "h_top": 16.21,
+    "h_bottom": 6.14,
+    "length": 10.07,
+    "offset": 251.743,
+    "line_rms": 0.145,
+    "depth_z": 262.5
+   },
+   {
+    "level_from_top": 3,
+    "points": 2954,
+    "h_top": 4.29,
+    "h_bottom": -5.92,
+    "length": 10.21,
+    "offset": 248.654,
+    "line_rms": 0.161,
+    "depth_z": 259.4
+   },
+   {
+    "level_from_top": 4,
+    "points": 3710,
+    "h_top": -7.57,
+    "h_bottom": -19.15,
+    "length": 11.58,
+    "offset": 243.375,
+    "line_rms": 0.071,
+    "depth_z": 254.4
+   }
+  ],
+  "pitch_top": [
+   12.7,
+   11.92,
+   11.86
+  ],
+  "pitch_bottom": [
+   12.01,
+   12.06,
+   13.23
+  ],
+  "total_top_to_bottom": 48.06,
+  "in_plane_steps": [
+   -2.302,
+   -3.089,
+   -5.279
+  ],
+  "step_ratio": [
+   2.16,
+   2.9,
+   4.95
+  ],
+  "face_dir_vs_camera_y_deg": 1.41
+ }
+}

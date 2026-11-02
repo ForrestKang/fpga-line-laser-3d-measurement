@@ -1,0 +1,7202 @@
+[
+  {
+    "frame": 1,
+    "accepted": false,
+    "angle_deg": 0.0,
+    "phase": "settle",
+    "motor_id": 0,
+    "motor_epoch": 0,
+    "motor_steps": 0
+  },
+  {
+    "frame": 2,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 3,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 4,
+    "accepted": true,
+    "angle_deg": 1.8,
+    "phase": "accepted",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 5,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 6,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "settle",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 7,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "settle",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 8,
+    "accepted": true,
+    "angle_deg": 3.6,
+    "phase": "accepted",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 9,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "settle",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 10,
+    "accepted": false,
+    "angle_deg": 5.4,
+    "phase": "settle",
+    "motor_id": 3,
+    "motor_epoch": 7,
+    "motor_steps": 48
+  },
+  {
+    "frame": 11,
+    "accepted": false,
+    "angle_deg": 5.4,
+    "phase": "settle",
+    "motor_id": 3,
+    "motor_epoch": 7,
+    "motor_steps": 48
+  },
+  {
+    "frame": 12,
+    "accepted": true,
+    "angle_deg": 5.4,
+    "phase": "accepted",
+    "motor_id": 3,
+    "motor_epoch": 7,
+    "motor_steps": 48
+  },
+  {
+    "frame": 13,
+    "accepted": false,
+    "angle_deg": 5.4,
+    "phase": "settle",
+    "motor_id": 3,
+    "motor_epoch": 7,
+    "motor_steps": 48
+  },
+  {
+    "frame": 14,
+    "accepted": false,
+    "angle_deg": 7.2,
+    "phase": "settle",
+    "motor_id": 4,
+    "motor_epoch": 7,
+    "motor_steps": 64
+  },
+  {
+    "frame": 15,
+    "accepted": false,
+    "angle_deg": 7.2,
+    "phase": "settle",
+    "motor_id": 4,
+    "motor_epoch": 7,
+    "motor_steps": 64
+  },
+  {
+    "frame": 16,
+    "accepted": true,
+    "angle_deg": 7.2,
+    "phase": "accepted",
+    "motor_id": 4,
+    "motor_epoch": 7,
+    "motor_steps": 64
+  },
+  {
+    "frame": 17,
+    "accepted": false,
+    "angle_deg": 7.2,
+    "phase": "settle",
+    "motor_id": 4,
+    "motor_epoch": 7,
+    "motor_steps": 64
+  },
+  {
+    "frame": 18,
+    "accepted": false,
+    "angle_deg": 9.0,
+    "phase": "settle",
+    "motor_id": 5,
+    "motor_epoch": 7,
+    "motor_steps": 80
+  },
+  {
+    "frame": 19,
+    "accepted": false,
+    "angle_deg": 9.0,
+    "phase": "settle",
+    "motor_id": 5,
+    "motor_epoch": 7,
+    "motor_steps": 80
+  },
+  {
+    "frame": 20,
+    "accepted": true,
+    "angle_deg": 9.0,
+    "phase": "accepted",
+    "motor_id": 5,
+    "motor_epoch": 7,
+    "motor_steps": 80
+  },
+  {
+    "frame": 21,
+    "accepted": false,
+    "angle_deg": 9.0,
+    "phase": "settle",
+    "motor_id": 5,
+    "motor_epoch": 7,
+    "motor_steps": 80
+  },
+  {
+    "frame": 22,
+    "accepted": false,
+    "angle_deg": 10.8,
+    "phase": "settle",
+    "motor_id": 6,
+    "motor_epoch": 7,
+    "motor_steps": 96
+  },
+  {
+    "frame": 23,
+    "accepted": false,
+    "angle_deg": 10.8,
+    "phase": "settle",
+    "motor_id": 6,
+    "motor_epoch": 7,
+    "motor_steps": 96
+  },
+  {
+    "frame": 24,
+    "accepted": true,
+    "angle_deg": 10.8,
+    "phase": "accepted",
+    "motor_id": 6,
+    "motor_epoch": 7,
+    "motor_steps": 96
+  },
+  {
+    "frame": 25,
+    "accepted": false,
+    "angle_deg": 10.8,
+    "phase": "settle",
+    "motor_id": 6,
+    "motor_epoch": 7,
+    "motor_steps": 96
+  },
+  {
+    "frame": 26,
+    "accepted": false,
+    "angle_deg": 12.6,
+    "phase": "settle",
+    "motor_id": 7,
+    "motor_epoch": 7,
+    "motor_steps": 112
+  },
+  {
+    "frame": 27,
+    "accepted": false,
+    "angle_deg": 12.6,
+    "phase": "settle",
+    "motor_id": 7,
+    "motor_epoch": 7,
+    "motor_steps": 112
+  },
+  {
+    "frame": 28,
+    "accepted": true,
+    "angle_deg": 12.6,
+    "phase": "accepted",
+    "motor_id": 7,
+    "motor_epoch": 7,
+    "motor_steps": 112
+  },
+  {
+    "frame": 29,
+    "accepted": false,
+    "angle_deg": 12.6,
+    "phase": "settle",
+    "motor_id": 7,
+    "motor_epoch": 7,
+    "motor_steps": 112
+  },
+  {
+    "frame": 30,
+    "accepted": false,
+    "angle_deg": 14.4,
+    "phase": "settle",
+    "motor_id": 8,
+    "motor_epoch": 7,
+    "motor_steps": 128
+  },
+  {
+    "frame": 31,
+    "accepted": false,
+    "angle_deg": 14.4,
+    "phase": "settle",
+    "motor_id": 8,
+    "motor_epoch": 7,
+    "motor_steps": 128
+  },
+  {
+    "frame": 32,
+    "accepted": true,
+    "angle_deg": 14.4,
+    "phase": "accepted",
+    "motor_id": 8,
+    "motor_epoch": 7,
+    "motor_steps": 128
+  },
+  {
+    "frame": 33,
+    "accepted": false,
+    "angle_deg": 14.4,
+    "phase": "settle",
+    "motor_id": 8,
+    "motor_epoch": 7,
+    "motor_steps": 128
+  },
+  {
+    "frame": 34,
+    "accepted": false,
+    "angle_deg": 16.2,
+    "phase": "settle",
+    "motor_id": 9,
+    "motor_epoch": 7,
+    "motor_steps": 144
+  },
+  {
+    "frame": 35,
+    "accepted": false,
+    "angle_deg": 16.2,
+    "phase": "settle",
+    "motor_id": 9,
+    "motor_epoch": 7,
+    "motor_steps": 144
+  },
+  {
+    "frame": 36,
+    "accepted": true,
+    "angle_deg": 16.2,
+    "phase": "accepted",
+    "motor_id": 9,
+    "motor_epoch": 7,
+    "motor_steps": 144
+  },
+  {
+    "frame": 37,
+    "accepted": false,
+    "angle_deg": 16.2,
+    "phase": "settle",
+    "motor_id": 9,
+    "motor_epoch": 7,
+    "motor_steps": 144
+  },
+  {
+    "frame": 38,
+    "accepted": false,
+    "angle_deg": 18.0,
+    "phase": "settle",
+    "motor_id": 10,
+    "motor_epoch": 7,
+    "motor_steps": 160
+  },
+  {
+    "frame": 39,
+    "accepted": false,
+    "angle_deg": 18.0,
+    "phase": "settle",
+    "motor_id": 10,
+    "motor_epoch": 7,
+    "motor_steps": 160
+  },
+  {
+    "frame": 40,
+    "accepted": true,
+    "angle_deg": 18.0,
+    "phase": "accepted",
+    "motor_id": 10,
+    "motor_epoch": 7,
+    "motor_steps": 160
+  },
+  {
+    "frame": 41,
+    "accepted": false,
+    "angle_deg": 18.0,
+    "phase": "settle",
+    "motor_id": 10,
+    "motor_epoch": 7,
+    "motor_steps": 160
+  },
+  {
+    "frame": 42,
+    "accepted": false,
+    "angle_deg": 19.8,
+    "phase": "settle",
+    "motor_id": 11,
+    "motor_epoch": 7,
+    "motor_steps": 176
+  },
+  {
+    "frame": 43,
+    "accepted": false,
+    "angle_deg": 19.8,
+    "phase": "settle",
+    "motor_id": 11,
+    "motor_epoch": 7,
+    "motor_steps": 176
+  },
+  {
+    "frame": 44,
+    "accepted": true,
+    "angle_deg": 19.8,
+    "phase": "accepted",
+    "motor_id": 11,
+    "motor_epoch": 7,
+    "motor_steps": 176
+  },
+  {
+    "frame": 45,
+    "accepted": false,
+    "angle_deg": 19.8,
+    "phase": "settle",
+    "motor_id": 11,
+    "motor_epoch": 7,
+    "motor_steps": 176
+  },
+  {
+    "frame": 46,
+    "accepted": false,
+    "angle_deg": 21.6,
+    "phase": "settle",
+    "motor_id": 12,
+    "motor_epoch": 7,
+    "motor_steps": 192
+  },
+  {
+    "frame": 47,
+    "accepted": false,
+    "angle_deg": 21.6,
+    "phase": "settle",
+    "motor_id": 12,
+    "motor_epoch": 7,
+    "motor_steps": 192
+  },
+  {
+    "frame": 48,
+    "accepted": true,
+    "angle_deg": 21.6,
+    "phase": "accepted",
+    "motor_id": 12,
+    "motor_epoch": 7,
+    "motor_steps": 192
+  },
+  {
+    "frame": 49,
+    "accepted": false,
+    "angle_deg": 21.6,
+    "phase": "settle",
+    "motor_id": 12,
+    "motor_epoch": 7,
+    "motor_steps": 192
+  },
+  {
+    "frame": 50,
+    "accepted": false,
+    "angle_deg": 23.4,
+    "phase": "settle",
+    "motor_id": 13,
+    "motor_epoch": 7,
+    "motor_steps": 208
+  },
+  {
+    "frame": 51,
+    "accepted": false,
+    "angle_deg": 23.4,
+    "phase": "settle",
+    "motor_id": 13,
+    "motor_epoch": 7,
+    "motor_steps": 208
+  },
+  {
+    "frame": 52,
+    "accepted": true,
+    "angle_deg": 23.4,
+    "phase": "accepted",
+    "motor_id": 13,
+    "motor_epoch": 7,
+    "motor_steps": 208
+  },
+  {
+    "frame": 53,
+    "accepted": false,
+    "angle_deg": 23.4,
+    "phase": "settle",
+    "motor_id": 13,
+    "motor_epoch": 7,
+    "motor_steps": 208
+  },
+  {
+    "frame": 54,
+    "accepted": false,
+    "angle_deg": 25.2,
+    "phase": "settle",
+    "motor_id": 14,
+    "motor_epoch": 7,
+    "motor_steps": 224
+  },
+  {
+    "frame": 55,
+    "accepted": false,
+    "angle_deg": 25.2,
+    "phase": "settle",
+    "motor_id": 14,
+    "motor_epoch": 7,
+    "motor_steps": 224
+  },
+  {
+    "frame": 56,
+    "accepted": true,
+    "angle_deg": 25.2,
+    "phase": "accepted",
+    "motor_id": 14,
+    "motor_epoch": 7,
+    "motor_steps": 224
+  },
+  {
+    "frame": 57,
+    "accepted": false,
+    "angle_deg": 25.2,
+    "phase": "settle",
+    "motor_id": 14,
+    "motor_epoch": 7,
+    "motor_steps": 224
+  },
+  {
+    "frame": 58,
+    "accepted": false,
+    "angle_deg": 27.0,
+    "phase": "settle",
+    "motor_id": 15,
+    "motor_epoch": 7,
+    "motor_steps": 240
+  },
+  {
+    "frame": 59,
+    "accepted": false,
+    "angle_deg": 27.0,
+    "phase": "settle",
+    "motor_id": 15,
+    "motor_epoch": 7,
+    "motor_steps": 240
+  },
+  {
+    "frame": 60,
+    "accepted": true,
+    "angle_deg": 27.0,
+    "phase": "accepted",
+    "motor_id": 15,
+    "motor_epoch": 7,
+    "motor_steps": 240
+  },
+  {
+    "frame": 61,
+    "accepted": false,
+    "angle_deg": 27.0,
+    "phase": "settle",
+    "motor_id": 15,
+    "motor_epoch": 7,
+    "motor_steps": 240
+  },
+  {
+    "frame": 62,
+    "accepted": false,
+    "angle_deg": 28.8,
+    "phase": "settle",
+    "motor_id": 16,
+    "motor_epoch": 7,
+    "motor_steps": 256
+  },
+  {
+    "frame": 63,
+    "accepted": false,
+    "angle_deg": 28.8,
+    "phase": "settle",
+    "motor_id": 16,
+    "motor_epoch": 7,
+    "motor_steps": 256
+  },
+  {
+    "frame": 64,
+    "accepted": true,
+    "angle_deg": 28.8,
+    "phase": "accepted",
+    "motor_id": 16,
+    "motor_epoch": 7,
+    "motor_steps": 256
+  },
+  {
+    "frame": 65,
+    "accepted": false,
+    "angle_deg": 28.8,
+    "phase": "settle",
+    "motor_id": 16,
+    "motor_epoch": 7,
+    "motor_steps": 256
+  },
+  {
+    "frame": 66,
+    "accepted": false,
+    "angle_deg": 30.6,
+    "phase": "settle",
+    "motor_id": 17,
+    "motor_epoch": 7,
+    "motor_steps": 272
+  },
+  {
+    "frame": 67,
+    "accepted": false,
+    "angle_deg": 30.6,
+    "phase": "settle",
+    "motor_id": 17,
+    "motor_epoch": 7,
+    "motor_steps": 272
+  },
+  {
+    "frame": 68,
+    "accepted": true,
+    "angle_deg": 30.6,
+    "phase": "accepted",
+    "motor_id": 17,
+    "motor_epoch": 7,
+    "motor_steps": 272
+  },
+  {
+    "frame": 69,
+    "accepted": false,
+    "angle_deg": 30.6,
+    "phase": "settle",
+    "motor_id": 17,
+    "motor_epoch": 7,
+    "motor_steps": 272
+  },
+  {
+    "frame": 70,
+    "accepted": false,
+    "angle_deg": 32.4,
+    "phase": "settle",
+    "motor_id": 18,
+    "motor_epoch": 7,
+    "motor_steps": 288
+  },
+  {
+    "frame": 71,
+    "accepted": false,
+    "angle_deg": 32.4,
+    "phase": "settle",
+    "motor_id": 18,
+    "motor_epoch": 7,
+    "motor_steps": 288
+  },
+  {
+    "frame": 72,
+    "accepted": true,
+    "angle_deg": 32.4,
+    "phase": "accepted",
+    "motor_id": 18,
+    "motor_epoch": 7,
+    "motor_steps": 288
+  },
+  {
+    "frame": 73,
+    "accepted": false,
+    "angle_deg": 32.4,
+    "phase": "settle",
+    "motor_id": 18,
+    "motor_epoch": 7,
+    "motor_steps": 288
+  },
+  {
+    "frame": 74,
+    "accepted": false,
+    "angle_deg": 34.2,
+    "phase": "settle",
+    "motor_id": 19,
+    "motor_epoch": 7,
+    "motor_steps": 304
+  },
+  {
+    "frame": 75,
+    "accepted": false,
+    "angle_deg": 34.2,
+    "phase": "settle",
+    "motor_id": 19,
+    "motor_epoch": 7,
+    "motor_steps": 304
+  },
+  {
+    "frame": 76,
+    "accepted": true,
+    "angle_deg": 34.2,
+    "phase": "accepted",
+    "motor_id": 19,
+    "motor_epoch": 7,
+    "motor_steps": 304
+  },
+  {
+    "frame": 77,
+    "accepted": false,
+    "angle_deg": 34.2,
+    "phase": "settle",
+    "motor_id": 19,
+    "motor_epoch": 7,
+    "motor_steps": 304
+  },
+  {
+    "frame": 78,
+    "accepted": false,
+    "angle_deg": 36.0,
+    "phase": "settle",
+    "motor_id": 20,
+    "motor_epoch": 7,
+    "motor_steps": 320
+  },
+  {
+    "frame": 79,
+    "accepted": false,
+    "angle_deg": 36.0,
+    "phase": "settle",
+    "motor_id": 20,
+    "motor_epoch": 7,
+    "motor_steps": 320
+  },
+  {
+    "frame": 80,
+    "accepted": true,
+    "angle_deg": 36.0,
+    "phase": "accepted",
+    "motor_id": 20,
+    "motor_epoch": 7,
+    "motor_steps": 320
+  },
+  {
+    "frame": 81,
+    "accepted": false,
+    "angle_deg": 36.0,
+    "phase": "settle",
+    "motor_id": 20,
+    "motor_epoch": 7,
+    "motor_steps": 320
+  },
+  {
+    "frame": 82,
+    "accepted": false,
+    "angle_deg": 37.8,
+    "phase": "settle",
+    "motor_id": 21,
+    "motor_epoch": 7,
+    "motor_steps": 336
+  },
+  {
+    "frame": 83,
+    "accepted": false,
+    "angle_deg": 37.8,
+    "phase": "settle",
+    "motor_id": 21,
+    "motor_epoch": 7,
+    "motor_steps": 336
+  },
+  {
+    "frame": 84,
+    "accepted": true,
+    "angle_deg": 37.8,
+    "phase": "accepted",
+    "motor_id": 21,
+    "motor_epoch": 7,
+    "motor_steps": 336
+  },
+  {
+    "frame": 85,
+    "accepted": false,
+    "angle_deg": 37.8,
+    "phase": "settle",
+    "motor_id": 21,
+    "motor_epoch": 7,
+    "motor_steps": 336
+  },
+  {
+    "frame": 86,
+    "accepted": false,
+    "angle_deg": 39.6,
+    "phase": "settle",
+    "motor_id": 22,
+    "motor_epoch": 7,
+    "motor_steps": 352
+  },
+  {
+    "frame": 87,
+    "accepted": false,
+    "angle_deg": 39.6,
+    "phase": "settle",
+    "motor_id": 22,
+    "motor_epoch": 7,
+    "motor_steps": 352
+  },
+  {
+    "frame": 88,
+    "accepted": true,
+    "angle_deg": 39.6,
+    "phase": "accepted",
+    "motor_id": 22,
+    "motor_epoch": 7,
+    "motor_steps": 352
+  },
+  {
+    "frame": 89,
+    "accepted": false,
+    "angle_deg": 39.6,
+    "phase": "settle",
+    "motor_id": 22,
+    "motor_epoch": 7,
+    "motor_steps": 352
+  },
+  {
+    "frame": 90,
+    "accepted": false,
+    "angle_deg": 41.4,
+    "phase": "settle",
+    "motor_id": 23,
+    "motor_epoch": 7,
+    "motor_steps": 368
+  },
+  {
+    "frame": 91,
+    "accepted": false,
+    "angle_deg": 41.4,
+    "phase": "settle",
+    "motor_id": 23,
+    "motor_epoch": 7,
+    "motor_steps": 368
+  },
+  {
+    "frame": 92,
+    "accepted": true,
+    "angle_deg": 41.4,
+    "phase": "accepted",
+    "motor_id": 23,
+    "motor_epoch": 7,
+    "motor_steps": 368
+  },
+  {
+    "frame": 93,
+    "accepted": false,
+    "angle_deg": 41.4,
+    "phase": "settle",
+    "motor_id": 23,
+    "motor_epoch": 7,
+    "motor_steps": 368
+  },
+  {
+    "frame": 94,
+    "accepted": false,
+    "angle_deg": 43.2,
+    "phase": "settle",
+    "motor_id": 24,
+    "motor_epoch": 7,
+    "motor_steps": 384
+  },
+  {
+    "frame": 95,
+    "accepted": false,
+    "angle_deg": 43.2,
+    "phase": "settle",
+    "motor_id": 24,
+    "motor_epoch": 7,
+    "motor_steps": 384
+  },
+  {
+    "frame": 96,
+    "accepted": true,
+    "angle_deg": 43.2,
+    "phase": "accepted",
+    "motor_id": 24,
+    "motor_epoch": 7,
+    "motor_steps": 384
+  },
+  {
+    "frame": 97,
+    "accepted": false,
+    "angle_deg": 43.2,
+    "phase": "settle",
+    "motor_id": 24,
+    "motor_epoch": 7,
+    "motor_steps": 384
+  },
+  {
+    "frame": 98,
+    "accepted": false,
+    "angle_deg": 45.0,
+    "phase": "settle",
+    "motor_id": 25,
+    "motor_epoch": 7,
+    "motor_steps": 400
+  },
+  {
+    "frame": 99,
+    "accepted": false,
+    "angle_deg": 45.0,
+    "phase": "settle",
+    "motor_id": 25,
+    "motor_epoch": 7,
+    "motor_steps": 400
+  },
+  {
+    "frame": 100,
+    "accepted": true,
+    "angle_deg": 45.0,
+    "phase": "accepted",
+    "motor_id": 25,
+    "motor_epoch": 7,
+    "motor_steps": 400
+  },
+  {
+    "frame": 101,
+    "accepted": false,
+    "angle_deg": 45.0,
+    "phase": "settle",
+    "motor_id": 25,
+    "motor_epoch": 7,
+    "motor_steps": 400
+  },
+  {
+    "frame": 102,
+    "accepted": false,
+    "angle_deg": 46.8,
+    "phase": "settle",
+    "motor_id": 26,
+    "motor_epoch": 7,
+    "motor_steps": 416
+  },
+  {
+    "frame": 103,
+    "accepted": false,
+    "angle_deg": 46.8,
+    "phase": "settle",
+    "motor_id": 26,
+    "motor_epoch": 7,
+    "motor_steps": 416
+  },
+  {
+    "frame": 104,
+    "accepted": true,
+    "angle_deg": 46.8,
+    "phase": "accepted",
+    "motor_id": 26,
+    "motor_epoch": 7,
+    "motor_steps": 416
+  },
+  {
+    "frame": 105,
+    "accepted": false,
+    "angle_deg": 46.8,
+    "phase": "settle",
+    "motor_id": 26,
+    "motor_epoch": 7,
+    "motor_steps": 416
+  },
+  {
+    "frame": 106,
+    "accepted": false,
+    "angle_deg": 48.6,
+    "phase": "settle",
+    "motor_id": 27,
+    "motor_epoch": 7,
+    "motor_steps": 432
+  },
+  {
+    "frame": 107,
+    "accepted": false,
+    "angle_deg": 48.6,
+    "phase": "settle",
+    "motor_id": 27,
+    "motor_epoch": 7,
+    "motor_steps": 432
+  },
+  {
+    "frame": 108,
+    "accepted": true,
+    "angle_deg": 48.6,
+    "phase": "accepted",
+    "motor_id": 27,
+    "motor_epoch": 7,
+    "motor_steps": 432
+  },
+  {
+    "frame": 109,
+    "accepted": false,
+    "angle_deg": 48.6,
+    "phase": "settle",
+    "motor_id": 27,
+    "motor_epoch": 7,
+    "motor_steps": 432
+  },
+  {
+    "frame": 110,
+    "accepted": false,
+    "angle_deg": 50.4,
+    "phase": "settle",
+    "motor_id": 28,
+    "motor_epoch": 7,
+    "motor_steps": 448
+  },
+  {
+    "frame": 111,
+    "accepted": false,
+    "angle_deg": 50.4,
+    "phase": "settle",
+    "motor_id": 28,
+    "motor_epoch": 7,
+    "motor_steps": 448
+  },
+  {
+    "frame": 112,
+    "accepted": true,
+    "angle_deg": 50.4,
+    "phase": "accepted",
+    "motor_id": 28,
+    "motor_epoch": 7,
+    "motor_steps": 448
+  },
+  {
+    "frame": 113,
+    "accepted": false,
+    "angle_deg": 50.4,
+    "phase": "settle",
+    "motor_id": 28,
+    "motor_epoch": 7,
+    "motor_steps": 448
+  },
+  {
+    "frame": 114,
+    "accepted": false,
+    "angle_deg": 52.2,
+    "phase": "settle",
+    "motor_id": 29,
+    "motor_epoch": 7,
+    "motor_steps": 464
+  },
+  {
+    "frame": 115,
+    "accepted": false,
+    "angle_deg": 52.2,
+    "phase": "settle",
+    "motor_id": 29,
+    "motor_epoch": 7,
+    "motor_steps": 464
+  },
+  {
+    "frame": 116,
+    "accepted": true,
+    "angle_deg": 52.2,
+    "phase": "accepted",
+    "motor_id": 29,
+    "motor_epoch": 7,
+    "motor_steps": 464
+  },
+  {
+    "frame": 117,
+    "accepted": false,
+    "angle_deg": 52.2,
+    "phase": "settle",
+    "motor_id": 29,
+    "motor_epoch": 7,
+    "motor_steps": 464
+  },
+  {
+    "frame": 118,
+    "accepted": false,
+    "angle_deg": 54.0,
+    "phase": "settle",
+    "motor_id": 30,
+    "motor_epoch": 7,
+    "motor_steps": 480
+  },
+  {
+    "frame": 119,
+    "accepted": false,
+    "angle_deg": 54.0,
+    "phase": "settle",
+    "motor_id": 30,
+    "motor_epoch": 7,
+    "motor_steps": 480
+  },
+  {
+    "frame": 120,
+    "accepted": true,
+    "angle_deg": 54.0,
+    "phase": "accepted",
+    "motor_id": 30,
+    "motor_epoch": 7,
+    "motor_steps": 480
+  },
+  {
+    "frame": 121,
+    "accepted": false,
+    "angle_deg": 54.0,
+    "phase": "settle",
+    "motor_id": 30,
+    "motor_epoch": 7,
+    "motor_steps": 480
+  },
+  {
+    "frame": 122,
+    "accepted": false,
+    "angle_deg": 55.8,
+    "phase": "settle",
+    "motor_id": 31,
+    "motor_epoch": 7,
+    "motor_steps": 496
+  },
+  {
+    "frame": 123,
+    "accepted": false,
+    "angle_deg": 55.8,
+    "phase": "settle",
+    "motor_id": 31,
+    "motor_epoch": 7,
+    "motor_steps": 496
+  },
+  {
+    "frame": 124,
+    "accepted": true,
+    "angle_deg": 55.8,
+    "phase": "accepted",
+    "motor_id": 31,
+    "motor_epoch": 7,
+    "motor_steps": 496
+  },
+  {
+    "frame": 125,
+    "accepted": false,
+    "angle_deg": 55.8,
+    "phase": "settle",
+    "motor_id": 31,
+    "motor_epoch": 7,
+    "motor_steps": 496
+  },
+  {
+    "frame": 126,
+    "accepted": false,
+    "angle_deg": 57.6,
+    "phase": "settle",
+    "motor_id": 32,
+    "motor_epoch": 7,
+    "motor_steps": 512
+  },
+  {
+    "frame": 127,
+    "accepted": false,
+    "angle_deg": 57.6,
+    "phase": "settle",
+    "motor_id": 32,
+    "motor_epoch": 7,
+    "motor_steps": 512
+  },
+  {
+    "frame": 128,
+    "accepted": true,
+    "angle_deg": 57.6,
+    "phase": "accepted",
+    "motor_id": 32,
+    "motor_epoch": 7,
+    "motor_steps": 512
+  },
+  {
+    "frame": 129,
+    "accepted": false,
+    "angle_deg": 57.6,
+    "phase": "settle",
+    "motor_id": 32,
+    "motor_epoch": 7,
+    "motor_steps": 512
+  },
+  {
+    "frame": 130,
+    "accepted": false,
+    "angle_deg": 59.4,
+    "phase": "settle",
+    "motor_id": 33,
+    "motor_epoch": 7,
+    "motor_steps": 528
+  },
+  {
+    "frame": 131,
+    "accepted": false,
+    "angle_deg": 59.4,
+    "phase": "settle",
+    "motor_id": 33,
+    "motor_epoch": 7,
+    "motor_steps": 528
+  },
+  {
+    "frame": 132,
+    "accepted": true,
+    "angle_deg": 59.4,
+    "phase": "accepted",
+    "motor_id": 33,
+    "motor_epoch": 7,
+    "motor_steps": 528
+  },
+  {
+    "frame": 133,
+    "accepted": false,
+    "angle_deg": 59.4,
+    "phase": "settle",
+    "motor_id": 33,
+    "motor_epoch": 7,
+    "motor_steps": 528
+  },
+  {
+    "frame": 134,
+    "accepted": false,
+    "angle_deg": 61.2,
+    "phase": "settle",
+    "motor_id": 34,
+    "motor_epoch": 7,
+    "motor_steps": 544
+  },
+  {
+    "frame": 135,
+    "accepted": false,
+    "angle_deg": 61.2,
+    "phase": "settle",
+    "motor_id": 34,
+    "motor_epoch": 7,
+    "motor_steps": 544
+  },
+  {
+    "frame": 136,
+    "accepted": true,
+    "angle_deg": 61.2,
+    "phase": "accepted",
+    "motor_id": 34,
+    "motor_epoch": 7,
+    "motor_steps": 544
+  },
+  {
+    "frame": 137,
+    "accepted": false,
+    "angle_deg": 61.2,
+    "phase": "settle",
+    "motor_id": 34,
+    "motor_epoch": 7,
+    "motor_steps": 544
+  },
+  {
+    "frame": 138,
+    "accepted": false,
+    "angle_deg": 63.0,
+    "phase": "settle",
+    "motor_id": 35,
+    "motor_epoch": 7,
+    "motor_steps": 560
+  },
+  {
+    "frame": 139,
+    "accepted": false,
+    "angle_deg": 63.0,
+    "phase": "settle",
+    "motor_id": 35,
+    "motor_epoch": 7,
+    "motor_steps": 560
+  },
+  {
+    "frame": 140,
+    "accepted": true,
+    "angle_deg": 63.0,
+    "phase": "accepted",
+    "motor_id": 35,
+    "motor_epoch": 7,
+    "motor_steps": 560
+  },
+  {
+    "frame": 141,
+    "accepted": false,
+    "angle_deg": 63.0,
+    "phase": "settle",
+    "motor_id": 35,
+    "motor_epoch": 7,
+    "motor_steps": 560
+  },
+  {
+    "frame": 142,
+    "accepted": false,
+    "angle_deg": 64.8,
+    "phase": "settle",
+    "motor_id": 36,
+    "motor_epoch": 7,
+    "motor_steps": 576
+  },
+  {
+    "frame": 143,
+    "accepted": false,
+    "angle_deg": 64.8,
+    "phase": "settle",
+    "motor_id": 36,
+    "motor_epoch": 7,
+    "motor_steps": 576
+  },
+  {
+    "frame": 144,
+    "accepted": true,
+    "angle_deg": 64.8,
+    "phase": "accepted",
+    "motor_id": 36,
+    "motor_epoch": 7,
+    "motor_steps": 576
+  },
+  {
+    "frame": 145,
+    "accepted": false,
+    "angle_deg": 64.8,
+    "phase": "settle",
+    "motor_id": 36,
+    "motor_epoch": 7,
+    "motor_steps": 576
+  },
+  {
+    "frame": 146,
+    "accepted": false,
+    "angle_deg": 66.6,
+    "phase": "settle",
+    "motor_id": 37,
+    "motor_epoch": 7,
+    "motor_steps": 592
+  },
+  {
+    "frame": 147,
+    "accepted": false,
+    "angle_deg": 66.6,
+    "phase": "settle",
+    "motor_id": 37,
+    "motor_epoch": 7,
+    "motor_steps": 592
+  },
+  {
+    "frame": 148,
+    "accepted": true,
+    "angle_deg": 66.6,
+    "phase": "accepted",
+    "motor_id": 37,
+    "motor_epoch": 7,
+    "motor_steps": 592
+  },
+  {
+    "frame": 149,
+    "accepted": false,
+    "angle_deg": 66.6,
+    "phase": "settle",
+    "motor_id": 37,
+    "motor_epoch": 7,
+    "motor_steps": 592
+  },
+  {
+    "frame": 150,
+    "accepted": false,
+    "angle_deg": 68.4,
+    "phase": "settle",
+    "motor_id": 38,
+    "motor_epoch": 7,
+    "motor_steps": 608
+  },
+  {
+    "frame": 151,
+    "accepted": false,
+    "angle_deg": 68.4,
+    "phase": "settle",
+    "motor_id": 38,
+    "motor_epoch": 7,
+    "motor_steps": 608
+  },
+  {
+    "frame": 152,
+    "accepted": true,
+    "angle_deg": 68.4,
+    "phase": "accepted",
+    "motor_id": 38,
+    "motor_epoch": 7,
+    "motor_steps": 608
+  },
+  {
+    "frame": 153,
+    "accepted": false,
+    "angle_deg": 68.4,
+    "phase": "settle",
+    "motor_id": 38,
+    "motor_epoch": 7,
+    "motor_steps": 608
+  },
+  {
+    "frame": 154,
+    "accepted": false,
+    "angle_deg": 70.2,
+    "phase": "settle",
+    "motor_id": 39,
+    "motor_epoch": 7,
+    "motor_steps": 624
+  },
+  {
+    "frame": 155,
+    "accepted": false,
+    "angle_deg": 70.2,
+    "phase": "settle",
+    "motor_id": 39,
+    "motor_epoch": 7,
+    "motor_steps": 624
+  },
+  {
+    "frame": 156,
+    "accepted": true,
+    "angle_deg": 70.2,
+    "phase": "accepted",
+    "motor_id": 39,
+    "motor_epoch": 7,
+    "motor_steps": 624
+  },
+  {
+    "frame": 157,
+    "accepted": false,
+    "angle_deg": 70.2,
+    "phase": "settle",
+    "motor_id": 39,
+    "motor_epoch": 7,
+    "motor_steps": 624
+  },
+  {
+    "frame": 158,
+    "accepted": false,
+    "angle_deg": 72.0,
+    "phase": "settle",
+    "motor_id": 40,
+    "motor_epoch": 7,
+    "motor_steps": 640
+  },
+  {
+    "frame": 159,
+    "accepted": false,
+    "angle_deg": 72.0,
+    "phase": "settle",
+    "motor_id": 40,
+    "motor_epoch": 7,
+    "motor_steps": 640
+  },
+  {
+    "frame": 160,
+    "accepted": true,
+    "angle_deg": 72.0,
+    "phase": "accepted",
+    "motor_id": 40,
+    "motor_epoch": 7,
+    "motor_steps": 640
+  },
+  {
+    "frame": 161,
+    "accepted": false,
+    "angle_deg": 72.0,
+    "phase": "settle",
+    "motor_id": 40,
+    "motor_epoch": 7,
+    "motor_steps": 640
+  },
+  {
+    "frame": 162,
+    "accepted": false,
+    "angle_deg": 73.8,
+    "phase": "settle",
+    "motor_id": 41,
+    "motor_epoch": 7,
+    "motor_steps": 656
+  },
+  {
+    "frame": 163,
+    "accepted": false,
+    "angle_deg": 73.8,
+    "phase": "settle",
+    "motor_id": 41,
+    "motor_epoch": 7,
+    "motor_steps": 656
+  },
+  {
+    "frame": 164,
+    "accepted": true,
+    "angle_deg": 73.8,
+    "phase": "accepted",
+    "motor_id": 41,
+    "motor_epoch": 7,
+    "motor_steps": 656
+  },
+  {
+    "frame": 165,
+    "accepted": false,
+    "angle_deg": 73.8,
+    "phase": "settle",
+    "motor_id": 41,
+    "motor_epoch": 7,
+    "motor_steps": 656
+  },
+  {
+    "frame": 166,
+    "accepted": false,
+    "angle_deg": 75.6,
+    "phase": "settle",
+    "motor_id": 42,
+    "motor_epoch": 7,
+    "motor_steps": 672
+  },
+  {
+    "frame": 167,
+    "accepted": false,
+    "angle_deg": 75.6,
+    "phase": "settle",
+    "motor_id": 42,
+    "motor_epoch": 7,
+    "motor_steps": 672
+  },
+  {
+    "frame": 168,
+    "accepted": true,
+    "angle_deg": 75.6,
+    "phase": "accepted",
+    "motor_id": 42,
+    "motor_epoch": 7,
+    "motor_steps": 672
+  },
+  {
+    "frame": 169,
+    "accepted": false,
+    "angle_deg": 75.6,
+    "phase": "settle",
+    "motor_id": 42,
+    "motor_epoch": 7,
+    "motor_steps": 672
+  },
+  {
+    "frame": 170,
+    "accepted": false,
+    "angle_deg": 77.4,
+    "phase": "settle",
+    "motor_id": 43,
+    "motor_epoch": 7,
+    "motor_steps": 688
+  },
+  {
+    "frame": 171,
+    "accepted": false,
+    "angle_deg": 77.4,
+    "phase": "settle",
+    "motor_id": 43,
+    "motor_epoch": 7,
+    "motor_steps": 688
+  },
+  {
+    "frame": 172,
+    "accepted": true,
+    "angle_deg": 77.4,
+    "phase": "accepted",
+    "motor_id": 43,
+    "motor_epoch": 7,
+    "motor_steps": 688
+  },
+  {
+    "frame": 173,
+    "accepted": false,
+    "angle_deg": 77.4,
+    "phase": "settle",
+    "motor_id": 43,
+    "motor_epoch": 7,
+    "motor_steps": 688
+  },
+  {
+    "frame": 174,
+    "accepted": false,
+    "angle_deg": 79.2,
+    "phase": "settle",
+    "motor_id": 44,
+    "motor_epoch": 7,
+    "motor_steps": 704
+  },
+  {
+    "frame": 175,
+    "accepted": false,
+    "angle_deg": 79.2,
+    "phase": "settle",
+    "motor_id": 44,
+    "motor_epoch": 7,
+    "motor_steps": 704
+  },
+  {
+    "frame": 176,
+    "accepted": true,
+    "angle_deg": 79.2,
+    "phase": "accepted",
+    "motor_id": 44,
+    "motor_epoch": 7,
+    "motor_steps": 704
+  },
+  {
+    "frame": 177,
+    "accepted": false,
+    "angle_deg": 79.2,
+    "phase": "settle",
+    "motor_id": 44,
+    "motor_epoch": 7,
+    "motor_steps": 704
+  },
+  {
+    "frame": 178,
+    "accepted": false,
+    "angle_deg": 81.0,
+    "phase": "settle",
+    "motor_id": 45,
+    "motor_epoch": 7,
+    "motor_steps": 720
+  },
+  {
+    "frame": 179,
+    "accepted": false,
+    "angle_deg": 81.0,
+    "phase": "settle",
+    "motor_id": 45,
+    "motor_epoch": 7,
+    "motor_steps": 720
+  },
+  {
+    "frame": 180,
+    "accepted": true,
+    "angle_deg": 81.0,
+    "phase": "accepted",
+    "motor_id": 45,
+    "motor_epoch": 7,
+    "motor_steps": 720
+  },
+  {
+    "frame": 181,
+    "accepted": false,
+    "angle_deg": 81.0,
+    "phase": "settle",
+    "motor_id": 45,
+    "motor_epoch": 7,
+    "motor_steps": 720
+  },
+  {
+    "frame": 182,
+    "accepted": false,
+    "angle_deg": 82.8,
+    "phase": "settle",
+    "motor_id": 46,
+    "motor_epoch": 7,
+    "motor_steps": 736
+  },
+  {
+    "frame": 183,
+    "accepted": false,
+    "angle_deg": 82.8,
+    "phase": "settle",
+    "motor_id": 46,
+    "motor_epoch": 7,
+    "motor_steps": 736
+  },
+  {
+    "frame": 184,
+    "accepted": true,
+    "angle_deg": 82.8,
+    "phase": "accepted",
+    "motor_id": 46,
+    "motor_epoch": 7,
+    "motor_steps": 736
+  },
+  {
+    "frame": 185,
+    "accepted": false,
+    "angle_deg": 82.8,
+    "phase": "settle",
+    "motor_id": 46,
+    "motor_epoch": 7,
+    "motor_steps": 736
+  },
+  {
+    "frame": 186,
+    "accepted": false,
+    "angle_deg": 84.6,
+    "phase": "settle",
+    "motor_id": 47,
+    "motor_epoch": 7,
+    "motor_steps": 752
+  },
+  {
+    "frame": 187,
+    "accepted": false,
+    "angle_deg": 84.6,
+    "phase": "settle",
+    "motor_id": 47,
+    "motor_epoch": 7,
+    "motor_steps": 752
+  },
+  {
+    "frame": 188,
+    "accepted": true,
+    "angle_deg": 84.6,
+    "phase": "accepted",
+    "motor_id": 47,
+    "motor_epoch": 7,
+    "motor_steps": 752
+  },
+  {
+    "frame": 189,
+    "accepted": false,
+    "angle_deg": 84.6,
+    "phase": "settle",
+    "motor_id": 47,
+    "motor_epoch": 7,
+    "motor_steps": 752
+  },
+  {
+    "frame": 190,
+    "accepted": false,
+    "angle_deg": 86.4,
+    "phase": "settle",
+    "motor_id": 48,
+    "motor_epoch": 7,
+    "motor_steps": 768
+  },
+  {
+    "frame": 191,
+    "accepted": false,
+    "angle_deg": 86.4,
+    "phase": "settle",
+    "motor_id": 48,
+    "motor_epoch": 7,
+    "motor_steps": 768
+  },
+  {
+    "frame": 192,
+    "accepted": true,
+    "angle_deg": 86.4,
+    "phase": "accepted",
+    "motor_id": 48,
+    "motor_epoch": 7,
+    "motor_steps": 768
+  },
+  {
+    "frame": 193,
+    "accepted": false,
+    "angle_deg": 86.4,
+    "phase": "settle",
+    "motor_id": 48,
+    "motor_epoch": 7,
+    "motor_steps": 768
+  },
+  {
+    "frame": 194,
+    "accepted": false,
+    "angle_deg": 88.2,
+    "phase": "settle",
+    "motor_id": 49,
+    "motor_epoch": 7,
+    "motor_steps": 784
+  },
+  {
+    "frame": 195,
+    "accepted": false,
+    "angle_deg": 88.2,
+    "phase": "settle",
+    "motor_id": 49,
+    "motor_epoch": 7,
+    "motor_steps": 784
+  },
+  {
+    "frame": 196,
+    "accepted": true,
+    "angle_deg": 88.2,
+    "phase": "accepted",
+    "motor_id": 49,
+    "motor_epoch": 7,
+    "motor_steps": 784
+  },
+  {
+    "frame": 197,
+    "accepted": false,
+    "angle_deg": 88.2,
+    "phase": "settle",
+    "motor_id": 49,
+    "motor_epoch": 7,
+    "motor_steps": 784
+  },
+  {
+    "frame": 198,
+    "accepted": false,
+    "angle_deg": 90.0,
+    "phase": "settle",
+    "motor_id": 50,
+    "motor_epoch": 7,
+    "motor_steps": 800
+  },
+  {
+    "frame": 199,
+    "accepted": false,
+    "angle_deg": 90.0,
+    "phase": "settle",
+    "motor_id": 50,
+    "motor_epoch": 7,
+    "motor_steps": 800
+  },
+  {
+    "frame": 200,
+    "accepted": true,
+    "angle_deg": 90.0,
+    "phase": "accepted",
+    "motor_id": 50,
+    "motor_epoch": 7,
+    "motor_steps": 800
+  },
+  {
+    "frame": 201,
+    "accepted": false,
+    "angle_deg": 90.0,
+    "phase": "settle",
+    "motor_id": 50,
+    "motor_epoch": 7,
+    "motor_steps": 800
+  },
+  {
+    "frame": 202,
+    "accepted": false,
+    "angle_deg": 91.8,
+    "phase": "settle",
+    "motor_id": 51,
+    "motor_epoch": 7,
+    "motor_steps": 816
+  },
+  {
+    "frame": 203,
+    "accepted": false,
+    "angle_deg": 91.8,
+    "phase": "settle",
+    "motor_id": 51,
+    "motor_epoch": 7,
+    "motor_steps": 816
+  },
+  {
+    "frame": 204,
+    "accepted": true,
+    "angle_deg": 91.8,
+    "phase": "accepted",
+    "motor_id": 51,
+    "motor_epoch": 7,
+    "motor_steps": 816
+  },
+  {
+    "frame": 205,
+    "accepted": false,
+    "angle_deg": 91.8,
+    "phase": "settle",
+    "motor_id": 51,
+    "motor_epoch": 7,
+    "motor_steps": 816
+  },
+  {
+    "frame": 206,
+    "accepted": false,
+    "angle_deg": 93.6,
+    "phase": "settle",
+    "motor_id": 52,
+    "motor_epoch": 7,
+    "motor_steps": 832
+  },
+  {
+    "frame": 207,
+    "accepted": false,
+    "angle_deg": 93.6,
+    "phase": "settle",
+    "motor_id": 52,
+    "motor_epoch": 7,
+    "motor_steps": 832
+  },
+  {
+    "frame": 208,
+    "accepted": true,
+    "angle_deg": 93.6,
+    "phase": "accepted",
+    "motor_id": 52,
+    "motor_epoch": 7,
+    "motor_steps": 832
+  },
+  {
+    "frame": 209,
+    "accepted": false,
+    "angle_deg": 93.6,
+    "phase": "settle",
+    "motor_id": 52,
+    "motor_epoch": 7,
+    "motor_steps": 832
+  },
+  {
+    "frame": 210,
+    "accepted": false,
+    "angle_deg": 95.4,
+    "phase": "settle",
+    "motor_id": 53,
+    "motor_epoch": 7,
+    "motor_steps": 848
+  },
+  {
+    "frame": 211,
+    "accepted": false,
+    "angle_deg": 95.4,
+    "phase": "settle",
+    "motor_id": 53,
+    "motor_epoch": 7,
+    "motor_steps": 848
+  },
+  {
+    "frame": 212,
+    "accepted": true,
+    "angle_deg": 95.4,
+    "phase": "accepted",
+    "motor_id": 53,
+    "motor_epoch": 7,
+    "motor_steps": 848
+  },
+  {
+    "frame": 213,
+    "accepted": false,
+    "angle_deg": 95.4,
+    "phase": "settle",
+    "motor_id": 53,
+    "motor_epoch": 7,
+    "motor_steps": 848
+  },
+  {
+    "frame": 214,
+    "accepted": false,
+    "angle_deg": 97.2,
+    "phase": "settle",
+    "motor_id": 54,
+    "motor_epoch": 7,
+    "motor_steps": 864
+  },
+  {
+    "frame": 215,
+    "accepted": false,
+    "angle_deg": 97.2,
+    "phase": "settle",
+    "motor_id": 54,
+    "motor_epoch": 7,
+    "motor_steps": 864
+  },
+  {
+    "frame": 216,
+    "accepted": true,
+    "angle_deg": 97.2,
+    "phase": "accepted",
+    "motor_id": 54,
+    "motor_epoch": 7,
+    "motor_steps": 864
+  },
+  {
+    "frame": 217,
+    "accepted": false,
+    "angle_deg": 97.2,
+    "phase": "settle",
+    "motor_id": 54,
+    "motor_epoch": 7,
+    "motor_steps": 864
+  },
+  {
+    "frame": 218,
+    "accepted": false,
+    "angle_deg": 99.0,
+    "phase": "settle",
+    "motor_id": 55,
+    "motor_epoch": 7,
+    "motor_steps": 880
+  },
+  {
+    "frame": 219,
+    "accepted": false,
+    "angle_deg": 99.0,
+    "phase": "settle",
+    "motor_id": 55,
+    "motor_epoch": 7,
+    "motor_steps": 880
+  },
+  {
+    "frame": 220,
+    "accepted": true,
+    "angle_deg": 99.0,
+    "phase": "accepted",
+    "motor_id": 55,
+    "motor_epoch": 7,
+    "motor_steps": 880
+  },
+  {
+    "frame": 221,
+    "accepted": false,
+    "angle_deg": 99.0,
+    "phase": "settle",
+    "motor_id": 55,
+    "motor_epoch": 7,
+    "motor_steps": 880
+  },
+  {
+    "frame": 222,
+    "accepted": false,
+    "angle_deg": 100.8,
+    "phase": "settle",
+    "motor_id": 56,
+    "motor_epoch": 7,
+    "motor_steps": 896
+  },
+  {
+    "frame": 223,
+    "accepted": false,
+    "angle_deg": 100.8,
+    "phase": "settle",
+    "motor_id": 56,
+    "motor_epoch": 7,
+    "motor_steps": 896
+  },
+  {
+    "frame": 224,
+    "accepted": true,
+    "angle_deg": 100.8,
+    "phase": "accepted",
+    "motor_id": 56,
+    "motor_epoch": 7,
+    "motor_steps": 896
+  },
+  {
+    "frame": 225,
+    "accepted": false,
+    "angle_deg": 100.8,
+    "phase": "settle",
+    "motor_id": 56,
+    "motor_epoch": 7,
+    "motor_steps": 896
+  },
+  {
+    "frame": 226,
+    "accepted": false,
+    "angle_deg": 102.6,
+    "phase": "settle",
+    "motor_id": 57,
+    "motor_epoch": 7,
+    "motor_steps": 912
+  },
+  {
+    "frame": 227,
+    "accepted": false,
+    "angle_deg": 102.6,
+    "phase": "settle",
+    "motor_id": 57,
+    "motor_epoch": 7,
+    "motor_steps": 912
+  },
+  {
+    "frame": 228,
+    "accepted": true,
+    "angle_deg": 102.6,
+    "phase": "accepted",
+    "motor_id": 57,
+    "motor_epoch": 7,
+    "motor_steps": 912
+  },
+  {
+    "frame": 229,
+    "accepted": false,
+    "angle_deg": 102.6,
+    "phase": "settle",
+    "motor_id": 57,
+    "motor_epoch": 7,
+    "motor_steps": 912
+  },
+  {
+    "frame": 230,
+    "accepted": false,
+    "angle_deg": 104.4,
+    "phase": "settle",
+    "motor_id": 58,
+    "motor_epoch": 7,
+    "motor_steps": 928
+  },
+  {
+    "frame": 231,
+    "accepted": false,
+    "angle_deg": 104.4,
+    "phase": "settle",
+    "motor_id": 58,
+    "motor_epoch": 7,
+    "motor_steps": 928
+  },
+  {
+    "frame": 232,
+    "accepted": true,
+    "angle_deg": 104.4,
+    "phase": "accepted",
+    "motor_id": 58,
+    "motor_epoch": 7,
+    "motor_steps": 928
+  },
+  {
+    "frame": 233,
+    "accepted": false,
+    "angle_deg": 104.4,
+    "phase": "settle",
+    "motor_id": 58,
+    "motor_epoch": 7,
+    "motor_steps": 928
+  },
+  {
+    "frame": 234,
+    "accepted": false,
+    "angle_deg": 106.2,
+    "phase": "settle",
+    "motor_id": 59,
+    "motor_epoch": 7,
+    "motor_steps": 944
+  },
+  {
+    "frame": 235,
+    "accepted": false,
+    "angle_deg": 106.2,
+    "phase": "settle",
+    "motor_id": 59,
+    "motor_epoch": 7,
+    "motor_steps": 944
+  },
+  {
+    "frame": 236,
+    "accepted": true,
+    "angle_deg": 106.2,
+    "phase": "accepted",
+    "motor_id": 59,
+    "motor_epoch": 7,
+    "motor_steps": 944
+  },
+  {
+    "frame": 237,
+    "accepted": false,
+    "angle_deg": 106.2,
+    "phase": "settle",
+    "motor_id": 59,
+    "motor_epoch": 7,
+    "motor_steps": 944
+  },
+  {
+    "frame": 238,
+    "accepted": false,
+    "angle_deg": 108.0,
+    "phase": "settle",
+    "motor_id": 60,
+    "motor_epoch": 7,
+    "motor_steps": 960
+  },
+  {
+    "frame": 239,
+    "accepted": false,
+    "angle_deg": 108.0,
+    "phase": "settle",
+    "motor_id": 60,
+    "motor_epoch": 7,
+    "motor_steps": 960
+  },
+  {
+    "frame": 240,
+    "accepted": true,
+    "angle_deg": 108.0,
+    "phase": "accepted",
+    "motor_id": 60,
+    "motor_epoch": 7,
+    "motor_steps": 960
+  },
+  {
+    "frame": 241,
+    "accepted": false,
+    "angle_deg": 108.0,
+    "phase": "settle",
+    "motor_id": 60,
+    "motor_epoch": 7,
+    "motor_steps": 960
+  },
+  {
+    "frame": 242,
+    "accepted": false,
+    "angle_deg": 109.8,
+    "phase": "settle",
+    "motor_id": 61,
+    "motor_epoch": 7,
+    "motor_steps": 976
+  },
+  {
+    "frame": 243,
+    "accepted": false,
+    "angle_deg": 109.8,
+    "phase": "settle",
+    "motor_id": 61,
+    "motor_epoch": 7,
+    "motor_steps": 976
+  },
+  {
+    "frame": 244,
+    "accepted": true,
+    "angle_deg": 109.8,
+    "phase": "accepted",
+    "motor_id": 61,
+    "motor_epoch": 7,
+    "motor_steps": 976
+  },
+  {
+    "frame": 245,
+    "accepted": false,
+    "angle_deg": 109.8,
+    "phase": "settle",
+    "motor_id": 61,
+    "motor_epoch": 7,
+    "motor_steps": 976
+  },
+  {
+    "frame": 246,
+    "accepted": false,
+    "angle_deg": 111.6,
+    "phase": "settle",
+    "motor_id": 62,
+    "motor_epoch": 7,
+    "motor_steps": 992
+  },
+  {
+    "frame": 247,
+    "accepted": false,
+    "angle_deg": 111.6,
+    "phase": "settle",
+    "motor_id": 62,
+    "motor_epoch": 7,
+    "motor_steps": 992
+  },
+  {
+    "frame": 248,
+    "accepted": true,
+    "angle_deg": 111.6,
+    "phase": "accepted",
+    "motor_id": 62,
+    "motor_epoch": 7,
+    "motor_steps": 992
+  },
+  {
+    "frame": 249,
+    "accepted": false,
+    "angle_deg": 111.6,
+    "phase": "settle",
+    "motor_id": 62,
+    "motor_epoch": 7,
+    "motor_steps": 992
+  },
+  {
+    "frame": 250,
+    "accepted": false,
+    "angle_deg": 113.4,
+    "phase": "settle",
+    "motor_id": 63,
+    "motor_epoch": 7,
+    "motor_steps": 1008
+  },
+  {
+    "frame": 251,
+    "accepted": false,
+    "angle_deg": 113.4,
+    "phase": "settle",
+    "motor_id": 63,
+    "motor_epoch": 7,
+    "motor_steps": 1008
+  },
+  {
+    "frame": 252,
+    "accepted": true,
+    "angle_deg": 113.4,
+    "phase": "accepted",
+    "motor_id": 63,
+    "motor_epoch": 7,
+    "motor_steps": 1008
+  },
+  {
+    "frame": 253,
+    "accepted": false,
+    "angle_deg": 113.4,
+    "phase": "settle",
+    "motor_id": 63,
+    "motor_epoch": 7,
+    "motor_steps": 1008
+  },
+  {
+    "frame": 254,
+    "accepted": false,
+    "angle_deg": 115.2,
+    "phase": "settle",
+    "motor_id": 64,
+    "motor_epoch": 7,
+    "motor_steps": 1024
+  },
+  {
+    "frame": 255,
+    "accepted": false,
+    "angle_deg": 115.2,
+    "phase": "settle",
+    "motor_id": 64,
+    "motor_epoch": 7,
+    "motor_steps": 1024
+  },
+  {
+    "frame": 256,
+    "accepted": true,
+    "angle_deg": 115.2,
+    "phase": "accepted",
+    "motor_id": 64,
+    "motor_epoch": 7,
+    "motor_steps": 1024
+  },
+  {
+    "frame": 257,
+    "accepted": false,
+    "angle_deg": 115.2,
+    "phase": "settle",
+    "motor_id": 64,
+    "motor_epoch": 7,
+    "motor_steps": 1024
+  },
+  {
+    "frame": 258,
+    "accepted": false,
+    "angle_deg": 117.0,
+    "phase": "settle",
+    "motor_id": 65,
+    "motor_epoch": 7,
+    "motor_steps": 1040
+  },
+  {
+    "frame": 259,
+    "accepted": false,
+    "angle_deg": 117.0,
+    "phase": "settle",
+    "motor_id": 65,
+    "motor_epoch": 7,
+    "motor_steps": 1040
+  },
+  {
+    "frame": 260,
+    "accepted": true,
+    "angle_deg": 117.0,
+    "phase": "accepted",
+    "motor_id": 65,
+    "motor_epoch": 7,
+    "motor_steps": 1040
+  },
+  {
+    "frame": 261,
+    "accepted": false,
+    "angle_deg": 117.0,
+    "phase": "settle",
+    "motor_id": 65,
+    "motor_epoch": 7,
+    "motor_steps": 1040
+  },
+  {
+    "frame": 262,
+    "accepted": false,
+    "angle_deg": 118.8,
+    "phase": "settle",
+    "motor_id": 66,
+    "motor_epoch": 7,
+    "motor_steps": 1056
+  },
+  {
+    "frame": 263,
+    "accepted": false,
+    "angle_deg": 118.8,
+    "phase": "settle",
+    "motor_id": 66,
+    "motor_epoch": 7,
+    "motor_steps": 1056
+  },
+  {
+    "frame": 264,
+    "accepted": true,
+    "angle_deg": 118.8,
+    "phase": "accepted",
+    "motor_id": 66,
+    "motor_epoch": 7,
+    "motor_steps": 1056
+  },
+  {
+    "frame": 265,
+    "accepted": false,
+    "angle_deg": 118.8,
+    "phase": "settle",
+    "motor_id": 66,
+    "motor_epoch": 7,
+    "motor_steps": 1056
+  },
+  {
+    "frame": 266,
+    "accepted": false,
+    "angle_deg": 120.6,
+    "phase": "settle",
+    "motor_id": 67,
+    "motor_epoch": 7,
+    "motor_steps": 1072
+  },
+  {
+    "frame": 267,
+    "accepted": false,
+    "angle_deg": 120.6,
+    "phase": "settle",
+    "motor_id": 67,
+    "motor_epoch": 7,
+    "motor_steps": 1072
+  },
+  {
+    "frame": 268,
+    "accepted": true,
+    "angle_deg": 120.6,
+    "phase": "accepted",
+    "motor_id": 67,
+    "motor_epoch": 7,
+    "motor_steps": 1072
+  },
+  {
+    "frame": 269,
+    "accepted": false,
+    "angle_deg": 120.6,
+    "phase": "settle",
+    "motor_id": 67,
+    "motor_epoch": 7,
+    "motor_steps": 1072
+  },
+  {
+    "frame": 270,
+    "accepted": false,
+    "angle_deg": 122.4,
+    "phase": "settle",
+    "motor_id": 68,
+    "motor_epoch": 7,
+    "motor_steps": 1088
+  },
+  {
+    "frame": 271,
+    "accepted": false,
+    "angle_deg": 122.4,
+    "phase": "settle",
+    "motor_id": 68,
+    "motor_epoch": 7,
+    "motor_steps": 1088
+  },
+  {
+    "frame": 272,
+    "accepted": true,
+    "angle_deg": 122.4,
+    "phase": "accepted",
+    "motor_id": 68,
+    "motor_epoch": 7,
+    "motor_steps": 1088
+  },
+  {
+    "frame": 273,
+    "accepted": false,
+    "angle_deg": 122.4,
+    "phase": "settle",
+    "motor_id": 68,
+    "motor_epoch": 7,
+    "motor_steps": 1088
+  },
+  {
+    "frame": 274,
+    "accepted": false,
+    "angle_deg": 124.2,
+    "phase": "settle",
+    "motor_id": 69,
+    "motor_epoch": 7,
+    "motor_steps": 1104
+  },
+  {
+    "frame": 275,
+    "accepted": false,
+    "angle_deg": 124.2,
+    "phase": "settle",
+    "motor_id": 69,
+    "motor_epoch": 7,
+    "motor_steps": 1104
+  },
+  {
+    "frame": 276,
+    "accepted": true,
+    "angle_deg": 124.2,
+    "phase": "accepted",
+    "motor_id": 69,
+    "motor_epoch": 7,
+    "motor_steps": 1104
+  },
+  {
+    "frame": 277,
+    "accepted": false,
+    "angle_deg": 124.2,
+    "phase": "settle",
+    "motor_id": 69,
+    "motor_epoch": 7,
+    "motor_steps": 1104
+  },
+  {
+    "frame": 278,
+    "accepted": false,
+    "angle_deg": 126.0,
+    "phase": "settle",
+    "motor_id": 70,
+    "motor_epoch": 7,
+    "motor_steps": 1120
+  },
+  {
+    "frame": 279,
+    "accepted": false,
+    "angle_deg": 126.0,
+    "phase": "settle",
+    "motor_id": 70,
+    "motor_epoch": 7,
+    "motor_steps": 1120
+  },
+  {
+    "frame": 280,
+    "accepted": true,
+    "angle_deg": 126.0,
+    "phase": "accepted",
+    "motor_id": 70,
+    "motor_epoch": 7,
+    "motor_steps": 1120
+  },
+  {
+    "frame": 281,
+    "accepted": false,
+    "angle_deg": 126.0,
+    "phase": "settle",
+    "motor_id": 70,
+    "motor_epoch": 7,
+    "motor_steps": 1120
+  },
+  {
+    "frame": 282,
+    "accepted": false,
+    "angle_deg": 127.8,
+    "phase": "settle",
+    "motor_id": 71,
+    "motor_epoch": 7,
+    "motor_steps": 1136
+  },
+  {
+    "frame": 283,
+    "accepted": false,
+    "angle_deg": 127.8,
+    "phase": "settle",
+    "motor_id": 71,
+    "motor_epoch": 7,
+    "motor_steps": 1136
+  },
+  {
+    "frame": 284,
+    "accepted": true,
+    "angle_deg": 127.8,
+    "phase": "accepted",
+    "motor_id": 71,
+    "motor_epoch": 7,
+    "motor_steps": 1136
+  },
+  {
+    "frame": 285,
+    "accepted": false,
+    "angle_deg": 127.8,
+    "phase": "settle",
+    "motor_id": 71,
+    "motor_epoch": 7,
+    "motor_steps": 1136
+  },
+  {
+    "frame": 286,
+    "accepted": false,
+    "angle_deg": 129.6,
+    "phase": "settle",
+    "motor_id": 72,
+    "motor_epoch": 7,
+    "motor_steps": 1152
+  },
+  {
+    "frame": 287,
+    "accepted": false,
+    "angle_deg": 129.6,
+    "phase": "settle",
+    "motor_id": 72,
+    "motor_epoch": 7,
+    "motor_steps": 1152
+  },
+  {
+    "frame": 288,
+    "accepted": true,
+    "angle_deg": 129.6,
+    "phase": "accepted",
+    "motor_id": 72,
+    "motor_epoch": 7,
+    "motor_steps": 1152
+  },
+  {
+    "frame": 289,
+    "accepted": false,
+    "angle_deg": 129.6,
+    "phase": "settle",
+    "motor_id": 72,
+    "motor_epoch": 7,
+    "motor_steps": 1152
+  },
+  {
+    "frame": 290,
+    "accepted": false,
+    "angle_deg": 131.4,
+    "phase": "settle",
+    "motor_id": 73,
+    "motor_epoch": 7,
+    "motor_steps": 1168
+  },
+  {
+    "frame": 291,
+    "accepted": false,
+    "angle_deg": 131.4,
+    "phase": "settle",
+    "motor_id": 73,
+    "motor_epoch": 7,
+    "motor_steps": 1168
+  },
+  {
+    "frame": 292,
+    "accepted": true,
+    "angle_deg": 131.4,
+    "phase": "accepted",
+    "motor_id": 73,
+    "motor_epoch": 7,
+    "motor_steps": 1168
+  },
+  {
+    "frame": 293,
+    "accepted": false,
+    "angle_deg": 131.4,
+    "phase": "settle",
+    "motor_id": 73,
+    "motor_epoch": 7,
+    "motor_steps": 1168
+  },
+  {
+    "frame": 294,
+    "accepted": false,
+    "angle_deg": 133.2,
+    "phase": "settle",
+    "motor_id": 74,
+    "motor_epoch": 7,
+    "motor_steps": 1184
+  },
+  {
+    "frame": 295,
+    "accepted": false,
+    "angle_deg": 133.2,
+    "phase": "settle",
+    "motor_id": 74,
+    "motor_epoch": 7,
+    "motor_steps": 1184
+  },
+  {
+    "frame": 296,
+    "accepted": true,
+    "angle_deg": 133.2,
+    "phase": "accepted",
+    "motor_id": 74,
+    "motor_epoch": 7,
+    "motor_steps": 1184
+  },
+  {
+    "frame": 297,
+    "accepted": false,
+    "angle_deg": 133.2,
+    "phase": "settle",
+    "motor_id": 74,
+    "motor_epoch": 7,
+    "motor_steps": 1184
+  },
+  {
+    "frame": 298,
+    "accepted": false,
+    "angle_deg": 135.0,
+    "phase": "settle",
+    "motor_id": 75,
+    "motor_epoch": 7,
+    "motor_steps": 1200
+  },
+  {
+    "frame": 299,
+    "accepted": false,
+    "angle_deg": 135.0,
+    "phase": "settle",
+    "motor_id": 75,
+    "motor_epoch": 7,
+    "motor_steps": 1200
+  },
+  {
+    "frame": 300,
+    "accepted": true,
+    "angle_deg": 135.0,
+    "phase": "accepted",
+    "motor_id": 75,
+    "motor_epoch": 7,
+    "motor_steps": 1200
+  },
+  {
+    "frame": 301,
+    "accepted": false,
+    "angle_deg": 135.0,
+    "phase": "settle",
+    "motor_id": 75,
+    "motor_epoch": 7,
+    "motor_steps": 1200
+  },
+  {
+    "frame": 302,
+    "accepted": false,
+    "angle_deg": 136.8,
+    "phase": "settle",
+    "motor_id": 76,
+    "motor_epoch": 7,
+    "motor_steps": 1216
+  },
+  {
+    "frame": 303,
+    "accepted": false,
+    "angle_deg": 136.8,
+    "phase": "settle",
+    "motor_id": 76,
+    "motor_epoch": 7,
+    "motor_steps": 1216
+  },
+  {
+    "frame": 304,
+    "accepted": true,
+    "angle_deg": 136.8,
+    "phase": "accepted",
+    "motor_id": 76,
+    "motor_epoch": 7,
+    "motor_steps": 1216
+  },
+  {
+    "frame": 305,
+    "accepted": false,
+    "angle_deg": 136.8,
+    "phase": "settle",
+    "motor_id": 76,
+    "motor_epoch": 7,
+    "motor_steps": 1216
+  },
+  {
+    "frame": 306,
+    "accepted": false,
+    "angle_deg": 138.6,
+    "phase": "settle",
+    "motor_id": 77,
+    "motor_epoch": 7,
+    "motor_steps": 1232
+  },
+  {
+    "frame": 307,
+    "accepted": false,
+    "angle_deg": 138.6,
+    "phase": "settle",
+    "motor_id": 77,
+    "motor_epoch": 7,
+    "motor_steps": 1232
+  },
+  {
+    "frame": 308,
+    "accepted": true,
+    "angle_deg": 138.6,
+    "phase": "accepted",
+    "motor_id": 77,
+    "motor_epoch": 7,
+    "motor_steps": 1232
+  },
+  {
+    "frame": 309,
+    "accepted": false,
+    "angle_deg": 138.6,
+    "phase": "settle",
+    "motor_id": 77,
+    "motor_epoch": 7,
+    "motor_steps": 1232
+  },
+  {
+    "frame": 310,
+    "accepted": false,
+    "angle_deg": 140.4,
+    "phase": "settle",
+    "motor_id": 78,
+    "motor_epoch": 7,
+    "motor_steps": 1248
+  },
+  {
+    "frame": 311,
+    "accepted": false,
+    "angle_deg": 140.4,
+    "phase": "settle",
+    "motor_id": 78,
+    "motor_epoch": 7,
+    "motor_steps": 1248
+  },
+  {
+    "frame": 312,
+    "accepted": true,
+    "angle_deg": 140.4,
+    "phase": "accepted",
+    "motor_id": 78,
+    "motor_epoch": 7,
+    "motor_steps": 1248
+  },
+  {
+    "frame": 313,
+    "accepted": false,
+    "angle_deg": 140.4,
+    "phase": "settle",
+    "motor_id": 78,
+    "motor_epoch": 7,
+    "motor_steps": 1248
+  },
+  {
+    "frame": 314,
+    "accepted": false,
+    "angle_deg": 142.2,
+    "phase": "settle",
+    "motor_id": 79,
+    "motor_epoch": 7,
+    "motor_steps": 1264
+  },
+  {
+    "frame": 315,
+    "accepted": false,
+    "angle_deg": 142.2,
+    "phase": "settle",
+    "motor_id": 79,
+    "motor_epoch": 7,
+    "motor_steps": 1264
+  },
+  {
+    "frame": 316,
+    "accepted": true,
+    "angle_deg": 142.2,
+    "phase": "accepted",
+    "motor_id": 79,
+    "motor_epoch": 7,
+    "motor_steps": 1264
+  },
+  {
+    "frame": 317,
+    "accepted": false,
+    "angle_deg": 142.2,
+    "phase": "settle",
+    "motor_id": 79,
+    "motor_epoch": 7,
+    "motor_steps": 1264
+  },
+  {
+    "frame": 318,
+    "accepted": false,
+    "angle_deg": 144.0,
+    "phase": "settle",
+    "motor_id": 80,
+    "motor_epoch": 7,
+    "motor_steps": 1280
+  },
+  {
+    "frame": 319,
+    "accepted": false,
+    "angle_deg": 144.0,
+    "phase": "settle",
+    "motor_id": 80,
+    "motor_epoch": 7,
+    "motor_steps": 1280
+  },
+  {
+    "frame": 320,
+    "accepted": true,
+    "angle_deg": 144.0,
+    "phase": "accepted",
+    "motor_id": 80,
+    "motor_epoch": 7,
+    "motor_steps": 1280
+  },
+  {
+    "frame": 321,
+    "accepted": false,
+    "angle_deg": 144.0,
+    "phase": "settle",
+    "motor_id": 80,
+    "motor_epoch": 7,
+    "motor_steps": 1280
+  },
+  {
+    "frame": 322,
+    "accepted": false,
+    "angle_deg": 145.8,
+    "phase": "settle",
+    "motor_id": 81,
+    "motor_epoch": 7,
+    "motor_steps": 1296
+  },
+  {
+    "frame": 323,
+    "accepted": false,
+    "angle_deg": 145.8,
+    "phase": "settle",
+    "motor_id": 81,
+    "motor_epoch": 7,
+    "motor_steps": 1296
+  },
+  {
+    "frame": 324,
+    "accepted": true,
+    "angle_deg": 145.8,
+    "phase": "accepted",
+    "motor_id": 81,
+    "motor_epoch": 7,
+    "motor_steps": 1296
+  },
+  {
+    "frame": 325,
+    "accepted": false,
+    "angle_deg": 145.8,
+    "phase": "settle",
+    "motor_id": 81,
+    "motor_epoch": 7,
+    "motor_steps": 1296
+  },
+  {
+    "frame": 326,
+    "accepted": false,
+    "angle_deg": 147.6,
+    "phase": "settle",
+    "motor_id": 82,
+    "motor_epoch": 7,
+    "motor_steps": 1312
+  },
+  {
+    "frame": 327,
+    "accepted": false,
+    "angle_deg": 147.6,
+    "phase": "settle",
+    "motor_id": 82,
+    "motor_epoch": 7,
+    "motor_steps": 1312
+  },
+  {
+    "frame": 328,
+    "accepted": true,
+    "angle_deg": 147.6,
+    "phase": "accepted",
+    "motor_id": 82,
+    "motor_epoch": 7,
+    "motor_steps": 1312
+  },
+  {
+    "frame": 329,
+    "accepted": false,
+    "angle_deg": 147.6,
+    "phase": "settle",
+    "motor_id": 82,
+    "motor_epoch": 7,
+    "motor_steps": 1312
+  },
+  {
+    "frame": 330,
+    "accepted": false,
+    "angle_deg": 149.4,
+    "phase": "settle",
+    "motor_id": 83,
+    "motor_epoch": 7,
+    "motor_steps": 1328
+  },
+  {
+    "frame": 331,
+    "accepted": false,
+    "angle_deg": 149.4,
+    "phase": "settle",
+    "motor_id": 83,
+    "motor_epoch": 7,
+    "motor_steps": 1328
+  },
+  {
+    "frame": 332,
+    "accepted": true,
+    "angle_deg": 149.4,
+    "phase": "accepted",
+    "motor_id": 83,
+    "motor_epoch": 7,
+    "motor_steps": 1328
+  },
+  {
+    "frame": 333,
+    "accepted": false,
+    "angle_deg": 149.4,
+    "phase": "settle",
+    "motor_id": 83,
+    "motor_epoch": 7,
+    "motor_steps": 1328
+  },
+  {
+    "frame": 334,
+    "accepted": false,
+    "angle_deg": 151.2,
+    "phase": "settle",
+    "motor_id": 84,
+    "motor_epoch": 7,
+    "motor_steps": 1344
+  },
+  {
+    "frame": 335,
+    "accepted": false,
+    "angle_deg": 151.2,
+    "phase": "settle",
+    "motor_id": 84,
+    "motor_epoch": 7,
+    "motor_steps": 1344
+  },
+  {
+    "frame": 336,
+    "accepted": true,
+    "angle_deg": 151.2,
+    "phase": "accepted",
+    "motor_id": 84,
+    "motor_epoch": 7,
+    "motor_steps": 1344
+  },
+  {
+    "frame": 337,
+    "accepted": false,
+    "angle_deg": 151.2,
+    "phase": "settle",
+    "motor_id": 84,
+    "motor_epoch": 7,
+    "motor_steps": 1344
+  },
+  {
+    "frame": 338,
+    "accepted": false,
+    "angle_deg": 153.0,
+    "phase": "settle",
+    "motor_id": 85,
+    "motor_epoch": 7,
+    "motor_steps": 1360
+  },
+  {
+    "frame": 339,
+    "accepted": false,
+    "angle_deg": 153.0,
+    "phase": "settle",
+    "motor_id": 85,
+    "motor_epoch": 7,
+    "motor_steps": 1360
+  },
+  {
+    "frame": 340,
+    "accepted": true,
+    "angle_deg": 153.0,
+    "phase": "accepted",
+    "motor_id": 85,
+    "motor_epoch": 7,
+    "motor_steps": 1360
+  },
+  {
+    "frame": 341,
+    "accepted": false,
+    "angle_deg": 153.0,
+    "phase": "settle",
+    "motor_id": 85,
+    "motor_epoch": 7,
+    "motor_steps": 1360
+  },
+  {
+    "frame": 342,
+    "accepted": false,
+    "angle_deg": 154.8,
+    "phase": "settle",
+    "motor_id": 86,
+    "motor_epoch": 7,
+    "motor_steps": 1376
+  },
+  {
+    "frame": 343,
+    "accepted": false,
+    "angle_deg": 154.8,
+    "phase": "settle",
+    "motor_id": 86,
+    "motor_epoch": 7,
+    "motor_steps": 1376
+  },
+  {
+    "frame": 344,
+    "accepted": true,
+    "angle_deg": 154.8,
+    "phase": "accepted",
+    "motor_id": 86,
+    "motor_epoch": 7,
+    "motor_steps": 1376
+  },
+  {
+    "frame": 345,
+    "accepted": false,
+    "angle_deg": 154.8,
+    "phase": "settle",
+    "motor_id": 86,
+    "motor_epoch": 7,
+    "motor_steps": 1376
+  },
+  {
+    "frame": 346,
+    "accepted": false,
+    "angle_deg": 156.6,
+    "phase": "settle",
+    "motor_id": 87,
+    "motor_epoch": 7,
+    "motor_steps": 1392
+  },
+  {
+    "frame": 347,
+    "accepted": false,
+    "angle_deg": 156.6,
+    "phase": "settle",
+    "motor_id": 87,
+    "motor_epoch": 7,
+    "motor_steps": 1392
+  },
+  {
+    "frame": 348,
+    "accepted": true,
+    "angle_deg": 156.6,
+    "phase": "accepted",
+    "motor_id": 87,
+    "motor_epoch": 7,
+    "motor_steps": 1392
+  },
+  {
+    "frame": 349,
+    "accepted": false,
+    "angle_deg": 156.6,
+    "phase": "settle",
+    "motor_id": 87,
+    "motor_epoch": 7,
+    "motor_steps": 1392
+  },
+  {
+    "frame": 350,
+    "accepted": false,
+    "angle_deg": 158.4,
+    "phase": "settle",
+    "motor_id": 88,
+    "motor_epoch": 7,
+    "motor_steps": 1408
+  },
+  {
+    "frame": 351,
+    "accepted": false,
+    "angle_deg": 158.4,
+    "phase": "settle",
+    "motor_id": 88,
+    "motor_epoch": 7,
+    "motor_steps": 1408
+  },
+  {
+    "frame": 352,
+    "accepted": true,
+    "angle_deg": 158.4,
+    "phase": "accepted",
+    "motor_id": 88,
+    "motor_epoch": 7,
+    "motor_steps": 1408
+  },
+  {
+    "frame": 353,
+    "accepted": false,
+    "angle_deg": 158.4,
+    "phase": "settle",
+    "motor_id": 88,
+    "motor_epoch": 7,
+    "motor_steps": 1408
+  },
+  {
+    "frame": 354,
+    "accepted": false,
+    "angle_deg": 160.2,
+    "phase": "settle",
+    "motor_id": 89,
+    "motor_epoch": 7,
+    "motor_steps": 1424
+  },
+  {
+    "frame": 355,
+    "accepted": false,
+    "angle_deg": 160.2,
+    "phase": "settle",
+    "motor_id": 89,
+    "motor_epoch": 7,
+    "motor_steps": 1424
+  },
+  {
+    "frame": 356,
+    "accepted": true,
+    "angle_deg": 160.2,
+    "phase": "accepted",
+    "motor_id": 89,
+    "motor_epoch": 7,
+    "motor_steps": 1424
+  },
+  {
+    "frame": 357,
+    "accepted": false,
+    "angle_deg": 160.2,
+    "phase": "settle",
+    "motor_id": 89,
+    "motor_epoch": 7,
+    "motor_steps": 1424
+  },
+  {
+    "frame": 358,
+    "accepted": false,
+    "angle_deg": 162.0,
+    "phase": "settle",
+    "motor_id": 90,
+    "motor_epoch": 7,
+    "motor_steps": 1440
+  },
+  {
+    "frame": 359,
+    "accepted": false,
+    "angle_deg": 162.0,
+    "phase": "settle",
+    "motor_id": 90,
+    "motor_epoch": 7,
+    "motor_steps": 1440
+  },
+  {
+    "frame": 360,
+    "accepted": true,
+    "angle_deg": 162.0,
+    "phase": "accepted",
+    "motor_id": 90,
+    "motor_epoch": 7,
+    "motor_steps": 1440
+  },
+  {
+    "frame": 361,
+    "accepted": false,
+    "angle_deg": 162.0,
+    "phase": "settle",
+    "motor_id": 90,
+    "motor_epoch": 7,
+    "motor_steps": 1440
+  },
+  {
+    "frame": 362,
+    "accepted": false,
+    "angle_deg": 163.8,
+    "phase": "settle",
+    "motor_id": 91,
+    "motor_epoch": 7,
+    "motor_steps": 1456
+  },
+  {
+    "frame": 363,
+    "accepted": false,
+    "angle_deg": 163.8,
+    "phase": "settle",
+    "motor_id": 91,
+    "motor_epoch": 7,
+    "motor_steps": 1456
+  },
+  {
+    "frame": 364,
+    "accepted": true,
+    "angle_deg": 163.8,
+    "phase": "accepted",
+    "motor_id": 91,
+    "motor_epoch": 7,
+    "motor_steps": 1456
+  },
+  {
+    "frame": 365,
+    "accepted": false,
+    "angle_deg": 163.8,
+    "phase": "settle",
+    "motor_id": 91,
+    "motor_epoch": 7,
+    "motor_steps": 1456
+  },
+  {
+    "frame": 366,
+    "accepted": false,
+    "angle_deg": 165.6,
+    "phase": "settle",
+    "motor_id": 92,
+    "motor_epoch": 7,
+    "motor_steps": 1472
+  },
+  {
+    "frame": 367,
+    "accepted": false,
+    "angle_deg": 165.6,
+    "phase": "settle",
+    "motor_id": 92,
+    "motor_epoch": 7,
+    "motor_steps": 1472
+  },
+  {
+    "frame": 368,
+    "accepted": true,
+    "angle_deg": 165.6,
+    "phase": "accepted",
+    "motor_id": 92,
+    "motor_epoch": 7,
+    "motor_steps": 1472
+  },
+  {
+    "frame": 369,
+    "accepted": false,
+    "angle_deg": 165.6,
+    "phase": "settle",
+    "motor_id": 92,
+    "motor_epoch": 7,
+    "motor_steps": 1472
+  },
+  {
+    "frame": 370,
+    "accepted": false,
+    "angle_deg": 167.4,
+    "phase": "settle",
+    "motor_id": 93,
+    "motor_epoch": 7,
+    "motor_steps": 1488
+  },
+  {
+    "frame": 371,
+    "accepted": false,
+    "angle_deg": 167.4,
+    "phase": "settle",
+    "motor_id": 93,
+    "motor_epoch": 7,
+    "motor_steps": 1488
+  },
+  {
+    "frame": 372,
+    "accepted": true,
+    "angle_deg": 167.4,
+    "phase": "accepted",
+    "motor_id": 93,
+    "motor_epoch": 7,
+    "motor_steps": 1488
+  },
+  {
+    "frame": 373,
+    "accepted": false,
+    "angle_deg": 167.4,
+    "phase": "settle",
+    "motor_id": 93,
+    "motor_epoch": 7,
+    "motor_steps": 1488
+  },
+  {
+    "frame": 374,
+    "accepted": false,
+    "angle_deg": 169.2,
+    "phase": "settle",
+    "motor_id": 94,
+    "motor_epoch": 7,
+    "motor_steps": 1504
+  },
+  {
+    "frame": 375,
+    "accepted": false,
+    "angle_deg": 169.2,
+    "phase": "settle",
+    "motor_id": 94,
+    "motor_epoch": 7,
+    "motor_steps": 1504
+  },
+  {
+    "frame": 376,
+    "accepted": true,
+    "angle_deg": 169.2,
+    "phase": "accepted",
+    "motor_id": 94,
+    "motor_epoch": 7,
+    "motor_steps": 1504
+  },
+  {
+    "frame": 377,
+    "accepted": false,
+    "angle_deg": 169.2,
+    "phase": "settle",
+    "motor_id": 94,
+    "motor_epoch": 7,
+    "motor_steps": 1504
+  },
+  {
+    "frame": 378,
+    "accepted": false,
+    "angle_deg": 171.0,
+    "phase": "settle",
+    "motor_id": 95,
+    "motor_epoch": 7,
+    "motor_steps": 1520
+  },
+  {
+    "frame": 379,
+    "accepted": false,
+    "angle_deg": 171.0,
+    "phase": "settle",
+    "motor_id": 95,
+    "motor_epoch": 7,
+    "motor_steps": 1520
+  },
+  {
+    "frame": 380,
+    "accepted": true,
+    "angle_deg": 171.0,
+    "phase": "accepted",
+    "motor_id": 95,
+    "motor_epoch": 7,
+    "motor_steps": 1520
+  },
+  {
+    "frame": 381,
+    "accepted": false,
+    "angle_deg": 171.0,
+    "phase": "settle",
+    "motor_id": 95,
+    "motor_epoch": 7,
+    "motor_steps": 1520
+  },
+  {
+    "frame": 382,
+    "accepted": false,
+    "angle_deg": 172.8,
+    "phase": "settle",
+    "motor_id": 96,
+    "motor_epoch": 7,
+    "motor_steps": 1536
+  },
+  {
+    "frame": 383,
+    "accepted": false,
+    "angle_deg": 172.8,
+    "phase": "settle",
+    "motor_id": 96,
+    "motor_epoch": 7,
+    "motor_steps": 1536
+  },
+  {
+    "frame": 384,
+    "accepted": true,
+    "angle_deg": 172.8,
+    "phase": "accepted",
+    "motor_id": 96,
+    "motor_epoch": 7,
+    "motor_steps": 1536
+  },
+  {
+    "frame": 385,
+    "accepted": false,
+    "angle_deg": 172.8,
+    "phase": "settle",
+    "motor_id": 96,
+    "motor_epoch": 7,
+    "motor_steps": 1536
+  },
+  {
+    "frame": 386,
+    "accepted": false,
+    "angle_deg": 174.6,
+    "phase": "settle",
+    "motor_id": 97,
+    "motor_epoch": 7,
+    "motor_steps": 1552
+  },
+  {
+    "frame": 387,
+    "accepted": false,
+    "angle_deg": 174.6,
+    "phase": "settle",
+    "motor_id": 97,
+    "motor_epoch": 7,
+    "motor_steps": 1552
+  },
+  {
+    "frame": 388,
+    "accepted": true,
+    "angle_deg": 174.6,
+    "phase": "accepted",
+    "motor_id": 97,
+    "motor_epoch": 7,
+    "motor_steps": 1552
+  },
+  {
+    "frame": 389,
+    "accepted": false,
+    "angle_deg": 174.6,
+    "phase": "settle",
+    "motor_id": 97,
+    "motor_epoch": 7,
+    "motor_steps": 1552
+  },
+  {
+    "frame": 390,
+    "accepted": false,
+    "angle_deg": 176.4,
+    "phase": "settle",
+    "motor_id": 98,
+    "motor_epoch": 7,
+    "motor_steps": 1568
+  },
+  {
+    "frame": 391,
+    "accepted": false,
+    "angle_deg": 176.4,
+    "phase": "settle",
+    "motor_id": 98,
+    "motor_epoch": 7,
+    "motor_steps": 1568
+  },
+  {
+    "frame": 392,
+    "accepted": true,
+    "angle_deg": 176.4,
+    "phase": "accepted",
+    "motor_id": 98,
+    "motor_epoch": 7,
+    "motor_steps": 1568
+  },
+  {
+    "frame": 393,
+    "accepted": false,
+    "angle_deg": 176.4,
+    "phase": "settle",
+    "motor_id": 98,
+    "motor_epoch": 7,
+    "motor_steps": 1568
+  },
+  {
+    "frame": 394,
+    "accepted": false,
+    "angle_deg": 178.2,
+    "phase": "settle",
+    "motor_id": 99,
+    "motor_epoch": 7,
+    "motor_steps": 1584
+  },
+  {
+    "frame": 395,
+    "accepted": false,
+    "angle_deg": 178.2,
+    "phase": "settle",
+    "motor_id": 99,
+    "motor_epoch": 7,
+    "motor_steps": 1584
+  },
+  {
+    "frame": 396,
+    "accepted": true,
+    "angle_deg": 178.2,
+    "phase": "accepted",
+    "motor_id": 99,
+    "motor_epoch": 7,
+    "motor_steps": 1584
+  },
+  {
+    "frame": 397,
+    "accepted": false,
+    "angle_deg": 178.2,
+    "phase": "settle",
+    "motor_id": 99,
+    "motor_epoch": 7,
+    "motor_steps": 1584
+  },
+  {
+    "frame": 398,
+    "accepted": false,
+    "angle_deg": 180.0,
+    "phase": "settle",
+    "motor_id": 100,
+    "motor_epoch": 7,
+    "motor_steps": 1600
+  },
+  {
+    "frame": 399,
+    "accepted": false,
+    "angle_deg": 180.0,
+    "phase": "settle",
+    "motor_id": 100,
+    "motor_epoch": 7,
+    "motor_steps": 1600
+  },
+  {
+    "frame": 400,
+    "accepted": true,
+    "angle_deg": 180.0,
+    "phase": "accepted",
+    "motor_id": 100,
+    "motor_epoch": 7,
+    "motor_steps": 1600
+  },
+  {
+    "frame": 401,
+    "accepted": false,
+    "angle_deg": 180.0,
+    "phase": "settle",
+    "motor_id": 100,
+    "motor_epoch": 7,
+    "motor_steps": 1600
+  },
+  {
+    "frame": 402,
+    "accepted": false,
+    "angle_deg": 181.8,
+    "phase": "settle",
+    "motor_id": 101,
+    "motor_epoch": 7,
+    "motor_steps": 1616
+  },
+  {
+    "frame": 403,
+    "accepted": false,
+    "angle_deg": 181.8,
+    "phase": "settle",
+    "motor_id": 101,
+    "motor_epoch": 7,
+    "motor_steps": 1616
+  },
+  {
+    "frame": 404,
+    "accepted": true,
+    "angle_deg": 181.8,
+    "phase": "accepted",
+    "motor_id": 101,
+    "motor_epoch": 7,
+    "motor_steps": 1616
+  },
+  {
+    "frame": 405,
+    "accepted": false,
+    "angle_deg": 181.8,
+    "phase": "settle",
+    "motor_id": 101,
+    "motor_epoch": 7,
+    "motor_steps": 1616
+  },
+  {
+    "frame": 406,
+    "accepted": false,
+    "angle_deg": 183.6,
+    "phase": "settle",
+    "motor_id": 102,
+    "motor_epoch": 7,
+    "motor_steps": 1632
+  },
+  {
+    "frame": 407,
+    "accepted": false,
+    "angle_deg": 183.6,
+    "phase": "settle",
+    "motor_id": 102,
+    "motor_epoch": 7,
+    "motor_steps": 1632
+  },
+  {
+    "frame": 408,
+    "accepted": true,
+    "angle_deg": 183.6,
+    "phase": "accepted",
+    "motor_id": 102,
+    "motor_epoch": 7,
+    "motor_steps": 1632
+  },
+  {
+    "frame": 409,
+    "accepted": false,
+    "angle_deg": 183.6,
+    "phase": "settle",
+    "motor_id": 102,
+    "motor_epoch": 7,
+    "motor_steps": 1632
+  },
+  {
+    "frame": 410,
+    "accepted": false,
+    "angle_deg": 185.4,
+    "phase": "settle",
+    "motor_id": 103,
+    "motor_epoch": 7,
+    "motor_steps": 1648
+  },
+  {
+    "frame": 411,
+    "accepted": false,
+    "angle_deg": 185.4,
+    "phase": "settle",
+    "motor_id": 103,
+    "motor_epoch": 7,
+    "motor_steps": 1648
+  },
+  {
+    "frame": 412,
+    "accepted": true,
+    "angle_deg": 185.4,
+    "phase": "accepted",
+    "motor_id": 103,
+    "motor_epoch": 7,
+    "motor_steps": 1648
+  },
+  {
+    "frame": 413,
+    "accepted": false,
+    "angle_deg": 185.4,
+    "phase": "settle",
+    "motor_id": 103,
+    "motor_epoch": 7,
+    "motor_steps": 1648
+  },
+  {
+    "frame": 414,
+    "accepted": false,
+    "angle_deg": 187.2,
+    "phase": "settle",
+    "motor_id": 104,
+    "motor_epoch": 7,
+    "motor_steps": 1664
+  },
+  {
+    "frame": 415,
+    "accepted": false,
+    "angle_deg": 187.2,
+    "phase": "settle",
+    "motor_id": 104,
+    "motor_epoch": 7,
+    "motor_steps": 1664
+  },
+  {
+    "frame": 416,
+    "accepted": true,
+    "angle_deg": 187.2,
+    "phase": "accepted",
+    "motor_id": 104,
+    "motor_epoch": 7,
+    "motor_steps": 1664
+  },
+  {
+    "frame": 417,
+    "accepted": false,
+    "angle_deg": 187.2,
+    "phase": "settle",
+    "motor_id": 104,
+    "motor_epoch": 7,
+    "motor_steps": 1664
+  },
+  {
+    "frame": 418,
+    "accepted": false,
+    "angle_deg": 189.0,
+    "phase": "settle",
+    "motor_id": 105,
+    "motor_epoch": 7,
+    "motor_steps": 1680
+  },
+  {
+    "frame": 419,
+    "accepted": false,
+    "angle_deg": 189.0,
+    "phase": "settle",
+    "motor_id": 105,
+    "motor_epoch": 7,
+    "motor_steps": 1680
+  },
+  {
+    "frame": 420,
+    "accepted": true,
+    "angle_deg": 189.0,
+    "phase": "accepted",
+    "motor_id": 105,
+    "motor_epoch": 7,
+    "motor_steps": 1680
+  },
+  {
+    "frame": 421,
+    "accepted": false,
+    "angle_deg": 189.0,
+    "phase": "settle",
+    "motor_id": 105,
+    "motor_epoch": 7,
+    "motor_steps": 1680
+  },
+  {
+    "frame": 422,
+    "accepted": false,
+    "angle_deg": 190.8,
+    "phase": "settle",
+    "motor_id": 106,
+    "motor_epoch": 7,
+    "motor_steps": 1696
+  },
+  {
+    "frame": 423,
+    "accepted": false,
+    "angle_deg": 190.8,
+    "phase": "settle",
+    "motor_id": 106,
+    "motor_epoch": 7,
+    "motor_steps": 1696
+  },
+  {
+    "frame": 424,
+    "accepted": true,
+    "angle_deg": 190.8,
+    "phase": "accepted",
+    "motor_id": 106,
+    "motor_epoch": 7,
+    "motor_steps": 1696
+  },
+  {
+    "frame": 425,
+    "accepted": false,
+    "angle_deg": 190.8,
+    "phase": "settle",
+    "motor_id": 106,
+    "motor_epoch": 7,
+    "motor_steps": 1696
+  },
+  {
+    "frame": 426,
+    "accepted": false,
+    "angle_deg": 192.6,
+    "phase": "settle",
+    "motor_id": 107,
+    "motor_epoch": 7,
+    "motor_steps": 1712
+  },
+  {
+    "frame": 427,
+    "accepted": false,
+    "angle_deg": 192.6,
+    "phase": "settle",
+    "motor_id": 107,
+    "motor_epoch": 7,
+    "motor_steps": 1712
+  },
+  {
+    "frame": 428,
+    "accepted": true,
+    "angle_deg": 192.6,
+    "phase": "accepted",
+    "motor_id": 107,
+    "motor_epoch": 7,
+    "motor_steps": 1712
+  },
+  {
+    "frame": 429,
+    "accepted": false,
+    "angle_deg": 192.6,
+    "phase": "settle",
+    "motor_id": 107,
+    "motor_epoch": 7,
+    "motor_steps": 1712
+  },
+  {
+    "frame": 430,
+    "accepted": false,
+    "angle_deg": 194.4,
+    "phase": "settle",
+    "motor_id": 108,
+    "motor_epoch": 7,
+    "motor_steps": 1728
+  },
+  {
+    "frame": 431,
+    "accepted": false,
+    "angle_deg": 194.4,
+    "phase": "settle",
+    "motor_id": 108,
+    "motor_epoch": 7,
+    "motor_steps": 1728
+  },
+  {
+    "frame": 432,
+    "accepted": true,
+    "angle_deg": 194.4,
+    "phase": "accepted",
+    "motor_id": 108,
+    "motor_epoch": 7,
+    "motor_steps": 1728
+  },
+  {
+    "frame": 433,
+    "accepted": false,
+    "angle_deg": 194.4,
+    "phase": "settle",
+    "motor_id": 108,
+    "motor_epoch": 7,
+    "motor_steps": 1728
+  },
+  {
+    "frame": 434,
+    "accepted": false,
+    "angle_deg": 196.2,
+    "phase": "settle",
+    "motor_id": 109,
+    "motor_epoch": 7,
+    "motor_steps": 1744
+  },
+  {
+    "frame": 435,
+    "accepted": false,
+    "angle_deg": 196.2,
+    "phase": "settle",
+    "motor_id": 109,
+    "motor_epoch": 7,
+    "motor_steps": 1744
+  },
+  {
+    "frame": 436,
+    "accepted": true,
+    "angle_deg": 196.2,
+    "phase": "accepted",
+    "motor_id": 109,
+    "motor_epoch": 7,
+    "motor_steps": 1744
+  },
+  {
+    "frame": 437,
+    "accepted": false,
+    "angle_deg": 196.2,
+    "phase": "settle",
+    "motor_id": 109,
+    "motor_epoch": 7,
+    "motor_steps": 1744
+  },
+  {
+    "frame": 438,
+    "accepted": false,
+    "angle_deg": 198.0,
+    "phase": "settle",
+    "motor_id": 110,
+    "motor_epoch": 7,
+    "motor_steps": 1760
+  },
+  {
+    "frame": 439,
+    "accepted": false,
+    "angle_deg": 198.0,
+    "phase": "settle",
+    "motor_id": 110,
+    "motor_epoch": 7,
+    "motor_steps": 1760
+  },
+  {
+    "frame": 440,
+    "accepted": true,
+    "angle_deg": 198.0,
+    "phase": "accepted",
+    "motor_id": 110,
+    "motor_epoch": 7,
+    "motor_steps": 1760
+  },
+  {
+    "frame": 441,
+    "accepted": false,
+    "angle_deg": 198.0,
+    "phase": "settle",
+    "motor_id": 110,
+    "motor_epoch": 7,
+    "motor_steps": 1760
+  },
+  {
+    "frame": 442,
+    "accepted": false,
+    "angle_deg": 199.8,
+    "phase": "settle",
+    "motor_id": 111,
+    "motor_epoch": 7,
+    "motor_steps": 1776
+  },
+  {
+    "frame": 443,
+    "accepted": false,
+    "angle_deg": 199.8,
+    "phase": "settle",
+    "motor_id": 111,
+    "motor_epoch": 7,
+    "motor_steps": 1776
+  },
+  {
+    "frame": 444,
+    "accepted": true,
+    "angle_deg": 199.8,
+    "phase": "accepted",
+    "motor_id": 111,
+    "motor_epoch": 7,
+    "motor_steps": 1776
+  },
+  {
+    "frame": 445,
+    "accepted": false,
+    "angle_deg": 199.8,
+    "phase": "settle",
+    "motor_id": 111,
+    "motor_epoch": 7,
+    "motor_steps": 1776
+  },
+  {
+    "frame": 446,
+    "accepted": false,
+    "angle_deg": 201.6,
+    "phase": "settle",
+    "motor_id": 112,
+    "motor_epoch": 7,
+    "motor_steps": 1792
+  },
+  {
+    "frame": 447,
+    "accepted": false,
+    "angle_deg": 201.6,
+    "phase": "settle",
+    "motor_id": 112,
+    "motor_epoch": 7,
+    "motor_steps": 1792
+  },
+  {
+    "frame": 448,
+    "accepted": true,
+    "angle_deg": 201.6,
+    "phase": "accepted",
+    "motor_id": 112,
+    "motor_epoch": 7,
+    "motor_steps": 1792
+  },
+  {
+    "frame": 449,
+    "accepted": false,
+    "angle_deg": 201.6,
+    "phase": "settle",
+    "motor_id": 112,
+    "motor_epoch": 7,
+    "motor_steps": 1792
+  },
+  {
+    "frame": 450,
+    "accepted": false,
+    "angle_deg": 203.4,
+    "phase": "settle",
+    "motor_id": 113,
+    "motor_epoch": 7,
+    "motor_steps": 1808
+  },
+  {
+    "frame": 451,
+    "accepted": false,
+    "angle_deg": 203.4,
+    "phase": "settle",
+    "motor_id": 113,
+    "motor_epoch": 7,
+    "motor_steps": 1808
+  },
+  {
+    "frame": 452,
+    "accepted": true,
+    "angle_deg": 203.4,
+    "phase": "accepted",
+    "motor_id": 113,
+    "motor_epoch": 7,
+    "motor_steps": 1808
+  },
+  {
+    "frame": 453,
+    "accepted": false,
+    "angle_deg": 203.4,
+    "phase": "settle",
+    "motor_id": 113,
+    "motor_epoch": 7,
+    "motor_steps": 1808
+  },
+  {
+    "frame": 454,
+    "accepted": false,
+    "angle_deg": 205.2,
+    "phase": "settle",
+    "motor_id": 114,
+    "motor_epoch": 7,
+    "motor_steps": 1824
+  },
+  {
+    "frame": 455,
+    "accepted": false,
+    "angle_deg": 205.2,
+    "phase": "settle",
+    "motor_id": 114,
+    "motor_epoch": 7,
+    "motor_steps": 1824
+  },
+  {
+    "frame": 456,
+    "accepted": true,
+    "angle_deg": 205.2,
+    "phase": "accepted",
+    "motor_id": 114,
+    "motor_epoch": 7,
+    "motor_steps": 1824
+  },
+  {
+    "frame": 457,
+    "accepted": false,
+    "angle_deg": 205.2,
+    "phase": "settle",
+    "motor_id": 114,
+    "motor_epoch": 7,
+    "motor_steps": 1824
+  },
+  {
+    "frame": 458,
+    "accepted": false,
+    "angle_deg": 207.0,
+    "phase": "settle",
+    "motor_id": 115,
+    "motor_epoch": 7,
+    "motor_steps": 1840
+  },
+  {
+    "frame": 459,
+    "accepted": false,
+    "angle_deg": 207.0,
+    "phase": "settle",
+    "motor_id": 115,
+    "motor_epoch": 7,
+    "motor_steps": 1840
+  },
+  {
+    "frame": 460,
+    "accepted": true,
+    "angle_deg": 207.0,
+    "phase": "accepted",
+    "motor_id": 115,
+    "motor_epoch": 7,
+    "motor_steps": 1840
+  },
+  {
+    "frame": 461,
+    "accepted": false,
+    "angle_deg": 207.0,
+    "phase": "settle",
+    "motor_id": 115,
+    "motor_epoch": 7,
+    "motor_steps": 1840
+  },
+  {
+    "frame": 462,
+    "accepted": false,
+    "angle_deg": 208.8,
+    "phase": "settle",
+    "motor_id": 116,
+    "motor_epoch": 7,
+    "motor_steps": 1856
+  },
+  {
+    "frame": 463,
+    "accepted": false,
+    "angle_deg": 208.8,
+    "phase": "settle",
+    "motor_id": 116,
+    "motor_epoch": 7,
+    "motor_steps": 1856
+  },
+  {
+    "frame": 464,
+    "accepted": true,
+    "angle_deg": 208.8,
+    "phase": "accepted",
+    "motor_id": 116,
+    "motor_epoch": 7,
+    "motor_steps": 1856
+  },
+  {
+    "frame": 465,
+    "accepted": false,
+    "angle_deg": 208.8,
+    "phase": "settle",
+    "motor_id": 116,
+    "motor_epoch": 7,
+    "motor_steps": 1856
+  },
+  {
+    "frame": 466,
+    "accepted": false,
+    "angle_deg": 210.6,
+    "phase": "settle",
+    "motor_id": 117,
+    "motor_epoch": 7,
+    "motor_steps": 1872
+  },
+  {
+    "frame": 467,
+    "accepted": false,
+    "angle_deg": 210.6,
+    "phase": "settle",
+    "motor_id": 117,
+    "motor_epoch": 7,
+    "motor_steps": 1872
+  },
+  {
+    "frame": 468,
+    "accepted": true,
+    "angle_deg": 210.6,
+    "phase": "accepted",
+    "motor_id": 117,
+    "motor_epoch": 7,
+    "motor_steps": 1872
+  },
+  {
+    "frame": 469,
+    "accepted": false,
+    "angle_deg": 210.6,
+    "phase": "settle",
+    "motor_id": 117,
+    "motor_epoch": 7,
+    "motor_steps": 1872
+  },
+  {
+    "frame": 470,
+    "accepted": false,
+    "angle_deg": 212.4,
+    "phase": "settle",
+    "motor_id": 118,
+    "motor_epoch": 7,
+    "motor_steps": 1888
+  },
+  {
+    "frame": 471,
+    "accepted": false,
+    "angle_deg": 212.4,
+    "phase": "settle",
+    "motor_id": 118,
+    "motor_epoch": 7,
+    "motor_steps": 1888
+  },
+  {
+    "frame": 472,
+    "accepted": true,
+    "angle_deg": 212.4,
+    "phase": "accepted",
+    "motor_id": 118,
+    "motor_epoch": 7,
+    "motor_steps": 1888
+  },
+  {
+    "frame": 473,
+    "accepted": false,
+    "angle_deg": 212.4,
+    "phase": "settle",
+    "motor_id": 118,
+    "motor_epoch": 7,
+    "motor_steps": 1888
+  },
+  {
+    "frame": 474,
+    "accepted": false,
+    "angle_deg": 214.2,
+    "phase": "settle",
+    "motor_id": 119,
+    "motor_epoch": 7,
+    "motor_steps": 1904
+  },
+  {
+    "frame": 475,
+    "accepted": false,
+    "angle_deg": 214.2,
+    "phase": "settle",
+    "motor_id": 119,
+    "motor_epoch": 7,
+    "motor_steps": 1904
+  },
+  {
+    "frame": 476,
+    "accepted": true,
+    "angle_deg": 214.2,
+    "phase": "accepted",
+    "motor_id": 119,
+    "motor_epoch": 7,
+    "motor_steps": 1904
+  },
+  {
+    "frame": 477,
+    "accepted": false,
+    "angle_deg": 214.2,
+    "phase": "settle",
+    "motor_id": 119,
+    "motor_epoch": 7,
+    "motor_steps": 1904
+  },
+  {
+    "frame": 478,
+    "accepted": false,
+    "angle_deg": 216.0,
+    "phase": "settle",
+    "motor_id": 120,
+    "motor_epoch": 7,
+    "motor_steps": 1920
+  },
+  {
+    "frame": 479,
+    "accepted": false,
+    "angle_deg": 216.0,
+    "phase": "settle",
+    "motor_id": 120,
+    "motor_epoch": 7,
+    "motor_steps": 1920
+  },
+  {
+    "frame": 480,
+    "accepted": true,
+    "angle_deg": 216.0,
+    "phase": "accepted",
+    "motor_id": 120,
+    "motor_epoch": 7,
+    "motor_steps": 1920
+  },
+  {
+    "frame": 481,
+    "accepted": false,
+    "angle_deg": 216.0,
+    "phase": "settle",
+    "motor_id": 120,
+    "motor_epoch": 7,
+    "motor_steps": 1920
+  },
+  {
+    "frame": 482,
+    "accepted": false,
+    "angle_deg": 217.8,
+    "phase": "settle",
+    "motor_id": 121,
+    "motor_epoch": 7,
+    "motor_steps": 1936
+  },
+  {
+    "frame": 483,
+    "accepted": false,
+    "angle_deg": 217.8,
+    "phase": "settle",
+    "motor_id": 121,
+    "motor_epoch": 7,
+    "motor_steps": 1936
+  },
+  {
+    "frame": 484,
+    "accepted": true,
+    "angle_deg": 217.8,
+    "phase": "accepted",
+    "motor_id": 121,
+    "motor_epoch": 7,
+    "motor_steps": 1936
+  },
+  {
+    "frame": 485,
+    "accepted": false,
+    "angle_deg": 217.8,
+    "phase": "settle",
+    "motor_id": 121,
+    "motor_epoch": 7,
+    "motor_steps": 1936
+  },
+  {
+    "frame": 486,
+    "accepted": false,
+    "angle_deg": 219.6,
+    "phase": "settle",
+    "motor_id": 122,
+    "motor_epoch": 7,
+    "motor_steps": 1952
+  },
+  {
+    "frame": 487,
+    "accepted": false,
+    "angle_deg": 219.6,
+    "phase": "settle",
+    "motor_id": 122,
+    "motor_epoch": 7,
+    "motor_steps": 1952
+  },
+  {
+    "frame": 488,
+    "accepted": true,
+    "angle_deg": 219.6,
+    "phase": "accepted",
+    "motor_id": 122,
+    "motor_epoch": 7,
+    "motor_steps": 1952
+  },
+  {
+    "frame": 489,
+    "accepted": false,
+    "angle_deg": 219.6,
+    "phase": "settle",
+    "motor_id": 122,
+    "motor_epoch": 7,
+    "motor_steps": 1952
+  },
+  {
+    "frame": 490,
+    "accepted": false,
+    "angle_deg": 221.4,
+    "phase": "settle",
+    "motor_id": 123,
+    "motor_epoch": 7,
+    "motor_steps": 1968
+  },
+  {
+    "frame": 491,
+    "accepted": false,
+    "angle_deg": 221.4,
+    "phase": "settle",
+    "motor_id": 123,
+    "motor_epoch": 7,
+    "motor_steps": 1968
+  },
+  {
+    "frame": 492,
+    "accepted": true,
+    "angle_deg": 221.4,
+    "phase": "accepted",
+    "motor_id": 123,
+    "motor_epoch": 7,
+    "motor_steps": 1968
+  },
+  {
+    "frame": 493,
+    "accepted": false,
+    "angle_deg": 221.4,
+    "phase": "settle",
+    "motor_id": 123,
+    "motor_epoch": 7,
+    "motor_steps": 1968
+  },
+  {
+    "frame": 494,
+    "accepted": false,
+    "angle_deg": 223.2,
+    "phase": "settle",
+    "motor_id": 124,
+    "motor_epoch": 7,
+    "motor_steps": 1984
+  },
+  {
+    "frame": 495,
+    "accepted": false,
+    "angle_deg": 223.2,
+    "phase": "settle",
+    "motor_id": 124,
+    "motor_epoch": 7,
+    "motor_steps": 1984
+  },
+  {
+    "frame": 496,
+    "accepted": true,
+    "angle_deg": 223.2,
+    "phase": "accepted",
+    "motor_id": 124,
+    "motor_epoch": 7,
+    "motor_steps": 1984
+  },
+  {
+    "frame": 497,
+    "accepted": false,
+    "angle_deg": 223.2,
+    "phase": "settle",
+    "motor_id": 124,
+    "motor_epoch": 7,
+    "motor_steps": 1984
+  },
+  {
+    "frame": 498,
+    "accepted": false,
+    "angle_deg": 225.0,
+    "phase": "settle",
+    "motor_id": 125,
+    "motor_epoch": 7,
+    "motor_steps": 2000
+  },
+  {
+    "frame": 499,
+    "accepted": false,
+    "angle_deg": 225.0,
+    "phase": "settle",
+    "motor_id": 125,
+    "motor_epoch": 7,
+    "motor_steps": 2000
+  },
+  {
+    "frame": 500,
+    "accepted": true,
+    "angle_deg": 225.0,
+    "phase": "accepted",
+    "motor_id": 125,
+    "motor_epoch": 7,
+    "motor_steps": 2000
+  },
+  {
+    "frame": 501,
+    "accepted": false,
+    "angle_deg": 225.0,
+    "phase": "settle",
+    "motor_id": 125,
+    "motor_epoch": 7,
+    "motor_steps": 2000
+  },
+  {
+    "frame": 502,
+    "accepted": false,
+    "angle_deg": 226.8,
+    "phase": "settle",
+    "motor_id": 126,
+    "motor_epoch": 7,
+    "motor_steps": 2016
+  },
+  {
+    "frame": 503,
+    "accepted": false,
+    "angle_deg": 226.8,
+    "phase": "settle",
+    "motor_id": 126,
+    "motor_epoch": 7,
+    "motor_steps": 2016
+  },
+  {
+    "frame": 504,
+    "accepted": true,
+    "angle_deg": 226.8,
+    "phase": "accepted",
+    "motor_id": 126,
+    "motor_epoch": 7,
+    "motor_steps": 2016
+  },
+  {
+    "frame": 505,
+    "accepted": false,
+    "angle_deg": 226.8,
+    "phase": "settle",
+    "motor_id": 126,
+    "motor_epoch": 7,
+    "motor_steps": 2016
+  },
+  {
+    "frame": 506,
+    "accepted": false,
+    "angle_deg": 228.6,
+    "phase": "settle",
+    "motor_id": 127,
+    "motor_epoch": 7,
+    "motor_steps": 2032
+  },
+  {
+    "frame": 507,
+    "accepted": false,
+    "angle_deg": 228.6,
+    "phase": "settle",
+    "motor_id": 127,
+    "motor_epoch": 7,
+    "motor_steps": 2032
+  },
+  {
+    "frame": 508,
+    "accepted": true,
+    "angle_deg": 228.6,
+    "phase": "accepted",
+    "motor_id": 127,
+    "motor_epoch": 7,
+    "motor_steps": 2032
+  },
+  {
+    "frame": 509,
+    "accepted": false,
+    "angle_deg": 228.6,
+    "phase": "settle",
+    "motor_id": 127,
+    "motor_epoch": 7,
+    "motor_steps": 2032
+  },
+  {
+    "frame": 510,
+    "accepted": false,
+    "angle_deg": 230.4,
+    "phase": "settle",
+    "motor_id": 128,
+    "motor_epoch": 7,
+    "motor_steps": 2048
+  },
+  {
+    "frame": 511,
+    "accepted": false,
+    "angle_deg": 230.4,
+    "phase": "settle",
+    "motor_id": 128,
+    "motor_epoch": 7,
+    "motor_steps": 2048
+  },
+  {
+    "frame": 512,
+    "accepted": true,
+    "angle_deg": 230.4,
+    "phase": "accepted",
+    "motor_id": 128,
+    "motor_epoch": 7,
+    "motor_steps": 2048
+  },
+  {
+    "frame": 513,
+    "accepted": false,
+    "angle_deg": 230.4,
+    "phase": "settle",
+    "motor_id": 128,
+    "motor_epoch": 7,
+    "motor_steps": 2048
+  },
+  {
+    "frame": 514,
+    "accepted": false,
+    "angle_deg": 232.2,
+    "phase": "settle",
+    "motor_id": 129,
+    "motor_epoch": 7,
+    "motor_steps": 2064
+  },
+  {
+    "frame": 515,
+    "accepted": false,
+    "angle_deg": 232.2,
+    "phase": "settle",
+    "motor_id": 129,
+    "motor_epoch": 7,
+    "motor_steps": 2064
+  },
+  {
+    "frame": 516,
+    "accepted": true,
+    "angle_deg": 232.2,
+    "phase": "accepted",
+    "motor_id": 129,
+    "motor_epoch": 7,
+    "motor_steps": 2064
+  },
+  {
+    "frame": 517,
+    "accepted": false,
+    "angle_deg": 232.2,
+    "phase": "settle",
+    "motor_id": 129,
+    "motor_epoch": 7,
+    "motor_steps": 2064
+  },
+  {
+    "frame": 518,
+    "accepted": false,
+    "angle_deg": 234.0,
+    "phase": "settle",
+    "motor_id": 130,
+    "motor_epoch": 7,
+    "motor_steps": 2080
+  },
+  {
+    "frame": 519,
+    "accepted": false,
+    "angle_deg": 234.0,
+    "phase": "settle",
+    "motor_id": 130,
+    "motor_epoch": 7,
+    "motor_steps": 2080
+  },
+  {
+    "frame": 520,
+    "accepted": true,
+    "angle_deg": 234.0,
+    "phase": "accepted",
+    "motor_id": 130,
+    "motor_epoch": 7,
+    "motor_steps": 2080
+  },
+  {
+    "frame": 521,
+    "accepted": false,
+    "angle_deg": 234.0,
+    "phase": "settle",
+    "motor_id": 130,
+    "motor_epoch": 7,
+    "motor_steps": 2080
+  },
+  {
+    "frame": 522,
+    "accepted": false,
+    "angle_deg": 235.8,
+    "phase": "settle",
+    "motor_id": 131,
+    "motor_epoch": 7,
+    "motor_steps": 2096
+  },
+  {
+    "frame": 523,
+    "accepted": false,
+    "angle_deg": 235.8,
+    "phase": "settle",
+    "motor_id": 131,
+    "motor_epoch": 7,
+    "motor_steps": 2096
+  },
+  {
+    "frame": 524,
+    "accepted": true,
+    "angle_deg": 235.8,
+    "phase": "accepted",
+    "motor_id": 131,
+    "motor_epoch": 7,
+    "motor_steps": 2096
+  },
+  {
+    "frame": 525,
+    "accepted": false,
+    "angle_deg": 235.8,
+    "phase": "settle",
+    "motor_id": 131,
+    "motor_epoch": 7,
+    "motor_steps": 2096
+  },
+  {
+    "frame": 526,
+    "accepted": false,
+    "angle_deg": 237.6,
+    "phase": "settle",
+    "motor_id": 132,
+    "motor_epoch": 7,
+    "motor_steps": 2112
+  },
+  {
+    "frame": 527,
+    "accepted": false,
+    "angle_deg": 237.6,
+    "phase": "settle",
+    "motor_id": 132,
+    "motor_epoch": 7,
+    "motor_steps": 2112
+  },
+  {
+    "frame": 528,
+    "accepted": true,
+    "angle_deg": 237.6,
+    "phase": "accepted",
+    "motor_id": 132,
+    "motor_epoch": 7,
+    "motor_steps": 2112
+  },
+  {
+    "frame": 529,
+    "accepted": false,
+    "angle_deg": 237.6,
+    "phase": "settle",
+    "motor_id": 132,
+    "motor_epoch": 7,
+    "motor_steps": 2112
+  },
+  {
+    "frame": 530,
+    "accepted": false,
+    "angle_deg": 239.4,
+    "phase": "settle",
+    "motor_id": 133,
+    "motor_epoch": 7,
+    "motor_steps": 2128
+  },
+  {
+    "frame": 531,
+    "accepted": false,
+    "angle_deg": 239.4,
+    "phase": "settle",
+    "motor_id": 133,
+    "motor_epoch": 7,
+    "motor_steps": 2128
+  },
+  {
+    "frame": 532,
+    "accepted": true,
+    "angle_deg": 239.4,
+    "phase": "accepted",
+    "motor_id": 133,
+    "motor_epoch": 7,
+    "motor_steps": 2128
+  },
+  {
+    "frame": 533,
+    "accepted": false,
+    "angle_deg": 239.4,
+    "phase": "settle",
+    "motor_id": 133,
+    "motor_epoch": 7,
+    "motor_steps": 2128
+  },
+  {
+    "frame": 534,
+    "accepted": false,
+    "angle_deg": 241.2,
+    "phase": "settle",
+    "motor_id": 134,
+    "motor_epoch": 7,
+    "motor_steps": 2144
+  },
+  {
+    "frame": 535,
+    "accepted": false,
+    "angle_deg": 241.2,
+    "phase": "settle",
+    "motor_id": 134,
+    "motor_epoch": 7,
+    "motor_steps": 2144
+  },
+  {
+    "frame": 536,
+    "accepted": true,
+    "angle_deg": 241.2,
+    "phase": "accepted",
+    "motor_id": 134,
+    "motor_epoch": 7,
+    "motor_steps": 2144
+  },
+  {
+    "frame": 537,
+    "accepted": false,
+    "angle_deg": 241.2,
+    "phase": "settle",
+    "motor_id": 134,
+    "motor_epoch": 7,
+    "motor_steps": 2144
+  },
+  {
+    "frame": 538,
+    "accepted": false,
+    "angle_deg": 243.0,
+    "phase": "settle",
+    "motor_id": 135,
+    "motor_epoch": 7,
+    "motor_steps": 2160
+  },
+  {
+    "frame": 539,
+    "accepted": false,
+    "angle_deg": 243.0,
+    "phase": "settle",
+    "motor_id": 135,
+    "motor_epoch": 7,
+    "motor_steps": 2160
+  },
+  {
+    "frame": 540,
+    "accepted": true,
+    "angle_deg": 243.0,
+    "phase": "accepted",
+    "motor_id": 135,
+    "motor_epoch": 7,
+    "motor_steps": 2160
+  },
+  {
+    "frame": 541,
+    "accepted": false,
+    "angle_deg": 243.0,
+    "phase": "settle",
+    "motor_id": 135,
+    "motor_epoch": 7,
+    "motor_steps": 2160
+  },
+  {
+    "frame": 542,
+    "accepted": false,
+    "angle_deg": 244.8,
+    "phase": "settle",
+    "motor_id": 136,
+    "motor_epoch": 7,
+    "motor_steps": 2176
+  },
+  {
+    "frame": 543,
+    "accepted": false,
+    "angle_deg": 244.8,
+    "phase": "settle",
+    "motor_id": 136,
+    "motor_epoch": 7,
+    "motor_steps": 2176
+  },
+  {
+    "frame": 544,
+    "accepted": true,
+    "angle_deg": 244.8,
+    "phase": "accepted",
+    "motor_id": 136,
+    "motor_epoch": 7,
+    "motor_steps": 2176
+  },
+  {
+    "frame": 545,
+    "accepted": false,
+    "angle_deg": 244.8,
+    "phase": "settle",
+    "motor_id": 136,
+    "motor_epoch": 7,
+    "motor_steps": 2176
+  },
+  {
+    "frame": 546,
+    "accepted": false,
+    "angle_deg": 246.6,
+    "phase": "settle",
+    "motor_id": 137,
+    "motor_epoch": 7,
+    "motor_steps": 2192
+  },
+  {
+    "frame": 547,
+    "accepted": false,
+    "angle_deg": 246.6,
+    "phase": "settle",
+    "motor_id": 137,
+    "motor_epoch": 7,
+    "motor_steps": 2192
+  },
+  {
+    "frame": 548,
+    "accepted": true,
+    "angle_deg": 246.6,
+    "phase": "accepted",
+    "motor_id": 137,
+    "motor_epoch": 7,
+    "motor_steps": 2192
+  },
+  {
+    "frame": 549,
+    "accepted": false,
+    "angle_deg": 246.6,
+    "phase": "settle",
+    "motor_id": 137,
+    "motor_epoch": 7,
+    "motor_steps": 2192
+  },
+  {
+    "frame": 550,
+    "accepted": false,
+    "angle_deg": 248.4,
+    "phase": "settle",
+    "motor_id": 138,
+    "motor_epoch": 7,
+    "motor_steps": 2208
+  },
+  {
+    "frame": 551,
+    "accepted": false,
+    "angle_deg": 248.4,
+    "phase": "settle",
+    "motor_id": 138,
+    "motor_epoch": 7,
+    "motor_steps": 2208
+  },
+  {
+    "frame": 552,
+    "accepted": true,
+    "angle_deg": 248.4,
+    "phase": "accepted",
+    "motor_id": 138,
+    "motor_epoch": 7,
+    "motor_steps": 2208
+  },
+  {
+    "frame": 553,
+    "accepted": false,
+    "angle_deg": 248.4,
+    "phase": "settle",
+    "motor_id": 138,
+    "motor_epoch": 7,
+    "motor_steps": 2208
+  },
+  {
+    "frame": 554,
+    "accepted": false,
+    "angle_deg": 250.2,
+    "phase": "settle",
+    "motor_id": 139,
+    "motor_epoch": 7,
+    "motor_steps": 2224
+  },
+  {
+    "frame": 555,
+    "accepted": false,
+    "angle_deg": 250.2,
+    "phase": "settle",
+    "motor_id": 139,
+    "motor_epoch": 7,
+    "motor_steps": 2224
+  },
+  {
+    "frame": 556,
+    "accepted": true,
+    "angle_deg": 250.2,
+    "phase": "accepted",
+    "motor_id": 139,
+    "motor_epoch": 7,
+    "motor_steps": 2224
+  },
+  {
+    "frame": 557,
+    "accepted": false,
+    "angle_deg": 250.2,
+    "phase": "settle",
+    "motor_id": 139,
+    "motor_epoch": 7,
+    "motor_steps": 2224
+  },
+  {
+    "frame": 558,
+    "accepted": false,
+    "angle_deg": 252.0,
+    "phase": "settle",
+    "motor_id": 140,
+    "motor_epoch": 7,
+    "motor_steps": 2240
+  },
+  {
+    "frame": 559,
+    "accepted": false,
+    "angle_deg": 252.0,
+    "phase": "settle",
+    "motor_id": 140,
+    "motor_epoch": 7,
+    "motor_steps": 2240
+  },
+  {
+    "frame": 560,
+    "accepted": true,
+    "angle_deg": 252.0,
+    "phase": "accepted",
+    "motor_id": 140,
+    "motor_epoch": 7,
+    "motor_steps": 2240
+  },
+  {
+    "frame": 561,
+    "accepted": false,
+    "angle_deg": 252.0,
+    "phase": "settle",
+    "motor_id": 140,
+    "motor_epoch": 7,
+    "motor_steps": 2240
+  },
+  {
+    "frame": 562,
+    "accepted": false,
+    "angle_deg": 253.8,
+    "phase": "settle",
+    "motor_id": 141,
+    "motor_epoch": 7,
+    "motor_steps": 2256
+  },
+  {
+    "frame": 563,
+    "accepted": false,
+    "angle_deg": 253.8,
+    "phase": "settle",
+    "motor_id": 141,
+    "motor_epoch": 7,
+    "motor_steps": 2256
+  },
+  {
+    "frame": 564,
+    "accepted": true,
+    "angle_deg": 253.8,
+    "phase": "accepted",
+    "motor_id": 141,
+    "motor_epoch": 7,
+    "motor_steps": 2256
+  },
+  {
+    "frame": 565,
+    "accepted": false,
+    "angle_deg": 253.8,
+    "phase": "settle",
+    "motor_id": 141,
+    "motor_epoch": 7,
+    "motor_steps": 2256
+  },
+  {
+    "frame": 566,
+    "accepted": false,
+    "angle_deg": 255.6,
+    "phase": "settle",
+    "motor_id": 142,
+    "motor_epoch": 7,
+    "motor_steps": 2272
+  },
+  {
+    "frame": 567,
+    "accepted": false,
+    "angle_deg": 255.6,
+    "phase": "settle",
+    "motor_id": 142,
+    "motor_epoch": 7,
+    "motor_steps": 2272
+  },
+  {
+    "frame": 568,
+    "accepted": true,
+    "angle_deg": 255.6,
+    "phase": "accepted",
+    "motor_id": 142,
+    "motor_epoch": 7,
+    "motor_steps": 2272
+  },
+  {
+    "frame": 569,
+    "accepted": false,
+    "angle_deg": 255.6,
+    "phase": "settle",
+    "motor_id": 142,
+    "motor_epoch": 7,
+    "motor_steps": 2272
+  },
+  {
+    "frame": 570,
+    "accepted": false,
+    "angle_deg": 257.4,
+    "phase": "settle",
+    "motor_id": 143,
+    "motor_epoch": 7,
+    "motor_steps": 2288
+  },
+  {
+    "frame": 571,
+    "accepted": false,
+    "angle_deg": 257.4,
+    "phase": "settle",
+    "motor_id": 143,
+    "motor_epoch": 7,
+    "motor_steps": 2288
+  },
+  {
+    "frame": 572,
+    "accepted": true,
+    "angle_deg": 257.4,
+    "phase": "accepted",
+    "motor_id": 143,
+    "motor_epoch": 7,
+    "motor_steps": 2288
+  },
+  {
+    "frame": 573,
+    "accepted": false,
+    "angle_deg": 257.4,
+    "phase": "settle",
+    "motor_id": 143,
+    "motor_epoch": 7,
+    "motor_steps": 2288
+  },
+  {
+    "frame": 574,
+    "accepted": false,
+    "angle_deg": 259.2,
+    "phase": "settle",
+    "motor_id": 144,
+    "motor_epoch": 7,
+    "motor_steps": 2304
+  },
+  {
+    "frame": 575,
+    "accepted": false,
+    "angle_deg": 259.2,
+    "phase": "settle",
+    "motor_id": 144,
+    "motor_epoch": 7,
+    "motor_steps": 2304
+  },
+  {
+    "frame": 576,
+    "accepted": true,
+    "angle_deg": 259.2,
+    "phase": "accepted",
+    "motor_id": 144,
+    "motor_epoch": 7,
+    "motor_steps": 2304
+  },
+  {
+    "frame": 577,
+    "accepted": false,
+    "angle_deg": 259.2,
+    "phase": "settle",
+    "motor_id": 144,
+    "motor_epoch": 7,
+    "motor_steps": 2304
+  },
+  {
+    "frame": 578,
+    "accepted": false,
+    "angle_deg": 261.0,
+    "phase": "settle",
+    "motor_id": 145,
+    "motor_epoch": 7,
+    "motor_steps": 2320
+  },
+  {
+    "frame": 579,
+    "accepted": false,
+    "angle_deg": 261.0,
+    "phase": "settle",
+    "motor_id": 145,
+    "motor_epoch": 7,
+    "motor_steps": 2320
+  },
+  {
+    "frame": 580,
+    "accepted": true,
+    "angle_deg": 261.0,
+    "phase": "accepted",
+    "motor_id": 145,
+    "motor_epoch": 7,
+    "motor_steps": 2320
+  },
+  {
+    "frame": 581,
+    "accepted": false,
+    "angle_deg": 261.0,
+    "phase": "settle",
+    "motor_id": 145,
+    "motor_epoch": 7,
+    "motor_steps": 2320
+  },
+  {
+    "frame": 582,
+    "accepted": false,
+    "angle_deg": 262.8,
+    "phase": "settle",
+    "motor_id": 146,
+    "motor_epoch": 7,
+    "motor_steps": 2336
+  },
+  {
+    "frame": 583,
+    "accepted": false,
+    "angle_deg": 262.8,
+    "phase": "settle",
+    "motor_id": 146,
+    "motor_epoch": 7,
+    "motor_steps": 2336
+  },
+  {
+    "frame": 584,
+    "accepted": true,
+    "angle_deg": 262.8,
+    "phase": "accepted",
+    "motor_id": 146,
+    "motor_epoch": 7,
+    "motor_steps": 2336
+  },
+  {
+    "frame": 585,
+    "accepted": false,
+    "angle_deg": 262.8,
+    "phase": "settle",
+    "motor_id": 146,
+    "motor_epoch": 7,
+    "motor_steps": 2336
+  },
+  {
+    "frame": 586,
+    "accepted": false,
+    "angle_deg": 264.6,
+    "phase": "settle",
+    "motor_id": 147,
+    "motor_epoch": 7,
+    "motor_steps": 2352
+  },
+  {
+    "frame": 587,
+    "accepted": false,
+    "angle_deg": 264.6,
+    "phase": "settle",
+    "motor_id": 147,
+    "motor_epoch": 7,
+    "motor_steps": 2352
+  },
+  {
+    "frame": 588,
+    "accepted": true,
+    "angle_deg": 264.6,
+    "phase": "accepted",
+    "motor_id": 147,
+    "motor_epoch": 7,
+    "motor_steps": 2352
+  },
+  {
+    "frame": 589,
+    "accepted": false,
+    "angle_deg": 264.6,
+    "phase": "settle",
+    "motor_id": 147,
+    "motor_epoch": 7,
+    "motor_steps": 2352
+  },
+  {
+    "frame": 590,
+    "accepted": false,
+    "angle_deg": 266.4,
+    "phase": "settle",
+    "motor_id": 148,
+    "motor_epoch": 7,
+    "motor_steps": 2368
+  },
+  {
+    "frame": 591,
+    "accepted": false,
+    "angle_deg": 266.4,
+    "phase": "settle",
+    "motor_id": 148,
+    "motor_epoch": 7,
+    "motor_steps": 2368
+  },
+  {
+    "frame": 592,
+    "accepted": true,
+    "angle_deg": 266.4,
+    "phase": "accepted",
+    "motor_id": 148,
+    "motor_epoch": 7,
+    "motor_steps": 2368
+  },
+  {
+    "frame": 593,
+    "accepted": false,
+    "angle_deg": 266.4,
+    "phase": "settle",
+    "motor_id": 148,
+    "motor_epoch": 7,
+    "motor_steps": 2368
+  },
+  {
+    "frame": 594,
+    "accepted": false,
+    "angle_deg": 268.2,
+    "phase": "settle",
+    "motor_id": 149,
+    "motor_epoch": 7,
+    "motor_steps": 2384
+  },
+  {
+    "frame": 595,
+    "accepted": false,
+    "angle_deg": 268.2,
+    "phase": "settle",
+    "motor_id": 149,
+    "motor_epoch": 7,
+    "motor_steps": 2384
+  },
+  {
+    "frame": 596,
+    "accepted": true,
+    "angle_deg": 268.2,
+    "phase": "accepted",
+    "motor_id": 149,
+    "motor_epoch": 7,
+    "motor_steps": 2384
+  },
+  {
+    "frame": 597,
+    "accepted": false,
+    "angle_deg": 268.2,
+    "phase": "settle",
+    "motor_id": 149,
+    "motor_epoch": 7,
+    "motor_steps": 2384
+  },
+  {
+    "frame": 598,
+    "accepted": false,
+    "angle_deg": 270.0,
+    "phase": "settle",
+    "motor_id": 150,
+    "motor_epoch": 7,
+    "motor_steps": 2400
+  },
+  {
+    "frame": 599,
+    "accepted": false,
+    "angle_deg": 270.0,
+    "phase": "settle",
+    "motor_id": 150,
+    "motor_epoch": 7,
+    "motor_steps": 2400
+  },
+  {
+    "frame": 600,
+    "accepted": true,
+    "angle_deg": 270.0,
+    "phase": "accepted",
+    "motor_id": 150,
+    "motor_epoch": 7,
+    "motor_steps": 2400
+  },
+  {
+    "frame": 601,
+    "accepted": false,
+    "angle_deg": 270.0,
+    "phase": "settle",
+    "motor_id": 150,
+    "motor_epoch": 7,
+    "motor_steps": 2400
+  },
+  {
+    "frame": 602,
+    "accepted": false,
+    "angle_deg": 271.8,
+    "phase": "settle",
+    "motor_id": 151,
+    "motor_epoch": 7,
+    "motor_steps": 2416
+  },
+  {
+    "frame": 603,
+    "accepted": false,
+    "angle_deg": 271.8,
+    "phase": "settle",
+    "motor_id": 151,
+    "motor_epoch": 7,
+    "motor_steps": 2416
+  },
+  {
+    "frame": 604,
+    "accepted": true,
+    "angle_deg": 271.8,
+    "phase": "accepted",
+    "motor_id": 151,
+    "motor_epoch": 7,
+    "motor_steps": 2416
+  },
+  {
+    "frame": 605,
+    "accepted": false,
+    "angle_deg": 271.8,
+    "phase": "settle",
+    "motor_id": 151,
+    "motor_epoch": 7,
+    "motor_steps": 2416
+  },
+  {
+    "frame": 606,
+    "accepted": false,
+    "angle_deg": 273.6,
+    "phase": "settle",
+    "motor_id": 152,
+    "motor_epoch": 7,
+    "motor_steps": 2432
+  },
+  {
+    "frame": 607,
+    "accepted": false,
+    "angle_deg": 273.6,
+    "phase": "settle",
+    "motor_id": 152,
+    "motor_epoch": 7,
+    "motor_steps": 2432
+  },
+  {
+    "frame": 608,
+    "accepted": true,
+    "angle_deg": 273.6,
+    "phase": "accepted",
+    "motor_id": 152,
+    "motor_epoch": 7,
+    "motor_steps": 2432
+  },
+  {
+    "frame": 609,
+    "accepted": false,
+    "angle_deg": 273.6,
+    "phase": "settle",
+    "motor_id": 152,
+    "motor_epoch": 7,
+    "motor_steps": 2432
+  },
+  {
+    "frame": 610,
+    "accepted": false,
+    "angle_deg": 275.4,
+    "phase": "settle",
+    "motor_id": 153,
+    "motor_epoch": 7,
+    "motor_steps": 2448
+  },
+  {
+    "frame": 611,
+    "accepted": false,
+    "angle_deg": 275.4,
+    "phase": "settle",
+    "motor_id": 153,
+    "motor_epoch": 7,
+    "motor_steps": 2448
+  },
+  {
+    "frame": 612,
+    "accepted": true,
+    "angle_deg": 275.4,
+    "phase": "accepted",
+    "motor_id": 153,
+    "motor_epoch": 7,
+    "motor_steps": 2448
+  },
+  {
+    "frame": 613,
+    "accepted": false,
+    "angle_deg": 275.4,
+    "phase": "settle",
+    "motor_id": 153,
+    "motor_epoch": 7,
+    "motor_steps": 2448
+  },
+  {
+    "frame": 614,
+    "accepted": false,
+    "angle_deg": 277.2,
+    "phase": "settle",
+    "motor_id": 154,
+    "motor_epoch": 7,
+    "motor_steps": 2464
+  },
+  {
+    "frame": 615,
+    "accepted": false,
+    "angle_deg": 277.2,
+    "phase": "settle",
+    "motor_id": 154,
+    "motor_epoch": 7,
+    "motor_steps": 2464
+  },
+  {
+    "frame": 616,
+    "accepted": true,
+    "angle_deg": 277.2,
+    "phase": "accepted",
+    "motor_id": 154,
+    "motor_epoch": 7,
+    "motor_steps": 2464
+  },
+  {
+    "frame": 617,
+    "accepted": false,
+    "angle_deg": 277.2,
+    "phase": "settle",
+    "motor_id": 154,
+    "motor_epoch": 7,
+    "motor_steps": 2464
+  },
+  {
+    "frame": 618,
+    "accepted": false,
+    "angle_deg": 279.0,
+    "phase": "settle",
+    "motor_id": 155,
+    "motor_epoch": 7,
+    "motor_steps": 2480
+  },
+  {
+    "frame": 619,
+    "accepted": false,
+    "angle_deg": 279.0,
+    "phase": "settle",
+    "motor_id": 155,
+    "motor_epoch": 7,
+    "motor_steps": 2480
+  },
+  {
+    "frame": 620,
+    "accepted": true,
+    "angle_deg": 279.0,
+    "phase": "accepted",
+    "motor_id": 155,
+    "motor_epoch": 7,
+    "motor_steps": 2480
+  },
+  {
+    "frame": 621,
+    "accepted": false,
+    "angle_deg": 279.0,
+    "phase": "settle",
+    "motor_id": 155,
+    "motor_epoch": 7,
+    "motor_steps": 2480
+  },
+  {
+    "frame": 622,
+    "accepted": false,
+    "angle_deg": 280.8,
+    "phase": "settle",
+    "motor_id": 156,
+    "motor_epoch": 7,
+    "motor_steps": 2496
+  },
+  {
+    "frame": 623,
+    "accepted": false,
+    "angle_deg": 280.8,
+    "phase": "settle",
+    "motor_id": 156,
+    "motor_epoch": 7,
+    "motor_steps": 2496
+  },
+  {
+    "frame": 624,
+    "accepted": true,
+    "angle_deg": 280.8,
+    "phase": "accepted",
+    "motor_id": 156,
+    "motor_epoch": 7,
+    "motor_steps": 2496
+  },
+  {
+    "frame": 625,
+    "accepted": false,
+    "angle_deg": 280.8,
+    "phase": "settle",
+    "motor_id": 156,
+    "motor_epoch": 7,
+    "motor_steps": 2496
+  },
+  {
+    "frame": 626,
+    "accepted": false,
+    "angle_deg": 282.6,
+    "phase": "settle",
+    "motor_id": 157,
+    "motor_epoch": 7,
+    "motor_steps": 2512
+  },
+  {
+    "frame": 627,
+    "accepted": false,
+    "angle_deg": 282.6,
+    "phase": "settle",
+    "motor_id": 157,
+    "motor_epoch": 7,
+    "motor_steps": 2512
+  },
+  {
+    "frame": 628,
+    "accepted": true,
+    "angle_deg": 282.6,
+    "phase": "accepted",
+    "motor_id": 157,
+    "motor_epoch": 7,
+    "motor_steps": 2512
+  },
+  {
+    "frame": 629,
+    "accepted": false,
+    "angle_deg": 282.6,
+    "phase": "settle",
+    "motor_id": 157,
+    "motor_epoch": 7,
+    "motor_steps": 2512
+  },
+  {
+    "frame": 630,
+    "accepted": false,
+    "angle_deg": 284.4,
+    "phase": "settle",
+    "motor_id": 158,
+    "motor_epoch": 7,
+    "motor_steps": 2528
+  },
+  {
+    "frame": 631,
+    "accepted": false,
+    "angle_deg": 284.4,
+    "phase": "settle",
+    "motor_id": 158,
+    "motor_epoch": 7,
+    "motor_steps": 2528
+  },
+  {
+    "frame": 632,
+    "accepted": true,
+    "angle_deg": 284.4,
+    "phase": "accepted",
+    "motor_id": 158,
+    "motor_epoch": 7,
+    "motor_steps": 2528
+  },
+  {
+    "frame": 633,
+    "accepted": false,
+    "angle_deg": 284.4,
+    "phase": "settle",
+    "motor_id": 158,
+    "motor_epoch": 7,
+    "motor_steps": 2528
+  },
+  {
+    "frame": 634,
+    "accepted": false,
+    "angle_deg": 286.2,
+    "phase": "settle",
+    "motor_id": 159,
+    "motor_epoch": 7,
+    "motor_steps": 2544
+  },
+  {
+    "frame": 635,
+    "accepted": false,
+    "angle_deg": 286.2,
+    "phase": "settle",
+    "motor_id": 159,
+    "motor_epoch": 7,
+    "motor_steps": 2544
+  },
+  {
+    "frame": 636,
+    "accepted": true,
+    "angle_deg": 286.2,
+    "phase": "accepted",
+    "motor_id": 159,
+    "motor_epoch": 7,
+    "motor_steps": 2544
+  },
+  {
+    "frame": 637,
+    "accepted": false,
+    "angle_deg": 286.2,
+    "phase": "settle",
+    "motor_id": 159,
+    "motor_epoch": 7,
+    "motor_steps": 2544
+  },
+  {
+    "frame": 638,
+    "accepted": false,
+    "angle_deg": 288.0,
+    "phase": "settle",
+    "motor_id": 160,
+    "motor_epoch": 7,
+    "motor_steps": 2560
+  },
+  {
+    "frame": 639,
+    "accepted": false,
+    "angle_deg": 288.0,
+    "phase": "settle",
+    "motor_id": 160,
+    "motor_epoch": 7,
+    "motor_steps": 2560
+  },
+  {
+    "frame": 640,
+    "accepted": true,
+    "angle_deg": 288.0,
+    "phase": "accepted",
+    "motor_id": 160,
+    "motor_epoch": 7,
+    "motor_steps": 2560
+  },
+  {
+    "frame": 641,
+    "accepted": false,
+    "angle_deg": 288.0,
+    "phase": "settle",
+    "motor_id": 160,
+    "motor_epoch": 7,
+    "motor_steps": 2560
+  },
+  {
+    "frame": 642,
+    "accepted": false,
+    "angle_deg": 289.8,
+    "phase": "settle",
+    "motor_id": 161,
+    "motor_epoch": 7,
+    "motor_steps": 2576
+  },
+  {
+    "frame": 643,
+    "accepted": false,
+    "angle_deg": 289.8,
+    "phase": "settle",
+    "motor_id": 161,
+    "motor_epoch": 7,
+    "motor_steps": 2576
+  },
+  {
+    "frame": 644,
+    "accepted": true,
+    "angle_deg": 289.8,
+    "phase": "accepted",
+    "motor_id": 161,
+    "motor_epoch": 7,
+    "motor_steps": 2576
+  },
+  {
+    "frame": 645,
+    "accepted": false,
+    "angle_deg": 289.8,
+    "phase": "settle",
+    "motor_id": 161,
+    "motor_epoch": 7,
+    "motor_steps": 2576
+  },
+  {
+    "frame": 646,
+    "accepted": false,
+    "angle_deg": 291.6,
+    "phase": "settle",
+    "motor_id": 162,
+    "motor_epoch": 7,
+    "motor_steps": 2592
+  },
+  {
+    "frame": 647,
+    "accepted": false,
+    "angle_deg": 291.6,
+    "phase": "settle",
+    "motor_id": 162,
+    "motor_epoch": 7,
+    "motor_steps": 2592
+  },
+  {
+    "frame": 648,
+    "accepted": true,
+    "angle_deg": 291.6,
+    "phase": "accepted",
+    "motor_id": 162,
+    "motor_epoch": 7,
+    "motor_steps": 2592
+  },
+  {
+    "frame": 649,
+    "accepted": false,
+    "angle_deg": 291.6,
+    "phase": "settle",
+    "motor_id": 162,
+    "motor_epoch": 7,
+    "motor_steps": 2592
+  },
+  {
+    "frame": 650,
+    "accepted": false,
+    "angle_deg": 293.4,
+    "phase": "settle",
+    "motor_id": 163,
+    "motor_epoch": 7,
+    "motor_steps": 2608
+  },
+  {
+    "frame": 651,
+    "accepted": false,
+    "angle_deg": 293.4,
+    "phase": "settle",
+    "motor_id": 163,
+    "motor_epoch": 7,
+    "motor_steps": 2608
+  },
+  {
+    "frame": 652,
+    "accepted": true,
+    "angle_deg": 293.4,
+    "phase": "accepted",
+    "motor_id": 163,
+    "motor_epoch": 7,
+    "motor_steps": 2608
+  },
+  {
+    "frame": 653,
+    "accepted": false,
+    "angle_deg": 293.4,
+    "phase": "settle",
+    "motor_id": 163,
+    "motor_epoch": 7,
+    "motor_steps": 2608
+  },
+  {
+    "frame": 654,
+    "accepted": false,
+    "angle_deg": 295.2,
+    "phase": "settle",
+    "motor_id": 164,
+    "motor_epoch": 7,
+    "motor_steps": 2624
+  },
+  {
+    "frame": 655,
+    "accepted": false,
+    "angle_deg": 295.2,
+    "phase": "settle",
+    "motor_id": 164,
+    "motor_epoch": 7,
+    "motor_steps": 2624
+  },
+  {
+    "frame": 656,
+    "accepted": true,
+    "angle_deg": 295.2,
+    "phase": "accepted",
+    "motor_id": 164,
+    "motor_epoch": 7,
+    "motor_steps": 2624
+  },
+  {
+    "frame": 657,
+    "accepted": false,
+    "angle_deg": 295.2,
+    "phase": "settle",
+    "motor_id": 164,
+    "motor_epoch": 7,
+    "motor_steps": 2624
+  },
+  {
+    "frame": 658,
+    "accepted": false,
+    "angle_deg": 297.0,
+    "phase": "settle",
+    "motor_id": 165,
+    "motor_epoch": 7,
+    "motor_steps": 2640
+  },
+  {
+    "frame": 659,
+    "accepted": false,
+    "angle_deg": 297.0,
+    "phase": "settle",
+    "motor_id": 165,
+    "motor_epoch": 7,
+    "motor_steps": 2640
+  },
+  {
+    "frame": 660,
+    "accepted": true,
+    "angle_deg": 297.0,
+    "phase": "accepted",
+    "motor_id": 165,
+    "motor_epoch": 7,
+    "motor_steps": 2640
+  },
+  {
+    "frame": 661,
+    "accepted": false,
+    "angle_deg": 297.0,
+    "phase": "settle",
+    "motor_id": 165,
+    "motor_epoch": 7,
+    "motor_steps": 2640
+  },
+  {
+    "frame": 662,
+    "accepted": false,
+    "angle_deg": 298.8,
+    "phase": "settle",
+    "motor_id": 166,
+    "motor_epoch": 7,
+    "motor_steps": 2656
+  },
+  {
+    "frame": 663,
+    "accepted": false,
+    "angle_deg": 298.8,
+    "phase": "settle",
+    "motor_id": 166,
+    "motor_epoch": 7,
+    "motor_steps": 2656
+  },
+  {
+    "frame": 664,
+    "accepted": true,
+    "angle_deg": 298.8,
+    "phase": "accepted",
+    "motor_id": 166,
+    "motor_epoch": 7,
+    "motor_steps": 2656
+  },
+  {
+    "frame": 665,
+    "accepted": false,
+    "angle_deg": 298.8,
+    "phase": "settle",
+    "motor_id": 166,
+    "motor_epoch": 7,
+    "motor_steps": 2656
+  },
+  {
+    "frame": 666,
+    "accepted": false,
+    "angle_deg": 300.6,
+    "phase": "settle",
+    "motor_id": 167,
+    "motor_epoch": 7,
+    "motor_steps": 2672
+  },
+  {
+    "frame": 667,
+    "accepted": false,
+    "angle_deg": 300.6,
+    "phase": "settle",
+    "motor_id": 167,
+    "motor_epoch": 7,
+    "motor_steps": 2672
+  },
+  {
+    "frame": 668,
+    "accepted": true,
+    "angle_deg": 300.6,
+    "phase": "accepted",
+    "motor_id": 167,
+    "motor_epoch": 7,
+    "motor_steps": 2672
+  },
+  {
+    "frame": 669,
+    "accepted": false,
+    "angle_deg": 300.6,
+    "phase": "settle",
+    "motor_id": 167,
+    "motor_epoch": 7,
+    "motor_steps": 2672
+  },
+  {
+    "frame": 670,
+    "accepted": false,
+    "angle_deg": 302.4,
+    "phase": "settle",
+    "motor_id": 168,
+    "motor_epoch": 7,
+    "motor_steps": 2688
+  },
+  {
+    "frame": 671,
+    "accepted": false,
+    "angle_deg": 302.4,
+    "phase": "settle",
+    "motor_id": 168,
+    "motor_epoch": 7,
+    "motor_steps": 2688
+  },
+  {
+    "frame": 672,
+    "accepted": true,
+    "angle_deg": 302.4,
+    "phase": "accepted",
+    "motor_id": 168,
+    "motor_epoch": 7,
+    "motor_steps": 2688
+  },
+  {
+    "frame": 673,
+    "accepted": false,
+    "angle_deg": 302.4,
+    "phase": "settle",
+    "motor_id": 168,
+    "motor_epoch": 7,
+    "motor_steps": 2688
+  },
+  {
+    "frame": 674,
+    "accepted": false,
+    "angle_deg": 304.2,
+    "phase": "settle",
+    "motor_id": 169,
+    "motor_epoch": 7,
+    "motor_steps": 2704
+  },
+  {
+    "frame": 675,
+    "accepted": false,
+    "angle_deg": 304.2,
+    "phase": "settle",
+    "motor_id": 169,
+    "motor_epoch": 7,
+    "motor_steps": 2704
+  },
+  {
+    "frame": 676,
+    "accepted": true,
+    "angle_deg": 304.2,
+    "phase": "accepted",
+    "motor_id": 169,
+    "motor_epoch": 7,
+    "motor_steps": 2704
+  },
+  {
+    "frame": 677,
+    "accepted": false,
+    "angle_deg": 304.2,
+    "phase": "settle",
+    "motor_id": 169,
+    "motor_epoch": 7,
+    "motor_steps": 2704
+  },
+  {
+    "frame": 678,
+    "accepted": false,
+    "angle_deg": 306.0,
+    "phase": "settle",
+    "motor_id": 170,
+    "motor_epoch": 7,
+    "motor_steps": 2720
+  },
+  {
+    "frame": 679,
+    "accepted": false,
+    "angle_deg": 306.0,
+    "phase": "settle",
+    "motor_id": 170,
+    "motor_epoch": 7,
+    "motor_steps": 2720
+  },
+  {
+    "frame": 680,
+    "accepted": true,
+    "angle_deg": 306.0,
+    "phase": "accepted",
+    "motor_id": 170,
+    "motor_epoch": 7,
+    "motor_steps": 2720
+  },
+  {
+    "frame": 681,
+    "accepted": false,
+    "angle_deg": 306.0,
+    "phase": "settle",
+    "motor_id": 170,
+    "motor_epoch": 7,
+    "motor_steps": 2720
+  },
+  {
+    "frame": 682,
+    "accepted": false,
+    "angle_deg": 307.8,
+    "phase": "settle",
+    "motor_id": 171,
+    "motor_epoch": 7,
+    "motor_steps": 2736
+  },
+  {
+    "frame": 683,
+    "accepted": false,
+    "angle_deg": 307.8,
+    "phase": "settle",
+    "motor_id": 171,
+    "motor_epoch": 7,
+    "motor_steps": 2736
+  },
+  {
+    "frame": 684,
+    "accepted": true,
+    "angle_deg": 307.8,
+    "phase": "accepted",
+    "motor_id": 171,
+    "motor_epoch": 7,
+    "motor_steps": 2736
+  },
+  {
+    "frame": 685,
+    "accepted": false,
+    "angle_deg": 307.8,
+    "phase": "settle",
+    "motor_id": 171,
+    "motor_epoch": 7,
+    "motor_steps": 2736
+  },
+  {
+    "frame": 686,
+    "accepted": false,
+    "angle_deg": 309.6,
+    "phase": "settle",
+    "motor_id": 172,
+    "motor_epoch": 7,
+    "motor_steps": 2752
+  },
+  {
+    "frame": 687,
+    "accepted": false,
+    "angle_deg": 309.6,
+    "phase": "settle",
+    "motor_id": 172,
+    "motor_epoch": 7,
+    "motor_steps": 2752
+  },
+  {
+    "frame": 688,
+    "accepted": true,
+    "angle_deg": 309.6,
+    "phase": "accepted",
+    "motor_id": 172,
+    "motor_epoch": 7,
+    "motor_steps": 2752
+  },
+  {
+    "frame": 689,
+    "accepted": false,
+    "angle_deg": 309.6,
+    "phase": "settle",
+    "motor_id": 172,
+    "motor_epoch": 7,
+    "motor_steps": 2752
+  },
+  {
+    "frame": 690,
+    "accepted": false,
+    "angle_deg": 311.4,
+    "phase": "settle",
+    "motor_id": 173,
+    "motor_epoch": 7,
+    "motor_steps": 2768
+  },
+  {
+    "frame": 691,
+    "accepted": false,
+    "angle_deg": 311.4,
+    "phase": "settle",
+    "motor_id": 173,
+    "motor_epoch": 7,
+    "motor_steps": 2768
+  },
+  {
+    "frame": 692,
+    "accepted": true,
+    "angle_deg": 311.4,
+    "phase": "accepted",
+    "motor_id": 173,
+    "motor_epoch": 7,
+    "motor_steps": 2768
+  },
+  {
+    "frame": 693,
+    "accepted": false,
+    "angle_deg": 311.4,
+    "phase": "settle",
+    "motor_id": 173,
+    "motor_epoch": 7,
+    "motor_steps": 2768
+  },
+  {
+    "frame": 694,
+    "accepted": false,
+    "angle_deg": 313.2,
+    "phase": "settle",
+    "motor_id": 174,
+    "motor_epoch": 7,
+    "motor_steps": 2784
+  },
+  {
+    "frame": 695,
+    "accepted": false,
+    "angle_deg": 313.2,
+    "phase": "settle",
+    "motor_id": 174,
+    "motor_epoch": 7,
+    "motor_steps": 2784
+  },
+  {
+    "frame": 696,
+    "accepted": true,
+    "angle_deg": 313.2,
+    "phase": "accepted",
+    "motor_id": 174,
+    "motor_epoch": 7,
+    "motor_steps": 2784
+  },
+  {
+    "frame": 697,
+    "accepted": false,
+    "angle_deg": 313.2,
+    "phase": "settle",
+    "motor_id": 174,
+    "motor_epoch": 7,
+    "motor_steps": 2784
+  },
+  {
+    "frame": 698,
+    "accepted": false,
+    "angle_deg": 315.0,
+    "phase": "settle",
+    "motor_id": 175,
+    "motor_epoch": 7,
+    "motor_steps": 2800
+  },
+  {
+    "frame": 699,
+    "accepted": false,
+    "angle_deg": 315.0,
+    "phase": "settle",
+    "motor_id": 175,
+    "motor_epoch": 7,
+    "motor_steps": 2800
+  },
+  {
+    "frame": 700,
+    "accepted": true,
+    "angle_deg": 315.0,
+    "phase": "accepted",
+    "motor_id": 175,
+    "motor_epoch": 7,
+    "motor_steps": 2800
+  },
+  {
+    "frame": 701,
+    "accepted": false,
+    "angle_deg": 315.0,
+    "phase": "settle",
+    "motor_id": 175,
+    "motor_epoch": 7,
+    "motor_steps": 2800
+  },
+  {
+    "frame": 702,
+    "accepted": false,
+    "angle_deg": 316.8,
+    "phase": "settle",
+    "motor_id": 176,
+    "motor_epoch": 7,
+    "motor_steps": 2816
+  },
+  {
+    "frame": 703,
+    "accepted": false,
+    "angle_deg": 316.8,
+    "phase": "settle",
+    "motor_id": 176,
+    "motor_epoch": 7,
+    "motor_steps": 2816
+  },
+  {
+    "frame": 704,
+    "accepted": true,
+    "angle_deg": 316.8,
+    "phase": "accepted",
+    "motor_id": 176,
+    "motor_epoch": 7,
+    "motor_steps": 2816
+  },
+  {
+    "frame": 705,
+    "accepted": false,
+    "angle_deg": 316.8,
+    "phase": "settle",
+    "motor_id": 176,
+    "motor_epoch": 7,
+    "motor_steps": 2816
+  },
+  {
+    "frame": 706,
+    "accepted": false,
+    "angle_deg": 318.6,
+    "phase": "settle",
+    "motor_id": 177,
+    "motor_epoch": 7,
+    "motor_steps": 2832
+  },
+  {
+    "frame": 707,
+    "accepted": false,
+    "angle_deg": 318.6,
+    "phase": "settle",
+    "motor_id": 177,
+    "motor_epoch": 7,
+    "motor_steps": 2832
+  },
+  {
+    "frame": 708,
+    "accepted": true,
+    "angle_deg": 318.6,
+    "phase": "accepted",
+    "motor_id": 177,
+    "motor_epoch": 7,
+    "motor_steps": 2832
+  },
+  {
+    "frame": 709,
+    "accepted": false,
+    "angle_deg": 318.6,
+    "phase": "settle",
+    "motor_id": 177,
+    "motor_epoch": 7,
+    "motor_steps": 2832
+  },
+  {
+    "frame": 710,
+    "accepted": false,
+    "angle_deg": 320.4,
+    "phase": "settle",
+    "motor_id": 178,
+    "motor_epoch": 7,
+    "motor_steps": 2848
+  },
+  {
+    "frame": 711,
+    "accepted": false,
+    "angle_deg": 320.4,
+    "phase": "settle",
+    "motor_id": 178,
+    "motor_epoch": 7,
+    "motor_steps": 2848
+  },
+  {
+    "frame": 712,
+    "accepted": true,
+    "angle_deg": 320.4,
+    "phase": "accepted",
+    "motor_id": 178,
+    "motor_epoch": 7,
+    "motor_steps": 2848
+  },
+  {
+    "frame": 713,
+    "accepted": false,
+    "angle_deg": 320.4,
+    "phase": "settle",
+    "motor_id": 178,
+    "motor_epoch": 7,
+    "motor_steps": 2848
+  },
+  {
+    "frame": 714,
+    "accepted": false,
+    "angle_deg": 322.2,
+    "phase": "settle",
+    "motor_id": 179,
+    "motor_epoch": 7,
+    "motor_steps": 2864
+  },
+  {
+    "frame": 715,
+    "accepted": false,
+    "angle_deg": 322.2,
+    "phase": "settle",
+    "motor_id": 179,
+    "motor_epoch": 7,
+    "motor_steps": 2864
+  },
+  {
+    "frame": 716,
+    "accepted": true,
+    "angle_deg": 322.2,
+    "phase": "accepted",
+    "motor_id": 179,
+    "motor_epoch": 7,
+    "motor_steps": 2864
+  },
+  {
+    "frame": 717,
+    "accepted": false,
+    "angle_deg": 322.2,
+    "phase": "settle",
+    "motor_id": 179,
+    "motor_epoch": 7,
+    "motor_steps": 2864
+  },
+  {
+    "frame": 718,
+    "accepted": false,
+    "angle_deg": 324.0,
+    "phase": "settle",
+    "motor_id": 180,
+    "motor_epoch": 7,
+    "motor_steps": 2880
+  },
+  {
+    "frame": 719,
+    "accepted": false,
+    "angle_deg": 324.0,
+    "phase": "settle",
+    "motor_id": 180,
+    "motor_epoch": 7,
+    "motor_steps": 2880
+  },
+  {
+    "frame": 720,
+    "accepted": true,
+    "angle_deg": 324.0,
+    "phase": "accepted",
+    "motor_id": 180,
+    "motor_epoch": 7,
+    "motor_steps": 2880
+  },
+  {
+    "frame": 721,
+    "accepted": false,
+    "angle_deg": 324.0,
+    "phase": "settle",
+    "motor_id": 180,
+    "motor_epoch": 7,
+    "motor_steps": 2880
+  },
+  {
+    "frame": 722,
+    "accepted": false,
+    "angle_deg": 325.8,
+    "phase": "settle",
+    "motor_id": 181,
+    "motor_epoch": 7,
+    "motor_steps": 2896
+  },
+  {
+    "frame": 723,
+    "accepted": false,
+    "angle_deg": 325.8,
+    "phase": "settle",
+    "motor_id": 181,
+    "motor_epoch": 7,
+    "motor_steps": 2896
+  },
+  {
+    "frame": 724,
+    "accepted": true,
+    "angle_deg": 325.8,
+    "phase": "accepted",
+    "motor_id": 181,
+    "motor_epoch": 7,
+    "motor_steps": 2896
+  },
+  {
+    "frame": 725,
+    "accepted": false,
+    "angle_deg": 325.8,
+    "phase": "settle",
+    "motor_id": 181,
+    "motor_epoch": 7,
+    "motor_steps": 2896
+  },
+  {
+    "frame": 726,
+    "accepted": false,
+    "angle_deg": 327.6,
+    "phase": "settle",
+    "motor_id": 182,
+    "motor_epoch": 7,
+    "motor_steps": 2912
+  },
+  {
+    "frame": 727,
+    "accepted": false,
+    "angle_deg": 327.6,
+    "phase": "settle",
+    "motor_id": 182,
+    "motor_epoch": 7,
+    "motor_steps": 2912
+  },
+  {
+    "frame": 728,
+    "accepted": true,
+    "angle_deg": 327.6,
+    "phase": "accepted",
+    "motor_id": 182,
+    "motor_epoch": 7,
+    "motor_steps": 2912
+  },
+  {
+    "frame": 729,
+    "accepted": false,
+    "angle_deg": 327.6,
+    "phase": "settle",
+    "motor_id": 182,
+    "motor_epoch": 7,
+    "motor_steps": 2912
+  },
+  {
+    "frame": 730,
+    "accepted": false,
+    "angle_deg": 329.4,
+    "phase": "settle",
+    "motor_id": 183,
+    "motor_epoch": 7,
+    "motor_steps": 2928
+  },
+  {
+    "frame": 731,
+    "accepted": false,
+    "angle_deg": 329.4,
+    "phase": "settle",
+    "motor_id": 183,
+    "motor_epoch": 7,
+    "motor_steps": 2928
+  },
+  {
+    "frame": 732,
+    "accepted": true,
+    "angle_deg": 329.4,
+    "phase": "accepted",
+    "motor_id": 183,
+    "motor_epoch": 7,
+    "motor_steps": 2928
+  },
+  {
+    "frame": 733,
+    "accepted": false,
+    "angle_deg": 329.4,
+    "phase": "settle",
+    "motor_id": 183,
+    "motor_epoch": 7,
+    "motor_steps": 2928
+  },
+  {
+    "frame": 734,
+    "accepted": false,
+    "angle_deg": 331.2,
+    "phase": "settle",
+    "motor_id": 184,
+    "motor_epoch": 7,
+    "motor_steps": 2944
+  },
+  {
+    "frame": 735,
+    "accepted": false,
+    "angle_deg": 331.2,
+    "phase": "settle",
+    "motor_id": 184,
+    "motor_epoch": 7,
+    "motor_steps": 2944
+  },
+  {
+    "frame": 736,
+    "accepted": true,
+    "angle_deg": 331.2,
+    "phase": "accepted",
+    "motor_id": 184,
+    "motor_epoch": 7,
+    "motor_steps": 2944
+  },
+  {
+    "frame": 737,
+    "accepted": false,
+    "angle_deg": 331.2,
+    "phase": "settle",
+    "motor_id": 184,
+    "motor_epoch": 7,
+    "motor_steps": 2944
+  },
+  {
+    "frame": 738,
+    "accepted": false,
+    "angle_deg": 333.0,
+    "phase": "settle",
+    "motor_id": 185,
+    "motor_epoch": 7,
+    "motor_steps": 2960
+  },
+  {
+    "frame": 739,
+    "accepted": false,
+    "angle_deg": 333.0,
+    "phase": "settle",
+    "motor_id": 185,
+    "motor_epoch": 7,
+    "motor_steps": 2960
+  },
+  {
+    "frame": 740,
+    "accepted": true,
+    "angle_deg": 333.0,
+    "phase": "accepted",
+    "motor_id": 185,
+    "motor_epoch": 7,
+    "motor_steps": 2960
+  },
+  {
+    "frame": 741,
+    "accepted": false,
+    "angle_deg": 333.0,
+    "phase": "settle",
+    "motor_id": 185,
+    "motor_epoch": 7,
+    "motor_steps": 2960
+  },
+  {
+    "frame": 742,
+    "accepted": false,
+    "angle_deg": 334.8,
+    "phase": "settle",
+    "motor_id": 186,
+    "motor_epoch": 7,
+    "motor_steps": 2976
+  },
+  {
+    "frame": 743,
+    "accepted": false,
+    "angle_deg": 334.8,
+    "phase": "settle",
+    "motor_id": 186,
+    "motor_epoch": 7,
+    "motor_steps": 2976
+  },
+  {
+    "frame": 744,
+    "accepted": true,
+    "angle_deg": 334.8,
+    "phase": "accepted",
+    "motor_id": 186,
+    "motor_epoch": 7,
+    "motor_steps": 2976
+  },
+  {
+    "frame": 745,
+    "accepted": false,
+    "angle_deg": 334.8,
+    "phase": "settle",
+    "motor_id": 186,
+    "motor_epoch": 7,
+    "motor_steps": 2976
+  },
+  {
+    "frame": 746,
+    "accepted": false,
+    "angle_deg": 336.6,
+    "phase": "settle",
+    "motor_id": 187,
+    "motor_epoch": 7,
+    "motor_steps": 2992
+  },
+  {
+    "frame": 747,
+    "accepted": false,
+    "angle_deg": 336.6,
+    "phase": "settle",
+    "motor_id": 187,
+    "motor_epoch": 7,
+    "motor_steps": 2992
+  },
+  {
+    "frame": 748,
+    "accepted": true,
+    "angle_deg": 336.6,
+    "phase": "accepted",
+    "motor_id": 187,
+    "motor_epoch": 7,
+    "motor_steps": 2992
+  },
+  {
+    "frame": 749,
+    "accepted": false,
+    "angle_deg": 336.6,
+    "phase": "settle",
+    "motor_id": 187,
+    "motor_epoch": 7,
+    "motor_steps": 2992
+  },
+  {
+    "frame": 750,
+    "accepted": false,
+    "angle_deg": 338.4,
+    "phase": "settle",
+    "motor_id": 188,
+    "motor_epoch": 7,
+    "motor_steps": 3008
+  },
+  {
+    "frame": 751,
+    "accepted": false,
+    "angle_deg": 338.4,
+    "phase": "settle",
+    "motor_id": 188,
+    "motor_epoch": 7,
+    "motor_steps": 3008
+  },
+  {
+    "frame": 752,
+    "accepted": true,
+    "angle_deg": 338.4,
+    "phase": "accepted",
+    "motor_id": 188,
+    "motor_epoch": 7,
+    "motor_steps": 3008
+  },
+  {
+    "frame": 753,
+    "accepted": false,
+    "angle_deg": 338.4,
+    "phase": "settle",
+    "motor_id": 188,
+    "motor_epoch": 7,
+    "motor_steps": 3008
+  },
+  {
+    "frame": 754,
+    "accepted": false,
+    "angle_deg": 340.2,
+    "phase": "settle",
+    "motor_id": 189,
+    "motor_epoch": 7,
+    "motor_steps": 3024
+  },
+  {
+    "frame": 755,
+    "accepted": false,
+    "angle_deg": 340.2,
+    "phase": "settle",
+    "motor_id": 189,
+    "motor_epoch": 7,
+    "motor_steps": 3024
+  },
+  {
+    "frame": 756,
+    "accepted": true,
+    "angle_deg": 340.2,
+    "phase": "accepted",
+    "motor_id": 189,
+    "motor_epoch": 7,
+    "motor_steps": 3024
+  },
+  {
+    "frame": 757,
+    "accepted": false,
+    "angle_deg": 340.2,
+    "phase": "settle",
+    "motor_id": 189,
+    "motor_epoch": 7,
+    "motor_steps": 3024
+  },
+  {
+    "frame": 758,
+    "accepted": false,
+    "angle_deg": 342.0,
+    "phase": "settle",
+    "motor_id": 190,
+    "motor_epoch": 7,
+    "motor_steps": 3040
+  },
+  {
+    "frame": 759,
+    "accepted": false,
+    "angle_deg": 342.0,
+    "phase": "settle",
+    "motor_id": 190,
+    "motor_epoch": 7,
+    "motor_steps": 3040
+  },
+  {
+    "frame": 760,
+    "accepted": true,
+    "angle_deg": 342.0,
+    "phase": "accepted",
+    "motor_id": 190,
+    "motor_epoch": 7,
+    "motor_steps": 3040
+  },
+  {
+    "frame": 761,
+    "accepted": false,
+    "angle_deg": 342.0,
+    "phase": "settle",
+    "motor_id": 190,
+    "motor_epoch": 7,
+    "motor_steps": 3040
+  },
+  {
+    "frame": 762,
+    "accepted": false,
+    "angle_deg": 343.8,
+    "phase": "settle",
+    "motor_id": 191,
+    "motor_epoch": 7,
+    "motor_steps": 3056
+  },
+  {
+    "frame": 763,
+    "accepted": false,
+    "angle_deg": 343.8,
+    "phase": "settle",
+    "motor_id": 191,
+    "motor_epoch": 7,
+    "motor_steps": 3056
+  },
+  {
+    "frame": 764,
+    "accepted": true,
+    "angle_deg": 343.8,
+    "phase": "accepted",
+    "motor_id": 191,
+    "motor_epoch": 7,
+    "motor_steps": 3056
+  },
+  {
+    "frame": 765,
+    "accepted": false,
+    "angle_deg": 343.8,
+    "phase": "settle",
+    "motor_id": 191,
+    "motor_epoch": 7,
+    "motor_steps": 3056
+  },
+  {
+    "frame": 766,
+    "accepted": false,
+    "angle_deg": 345.6,
+    "phase": "settle",
+    "motor_id": 192,
+    "motor_epoch": 7,
+    "motor_steps": 3072
+  },
+  {
+    "frame": 767,
+    "accepted": false,
+    "angle_deg": 345.6,
+    "phase": "settle",
+    "motor_id": 192,
+    "motor_epoch": 7,
+    "motor_steps": 3072
+  },
+  {
+    "frame": 768,
+    "accepted": true,
+    "angle_deg": 345.6,
+    "phase": "accepted",
+    "motor_id": 192,
+    "motor_epoch": 7,
+    "motor_steps": 3072
+  },
+  {
+    "frame": 769,
+    "accepted": false,
+    "angle_deg": 345.6,
+    "phase": "settle",
+    "motor_id": 192,
+    "motor_epoch": 7,
+    "motor_steps": 3072
+  },
+  {
+    "frame": 770,
+    "accepted": false,
+    "angle_deg": 347.4,
+    "phase": "settle",
+    "motor_id": 193,
+    "motor_epoch": 7,
+    "motor_steps": 3088
+  },
+  {
+    "frame": 771,
+    "accepted": false,
+    "angle_deg": 347.4,
+    "phase": "settle",
+    "motor_id": 193,
+    "motor_epoch": 7,
+    "motor_steps": 3088
+  },
+  {
+    "frame": 772,
+    "accepted": true,
+    "angle_deg": 347.4,
+    "phase": "accepted",
+    "motor_id": 193,
+    "motor_epoch": 7,
+    "motor_steps": 3088
+  },
+  {
+    "frame": 773,
+    "accepted": false,
+    "angle_deg": 347.4,
+    "phase": "settle",
+    "motor_id": 193,
+    "motor_epoch": 7,
+    "motor_steps": 3088
+  },
+  {
+    "frame": 774,
+    "accepted": false,
+    "angle_deg": 349.2,
+    "phase": "settle",
+    "motor_id": 194,
+    "motor_epoch": 7,
+    "motor_steps": 3104
+  },
+  {
+    "frame": 775,
+    "accepted": false,
+    "angle_deg": 349.2,
+    "phase": "settle",
+    "motor_id": 194,
+    "motor_epoch": 7,
+    "motor_steps": 3104
+  },
+  {
+    "frame": 776,
+    "accepted": true,
+    "angle_deg": 349.2,
+    "phase": "accepted",
+    "motor_id": 194,
+    "motor_epoch": 7,
+    "motor_steps": 3104
+  },
+  {
+    "frame": 777,
+    "accepted": false,
+    "angle_deg": 349.2,
+    "phase": "settle",
+    "motor_id": 194,
+    "motor_epoch": 7,
+    "motor_steps": 3104
+  },
+  {
+    "frame": 778,
+    "accepted": false,
+    "angle_deg": 351.0,
+    "phase": "settle",
+    "motor_id": 195,
+    "motor_epoch": 7,
+    "motor_steps": 3120
+  },
+  {
+    "frame": 779,
+    "accepted": false,
+    "angle_deg": 351.0,
+    "phase": "settle",
+    "motor_id": 195,
+    "motor_epoch": 7,
+    "motor_steps": 3120
+  },
+  {
+    "frame": 780,
+    "accepted": true,
+    "angle_deg": 351.0,
+    "phase": "accepted",
+    "motor_id": 195,
+    "motor_epoch": 7,
+    "motor_steps": 3120
+  },
+  {
+    "frame": 781,
+    "accepted": false,
+    "angle_deg": 351.0,
+    "phase": "settle",
+    "motor_id": 195,
+    "motor_epoch": 7,
+    "motor_steps": 3120
+  },
+  {
+    "frame": 782,
+    "accepted": false,
+    "angle_deg": 352.8,
+    "phase": "settle",
+    "motor_id": 196,
+    "motor_epoch": 7,
+    "motor_steps": 3136
+  },
+  {
+    "frame": 783,
+    "accepted": false,
+    "angle_deg": 352.8,
+    "phase": "settle",
+    "motor_id": 196,
+    "motor_epoch": 7,
+    "motor_steps": 3136
+  },
+  {
+    "frame": 784,
+    "accepted": true,
+    "angle_deg": 352.8,
+    "phase": "accepted",
+    "motor_id": 196,
+    "motor_epoch": 7,
+    "motor_steps": 3136
+  },
+  {
+    "frame": 785,
+    "accepted": false,
+    "angle_deg": 352.8,
+    "phase": "settle",
+    "motor_id": 196,
+    "motor_epoch": 7,
+    "motor_steps": 3136
+  },
+  {
+    "frame": 786,
+    "accepted": false,
+    "angle_deg": 354.6,
+    "phase": "settle",
+    "motor_id": 197,
+    "motor_epoch": 7,
+    "motor_steps": 3152
+  },
+  {
+    "frame": 787,
+    "accepted": false,
+    "angle_deg": 354.6,
+    "phase": "settle",
+    "motor_id": 197,
+    "motor_epoch": 7,
+    "motor_steps": 3152
+  },
+  {
+    "frame": 788,
+    "accepted": true,
+    "angle_deg": 354.6,
+    "phase": "accepted",
+    "motor_id": 197,
+    "motor_epoch": 7,
+    "motor_steps": 3152
+  },
+  {
+    "frame": 789,
+    "accepted": false,
+    "angle_deg": 354.6,
+    "phase": "settle",
+    "motor_id": 197,
+    "motor_epoch": 7,
+    "motor_steps": 3152
+  },
+  {
+    "frame": 790,
+    "accepted": false,
+    "angle_deg": 356.4,
+    "phase": "settle",
+    "motor_id": 198,
+    "motor_epoch": 7,
+    "motor_steps": 3168
+  },
+  {
+    "frame": 791,
+    "accepted": false,
+    "angle_deg": 356.4,
+    "phase": "settle",
+    "motor_id": 198,
+    "motor_epoch": 7,
+    "motor_steps": 3168
+  },
+  {
+    "frame": 792,
+    "accepted": true,
+    "angle_deg": 356.4,
+    "phase": "accepted",
+    "motor_id": 198,
+    "motor_epoch": 7,
+    "motor_steps": 3168
+  },
+  {
+    "frame": 793,
+    "accepted": false,
+    "angle_deg": 356.4,
+    "phase": "settle",
+    "motor_id": 198,
+    "motor_epoch": 7,
+    "motor_steps": 3168
+  },
+  {
+    "frame": 794,
+    "accepted": false,
+    "angle_deg": 358.2,
+    "phase": "settle",
+    "motor_id": 199,
+    "motor_epoch": 7,
+    "motor_steps": 3184
+  },
+  {
+    "frame": 795,
+    "accepted": false,
+    "angle_deg": 358.2,
+    "phase": "settle",
+    "motor_id": 199,
+    "motor_epoch": 7,
+    "motor_steps": 3184
+  },
+  {
+    "frame": 796,
+    "accepted": true,
+    "angle_deg": 358.2,
+    "phase": "accepted",
+    "motor_id": 199,
+    "motor_epoch": 7,
+    "motor_steps": 3184
+  },
+  {
+    "frame": 797,
+    "accepted": false,
+    "angle_deg": 358.2,
+    "phase": "settle",
+    "motor_id": 199,
+    "motor_epoch": 7,
+    "motor_steps": 3184
+  },
+  {
+    "frame": 798,
+    "accepted": false,
+    "angle_deg": 360.0,
+    "phase": "settle",
+    "motor_id": 200,
+    "motor_epoch": 7,
+    "motor_steps": 3200
+  },
+  {
+    "frame": 799,
+    "accepted": false,
+    "angle_deg": 360.0,
+    "phase": "settle",
+    "motor_id": 200,
+    "motor_epoch": 7,
+    "motor_steps": 3200
+  },
+  {
+    "frame": 800,
+    "accepted": true,
+    "angle_deg": 360.0,
+    "phase": "accepted",
+    "motor_id": 200,
+    "motor_epoch": 7,
+    "motor_steps": 3200
+  }
+]

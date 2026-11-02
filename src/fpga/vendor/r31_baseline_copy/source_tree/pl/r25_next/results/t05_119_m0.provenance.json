@@ -1,0 +1,39 @@
+{
+  "name": "T05_119",
+  "mode": 0,
+  "backend": "XSim 2025.2 behavioral",
+  "source_manifest": [
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_banked_ram.sv",
+      "sha256": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_ports.svh",
+      "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_r25.sv",
+      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_row_r25.sv",
+      "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_tdp_ram.sv",
+      "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/sim/tb_pfo3_r25.sv",
+      "sha256": "e113b4b2260c07ca1c745cefc625f65e270fdce32663542a46b58138ca0aaadf"
+    }
+  ],
+  "input_npy_sha256": "78ea97852ffeadf77423c9ee35378882a5b58e4528ecf6d2a5e84ea8010a9d12",
+  "input_hex_sha256": "76a6212cf8767c00b878063630547791d86e61344c267679c978f3e8f2fe814f",
+  "reference_sha256": "e5798f1f9e636626aeea55825cddfa0a9b63079872e8e31adb86110855dcfe00",
+  "records_sha256": "b731dadc03bf4aa6365ab3ecab7c26a5a0ebaf33806c6ce82619da2573836bca",
+  "log_sha256": "eafe40372c8507326d6a1edc41376a54e2e04e096c5e4fba9d688363122077ca",
+  "summary": "0 0 315 302 294 301 294 299 0 0 0 0 0 386 14 386 14 370 2811639 360960 1 1 1 64 0",
+  "exact_reference_match": true,
+  "terminal_pass": true
+}

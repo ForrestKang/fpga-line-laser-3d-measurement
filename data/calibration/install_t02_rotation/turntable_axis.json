@@ -1,0 +1,58 @@
+{
+  "schema": "turntable_axis_v1",
+  "coordinate_frame": "camera",
+  "units": "mm",
+  "axis_point_camera_mm": [
+    21.58574689987726,
+    -32.23218866883344,
+    263.1050007675116
+  ],
+  "axis_direction_camera": [
+    -0.03613765401499276,
+    0.9986095783736293,
+    0.038379420823336244
+  ],
+  "radial_reference_camera": [
+    0.9993468216601745,
+    0.03611099435866866,
+    0.001387848743747904
+  ],
+  "rotation_angle_sign": 1,
+  "convention": "a point fixed on the turntable at motor angle theta = steps*2pi/3200 is at rot(axis_direction, theta) (X0 - axis_point) + axis_point",
+  "views": 39,
+  "steps_range": [
+    16,
+    688
+  ],
+  "angle_ratio_measured_over_commanded": {
+    "median": 0.9013133946479341,
+    "min": 0.6670044081059292,
+    "max": 0.9311877621456269
+  },
+  "direction_spread_deg": 1.2647618325948504,
+  "corner_residual_mm": {
+    "median": 0.6669163912121701,
+    "max": 1.2537747713502854
+  },
+  "corner_residual_px": {
+    "median": 0.6329803050033751,
+    "max": 3.5191455180128353
+  },
+  "intrinsics": "camera_intrinsics_20261029_022834.json",
+  "run": "run_20261029_024328",
+  "source": "checkerboard on turntable 20261029_031428",
+  "steps_per_turn": 3547,
+  "steps_per_turn_source": "checkerboard axis scan run_20261029_024328: measured = 0.9022 x commanded over 39 views (5 RPM, 100 ms setup)",
+  "fitted_file": "turntable_axis_20261029_031428.json",
+  "previous_axis_point_camera_mm": [
+    17.14900399892582,
+    -31.718894992141188,
+    271.23224898452344
+  ],
+  "previous_axis_direction_camera": [
+    0.09058354118239573,
+    0.9957981486056068,
+    -0.013441328078107363
+  ],
+  "adjusted_by": "T02 rotation fit, 200 views of run_20261029_045448 (even fit, odd check); steps_per_turn kept"
+}

@@ -1,0 +1,155 @@
+{
+  "revision": "V9",
+  "frozen_utc": "2026-10-21T16:47:57.537940+00:00",
+  "scope": "ISOLATED_NATIVE_CANDIDATE_ONLY",
+  "source": {
+    "pl/r25_next/rtl/pfo3_banked_ram.sv": {
+      "bytes": 1130,
+      "sha256": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543"
+    },
+    "pl/r25_next/rtl/pfo3_frontend_ports.svh": {
+      "bytes": 1059,
+      "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+    },
+    "pl/r25_next/rtl/pfo3_frontend_r25.sv": {
+      "bytes": 18144,
+      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
+    },
+    "pl/r25_next/rtl/pfo3_row_r25.sv": {
+      "bytes": 10605,
+      "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
+    },
+    "pl/r25_next/rtl/pfo3_tdp_ram.sv": {
+      "bytes": 545,
+      "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
+    },
+    "pl/r25_next/sim/pfo3_frontend_serial_baseline.sv": {
+      "bytes": 14461,
+      "sha256": "20facc8dec591879ada64a05aa25ef93e5ab891a1a6631251009deb0b8d693ce"
+    },
+    "pl/r25_next/sim/tb_pfo3_faults.sv": {
+      "bytes": 4073,
+      "sha256": "0bf31494fd37c36c7b420c8ebff646ddab62409dfdc9268115c33ddf69aee298"
+    },
+    "pl/r25_next/sim/tb_pfo3_graph4.sv": {
+      "bytes": 4122,
+      "sha256": "1f562304c7962e309559b8198ef76565a71567e62e9748f9c8042efc6a4da7d3"
+    },
+    "pl/r25_next/sim/tb_pfo3_r25.sv": {
+      "bytes": 4226,
+      "sha256": "e113b4b2260c07ca1c745cefc625f65e270fdce32663542a46b58138ca0aaadf"
+    },
+    "pl/r25_next/scripts/archive_revision.py": {
+      "bytes": 1592,
+      "sha256": "0b821ad92d5042e03f88adabd254269030e7819dc47e9a56d7d4c0926d6e3372"
+    },
+    "pl/r25_next/scripts/build_four_lane_source.py": {
+      "bytes": 4775,
+      "sha256": "a25d69fb5d4caab9e225aabf63b601c13f4f85c4b10c7855e44bd962e15083fc"
+    },
+    "pl/r25_next/scripts/faults.ps1": {
+      "bytes": 2075,
+      "sha256": "2118b3ba4214fadcf2ffc6258d1e33e9b2325439a4cc94f06b2d0d04277f3ffa"
+    },
+    "pl/r25_next/scripts/freeze.py": {
+      "bytes": 3431,
+      "sha256": "041b7597bad144461de9b2e5b158fe879f67fc67f38d12752252199ad1607844"
+    },
+    "pl/r25_next/scripts/graph_equivalence.ps1": {
+      "bytes": 2214,
+      "sha256": "2a02eef7a0cfac031598efdad16198e81448254f4f6dfd6760bf2430350732dc"
+    },
+    "pl/r25_next/scripts/metrics.py": {
+      "bytes": 3527,
+      "sha256": "06a0a94f991cd225daed9d94374c94f75cecea8cf9e5d2f11ac1fde555693dec"
+    },
+    "pl/r25_next/scripts/pipeline_v8.py": {
+      "bytes": 3248,
+      "sha256": "9fbc879b187bb8f904c8157f20cb8927751b018bc1c8faf7e69e35a0b24068a7"
+    },
+    "pl/r25_next/scripts/pipeline_v9.py": {
+      "bytes": 2287,
+      "sha256": "1acbb65626e4810aa30f06c29f3e16f8f13dc012678beb2cf6776b06f7f3bd34"
+    },
+    "pl/r25_next/scripts/regression.ps1": {
+      "bytes": 540,
+      "sha256": "51d9e14ce885efb5166820f8a7bf825b97a24acc8a724a71e5f3833ae224e6e7"
+    },
+    "pl/r25_next/scripts/report.py": {
+      "bytes": 5060,
+      "sha256": "52ac66fde96a341094c245e9171a49fe79d0d248e0be7f748568657212c2030f"
+    },
+    "pl/r25_next/scripts/run_xsim.ps1": {
+      "bytes": 4069,
+      "sha256": "dd180b2419f43d3e0e98624e2bf332bec1b50764a6b30565f7baa7c702a0c611"
+    },
+    "pl/r25_next/scripts/sim.tcl": {
+      "bytes": 803,
+      "sha256": "7f9b5e7f811aa50693cbe4c8194083ee4be633df3a1495c5fe88bfb18dfae6f0"
+    },
+    "pl/r25_next/scripts/synth.tcl": {
+      "bytes": 1192,
+      "sha256": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054"
+    },
+    "pl/r25_next/scripts/synth_v8.tcl": {
+      "bytes": 1190,
+      "sha256": "ca11fc30f14edef7182f4cacb5ec63aa96e1141bdf13041e0035dc9a3c10e55c"
+    },
+    "pl/r25_next/scripts/synth_v9.tcl": {
+      "bytes": 1192,
+      "sha256": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054"
+    },
+    "pl/r25_next/scripts/timing_report.py": {
+      "bytes": 3631,
+      "sha256": "d90ed0e9c64e4429e6c080aa070b0f170da6145cc8e5b4b23fa6a2d6dbc3409b"
+    },
+    "pl/r25_next/scripts/vectors.py": {
+      "bytes": 8165,
+      "sha256": "12b19a528bf37eea52648061294a9e07737fd38cdae96c8b1b6bbbba3aa8e511"
+    },
+    "pl/r25_next/README_R25_NEXT.md": {
+      "bytes": 6135,
+      "sha256": "32132a53b780bf88337a08da5b88193a3d1ac398c5cea3cf48f5a598aa33605e"
+    }
+  },
+  "frozen_official_r25_rtl_unchanged": {
+    "pfo3_frontend_r25.sv": "c670262ee401d26215ec617f597329fdc779a75a0865623cbb66c9c8ad9e18a2",
+    "pfo3_row_r25.sv": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d",
+    "pfo3_tdp_ram.sv": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b",
+    "pfo3_frontend_ports.svh": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+  },
+  "frozen_delivery_unchanged": {
+    "r25.bit": "891bf68955e24506de68f832f8d8466231b98d8e9849adc215f139c12f785ba5",
+    "r25.hwh": "2367dcc188b63f1217a6c82475d03e7447dd2dc7575cc89da7f16be3275cbd04"
+  },
+  "summary": {
+    "full_size_frames": 17,
+    "candidate_word_checks": 986026,
+    "graph_equivalence_trials": 24,
+    "graph_equivalence_word_checks": 52224,
+    "exact_frozen_payloads": 17,
+    "cycles_min": 2805946,
+    "cycles_max": 3311721,
+    "pair_phase_cycles": 521152,
+    "ooc_100mhz_timing_pass": true,
+    "integrated_build_done": false,
+    "board_used": false,
+    "production_bit_changed": false
+  },
+  "report_files": {
+    "BUILD_PIN_V9.json": "90ee24d747fa18a9c0c603d6672e692fb593f2affac279453d689520178e93a4",
+    "SOURCE_MANIFEST.json": "293f6ef212ea2f74b75e2536c631ddeced56b6a53353c048370a2352bce5f0c6",
+    "VALIDATION_R25.json": "fc25245f74970ccd1ddca06c4a3bef8a6313999f787111ad895e25bc60c10811",
+    "FOUR_LANE_METRICS.json": "10d1ce3dde558b48f91e0514260ea6f469497239abbc394690892f2fad63e39e",
+    "TIMING_R25.json": "06b26a47d2dbe1b5c94e0a3cf9d4eb1dd6f78863b8243c1d955aa4f4f75996c4"
+  },
+  "history": {
+    "v7": "69b2410cb167497ad308ad6ffc61d63b9e1dca5e6344e3fe0f9282d7e8d64814",
+    "v8": "f94fda240eca5a6e2e1ec7e0cf820ccc7c4c58dd916bb60f21f4c338d0fe9282"
+  },
+  "checkpoints": {
+    "pfo3_frontend_r25_route.dcp": "50c6cb6e1e9dced36974d907fc89aaeef48c892652884e3f641d38df01e0be32",
+    "pfo3_frontend_r25_synth.dcp": "10ad61eb27539cf424beb1e1e786fb4622e37df52241d3859bbc7cacb133452f"
+  },
+  "deployment_gate": "A separate full integration build, CDC/resource/timing review and explicit board handoff are required."
+}

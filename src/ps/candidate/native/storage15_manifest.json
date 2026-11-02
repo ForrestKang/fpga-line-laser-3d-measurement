@@ -1,0 +1,25 @@
+{
+  "schema": "scan3d_storage15_native_v1",
+  "abi": 1376257,
+  "runtime": [
+    "linux",
+    "armv7l",
+    "little"
+  ],
+  "library": "libstorage15_validate.so",
+  "library_sha256": "21e6c215a72d3f9ac0945a017612c27021c23c92d02c0b04964c1b003d467902",
+  "source_sha256": "b5c296d39c33be9d5d5462c708d45459abc97dec4fa850029b1c509b7b08a66f",
+  "command": [
+    "gcc",
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "/home/xilinx/scan3d_r26_software15_20261023/runtime/candidate/native/storage15_validate.c",
+    "-o",
+    "/home/xilinx/scan3d_r26_software15_20261023/runtime/candidate/native/libstorage15_validate.so"
+  ]
+}

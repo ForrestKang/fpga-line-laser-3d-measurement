@@ -1,0 +1,18 @@
+{
+  "chars": 299,
+  "text": " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~°±×σ三上不严中为主义于云亮件低体余保值偏停像光公分判到剩加动势单参反取口台合名向和噪围圈坐增声处多大失好始存完定实宽对射少就层峰差已布带帧常并度廓延开录形径待心态意成或截手扫按据授接描提故效散数整文方时显智暗曝曲最有未机杂权条果染标格检次止正步残水沿注流测渲激点焦物状理用电画盖目直相示离秒积稳窗等算系素累纹线结统绪维绿缺考能良范行覆角解记设败质超趋距跳转轮轴载过运近进迟采重量间阶降隙障集靠面项饱高，：",
+  "cjk": {
+    "source": "D:\\Workspace\\CodexWork\\board_archive_20261026\\scan3d_r13_ab_20261019T182540Z_c1b7c531\\source\\assets\\fonts\\NotoSansCJKsc-Regular.otf",
+    "source_sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "file": "NotoSansCJKsc-pages-subset.otf",
+    "sha256": "67575b2ba8a14336bc79ccd60ed56ac89fe3bca4f5e689397ff00fd9042ae1ac",
+    "bytes": 142188
+  },
+  "mono": {
+    "source": "D:\\NUECSDC-FPGA\\structured_light_system_algorithm_v1\\.venv\\Lib\\site-packages\\matplotlib\\mpl-data\\fonts\\ttf\\DejaVuSansMono.ttf",
+    "source_sha256": "602ec86b8948cfcd956482fe64f94c36c867770149ef2f791d4613f443bcecb3",
+    "file": "DejaVuSansMono-pages-subset.ttf",
+    "sha256": "a6727e8a2f2edc7e6b5fba8d2269dc5797ce04ddb40955935243cfcc41e17c4c",
+    "bytes": 18564
+  }
+}

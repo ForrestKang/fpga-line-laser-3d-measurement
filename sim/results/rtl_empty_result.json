@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "empty",
+      "overflow_rows": 0,
+      "max_qualified": 0,
+      "r39_measurement": 0,
+      "r39_preview": 0,
+      "r37_semantics_measurement": 0,
+      "r37_semantics_preview": 0,
+      "frame_measurement_usable": 0,
+      "frame_preview_usable": 0,
+      "geometry_records": 0,
+      "moments_count": 0,
+      "R39_records_exact": true,
+      "geometry_integer_exact": true,
+      "moments_integer_exact": true,
+      "arm_decoder_r39_accepts": true,
+      "binning": false,
+      "primary_equals_r39_except_cycles": true,
+      "primary_compared_to": "R39 minus moment records",
+      "processing_cycles_r40_r39": [
+        441912,
+        441912
+      ],
+      "view_ingest": {
+        "inserted": 0,
+        "dropped": 0,
+        "committed": 1,
+        "discarded": 0,
+        "occupied": 0,
+        "out_of_range": 0
+      },
+      "measure": {
+        "points": 0,
+        "median_bin": 0,
+        "median_valid": 0,
+        "bands_used": 0
+      },
+      "section": null,
+      "primary_sha256": "14b2fc0bb175919c0ed72a341e92d8c18098a2c535df1b69d447abd827e560f3",
+      "wall_s": 58.4
+    }
+  ],
+  "source_sha256": {
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r41_window_filter.sv": "41f3b7f83f9bfe94f1e061b14f453c8166b2b1f4bd4fab55f9d26b5f8f0513de",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\baseline_rtl\\r33_direction.sv": "7a77faa12b981f28073db9125cc7c6fadfce8d75df4cd587fd7520d385ee55d6",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_direction.sv": "7b66f7551ed8c2239ed700ec57d3dcd11fa5fa7f22ce277ef7dd6bcb7abd3591",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_row.sv": "9f4a8f8f9d1ed51fb3f05c4077f5692a32781d714f135c9efc7ff918a5fa679b",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_frontend.sv": "83758a4d83833de3d1e4cb2aa141520cf4ee6f86f1bc212dbd4788678f79024d",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r42_buttons.sv": "05d608690484d753df0e5d240797bbc8bdbd84cfe97b20d83ae514d7be2ab65d",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_axi.sv": "ed50f40301bc6cae08852d69026356f16f4f0c5f8dbf84ae3cb438e63bd1ae5c",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_geometry.sv": "51e8c4c45d291901d70e0383deed3619e863ec3b0fae930046252dcc6b06ed9a",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_geo_mul64.sv": "0cb3cf5408f7df9c4c27190df78f25ef0364a3a631da8021ec9797b955f02f32",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_div_q30.sv": "1939853a1c12c6173c06e067217efec1fcdd6aa682e7f545d4f809ccd88c2c69",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r35_point_cache.sv": "10f9f8b8905623b6819cf9bb0f6b8a7b10e266ccfc08c2e4f48ffe71973fcea1",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\rtl\\pfo3_tdp_ram.sv": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\rtl\\pfo3_banked_ram.sv": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r40_cloud_view.sv": "e816271d4d2858b833864557120dab79515f0557e833d9eee76343d442495fbf",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r40_rams.sv": "1423df7ecddf6fe12ed9ee8450c20c289e0ae200b25a9c45c0958a1787a8806a",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r40_tables.sv": "9fa898f664593af423612b0623d62d485082f35248ca6a8db11b7a58e13cd4d6",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\tests\\xpm_stubs_sim.v": "a68bef89ab3c23458b34b556a95ccb0887a0c5b8cd1f6a7ccc1fb7f985c936cb",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\tests\\integration_axi_final_tb.sv": "bde71591e41e9076857f147c9ef67257d6eb53778ea26cd216daebfe3459951b",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\r41_measure.sv": "a7159ed7be06ca76f88edc099363b91b262886118136f50bf45ba66d608763e9",
+    "D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored03\\fpga\\rtl\\section_measure.sv": "3befbd13cc7679ac94975d4921dd8dff3a315a9fd64f2251128e9081fd25b0ad"
+  },
+  "reference_sha256": "be431362465ec985eb1dc0e0b4eaeec53751b6fa500660c73cad910d98a6acc2",
+  "scope": "full-size R40 RTL AXI simulation: R39 reference/decoder, primary == R39 evidence, view ingest == r40_model; not a board run"
+}

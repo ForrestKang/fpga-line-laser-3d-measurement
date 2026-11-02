@@ -1,0 +1,255 @@
+{
+  "schema": "DISPLAY_PROJECTION_R14_V1",
+  "runtime": {
+    "system": "Linux",
+    "machine": "armv7l",
+    "pointer_bits": 32,
+    "byteorder": "little",
+    "python_implementation": "CPython",
+    "python_version": "3.10.4",
+    "numpy_version": "1.21.5",
+    "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+  },
+  "library": "libpoint_project_r14.so",
+  "library_sha256": "32a0fff603bb54bf5cf247515b6efebf6abe909e0d0cf473baa9985a868f0a07",
+  "source_sha256": "ffd095588032628af14e26ef0bbcd0bba64ac507112fbe572f61e52b690d4b18",
+  "raster_source_sha256": "73aeb98da0c9909cb69841ca2be1a5fc5f397014f12e0bca0076ad6832814217",
+  "validation": {
+    "passed": true,
+    "full_panel_pixels_equal": true,
+    "overlap_order_equal": true,
+    "input_ownership_preserved": true,
+    "failure_panel_unchanged": true,
+    "rounding_guard_reference_fallback": true,
+    "runtime": {
+      "system": "Linux",
+      "machine": "armv7l",
+      "pointer_bits": 32,
+      "byteorder": "little",
+      "python_implementation": "CPython",
+      "python_version": "3.10.4",
+      "numpy_version": "1.21.5",
+      "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+    },
+    "library_sha256": "32a0fff603bb54bf5cf247515b6efebf6abe909e0d0cf473baa9985a868f0a07",
+    "cases": [
+      {
+        "count": 1,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 1,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 1,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 1,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 3,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 3,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 3,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 3,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 64,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 64,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 64,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 64,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 350,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 350,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 350,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 350,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2400,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2400,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2400,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 2400,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 16000,
+        "yaw": -32.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 16000,
+        "yaw": 0.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 16000,
+        "yaw": 90.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      },
+      {
+        "count": 16000,
+        "yaw": 133.0,
+        "backend": "native_fused_r14",
+        "fallback": null,
+        "pixels_equal": true
+      }
+    ],
+    "kernel": {
+      "counts": {
+        "projection_attempts": 48,
+        "projection_used": 45,
+        "fallback": 3,
+        "fallback:nonfinite_or_int32_range": 1,
+        "fallback:layout": 1,
+        "fallback:projection_rounding_boundary": 1
+      },
+      "scratch_capacity": 16000,
+      "scratch_max_points": 250000,
+      "closed": false
+    },
+    "renderer_median_ms": {
+      "reference": 33.266870499574,
+      "fused": 25.291796499004704
+    },
+    "reference_backend": "NUMPY_PROJECTION_PLUS_UNCHANGED_NATIVE_RASTER",
+    "evidence_type": "CPU_RENDERER_MICROBENCHMARK",
+    "hardware_access": false,
+    "hardware_projection": false
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "R34_NATIVE_MARKER_BUILD_V1",
+  "compiler": "gcc",
+  "compiler_version": "gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0",
+  "flags": [
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC"
+  ],
+  "machine": "armv7l",
+  "source_sha256": "5e820e2d3fb7a232b6caeb8baf937a81e134bf3b4670b77aa2c2bbd782c71c35",
+  "output": "libmarkers_r34.so",
+  "output_sha256": "c953e4b6dc9c807c0db31d8326de7f3efd99d1d7c81f1c9cb1ecfa76d432a8d6",
+  "output_bytes": 11880,
+  "display_only": true,
+  "board_hardware_operations": 0
+}

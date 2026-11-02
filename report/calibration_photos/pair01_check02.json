@@ -1,0 +1,64 @@
+{
+  "evidence_type": "INDEPENDENT_SINGLE_POSE_CHECK_NOT_CALIBRATION",
+  "square_mm": 6.0,
+  "square_source": "same historic board; user confirms unchanged; nominal scale, not a new caliper certificate",
+  "files": [
+    {
+      "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000040.gray8",
+      "sha256": "8707cf9cc214ab29bce9b65551359f64e936ab1029e30ece11dc449def879733"
+    },
+    {
+      "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000185.gray8",
+      "sha256": "76f6f455230f4e2b45ef921a8012ad615b5b3fa743944674848294a1d034d84c"
+    }
+  ],
+  "corners": 88,
+  "off_on_corner_shift_p50_p95_max_px": [
+    0.19369356334209442,
+    1.6095546901225974,
+    4.500400543212891
+  ],
+  "off_reprojection_rms_px": 0.11141147885353044,
+  "on_reprojection_rms_px": 0.10865724939689334,
+  "laser_points": 169,
+  "board_normal": [
+    0.11257344097978048,
+    -0.02692205461966644,
+    0.9932786232276558
+  ],
+  "board_translation_mm": [
+    -23.799972699975175,
+    -45.41872123669878,
+    256.34469784893776
+  ],
+  "board_laser_Z_p05_p50_p95_mm": [
+    252.99645314963195,
+    253.56887854663307,
+    254.0993422904574
+  ],
+  "checks": {
+    "current": {
+      "board_intersection_plane_distance_rms_mm": 21.579829263928705,
+      "distance_p95_mm": 22.04351263098519,
+      "predicted_Z_median_mm": 200.22487155194256
+    },
+    "original": {
+      "board_intersection_plane_distance_rms_mm": 3.9196609909214284,
+      "distance_p95_mm": 4.676615515803851,
+      "predicted_Z_median_mm": 243.13895478837125
+    }
+  },
+  "limitations": [
+    "single pose defines a laser intersection line, not a unique laser plane",
+    "no turntable axis fitted",
+    "thresholds are diagnostics only; no production algorithm change"
+  ],
+  "rejected": [],
+  "method": "laser-free corner PnP, exclude corners within 12px of observed stripe; all previous diagnostics retained separately",
+  "pnp_corners_used": 80,
+  "nonlaser_corner_shift_p50_p95_max_px": [
+    0.18876381302880196,
+    0.2823082267532803,
+    0.36960839097451
+  ]
+}

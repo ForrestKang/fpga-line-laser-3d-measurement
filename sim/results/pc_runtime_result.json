@@ -1,0 +1,55 @@
+{
+  "schema": "FINAL_SECTION_RUNTIME_PC_V1",
+  "modules": [
+    "r33.tests_pl_section_final",
+    "r33.tests_buttons_r42",
+    "r33.tests_scan_live_r42",
+    "r33.tests_live_r42",
+    "r33.tests_profile_r41",
+    "r33.tests_pl_measure_r41",
+    "r33.tests_live_r41",
+    "r33.tests_pages"
+  ],
+  "tests_run": 69,
+  "failures": [
+    [
+      "test_live_main_with_model_backed_pl_section_and_comparison (r33.tests_pl_section_final.SectionTests.test_live_main_with_model_backed_pl_section_and_comparison)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_pl_section_final.py\", line 236, in test_live_main_with_model_backed_pl_section_and_comparison\n    self.assertEqual(rc, 0, state.get('error'))\nAssertionError: 1 != 0 : 'frame_decisions'\n"
+    ],
+    [
+      "test_main_button_stop_keeps_partial_cloud_and_no_retry (r33.tests_live_r42.LiveIntegrationTests.test_main_button_stop_keeps_partial_cloud_and_no_retry)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 223, in test_main_button_stop_keeps_partial_cloud_and_no_retry\n    self.assertEqual(rc, 0)\nAssertionError: 1 != 0\n"
+    ],
+    [
+      "test_main_completes_full_scan_after_demo_duration (r33.tests_live_r42.LiveIntegrationTests.test_main_completes_full_scan_after_demo_duration)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 210, in test_main_completes_full_scan_after_demo_duration\n    self.assertEqual(rc, 0)\nAssertionError: 1 != 0\n"
+    ],
+    [
+      "test_main_deadline_is_failure_and_not_complete (r33.tests_live_r42.LiveIntegrationTests.test_main_deadline_is_failure_and_not_complete)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 243, in test_main_deadline_is_failure_and_not_complete\n    self.assertIn('deadline', state['error'])\nAssertionError: 'deadline' not found in \"'frame_decisions'\"\n"
+    ],
+    [
+      "test_main_default_button_never_creates_motion_backend (r33.tests_live_r42.LiveIntegrationTests.test_main_default_button_never_creates_motion_backend)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 248, in test_main_default_button_never_creates_motion_backend\n    self.assertEqual(rc, 0)\nAssertionError: 1 != 0\n"
+    ],
+    [
+      "test_shutdown_success_requires_fresh_capture_and_dma_readback (r33.tests_live_r42.LiveIntegrationTests.test_shutdown_success_requires_fresh_capture_and_dma_readback)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 256, in test_shutdown_success_requires_fresh_capture_and_dma_readback\n    self.assertEqual(rc, 0)\nAssertionError: 1 != 0\n"
+    ],
+    [
+      "test_static_pipeline_does_not_prefetch_during_current_pl (r33.tests_live_r42.LiveIntegrationTests.test_static_pipeline_does_not_prefetch_during_current_pl)",
+      "Traceback (most recent call last):\n  File \"D:\\Workspace\\CodexTemp\\competition_submission_20261101_01\\restored02\\runtime\\r33\\tests_live_r42.py\", line 189, in test_static_pipeline_does_not_prefetch_during_current_pl\n    self.assertEqual(rc, 0)\nAssertionError: 1 != 0\n"
+    ]
+  ],
+  "errors": [],
+  "skipped": [
+    [
+      "test_bundled_fonts_cover_every_page_character (r33.tests_pages.PageTests.test_bundled_fonts_cover_every_page_character)",
+      "font build script not beside the runtime"
+    ]
+  ],
+  "passed": false,
+  "duration_s": 2.294274599989876,
+  "evidence_class": "PC_MOCK_NOT_BOARD",
+  "hardware_commands": 0
+}

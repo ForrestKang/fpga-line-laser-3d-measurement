@@ -1,0 +1,1171 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Sat Oct 31 23:03:50 2026
+| Host         : ChiliChilideLAPTOP running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 20 -nworst 1 -unique_pins -sort_by slack -through [get_cells -hier -quiet -filter {NAME =~ *pfo3_frontend*/view/* && IS_PRIMITIVE}] -file D:/Workspace/CodexWork/scan3d_final_20261029/build/seedretry/reports/view_worst20.rpt
+| Design       : structured_light_motion_profile_hdmi_top
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Physopt postRoute
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.401ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[4]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        6.414ns  (logic 0.478ns (7.453%)  route 5.936ns (92.547%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.320ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 10.693 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.128ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.834     3.128    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X6Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y11          FDRE (Prop_fdre_C_Q)         0.478     3.606 r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/Q
+                         net (fo=16, routed)          5.936     9.542    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_mux_sel_b_pos_0_1[4]
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.514    10.693    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/CLKBWRCLK
+                         clock pessimism              0.115    10.808    
+                         clock uncertainty           -0.125    10.683    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[4])
+                                                     -0.740     9.943    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1
+  -------------------------------------------------------------------
+                         required time                          9.943    
+                         arrival time                          -9.542    
+  -------------------------------------------------------------------
+                         slack                                  0.401    
+
+Slack (MET) :             0.743ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_1/ADDRBWRADDR[4]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        6.076ns  (logic 0.478ns (7.867%)  route 5.598ns (92.133%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.316ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.697ns = ( 10.697 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.128ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.834     3.128    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X6Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y11          FDRE (Prop_fdre_C_Q)         0.478     3.606 r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[4]/Q
+                         net (fo=16, routed)          5.598     9.204    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_mux_sel_b_pos_0_1[4]
+    RAMB36_X2Y12         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_1/ADDRBWRADDR[4]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.518    10.697    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X2Y12         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_1/CLKBWRCLK
+                         clock pessimism              0.115    10.812    
+                         clock uncertainty           -0.125    10.687    
+    RAMB36_X2Y12         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[4])
+                                                     -0.740     9.947    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_1
+  -------------------------------------------------------------------
+                         required time                          9.947    
+                         arrival time                          -9.204    
+  -------------------------------------------------------------------
+                         slack                                  0.743    
+
+Slack (MET) :             0.911ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[12]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_2_0/ADDRBWRADDR[12]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        6.177ns  (logic 0.456ns (7.382%)  route 5.721ns (92.618%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.221ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.776ns = ( 10.776 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.126ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.832     3.126    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X7Y13          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[12]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y13          FDRE (Prop_fdre_C_Q)         0.456     3.582 r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[12]/Q
+                         net (fo=16, routed)          5.721     9.303    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_mux_sel_b_pos_0_1[12]
+    RAMB36_X3Y0          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_2_0/ADDRBWRADDR[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.597    10.776    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X3Y0          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_2_0/CLKBWRCLK
+                         clock pessimism              0.129    10.905    
+                         clock uncertainty           -0.125    10.780    
+    RAMB36_X3Y0          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[12])
+                                                     -0.566    10.214    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_2_0
+  -------------------------------------------------------------------
+                         required time                         10.214    
+                         arrival time                          -9.303    
+  -------------------------------------------------------------------
+                         slack                                  0.911    
+
+Slack (MET) :             0.981ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[13]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.882ns  (logic 1.605ns (32.875%)  route 3.277ns (67.125%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     6.881 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/O[1]
+                         net (fo=2, routed)           1.132     8.013    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_6
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[13])
+                                                     -3.715     8.994    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.994    
+                         arrival time                          -8.013    
+  -------------------------------------------------------------------
+                         slack                                  0.981    
+
+Slack (MET) :             1.044ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[15]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.816ns  (logic 1.584ns (32.893%)  route 3.232ns (67.107%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     6.860 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/O[3]
+                         net (fo=2, routed)           1.086     7.947    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_4
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[15])
+                                                     -3.718     8.991    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.991    
+                         arrival time                          -7.947    
+  -------------------------------------------------------------------
+                         slack                                  1.044    
+
+Slack (MET) :             1.052ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[1]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.760ns  (logic 0.478ns (8.299%)  route 5.282ns (91.701%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.320ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 10.693 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.128ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.834     3.128    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X6Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y11          FDRE (Prop_fdre_C_Q)         0.478     3.606 r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[1]/Q
+                         net (fo=16, routed)          5.282     8.888    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_mux_sel_b_pos_0_1[1]
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.514    10.693    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/CLKBWRCLK
+                         clock pessimism              0.115    10.808    
+                         clock uncertainty           -0.125    10.683    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[1])
+                                                     -0.743     9.940    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1
+  -------------------------------------------------------------------
+                         required time                          9.940    
+                         arrival time                          -8.888    
+  -------------------------------------------------------------------
+                         slack                                  1.052    
+
+Slack (MET) :             1.069ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[16]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.798ns  (logic 1.607ns (33.492%)  route 3.191ns (66.508%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.661 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.661    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_0
+    SLICE_X33Y79         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.883 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_1/O[0]
+                         net (fo=4, routed)           1.046     7.929    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_1_n_7
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[16])
+                                                     -3.711     8.998    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.998    
+                         arrival time                          -7.929    
+  -------------------------------------------------------------------
+                         slack                                  1.069    
+
+Slack (MET) :             1.069ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[17]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.798ns  (logic 1.607ns (33.492%)  route 3.191ns (66.508%))
+  Logic Levels:           5  (CARRY4=5)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.661 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/CO[3]
+                         net (fo=1, routed)           0.000     6.661    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_0
+    SLICE_X33Y79         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.883 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_1/O[0]
+                         net (fo=4, routed)           1.046     7.929    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_1_n_7
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[17]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[17])
+                                                     -3.711     8.998    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.998    
+                         arrival time                          -7.929    
+  -------------------------------------------------------------------
+                         slack                                  1.069    
+
+Slack (MET) :             1.135ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_0/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.847ns  (logic 0.745ns (12.742%)  route 5.102ns (87.258%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.247ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.775ns = ( 10.775 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.843     3.137    bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/aclk
+    SLICE_X41Y106        FDRE                                         r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y106        FDRE (Prop_fdre_C_Q)         0.419     3.556 r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/Q
+                         net (fo=13, routed)          3.094     6.650    bd_i/pfo3_frontend/inst/core/view/colour/m_axis_video_tready
+    SLICE_X25Y22         LUT5 (Prop_lut5_I1_O)        0.326     6.976 r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2/O
+                         net (fo=8, routed)           2.008     8.984    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2_n_0
+    RAMB36_X3Y9          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_0/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.596    10.775    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X3Y9          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_0/CLKBWRCLK
+                         clock pessimism              0.115    10.890    
+                         clock uncertainty           -0.125    10.765    
+    RAMB36_X3Y9          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.646    10.119    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_0
+  -------------------------------------------------------------------
+                         required time                         10.119    
+                         arrival time                          -8.984    
+  -------------------------------------------------------------------
+                         slack                                  1.135    
+
+Slack (MET) :             1.146ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[10]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.719ns  (logic 1.396ns (29.585%)  route 3.323ns (70.415%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     6.672 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/O[2]
+                         net (fo=2, routed)           1.177     7.850    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_5
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[10])
+                                                     -3.714     8.995    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.995    
+                         arrival time                          -7.850    
+  -------------------------------------------------------------------
+                         slack                                  1.146    
+
+Slack (MET) :             1.146ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[12]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.721ns  (logic 1.493ns (31.624%)  route 3.228ns (68.376%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.222     6.769 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/O[0]
+                         net (fo=2, routed)           1.083     7.852    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_7
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[12]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[12])
+                                                     -3.711     8.998    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.998    
+                         arrival time                          -7.852    
+  -------------------------------------------------------------------
+                         slack                                  1.146    
+
+Slack (MET) :             1.152ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.828ns  (logic 0.745ns (12.782%)  route 5.083ns (87.218%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.248ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.774ns = ( 10.774 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.843     3.137    bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/aclk
+    SLICE_X41Y106        FDRE                                         r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y106        FDRE (Prop_fdre_C_Q)         0.419     3.556 r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/Q
+                         net (fo=13, routed)          3.094     6.650    bd_i/pfo3_frontend/inst/core/view/colour/m_axis_video_tready
+    SLICE_X25Y22         LUT5 (Prop_lut5_I1_O)        0.326     6.976 r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2/O
+                         net (fo=8, routed)           1.989     8.965    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2_n_0
+    RAMB36_X3Y8          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.595    10.774    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X3Y8          RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0/CLKBWRCLK
+                         clock pessimism              0.115    10.889    
+                         clock uncertainty           -0.125    10.764    
+    RAMB36_X3Y8          RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.646    10.118    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0
+  -------------------------------------------------------------------
+                         required time                         10.118    
+                         arrival time                          -8.965    
+  -------------------------------------------------------------------
+                         slack                                  1.152    
+
+Slack (MET) :             1.154ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[11]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.706ns  (logic 1.470ns (31.238%)  route 3.236ns (68.762%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     6.746 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/O[3]
+                         net (fo=2, routed)           1.090     7.837    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_4
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[11])
+                                                     -3.718     8.991    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.991    
+                         arrival time                          -7.837    
+  -------------------------------------------------------------------
+                         slack                                  1.154    
+
+Slack (MET) :             1.158ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ENBWREN
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.756ns  (logic 0.745ns (12.943%)  route 5.011ns (87.057%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.315ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 10.693 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.843     3.137    bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/aclk
+    SLICE_X41Y106        FDRE                                         r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y106        FDRE (Prop_fdre_C_Q)         0.419     3.556 r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/Q
+                         net (fo=13, routed)          3.094     6.650    bd_i/pfo3_frontend/inst/core/view/colour/m_axis_video_tready
+    SLICE_X25Y22         LUT5 (Prop_lut5_I1_O)        0.326     6.976 r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2/O
+                         net (fo=8, routed)           1.917     8.893    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_0_0_i_2_n_0
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ENBWREN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.514    10.693    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/CLKBWRCLK
+                         clock pessimism              0.129    10.822    
+                         clock uncertainty           -0.125    10.697    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ENBWREN)
+                                                     -0.646    10.051    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1
+  -------------------------------------------------------------------
+                         required time                         10.051    
+                         arrival time                          -8.893    
+  -------------------------------------------------------------------
+                         slack                                  1.158    
+
+Slack (MET) :             1.190ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[9]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.673ns  (logic 1.491ns (31.904%)  route 3.182ns (68.096%))
+  Logic Levels:           3  (CARRY4=3)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     6.767 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/O[1]
+                         net (fo=2, routed)           1.037     7.804    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_6
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[9])
+                                                     -3.715     8.994    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.994    
+                         arrival time                          -7.804    
+  -------------------------------------------------------------------
+                         slack                                  1.190    
+
+Slack (MET) :             1.201ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/xc_reg[6]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.756ns  (logic 0.745ns (12.943%)  route 5.011ns (87.057%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.187ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.835ns = ( 10.835 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.843     3.137    bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/aclk
+    SLICE_X41Y106        FDRE                                         r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y106        FDRE (Prop_fdre_C_Q)         0.419     3.556 r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/Q
+                         net (fo=13, routed)          3.851     7.407    bd_i/pfo3_frontend/inst/core/view/m_axis_video_tready
+    SLICE_X12Y16         LUT5 (Prop_lut5_I1_O)        0.326     7.733 r  bd_i/pfo3_frontend/inst/core/view/xc[10]_i_1/O
+                         net (fo=11, routed)          1.160     8.893    bd_i/pfo3_frontend/inst/core/view/xc[10]_i_1_n_0
+    SLICE_X0Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/xc_reg[6]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.656    10.835    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X0Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/xc_reg[6]/C
+                         clock pessimism              0.115    10.950    
+                         clock uncertainty           -0.125    10.825    
+    SLICE_X0Y11          FDRE (Setup_fdre_C_R)       -0.731    10.094    bd_i/pfo3_frontend/inst/core/view/xc_reg[6]
+  -------------------------------------------------------------------
+                         required time                         10.094    
+                         arrival time                          -8.893    
+  -------------------------------------------------------------------
+                         slack                                  1.201    
+
+Slack (MET) :             1.201ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/xc_reg[7]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.756ns  (logic 0.745ns (12.943%)  route 5.011ns (87.057%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        -0.187ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.835ns = ( 10.835 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.843     3.137    bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/aclk
+    SLICE_X41Y106        FDRE                                         r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y106        FDRE (Prop_fdre_C_Q)         0.419     3.556 r  bd_i/hdmi_out/axis_register_slice_0/inst/axisc_register_slice_0/gen_AB_reg_slice.state_reg[1]/Q
+                         net (fo=13, routed)          3.851     7.407    bd_i/pfo3_frontend/inst/core/view/m_axis_video_tready
+    SLICE_X12Y16         LUT5 (Prop_lut5_I1_O)        0.326     7.733 r  bd_i/pfo3_frontend/inst/core/view/xc[10]_i_1/O
+                         net (fo=11, routed)          1.160     8.893    bd_i/pfo3_frontend/inst/core/view/xc[10]_i_1_n_0
+    SLICE_X0Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/xc_reg[7]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.656    10.835    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X0Y11          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/xc_reg[7]/C
+                         clock pessimism              0.115    10.950    
+                         clock uncertainty           -0.125    10.825    
+    SLICE_X0Y11          FDRE (Setup_fdre_C_R)       -0.731    10.094    bd_i/pfo3_frontend/inst/core/view/xc_reg[7]
+  -------------------------------------------------------------------
+                         required time                         10.094    
+                         arrival time                          -8.893    
+  -------------------------------------------------------------------
+                         slack                                  1.201    
+
+Slack (MET) :             1.221ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[14]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        4.643ns  (logic 1.510ns (32.520%)  route 3.133ns (67.480%))
+  Logic Levels:           4  (CARRY4=4)
+  Clock Path Skew:        -0.268ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.748ns = ( 12.748 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.131ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.837     3.131    bd_i/pfo3_frontend/inst/core/view/aclk
+    SLICE_X6Y45          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X6Y45          FDRE (Prop_fdre_C_Q)         0.518     3.649 r  bd_i/pfo3_frontend/inst/core/view/rs_reg[3]_inv/Q
+                         net (fo=1, routed)           2.145     5.794    bd_i/pfo3_frontend/inst/core/view/rs__0[3]
+    SLICE_X33Y75         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.525     6.319 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5/CO[3]
+                         net (fo=1, routed)           0.000     6.319    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_5_n_0
+    SLICE_X33Y76         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.433 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4/CO[3]
+                         net (fo=1, routed)           0.000     6.433    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_4_n_0
+    SLICE_X33Y77         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.547 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.547    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_3_n_0
+    SLICE_X33Y78         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.239     6.786 r  bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2/O[2]
+                         net (fo=2, routed)           0.988     7.774    bd_i/pfo3_frontend/inst/core/view/pk4_reg_i_2_n_5
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/B[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  bd_i/ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=48392, routed)       1.569    12.748    bd_i/pfo3_frontend/inst/core/view/aclk
+    DSP48_X2Y37          DSP48E1                                      r  bd_i/pfo3_frontend/inst/core/view/pk1_reg/CLK
+                         clock pessimism              0.115    12.863    
+                         clock uncertainty           -0.154    12.709    
+    DSP48_X2Y37          DSP48E1 (Setup_dsp48e1_CLK_B[14])
+                                                     -3.714     8.995    bd_i/pfo3_frontend/inst/core/view/pk1_reg
+  -------------------------------------------------------------------
+                         required time                          8.995    
+                         arrival time                          -7.774    
+  -------------------------------------------------------------------
+                         slack                                  1.221    
+
+Slack (MET) :             1.223ns  (required time - arrival time)
+  Source:                 bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[3]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        5.592ns  (logic 0.419ns (7.493%)  route 5.173ns (92.507%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.319ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.693ns = ( 10.693 - 8.000 ) 
+    Source Clock Delay      (SCD):    3.127ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.833     3.127    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X7Y12          FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X7Y12          FDRE (Prop_fdre_C_Q)         0.419     3.546 r  bd_i/pfo3_frontend/inst/core/view/cb_addr_reg[3]/Q
+                         net (fo=16, routed)          5.173     8.719    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_mux_sel_b_pos_0_1[3]
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/ADDRBWRADDR[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.514    10.693    bd_i/pfo3_frontend/inst/core/view/colour/vclk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1/CLKBWRCLK
+                         clock pessimism              0.115    10.808    
+                         clock uncertainty           -0.125    10.683    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKBWRCLK_ADDRBWRADDR[3])
+                                                     -0.741     9.942    bd_i/pfo3_frontend/inst/core/view/colour/mem_reg_1_1
+  -------------------------------------------------------------------
+                         required time                          9.942    
+                         arrival time                          -8.719    
+  -------------------------------------------------------------------
+                         slack                                  1.223    
+
+Slack (MET) :             1.229ns  (required time - arrival time)
+  Source:                 bd_i/hdmi_system_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            bd_i/pfo3_frontend/inst/core/view/act_cfg_reg[12]/R
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_1  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             clk_fpga_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            8.000ns  (clk_fpga_1 rise@8.000ns - clk_fpga_1 rise@0.000ns)
+  Data Path Delay:        6.239ns  (logic 0.580ns (9.296%)  route 5.659ns (90.704%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.022ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.835ns = ( 10.835 - 8.000 ) 
+    Source Clock Delay      (SCD):    2.928ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.125ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.240ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_1 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.193     1.193    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101     1.294 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.634     2.928    bd_i/hdmi_system_reset/U0/slowest_sync_clk
+    SLICE_X37Y76         FDRE                                         r  bd_i/hdmi_system_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X37Y76         FDRE (Prop_fdre_C_Q)         0.456     3.384 f  bd_i/hdmi_system_reset/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=13, routed)          2.844     6.228    bd_i/pfo3_frontend/inst/core/view/vresetn
+    SLICE_X19Y36         LUT1 (Prop_lut1_I0_O)        0.124     6.352 r  bd_i/pfo3_frontend/inst/core/view/m_video_tdata[23]_i_1/O
+                         net (fo=90, routed)          2.815     9.167    bd_i/pfo3_frontend/inst/core/view/m_video_tdata[23]_i_1_n_0
+    SLICE_X5Y9           FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/act_cfg_reg[12]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_1 rise edge)
+                                                      8.000     8.000 r  
+    PS7_X0Y0             PS7                          0.000     8.000 r  bd_i/ps7/inst/PS7_i/FCLKCLK[1]
+                         net (fo=1, routed)           1.088     9.088    bd_i/ps7/inst/FCLK_CLK_unbuffered[1]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091     9.179 r  bd_i/ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG/O
+                         net (fo=2352, routed)        1.656    10.835    bd_i/pfo3_frontend/inst/core/view/vclk
+    SLICE_X5Y9           FDRE                                         r  bd_i/pfo3_frontend/inst/core/view/act_cfg_reg[12]/C
+                         clock pessimism              0.115    10.950    
+                         clock uncertainty           -0.125    10.825    
+    SLICE_X5Y9           FDRE (Setup_fdre_C_R)       -0.429    10.396    bd_i/pfo3_frontend/inst/core/view/act_cfg_reg[12]
+  -------------------------------------------------------------------
+                         required time                         10.396    
+                         arrival time                          -9.167    
+  -------------------------------------------------------------------
+                         slack                                  1.229    
+
+
+
+

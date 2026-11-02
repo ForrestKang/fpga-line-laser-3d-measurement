@@ -1,0 +1,31 @@
+{
+  "schema": "laser_plane_r41_v1",
+  "coordinate_frame": "camera",
+  "units": "mm",
+  "plane_coefficients": [
+    -0.9174943591516235,
+    0.01969093189644966,
+    0.3972610830750996,
+    -72.0136575191326
+  ],
+  "fit_rms_mm": 0.08962549647719638,
+  "poses": [
+    "lp1",
+    "lp2",
+    "lp3",
+    "lp4"
+  ],
+  "points": 861,
+  "angle_to_previous_deg": 39.7842605294185,
+  "camera_intrinsics": "camera_intrinsics_20261029_022834.json (installed as camera_intrinsics_r41.json)",
+  "source": "checkerboard session 20261029_023525",
+  "previous_plane_coefficients": [
+    -0.9174943591516235,
+    0.01969093189644966,
+    0.3972610830750996,
+    -80.75494979659604
+  ],
+  "plane_offset_factor": 0.8898062047338199,
+  "adjusted_by": "scripts/fit_t02_placements.py t02_down2",
+  "plane_offset_factor_rotation": 0.9958244621330906
+}

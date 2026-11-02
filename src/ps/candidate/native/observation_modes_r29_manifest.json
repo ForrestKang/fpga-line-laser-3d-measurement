@@ -1,0 +1,82 @@
+{
+  "schema": "R29_OBSERVATION_MODES_V1",
+  "abi": 2686977,
+  "runtime": [
+    "linux",
+    "armv7l",
+    "little",
+    "3.10.4",
+    "1.21.5"
+  ],
+  "source_sha256": "5b8c031fb1de40423215cb18c641749bfa1b290a61038f9c9b8118dae9567ee6",
+  "library": "libobservation_modes_r29.so",
+  "library_sha256": "f6a540ed50ebd99e836109d7f78fb38fe436a199afbee56b527cd9a40f0b8bd8",
+  "command": [
+    "gcc",
+    "-O3",
+    "-ffp-contract=off",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC",
+    "/home/xilinx/scan3d_r29_integrated_20261024_01/runtime/candidate/native/observation_modes_r29.c",
+    "-o",
+    "/home/xilinx/scan3d_r29_integrated_20261024_01/work/observation_modes_r29_01/libobservation_modes_r29.so"
+  ],
+  "differential_qa_passed": true,
+  "cases": [
+    {
+      "diagnostic": 0,
+      "qualified": 0,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 1,
+      "qualified": 0,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 1,
+      "qualified": 1,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 17,
+      "qualified": 7,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 480,
+      "qualified": 0,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 480,
+      "qualified": 480,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 7680,
+      "qualified": 7680,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 8192,
+      "qualified": 7680,
+      "all_five_slabs_byte_equal": true
+    },
+    {
+      "diagnostic": 180480,
+      "qualified": 17,
+      "all_five_slabs_byte_equal": true
+    }
+  ],
+  "invalid_capacity_codes": [
+    1,
+    1,
+    1
+  ],
+  "scope": "FULL_DIAGNOSTIC_WIRE_CONVERSION_ONLY; NO IMAGE ALGORITHM OR ADMISSION"
+}

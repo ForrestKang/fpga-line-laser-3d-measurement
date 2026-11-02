@@ -1,0 +1,100 @@
+{
+  "schema": "R41_LIVE_V1",
+  "pid": 5028,
+  "phase": "failed",
+  "frames": 7,
+  "motor": "idle",
+  "laser": "user_controlled",
+  "started_unix": 1793258127.5069704,
+  "buttons": {
+    "present": true,
+    "pages": [
+      "A",
+      "C"
+    ],
+    "mapping": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "scan": {
+    "state": "FAILED",
+    "phase": "failed",
+    "views": 1,
+    "target_views": 200,
+    "steps": 32,
+    "angle_deg": 3.6,
+    "deadline_s": 600.0,
+    "axis_status": "PROVISIONAL_NOT_CALIBRATED",
+    "message": "injected PFO3 failure",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  "runtime_contract": {},
+  "camera": {
+    "pclk_hz": [
+      48000000
+    ]
+  },
+  "signals": {
+    "camera_signal_verified": true,
+    "frame_period_s": 0.02
+  },
+  "camera_generation_resumed": {
+    "request_id": 0,
+    "epoch": 0,
+    "resumed": false
+  },
+  "camera_errors_before_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "camera_errors_after_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "pfo3_binning": false,
+  "pipeline": false,
+  "warmup": {
+    "raw_sha256": "mock-raw"
+  },
+  "page": "C",
+  "fps": 3.0,
+  "last": {
+    "frame": 4,
+    "capture_ms": 0.015600002370774746,
+    "pl_ms": 0.011600001016631722,
+    "frame_age_ms": 0.01170000177808106,
+    "centres": 1,
+    "xyz": 1,
+    "xyz_measurement": 1,
+    "measure": null,
+    "profile": null,
+    "raw_sha256": "mock-raw",
+    "primary_bytes": 12,
+    "page": "A",
+    "scan_accepted": true,
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  "elapsed_s": 1.0,
+  "dropped": {
+    "capture": 0,
+    "display": 0
+  },
+  "threads_alive_after_join": [],
+  "thread_errors": [],
+  "display_median_ms": 0.001300009898841381,
+  "display_updates": 7,
+  "error_type": "RuntimeError",
+  "error": "injected PFO3 failure",
+  "timing_median_ms": {
+    "capture_ms": 0.020499981474131346,
+    "pl_ms": 0.014699995517730713,
+    "frame_age_ms": 0.01479999627918005
+  },
+  "finished_unix": 1793258127.5228643
+}

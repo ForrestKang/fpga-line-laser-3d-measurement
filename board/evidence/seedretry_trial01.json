@@ -1,0 +1,36 @@
+{
+  "source_file": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\evidence\\board\\seedretry_trial01.json",
+  "source_sha256": "342d3bd08665c6ed541a280cb2af7b0460a771ed9fe53428262633f470270047",
+  "sanitized_result_extract": true,
+  "removed_source_fields": [
+    "action",
+    "hostkey",
+    "started_ns",
+    "automatic_retry",
+    "machine_id",
+    "boot_id",
+    "command"
+  ],
+  "credential_or_identity_field_names_removed": [
+    "hostkey",
+    "machine_id",
+    "boot_id"
+  ],
+  "license_or_authorization_proof_field_names_found": [],
+  "result_fields": {
+    "passed": true,
+    "wall_s": 190.4248164,
+    "stdout_result_lines": [
+      "CONTRACT_TEST 0 ['OK']",
+      "TRIAL {\"name\": \"seedretry_full\", \"run\": \"trial_20261029_101843_seedretry_full\", \"exit\": 0, \"error\": null, \"frames\": 118, \"fps\": 2.604198934434968, \"pl_fps\": 26.4, \"pl_errors\": 0, \"bin2\": false, \"median\": {\"centres\": 273.0, \"xyz\": 325.0, \"xyz_measurement\": 273.0}, \"p10\": {\"centres\": 262.0, \"xyz\": 316.0, \"xyz_measurement\": 262.0}, \"timing_median_ms\": {\"capture_ms\": 64.25260599826288, \"pl_ms\": 105.69831999964663, \"frame_age_ms\": 41.19687050115317}, \"ctrl_before\": [\"0x0\", 0, 0], \"ctrl_after\": [\"0x0\", 1193, 0]}",
+      "TRIAL {\"name\": \"bin2_single\", \"run\": \"trial_20261029_102002_bin2_single\", \"exit\": 0, \"error\": null, \"frames\": 118, \"fps\": 2.6086656601383034, \"pl_fps\": 52.9, \"pl_errors\": 0, \"bin2\": true, \"median\": {\"centres\": 300.0, \"xyz\": 367.5, \"xyz_measurement\": 300.0}, \"p10\": {\"centres\": 288.0, \"xyz\": 360.0, \"xyz_measurement\": 288.0}, \"timing_median_ms\": {\"capture_ms\": 68.7074185025267, \"pl_ms\": 109.68201500145369, \"frame_age_ms\": 41.21100600059435}, \"ctrl_before\": [\"0x0\", 1193, 0], \"ctrl_after\": [\"0x0\", 2385, 0]}",
+      "COMPARE {\"seed_retry\": {\"name\": \"seedretry_full\", \"run\": \"trial_20261029_101843_seedretry_full\", \"exit\": 0, \"error\": null, \"frames\": 118, \"fps\": 2.604198934434968, \"pl_fps\": 26.4, \"pl_errors\": 0, \"bin2\": false, \"median\": {\"centres\": 273.0, \"xyz\": 325.0, \"xyz_measurement\": 273.0}, \"p10\": {\"centres\": 262.0, \"xyz\": 316.0, \"xyz_measurement\": 262.0}, \"timing_median_ms\": {\"capture_ms\": 64.25260599826288, \"pl_ms\": 105.69831999964663, \"frame_age_ms\": 41.19687050115317}, \"ctrl_before\": [\"0x0\", 0, 0], \"ctrl_after\": [\"0x0\", 1193, 0]}, \"bin2\": {\"name\": \"bin2_single\", \"run\": \"trial_20261029_102002_bin2_single\", \"exit\": 0, \"error\": null, \"frames\": 118, \"fps\": 2.6086656601383034, \"pl_fps\": 52.9, \"pl_errors\": 0, \"bin2\": true, \"median\": {\"centres\": 300.0, \"xyz\": 367.5, \"xyz_measurement\": 300.0}, \"p10\": {\"centres\": 288.0, \"xyz\": 360.0, \"xyz_measurement\": 288.0}, \"timing_median_ms\": {\"capture_ms\": 68.7074185025267, \"pl_ms\": 109.68201500145369, \"frame_age_ms\": 41.21100600059435}, \"ctrl_before\": [\"0x0\", 1193, 0], \"ctrl_after\": [\"0x0\", 2385, 0]}}",
+      "SEEDRETRY_TRIAL_DONE"
+    ]
+  },
+  "omitted_stdout_line_types": [
+    "calibration",
+    "idle",
+    "loaded"
+  ]
+}

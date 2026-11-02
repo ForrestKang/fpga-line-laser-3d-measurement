@@ -1,0 +1,70 @@
+{
+  "schema": "R42_RUNTIME_FROZEN_01",
+  "scope": "runtime12 PC Mock implementation only",
+  "tests": 44,
+  "passed": 44,
+  "failed": 0,
+  "skipped": 0,
+  "hardware_commands": 0,
+  "network_used": false,
+  "evidence": "evidence/TEST_R42_RUNTIME_01.json",
+  "files": [
+    {
+      "path": "r33/buttons.py",
+      "bytes": 2106,
+      "sha256": "59c441af5cfe148912fe084ead3413aeff64f092a9544a5053a3f1c4b77b737b"
+    },
+    {
+      "path": "r33/scan_live.py",
+      "bytes": 13873,
+      "sha256": "bdf98103c03f1fbde2d1fd5090f888fc3f19f61ac683136f520e94d07f45191d"
+    },
+    {
+      "path": "r33/live.py",
+      "bytes": 44590,
+      "sha256": "a70ec24c9527c42bd9230a40e6b4797a350128230b311ee69833f167c6965369"
+    },
+    {
+      "path": "r33/pl_view.py",
+      "bytes": 6660,
+      "sha256": "ef38a217b37eff0ebaf472f812aa2e734d0d119f81be8fe2febee959763e4973"
+    },
+    {
+      "path": "r33/tests_buttons_r42.py",
+      "bytes": 2949,
+      "sha256": "84fbf01d69a22dd56a8eaa4239484be208aed8803d21679f67d128b1c2c5c4f1"
+    },
+    {
+      "path": "r33/tests_scan_live_r42.py",
+      "bytes": 9565,
+      "sha256": "8b84a371ba02175c0ed3418c543b630d0bdb7ec671492c0252cde0bdec13caf6"
+    },
+    {
+      "path": "r33/tests_live_r42.py",
+      "bytes": 9534,
+      "sha256": "f6d8cfe11992eb7e405258a85ed82bf0fa8e293bb7a3765ae923bea4775e8a67"
+    },
+    {
+      "path": "run_tests_r42.py",
+      "bytes": 1670,
+      "sha256": "b7f819ec55591c9a1a06f4e413f6ef17dbe5775ff02fa7ccb4667b7226b8f274"
+    },
+    {
+      "path": "R42_RUNTIME_README.md",
+      "bytes": 4249,
+      "sha256": "5df23df5bd91faad2bf69044392c15cb9a5a5c2733c6e58f1fde9d9a0632ea8e"
+    },
+    {
+      "path": "structured_light_system_algorithm_v1/src/python/structured_light/scan3d/turntable.py",
+      "bytes": 10634,
+      "sha256": "670d0ad50800a17d50f9e98f91265b0ba9dc0d29c8f80058a1d3c5077aa90bff"
+    }
+  ],
+  "boundaries": [
+    "No board/camera/motor command issued",
+    "Motor 12V physically disconnected per current session",
+    "Axis provisional; no physical metrology claim",
+    "MockGuard physical EN polarity adapted only in test fixture",
+    "Full integration mock camera/PL/HDMI adapters do not prove actual board throughput"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "DISPLAY_MARKER_15C_V1",
+  "runtime": {
+    "system": "Linux",
+    "machine": "armv7l",
+    "pointer_bits": 32,
+    "byteorder": "little",
+    "python_implementation": "CPython",
+    "python_version": "3.10.4",
+    "numpy_version": "1.21.5",
+    "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+  },
+  "source_sha256": "2177cd056e26cd671a7f7741d79b92b44a88eec744d1fc03f7d45c46d929d890",
+  "library": "libmarker_r15c.so",
+  "library_sha256": "0d951b08db1ccd77dba72f4630de16f366eb5d5819d72837fd4b294e2f2fc6dc",
+  "validation": {
+    "passed": true,
+    "full_canvas_pixels_equal": true,
+    "cases": 24,
+    "invalid_group_rejected_before_write": true,
+    "reference": "OpenCV circle/drawMarker LINE_8",
+    "host_or_arm_local_only": true,
+    "native_wall_s": 0.011523852999744122,
+    "reference_wall_s": 1.4297995429978982,
+    "runtime": {
+      "system": "Linux",
+      "machine": "armv7l",
+      "pointer_bits": 32,
+      "byteorder": "little",
+      "python_implementation": "CPython",
+      "python_version": "3.10.4",
+      "numpy_version": "1.21.5",
+      "multiarray_sha256": "d0a044512a374d93e52629c4c15c70590cb693ba99950d8c335a10f6034c362b"
+    },
+    "library_sha256": "0d951b08db1ccd77dba72f4630de16f366eb5d5819d72837fd4b294e2f2fc6dc"
+  },
+  "build_command": [
+    "/usr/bin/gcc",
+    "-O3",
+    "-std=c99",
+    "-shared",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-fPIC",
+    "/home/xilinx/scan3d_r26_software15c_20261024/runtime/candidate/native/marker_r15c.c",
+    "-o",
+    "/home/xilinx/scan3d_r26_software15c_20261024/runtime/candidate/native/libmarker_r15c.so"
+  ]
+}

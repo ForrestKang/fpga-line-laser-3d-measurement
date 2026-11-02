@@ -1,0 +1,73 @@
+{
+  "schema": "t02_artifact_fit_v1",
+  "scale": 0.8898062047338199,
+  "plane_offset_factor": 0.8898062047338199,
+  "axis_point_camera_mm": [
+    17.14900399892582,
+    -31.718894992141188,
+    271.23224898452344
+  ],
+  "axis_direction_camera": [
+    0.09058354118239573,
+    0.9957981486056068,
+    -0.013441328078107363
+  ],
+  "base_height_mm": 9.613434733573142,
+  "axis_shift_mm": 27.83401133026155,
+  "axis_tilt_change_deg": 4.677505182111778,
+  "before": [
+    {
+      "section": 0,
+      "nominal_d": 40.0,
+      "measured_d": 55.704,
+      "radius_rms": 7.841,
+      "height": 17.24,
+      "points": 6068
+    },
+    {
+      "section": 1,
+      "nominal_d": 30.0,
+      "measured_d": 44.212,
+      "radius_rms": 7.131,
+      "height": 17.86,
+      "points": 4226
+    },
+    {
+      "section": 2,
+      "nominal_d": 20.0,
+      "measured_d": 34.402,
+      "radius_rms": 7.263,
+      "height": 17.38,
+      "points": 3787
+    }
+  ],
+  "after": [
+    {
+      "section": 0,
+      "nominal_d": 40.0,
+      "measured_d": 40.181,
+      "radius_rms": 0.17,
+      "height": 15.3,
+      "points": 6068
+    },
+    {
+      "section": 1,
+      "nominal_d": 30.0,
+      "measured_d": 29.588,
+      "radius_rms": 0.238,
+      "height": 15.85,
+      "points": 4226
+    },
+    {
+      "section": 2,
+      "nominal_d": 20.0,
+      "measured_d": 20.179,
+      "radius_rms": 0.216,
+      "height": 15.43,
+      "points": 3787
+    }
+  ],
+  "points": "..\\scan3d_t02_roi_runtime_20261031_01\\evidence\\static32_roi_clean\\xyz_t02_region_camera_mm.npy",
+  "source_axis": "calibration_20261031\\install\\turntable_axis.json",
+  "note": "calibrated on T02: T02 errors after this fit are not an accuracy result"
+}

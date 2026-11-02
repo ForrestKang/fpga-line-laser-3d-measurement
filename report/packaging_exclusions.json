@@ -1,0 +1,1802 @@
+[
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\boot_loader.py",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 5148
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\demo_service.py",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 8527
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\install_boot.py",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 6194
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\install_check.json",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 1617
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\install_receipt.json",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 1849
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\motor_standing.json",
+    "reason": "historical_user_hardware_authority_not_transferable",
+    "size": 469
+  },
+  {
+    "path": "1_board_image\\boot_autostart_btn0\\restore_boot.py",
+    "reason": "superseded_boot_snapshot_active_service_source_retained",
+    "size": 1636
+  },
+  {
+    "path": "1_board_image\\boot_rig2b_install\\authority.json",
+    "reason": "historical_user_hardware_authority_not_transferable",
+    "size": 824
+  },
+  {
+    "path": "1_board_image\\boot_rig2b_install\\__pycache__\\live_trial.cpython-310.pyc",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 7339
+  },
+  {
+    "path": "1_board_image\\boot_rig2b_install\\__pycache__\\live_trial2.cpython-310.pyc",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 4724
+  },
+  {
+    "path": "1_board_image\\runtime_rig2b\\structured_light_system_algorithm_v1\\src\\python\\structured_light_system.egg-info\\dependency_links.txt",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 1
+  },
+  {
+    "path": "1_board_image\\runtime_rig2b\\structured_light_system_algorithm_v1\\src\\python\\structured_light_system.egg-info\\PKG-INFO",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 620
+  },
+  {
+    "path": "1_board_image\\runtime_rig2b\\structured_light_system_algorithm_v1\\src\\python\\structured_light_system.egg-info\\requires.txt",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 129
+  },
+  {
+    "path": "1_board_image\\runtime_rig2b\\structured_light_system_algorithm_v1\\src\\python\\structured_light_system.egg-info\\SOURCES.txt",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 2918
+  },
+  {
+    "path": "1_board_image\\runtime_rig2b\\structured_light_system_algorithm_v1\\src\\python\\structured_light_system.egg-info\\top_level.txt",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 17
+  },
+  {
+    "path": "2_source_and_build\\scripts\\fit_joint_artifacts_v1.py.bak",
+    "reason": "cache_or_backup_or_generated_package_metadata",
+    "size": 7617
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_booking.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 6190
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_final.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 5724
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_final02.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 5732
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_live.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 5748
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_r43.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 5495
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_seedretry.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 6474
+  },
+  {
+    "path": "2_source_and_build\\scripts\\package_timing.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 7563
+  },
+  {
+    "path": "2_source_and_build\\scripts\\remote_extract_final02.py",
+    "reason": "old_packaging_or_remote_extraction_helper_not_needed_for_build",
+    "size": 11006
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\sl_profile_hdmi_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 751
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\synth\\sl_profile_hdmi.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 259367
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_axis_register_slice_0_0\\sl_profile_hdmi_axis_register_slice_0_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 464
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2400
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_control_reset_0\\sl_profile_hdmi_hdmi_control_reset_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_system_reset_0\\sl_profile_hdmi_hdmi_system_reset_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_vdma_0\\sl_profile_hdmi_hdmi_vdma_0.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6505
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_vdma_0\\sl_profile_hdmi_hdmi_vdma_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2314
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_vdma_0\\sl_profile_hdmi_hdmi_vdma_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2644
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 203
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\smartconnect.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 57
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_dma_0\\sl_profile_hdmi_pfo3_dma_0.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3060
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_dma_0\\sl_profile_hdmi_pfo3_dma_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2226
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2400
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2400
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2400
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 573
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2367
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_profile_dma_0\\sl_profile_hdmi_profile_dma_0.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2273
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_profile_dma_0\\sl_profile_hdmi_profile_dma_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2229
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_ps7_0\\sl_profile_hdmi_ps7_0.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 33643
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_raw_dma_0\\sl_profile_hdmi_raw_dma_0.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2269
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_raw_dma_0\\sl_profile_hdmi_raw_dma_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2225
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_system_reset_0\\sl_profile_hdmi_system_reset_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 202
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\smartconnect.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 57
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_pixel_reset_0\\sl_profile_hdmi_video_pixel_reset_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_vtc_out_0\\sl_profile_hdmi_vtc_out_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 366
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_v_axi4s_vid_out_0_0\\sl_profile_hdmi_v_axi4s_vid_out_0_0_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 25
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_axis_register_slice_0_0\\synth\\sl_profile_hdmi_axis_register_slice_0_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6620
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_axi_dynclk_0\\synth\\sl_profile_hdmi_axi_dynclk_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 11380
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_bsg1_field_power_good_0\\synth\\sl_profile_hdmi_bsg1_field_power_good_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3069
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_bsg1_guard_0\\synth\\sl_profile_hdmi_bsg1_guard_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7743
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_clock_locked_0\\synth\\sl_profile_hdmi_clock_locked_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3042
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0\\synth\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14975
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_imp_xbar_0\\synth\\sl_profile_hdmi_control_interconnect_imp_xbar_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 31017
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_control_reset_0\\synth\\sl_profile_hdmi_hdmi_control_reset_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9172
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_system_reset_0\\synth\\sl_profile_hdmi_hdmi_system_reset_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9161
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_vdma_0\\synth\\sl_profile_hdmi_hdmi_vdma_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 27179
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_interrupts_0\\synth\\sl_profile_hdmi_interrupts_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9583
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\bd_fca1.bd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 136296
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\synth\\sl_profile_hdmi_memory_interconnect_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14042
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\synth\\bd_fca1.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 170457
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_1\\bd_fca1_psr_aclk_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12576
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_1\\bd_fca1_psr_aclk_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_10\\bd_fca1_s00a2s_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20194
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_10\\bd_fca1_s00a2s_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2375
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_11\\bd_fca1_sawn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20896
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_11\\bd_fca1_sawn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_12\\bd_fca1_swn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20893
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_12\\bd_fca1_swn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_13\\bd_fca1_sbn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20906
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_13\\bd_fca1_sbn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_14\\bd_fca1_s01mmu_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 265477
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_15\\bd_fca1_s01tr_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 28050
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_16\\bd_fca1_s01sic_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 167985
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_17\\bd_fca1_s01a2s_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20194
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_17\\bd_fca1_s01a2s_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2375
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_18\\bd_fca1_sawn_1.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20896
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_18\\bd_fca1_sawn_1_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_19\\bd_fca1_swn_1.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20893
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_19\\bd_fca1_swn_1_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_2\\bd_fca1_arsw_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38689
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_2\\bd_fca1_arsw_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2401
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_20\\bd_fca1_sbn_1.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20906
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_20\\bd_fca1_sbn_1_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_21\\bd_fca1_m00s2a_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20165
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_21\\bd_fca1_m00s2a_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2375
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_22\\bd_fca1_m00awn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 24098
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_22\\bd_fca1_m00awn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_23\\bd_fca1_m00wn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 24141
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_23\\bd_fca1_m00wn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_24\\bd_fca1_m00bn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20876
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_24\\bd_fca1_m00bn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_25\\bd_fca1_m00e_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 58510
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_3\\bd_fca1_rsw_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38427
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_3\\bd_fca1_rsw_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2401
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_4\\bd_fca1_awsw_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38702
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_4\\bd_fca1_awsw_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2401
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_5\\bd_fca1_wsw_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38693
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_5\\bd_fca1_wsw_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2401
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_6\\bd_fca1_bsw_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38426
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_6\\bd_fca1_bsw_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2401
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_7\\bd_fca1_s00mmu_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 265477
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_8\\bd_fca1_s00tr_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 28050
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_9\\bd_fca1_s00sic_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 167985
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_1\\synth\\bd_fca1_psr_aclk_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8974
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_10\\synth\\bd_fca1_s00a2s_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 10788
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_11\\synth\\bd_fca1_sawn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7134
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_12\\synth\\bd_fca1_swn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7131
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_13\\synth\\bd_fca1_sbn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7123
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_14\\synth\\bd_fca1_s01mmu_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13354
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_15\\synth\\bd_fca1_s01tr_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13397
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_16\\synth\\bd_fca1_s01sic_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13843
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_17\\synth\\bd_fca1_s01a2s_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 10788
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_18\\synth\\bd_fca1_sawn_1.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7134
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_19\\synth\\bd_fca1_swn_1.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7131
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_2\\synth\\bd_fca1_arsw_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6149
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_20\\synth\\bd_fca1_sbn_1.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7123
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_21\\synth\\bd_fca1_m00s2a_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 10791
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_22\\synth\\bd_fca1_m00awn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7912
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_23\\synth\\bd_fca1_m00wn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7898
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_24\\synth\\bd_fca1_m00bn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7145
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_25\\synth\\bd_fca1_m00e_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13076
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_3\\synth\\bd_fca1_rsw_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6000
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_4\\synth\\bd_fca1_awsw_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6140
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_5\\synth\\bd_fca1_wsw_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6130
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_6\\synth\\bd_fca1_bsw_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 5975
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_7\\synth\\bd_fca1_s00mmu_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13354
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_8\\synth\\bd_fca1_s00tr_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13397
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\ip\\ip_9\\synth\\bd_fca1_s00sic_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 13843
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_motion_interconnect_imp_xbar_0\\synth\\sl_profile_hdmi_motion_interconnect_imp_xbar_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 15979
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_motor_controller_0\\synth\\sl_profile_hdmi_motor_controller_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7371
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_dma_0\\synth\\sl_profile_hdmi_pfo3_dma_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 38336
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_frontend_0\\synth\\sl_profile_hdmi_pfo3_frontend_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8929
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0\\synth\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 11754
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1\\synth\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12498
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2\\synth\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 16438
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0\\synth\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 15834
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_xbar_0\\synth\\sl_profile_hdmi_pfo3_memory_imp_xbar_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 25123
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_processing_pipeline_0\\synth\\sl_profile_hdmi_processing_pipeline_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 17232
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_profile_dma_0\\synth\\sl_profile_hdmi_profile_dma_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 25709
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_ps7_0\\synth\\sl_profile_hdmi_ps7_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 56684
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_ps7_0\\hdl\\verilog\\processing_system7_v5_5_processing_system7.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 165433
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_raw_dma_0\\synth\\sl_profile_hdmi_raw_dma_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 25665
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_rgb2dvi_0_0\\src\\rgb2dvi.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 296
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_rgb2dvi_0_0\\src\\rgb2dvi_clocks.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 115
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_rgb2dvi_0_0\\src\\rgb2dvi_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 137
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_rgb2dvi_0_0\\synth\\sl_profile_hdmi_rgb2dvi_0_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6956
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_system_reset_0\\synth\\sl_profile_hdmi_system_reset_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9106
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_enable_0\\synth\\sl_profile_hdmi_video_enable_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3042
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\bd_d95c.bd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 49576
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\synth\\sl_profile_hdmi_video_memory_interconnect_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9595
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\synth\\bd_d95c.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 32446
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_1\\bd_d95c_psr_aclk_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12576
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_1\\bd_d95c_psr_aclk_0_board.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 60
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_2\\bd_d95c_s00mmu_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 264570
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_3\\bd_d95c_s00tr_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 26996
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_4\\bd_d95c_s00sic_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 166931
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_5\\bd_d95c_s00a2s_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 18644
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_5\\bd_d95c_s00a2s_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2375
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_6\\bd_d95c_sarn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20894
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_6\\bd_d95c_sarn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_7\\bd_d95c_srn_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20891
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_7\\bd_d95c_srn_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2414
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_8\\bd_d95c_m00s2a_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 18587
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_8\\bd_d95c_m00s2a_0_ooc.xdc",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2375
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_9\\bd_d95c_m00e_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 56991
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_1\\synth\\bd_d95c_psr_aclk_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8974
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_2\\synth\\bd_d95c_s00mmu_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12470
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_3\\synth\\bd_d95c_s00tr_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12389
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_4\\synth\\bd_d95c_s00sic_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12835
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_5\\synth\\bd_d95c_s00a2s_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9682
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_6\\synth\\bd_d95c_sarn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7132
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_7\\synth\\bd_d95c_srn_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7129
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_8\\synth\\bd_d95c_m00s2a_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9637
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\ip\\ip_9\\synth\\bd_d95c_m00e_0.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12188
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_pixel_reset_0\\synth\\sl_profile_hdmi_video_pixel_reset_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9168
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_pixel_unpack_0\\synth\\sl_profile_hdmi_video_pixel_unpack_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 5752
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_reset_clear_0\\synth\\sl_profile_hdmi_video_reset_clear_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3057
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_vtc_out_0\\synth\\sl_profile_hdmi_vtc_out_0.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 21030
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_v_axi4s_vid_out_0_0\\synth\\sl_profile_hdmi_v_axi4s_vid_out_0_0.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9690
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\00fe\\hdl\\sc_node_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 248233
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\00fe\\hdl\\verilog\\sc_node_v1_0_19_t_reqsend.svh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3129
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\0848\\hdl\\sc_switchboard_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 17628
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\0c28\\hdl\\generic_baseblocks_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 109253
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\21f8\\hdl\\axi_dwidth_converter_v2_1_vlsyn_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 616372
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\3051\\hdl\\sc_si_converter_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 427846
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\3d9a\\hdl\\sc_mmu_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 111695
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\42f3\\hdl\\blk_mem_gen_v8_4_vhsyn_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14870954
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\434f\\hdl\\axis_infrastructure_v1_1_1.vh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12142
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\434f\\hdl\\axis_infrastructure_v1_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 50844
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\4b52\\hdl\\verilog\\processing_system7_v5_5_atc.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 17746
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\4b52\\hdl\\verilog\\processing_system7_v5_5_aw_atc.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 11995
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\4b52\\hdl\\verilog\\processing_system7_v5_5_b_atc.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14642
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\4b52\\hdl\\verilog\\processing_system7_v5_5_trace_buffer.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8668
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\4b52\\hdl\\verilog\\processing_system7_v5_5_w_atc.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9582
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\66ea\\hdl\\axi_lite_ipif_v3_0_vh_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 126528
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\7785\\hdl\\sc_transaction_regulator_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 86386
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\7e8c\\hdl\\axi_vdma_v6_3_24.vh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12148
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\7e8c\\hdl\\axi_vdma_v6_3_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 89149
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\7e8c\\hdl\\axi_vdma_v6_3_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3643435
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\7f6a\\hdl\\axi_dma_v7_1_vh_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 1132994
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\852f\\hdl\\sc_axi2sc_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 27096
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\9097\\src\\axi_dynclk.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 10307
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\9097\\src\\axi_dynclk_S00_AXI.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 19078
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\9097\\src\\mmcme2_drp.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 15778
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\9438\\hdl\\proc_sys_reset_v5_0_vh_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 66316
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\9c1a\\hdl\\xlconcat_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 64938
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\a165\\hdl\\xlconstant_v1_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3177
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\b193\\hdl\\axi_sg_v4_1_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 1372589
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bc4b\\hdl\\axi_register_slice_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 174589
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\ClockGen.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9136
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\DVI_Constants.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3220
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\OutputSERDES.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8556
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\rgb2dvi.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 7972
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\SyncAsync.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3815
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\SyncAsyncReset.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 3824
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\bd5a\\src\\TMDS_Encoder.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8053
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\be12\\hdl\\axis_register_slice_v1_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 101537
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\c219\\hdl\\v_tc_v6_2_vh_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 590679
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\d1ca\\hdl\\v_axi4s_vid_out_v4_0_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 122842
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\d44a\\hdl\\axi_datamover_v5_1_vh_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2324583
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\d654\\hdl\\fifo_generator_v13_2_vhsyn_rfs.vhd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2440891
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\d98a\\hdl\\axi_protocol_converter_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 246013
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\e059\\hdl\\axi_clock_converter_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 101915
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\e44a\\hdl\\sc_exit_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 420668
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\ec67\\hdl\\axi_infrastructure_v1_1_0.vh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 8325
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\ec67\\hdl\\axi_infrastructure_v1_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 29851
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\f084\\hdl\\axi_crossbar_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 309459
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\f0b6\\hdl\\sc_util_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 286036
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\f0b6\\hdl\\verilog\\sc_util_v1_0_4_constants.vh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 6251
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\f0b6\\hdl\\verilog\\sc_util_v1_0_4_constants_noc.vh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 1118
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\f0b6\\hdl\\verilog\\sc_util_v1_0_4_structs.svh",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 11221
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\fb46\\hdl\\axi_data_fifo_v2_1_vl_rfs.v",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 72204
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.gen\\sources_1\\bd\\sl_profile_hdmi\\ipshared\\fca9\\hdl\\sc_sc2axi_v1_0_vl_rfs.sv",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 27076
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.ip_user_files\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\bd_0\\bd_fca1.bd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 136296
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.ip_user_files\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\bd_0\\bd_d95c.bd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 49576
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\sl_profile_hdmi.bd",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 251359
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_axis_register_slice_0_0\\sl_profile_hdmi_axis_register_slice_0_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14933
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_axi_dynclk_0\\sl_profile_hdmi_axi_dynclk_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 20274
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_bsg1_field_power_good_0\\sl_profile_hdmi_bsg1_field_power_good_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2826
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_bsg1_guard_0\\sl_profile_hdmi_bsg1_guard_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 15254
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_clock_locked_0\\sl_profile_hdmi_clock_locked_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2781
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_0\\sl_profile_hdmi_control_interconnect_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 35676
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0\\sl_profile_hdmi_control_interconnect_imp_auto_pc_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 29967
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_control_interconnect_imp_xbar_0\\sl_profile_hdmi_control_interconnect_imp_xbar_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 291547
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_control_reset_0\\sl_profile_hdmi_hdmi_control_reset_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12806
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_system_reset_0\\sl_profile_hdmi_hdmi_system_reset_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12801
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_hdmi_vdma_0\\sl_profile_hdmi_hdmi_vdma_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 122003
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_interrupts_0\\sl_profile_hdmi_interrupts_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 34557
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_memory_interconnect_0\\sl_profile_hdmi_memory_interconnect_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 30808
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_motion_interconnect_0\\sl_profile_hdmi_motion_interconnect_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 35670
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_motion_interconnect_imp_xbar_0\\sl_profile_hdmi_motion_interconnect_imp_xbar_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 219616
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_motor_controller_0\\sl_profile_hdmi_motor_controller_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 14389
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_dma_0\\sl_profile_hdmi_pfo3_dma_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 116150
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_frontend_0\\sl_profile_hdmi_pfo3_frontend_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 21249
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_0\\sl_profile_hdmi_pfo3_memory_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 35630
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 25874
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_1.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 26705
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2\\sl_profile_hdmi_pfo3_memory_imp_auto_pc_2.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 31342
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0\\sl_profile_hdmi_pfo3_memory_imp_auto_us_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 30842
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_pfo3_memory_imp_xbar_0\\sl_profile_hdmi_pfo3_memory_imp_xbar_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 241175
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_processing_pipeline_0\\sl_profile_hdmi_processing_pipeline_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 42359
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_profile_dma_0\\sl_profile_hdmi_profile_dma_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 83792
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_ps7_0\\sl_profile_hdmi_ps7_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 196573
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_raw_dma_0\\sl_profile_hdmi_raw_dma_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 83772
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_rgb2dvi_0_0\\sl_profile_hdmi_rgb2dvi_0_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 9727
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_system_reset_0\\sl_profile_hdmi_system_reset_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12776
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_enable_0\\sl_profile_hdmi_video_enable_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2790
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_memory_interconnect_0\\sl_profile_hdmi_video_memory_interconnect_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 21472
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_pixel_reset_0\\sl_profile_hdmi_video_pixel_reset_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 12791
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_pixel_unpack_0\\sl_profile_hdmi_video_pixel_unpack_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 11692
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_video_reset_clear_0\\sl_profile_hdmi_video_reset_clear_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 2815
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_vtc_out_0\\sl_profile_hdmi_vtc_out_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 39235
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\build\\full_project_r25_v9\\sl_profile_hdmi.srcs\\sources_1\\bd\\sl_profile_hdmi\\ip\\sl_profile_hdmi_v_axi4s_vid_out_0_0\\sl_profile_hdmi_v_axi4s_vid_out_0_0.xci",
+    "reason": "regenerable_amd_ip_generated_outputs_not_explicit_project_inputs",
+    "size": 17496
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\ARCHIVE.json",
+    "reason": "historical_duplicate_revision",
+    "size": 60012
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\FOUR_LANE_METRICS.json",
+    "reason": "historical_duplicate_revision",
+    "size": 10705
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\SOURCE_MANIFEST.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1208
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\TIMING_R25.json",
+    "reason": "historical_duplicate_revision",
+    "size": 5825
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\VALIDATION_R25.json",
+    "reason": "historical_duplicate_revision",
+    "size": 19801
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\ARCHIVE.json",
+    "reason": "historical_duplicate_revision",
+    "size": 78168
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\BUILD_PIN_V8.json",
+    "reason": "historical_duplicate_revision",
+    "size": 762
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\FOUR_LANE_METRICS.json",
+    "reason": "historical_duplicate_revision",
+    "size": 12337
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\SOURCE_MANIFEST.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1208
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\TIMING_R25.json",
+    "reason": "historical_duplicate_revision",
+    "size": 6856
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\VALIDATION_R25.json",
+    "reason": "historical_duplicate_revision",
+    "size": 19803
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\branches_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1974
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\compiled_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1208
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\empty_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1945
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\faults_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1211
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\fork_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1961
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\graph_equivalence_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1426
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\noise_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1956
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\overflow_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1956
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\preview_weak_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1970
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\real_0_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\real_1_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\real_2_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\real_3_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\run.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 14
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\stripe_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1965
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\stripe_m1.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1938
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\stripe_m2.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1940
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T05_000_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T05_119_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1967
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T05_239_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T06_000_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T06_119_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\results\\T06_239_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1967
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\rtl\\pfo3_banked_ram.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 1130
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\rtl\\pfo3_frontend_ports.svh",
+    "reason": "historical_duplicate_revision",
+    "size": 1059
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\rtl\\pfo3_frontend_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 16645
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\rtl\\pfo3_row_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 10605
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\rtl\\pfo3_tdp_ram.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 545
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\scripts\\sim.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 803
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\scripts\\synth.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 1188
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\sim\\pfo3_frontend_serial_baseline.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 14461
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\sim\\tb_pfo3_faults.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 3573
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\sim\\tb_pfo3_graph4.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 4122
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v7\\sim\\tb_pfo3_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 4177
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\branches_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1974
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\compiled_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1208
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\empty_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1945
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\faults_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1211
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\fork_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1961
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\graph_equivalence_sources.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1426
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\noise_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1956
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\overflow_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1956
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\preview_weak_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1970
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\real_0_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\real_1_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\real_2_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\real_3_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1978
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\run.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 14
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\stripe_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1965
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\stripe_m1.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1938
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\stripe_m2.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1940
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T05_000_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T05_119_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1967
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T05_239_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T06_000_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T06_119_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1966
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\results\\T06_239_m0.provenance.json",
+    "reason": "historical_duplicate_revision",
+    "size": 1967
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\rtl\\pfo3_banked_ram.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 1130
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\rtl\\pfo3_frontend_ports.svh",
+    "reason": "historical_duplicate_revision",
+    "size": 1059
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\rtl\\pfo3_frontend_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 17525
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\rtl\\pfo3_row_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 10605
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\rtl\\pfo3_tdp_ram.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 545
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\scripts\\sim.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 803
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\scripts\\synth.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 1190
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\scripts\\synth_v8.tcl",
+    "reason": "historical_duplicate_revision",
+    "size": 1190
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\sim\\pfo3_frontend_serial_baseline.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 14461
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\sim\\tb_pfo3_faults.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 4015
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\sim\\tb_pfo3_graph4.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 4122
+  },
+  {
+    "path": "2_source_and_build\\vendor\\r31_baseline_copy\\source_tree\\pl\\r25_next\\revisions\\v8\\sim\\tb_pfo3_r25.sv",
+    "reason": "historical_duplicate_revision",
+    "size": 4209
+  }
+]

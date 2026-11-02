@@ -1,0 +1,34 @@
+{
+  "source_file": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\evidence\\board\\seedretry_scan_bin.json",
+  "source_sha256": "6233d07ba900bfec50b8335434b5f7efd643e434dc10674c39cab9a28c98c174",
+  "sanitized_result_extract": true,
+  "removed_source_fields": [
+    "action",
+    "hostkey",
+    "started_ns",
+    "automatic_retry",
+    "machine_id",
+    "boot_id",
+    "command"
+  ],
+  "credential_or_identity_field_names_removed": [
+    "hostkey",
+    "machine_id",
+    "boot_id"
+  ],
+  "license_or_authorization_proof_field_names_found": [],
+  "result_fields": {
+    "passed": true,
+    "wall_s": 178.1111471,
+    "stdout_result_lines": [
+      "ready run_20261029_102649 {'frames': 8, 'fps': 1.7839043867619717, 'pfo3_binning': True, 'live_stream': {'started': True, 'section_offset': 4294967292, 'packets': 7080, 'errors': 0, 'last_dump': 7080, 'last_copy': 7080, 'elapsed_s': 3.5336651939978765}}",
+      "SCAN_END run_20261029_102649 140 {\"state\": \"DONE\", \"phase\": \"complete\", \"visited_views\": 200, \"steps\": 3600, \"angle_deg\": 365.3791936848041, \"message\": \"revolution complete: 200 measured, 0 preview, 0 skipped; axis calibrated\"}",
+      "motor_after {'motor': {'enabled': False, 'disabled': True, 'error': 0}, 'guard': {'enabled': False, 'disabled': True, 'error': 0}}",
+      "SEEDRETRY_SCAN_DONE"
+    ]
+  },
+  "omitted_stdout_line_types": [
+    "Running",
+    "stopped"
+  ]
+}

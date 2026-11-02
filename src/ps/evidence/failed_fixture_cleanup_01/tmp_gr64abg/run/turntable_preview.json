@@ -1,0 +1,18 @@
+{
+  "schema": "sl_turntable_model_v1",
+  "axis_point_mm": [
+    0.0,
+    0.0,
+    499.70211283312796
+  ],
+  "axis_direction": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "rad_per_step": 0.001963495408493621,
+  "state": "assumed_uncalibrated",
+  "source": "R42 provisional axis",
+  "fingerprint": "918548d064905777dd1f8381e09a11d776c704f21b188665f39e9132f33acc90",
+  "steps_per_rev": 3199.9999999999995
+}

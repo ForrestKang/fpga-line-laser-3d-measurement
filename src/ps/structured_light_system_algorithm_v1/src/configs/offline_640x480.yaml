@@ -1,0 +1,27 @@
+schema_version: 1
+mode: offline
+camera:
+  pixel_format: gray8
+  frame_width: 640
+  frame_height: 480
+  measured_width_confirmed: false
+roi:
+  x0: 0
+  y0: 0
+  x1: 640
+  y1: 480
+centroid:
+  axis: row
+  threshold_dn: 30
+  min_width_px: 1
+  max_width_px: 32
+  min_sum_dn: 30
+  min_peak_dn: 15
+  fractional_bits: 12
+clock:
+  system_hz: 100000000
+  camera_timing_budget_hz: 48000000
+  camera_frequency_measured: false
+units:
+  distance: mm
+  angle: rad

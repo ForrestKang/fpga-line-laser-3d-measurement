@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/contracts/stripe_dataset_v1.json",
+  "title": "Structured-light raw stripe sample record v1",
+  "description": "A strict index for one raw gray8 capture. Exposure and gain values are recorded acquisition settings with their recorded units; this schema does not infer missing camera values or supply physical labels.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "sample_id",
+    "raw_gray8",
+    "installation_id",
+    "session_id",
+    "split",
+    "acquisition",
+    "labels"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "sample_id": { "type": "string", "minLength": 1 },
+    "raw_gray8": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "width", "height", "sha256"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1, "pattern": "\\.gray8$" },
+        "width": { "const": 752 },
+        "height": { "const": 480 },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "installation_id": { "type": "string", "minLength": 1 },
+    "session_id": { "type": "string", "minLength": 1 },
+    "split": { "enum": ["development", "validation", "test"] },
+    "acquisition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["exposure", "gain"],
+      "properties": {
+        "exposure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit"],
+          "properties": {
+            "value": { "type": "integer", "minimum": 1 },
+            "unit": { "type": "string", "minLength": 1 }
+          }
+        },
+        "gain": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit"],
+          "properties": {
+            "value": { "type": "integer", "minimum": 0 },
+            "unit": { "type": "string", "minLength": 1 }
+          }
+        }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "version"],
+      "properties": {
+        "status": { "enum": ["unlabeled", "labeled"] },
+        "version": { "type": ["string", "null"], "minLength": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "unlabeled" } } },
+          "then": { "properties": { "version": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "labeled" } } },
+          "then": { "properties": { "version": { "type": "string", "minLength": 1 } } }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "cloud": "tmp\\t02b\\object_cloud.npy",
+  "axis": "calibration_20261031\\install_t02_rotation\\turntable_axis.json",
+  "sections": [
+    {
+      "bottom": -60.0,
+      "top": -42.0,
+      "height": 18.0,
+      "diameter": 39.678,
+      "roundness_rms": 0.225,
+      "centre_offset": [
+        0.62,
+        -1.44
+      ],
+      "points": 12198,
+      "nominal_d": 40.0,
+      "error_d": -0.322,
+      "error_h": 2.0
+    },
+    {
+      "bottom": -42.0,
+      "top": -26.0,
+      "height": 16.0,
+      "diameter": 29.901,
+      "roundness_rms": 0.214,
+      "centre_offset": [
+        0.57,
+        -1.52
+      ],
+      "points": 10339,
+      "nominal_d": 30.0,
+      "error_d": -0.099,
+      "error_h": 0.0
+    },
+    {
+      "bottom": -26.0,
+      "top": -10.0,
+      "height": 16.0,
+      "diameter": 19.88,
+      "roundness_rms": 0.206,
+      "centre_offset": [
+        0.43,
+        -1.57
+      ],
+      "points": 9704,
+      "nominal_d": 20.0,
+      "error_d": -0.12,
+      "error_h": 0.0
+    }
+  ],
+  "layers": 50
+}

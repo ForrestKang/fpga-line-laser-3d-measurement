@@ -23,3 +23,24 @@ sim/work/
 *.vcd
 *.vvp
 *.log
+
+# Explicit frozen release artifacts and failure evidence, not new build output.
+!/board/firmware/final.bit
+!/board/firmware/final.hwh
+!/build/evidence/build_seedretry.log
+!/build/evidence/finalize_seedretry.log
+!/sim/results/*.log
+!/src/ps/evidence/**/*.log
+# New transient output remains local.
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.pem
+*.key
+id_rsa
+id_ed25519

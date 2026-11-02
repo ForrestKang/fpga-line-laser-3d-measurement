@@ -1,0 +1,2 @@
+# Preserve frozen HDL, runtime and evidence bytes across Windows/Linux checkout.
+* -text

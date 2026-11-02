@@ -1,0 +1,99 @@
+{
+  "schema": "R41_LIVE_V1",
+  "pid": 5028,
+  "phase": "stopped",
+  "frames": 24,
+  "motor": "idle",
+  "laser": "user_controlled",
+  "started_unix": 1793258127.4215994,
+  "buttons": {
+    "present": true,
+    "pages": [
+      "A",
+      "C"
+    ],
+    "mapping": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "scan": {
+    "state": "STOPPED",
+    "phase": "stopped",
+    "views": 1,
+    "target_views": 200,
+    "steps": 32,
+    "angle_deg": 3.6,
+    "deadline_s": 600.0,
+    "axis_status": "PROVISIONAL_NOT_CALIBRATED",
+    "message": "BTN0 STOP",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  "runtime_contract": {},
+  "camera": {
+    "pclk_hz": [
+      48000000
+    ]
+  },
+  "signals": {
+    "camera_signal_verified": true,
+    "frame_period_s": 0.02
+  },
+  "camera_generation_resumed": {
+    "request_id": 0,
+    "epoch": 0,
+    "resumed": false
+  },
+  "camera_errors_before_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "camera_errors_after_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "pfo3_binning": false,
+  "pipeline": false,
+  "warmup": {
+    "raw_sha256": "mock-raw"
+  },
+  "page": "C",
+  "fps": 4.523809523809523,
+  "last": {
+    "frame": 20,
+    "capture_ms": 0.021000014385208488,
+    "pl_ms": 0.0185999961104244,
+    "frame_age_ms": 0.0185999961104244,
+    "centres": 1,
+    "xyz": 1,
+    "xyz_measurement": 1,
+    "measure": null,
+    "profile": null,
+    "raw_sha256": "mock-raw",
+    "primary_bytes": 12,
+    "page": "C",
+    "scan_accepted": false,
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  "elapsed_s": 4.200000000000001,
+  "dropped": {
+    "capture": 0,
+    "display": 0
+  },
+  "threads_alive_after_join": [],
+  "thread_errors": [],
+  "display_median_ms": 0.0014999968698248267,
+  "display_updates": 24,
+  "stop_reason": "duration",
+  "timing_median_ms": {
+    "capture_ms": 0.02239999594166875,
+    "pl_ms": 0.018499995348975062,
+    "frame_age_ms": 0.01854999572969973
+  },
+  "finished_unix": 1793258127.4645963
+}

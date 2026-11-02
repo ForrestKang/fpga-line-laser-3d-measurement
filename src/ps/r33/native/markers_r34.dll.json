@@ -1,0 +1,20 @@
+{
+  "schema": "R34_NATIVE_MARKER_BUILD_V1",
+  "compiler": "gcc",
+  "compiler_version": "gcc (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "flags": [
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared"
+  ],
+  "machine": "AMD64",
+  "source_sha256": "5e820e2d3fb7a232b6caeb8baf937a81e134bf3b4670b77aa2c2bbd782c71c35",
+  "output": "markers_r34.dll",
+  "output_sha256": "4e332bca04e6350e3b3c875b51dbb1a925f74e3895292826037e40332183f199",
+  "output_bytes": 49338,
+  "display_only": true,
+  "board_hardware_operations": 0
+}

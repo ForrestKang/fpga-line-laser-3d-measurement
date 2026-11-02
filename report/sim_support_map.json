@@ -1,0 +1,307 @@
+{
+  "schema": "SIM_SUPPORT_MAP_V1",
+  "files": [
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_claude_continue_20261031_01\\tests\\integration_axi_final_tb.sv",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\tests\\integration_axi_final_tb.sv",
+      "relative": "tests/integration_axi_final_tb.sv",
+      "bytes": 11470,
+      "sha256": "bde71591e41e9076857f147c9ef67257d6eb53778ea26cd216daebfe3459951b"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\tests\\xpm_stubs_sim.v",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\tests\\xpm_stubs_sim.v",
+      "relative": "tests/xpm_stubs_sim.v",
+      "bytes": 1675,
+      "sha256": "a68bef89ab3c23458b34b556a95ccb0887a0c5b8cd1f6a7ccc1fb7f985c936cb"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\board\\r37_r41f_live02\\raw_000180.gray8",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\board\\r37_r41f_live02\\raw_000180.gray8",
+      "relative": "verification/board/r37_r41f_live02/raw_000180.gray8",
+      "bytes": 360960,
+      "sha256": "62cf5bea83b880746bd4d47168cd7d8ecbb533c8d0db6c7450f6361b35da8932"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\board\\r37_r41f_live03\\raw_000240.gray8",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\board\\r37_r41f_live03\\raw_000240.gray8",
+      "relative": "verification/board/r37_r41f_live03/raw_000240.gray8",
+      "bytes": 360960,
+      "sha256": "0842514e787eb799db989502a067d624314fb5738965d160b791aae3bdb0cbf0"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\calibrations\\T05\\calibration.json",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\calibrations\\T05\\calibration.json",
+      "relative": "verification/calibrations/T05/calibration.json",
+      "bytes": 1942,
+      "sha256": "69886ef2a8fe291b738e464767000c1cb1ac6d7f5b3c7ca597e0e5e1279e88f4"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\calibrations\\T06\\calibration.json",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\calibrations\\T06\\calibration.json",
+      "relative": "verification/calibrations/T06/calibration.json",
+      "bytes": 1944,
+      "sha256": "f95d9a31d35473532bf40aac22b7498b86824df0a8dc94a0cb816dcfcc20e964"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\empty.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\empty.hex",
+      "relative": "verification/sim/empty.hex",
+      "bytes": 1443840,
+      "sha256": "56fa67b87915f91ce7f8587ac437c5b088ef84c8b3818ede3a469355c86cb4a8"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\noise.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\noise.hex",
+      "relative": "verification/sim/noise.hex",
+      "bytes": 1443840,
+      "sha256": "dc04fa50b1ac6be7d9d52855c1d7396cf6514ef6cddbb0911d012c6a461ef9bd"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\saturated.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\saturated.hex",
+      "relative": "verification/sim/saturated.hex",
+      "bytes": 1443840,
+      "sha256": "1a35c768030eb2f4b05847b4200c19a3847105aa5addd7633944a559cdb52eb4"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\slots17.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\slots17.hex",
+      "relative": "verification/sim/slots17.hex",
+      "bytes": 1443840,
+      "sha256": "c082d6d196ff2a0a69bf1b7f8cad0573f55a2c0c4dff7f255e3a9d73fe1bd2a3"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\T05_000.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\T05_000.hex",
+      "relative": "verification/sim/T05_000.hex",
+      "bytes": 1443840,
+      "sha256": "407a1ef712799b480b880b7e0b12decf9f33d6c75f65e1fe07b904c6d9a95e4f"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\sim\\T06_000.hex",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\sim\\T06_000.hex",
+      "relative": "verification/sim/T06_000.hex",
+      "bytes": 1443840,
+      "sha256": "c3ca82fb5f1f0b407bf35f59aeecb55e3c073dae188ebffd4bbe4667933d29b3"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\empty_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\empty_primary.bin",
+      "relative": "verification/R39_reference/empty_primary.bin",
+      "bytes": 41796,
+      "sha256": "eb761e60fbf5db8848005585f8d9cdfb24b037c8246455ce68690db54a6f6346"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\mix_ovf_edge_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\mix_ovf_edge_primary.bin",
+      "relative": "verification/R39_reference/mix_ovf_edge_primary.bin",
+      "bytes": 121016,
+      "sha256": "bcc129e2de49a504cc5040f2da8523b1005bbaac475f0545b0bbe7958521f0d4"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\mix_ovf_mid_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\mix_ovf_mid_primary.bin",
+      "relative": "verification/R39_reference/mix_ovf_mid_primary.bin",
+      "bytes": 122240,
+      "sha256": "df8da8d69fc531b6263d9153c7e232a93a461020dedad84c4fa65271635e0d22"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\noise_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\noise_primary.bin",
+      "relative": "verification/R39_reference/noise_primary.bin",
+      "bytes": 6024708,
+      "sha256": "597b19a6f58b26b7a541af79494ed3d06f9e2a8e97a3664c191de522cf80c630"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\saturated_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\saturated_primary.bin",
+      "relative": "verification/R39_reference/saturated_primary.bin",
+      "bytes": 236820,
+      "sha256": "c48efbce537c193195df76cb4532fc21855cadfa82b0d58c6ef67b8039f804a1"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\slots17_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\slots17_primary.bin",
+      "relative": "verification/R39_reference/slots17_primary.bin",
+      "bytes": 1666996,
+      "sha256": "e820ed69528179075c21c6e5e845db2622c873cb06555dbd16ad90ec2868c704"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\T05_000_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\T05_000_primary.bin",
+      "relative": "verification/R39_reference/T05_000_primary.bin",
+      "bytes": 104968,
+      "sha256": "3df84d8db7442edf65d021e570649490548e11f6835977613f890848615d4fea"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R39_reference\\T06_000_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R39_reference\\T06_000_primary.bin",
+      "relative": "verification/R39_reference/T06_000_primary.bin",
+      "bytes": 101500,
+      "sha256": "6a8bdc9b2e9cc416f7043089217bb81c90f7febe629f324f4feb8994a2420617"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\empty_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\empty_bin_primary.bin",
+      "relative": "verification/R41_14_reference/empty_bin_primary.bin",
+      "bytes": 33092,
+      "sha256": "8fef4620941c6571a11417bacb6fdaa3f754b0967a129719a7f2b18dc416c322"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\empty_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\empty_primary.bin",
+      "relative": "verification/R41_14_reference/empty_primary.bin",
+      "bytes": 33092,
+      "sha256": "14b2fc0bb175919c0ed72a341e92d8c18098a2c535df1b69d447abd827e560f3"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\live02_180_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\live02_180_bin_primary.bin",
+      "relative": "verification/R41_14_reference/live02_180_bin_primary.bin",
+      "bytes": 111632,
+      "sha256": "c0893845baca3e2e32d936fd2e3fca1a54dbe7cee2462dbf99e445f033653f7c"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\live02_180_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\live02_180_primary.bin",
+      "relative": "verification/R41_14_reference/live02_180_primary.bin",
+      "bytes": 117820,
+      "sha256": "61f5700b116d11a729a12f99dc76e573b7d2b87f95b8e483cef67f19eb1662ff"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\live03_240_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\live03_240_bin_primary.bin",
+      "relative": "verification/R41_14_reference/live03_240_bin_primary.bin",
+      "bytes": 152160,
+      "sha256": "bf43a1c7eb684175539cb073dbb24e3c727784ee4bccdb2af4defa7053178299"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\live03_240_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\live03_240_primary.bin",
+      "relative": "verification/R41_14_reference/live03_240_primary.bin",
+      "bytes": 243212,
+      "sha256": "80bf2848f3a53679cc6b92a0c2bd6cf93244c022308c219f16144fecdec7bd83"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\mix_ovf_edge_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\mix_ovf_edge_primary.bin",
+      "relative": "verification/R41_14_reference/mix_ovf_edge_primary.bin",
+      "bytes": 112312,
+      "sha256": "574598b8469b2e33422198b12fedc1a229f3545f77c62b3f4957e11184547402"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\mix_ovf_mid_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\mix_ovf_mid_bin_primary.bin",
+      "relative": "verification/R41_14_reference/mix_ovf_mid_bin_primary.bin",
+      "bytes": 110748,
+      "sha256": "9276b39e87f75827fe80c4907f76ef946bacdd3cf04cafbc54e41909206db844"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\mix_ovf_mid_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\mix_ovf_mid_primary.bin",
+      "relative": "verification/R41_14_reference/mix_ovf_mid_primary.bin",
+      "bytes": 113536,
+      "sha256": "59f3fadc18c04f23739893568c9bc79524e1d95387d38a06bda6112a4acaccbd"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\noise_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\noise_bin_primary.bin",
+      "relative": "verification/R41_14_reference/noise_bin_primary.bin",
+      "bytes": 3275264,
+      "sha256": "52a1e299ed0b8b25b205b838ff220c73ecfb15133e5b67a5e59518678f3041b6"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\noise_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\noise_primary.bin",
+      "relative": "verification/R41_14_reference/noise_primary.bin",
+      "bytes": 6016004,
+      "sha256": "0c99a1cd9f9bf147be087f1c05776f44f6e3f3a18ec5657aaa8ae5d01af782a3"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\saturated_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\saturated_bin_primary.bin",
+      "relative": "verification/R41_14_reference/saturated_bin_primary.bin",
+      "bytes": 228116,
+      "sha256": "3653ddda5953752a0cc4e0623046f1b2fa16a2c6afdd8d8700c6b5bf5899222e"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\saturated_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\saturated_primary.bin",
+      "relative": "verification/R41_14_reference/saturated_primary.bin",
+      "bytes": 228116,
+      "sha256": "305e18d6b53d81af7810617dd48e6e6e51893ad9884cafc9e3ae1f297560bdcd"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\slots17_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\slots17_bin_primary.bin",
+      "relative": "verification/R41_14_reference/slots17_bin_primary.bin",
+      "bytes": 1105724,
+      "sha256": "b3e4a4857eb12a6f150b720229ee5d8eabd942f8a1ba2e8c7f43443a1f50d85d"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\slots17_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\slots17_primary.bin",
+      "relative": "verification/R41_14_reference/slots17_primary.bin",
+      "bytes": 1658292,
+      "sha256": "4e905ae77d50530b9e169af933fc0e8d820357ecf14d5020161be0fd639f8df8"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\T05_000_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\T05_000_bin_primary.bin",
+      "relative": "verification/R41_14_reference/T05_000_bin_primary.bin",
+      "bytes": 95924,
+      "sha256": "ce0ce6213b47b7b327e16f34bef1a13e7db837d17f29268342f46b8db9c6263e"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\T05_000_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\T05_000_primary.bin",
+      "relative": "verification/R41_14_reference/T05_000_primary.bin",
+      "bytes": 96264,
+      "sha256": "3e53a367fbea9c537152b4ad501d086154cebd57faf21b397f0427499831897e"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\T06_000_bin_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\T06_000_bin_primary.bin",
+      "relative": "verification/R41_14_reference/T06_000_bin_primary.bin",
+      "bytes": 93000,
+      "sha256": "9158e35ac6a63758ecbe7aa6587ccb520fc949c8dc462409a9e2cef5e8493a2a"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\R41_14_reference\\T06_000_primary.bin",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\R41_14_reference\\T06_000_primary.bin",
+      "relative": "verification/R41_14_reference/T06_000_primary.bin",
+      "bytes": 92796,
+      "sha256": "9dc202b88caed121359fd63e52d0c59354c187d7d980c19062593991de229e6c"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\r33\\direction_tests\\reference.py",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\r33\\direction_tests\\reference.py",
+      "relative": "verification/r33/direction_tests/reference.py",
+      "bytes": 7302,
+      "sha256": "f32672a16d11b7f5b0b7341d175258f9198c896d58d5869d8c8eb53273c6c0b6"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r42_buttons_boot_20261029_01\\vendor\\verification\\r33\\window_tests\\reference.py",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\r33\\window_tests\\reference.py",
+      "relative": "verification/r33/window_tests/reference.py",
+      "bytes": 931,
+      "sha256": "a4f32fe50a81163e75264b7cddec74a13972395665fed5bf23d82e3cc0cad91d"
+    },
+    {
+      "source": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000015.gray8",
+      "destination": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\sim_support\\verification\\board\\r37_r41g_live02\\raw_000015.gray8",
+      "relative": "verification/board/r37_r41g_live02/raw_000015.gray8",
+      "bytes": 360960,
+      "sha256": "b744fab97d8f16d55d90981d86bab0f74adb3382af7419f5055e9c2130b08c7b"
+    }
+  ],
+  "files_count": 42,
+  "total_bytes": 32108332,
+  "hardware_access": false,
+  "excluded": [
+    "r36_runtime",
+    "__pycache__"
+  ],
+  "copy_hash_verified": true
+}

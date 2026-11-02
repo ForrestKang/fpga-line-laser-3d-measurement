@@ -1,0 +1,106 @@
+{
+  "evidence_type": "VIVADO_2025_2_NATIVE_FRONTEND_OOC_REPORTS",
+  "part": "xc7z020clg400-1",
+  "revision": "V9",
+  "clock_ns": 10,
+  "build": "pl/r25_next/build/synth_v9",
+  "source_manifest": {
+    "pl/r25_next/rtl/pfo3_banked_ram.sv": {
+      "bytes": 1130,
+      "sha256": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543"
+    },
+    "pl/r25_next/rtl/pfo3_frontend_ports.svh": {
+      "bytes": 1059,
+      "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+    },
+    "pl/r25_next/rtl/pfo3_frontend_r25.sv": {
+      "bytes": 18144,
+      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
+    },
+    "pl/r25_next/rtl/pfo3_row_r25.sv": {
+      "bytes": 10605,
+      "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
+    },
+    "pl/r25_next/rtl/pfo3_tdp_ram.sv": {
+      "bytes": 545,
+      "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
+    },
+    "pl/r25_next/sim/tb_pfo3_r25.sv": {
+      "bytes": 4226,
+      "sha256": "e113b4b2260c07ca1c745cefc625f65e270fdce32663542a46b58138ca0aaadf"
+    },
+    "runtime/candidate/v3_reference_r25.py": {
+      "bytes": 17136,
+      "sha256": "e5798f1f9e636626aeea55825cddfa0a9b63079872e8e31adb86110855dcfe00"
+    },
+    "docs/V3_INTEGER_CONTRACT.md": {
+      "bytes": 7665,
+      "sha256": "fc66a03b1663dfc74c6663c4f9815cdcd73ec9c7d8d9016a598ccfd6c66d18e0"
+    }
+  },
+  "build_pin": {
+    "pl/r25_next/rtl/pfo3_banked_ram.sv": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543",
+    "pl/r25_next/rtl/pfo3_frontend_ports.svh": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24",
+    "pl/r25_next/rtl/pfo3_frontend_r25.sv": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40",
+    "pl/r25_next/rtl/pfo3_row_r25.sv": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d",
+    "pl/r25_next/rtl/pfo3_tdp_ram.sv": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b",
+    "pl/r25_next/scripts/synth.tcl": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054",
+    "pl/r25_next/scripts/synth_v9.tcl": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054"
+  },
+  "synthesis": {
+    "wns_ns": 0.632,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "setup_total_endpoints": 29866,
+    "whs_ns": 0.189,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "pulse_width_slack_ns": 3.75,
+    "pulse_width_failing_endpoints": 0,
+    "pass": true,
+    "sha256": "65604945a5f6cd0cad1c669be5b04a86273ea84eeb3f086f696dfe1d7ca2398d"
+  },
+  "routed": {
+    "wns_ns": 0.275,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "setup_total_endpoints": 29899,
+    "whs_ns": 0.016,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "pulse_width_slack_ns": 3.75,
+    "pulse_width_failing_endpoints": 0,
+    "pass": true,
+    "sha256": "4177a99988557d28fa98444488d8955af9ce813dbc239fc54645cd9c653b134e"
+  },
+  "synth_utilization": {
+    "lut": 16431,
+    "ff": 9235,
+    "latches": 0,
+    "bram_tiles": 39.5,
+    "dsp": 1,
+    "sha256": "0c3838c15e9e8d5e58984379fb6a9c9fc9144662c881ed887edc20419ecaaeaf"
+  },
+  "routed_utilization": {
+    "lut": 16182,
+    "ff": 9241,
+    "latches": 0,
+    "bram_tiles": 39.5,
+    "dsp": 1,
+    "sha256": "ebeb71d95a05861b0db49e0212447c1d38f9049f1f55739f180db9ab85ea8cf8"
+  },
+  "limits": [
+    "Native standalone OOC, not integrated board project timing/resource proof.",
+    "Only the 10ns clock is constrained; external native I/O delays belong to integrated wrapper.",
+    "No CDC, real device, calibration, motion or dimensional proof follows."
+  ],
+  "ooc_timing_pass": true,
+  "clock_xdc": "create_clock -period 10.000 [get_ports clk]",
+  "clock_xdc_sha256": "822800beb3b1f61974fd0fbc5e01e00afff7f8549fdaf68e31fbab179593194b",
+  "drc_route_sha256": "237a1fb42c4129c38772895567d34faa11f3a08d3dc371d18e9f236b49c14791",
+  "drc_report": "Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.\n---------------------------------------------------------------------------------------------------------------------------------------------\n| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025\n| Date         : Thu Oct 22 00:46:45 2026\n| Host         : ChiliChilideLAPTOP running 64-bit major release  (build 9200)\n| Command      : report_drc -file D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/build/synth_v9/drc_route.rpt\n| Design       : pfo3_frontend_r25\n| Device       : xc7z020clg400-1\n| Speed File   : -1\n| Design State : Fully Routed\n---------------------------------------------------------------------------------------------------------------------------------------------\n\nReport DRC\n\nTable of Contents\n-----------------\n1. REPORT SUMMARY\n2. REPORT DETAILS\n\n1. REPORT SUMMARY\n-----------------\n            Netlist: pfo3_frontend_r25\n          Floorplan: design_1\n      Design limits: <entire design considered>\n           Ruledeck: default\n             Max checks: <unlimited>\n             Checks found: 3\n+-----------+----------+--------------------+--------+\n| Rule      | Severity | Description        | Checks |\n+-----------+----------+--------------------+--------+\n| DPIP-1    | Warning  | Input pipelining   | 1      |\n| RTSTAT-10 | Warning  | No routable loads  | 1      |\n| ZPS7-1    | Warning  | PS7 block required | 1      |\n+-----------+----------+--------------------+--------+\n\n2. REPORT DETAILS\n-----------------\nDPIP-1#1 Warning\nInput pipelining  \nDSP row_engine/sum1_reg input row_engine/sum1_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.\nRelated violations: <none>\n\nRTSTAT-10#1 Warning\nNo routable loads  \n516 net(s) have no routable loads. The problem bus(es) and/or net(s) are ambiguous_rows[31:0], diagnostic_count[31:0], done,\nframe_quality_flags[6:0], measure_median_peak_x2[8:0],\nmeasure_median_width_x2[8:0], measure_status[2:0],\npreview_median_peak_x2[8:0], preview_median_width_x2[8:0],\npreview_status[2:0], qualified_count[31:0], raw_peak_median_x2[8:0],\nrecord_data[160], row_engine/pixel_ready, row_engine/record_data[238:0]\n (the first 15 of 103 listed nets/buses).\nRelated violations: <none>\n\nZPS7-1#1 Warning\nPS7 block required  \nThe PS7 cell must be used in this Zynq design in order to enable correct default configuration.\nRelated violations: <none>\n\n\n",
+  "checkpoints": {
+    "pfo3_frontend_r25_route.dcp": "50c6cb6e1e9dced36974d907fc89aaeef48c892652884e3f641d38df01e0be32",
+    "pfo3_frontend_r25_synth.dcp": "10ad61eb27539cf424beb1e1e786fb4622e37df52241d3859bbc7cacb133452f"
+  }
+}

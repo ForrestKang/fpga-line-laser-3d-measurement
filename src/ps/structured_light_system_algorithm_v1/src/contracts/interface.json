@@ -1,0 +1,633 @@
+{
+  "schema_version": 1,
+  "name": "structured_light_interface",
+  "contract_version": "1.0.0",
+  "regmap_version": 65536,
+  "profile_format_version": 2,
+  "constants": {
+    "SYSTEM_CLOCK_HZ": 100000000,
+    "XC_FRACTION_BITS": 12,
+    "XC_BITS": 22,
+    "S0_BITS": 18,
+    "S1_BITS": 27,
+    "DIV_NUMERATOR_BITS": 39,
+    "ROW_BITS": 9,
+    "GRAY_BITS": 8,
+    "MAX_PROFILE_POINTS": 480,
+    "POINT_WORDS": 3,
+    "SLP1_MAGIC": 1397510193,
+    "SLP2_MAGIC": 1397510194,
+    "SLP1_HEADER_WORDS": 7,
+    "SLP2_HEADER_WORDS": 8,
+    "SLP1_VALID_BIT": 31,
+    "SLP2_VALID_BIT": 23
+  },
+  "pixel": {
+    "encoding": "gray8",
+    "pixels_per_clock": 1,
+    "origin": "top_left",
+    "x_direction": "right",
+    "y_direction": "down",
+    "coordinates": "original_frame",
+    "roi": "half_open",
+    "crop": "separate_from_roi; preserve original coordinates using explicit crop origin",
+    "offline_modes": [
+      {
+        "width": 640,
+        "height": 480
+      },
+      {
+        "width": 752,
+        "height": 480
+      }
+    ],
+    "hardware_width": null,
+    "hardware_height": null,
+    "hardware_polarities": null,
+    "hardware_confirmed": false
+  },
+  "centroid": {
+    "axis": "row",
+    "weight": "max(gray-threshold,0)",
+    "s0": "sum(w)",
+    "s1": "sum(x*w)",
+    "xc_fixed": "floor((S1<<12)/S0)",
+    "zero_weight": "invalid; centroid_fixed helper raises ValueError; wire invalid centers preserved",
+    "width": "last_positive_x-first_positive_x+1; not FWHM",
+    "candidate_count": "number of contiguous positive-weight intervals",
+    "multiple_candidates": "invalid in new candidate datapath; do not interpret inter-segment weighted center as surface point",
+    "quality": "8-bit peak-related legacy indicator, not confidence probability",
+    "diagnostics": "S0, S1, candidate_count absent in old wire format; retain null, add only versioned sidecar records",
+    "worst_case": [
+      {
+        "width": 640,
+        "max_s0": 163200,
+        "max_s1": 52142400,
+        "s0_bits": 18,
+        "s1_bits": 26,
+        "numerator_bits": 38
+      },
+      {
+        "width": 752,
+        "max_s0": 191760,
+        "max_s1": 72005880,
+        "s0_bits": 18,
+        "s1_bits": 27,
+        "numerator_bits": 39
+      }
+    ],
+    "row_flags": [
+      {
+        "name": "zero_sum",
+        "bit": 0
+      },
+      {
+        "name": "low_sum_or_peak",
+        "bit": 1
+      },
+      {
+        "name": "span_too_wide",
+        "bit": 2
+      },
+      {
+        "name": "multiple_candidates",
+        "bit": 3
+      },
+      {
+        "name": "line_bad",
+        "bit": 4
+      },
+      {
+        "name": "overrun",
+        "bit": 5
+      }
+    ],
+    "validity": "decode valid bit verbatim; do not infer validity from flags or missing diagnostics"
+  },
+  "profiles": [
+    {
+      "version": 1,
+      "name": "SLP1",
+      "magic": 1397510193,
+      "header": [
+        "magic",
+        "profile_id",
+        "angle_raw",
+        "timestamp",
+        "valid_count",
+        "error_flags",
+        "point_count"
+      ],
+      "timestamp_bits": 32,
+      "timestamp_semantics": "opaque legacy ticks, frequency unknown",
+      "angle_semantics": "opaque legacy value, unit unknown; angle_rad null",
+      "point": [
+        "row",
+        "xc_fixed",
+        "packed_flags_quality"
+      ],
+      "valid_bit": 31,
+      "flags_lsb": 16,
+      "flags_bits": 15,
+      "quality_lsb": 0,
+      "quality_bits": 8,
+      "reserved_mask": 65280
+    },
+    {
+      "version": 2,
+      "name": "SLP2",
+      "magic": 1397510194,
+      "header": [
+        "magic",
+        "profile_id",
+        "angle_raw",
+        "timestamp_low",
+        "timestamp_high",
+        "valid_count",
+        "error_flags",
+        "point_count"
+      ],
+      "timestamp_bits": 64,
+      "timestamp_semantics": "system counter latched when capture request accepted; NOT exposure or camera SOF timestamp",
+      "timestamp_hz": 100000000,
+      "angle_semantics": "unsigned Q16.16 radians",
+      "angle_fraction_bits": 16,
+      "point": [
+        "row",
+        "xc_fixed",
+        "packed_flags_quality"
+      ],
+      "valid_bit": 23,
+      "flags_lsb": 8,
+      "flags_bits": 15,
+      "quality_lsb": 0,
+      "quality_bits": 8,
+      "reserved_mask": 4278190080
+    }
+  ],
+  "wire": {
+    "endian": "little",
+    "word_bits": 32,
+    "point_words": 3,
+    "max_points": 480,
+    "row_order": "unique rows; non-monotonic rows accepted",
+    "reserved_point_bits": "reject nonzero; known canonical legacy fixtures have zero reserved bits",
+    "header_error_flags": "preserve uint32 opaque word; current hardware supplies camera EOF low16",
+    "invalid_rows": "preserve, including nonzero center and flags",
+    "empty_profile": "full header, zero counts",
+    "frame_id": "null if not provided independently; never substitute profile_id",
+    "diagnostic_sidecar": "schema/version explicit, no changes to SLP2 packet"
+  },
+  "clock_domains": {
+    "system": {
+      "hz": 100000000,
+      "status": "target_not_tested_in_new_project"
+    },
+    "camera": {
+      "timing_budgets_hz": [
+        48000000,
+        60000000
+      ],
+      "measured_hz": null,
+      "status": "not_tested"
+    }
+  },
+  "registers": [
+    {
+      "name": "CONTROL",
+      "offset": 0,
+      "width": 32,
+      "access": "command",
+      "baseline_symbol": "A_CONTROL",
+      "reset": 0,
+      "fields": [
+        {
+          "name": "start",
+          "lsb": 0,
+          "msb": 0
+        },
+        {
+          "name": "stop",
+          "lsb": 1,
+          "msb": 1
+        },
+        {
+          "name": "home",
+          "lsb": 2,
+          "msb": 2
+        },
+        {
+          "name": "clear",
+          "lsb": 3,
+          "msb": 3
+        }
+      ],
+      "notes": "Read zero. START/HOME rejected while busy; STOP and CLEAR command pulses remain permitted. CLEAR only flushes capture in IDLE/DONE/ERROR with no in-flight transaction; not an unconditional abort/reset."
+    },
+    {
+      "name": "STATUS",
+      "offset": 4,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_STATUS",
+      "fields": [
+        {
+          "name": "busy",
+          "lsb": 0,
+          "msb": 0
+        },
+        {
+          "name": "scan_done",
+          "lsb": 1,
+          "msb": 1
+        },
+        {
+          "name": "packer_busy",
+          "lsb": 2,
+          "msb": 2
+        },
+        {
+          "name": "motion_state",
+          "lsb": 4,
+          "msb": 7
+        }
+      ],
+      "notes": "Read-only hardware status."
+    },
+    {
+      "name": "THRESHOLD",
+      "offset": 8,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_THRESHOLD",
+      "reset": 30,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "ROI_START",
+      "offset": 12,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_ROI_START",
+      "reset": 0,
+      "fields": [
+        {
+          "name": "x0",
+          "lsb": 0,
+          "msb": 15
+        },
+        {
+          "name": "y0",
+          "lsb": 16,
+          "msb": 31
+        }
+      ],
+      "notes": "Raw frame coordinates, packed y0<<16 | x0."
+    },
+    {
+      "name": "ROI_END",
+      "offset": 16,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_ROI_END",
+      "reset": 31457920,
+      "fields": [
+        {
+          "name": "x1_exclusive",
+          "lsb": 0,
+          "msb": 15
+        },
+        {
+          "name": "y1_exclusive",
+          "lsb": 16,
+          "msb": 31
+        }
+      ],
+      "notes": "Exclusive raw frame coordinates; crop has separate offsets."
+    },
+    {
+      "name": "MIN_WIDTH",
+      "offset": 20,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_MIN_WIDTH",
+      "reset": 1,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "MAX_WIDTH",
+      "offset": 24,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_MAX_WIDTH",
+      "reset": 32,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "STEPS_PER_PROFILE",
+      "offset": 28,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_STEPS_PROFILE",
+      "reset": 1,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "SETTLE_CYCLES",
+      "offset": 32,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_SETTLE",
+      "reset": 1000,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "LASER_DELAY",
+      "offset": 36,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_LASER_DELAY",
+      "reset": 100,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "TRIGGER_WIDTH",
+      "offset": 40,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_TRIGGER_WIDTH",
+      "reset": 10,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "PROFILE_COUNT",
+      "offset": 44,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_PROFILE_COUNT",
+      "reset": 1,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "ERROR_FLAGS",
+      "offset": 48,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_ERROR_FLAGS",
+      "fields": [
+        {
+          "name": "camera_eof_errors",
+          "lsb": 0,
+          "msb": 15
+        },
+        {
+          "name": "motion_error",
+          "lsb": 16,
+          "msb": 16
+        },
+        {
+          "name": "camera_reset",
+          "lsb": 17,
+          "msb": 17
+        },
+        {
+          "name": "capture_fault",
+          "lsb": 18,
+          "msb": 18
+        }
+      ],
+      "notes": "Sticky register diagnostics; packet error_flags contains camera EOF low16 only, so semantics differ."
+    },
+    {
+      "name": "CURRENT_ANGLE",
+      "offset": 52,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_ANGLE",
+      "fields": [],
+      "notes": "Unsigned Q16.16 radians; command-step estimate, not encoder-certified mechanical angle."
+    },
+    {
+      "name": "TIMESTAMP_LOW",
+      "offset": 56,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_TS_LOW",
+      "fields": [],
+      "notes": "Reading LOW latches 64-bit snapshot. Read HIGH next."
+    },
+    {
+      "name": "TIMESTAMP_HIGH",
+      "offset": 60,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_TS_HIGH",
+      "fields": [],
+      "notes": "Read latched snapshot after LOW; no independently fresh high word."
+    },
+    {
+      "name": "STEPS_PER_REV",
+      "offset": 64,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_STEPS_REV",
+      "reset": 200,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "MICROSTEPS",
+      "offset": 68,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_MICROSTEPS",
+      "reset": 16,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "GEAR_NUM",
+      "offset": 72,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_GEAR_NUM",
+      "reset": 1,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "GEAR_DEN",
+      "offset": 76,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_GEAR_DEN",
+      "reset": 1,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "TIMEOUT_CYCLES",
+      "offset": 80,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_TIMEOUT",
+      "reset": 50000000,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "STEP_PERIOD",
+      "offset": 84,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_STEP_PERIOD",
+      "reset": 1000,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "MIN_SUM",
+      "offset": 88,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_MIN_SUM",
+      "reset": 30,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "MIN_PEAK",
+      "offset": 92,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_MIN_PEAK",
+      "reset": 15,
+      "fields": [],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "PROFILE_ID",
+      "offset": 96,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_PROFILE_ID",
+      "fields": [],
+      "notes": "Read-only hardware status."
+    },
+    {
+      "name": "IRQ_STATUS",
+      "offset": 100,
+      "width": 32,
+      "access": "w1c",
+      "baseline_symbol": "A_IRQ_STATUS",
+      "fields": [
+        {
+          "name": "profile_done",
+          "lsb": 0,
+          "msb": 0
+        },
+        {
+          "name": "scan_done",
+          "lsb": 1,
+          "msb": 1
+        },
+        {
+          "name": "error",
+          "lsb": 2,
+          "msb": 2
+        }
+      ],
+      "notes": "Write-one-to-clear, same-cycle event wins over clear."
+    },
+    {
+      "name": "IRQ_ENABLE",
+      "offset": 104,
+      "width": 32,
+      "access": "rw",
+      "baseline_symbol": "A_IRQ_ENABLE",
+      "reset": 7,
+      "fields": [
+        {
+          "name": "profile_done",
+          "lsb": 0,
+          "msb": 0
+        },
+        {
+          "name": "scan_done",
+          "lsb": 1,
+          "msb": 1
+        },
+        {
+          "name": "error",
+          "lsb": 2,
+          "msb": 2
+        }
+      ],
+      "notes": "Configuration write rejected while busy; WSTRB lane merge; reset value is legacy/offline default, not a physical recommendation."
+    },
+    {
+      "name": "MECH_STEPS_LOW",
+      "offset": 108,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_MECH_LOW",
+      "fields": [],
+      "notes": "Read LOW to latch mechanical_step_counter snapshot, then HIGH."
+    },
+    {
+      "name": "MECH_STEPS_HIGH",
+      "offset": 112,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_MECH_HIGH",
+      "fields": [],
+      "notes": "High half of snapshot captured by LOW read."
+    },
+    {
+      "name": "FIFO_LEVEL",
+      "offset": 116,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_FIFO_LEVEL",
+      "fields": [],
+      "notes": "Read-only hardware status."
+    },
+    {
+      "name": "VERSION",
+      "offset": 120,
+      "width": 32,
+      "access": "ro",
+      "baseline_symbol": "A_VERSION",
+      "reset": 65536,
+      "fields": [],
+      "notes": "Register map version only; separate from profile format version."
+    }
+  ],
+  "register_bus": {
+    "data_bits": 32,
+    "address_bits": 8,
+    "alignment_bytes": 4,
+    "unknown_address_response": "SLVERR",
+    "read_only_write_response": "SLVERR",
+    "busy_config_write_response": "SLVERR",
+    "control_high_reserved_bits": "writes rejected",
+    "irq_event_wins_w1c": true
+  },
+  "units": {
+    "distance": "mm",
+    "internal_angle": "rad",
+    "display_angle": "degree",
+    "centroid": "pixel",
+    "threshold": "DN",
+    "cycle": "system_clk cycles"
+  },
+  "scope": "P0 contract and host parsing only; no MMIO, DMA, camera, motor, RTL implementation or board activation."
+}

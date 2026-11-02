@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "version": 1112753969,
+  "name": "BSG1",
+  "base_address": 1136984064,
+  "address_range": 65536,
+  "clock_hz": 100000000,
+  "heartbeat_half_cycles": 500000,
+  "host_poll_max_s": 0.025,
+  "default_lease_cycles": 10000000,
+  "default_timeout_ms": 120000,
+  "carrier_modes": {
+    "direct_wire": 0,
+    "expansion_board": 1
+  },
+  "carrier_mode_is_readonly_build_parameter": true,
+  "registers": {
+    "version": 0,
+    "status": 4,
+    "command": 8,
+    "request_id": 12,
+    "heartbeat": 16,
+    "lease_cycles": 20,
+    "timeout_ms": 24,
+    "error": 28,
+    "accepted_id": 32,
+    "carrier_mode": 36,
+    "heartbeat_half_cycles": 40,
+    "clock_hz": 44,
+    "capabilities": 48
+  },
+  "commands": {
+    "arm": 1,
+    "disarm": 2,
+    "stop": 4,
+    "clear": 8
+  },
+  "status_bits": {
+    "active": 0,
+    "fault": 1,
+    "heartbeat_pin": 2,
+    "motor_busy": 3,
+    "step_pin": 4,
+    "enable_pin": 5,
+    "field_power_good": 6
+  },
+  "errors": {
+    "none": 0,
+    "invalid_config": 1,
+    "lease_expired": 2,
+    "cancelled": 3,
+    "task_timeout": 4,
+    "motor_fault": 5,
+    "field_power_lost": 6,
+    "duplicate_request": 7,
+    "invalid_command": 8
+  },
+  "capabilities": 7,
+  "arm_requires": [
+    "motor_idle",
+    "no_fault",
+    "fresh_host_heartbeat_since_disarm",
+    "unique_nonzero_request_id",
+    "lease_between_1000000_and_100000000_cycles",
+    "timeout_ms_between_1000_and_300000",
+    "field_power_good_in_expansion_mode"
+  ],
+  "output_rules": {
+    "step": "active AND not_fault AND motor_step",
+    "direction": "motor_direction",
+    "enable_direct": "NOT(active AND not_fault)",
+    "request_expansion": "active AND not_fault",
+    "heartbeat": "toggle each500000cycles only while active/no_fault/fresh_lease; otherwise0"
+  },
+  "retained_addresses": {
+    "motor_controller": 1136918528,
+    "pipeline_control": 1136656384,
+    "camera_diagnostics": 1136721920,
+    "raw_dma": 1077936128,
+    "profile_dma": 1078001664,
+    "hdmi_vdma": 1078067200,
+    "hdmi_vtc": 1136787456,
+    "hdmi_dynclk": 1136852992
+  }
+}

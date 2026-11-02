@@ -1,0 +1,128 @@
+{
+  "schema": "virtual_line_laser_camera_v1",
+  "evidence": "SIMULATION_ONLY_NOT_PHYSICAL_CALIBRATION",
+  "units": "mm",
+  "image_size": [
+    752,
+    480
+  ],
+  "camera_matrix": [
+    [
+      1500.0,
+      0.0,
+      375.5
+    ],
+    [
+      0.0,
+      1500.0,
+      239.5
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "world_to_camera_rotation": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "world_to_camera_translation_mm": [
+    0.0,
+    25.0,
+    220.0
+  ],
+  "camera_origin_world_mm": [
+    0.0,
+    -220.0,
+    25.0
+  ],
+  "laser_origin_world_mm": [
+    -80.0,
+    -180.0,
+    25.0
+  ],
+  "laser_plane_world": [
+    1.0,
+    -0.4444444444444444,
+    0.0,
+    0.0
+  ],
+  "laser_plane_camera": [
+    1.0,
+    0.0,
+    -0.4444444444444444,
+    97.77777777777777
+  ],
+  "rotation_axis_point_world_mm": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "rotation_axis_direction_world": [
+    0.0,
+    0.0,
+    1.0
+  ],
+  "rotation_axis_point_camera_mm": [
+    0.0,
+    25.0,
+    220.0
+  ],
+  "rotation_axis_direction_camera": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "rotation_angle_sign": 1,
+  "background": 15.0,
+  "stripe_amplitude": 180.0,
+  "stripe_sigma_px": 1.1,
+  "visibility_epsilon_mm": 1e-05,
+  "calibration_id": "t06_heldout_simulation_only_same_geometry_v1",
+  "evidence_type": "SIMULATION_ONLY",
+  "distortion_coefficients": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "axis_point_camera_mm": [
+    0.0,
+    25.0,
+    220.0
+  ],
+  "axis_direction_camera": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "radial_reference_camera": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "source_calibration_id": "r18_virtual_camera_v1",
+  "simulation_only": true
+}

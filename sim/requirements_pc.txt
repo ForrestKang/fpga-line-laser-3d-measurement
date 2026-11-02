@@ -1,0 +1,5 @@
+# PC-side dependencies; not a lockfile and not a replacement for the PYNQ image.
+numpy
+pillow
+scipy
+fonttools

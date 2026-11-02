@@ -1,0 +1,280 @@
+{
+  "evidence_type": "ISOLATED_NATIVE_XSIM_FOUR_LANE_CANDIDATE",
+  "revision": "V9",
+  "functional_pass": true,
+  "full_size_frames_passed": 17,
+  "candidate_word_checks": 986026,
+  "graph_equivalence_trials": 24,
+  "graph_equivalence_word_checks": 52224,
+  "graph_equivalence_log_sha256": "e9cbdcb0889c800444048d0c39210a064538622280c3951b2f7ec7fe358e65a1",
+  "compiled_source_manifest": [
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_banked_ram.sv",
+      "sha256": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_ports.svh",
+      "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_r25.sv",
+      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_row_r25.sv",
+      "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_tdp_ram.sv",
+      "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/sim/tb_pfo3_r25.sv",
+      "sha256": "e113b4b2260c07ca1c745cefc625f65e270fdce32663542a46b58138ca0aaadf"
+    }
+  ],
+  "graph_source_manifest": [
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_banked_ram.sv",
+      "sha256": "e0fed9a0bc39260a21d888aa824ea55c14bedbc444eea5f844ccb2b9173d4543"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_ports.svh",
+      "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_frontend_r25.sv",
+      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_row_r25.sv",
+      "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/rtl/pfo3_tdp_ram.sv",
+      "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/sim/pfo3_frontend_serial_baseline.sv",
+      "sha256": "20facc8dec591879ada64a05aa25ef93e5ab891a1a6631251009deb0b8d693ce"
+    },
+    {
+      "path": "D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25/pl/r25_next/sim/tb_pfo3_graph4.sv",
+      "sha256": "1f562304c7962e309559b8198ef76565a71567e62e9748f9c8042efc6a4da7d3"
+    }
+  ],
+  "cases": [
+    {
+      "name": "stripe",
+      "serial_cycles": 3765707,
+      "four_lane_cycles": 2815310,
+      "saved_cycles": 950397,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1823567,
+      "native_record_valid_blocked_cycles": 122,
+      "phase_file_sha256": "0705a99868b2f87b511676715f4a6969e0161eb73e8c21680c92d3fc33407bc1",
+      "payload_sha256": "367a12a80bf844621ec78832685380804c151db2e670b0ee163f2ba7c4f728a2",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "branches",
+      "serial_cycles": 3785870,
+      "four_lane_cycles": 2835533,
+      "saved_cycles": 950337,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1837158,
+      "native_record_valid_blocked_cycles": 443,
+      "phase_file_sha256": "c2779f060d3f6232a006ddd6bf9d084c87cbaa7e24b80b72bfdab1dd53371c49",
+      "payload_sha256": "93112a8f988d149446ece519504c333760e6722afcb3b778876ec64105399053",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "fork",
+      "serial_cycles": 3767785,
+      "four_lane_cycles": 2817431,
+      "saved_cycles": 950354,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1825000,
+      "native_record_valid_blocked_cycles": 214,
+      "phase_file_sha256": "ca548b47a55774752978f0405e66662cc8779e869a490fdd88a7168c2b3bd56f",
+      "payload_sha256": "595308b943b568abc810cb988a261ce1c043313a7b5f73cd40dc48e458a5a3f6",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "preview_weak",
+      "serial_cycles": 3765752,
+      "four_lane_cycles": 2815362,
+      "saved_cycles": 950390,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1823585,
+      "native_record_valid_blocked_cycles": 151,
+      "phase_file_sha256": "d85bdd8ae6ea6e86f4ff51041cbce675198d3a9b0c60bb6b9159c581f921d26a",
+      "payload_sha256": "6aa33fcc3c52340bd916a5be389a2ffba74f52badfca55c22b8b195ff35bec5f",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "noise",
+      "serial_cycles": 4262027,
+      "four_lane_cycles": 3311721,
+      "saved_cycles": 950306,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 2299701,
+      "native_record_valid_blocked_cycles": 5332,
+      "phase_file_sha256": "347b13f0b440226a12dcff92c554f5e503c083029ac6e03af82a88291b85f20a",
+      "payload_sha256": "ee3bb095e6ec9065bc6e6267da902310daf2ea04d89c74b9d7ac78c37930bde1",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "overflow",
+      "serial_cycles": 3901357,
+      "four_lane_cycles": 2951051,
+      "saved_cycles": 950306,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1938732,
+      "native_record_valid_blocked_cycles": 2033,
+      "phase_file_sha256": "65a8b852f4d2d282d43ed78fe025c264266786071677bc8c92765247635cea15",
+      "payload_sha256": "7c4d489b4a5b1a6c8dc35dcf190c2e2e7b54507565c5ac8fb4714dff3708d2de",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "empty",
+      "serial_cycles": 3756305,
+      "four_lane_cycles": 2805946,
+      "saved_cycles": 950359,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1816802,
+      "native_record_valid_blocked_cycles": 46,
+      "phase_file_sha256": "2e9c9c0bc3237153bf1205cb8f32753698a358257f14a73e22054865d3af7f1e",
+      "payload_sha256": "01ddd399cb4bad4c5e9baf78596b9c121d26114f900c0cbc61073441dd5cc5d1",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "real_0",
+      "serial_cycles": 3843922,
+      "four_lane_cycles": 2893619,
+      "saved_cycles": 950303,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1894705,
+      "native_record_valid_blocked_cycles": 1028,
+      "phase_file_sha256": "af46e0061fbabd7f112d24ff2229e31f8eba3b1f55b6c08f59f857f5bb44dff9",
+      "payload_sha256": "89cce8d12c0f6c27e47caa066c9a1e8f3af56ff57d55281d799765b4dfdf66fa",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "real_1",
+      "serial_cycles": 3844567,
+      "four_lane_cycles": 2894247,
+      "saved_cycles": 950320,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1894949,
+      "native_record_valid_blocked_cycles": 1015,
+      "phase_file_sha256": "fa62f3870fa5cd051dadfe1ed60415e25d32eb922ea4cb40cec4edf710d72820",
+      "payload_sha256": "d8f244c1e8f08001a6e6e5635a991da6e47e74d440aaaf9553c2899efd7a149a",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "real_2",
+      "serial_cycles": 3844391,
+      "four_lane_cycles": 2894048,
+      "saved_cycles": 950343,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1894656,
+      "native_record_valid_blocked_cycles": 962,
+      "phase_file_sha256": "273b1a45a2be79bdc03c1c51f8f1528722432bf37a295cd1e828476255806eb0",
+      "payload_sha256": "c8e649be48fa544fb294f54983d59ac5ac72ee7862a3da9b5620c9b59521f66f",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "real_3",
+      "serial_cycles": 3844967,
+      "four_lane_cycles": 2894661,
+      "saved_cycles": 950306,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1895916,
+      "native_record_valid_blocked_cycles": 991,
+      "phase_file_sha256": "503ea7ac34ca405772db301c4227738168973f87f34c11156eb12f137b79e7ea",
+      "payload_sha256": "721c77fdba34fced2e9144e7a6be88da3a4aaf0e8c92e2be5d7dc4e1e9f80094",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T05_000",
+      "serial_cycles": 3762000,
+      "four_lane_cycles": 2811639,
+      "saved_cycles": 950361,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1821204,
+      "native_record_valid_blocked_cycles": 110,
+      "phase_file_sha256": "95236ec15d0f8ce0badfb2812113a54a5e17b250b090b9c6f1433efe8063c4a8",
+      "payload_sha256": "734759d0e9befb290b4212f3a21ad941c37fac099f0d763a38fcffd3d94b6b01",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T05_119",
+      "serial_cycles": 3761973,
+      "four_lane_cycles": 2811639,
+      "saved_cycles": 950334,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1821255,
+      "native_record_valid_blocked_cycles": 126,
+      "phase_file_sha256": "76b1f380a2aac02d9607c12e34d668a94c6062f7d48daf10c92fcb54ffcb5611",
+      "payload_sha256": "b731dadc03bf4aa6365ab3ecab7c26a5a0ebaf33806c6ce82619da2573836bca",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T05_239",
+      "serial_cycles": 3762000,
+      "four_lane_cycles": 2811596,
+      "saved_cycles": 950404,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1821169,
+      "native_record_valid_blocked_cycles": 103,
+      "phase_file_sha256": "b52520059189b045ab6a4ef39cd44666879e859d1079e01663d50c0264d1090c",
+      "payload_sha256": "87692359c035c7ddf0b062490676f12eaac0c7d59338cbaacaa89d716d46ab98",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T06_000",
+      "serial_cycles": 3761728,
+      "four_lane_cycles": 2811372,
+      "saved_cycles": 950356,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1820986,
+      "native_record_valid_blocked_cycles": 132,
+      "phase_file_sha256": "40a8ac115458f840e5997e566951210bf2b1b7bab8974ce80964c3fe9290649a",
+      "payload_sha256": "d844ade60bc614390d516308d7382518251dbc307525e7770fc54c026650a1d9",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T06_119",
+      "serial_cycles": 3761464,
+      "four_lane_cycles": 2811124,
+      "saved_cycles": 950340,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1820971,
+      "native_record_valid_blocked_cycles": 117,
+      "phase_file_sha256": "15fe118213fc82e0cccf8113216f8d98e96d671599ce3a02d8e4c5f986748241",
+      "payload_sha256": "7abe96037e1485a8ff31f239c21a69b8b08a0f217bc4a01e5e6f42f67bc22885",
+      "identical_frozen_payload": true
+    },
+    {
+      "name": "T06_239",
+      "serial_cycles": 3761459,
+      "four_lane_cycles": 2811098,
+      "saved_cycles": 950361,
+      "pair_cycles": 521152,
+      "native_ingress_valid_blocked_cycles": 1820839,
+      "native_record_valid_blocked_cycles": 132,
+      "phase_file_sha256": "7c6be30c893f969b91bf170fbf3e7d070bd16d9ad0574b268af94c7ef1bb3ab5",
+      "payload_sha256": "c3c709e17d31e7f17c84880563cb9e4907d61ab53a4d5efb1cbd91c263ee140c",
+      "identical_frozen_payload": true
+    }
+  ],
+  "phase_counters_location": "testbench monitor; no new production ABI outputs",
+  "physical_DDR_stall_counters": null,
+  "limits": [
+    "Native RTL has no DDR interface, so native ready/valid blockage is not a DDR stall counter.",
+    "No board, formal integration, bitstream, physical accuracy or sustained replay-performance proof.",
+    "Behavioral conversion to milliseconds at 100MHz is conditional on physical timing closure.",
+    "Three-row direction predictor and independent second-order residual gate remain unimplemented."
+  ]
+}

@@ -1,0 +1,39 @@
+name: Repository checks
+
+on:
+  push:
+    branches: [main, 'codex/**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-materials:
+    name: Offline materials and utility tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.11'
+      - name: Structure, links and Python syntax
+        run: python -B tools/check_repository.py
+      - name: Link checker failure tests
+        run: python -B tools/test_repository_checks.py
+      - name: Submission file integrity
+        run: python -B skill/verify_bundle.py .
+      - name: Bundle checker checkout and corruption tests
+        run: python -B skill/test_verify_bundle.py
+      - name: Release checker positive and negative tests
+        run: python -B skill/test_pynq_release_check.py
+      - name: Restore exact original source layout
+        run: python -B build/restore_sources.py --output "$RUNNER_TEMP/scan3d_restore"
+      - name: State CI scope
+        run: echo 'These checks do not execute business regression, Vivado, a board, a camera or motion. See docs/known_issues.md.'

@@ -1,0 +1,18 @@
+{
+  "schema": "SCAN3D_BOOT_CONFIG_V1",
+  "mode": "auto_demo",
+  "deploy": "/home/xilinx/scan3d_final_timingfix_20261030_01/deploy_seedretry_bin/firmware",
+  "manifest_sha256": "f68532fd16190ed97679e2e8512f1e5c3caf58f3417cbf96e69c5e815013832a",
+  "demo": {
+    "python": "/usr/local/share/pynq-venv/bin/python3",
+    "script": "/home/xilinx/scan3d_final_timingfix_20261030_01/boot_rig2b_install/demo_service.py",
+    "script_sha256": "060d4812a8d4c5edb8606785330c3b7ea73d14314494cc56200cfe04c7c6bef0",
+    "release": "/home/xilinx/scan3d_final_timingfix_20261030_01/btn0_full_scan_20261030_01/release_rig2b",
+    "data": "/home/xilinx/scan3d_final_timingfix_20261030_01/btn0_full_scan_20261030_01/live_demo_data",
+    "motor_standing": {
+      "path": "/home/xilinx/scan3d_final_timingfix_20261030_01/boot_autostart_btn0/motor_standing.json",
+      "sha256": "15e572d6d49f0bdabfc28e4da7e55d356900a746f2d81c7ab429fb73ebd7bce1"
+    },
+    "live_stream": true
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "protocols": {
+    "legacy_3s_v1": {
+      "schema_version": 1,
+      "protocol_id": "legacy_3s_v1",
+      "schedule_ms": [100, 250, 500, 1000, 2000, 2500, 3000],
+      "late_reference_ms": [2500, 3000]
+    },
+    "extended_6s_v2": {
+      "schema_version": 1,
+      "protocol_id": "extended_6s_v2",
+      "schedule_ms": [100, 250, 500, 1000, 3000, 5000, 6000],
+      "late_reference_ms": [5000, 6000]
+    }
+  }
+}

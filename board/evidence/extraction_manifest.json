@@ -1,0 +1,194 @@
+{
+  "source_directory": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\evidence\\board",
+  "output_directory": "D:\\Workspace\\CodexWork\\scan3d_competition_submission_20261101_01\\audit\\board_evidence_subset",
+  "source_decoder_reference": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\tmp\\decode_collect.py",
+  "records": [
+    {
+      "name": "seedretry_trial01.json",
+      "source_sha256": "342d3bd08665c6ed541a280cb2af7b0460a771ed9fe53428262633f470270047",
+      "sanitized_sha256": "767394364ea2eec88a1e2e42b402421b1f98ec2bfcd2c6e1568c0dfb2e289104",
+      "removed_source_fields": [
+        "action",
+        "hostkey",
+        "started_ns",
+        "automatic_retry",
+        "machine_id",
+        "boot_id",
+        "command"
+      ],
+      "credential_or_identity_field_names_removed": [
+        "hostkey",
+        "machine_id",
+        "boot_id"
+      ],
+      "license_or_authorization_proof_field_names_found": [],
+      "omitted_stdout_line_types": [
+        "calibration",
+        "idle",
+        "loaded"
+      ]
+    },
+    {
+      "name": "seedretry_scan_seed.json",
+      "source_sha256": "02c2bdbf851c0aa75ff1d649dd72134aedb97feabb616fbbb197314ac1d2d26b",
+      "sanitized_sha256": "c4f6da3eb99cd4b51d5ff1f0c28ccaf4b8ffd1b0c38d9f59031acc7b1388775d",
+      "removed_source_fields": [
+        "action",
+        "hostkey",
+        "started_ns",
+        "automatic_retry",
+        "machine_id",
+        "boot_id",
+        "command"
+      ],
+      "credential_or_identity_field_names_removed": [
+        "hostkey",
+        "machine_id",
+        "boot_id"
+      ],
+      "license_or_authorization_proof_field_names_found": [],
+      "omitted_stdout_line_types": [
+        "Running"
+      ]
+    },
+    {
+      "name": "seedretry_scan_bin.json",
+      "source_sha256": "6233d07ba900bfec50b8335434b5f7efd643e434dc10674c39cab9a28c98c174",
+      "sanitized_sha256": "9e30d1205450749f205ca74b3cf180fb5a900c33c134e1f033d91c45e466750b",
+      "removed_source_fields": [
+        "action",
+        "hostkey",
+        "started_ns",
+        "automatic_retry",
+        "machine_id",
+        "boot_id",
+        "command"
+      ],
+      "credential_or_identity_field_names_removed": [
+        "hostkey",
+        "machine_id",
+        "boot_id"
+      ],
+      "license_or_authorization_proof_field_names_found": [],
+      "omitted_stdout_line_types": [
+        "Running",
+        "stopped"
+      ]
+    },
+    {
+      "name": "seedretry_collect_seed.json",
+      "source_sha256": "58b520f82bb13e6d9e78a11f37f43bb841039cbe88ce29392c15afa8e600adb2",
+      "sanitized_sha256": "fb68baf3847fa0b0de00feaab2a3ecbe5dd46c0d536560128b143e7ffff4a5be",
+      "removed_source_fields": [
+        "action",
+        "hostkey",
+        "started_ns",
+        "automatic_retry",
+        "machine_id",
+        "boot_id",
+        "command"
+      ],
+      "credential_or_identity_field_names_removed": [
+        "hostkey",
+        "machine_id",
+        "boot_id"
+      ],
+      "license_or_authorization_proof_field_names_found": [],
+      "omitted_stdout_line_types": [
+        "BLOB"
+      ]
+    },
+    {
+      "name": "seedretry_collect_bin.json",
+      "source_sha256": "82c6acc7de49b3cb7e66f05e2b9c0ba817d71b2cef162a0de1589280dc3c7355",
+      "sanitized_sha256": "778fbd0833f4bfa2ff6100f954986b15d98a3ca527a38baa09defb4e0561ce23",
+      "removed_source_fields": [
+        "action",
+        "hostkey",
+        "started_ns",
+        "automatic_retry",
+        "machine_id",
+        "boot_id",
+        "command"
+      ],
+      "credential_or_identity_field_names_removed": [
+        "hostkey",
+        "machine_id",
+        "boot_id"
+      ],
+      "license_or_authorization_proof_field_names_found": [],
+      "omitted_stdout_line_types": [
+        "BLOB"
+      ]
+    }
+  ],
+  "extracted_npy": [
+    {
+      "name": "seedretry_collect_seed_object_cloud_mm.npy",
+      "sha256": "68cf481a881d7339368e406249ca34dc52c8b1d30d70470966fc0d8484ec0cc0",
+      "bytes": 2268992,
+      "shape": [
+        70902,
+        4
+      ],
+      "dtype": "float64",
+      "finite": true,
+      "measurement_flag_values": [
+        0,
+        1
+      ],
+      "measurement_points": 51560
+    },
+    {
+      "name": "seedretry_collect_seed_views.npy",
+      "sha256": "b7d4d0c8347d4505aba7ba40e8a455d7952fe79b3a6efb89889e18e340eaf153",
+      "bytes": 3328,
+      "shape": [
+        200,
+        2
+      ],
+      "dtype": "int64",
+      "finite": true,
+      "measurement_flag_values": null,
+      "measurement_points": null
+    },
+    {
+      "name": "seedretry_collect_bin_object_cloud_mm.npy",
+      "sha256": "d62e945e94d697739964fd7172784a69d9a58788756e2c3c190edc70fec884ea",
+      "bytes": 2469984,
+      "shape": [
+        77183,
+        4
+      ],
+      "dtype": "float64",
+      "finite": true,
+      "measurement_flag_values": [
+        0,
+        1
+      ],
+      "measurement_points": 65052
+    },
+    {
+      "name": "seedretry_collect_bin_views.npy",
+      "sha256": "51fc8f734c3ae9edea7ef203ad5fc3057f7a0be5ce64740e8cd8519a811b4e89",
+      "bytes": 3328,
+      "shape": [
+        200,
+        2
+      ],
+      "dtype": "int64",
+      "finite": true,
+      "measurement_flag_values": null,
+      "measurement_points": null
+    }
+  ],
+  "boundaries": [
+    "Original receipt JSON files were not copied byte-for-byte; only selected stdout/result fields were retained.",
+    "hostkey, machine_id, boot_id, command and other non-result source fields were omitted; no field values were emitted.",
+    "No install or authority/authorization files were copied.",
+    "The BLOB decodes to quantized object-space point cloud rows and VIEWS metadata, not the original camera-space NPY bytes.",
+    "The packed BLOB layout is first 6*N bytes of XYZ (N x 3 little-endian int16 scaled by 0.1 mm), followed by N int8 measurement flags.",
+    "The FILE lines report board-side NPY sizes only; xyz_camera_mm.npy was not included in the BLOB and was not reconstructed.",
+    "NPY files were loaded with allow_pickle=False; point cloud arrays are Nx4 with XYZ millimeters and a measurement flag."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "status": "UNVALIDATED_TWO_POSE_CANDIDATE_NOT_INSTALLED",
+  "square_mm": 6.0,
+  "square_source": "same historic board, user confirms unchanged; no new caliper accuracy claim",
+  "poses": [
+    {
+      "pose": "pose1",
+      "files": [
+        {
+          "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000040.gray8",
+          "sha256": "8707cf9cc214ab29bce9b65551359f64e936ab1029e30ece11dc449def879733"
+        },
+        {
+          "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000185.gray8",
+          "sha256": "76f6f455230f4e2b45ef921a8012ad615b5b3fa743944674848294a1d034d84c"
+        }
+      ],
+      "corners_used": 80,
+      "pnp_rms_px": 0.1086551091201457,
+      "off_on_corner_shift_p95_px": 1.6095547676086426,
+      "planar_registration_inliers": 81,
+      "planar_registration_inlier_p95_px": 0.18101873993873596,
+      "photometric_coefficients": [
+        1.0080601932933155,
+        0.20622456892898694
+      ],
+      "background_residual_std_dn": 0.9414411893161128,
+      "laser_points": 168,
+      "laser_column": 391,
+      "board_normal": [
+        0.11257360001357512,
+        -0.026919201272195846,
+        0.9932786825372075
+      ],
+      "board_translation_mm": [
+        -23.799964025014056,
+        -45.41871982693813,
+        256.3447682319757
+      ],
+      "Z_p05_p50_p95_mm": [
+        252.99609473524706,
+        253.57222660512198,
+        254.0995759019906
+      ]
+    },
+    {
+      "pose": "pose2",
+      "files": [
+        {
+          "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000690.gray8",
+          "sha256": "30f365c162edf472ec09ca4be6faeb8514700506b03bff832fd08e1fcd28c52b"
+        },
+        {
+          "path": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000595.gray8",
+          "sha256": "b535587a14942e6b3e6383782947343ed2f0234ed34b09547cf596ece32815d1"
+        }
+      ],
+      "corners_used": 80,
+      "pnp_rms_px": 0.1276773702801687,
+      "off_on_corner_shift_p95_px": 4.561899185180664,
+      "planar_registration_inliers": 81,
+      "planar_registration_inlier_p95_px": 0.239998921751976,
+      "photometric_coefficients": [
+        0.7254788842292488,
+        1.8042766290758403
+      ],
+      "background_residual_std_dn": 1.5841885320064963,
+      "laser_points": 124,
+      "laser_column": 398,
+      "board_normal": [
+        0.21244189250021606,
+        0.09425623536608617,
+        0.972617193147201
+      ],
+      "board_translation_mm": [
+        -20.477410729215165,
+        -45.66868260087652,
+        271.45760301530345
+      ],
+      "Z_p05_p50_p95_mm": [
+        261.273323425504,
+        262.52975710365297,
+        264.602685950681
+      ]
+    }
+  ],
+  "plane_coefficients": [
+    -0.9352249108901544,
+    -0.022685454124942328,
+    0.35332667069108725,
+    -84.82531621963209
+  ],
+  "singular_values_mm": [
+    213.29119743893816,
+    84.35985880837923,
+    1.9149802501688529
+  ],
+  "independent_validation": false,
+  "axis_validation": false,
+  "pose_residuals": [
+    {
+      "pose": "pose1",
+      "rms_mm": 0.08614312279506947,
+      "p95_mm": 0.1856340412346633,
+      "current_loaded_plane_rms_mm": 21.586232035773833
+    },
+    {
+      "pose": "pose2",
+      "rms_mm": 0.13971405824719993,
+      "p95_mm": 0.2514799094816119,
+      "current_loaded_plane_rms_mm": 22.39117721800148
+    }
+  ]
+}

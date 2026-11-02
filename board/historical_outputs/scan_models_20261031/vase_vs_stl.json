@@ -1,0 +1,510 @@
+{
+  "summary": {
+    "stl": "..\\scan3d_FINAL_PRINT_T05R_C1_20261026\\stl\\C1_RIPPLE_TWIST_VASE_V2_1_FINAL.stl",
+    "model_height": 54.3,
+    "base_shift": -57.5,
+    "layers": 55,
+    "error_median": -0.92,
+    "error_mean": -0.696,
+    "error_abs_median": 0.98,
+    "error_p95_abs": 2.47,
+    "scan_height_span": 54.0
+  },
+  "rows": [
+    {
+      "z_model": 0.0,
+      "model_d": 36.0,
+      "scan_d": 34.67,
+      "error": -1.33,
+      "scan_roundness": 0.13,
+      "model_roundness": 0.0,
+      "points": 745
+    },
+    {
+      "z_model": 1.0,
+      "model_d": 35.06,
+      "scan_d": 33.77,
+      "error": -1.29,
+      "scan_roundness": 0.52,
+      "model_roundness": 0.0,
+      "points": 892
+    },
+    {
+      "z_model": 2.0,
+      "model_d": 29.41,
+      "scan_d": 27.07,
+      "error": -2.34,
+      "scan_roundness": 1.15,
+      "model_roundness": 0.0,
+      "points": 904
+    },
+    {
+      "z_model": 3.0,
+      "model_d": 22.12,
+      "scan_d": 21.09,
+      "error": -1.03,
+      "scan_roundness": 0.49,
+      "model_roundness": 0.1,
+      "points": 798
+    },
+    {
+      "z_model": 4.0,
+      "model_d": 19.72,
+      "scan_d": 20.05,
+      "error": 0.33,
+      "scan_roundness": 0.26,
+      "model_roundness": 0.3,
+      "points": 661
+    },
+    {
+      "z_model": 5.0,
+      "model_d": 20.8,
+      "scan_d": 20.78,
+      "error": -0.02,
+      "scan_roundness": 0.44,
+      "model_roundness": 0.47,
+      "points": 663
+    },
+    {
+      "z_model": 6.0,
+      "model_d": 21.4,
+      "scan_d": 21.12,
+      "error": -0.28,
+      "scan_roundness": 0.54,
+      "model_roundness": 0.6,
+      "points": 782
+    },
+    {
+      "z_model": 7.0,
+      "model_d": 21.76,
+      "scan_d": 21.4,
+      "error": -0.36,
+      "scan_roundness": 0.64,
+      "model_roundness": 0.73,
+      "points": 723
+    },
+    {
+      "z_model": 8.0,
+      "model_d": 23.89,
+      "scan_d": 23.29,
+      "error": -0.6,
+      "scan_roundness": 0.79,
+      "model_roundness": 0.83,
+      "points": 644
+    },
+    {
+      "z_model": 9.0,
+      "model_d": 25.87,
+      "scan_d": 25.1,
+      "error": -0.77,
+      "scan_roundness": 0.86,
+      "model_roundness": 0.91,
+      "points": 722
+    },
+    {
+      "z_model": 10.0,
+      "model_d": 25.89,
+      "scan_d": 24.99,
+      "error": -0.9,
+      "scan_roundness": 0.96,
+      "model_roundness": 1.0,
+      "points": 756
+    },
+    {
+      "z_model": 11.0,
+      "model_d": 25.78,
+      "scan_d": 24.86,
+      "error": -0.92,
+      "scan_roundness": 1.02,
+      "model_roundness": 1.07,
+      "points": 724
+    },
+    {
+      "z_model": 12.0,
+      "model_d": 27.4,
+      "scan_d": 26.64,
+      "error": -0.76,
+      "scan_roundness": 1.11,
+      "model_roundness": 1.13,
+      "points": 705
+    },
+    {
+      "z_model": 13.0,
+      "model_d": 28.87,
+      "scan_d": 28.04,
+      "error": -0.83,
+      "scan_roundness": 1.14,
+      "model_roundness": 1.2,
+      "points": 728
+    },
+    {
+      "z_model": 14.0,
+      "model_d": 28.85,
+      "scan_d": 27.75,
+      "error": -1.1,
+      "scan_roundness": 1.21,
+      "model_roundness": 1.29,
+      "points": 771
+    },
+    {
+      "z_model": 15.0,
+      "model_d": 28.86,
+      "scan_d": 27.89,
+      "error": -0.98,
+      "scan_roundness": 1.26,
+      "model_roundness": 1.33,
+      "points": 730
+    },
+    {
+      "z_model": 16.0,
+      "model_d": 30.01,
+      "scan_d": 29.38,
+      "error": -0.63,
+      "scan_roundness": 1.35,
+      "model_roundness": 1.37,
+      "points": 712
+    },
+    {
+      "z_model": 17.0,
+      "model_d": 31.09,
+      "scan_d": 30.2,
+      "error": -0.89,
+      "scan_roundness": 1.4,
+      "model_roundness": 1.42,
+      "points": 767
+    },
+    {
+      "z_model": 18.0,
+      "model_d": 30.81,
+      "scan_d": 29.42,
+      "error": -1.39,
+      "scan_roundness": 1.41,
+      "model_roundness": 1.46,
+      "points": 777
+    },
+    {
+      "z_model": 19.0,
+      "model_d": 30.31,
+      "scan_d": 29.02,
+      "error": -1.3,
+      "scan_roundness": 1.42,
+      "model_roundness": 1.48,
+      "points": 746
+    },
+    {
+      "z_model": 20.0,
+      "model_d": 30.82,
+      "scan_d": 29.79,
+      "error": -1.03,
+      "scan_roundness": 1.44,
+      "model_roundness": 1.49,
+      "points": 764
+    },
+    {
+      "z_model": 21.0,
+      "model_d": 31.08,
+      "scan_d": 29.82,
+      "error": -1.25,
+      "scan_roundness": 1.44,
+      "model_roundness": 1.52,
+      "points": 775
+    },
+    {
+      "z_model": 22.0,
+      "model_d": 30.27,
+      "scan_d": 28.77,
+      "error": -1.5,
+      "scan_roundness": 1.45,
+      "model_roundness": 1.55,
+      "points": 802
+    },
+    {
+      "z_model": 23.0,
+      "model_d": 29.45,
+      "scan_d": 27.94,
+      "error": -1.51,
+      "scan_roundness": 1.46,
+      "model_roundness": 1.55,
+      "points": 776
+    },
+    {
+      "z_model": 24.0,
+      "model_d": 29.22,
+      "scan_d": 27.86,
+      "error": -1.35,
+      "scan_roundness": 1.44,
+      "model_roundness": 1.55,
+      "points": 769
+    },
+    {
+      "z_model": 25.0,
+      "model_d": 28.96,
+      "scan_d": 27.54,
+      "error": -1.42,
+      "scan_roundness": 1.42,
+      "model_roundness": 1.56,
+      "points": 763
+    },
+    {
+      "z_model": 26.0,
+      "model_d": 27.98,
+      "scan_d": 26.25,
+      "error": -1.73,
+      "scan_roundness": 1.43,
+      "model_roundness": 1.55,
+      "points": 786
+    },
+    {
+      "z_model": 27.0,
+      "model_d": 26.92,
+      "scan_d": 25.33,
+      "error": -1.6,
+      "scan_roundness": 1.43,
+      "model_roundness": 1.53,
+      "points": 775
+    },
+    {
+      "z_model": 28.0,
+      "model_d": 26.59,
+      "scan_d": 25.34,
+      "error": -1.25,
+      "scan_roundness": 1.42,
+      "model_roundness": 1.5,
+      "points": 766
+    },
+    {
+      "z_model": 29.0,
+      "model_d": 25.89,
+      "scan_d": 24.46,
+      "error": -1.44,
+      "scan_roundness": 1.37,
+      "model_roundness": 1.48,
+      "points": 801
+    },
+    {
+      "z_model": 30.0,
+      "model_d": 24.32,
+      "scan_d": 22.86,
+      "error": -1.45,
+      "scan_roundness": 1.32,
+      "model_roundness": 1.46,
+      "points": 763
+    },
+    {
+      "z_model": 31.0,
+      "model_d": 22.67,
+      "scan_d": 21.16,
+      "error": -1.51,
+      "scan_roundness": 1.27,
+      "model_roundness": 1.42,
+      "points": 758
+    },
+    {
+      "z_model": 32.0,
+      "model_d": 21.32,
+      "scan_d": 20.12,
+      "error": -1.19,
+      "scan_roundness": 1.21,
+      "model_roundness": 1.39,
+      "points": 763
+    },
+    {
+      "z_model": 33.0,
+      "model_d": 20.08,
+      "scan_d": 18.99,
+      "error": -1.09,
+      "scan_roundness": 1.18,
+      "model_roundness": 1.35,
+      "points": 742
+    },
+    {
+      "z_model": 34.0,
+      "model_d": 18.62,
+      "scan_d": 17.56,
+      "error": -1.06,
+      "scan_roundness": 1.11,
+      "model_roundness": 1.29,
+      "points": 733
+    },
+    {
+      "z_model": 35.0,
+      "model_d": 17.51,
+      "scan_d": 16.67,
+      "error": -0.84,
+      "scan_roundness": 1.03,
+      "model_roundness": 1.23,
+      "points": 733
+    },
+    {
+      "z_model": 36.0,
+      "model_d": 17.35,
+      "scan_d": 16.6,
+      "error": -0.75,
+      "scan_roundness": 0.99,
+      "model_roundness": 1.18,
+      "points": 748
+    },
+    {
+      "z_model": 37.0,
+      "model_d": 17.46,
+      "scan_d": 16.59,
+      "error": -0.87,
+      "scan_roundness": 0.94,
+      "model_roundness": 1.11,
+      "points": 745
+    },
+    {
+      "z_model": 38.0,
+      "model_d": 17.33,
+      "scan_d": 16.3,
+      "error": -1.04,
+      "scan_roundness": 0.88,
+      "model_roundness": 1.02,
+      "points": 738
+    },
+    {
+      "z_model": 39.0,
+      "model_d": 17.24,
+      "scan_d": 16.27,
+      "error": -0.97,
+      "scan_roundness": 0.84,
+      "model_roundness": 0.94,
+      "points": 725
+    },
+    {
+      "z_model": 40.0,
+      "model_d": 17.33,
+      "scan_d": 16.45,
+      "error": -0.88,
+      "scan_roundness": 0.76,
+      "model_roundness": 0.85,
+      "points": 745
+    },
+    {
+      "z_model": 41.0,
+      "model_d": 17.46,
+      "scan_d": 16.66,
+      "error": -0.81,
+      "scan_roundness": 0.68,
+      "model_roundness": 0.75,
+      "points": 721
+    },
+    {
+      "z_model": 42.0,
+      "model_d": 17.46,
+      "scan_d": 16.67,
+      "error": -0.79,
+      "scan_roundness": 0.59,
+      "model_roundness": 0.64,
+      "points": 669
+    },
+    {
+      "z_model": 43.0,
+      "model_d": 17.65,
+      "scan_d": 16.84,
+      "error": -0.81,
+      "scan_roundness": 0.47,
+      "model_roundness": 0.49,
+      "points": 715
+    },
+    {
+      "z_model": 44.0,
+      "model_d": 18.52,
+      "scan_d": 17.65,
+      "error": -0.88,
+      "scan_roundness": 0.32,
+      "model_roundness": 0.31,
+      "points": 748
+    },
+    {
+      "z_model": 45.0,
+      "model_d": 19.59,
+      "scan_d": 18.62,
+      "error": -0.97,
+      "scan_roundness": 0.19,
+      "model_roundness": 0.11,
+      "points": 708
+    },
+    {
+      "z_model": 46.0,
+      "model_d": 21.03,
+      "scan_d": 20.03,
+      "error": -1.0,
+      "scan_roundness": 0.3,
+      "model_roundness": 0.0,
+      "points": 691
+    },
+    {
+      "z_model": 47.0,
+      "model_d": 21.39,
+      "scan_d": 20.6,
+      "error": -0.79,
+      "scan_roundness": 0.29,
+      "model_roundness": 0.0,
+      "points": 724
+    },
+    {
+      "z_model": 48.0,
+      "model_d": 18.09,
+      "scan_d": 16.22,
+      "error": -1.87,
+      "scan_roundness": 0.56,
+      "model_roundness": 0.0,
+      "points": 472
+    },
+    {
+      "z_model": 49.0,
+      "model_d": 12.89,
+      "scan_d": 12.53,
+      "error": -0.36,
+      "scan_roundness": 0.6,
+      "model_roundness": 0.0,
+      "points": 505
+    },
+    {
+      "z_model": 50.0,
+      "model_d": 7.84,
+      "scan_d": 8.64,
+      "error": 0.8,
+      "scan_roundness": 0.38,
+      "model_roundness": 0.0,
+      "points": 345
+    },
+    {
+      "z_model": 51.0,
+      "model_d": 4.58,
+      "scan_d": 7.65,
+      "error": 3.07,
+      "scan_roundness": 0.05,
+      "model_roundness": 0.0,
+      "points": 503
+    },
+    {
+      "z_model": 52.0,
+      "model_d": 4.02,
+      "scan_d": 7.48,
+      "error": 3.47,
+      "scan_roundness": 0.04,
+      "model_roundness": 0.0,
+      "points": 494
+    },
+    {
+      "z_model": 53.0,
+      "model_d": 3.77,
+      "scan_d": 7.37,
+      "error": 3.61,
+      "scan_roundness": 0.04,
+      "model_roundness": 0.0,
+      "points": 466
+    },
+    {
+      "z_model": 54.0,
+      "model_d": 3.36,
+      "scan_d": 7.38,
+      "error": 4.02,
+      "scan_roundness": 0.07,
+      "model_roundness": 0.0,
+      "points": 213
+    }
+  ]
+}

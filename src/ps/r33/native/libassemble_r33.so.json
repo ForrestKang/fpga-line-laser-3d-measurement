@@ -1,0 +1,20 @@
+{
+  "schema": "R33_NATIVE_ASSEMBLER_BUILD_V1",
+  "compiler": "/usr/bin/gcc",
+  "compiler_version": "gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0",
+  "flags": [
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared",
+    "-fPIC"
+  ],
+  "machine": "armv7l",
+  "python": "3.10.4 (main, Apr  2 2022, 09:04:19) [GCC 11.2.0]",
+  "source_sha256": "57f8c343124215d4cdc8df4351965d36ae5ea15ba7ef47d890f100d38594cc7a",
+  "output": "libassemble_r33.so",
+  "output_bytes": 7360,
+  "output_sha256": "c217c2ce33a898c8ad3c348076b345279704a41097dc951b4bb494b7a8df6af1"
+}

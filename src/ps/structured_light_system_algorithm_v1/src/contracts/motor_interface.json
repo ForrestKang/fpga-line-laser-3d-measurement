@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "version": 1296453681,
+  "clock_hz": 100000000,
+  "max_pulses": 100000,
+  "registers": {
+    "version": 0,
+    "status": 4,
+    "command": 8,
+    "request_id": 12,
+    "pulse_count": 16,
+    "period_cycles": 20,
+    "high_cycles": 24,
+    "dir_setup_cycles": 28,
+    "enable_setup_cycles": 32,
+    "lease_cycles": 36,
+    "timeout_cycles": 40,
+    "direction": 44,
+    "heartbeat": 48,
+    "emitted": 52,
+    "error": 56,
+    "accepted_id": 60,
+    "epoch": 64,
+    "clock_hz": 68,
+    "capabilities": 72
+  },
+  "commands": {
+    "arm": 1,
+    "disarm": 2,
+    "start": 4,
+    "stop": 8,
+    "clear": 16
+  },
+  "status_bits": {
+    "busy": 0,
+    "armed": 1,
+    "done": 2,
+    "cancelled": 3,
+    "fault": 4,
+    "ready_to_arm": 5,
+    "step": 6,
+    "enable_n": 7
+  },
+  "errors": {
+    "none": 0,
+    "invalid_config": 1,
+    "not_armed": 2,
+    "duplicate_request": 3,
+    "heartbeat_timeout": 4,
+    "motion_timeout": 5,
+    "config_changed_busy": 6,
+    "invalid_command": 7
+  },
+  "states": "IDLE ARMED ENABLE_SETUP HIGH LOW DONE CANCELLED FAULT",
+  "axi_base_address": 1136918528,
+  "axi_window_bytes": 65536,
+  "capabilities": 7,
+  "board_admission_requires": [
+    "step_angle_confirmed",
+    "pulse_edge_confirmed",
+    "timing_confirmed",
+    "wiring_confirmed",
+    "power_off_confirmed_for_load"
+  ]
+}

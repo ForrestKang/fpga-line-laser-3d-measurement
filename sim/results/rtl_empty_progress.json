@@ -1,0 +1,43 @@
+[
+  {
+    "case": "empty",
+    "overflow_rows": 0,
+    "max_qualified": 0,
+    "r39_measurement": 0,
+    "r39_preview": 0,
+    "r37_semantics_measurement": 0,
+    "r37_semantics_preview": 0,
+    "frame_measurement_usable": 0,
+    "frame_preview_usable": 0,
+    "geometry_records": 0,
+    "moments_count": 0,
+    "R39_records_exact": true,
+    "geometry_integer_exact": true,
+    "moments_integer_exact": true,
+    "arm_decoder_r39_accepts": true,
+    "binning": false,
+    "primary_equals_r39_except_cycles": true,
+    "primary_compared_to": "R39 minus moment records",
+    "processing_cycles_r40_r39": [
+      441912,
+      441912
+    ],
+    "view_ingest": {
+      "inserted": 0,
+      "dropped": 0,
+      "committed": 1,
+      "discarded": 0,
+      "occupied": 0,
+      "out_of_range": 0
+    },
+    "measure": {
+      "points": 0,
+      "median_bin": 0,
+      "median_valid": 0,
+      "bands_used": 0
+    },
+    "section": null,
+    "primary_sha256": "14b2fc0bb175919c0ed72a341e92d8c18098a2c535df1b69d447abd827e560f3",
+    "wall_s": 58.4
+  }
+]

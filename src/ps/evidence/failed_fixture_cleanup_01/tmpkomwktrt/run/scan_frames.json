@@ -1,0 +1,218 @@
+[
+  {
+    "frame": 1,
+    "accepted": false,
+    "angle_deg": 0.0,
+    "phase": "settle",
+    "motor_id": 0,
+    "motor_epoch": 0,
+    "motor_steps": 0
+  },
+  {
+    "frame": 2,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 3,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 4,
+    "accepted": true,
+    "angle_deg": 1.8,
+    "phase": "accepted",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 5,
+    "accepted": false,
+    "angle_deg": 1.8,
+    "phase": "settle",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  {
+    "frame": 6,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "settle",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 7,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "settle",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 8,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 9,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 10,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 11,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 12,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 13,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 14,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 15,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 16,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 17,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 18,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 19,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 20,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 21,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 22,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 23,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  },
+  {
+    "frame": 24,
+    "accepted": false,
+    "angle_deg": 3.6,
+    "phase": "stopped",
+    "motor_id": 2,
+    "motor_epoch": 7,
+    "motor_steps": 32
+  }
+]

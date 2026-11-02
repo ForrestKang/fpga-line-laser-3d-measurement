@@ -1,0 +1,42 @@
+{
+  "records": [
+    {
+      "role": "姿态1 / 激光关",
+      "photo": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000040.png",
+      "photo_sha256": "c65d0f444a4e196b1e828908423aebc5faae2bc1945054d539099e487d598d40",
+      "raw": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000040.gray8",
+      "raw_sha256": "8707cf9cc214ab29bce9b65551359f64e936ab1029e30ece11dc449def879733"
+    },
+    {
+      "role": "姿态1 / 激光开",
+      "photo": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000185.png",
+      "photo_sha256": "67058048a91e564da990d5234d37c27270088da55d7a63656148fa9664a851f5",
+      "raw": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000185.gray8",
+      "raw_sha256": "76f6f455230f4e2b45ef921a8012ad615b5b3fa743944674848294a1d034d84c"
+    },
+    {
+      "role": "姿态2 / 激光关",
+      "photo": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000690.png",
+      "photo_sha256": "e3d929355c465aedf179641535a6538358c6f6c6cb6f5769822ef9373816e63c",
+      "raw": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000690.gray8",
+      "raw_sha256": "30f365c162edf472ec09ca4be6faeb8514700506b03bff832fd08e1fcd28c52b"
+    },
+    {
+      "role": "姿态2 / 激光开",
+      "photo": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000595.png",
+      "photo_sha256": "7ce2bf33ee29dfa1f085d04264541e00d0d0f9e0ec5729f8d9d286d8fa0122e5",
+      "raw": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_000595.gray8",
+      "raw_sha256": "b535587a14942e6b3e6383782947343ed2f0234ed34b09547cf596ece32815d1"
+    },
+    {
+      "role": "台阶块激光截面（无卡尺）",
+      "photo": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_001010.png",
+      "photo_sha256": "f3e70eb0ee03ffb6a6f26702a2a2ecc4e59e41efd264d144bd400ea123651416",
+      "raw": "D:\\Workspace\\CodexWork\\scan3d_scanfix_rescan_20261101_01\\calibration_capture06\\raw_001010.gray8",
+      "raw_sha256": "580411c90f39667cb35d2689330ca583874b563eb449bedbd0855861ec23f042"
+    }
+  ],
+  "display": "source PNG pixels unchanged; labels outside photos",
+  "caliper_readout_photograph_found": false,
+  "size_reference_source": "user reports caliper values; not a traceable calibration certificate"
+}

@@ -1,0 +1,100 @@
+{
+  "schema": "R41_LIVE_V1",
+  "pid": 5028,
+  "phase": "failed",
+  "frames": 4,
+  "motor": "idle",
+  "laser": "user_controlled",
+  "started_unix": 1793258128.1147819,
+  "buttons": {
+    "present": true,
+    "pages": [
+      "A",
+      "C"
+    ],
+    "mapping": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  "scan": {
+    "state": "FAILED",
+    "phase": "failed",
+    "views": 1,
+    "target_views": 200,
+    "steps": 16,
+    "angle_deg": 1.8,
+    "deadline_s": 1.0,
+    "axis_status": "PROVISIONAL_NOT_CALIBRATED",
+    "message": "absolute scan deadline reached; incomplete revolution",
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  "runtime_contract": {},
+  "camera": {
+    "pclk_hz": [
+      48000000
+    ]
+  },
+  "signals": {
+    "camera_signal_verified": true,
+    "frame_period_s": 0.02
+  },
+  "camera_generation_resumed": {
+    "request_id": 0,
+    "epoch": 0,
+    "resumed": false
+  },
+  "camera_errors_before_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "camera_errors_after_clear": {
+    "status": 0,
+    "error_flags": 0
+  },
+  "pfo3_binning": false,
+  "pipeline": false,
+  "warmup": {
+    "raw_sha256": "mock-raw"
+  },
+  "page": "A",
+  "fps": 3.0,
+  "last": {
+    "frame": 4,
+    "capture_ms": 0.01960000372491777,
+    "pl_ms": 0.013100012438371778,
+    "frame_age_ms": 0.013200013199821115,
+    "centres": 1,
+    "xyz": 1,
+    "xyz_measurement": 1,
+    "measure": null,
+    "profile": null,
+    "raw_sha256": "mock-raw",
+    "primary_bytes": 12,
+    "page": "A",
+    "scan_accepted": true,
+    "motor_id": 1,
+    "motor_epoch": 7,
+    "motor_steps": 16
+  },
+  "elapsed_s": 1.0,
+  "dropped": {
+    "capture": 0,
+    "display": 0
+  },
+  "threads_alive_after_join": [],
+  "thread_errors": [],
+  "display_median_ms": 0.015150013496167958,
+  "display_updates": 4,
+  "error_type": "TimeoutError",
+  "error": "absolute scan deadline reached; incomplete revolution",
+  "timing_median_ms": {
+    "capture_ms": 0.07115000335033983,
+    "pl_ms": 0.01444999361410737,
+    "frame_age_ms": 0.014599994756281376
+  },
+  "finished_unix": 1793258128.1287563
+}

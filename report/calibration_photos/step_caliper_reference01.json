@@ -1,0 +1,13 @@
+{
+  "schema": "independent_step_reference_v1",
+  "object": "current four-level step block",
+  "adjacent_height_differences_low_to_high_mm": [2.0, 3.0, 5.0],
+  "source": "user explicitly reports caliper measurements in this session",
+  "user_statement": "经过我的卡尺标定，跟之前的模样的高度是一模一样的，都是2毫米，3毫米跟5毫米，一点问题没有。",
+  "caliper_resolution_mm": null,
+  "caliper_photographs_available": false,
+  "measurement_uncertainty_mm": null,
+  "use": "independent evaluation only; excluded from camera, plane, axis and object-pose fitting",
+  "step_pose_independently_verified": false,
+  "measurement_claim": "Do not treat oblique section offsets as full 3D heights without an independent pose constraint."
+}

@@ -1,0 +1,71 @@
+{
+  "evidence_kind": "FINAL_FULL_POST_ROUTE_NOT_BOARD",
+  "passed": true,
+  "gates": {
+    "architecture": true,
+    "setup": true,
+    "hold": true,
+    "pulse": true,
+    "cdc": true,
+    "constrained": true,
+    "route": true,
+    "clock_structure": true,
+    "drc": true,
+    "budget": true,
+    "section_present": true,
+    "video_125mhz": true
+  },
+  "wns_ns": 0.23,
+  "whs_ns": 0.011,
+  "wpws_ns": 0.333,
+  "tns_ns": 0.0,
+  "ths_ns": 0.0,
+  "tpws_ns": 0.0,
+  "cdc_critical": 0,
+  "unconstrained_internal_endpoints": 0,
+  "no_clock": 0,
+  "route_errors": 0,
+  "routable_nets": 86823,
+  "fully_routed_nets": 86823,
+  "timing_checks": {
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "multiple_clock": 0,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "drc_errors": 0,
+  "drc_total": 301,
+  "drc_summary_sum": 301,
+  "expected_lanes": 2,
+  "direction_lane_ids": [
+    0,
+    1
+  ],
+  "resources": {
+    "lut": 39111,
+    "ff": 50902,
+    "ramb36": 98,
+    "ramb18": 25,
+    "dsp": 134
+  },
+  "percentages": {
+    "lut": 73.51691729323308,
+    "ff": 47.840225563909776,
+    "bram": 78.92857142857143,
+    "dsp": 60.90909090909091
+  },
+  "target_note": "70-80 percent is an exploration band per resource, not a utilization average or minimum.",
+  "section_resource_row": "|           section                                                       |                                                       section_measure |       6577 |       6185 |     390 |    2 |  6847 |      2 |      0 |         70 |",
+  "requirements": {
+    "wns_min_ns": 0.0,
+    "wns_target_ns": 0.15,
+    "whs_positive": true,
+    "all_resource_max_percent": 80,
+    "video_clock_mhz": 125
+  },
+  "video_clock_report_row": "clk_fpga_1                                {0.000 4.000}        8.000           125.000         "
+}
