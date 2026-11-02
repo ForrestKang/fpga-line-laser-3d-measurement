@@ -233,8 +233,8 @@
     },
     {
       "path": "board/readme.md",
-      "size": 1547,
-      "sha256": "b821d8665008803323068609638996791a98da7ca620ff795b13d8c0fcb2add7"
+      "size": 1565,
+      "sha256": "d209bd4e820c824697f54806babd40dd3e6f3db34de4c204eef95d14dd35ba61"
     },
     {
       "path": "build/evidence/admission_final.json",
@@ -528,8 +528,8 @@
     },
     {
       "path": "docs/build_and_deploy.md",
-      "size": 2360,
-      "sha256": "15a006f5013207054c44bcb84b0d053b91313db4aa27d87d009b1061d35128cc"
+      "size": 2422,
+      "sha256": "12d6707228879426ed6603132e178d1a72e3e49da2d600dc595ceec1e0275654"
     },
     {
       "path": "docs/documentation_references.md",
@@ -628,8 +628,8 @@
     },
     {
       "path": "report/ai_collaboration_records.md",
-      "size": 9059,
-      "sha256": "4b6dd8666c3e82f6ac2174b07067eeb3f08ad217a1fbc42648a6afdf0590b25c"
+      "size": 9138,
+      "sha256": "8cd59d9ad1c96a3e76aae620db481b612e4fb211c0c2404bbb90710499dce1df"
     },
     {
       "path": "report/calibration_photos/checkerboard_pairs.png",
@@ -788,13 +788,13 @@
     },
     {
       "path": "report/repository_and_license.md",
-      "size": 2389,
-      "sha256": "2bf511f6124a085dba39b863175909feb39f76ca43143e4752869a66a65ec7f1"
+      "size": 2643,
+      "sha256": "1bd01aeb49a95695150e260d653c014f7bff1a24cfab5ac1c3f3c929899daa43"
     },
     {
       "path": "report/reproduction.md",
-      "size": 4759,
-      "sha256": "4652a5499d301a1fe83757c0fd1f7bea6027c374c6d33962770ce26a07adb6bd"
+      "size": 4793,
+      "sha256": "05868d2898de641ea5023b59667e90163a9b91a351f94d4a21ab6d256c4d3a01"
     },
     {
       "path": "report/sim_support_map.json",
@@ -808,8 +808,8 @@
     },
     {
       "path": "report/source_audit.md",
-      "size": 13976,
-      "sha256": "005e6582592f3c588117e541386b0584319f931c5f029b101a7a73f43933322c"
+      "size": 14055,
+      "sha256": "716fffd2bd4028495137a109555fea5d6b1c3fcff5b93a9a549927321b135725"
     },
     {
       "path": "report/source_report_gate.json",
@@ -818,8 +818,8 @@
     },
     {
       "path": "report/submission_requirements.md",
-      "size": 3010,
-      "sha256": "e5552c8f7606cc7c063b2f35a24922e27ccb1d14aaeba03c7e2addadb11642f4"
+      "size": 3026,
+      "sha256": "0bdf23bb9a81f1c7880cf0d50f0abca60f77101bfe687e722cf0dccff1502141"
     },
     {
       "path": "report/third_party_notices.md",
@@ -828,8 +828,8 @@
     },
     {
       "path": "report/verified_status.md",
-      "size": 2452,
-      "sha256": "b1508add23a75d56264e32936f69b9f4b2e80ccb5b68c26afa2947cbc72ed51b"
+      "size": 2514,
+      "sha256": "e4081bce6993f68efe11ef21de9230733ac2c25d44a21d0780f983cf440537fe"
     },
     {
       "path": "security.md",
@@ -893,13 +893,13 @@
     },
     {
       "path": "sim/results/repository_delivery_checks.json",
-      "size": 865,
-      "sha256": "e8589afb79cf05ec0795db95983562d03944cdf9db24d1d35f8691121b114f52"
+      "size": 901,
+      "sha256": "f35c719ce61af5741ce99d7903adde21991db3ec4bcf1108ee44bd59bc7fa704"
     },
     {
       "path": "sim/results/repository_source_preservation.json",
       "size": 386,
-      "sha256": "72e9c2ec553aa70ab666f3e1e1ddf46a90300ae652d5b9f4ca4787e9338ae0b5"
+      "sha256": "b3858819a5caadf8fca605f7276f7502c0c2d8449ed2be87b94dbfad3af4d621"
     },
     {
       "path": "sim/results/rtl_empty_compile.log",
@@ -1148,8 +1148,8 @@
     },
     {
       "path": "skill/pynq_release_check.md",
-      "size": 4145,
-      "sha256": "34277a895106e27c63b292adeb0a4b936bb59f99d7feee5c6f8dbe2ecbd5a039"
+      "size": 4207,
+      "sha256": "47311693664f1f8a61d62485c60c4a47184ef6178789fb1bb48a873b2c6d1cfb"
     },
     {
       "path": "skill/pynq_release_check.py",
@@ -1158,8 +1158,8 @@
     },
     {
       "path": "skill/readme.md",
-      "size": 2887,
-      "sha256": "bcec7c3c6c0d9c93309cd3296ffd9d1ed82922e167aca8b93e5af40f5e33d8cf"
+      "size": 2893,
+      "sha256": "3d19fdd766537044a1a981e98766e9a09dae7495f7a5d23693ea77498c6efc40"
     },
     {
       "path": "skill/test_pynq_release_check.py",
@@ -5003,13 +5003,13 @@
     },
     {
       "path": "tools/check_repository.py",
-      "size": 3392,
-      "sha256": "fcbcb5a1149fbf5b12529d4fff7cc868e6377ece924a5dc02af066dcd97a3f22"
+      "size": 4410,
+      "sha256": "834dbf9b62f1b1b24bce5aae45f046b0ef68801ec61f6cb40116161a81ffc765"
     },
     {
       "path": "tools/test_repository_checks.py",
-      "size": 1358,
-      "sha256": "8f9798b86432dd37126683cabdb82163fecfec7e2efef62aaed72d1af1ba678f"
+      "size": 1779,
+      "sha256": "3db51b464e351619ac2d07f28580b5b9c17cd5b1b8e6889b7d890f85444d8ea7"
     }
   ]
 }

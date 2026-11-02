@@ -5,12 +5,13 @@
     "passed": true,
     "python_files": 498,
     "documents": 16,
-    "links_examined": 146,
+    "links_examined": 148,
     "errors": [],
+    "reader_naming_documents": 28,
     "scope": "structure_links_syntax_only_not_business_or_hardware_acceptance"
   },
   "link_checker_tests": {
-    "passed": 4,
+    "passed": 6,
     "failed": 0
   },
   "git_bundle_tests": {
@@ -29,7 +30,7 @@
   "report_metadata": {
     "body_and_other_parts_unchanged": true
   },
-  "frozen_engineering_files_unchanged": 860,
+  "frozen_engineering_files_unchanged": 859,
   "scope": "local_documentation_utilities_and_restoration_not_business_or_hardware_acceptance",
   "hardware_operations": 0
 }

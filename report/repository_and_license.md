@@ -39,3 +39,7 @@ https://github.com/ForrestKang/pynq-structured-light/blob/main/license.md
 ## 本次仓库组织
 
 完整工程与文档整理到默认分支main，同时保留codex开发分支和全部既有分支。精确提交以仓库Git历史为准。仓库保持私有；公开可见性由所有者后续调整，未宣称已公开。
+
+## 本次仓库组织
+
+完整工程与文档整理到默认分支main，同时保留codex开发分支和全部既有分支。精确提交以仓库Git历史为准。仓库保持私有；公开可见性由所有者后续调整，未宣称已公开。

@@ -16,7 +16,7 @@
 | 项目 | 当前结论 | 证据 |
 |---|---|---|
 | 原ARM业务回归 | 69项：61通过、7失败、1跳过，未在本轮修复或重跑 | `sim/results/pc_runtime_result.json` |
-| 固件与软件配套 | `r33/live.py`、`r33/pl_section.py` 两项guard不匹配 | `sim/results/pynq_release_check_actual.json` |
+| 固件与软件配套 | [Live Runtime](../src/ps/r33/live.py)、[Section Measurement Driver](../src/ps/r33/pl_section.py) 两项guard不匹配 | `sim/results/pynq_release_check_actual.json` |
 | RTL回归 | 归档中有空帧冒烟通过，不能代表完整输入回归 | `sim/results/rtl_empty_result.json` |
 | 整板实现 | 读取已有报告，没有本轮重新实现 | `report/source_report_gate.json` |
 | 仓库开放 | 仍为私有，公开及最终发布分支待完成 | `report/repository_and_license.md` |

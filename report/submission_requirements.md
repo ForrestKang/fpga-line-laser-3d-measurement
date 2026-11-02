@@ -7,7 +7,7 @@
 | 完整实际采用的 RTL、PS、原生 C、约束与 BD | src/fpga、src/ps；未采用 HLS，不虚构 HLS 工程 |
 | 仿真与验证结果 | sim、build/evidence、src/ps/evidence；历史结果与本次打包检查分开 |
 | 综合、实现、资源、时钟与指标 | build/evidence/reports、board/firmware/admission_final.json |
-| 上板运行脚本、输出与参考对照 | board、src/ps/r33、data；历史标定输出不能冒充当前精度 |
+| 上板运行脚本、输出与参考对照 | board、src/ps、data；历史标定输出不能冒充当前精度 |
 | 可复现脚本 | build/reproduce.py、build/restore_sources.py、原 scripts/build_final.tcl |
 | 独立技能包及适用/失效条件 | skill/readme.md、skill/verify_bundle.py、skill/pynq_release_check.py |
 | 设计报告、AI 协作和纠错记录 | report/design_report.docx、report/design_report.pdf、report/ai_collaboration_records.md |
@@ -28,6 +28,6 @@
 - 原 runtime 回归 7 失败、1 跳过，以及固件与后续 runtime 的两项冻结哈希差异尚未修复。
 - AI 协作文件为有来源性质说明的精选记录，未提供全量原始聊天导出。
 - 仓库地址和既有MIT许可已核实；公开状态、实际发布入口和队伍组别仍需核对。指南对开源为“强烈要求”，本候选没有改变仓库可见性。
-- 匿名英文单页海报已另行交付并收录docs/media/并收录docs/media/；现场打印及后台栏目仍需按实际通知确认。
+- 匿名英文单页海报已另行交付并收录docs/media/并收录docs/media/并收录docs/media/；现场打印及后台栏目仍需按实际通知确认。
 
 只保留本次核对实际存在的材料，不以空白占位文件表示这些项目已经交付。

@@ -2,7 +2,7 @@
 from pathlib import Path
 import tempfile
 import unittest
-from check_repository import local_link_error
+from check_repository import local_link_error, reader_aliases
 
 
 class RepositoryLinkTests(unittest.TestCase):
@@ -27,6 +27,13 @@ class RepositoryLinkTests(unittest.TestCase):
 
     def test_escape_is_rejected_before_existence(self):
         self.assertEqual('outside_repository', local_link_error(self.root, self.source, '../../outside.md'))
+
+    def test_reader_aliases_rejected_but_real_source_targets_preserved(self):
+        text = 'Use R47 and T02. [Live Runtime](../src/ps/r33/live.py) `python -m r33.live --help`'
+        self.assertEqual(['R47', 'T02'], reader_aliases(text))
+
+    def test_hardware_pin_exception_does_not_hide_version_name(self):
+        self.assertEqual(['R47'], reader_aliases('pins R16 R17; implementation R47', True))
 
 
 if __name__ == '__main__':

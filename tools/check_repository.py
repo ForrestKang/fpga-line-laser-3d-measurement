@@ -7,6 +7,13 @@ import re
 from urllib.parse import unquote, urlsplit
 
 
+def reader_aliases(text, allow_pin_names=False):
+    visible = re.sub(r'```[\s\S]*?```|`[^`\n]*`|\]\([^\n)]*\)', '', text)
+    found = re.findall(r'\b(?:R\d{2,3}[a-z]?|T0[1-6]R?|C1|F1)\b', visible, flags=re.I)
+    return [item for item in found
+            if not (allow_pin_names and item.upper() in {'R16', 'R17'})]
+
+
 def local_link_error(root, source, target):
     target = target.strip()
     if not target or target.startswith('#'):
@@ -55,6 +62,15 @@ def check(root):
                 errors.append({'path': source.relative_to(root).as_posix(),
                                'target': target, 'error': error})
     py_count = 0
+    presentation_documents = [root / 'readme.md', *(root / 'docs').glob('*.md'),
+                              *(root / 'report').glob('*.md'), *(root / 'skill').glob('*.md'),
+                              root / 'board/readme.md', root / 'sim/readme.md']
+    for source in presentation_documents:
+        if source.is_file():
+            aliases = reader_aliases(source.read_text(encoding='utf-8'), source.name == 'hardware.md')
+            if aliases:
+                errors.append({'path': source.relative_to(root).as_posix(),
+                               'error': 'internal_alias_in_reader_facing_text', 'tokens': aliases})
     for source in root.rglob('*.py'):
         relative = source.relative_to(root)
         if any(part in {'.git', '__pycache__', '.venv'} for part in relative.parts):
@@ -68,6 +84,7 @@ def check(root):
     return {'schema': 'REPOSITORY_CHECK_V1', 'passed': not errors,
             'python_files': py_count, 'documents': len(documents),
             'links_examined': link_count, 'errors': errors,
+            'reader_naming_documents': len(presentation_documents),
             'scope': 'structure_links_syntax_only_not_business_or_hardware_acceptance'}
 
 

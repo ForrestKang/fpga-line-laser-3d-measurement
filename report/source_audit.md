@@ -19,7 +19,7 @@
 | 路径 | 保留依据 |
 | --- | --- |
 | `rtl/`、`baseline_rtl/` | 实际替换/新增的 top、camera、frontend、geometry、view、AE、section、button 及 direction RTL |
-| `constraints/` | `r42_buttons.xdc`、`constrain_cdc_r40_b09.tcl` 是主入口实际使用；r37 历史文件很小，可一并保留 |
+| `constraints/` | `r42_buttons.xdc`、`constrain_cdc_r40_b09.tcl` 是主入口实际使用；历史约束文件很小，可一并保留 |
 | `bd/block_design_r40.tcl` | 主工程 BD 重建入口；含 PS7、AXI/DMA/VDMA、视频、时钟、HDMI IP 配置 |
 | `scripts/build_final.tcl`、`create_project_r43.tcl` | 主构建与工程创建 |
 | `scripts/freeze_compiled_sources.py` | 构建前绑定实际 synthesis inputs 的 SHA |
@@ -46,7 +46,7 @@
 
 建议 PS 源码先保留 `1_board_image/runtime_rig2b` 下所有 `.py/.c/.h`、JSON 合同、字体和有效标定。整个 runtime 约 6.45 MiB，逐文件按历史版本裁剪收益很小，动态导入/ctypes/相对资源依赖却容易漏。目录中 `r33`、`candidate`、`reference_candidate`、`structured_light_system_algorithm_v1`、`structured_light_system_geometry_v1` 和根部 `geometry_reference_r35.py` 均保留；`virtual_scan`、`tools` 可作为离线工具保留。`evidence` 为历史 QA，可移到 evidence 而非源码主树；测试与 mock 不能当作现场测量证明。
 
-- `r33/live.py` 在运行时自行加入 ROOT、algorithm `src/python`、algorithm `board/scripts`、geometry `src/python` 到 sys.path，不能只交付 r33。
+- [Live Runtime](../src/ps/r33/live.py) 在运行时自行加入 ROOT、algorithm `src/python`、algorithm `board/scripts`、geometry `src/python` 到 sys.path，不能只交付主运行入口目录。
 - 相机门槛实际导入 algorithm `board/scripts/verify_p2_board.py`；不要整体删所有 board/scripts。
 - 原生库源码包括 `r33/native/{assemble_r33.c,markers_r34.c}`、`candidate/native/*.c`、algorithm `scan3d/native/{point_raster.c,cpu_fast_r20.c}`。
 - `r33/build_native.py` 可显式构建 assembler；`tools/build_all_native_r26.py` 和 `tools/build_native_r22.py` 用于候选原生库，依赖 gcc、libm，assembler_r26 还依赖 zlib。现有 so 会使脚本拒绝覆盖，应在恢复后的新源码树执行构建，不覆盖冻结 so。
@@ -102,7 +102,7 @@ verification/R41_14_reference/*_primary.bin     # 19 个已冻结期望
 对恢复后的 `scripts/integration_verify_final.py` 可在新 wrapper/适配副本中修改以下路径绑定（保持原始源码归档不变，保持断言/门槛不变）：
 
 - 第 25 行 VERIFY：指向新 `vendor/verification`（或本 sim_support/verification）。
-- 第 26-28 行 R36 和 geo 导入：先设置 `<root>/runtime` 到 sys.path，直接从该运行源码导入 `geometry_reference_r35`；去掉对旧 R36/r36_runtime 的路径回退依赖。
+- 第 26-28 行 对应实现 和 geo 导入：先设置 `<root>/runtime` 到 sys.path，直接从该运行源码导入 `geometry_reference_r35`；去掉对旧 对应实现/r36_runtime 的路径回退依赖。
 - 第 29 行 RUNTIME：提供 `<root>/runtime` 到主包 PS 恢复树的目录布局/链接。
 - 第 43 行 liveg02_015：改为相对 `r37_r41g_live02/raw_000015.gray8`，仍与 BOARD 拼接。
 - 第 52 行 IVER：改为配置参数/环境变量或 `shutil.which('iverilog')` 与 `shutil.which('vvp')`；脚本后续使用 `IVER/'iverilog.exe'` 与 `IVER/'vvp.exe'`，若支持 Linux 需同时适配可执行文件名。
@@ -115,4 +115,4 @@ verification/R41_14_reference/*_primary.bin     # 19 个已冻结期望
 
 从竞赛源码主树排除 `__pycache__`、`.pyc`、旧 `.gen`、旧 `.srcs` BD 快照、构建日志、`.jou`、`.log`、`.bak`、重复打包脚本输出、旧部署/安装回执和现用授权。`build_seedretry/reports` 约 3.92 MiB，可只将 timing/utilization/cdc/drc/route/admission 和源码哈希证据放验证附件；其他报告是参考，不是重新构建必需。
 
-保留原源码逐字节归档是稳妥策略。若存档路径全部小写，`source_map.json + restore_sources.py` 必须恢复原始大小写（特别是 `T05/T06` 测试名、R39/R41 期望目录、`.svh` 引用及 IP XML 引用），再在恢复目录构建。实体名/模块名不应改变；单纯存档文件名改变不应传播成 RTL 标识符改写。
+保留原源码逐字节归档是稳妥策略。若存档路径全部小写，`source_map.json + restore_sources.py` 必须恢复原始大小写（特别是 回放测试件的原始目录名、历史参考结果目录、`.svh` 引用及 IP XML 引用），再在恢复目录构建。实体名/模块名不应改变；单纯存档文件名改变不应传播成 RTL 标识符改写。

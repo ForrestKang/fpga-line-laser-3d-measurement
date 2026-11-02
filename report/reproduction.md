@@ -55,7 +55,7 @@ python -B build/reproduce.py --work D:/Workspace/CodexTemp/scan3d_rebuild/work -
 
 ## 7. 启动与操作关系
 
-恢复后的实时入口是 `runtime/r33/live.py`，真实PL回放入口是 `runtime/r33/replay.py`。先在对应运行环境查看参数：
+恢复后的实时入口是 [Live Runtime](../src/ps/r33/live.py)，真实PL回放入口是 [Replay Runtime](../src/ps/r33/replay.py)。先在对应运行环境查看参数：
 
 ```text
 python -B -m r33.live --help

@@ -18,7 +18,7 @@ python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_buil
 python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --runtime-root src/ps
 ```
 
-当前bit/HWH匹配，但`r33/live.py`与`r33/pl_section.py`两项runtime guard不匹配，命令应返回失败。**不要只替换摘要、绕过加载器或将旧bit和新软件随意拼成已验证版本。** 先确定真实配套组合，再验证并生成新的发布清单，旧清单继续保留。
+当前bit/HWH匹配，但[Live Runtime](../src/ps/r33/live.py)与[Section Measurement Driver](../src/ps/r33/pl_section.py)两项runtime guard不匹配，命令应返回失败。**不要只替换摘要、绕过加载器或将旧bit和新软件随意拼成已验证版本。** 先确定真实配套组合，再验证并生成新的发布清单，旧清单继续保留。
 
 ## 板端安装前
 
