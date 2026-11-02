@@ -703,13 +703,13 @@
     },
     {
       "path": "report/design_report.docx",
-      "size": 7679972,
-      "sha256": "08a003a7eb6eb27d56591e331589391e5bdf1e62de7f8e7062cc8a41e08966a3"
+      "size": 7679967,
+      "sha256": "7743e4c09d27c86032c9c1476474fafa6c6f08ccf25e5fd3f229aaa92cce6c83"
     },
     {
       "path": "report/design_report.pdf",
-      "size": 2217784,
-      "sha256": "35b72cab5f81b15864dbcec66755fadcd698add9cf4d108fb76de682296893cb"
+      "size": 2217614,
+      "sha256": "90dd55e8eb7d3fea7e81fa7dcdeb52d7a1d4f789ea30eb7b7b00bf584cf02418"
     },
     {
       "path": "report/history/original_package_manifest.json",
@@ -2344,7 +2344,7 @@
     {
       "path": "source_map.json",
       "size": 468279,
-      "sha256": "7cf670753f627e3d1d8d67d1778e7d17d951cde45d20320943b993a9250f0dd3"
+      "sha256": "684addcd168dcacc3f692631150e65617d328d4372d619279bf88e78a520c035"
     },
     {
       "path": "src/fpga/baseline_rtl/r33_direction.sv",
