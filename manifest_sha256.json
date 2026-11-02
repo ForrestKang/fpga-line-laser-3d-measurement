@@ -1027,14 +1027,19 @@
       "sha256": "30f0b251d5d74e2858e8b143fe7d401f4cfe2c5fe1c93eb98e86a01b9570b90f"
     },
     {
+      "path": "sim/results/skill_cross_model.json",
+      "size": 2540,
+      "sha256": "143b76404a8b8d98494a163ac40fbc02b10b7e39708533563f19243b5735d636"
+    },
+    {
       "path": "sim/results/skill_portability.json",
       "size": 571,
       "sha256": "f2f92f4f0edc0a206af44185b073f08fb7035b69e2e182bfaff4b8fd158ee15e"
     },
     {
       "path": "sim/results/skill_regression.json",
-      "size": 1844,
-      "sha256": "c55d1d95d6e533856367b2ddba55edfa1b97139221f4f0a326413671c19e701e"
+      "size": 2129,
+      "sha256": "614f4ef0570ebf269617090f2804efecc1e548e2bfc5f9e3d2b8fbb6ef21757d"
     },
     {
       "path": "sim/run_release_tests.py",
@@ -2333,8 +2338,8 @@
     },
     {
       "path": "skill/readme.md",
-      "size": 12595,
-      "sha256": "60356805c8917bce5e81a09bf9059bd0520dece01aff71d57b795003aa1f346f"
+      "size": 12791,
+      "sha256": "3c53091ecf2ed07d0540baae0ce34a1a6d90de41e0645d3ecd2b9b0c7f22c6f0"
     },
     {
       "path": "skill/skill.md",

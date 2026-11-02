@@ -67,5 +67,15 @@
       "path": "skill/verify_bundle.py",
       "sha256": "d16cbd0c0ee600bdd556d959ae196f4d46bbd9909954f1efcc0d0283bf662fa6"
     }
-  ]
+  ],
+  "cross_model_validation": {
+    "path": "sim/results/skill_cross_model.json",
+    "models": [
+      "gpt-6-luna",
+      "gpt-6.1-sol"
+    ],
+    "automated_file_tasks_per_model": 4,
+    "reviewed_analysis_tasks_per_model": 2,
+    "prompt_wording_followup": "resolved"
+  }
 }
