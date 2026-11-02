@@ -1,0 +1,27 @@
+{
+  "source_abi": "source_abi_native.json",
+  "unit_tests": {
+    "methods": 11,
+    "passed": 11,
+    "failed": 0,
+    "archived_primary_subcases": 27,
+    "log": "pairing_tests_final11.log",
+    "backend": "explicit strict reference body on PC; production native default unchanged"
+  },
+  "section_rtl": {
+    "packets": 195,
+    "synthetic": 13,
+    "recorded_frames": 182,
+    "passed": true,
+    "result": "section_195_02.json",
+    "input_binding": "bundled_result_binding.json"
+  },
+  "hardware_operations": 0,
+  "modified_files": [
+    "tools/verify_release_pairing.py",
+    "sim/test_release_pairing.py",
+    "sim/run_section_rtl.py"
+  ],
+  "old_runtime_guard_files_recovered": false,
+  "source_freeze_preserved": true
+}

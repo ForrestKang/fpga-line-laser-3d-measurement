@@ -1,0 +1,65 @@
+{
+  "schema": "line_laser_camera_live_v1",
+  "evidence_type": "MEASURED_CANDIDATE",
+  "simulation_only": false,
+  "units": "mm",
+  "image_size": [
+    752,
+    480
+  ],
+  "calibration_id": "R41_LIVE_CAMERA_LASER_CANDIDATE_PROVISIONAL_AXIS",
+  "camera_matrix": [
+    [
+      991.1156244207497,
+      0.0,
+      367.8640469928783
+    ],
+    [
+      0.0,
+      990.1020720751684,
+      211.94238237487318
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "distortion": [
+    -0.4390133291244856,
+    0.9753375363864316,
+    0.001038242320366632,
+    -0.0021690165101690517,
+    0.0
+  ],
+  "laser_plane_camera": [
+    0.9593082804090589,
+    0.04320959731900087,
+    0.2790350405202628,
+    -139.4343993024528
+  ],
+  "axis_point_camera_mm": [
+    0.0,
+    0.0,
+    499.70211283312796
+  ],
+  "axis_direction_camera": [
+    0.0,
+    -1.0,
+    0.0
+  ],
+  "radial_reference_camera": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "rotation_angle_sign": 1,
+  "sources": {
+    "camera_intrinsics": "deploy/r37_r41_runtime07f/calibration_r41/camera_intrinsics_r41.json",
+    "laser_plane": "deploy/r37_r41_runtime07f/calibration_r41/laser_plane_r41.json",
+    "camera_intrinsics_sha256": "11ec3c9d162c88b0aac47c87f41f3290cb23676b60a359493c22ecddd4a1a74a",
+    "laser_plane_sha256": "9bd0075c07abde6a1923135cd9ee685a7882dd748f4eacf061b94562c67bc5a0"
+  },
+  "axis_status": "PROVISIONAL_NOT_CALIBRATED",
+  "board": "11x8 inner corners, nominal 6 mm"
+}

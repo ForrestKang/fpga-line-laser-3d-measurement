@@ -1,0 +1,19 @@
+{
+  "schema": "R33_NATIVE_ASSEMBLER_BUILD_V1",
+  "compiler": "D:\\software_installation\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
+  "compiler_version": "gcc.exe (x86_64-posix-seh-rev0, Built by MinGW-W64 project) 8.1.0",
+  "flags": [
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared"
+  ],
+  "machine": "AMD64",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_sha256": "57f8c343124215d4cdc8df4351965d36ae5ea15ba7ef47d890f100d38594cc7a",
+  "output": "assembler.dll",
+  "output_bytes": 51068,
+  "output_sha256": "80bc167f47fee02e64c0f5bf75cead632571ca9ee8114cb3ef92eeb504fbbca6"
+}

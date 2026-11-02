@@ -50,9 +50,11 @@ python skill/pynq_release_check.py `
 - 清单无法读取、JSON 损坏、字段类型错误：报告结构化错误，不抛出未处理异常，也不改变清单或目标文件。
 - `--output` 已存在：返回码 `2`，拒绝覆盖。
 
-## 当前候选中的实际发现
+## 原交接包中的实际发现
 
 对 `board/firmware/manifest.json` 与 `src/ps` 执行后，overlay 文件 `final.bit` 和 `final.hwh` 的大小及 SHA-256 均与清单一致；8 个运行时 guard 中 6 个匹配，[Live Runtime](../src/ps/r33/live.py) 与 [Section Measurement Driver](../src/ps/r33/pl_section.py) 的实际 SHA-256 与 manifest 声明不一致。检查器如实返回整体失败。此结果说明当前清单与当前软件目录不能作为同一组已绑定发布文件通过准入；它没有修改或重写任何一方的摘要。
+
+以上是原交接时的历史检查，保留在[旧manifest](../board/firmware/history/manifest_before_repair.json)和原回执中。本轮软件修复及完整回归另立记录；当前manifest的`runtime_validation_file`引用[新软件验证记录](../board/firmware/runtime_validation.json)，硬件源码冻结文件不改。最终结果见[验证汇总](../report/release_validation.json)，不是把旧失败回执改写为成功。
 
 ## 失效条件与证据边界
 

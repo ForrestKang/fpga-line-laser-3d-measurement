@@ -29,13 +29,15 @@ Linux下换成可写的新绝对路径。程序会先检查源码，再创建 `f
 ## 4. 离线软件与RTL检查
 
 ```text
-python -B sim/run_runtime_tests.py --work D:/Workspace/CodexTemp/scan3d_reproduce/work --output D:/Workspace/CodexTemp/scan3d_reproduce/pc_results
+python -m pip install -r sim/requirements_pc.txt
+python -B sim/run_release_tests.py --work D:/Workspace/CodexTemp/scan3d_reproduce/work --output D:/Workspace/CodexTemp/scan3d_reproduce/pc_results --cc gcc
+python -B sim/run_section_rtl.py --work D:/Workspace/CodexTemp/scan3d_reproduce/work --output D:/Workspace/CodexTemp/scan3d_reproduce/section_results --iverilog iverilog --vvp vvp --workers 2
 python -B sim/run_rtl_integration.py --work D:/Workspace/CodexTemp/scan3d_reproduce/work --output D:/Workspace/CodexTemp/scan3d_reproduce/rtl_results --iverilog iverilog --vvp vvp --cases empty
 ```
 
-第二条依赖Icarus Verilog。`empty`只是空帧集成冒烟，不代表完整实拍集通过。需要完整用例时先读 `sim/readme.md` 和原测试入口支持的参数。
+完整软件入口需要本机C编译器，依赖包括OpenCV，用于图像和显示测试。主机编译库不能复制给ARM运行。截面入口使用182帧历史原图与13个合成输入，完整核对195包；RTL入口均依赖Icarus Verilog。`empty`只代表空帧冒烟，完整19例的显式参数见[仿真说明](../sim/readme.md)。
 
-继承的业务回归记录有7失败、1跳过；详见 `verified_status.md`。本说明没有把它们改成通过。新增Skill的自测与这些业务测试分别计数。
+本轮已修复旧Mock合同、故障注入检查、字体查找和参考测试入口，并修复严格日志读回的协议分派与水平双像素策略支持。默认质量仅用PL摘要，Raw统计改为显式诊断；原七处失败及绑定差异留作历史。最终完整软件与RTL结果见[验证汇总](release_validation.json)，不与Skill自测混合计数。
 
 ## 5. 从源码构建整板固件
 
@@ -49,7 +51,7 @@ python -B build/reproduce.py --work D:/Workspace/CodexTemp/scan3d_rebuild/work -
 
 ## 6. 板端准备
 
-先读 `board/readme.md`。核对板卡身份、当前程序所有者、供电与接线、可用空间和输出目录。用只读方式检查软件与固件清单是否配套。当前候选清单内两项runtime guard不匹配，必须先解决发布一致性，不能跳过加载器校验继续演示。
+先读[板端说明](../board/readme.md)。核对板卡身份、当前程序所有者、供电与接线、可用空间和输出目录，检查软件与固件配套。当前manifest通过`runtime_validation_file`引用[新软件验证记录](../board/firmware/runtime_validation.json)；[旧manifest](../board/firmware/history/manifest_before_repair.json)和`source_freeze.json`保留来源，不以替换历史摘要绕过准入。11项离线配套测试及27个归档primary子例通过不等于已在当前板卡加载。
 
 `board/boot_reference/`用于说明旧部署关系，包含装置相关路径，不是复制到新板就能直接覆盖的安装包。新板先完成无运动的静态图像/回放验证，再评估开机服务。
 

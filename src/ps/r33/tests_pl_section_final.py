@@ -216,7 +216,9 @@ class SectionTests(unittest.TestCase):
             if identity['frame_id'] == 1:
                 self.assertEqual(driver[0].packet, 1)
             committed.append(identity['frame_id'])
-            mmio.publish(geo[:, 1:4].view(np.int32).astype(np.float64) / 65536.)
+            # The section hardware consumes valid measurement geometry only.
+            valid = (geo[:, 7] & 0x101) == 0x101
+            mmio.publish(geo[valid, 1:4].view(np.int32).astype(np.float64) / 65536.)
         def main(args):
             return original(args + ['--pages', 'A,B,C', '--section-backend', 'pl', '--initial-page', 'B'])
         def save(path, value):
@@ -261,7 +263,8 @@ class SectionTests(unittest.TestCase):
             def __init__(self, *_): super().__init__(MANIFEST, lambda *_: mmio, 0)
         def publish(identity, geo):
             committed.append(identity['frame_id'])
-            xyz = geo[:, 1:4].view(np.int32).astype(np.float64) / 65536.
+            valid = (geo[:, 7] & 0x101) == 0x101
+            xyz = geo[valid, 1:4].view(np.int32).astype(np.float64) / 65536.
             mmio.publish(xyz)
             mmio.publish(xyz)  # two publications for one input must never be hidden
         def main(args):

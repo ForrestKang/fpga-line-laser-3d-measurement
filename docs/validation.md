@@ -12,15 +12,27 @@
 | RTL集成冒烟 | 空帧PASS | [RTL空帧结果](../sim/results/rtl_empty_result.json) |
 | 原整板报告重评 | gate通过；没有重新实现 | [报告门槛重评](../report/source_report_gate.json) |
 
-7项业务失败涉及实时主入口、PL截面对照、停止、截止时间和清理，日志包括`frame_decisions`缺失。当前证据不足以将这些失败简单归因于Mock。字体测试因制作脚本不在测试预期目录而跳过。
+上表是原交接包的历史记录。本轮已复现并修复旧Transport Mock缺少`frame_decisions`和记录计数的合同问题，且为故障测试补上注入帧、次数和错误原因检查，防止提前异常误判为通过。字体测试改为定位随包构建脚本并执行实际字形覆盖；旧参考测试分别绑定对应的图像协议解码器和黄金几何模型。原失败日志保留，新结果另立记录。
+
+## 本轮修复与实跑
+
+| 范围 | 已确认内容 | 证据 |
+|---|---|---|
+| 默认质量路径 | 正常帧只读PL行摘要和帧决定位；Raw饱和统计仅显式诊断，不改变接受判据 | [Live Runtime](../src/ps/r33/live.py)、[诊断测试](../src/ps/r33/tests_quality_diagnostics.py) |
+| 严格存储兼容 | 按primary头部显式选择图像观测或几何观测严格解码器，支持水平双像素策略 | [Storage](../src/ps/r33/storage.py)、最终验证汇总 |
+| 软件与固件配套 | 11项离线配套测试、27个归档primary子例通过 | [配套测试入口](../sim/test_release_pairing.py)、[验证汇总](../report/release_validation.json) |
+| 截面RTL | 182帧历史原图与13个合成输入，共195包逐位对照通过 | [截面复现入口](../sim/run_section_rtl.py)、验证汇总 |
+| 完整runtime与整板RTL矩阵 | 最终计数、逐例结果和失败清单以原始回执为准 | [验证汇总](../report/release_validation.json) |
+
+手动初始化曝光probe保持原独立逻辑；`--diagnostic-raw-quality`不控制曝光或测量接受。45份非生成硬件构建输入、bit/HWH未变；本轮没有重新布局布线、上板或新增实物精度验证。
 
 ## 本地材料与Skill检查
 
 | 项目 | 结果 | 证据 |
 |---|---|---|
 | 发布检查器自测 | 17项：16通过、1环境跳过 | [Skill测试](../sim/results/pynq_release_check_tests.json) |
-| 当前固件配套 | bit/HWH匹配，8项runtime guard中2项不匹配 | [实际发布检查](../sim/results/pynq_release_check_actual.json) |
-| 逐项runtime guard | `live.py`、`pl_section.py`不匹配 | [Guard清单](../sim/results/runtime_guard_audit.json) |
+| 原交接包固件配套 | bit/HWH匹配，当时两项runtime guard不匹配 | [原始发布检查](../sim/results/pynq_release_check_actual.json) |
+| 原逐项runtime guard | 当时的Live Runtime、Section Measurement Driver有差异 | [历史Guard清单](../sim/results/runtime_guard_audit.json) |
 
 Skill的链接逃逸用例因当前Windows环境无法创建相应链接而跳过。其余测试验证了有效包、错误摘要、缺失文件、路径规则、损坏清单和输出防覆盖。
 
@@ -51,16 +63,18 @@ python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --
 python -B skill/test_pynq_release_check.py
 ```
 
-发布检查器当前返回FAIL是对两项runtime guard差异的真实发现。保留原manifest，不靠重写摘要把不配套的固件/runtime组合改成“通过”。[工具说明](../skill/pynq_release_check.md)给出输入格式、错误与退出码。
+原检查器返回FAIL真实反映了当时的两项软件差异。[旧manifest](../board/firmware/history/manifest_before_repair.json)与硬件源码冻结记录保留；本轮软件回归及配套检查另记于[运行时验证记录](../board/firmware/runtime_validation.json)，由当前manifest引用。[工具说明](../skill/pynq_release_check.md)给出输入格式、错误与退出码。
 
 按[复现说明](../report/reproduction.md)恢复源码后，使用新的结果目录执行软件及RTL检查：
 
 ```text
-python -B sim/run_runtime_tests.py --work <restored_work> --output <new_pc_results>
+python -m pip install -r sim/requirements_pc.txt
+python -B sim/run_release_tests.py --work <restored_work> --output <new_pc_results> --cc gcc
+python -B sim/run_section_rtl.py --work <restored_work> --output <new_section_results> --iverilog iverilog --vvp vvp --workers 2
 python -B sim/run_rtl_integration.py --work <restored_work> --output <new_rtl_results> --iverilog iverilog --vvp vvp --cases empty
 ```
 
-空帧只是集成冒烟。需要完整用例时阅读[仿真说明](../sim/readme.md)和实际入口参数，保存本次命令、配置及结果。
+完整软件入口包含本机C库编译及所有runtime测试，依赖OpenCV、fonttools等声明依赖；主机库不替代ARM库。空帧只是集成冒烟，完整19例矩阵需显式传入[仿真说明](../sim/readme.md)列出的`--cases`；保存本次命令、配置及结果。
 
 完整整板构建：
 
@@ -95,9 +109,9 @@ python -B build/reproduce.py --work <new_build_work> --output <new_build_output>
 
 ## 当前工程发布门槛
 
-1. 定位并解决或明确归属7项业务回归失败。
-2. 确定真实对应的固件/runtime组合，审查新配套清单并验证，保留原记录。
-3. 完成所需完整RTL用例与可复现整板构建。
+1. 检查本轮完整runtime回归及RTL矩阵的最终原始回执，不把历史失败计为当前状态。
+2. 审查当前固件/runtime组合和独立验证记录，保留原清单及失败记录。
+3. 需要重建时执行完整Vivado实现；本轮RTL仿真不替代重新布局布线。
 4. 固定源码、库、固件及配置后进行板端完整链路验证。
 5. 取得独立光学和尺寸证据后，再声明对应装置的实物精度。
 

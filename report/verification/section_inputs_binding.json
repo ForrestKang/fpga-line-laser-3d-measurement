@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "result_file": "section_195_02.json",
+  "result_reused_with_identical_input_and_sources": true,
+  "original_input_identity": "original_input_identity/input_identity.json",
+  "bundled_input_identity": "bundled_input_identity/input_identity.json",
+  "content_sha256": "d845b9cb929049804d28cca252006b459db5b0653f08987338b2915097ce12a7",
+  "packets": 195,
+  "board_operations": 0
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "OFFLINE_RELEASE_PAIRING_V1",
+  "passed": true,
+  "checks": [
+    {
+      "name": "bit",
+      "passed": true
+    },
+    {
+      "name": "hwh",
+      "passed": true
+    },
+    {
+      "name": "compiled_source_closure",
+      "passed": true,
+      "original_count": 45,
+      "generated_count": 117,
+      "failed": []
+    },
+    {
+      "name": "compiled_content_binding",
+      "passed": true
+    },
+    {
+      "name": "frontend_hwh_address",
+      "passed": true
+    },
+    {
+      "name": "section_register_contract",
+      "passed": true
+    },
+    {
+      "name": "two_direction_lanes",
+      "passed": true
+    },
+    {
+      "name": "arm_native_libassemble_r33.so",
+      "passed": true,
+      "native": {
+        "passed": true,
+        "checks": {
+          "source": true,
+          "output": true,
+          "size": true,
+          "output_name": true,
+          "declared_architecture": true,
+          "elf_arm32_le": true
+        },
+        "source": "assemble_r33.c",
+        "output": "libassemble_r33.so"
+      }
+    },
+    {
+      "name": "arm_native_libmarkers_r34.so",
+      "passed": true,
+      "native": {
+        "passed": true,
+        "checks": {
+          "source": true,
+          "output": true,
+          "size": true,
+          "output_name": true,
+          "declared_architecture": true,
+          "elf_arm32_le": true
+        },
+        "source": "markers_r34.c",
+        "output": "libmarkers_r34.so"
+      }
+    }
+  ],
+  "evidence_class": "SOURCE_AND_ABI_NOT_BOARD",
+  "hardware_commands": 0,
+  "limits": [
+    "Generated Vivado IP is regenerated during build.",
+    "Source/ABI checks do not prove a bitstream is currently loaded or physical accuracy.",
+    "Runtime guards must be checked separately after software regression."
+  ]
+}

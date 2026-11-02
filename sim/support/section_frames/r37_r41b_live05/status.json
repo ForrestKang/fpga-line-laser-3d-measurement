@@ -1,0 +1,155 @@
+{
+  "schema": "R41_LIVE_V1",
+  "pid": 10431,
+  "phase": "stopped",
+  "frames": 165,
+  "motor": "idle",
+  "laser": "user_controlled",
+  "started_unix": 1793063566.9152176,
+  "runtime_contract": {
+    "control_version": 65536,
+    "diagnostic_version": 65537,
+    "capabilities": 57
+  },
+  "camera": {
+    "id_reads": [
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900,
+      4900
+    ],
+    "registers": {
+      "0x1": 1,
+      "0x2": 4,
+      "0x3": 480,
+      "0x4": 752,
+      "0x5": 94,
+      "0x6": 45,
+      "0x7": 904,
+      "0xc": 0,
+      "0x72": 0
+    },
+    "pclk_hz": [
+      23999900,
+      23999900,
+      23999900
+    ],
+    "camera_control_verified": true,
+    "dma_started": false
+  },
+  "signals": {
+    "status": "camera_signal_verified",
+    "camera_signal_verified": true,
+    "camera_input_verified": false,
+    "problems": [],
+    "snapshot": {
+      "status": 10,
+      "result_id": 5,
+      "fv_rises": 16,
+      "fv_falls": 16,
+      "lv_rises": 7680,
+      "lv_falls": 7680,
+      "fv_high_cycles": 6497280,
+      "fv_low_cycles": 571051,
+      "lv_high_cycles": 28876800,
+      "lv_low_cycles": 6464855,
+      "line_pixels_min": 752,
+      "line_pixels_max": 752,
+      "frame_rows_min": 480,
+      "frame_rows_max": 480,
+      "complete_frames": 16,
+      "frame_period_min_pclk": 444150,
+      "frame_period_max_pclk": 444150,
+      "pixel_min": 8,
+      "pixel_max": 255,
+      "data_bit_variation_mask": 255,
+      "error_flags": 0,
+      "version": 65536
+    },
+    "width": 752,
+    "height": 480,
+    "pclk_hz": 23999900,
+    "fv_active": 1,
+    "lv_active": 1,
+    "frame_period_s": 0.01850632710969629,
+    "data_activity_observed": true,
+    "meaning": "sampled digital FV/LV geometry; not electrical setup/hold proof"
+  },
+  "camera_generation_resumed": {
+    "request_id": 255,
+    "epoch": 2,
+    "resumed": true
+  },
+  "camera_errors_before_clear": {
+    "status": 2,
+    "error_flags": 131072
+  },
+  "camera_errors_after_clear": {
+    "status": 2,
+    "error_flags": 0
+  },
+  "pipeline": true,
+  "warmup": {
+    "raw_sha256": "b241b270d2ac7ff115e90f6e3a0274071c8dcdf795c31309a8376a8f846b9b44"
+  },
+  "fps": 2.7289301991697976,
+  "last": {
+    "frame": 163,
+    "capture_ms": 54.64923699992141,
+    "pl_ms": 337.75982099996327,
+    "frame_age_ms": 345.2656790000219,
+    "centres": 0,
+    "xyz": 0,
+    "raw_sha256": "6d66681682555ac55620a6c78bdca2bdc07a1dff0975cbe41d4e10ed01baa51b",
+    "primary_bytes": 1530112
+  },
+  "elapsed_s": 59.36420323500033,
+  "dropped": {
+    "capture": 766,
+    "display": 0
+  },
+  "pl_view": {
+    "inserted": 0,
+    "dropped": 0,
+    "frames_committed": 164,
+    "frames_discarded": 0,
+    "occupied": 0,
+    "out_of_range": 0,
+    "render_count": 7055,
+    "last_render_cycles": 115202,
+    "swap_count": 7054,
+    "status": 52166880,
+    "magic": 1379151958,
+    "last_yaw": 796,
+    "republish_count": 68389,
+    "frozen": false,
+    "last_pub_buf": 0
+  },
+  "threads_alive_after_join": [],
+  "thread_errors": [],
+  "display_median_ms": 65.9492679997129,
+  "display_updates": 165,
+  "stop_reason": "duration",
+  "timing_median_ms": {
+    "capture_ms": 55.507137999939005,
+    "pl_ms": 342.37192000000505,
+    "frame_age_ms": 374.2664490000607
+  },
+  "finished_unix": 1793063649.520262
+}

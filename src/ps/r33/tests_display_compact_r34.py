@@ -82,7 +82,9 @@ class CompactR34Tests(unittest.TestCase):
         restored = module._annotations(bytearray(payload), dict(kind=3, size=len(payload), index=7))
         for left, right in zip(marks.groups, restored.groups): np.testing.assert_array_equal(left, right)
 
-    def test_renderer_pixels_identical(self):
+    @patch('candidate.display_projection_r14.optional_projection', return_value=None)
+    @patch('candidate.display_marker_native15c.optional_markers', return_value=None)
+    def test_renderer_pixels_identical(self, _host_reference_markers, _host_reference_projection):
         from structured_light.scan3d.dashboard import DashboardStatus
         gray = np.zeros((480,752), np.uint8)
         for count in (0, 4, 331, 12000):

@@ -160,7 +160,8 @@ class DisplayTests(unittest.TestCase):
         payload=a.tobytes(); f=Frame(f.header,np.frombuffer(payload,'<u4').reshape(-1,16),f.rows,payload)
         with self.assertRaisesRegex(ValueError,'no center'): annotations_from_frame(f)
 
-    def test_real_renderer_and_marker_colors(self):
+    @patch('candidate.display_projection_r14.optional_projection', return_value=None)
+    def test_real_renderer_and_marker_colors(self, _host_reference_projection):
         from structured_light.scan3d.dashboard import DashboardStatus, CAMERA_IMAGE
         from candidate.display_pfo3_r25 import MEASUREMENT_BGR, PREVIEW_BGR, REJECTED_BGR
         renderer = renderer_factory(dict(target='T05'))
@@ -176,7 +177,8 @@ class DisplayTests(unittest.TestCase):
         self.assertEqual(renderer.timings['renderer'], 'R33_UV_OBSERVATIONS_NATIVE_RAW_XYZ')
         self.assertEqual(renderer.timings['marker_coordinate_contract'], 'R33_UV_Q12_DISPLAY_ROUND_ONLY')
 
-    def test_real_renderer_no_snapshot_labels_and_status_canvas(self):
+    @patch('candidate.display_projection_r14.optional_projection', return_value=None)
+    def test_real_renderer_no_snapshot_labels_and_status_canvas(self, _host_reference_projection):
         from structured_light.scan3d.dashboard import DashboardStatus
         renderer = renderer_factory(dict(target='T06'))
         status = DashboardStatus(mode='SIMULATION', source='R33 | computed 7 | saved 6', frame_number=7)

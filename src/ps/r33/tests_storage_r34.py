@@ -10,6 +10,7 @@ import tempfile
 import threading
 import time
 import unittest
+import zlib
 from unittest.mock import patch
 
 import numpy as np
@@ -55,10 +56,33 @@ class SourceTests(unittest.TestCase):
                 receipt=json.loads(blobs['receipt_json']), metadata=json.loads(blobs['metadata_json']))
             reference = old.FrameResult.create(**args)
             actual = FrameResult.create(**args)
-            self.assertEqual(reference.components, actual.components)
-            self.assertEqual(reference.descriptors, actual.descriptors)
+            logical = {}
+            for (name, blob), (stored_name, encoding, stored_bytes) in zip(actual.components, actual.encodings):
+                self.assertEqual(name, stored_name)
+                self.assertEqual(len(blob), stored_bytes)
+                logical[name] = zlib.decompress(blob) if encoding == 'zlib' else blob
+            reference_parts = dict(reference.components)
+            # The declared V2 layout compresses Raw and changes only the receipt
+            # storage-format tag; all measurement/source bytes remain exact.
+            for name in storage.COMPONENTS:
+                expected = reference_parts[name]
+                if name == 'receipt_json':
+                    receipt = json.loads(expected)
+                    self.assertEqual(receipt.pop('storage_contract'), old.FORMAT)
+                    current_receipt = json.loads(logical[name])
+                    self.assertEqual(current_receipt.pop('storage_contract'), storage.FORMAT)
+                    self.assertEqual(receipt, current_receipt)
+                else:
+                    self.assertTrue(expected == logical[name], name + ' logical bytes changed')
+            for name, size, digest, crc in actual.descriptors:
+                blob = logical[name]
+                self.assertEqual((size, digest, crc),
+                    (len(blob), storage._digest(blob), storage._crc(blob)))
             self.assertEqual(reference.identity_items, actual.identity_items)
-            self.assertEqual(reference.charge_bytes, actual.charge_bytes)
+            template = storage._index_row(10**20-1, 10**20-1, dict(actual.identity_items),
+                actual.descriptors, data_offset=10**20-1, encodings=actual.encodings)
+            self.assertEqual(actual.charge_bytes,
+                sum(len(blob) for _, blob in actual.components) + len(storage._json_bytes(template)) + 256)
 
     def test_source_is_owned_and_from_source_never_rehashes_source(self):
         values = dict(self.values)

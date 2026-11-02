@@ -50,7 +50,7 @@
     "same_run_seed_retry": false
   },
   "source_revision": "FINAL_TWO_LANE_125MHZ_PL_SECTION_LIVE_STREAM_SEED_RETRY",
-  "status": "OFFLINE_GATES_PASS_BOARD_NOT_YET_EXECUTED",
+  "status": "OFFLINE_RELEASE_PAIRING_VERIFIED_BOARD_PENDING",
   "preboard_passed": true,
   "hardware_verified": false,
   "deployment_performed": false,
@@ -89,14 +89,35 @@
     "dsp": 60.90909090909091
   },
   "runtime_guards": {
-    "r33/scope.py": "c805773024950a17a978d53c144b20b18674aac62b477035578030b43e862aba",
-    "r33/transport.py": "6b7e1978b3aa2d9c5fb87de7d4f8bd9198242480af125daa1da210eb3bba40a1",
+    "r33/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "r33/assemble_native.py": "91861135303be120c147a591506e697efca4dcdc371387d3ff77729ecf86ef72",
+    "r33/build_native.py": "635c80bc9ed1fbbe89d207028bef9ce566368c081d4601728e894a15255bef2f",
+    "r33/buttons.py": "59c441af5cfe148912fe084ead3413aeff64f092a9544a5053a3f1c4b77b737b",
     "r33/display.py": "4cbe41ada8702a821ead0a5fdea1bf187d7b34cf49396f15fda0251d3a8f01f4",
-    "r33/live.py": "4b7d7e41bc3b0eeb7c40b060931cceff132e04e424a76c5eb206723fcc591193",
-    "r33/pl_section.py": "2756882d434cc4c972b4bb538232b5fb69fdd60db7bc2b4bacef983e9ae9713c",
+    "r33/geometry.py": "24468779d25fdfb132aaecd437b581a229b95e5c027a6762be8d6986b5c59c0c",
+    "r33/geometry_golden_r34.py": "f19c4b67d8723da43badc43ef421e1984de4af3f34397b6693d5164123d92d2a",
+    "r33/geometry_pl_r35.py": "f782aee2364968b968d8e461dcb2223620d0f1ba310738627b80bdc8c8ae8d2a",
+    "r33/live.py": "80067c67d62f733cfd1cffdd96563d573e9cbb92c4ecbffcb1f57fe1729ca083",
+    "r33/load.py": "ce371d0f640935171e15eaafc48c3140f5fd47e70fd777cd47c50523ce82162b",
+    "r33/markers_native_r34.py": "793bd29f658cda310d8cab3557fc129a3fcbbab33dad706657ab5553e78837b6",
+    "r33/metrics.py": "034b8a8062820221de59c1c0c86733bcde1069cef62234cfa97534d7101fc90f",
     "r33/page_state.py": "a1bc00596e60a615d9497f2cf57d4b20fc1f47404f1ce84553ddbb6e0a603af3",
+    "r33/pages_ui13.py": "c57d87defd28e7cf4af384f2da4fc5b01296fa88252aa8f7d4090285c6115e90",
+    "r33/pl_measure.py": "c769a18d3a6d0e92ef8a59b3339d44615244ab387e4747e0250c6d020e966ead",
+    "r33/pl_section.py": "06562fc039f8091f672c666bd001388fc3ac4122ee1fbc594c0493e513c7ddfc",
+    "r33/pl_view.py": "e5928bbdbc6d9b04fd882c1f88ce0c67d39f8e26da0a4c20a20eca0a9fdd5ee1",
+    "r33/profile_live.py": "c1783ad907ee04c706569e054264cf22e6e9b13507a5b5e50e76e8c4d671cf1d",
+    "r33/profile_panel.py": "52641ba23108cc0dd7b91ec1f008a101e9278a8bbf15b1d5bba817b6582c1412",
+    "r33/protocol.py": "9c2497091014aa4b91714775c8dc7205168f8000cf95058b1c10a7c04410b0de",
+    "r33/protocol_r35.py": "6afbea858fdbdceee8f5f6034b003ab64643c645b864a2f2ccb30982a8834a02",
+    "r33/replay.py": "d83553c5a96f204c918b2a4e63e02be092f4ee6f6c9e689b6a0731055787f4d5",
+    "r33/scan_command.py": "3c58ca07bfb4d31b89c9582c68752590f5feadf121d1712c54f1874afba2e933",
     "r33/scan_live.py": "8d20f185600c14e8fff89d43ec413a614d39f7b5852a52bbc88d6a56d602de8e",
-    "r33/pl_view.py": "e5928bbdbc6d9b04fd882c1f88ce0c67d39f8e26da0a4c20a20eca0a9fdd5ee1"
+    "r33/scope.py": "c805773024950a17a978d53c144b20b18674aac62b477035578030b43e862aba",
+    "r33/storage.py": "13e2077bee176a7d7491dee392ed293964305593881120d71e134879a7b9df33",
+    "r33/transport.py": "6b7e1978b3aa2d9c5fb87de7d4f8bd9198242480af125daa1da210eb3bba40a1",
+    "r33/ui_pages.py": "6653a7ae77276bc7d0f184dc428a3d6c17144c9eae2745a54fc28bc4f4c34fab",
+    "r33/ui_theme.py": "c5bcf89300bef5a0f9dbe705233ec1a90b20867b7abe226eb27cf8fb37597c08"
   },
   "pfo3_binning": {
     "present": true,
@@ -175,10 +196,10 @@
   "automatic_camera_start": false,
   "automatic_motor_start": false,
   "route_dcp_sha256": "0f3e608188ce649d951ad7556638d0fec534df84f565443394c95a1dfa933b5b",
-  "build_admission_file": "ADMISSION_FINAL.json",
+  "build_admission_file": "admission_final.json",
   "build_admission_sha256": "ca0801c12bc41ae8d77de1b38d6b083bcecf197affcd3599c2690f6a84461129",
   "inherited_protocol_template_sha256": "42fab77d0c48f7723bfb4ea6670a96cda5d16c578dca812354d5ede6e25852c2",
-  "source_freeze_file": "SOURCE_FREEZE.json",
+  "source_freeze_file": "source_freeze.json",
   "compiled_source_content_sha256": "f20f5fb474bc75624dc1213728e9d26e6ad464fe9d4eeb844237a100781c862a",
   "section_measure": {
     "present": true,
@@ -211,5 +232,9 @@
     "trigger": "sole local reason 32 (Newton fails at the max-curvature seed)",
     "input": "752x480 full width only; 2x binning (policy 2) keeps the single seed",
     "demo_mode": "off: T02 full turns 2026-10-31 (same placement) gave 65052 vs 51560 measurement points, roundness 0.08 vs 0.17 mm and PL 52.9 vs 26.4 fps for 2x binning; policy 3 stays in the bit"
-  }
+  },
+  "runtime_validation_file": "runtime_validation.json",
+  "runtime_validation_sha256": "da1b58b4da43cda1edce0ee2dacf16140d5c264a63e99b1ad40bd28704cdcba1",
+  "previous_manifest_file": "history/manifest_before_repair.json",
+  "previous_manifest_sha256": "f68532fd16190ed97679e2e8512f1e5c3caf58f3417cbf96e69c5e815013832a"
 }

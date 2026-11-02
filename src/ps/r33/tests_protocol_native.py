@@ -8,7 +8,8 @@ import struct
 import unittest
 from unittest.mock import patch
 import numpy as np
-from .protocol import HEADER_FIELDS, FINGERPRINT, identity, assemble, assemble_reference, PFO3Error
+from .protocol import (HEADER_FIELDS, FINGERPRINT, identity,
+                       assemble_r33 as assemble, assemble_reference, PFO3Error)
 from .assemble_native import load_native
 
 ROOT = Path(__file__).resolve().parents[2]

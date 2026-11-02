@@ -127,16 +127,22 @@ class PageTests(unittest.TestCase):
         self.assertTrue((out[y:y + 480, x:x + 448] == th.PANEL).all())
 
     def test_bundled_fonts_cover_every_page_character(self):
-        import sys
+        import importlib.util
+        from unittest.mock import patch
 
         from fontTools.ttLib import TTFont
-        sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'scripts'))
-        try:
-            from build_page_fonts import page_chars
-        except ImportError:
-            self.skipTest('font build script not beside the runtime')
-        cmap = TTFont(str(FONTS / 'NotoSansCJKsc-pages-subset.otf')).getBestCmap()
-        missing = [c for c in page_chars() if ord(c) not in cmap and not c.isspace()]
+        root = Path(__file__).resolve().parents[2]
+        candidates = (root / 'fpga/scripts/build_page_fonts.py', root / 'scripts/build_page_fonts.py')
+        script = next((path for path in candidates if path.is_file()), None)
+        self.assertIsNotNone(script, 'bundled build_page_fonts.py is missing')
+        spec = importlib.util.spec_from_file_location('page_font_coverage_builder', script)
+        builder = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(builder)
+        with patch.object(builder, 'RUNTIME', Path(__file__).resolve().parents[1]):
+            characters = builder.page_chars()
+        with TTFont(str(FONTS / 'NotoSansCJKsc-pages-subset.otf')) as font:
+            cmap = font.getBestCmap()
+        missing = [c for c in characters if ord(c) not in cmap and not c.isspace()]
         self.assertEqual(missing, [])
         self.assertEqual(Path(th.Fonts().cjk).name, 'NotoSansCJKsc-pages-subset.otf')
 

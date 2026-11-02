@@ -22,7 +22,7 @@ python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --
 python -B skill/test_pynq_release_check.py
 ```
 
-该工具只读、不连接板卡，不自动修清单。17项测试中16项通过，链接逃逸用例因环境限制跳过；实际候选中识别出两项runtime guard不匹配并返回失败。测试结果见 `sim/results/pynq_release_check_tests.json`，实际检查见 `sim/results/pynq_release_check_actual.json`。文件检查不能替代RTL、整板、板端或实物精度验证。
+该工具只读、不连接板卡，不自动修清单。原工具17项测试中16项通过，链接逃逸用例因环境限制跳过；旧交接包识别出两项runtime guard差异并返回失败，原回执保留在`sim/results/`。本轮修复后的软件绑定见[独立运行时验证记录](../board/firmware/runtime_validation.json)，实际结果见[验证汇总](../report/release_validation.json)。文件检查不能替代RTL、整板、板端或实物精度验证。
 
 ## Git仓库中的包校验
 

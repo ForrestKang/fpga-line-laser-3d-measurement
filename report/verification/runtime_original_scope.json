@@ -1,0 +1,21 @@
+{
+  "schema": "FINAL_SECTION_RUNTIME_PC_V1",
+  "modules": [
+    "r33.tests_pl_section_final",
+    "r33.tests_buttons_r42",
+    "r33.tests_scan_live_r42",
+    "r33.tests_live_r42",
+    "r33.tests_profile_r41",
+    "r33.tests_pl_measure_r41",
+    "r33.tests_live_r41",
+    "r33.tests_pages"
+  ],
+  "tests_run": 71,
+  "failures": [],
+  "errors": [],
+  "skipped": [],
+  "passed": true,
+  "duration_s": 5.3696654999985185,
+  "evidence_class": "PC_MOCK_NOT_BOARD",
+  "hardware_commands": 0
+}

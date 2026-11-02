@@ -1,0 +1,44 @@
+test_changed_payload_still_fails (test_verify_bundle.BundleCheckoutTests.test_changed_payload_still_fails) ... ok
+test_manifest_cannot_declare_git_metadata (test_verify_bundle.BundleCheckoutTests.test_manifest_cannot_declare_git_metadata) ... ok
+test_root_git_metadata_directory_is_excluded (test_verify_bundle.BundleCheckoutTests.test_root_git_metadata_directory_is_excluded) ... ok
+test_unregistered_payload_still_fails (test_verify_bundle.BundleCheckoutTests.test_unregistered_payload_still_fails) ... ok
+test_worktree_git_file_is_excluded (test_verify_bundle.BundleCheckoutTests.test_worktree_git_file_is_excluded) ... ok
+test_backslash_path_is_rejected (test_pynq_release_check.ReleaseCheckTests.test_backslash_path_is_rejected) ... ok
+test_bit_sha_mismatch_with_same_size_fails (test_pynq_release_check.ReleaseCheckTests.test_bit_sha_mismatch_with_same_size_fails) ... ok
+test_bit_size_mismatch_fails (test_pynq_release_check.ReleaseCheckTests.test_bit_size_mismatch_fails) ... ok
+test_cli_output_is_create_only (test_pynq_release_check.ReleaseCheckTests.test_cli_output_is_create_only) ... ok
+test_duplicate_firmware_path_is_rejected (test_pynq_release_check.ReleaseCheckTests.test_duplicate_firmware_path_is_rejected) ... ok
+test_malformed_json_is_structured_failure (test_pynq_release_check.ReleaseCheckTests.test_malformed_json_is_structured_failure) ... ok
+test_missing_guards_are_explicitly_uncovered_and_fail (test_pynq_release_check.ReleaseCheckTests.test_missing_guards_are_explicitly_uncovered_and_fail) ... ok
+test_missing_hwh_fails (test_pynq_release_check.ReleaseCheckTests.test_missing_hwh_fails) ... ok
+test_missing_runtime_guard_file_fails (test_pynq_release_check.ReleaseCheckTests.test_missing_runtime_guard_file_fails) ... ok
+test_non_object_manifest_is_structured_failure (test_pynq_release_check.ReleaseCheckTests.test_non_object_manifest_is_structured_failure) ... ok
+test_parent_traversal_is_rejected (test_pynq_release_check.ReleaseCheckTests.test_parent_traversal_is_rejected) ... ok
+test_posix_absolute_path_is_rejected (test_pynq_release_check.ReleaseCheckTests.test_posix_absolute_path_is_rejected) ... ok
+test_runtime_guard_hash_mismatch_fails (test_pynq_release_check.ReleaseCheckTests.test_runtime_guard_hash_mismatch_fails) ... ok
+test_runtime_root_missing_fails_all_declared_guards (test_pynq_release_check.ReleaseCheckTests.test_runtime_root_missing_fails_all_declared_guards) ... ok
+test_symlink_escape_is_rejected_when_supported (test_pynq_release_check.ReleaseCheckTests.test_symlink_escape_is_rejected_when_supported) ... skipped 'symlink and junction creation unavailable: OSError'
+test_valid_bit_hwh_and_runtime_guards_pass (test_pynq_release_check.ReleaseCheckTests.test_valid_bit_hwh_and_runtime_guards_pass) ... ok
+test_windows_drive_path_is_rejected (test_pynq_release_check.ReleaseCheckTests.test_windows_drive_path_is_rejected) ... ok
+test_encoded_existing_path_and_anchor (test_repository_checks.RepositoryLinkTests.test_encoded_existing_path_and_anchor) ... ok
+test_escape_is_rejected_before_existence (test_repository_checks.RepositoryLinkTests.test_escape_is_rejected_before_existence) ... ok
+test_external_links_do_not_become_local_paths (test_repository_checks.RepositoryLinkTests.test_external_links_do_not_become_local_paths) ... ok
+test_hardware_pin_exception_does_not_hide_version_name (test_repository_checks.RepositoryLinkTests.test_hardware_pin_exception_does_not_hide_version_name) ... ok
+test_missing_relative_file (test_repository_checks.RepositoryLinkTests.test_missing_relative_file) ... ok
+test_reader_aliases_rejected_but_real_source_targets_preserved (test_repository_checks.RepositoryLinkTests.test_reader_aliases_rejected_but_real_source_targets_preserved) ... ok
+test_actual_archived_primary_packets_decode (test_release_pairing.ReleasePairingTests.test_actual_archived_primary_packets_decode) ... ok
+test_arm_native_binary_damage_is_rejected (test_release_pairing.ReleasePairingTests.test_arm_native_binary_damage_is_rejected) ... ok
+test_bad_primary_magic_is_rejected (test_release_pairing.ReleasePairingTests.test_bad_primary_magic_is_rejected) ... ok
+test_bad_section_magic_rejected (test_release_pairing.ReleasePairingTests.test_bad_section_magic_rejected) ... ok
+test_declared_algorithm_fingerprints_match_runtime (test_release_pairing.ReleasePairingTests.test_declared_algorithm_fingerprints_match_runtime) ... ok
+test_firmware_source_and_register_contract (test_release_pairing.ReleasePairingTests.test_firmware_source_and_register_contract) ... ok
+test_identity_mismatch_is_rejected (test_release_pairing.ReleasePairingTests.test_identity_mismatch_is_rejected) ... ok
+test_section_driver_configure_and_snapshot_stays_in_window (test_release_pairing.ReleasePairingTests.test_section_driver_configure_and_snapshot_stays_in_window) ... ok
+test_truncated_primary_is_rejected (test_release_pairing.ReleasePairingTests.test_truncated_primary_is_rejected) ... ok
+test_undeclared_section_does_not_create_mmio (test_release_pairing.ReleasePairingTests.test_undeclared_section_does_not_create_mmio) ... ok
+test_wrong_arm_architecture_is_rejected_even_with_matching_digest (test_release_pairing.ReleasePairingTests.test_wrong_arm_architecture_is_rejected_even_with_matching_digest) ... ok
+
+----------------------------------------------------------------------
+Ran 39 tests in 0.597s
+
+OK (skipped=1)

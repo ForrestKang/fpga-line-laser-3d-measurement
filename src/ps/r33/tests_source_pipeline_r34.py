@@ -1,5 +1,6 @@
 """Bounded source-sealing pipeline and shutdown tests; fake hardware only."""
 import hashlib
+from functools import partial
 import json
 from pathlib import Path
 import queue
@@ -9,6 +10,7 @@ import threading
 import time
 import types
 import unittest
+import zlib
 from unittest.mock import patch
 
 from . import replay
@@ -177,14 +179,23 @@ class SourcePipelineTests(unittest.TestCase):
         self.assertEqual(set(ledger.snapshot()), {0,1})
 
     def test_actual_source_bytes_and_descriptors_equal_serial_reference(self):
+        self.check_source_and_serial_reference('identity')
+
+    def test_zlib_source_bytes_are_shared_and_decode_to_original(self):
+        self.check_source_and_serial_reference('zlib')
+
+    def check_source_and_serial_reference(self, raw_encoding):
         values = fixture()
         ledger = replay.AdmissionLedger(2**30)
         stop = threading.Event()
         ledger.reserve(0, replay.capacity_budgets(8)[0], stop)
         output = queue.Queue(4)
-        stage = replay.SourceSealer(SourceSnapshot.create, ledger, stop, threading.Event(), output, [])
+        factory = partial(SourceSnapshot.create, raw_encoding=raw_encoding)
+        stage = replay.SourceSealer(factory, ledger, stop, threading.Event(), output, [])
         packet = (0,values['raw'],values['frame'],values['primary'],dict(values['receipt']),0,0,0,0,0)
-        expected = FrameResult.create(**values)
+        serial_source = factory(**{key: values[key] for key in ('raw', 'primary', 'frame', 'receipt')})
+        expected = FrameResult.from_source(serial_source, measurement_xyz=values['measurement_xyz'],
+            preview_xyz=values['preview_xyz'], metadata=values['metadata'])
         stage.submit(packet)
         stage.producer_done.set()
         stage.start()
@@ -193,9 +204,20 @@ class SourcePipelineTests(unittest.TestCase):
         actual = FrameResult.from_source(ready[10], measurement_xyz=values['measurement_xyz'],
             preview_xyz=values['preview_xyz'], metadata=values['metadata'])
         self.assertEqual(actual, expected)
-        self.assertIs(dict(actual.components)['raw'], values['raw'])
+        saved_raw = dict(actual.components)['raw']
+        if raw_encoding == 'identity':
+            self.assertIs(saved_raw, values['raw'])
+        else:
+            self.assertEqual(zlib.decompress(saved_raw), values['raw'])
+            self.assertIs(saved_raw, dict(ready[10].components)['raw'])
         for name, size, sha, crc in actual.descriptors:
-            self.assertEqual(sha, hashlib.sha256(dict(actual.components)[name]).hexdigest())
+            content = dict(actual.components)[name]
+            if name == 'raw' and raw_encoding == 'zlib':
+                content = zlib.decompress(content)
+            # V2 descriptors bind logical bytes, not compressed transport bytes.
+            self.assertEqual(size, len(content))
+            self.assertEqual(sha, hashlib.sha256(content).hexdigest())
+            self.assertEqual(crc, zlib.crc32(content) & 0xffffffff)
 
     def test_cli_default_on_and_serial_ab_explicit(self):
         common = ['replay','--manifest','m','--input-root','i','--output','o','--target','T05']

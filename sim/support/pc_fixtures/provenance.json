@@ -1,0 +1,57 @@
+{
+  "scope": "historical replay/test inputs, no current board commands or transferable authority",
+  "files": [
+    {
+      "path": "sim/support/pc_fixtures/stepped_records.out",
+      "restore": "pl/direction_tests/evidence04/T05_000.out",
+      "size": 147180,
+      "sha256": "664020c44c28e41ee87a10e1d96481e7d449cab17aead3abf5f07505dbca969f",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\pl\\direction_tests\\evidence04\\T05_000.out",
+      "derivation": "unchanged_file"
+    },
+    {
+      "path": "sim/support/pc_fixtures/stepped_summary.txt",
+      "restore": "pl/direction_tests/evidence04/T05_000.summary",
+      "size": 80,
+      "sha256": "7b7635581c439305b66a41509ff3b83b5b05f686c132dda5c929bb62bfff731f",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\pl\\direction_tests\\evidence04\\T05_000.summary",
+      "derivation": "unchanged_file"
+    },
+    {
+      "path": "sim/support/pc_fixtures/stepped_primary.bin",
+      "restore": "pl/wrapper_tests/evidence02/T05_000.primary",
+      "size": 76204,
+      "sha256": "4db96bd4ef88bf161e8e001a919c15cd2c61c846fb4993be3473170adeb15837",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\pl\\wrapper_tests\\evidence02\\T05_000.primary",
+      "derivation": "unchanged_file"
+    },
+    {
+      "path": "sim/support/pc_fixtures/empty_primary.bin",
+      "restore": "pl/wrapper_tests/evidence02/empty.primary",
+      "size": 33024,
+      "sha256": "ca4ce4b9a13aff54c59dcd11052ad79a20e2e7e2b35c27d68af057bc8fb0ef60",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\pl\\wrapper_tests\\evidence02\\empty.primary",
+      "derivation": "unchanged_file"
+    },
+    {
+      "path": "sim/support/pc_fixtures/stepped_cylinder_journal.r33j",
+      "restore": "test_fixtures/source_baseline/board/r33_formal_v14_T05_rep1/storage/frames.r33j",
+      "size": 2029731,
+      "sha256": "fffcca11853447b19d552078331b202f4dce60c2e9fa36ede2a6bebe1bde7915",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\board\\r33_formal_v14_T05_rep1\\storage\\frames.r33j",
+      "derivation": "unchanged_complete_prefix_transactions",
+      "transactions": 2,
+      "frames": 4
+    },
+    {
+      "path": "sim/support/pc_fixtures/vase_journal.r33j",
+      "restore": "test_fixtures/source_baseline/board/r33_formal_v14_T06_rep1/storage/frames.r33j",
+      "size": 2514534,
+      "sha256": "91b8246d622083b7afb102911b7c97ed69f75bc524773abf22ca766eeda4dcdd",
+      "origin": "D:\\Workspace\\CodexWork\\scan3d_r33_full_pixel_20261025_01\\board\\r33_formal_v14_T06_rep1\\storage\\frames.r33j",
+      "derivation": "unchanged_complete_prefix_transactions",
+      "transactions": 2,
+      "frames": 5
+    }
+  ]
+}

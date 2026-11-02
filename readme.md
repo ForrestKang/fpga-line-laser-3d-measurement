@@ -85,10 +85,10 @@ python -B skill/test_pynq_release_check.py
 ```powershell
 python -B build/restore_sources.py --output ../scan3d_work
 python -m pip install -r sim/requirements_pc.txt
-python -B sim/run_runtime_tests.py --work ../scan3d_work --output ../scan3d_pc_results
+python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_results --cc gcc
 ```
 
-输出目录必须尚不存在。完整命令、RTL依赖与预期结果见[快速开始](docs/getting_started.md)。
+完整软件回归需要本机C编译器；依赖包括OpenCV，用于真实图像和显示测试。构建出的主机动态库仅用于电脑验证，不能复制到ARM运行。输出目录必须尚不存在。截面195包与整板RTL矩阵的复现命令见[快速开始](docs/getting_started.md)。
 
 ## 当前交付状态
 
@@ -96,11 +96,13 @@ python -B sim/run_runtime_tests.py --work ../scan3d_work --output ../scan3d_pc_r
 |---|---|
 | 源码、接口、恢复与构建入口 | 已归集，可从新目录恢复 |
 | 包完整性与离线发布检查工具 | 已验证；CI只检查这一范围 |
-| 继承的ARM业务回归 | 69项中61通过、7失败、1跳过 |
-| 固件 / runtime配套 | bit/HWH匹配，2项runtime guard仍不匹配 |
-| RTL / 整板 / 板端 | 原始证据保留；本次文档整理未重新运行 |
+| 软件修复 | 修复旧Mock协议字段与故障注入检查；默认质量读取PL摘要，Raw饱和统计改为显式诊断 |
+| 完整软件回归 | 已提供全部runtime测试入口；最终实跑结果见[验证汇总](report/release_validation.json) |
+| 固件 / runtime配套 | 11项离线配套测试、27个归档primary子例通过；新软件绑定独立记录，旧清单保留 |
+| 截面RTL | 182帧历史原图和13个合成输入，共195包逐位对照通过 |
+| 整板RTL矩阵 / 实现 / 板端 | 矩阵结果见验证汇总；本轮没有重新布局布线或上板 |
 
-**这是带完整证据与已知问题的交接候选，不是无条件可直接上板的发布版。** 已知问题、影响与复验步骤见[known_issues.md](docs/known_issues.md)。原清单、失败记录和历史分支均保留。
+本轮只在电脑修复与验证。45份非生成硬件构建输入、bit/HWH及旧源码冻结记录保持不变；当前软件组合见[运行时验证记录](board/firmware/runtime_validation.json)。已知问题及现场复验范围见[known_issues.md](docs/known_issues.md)，旧清单和失败记录继续保留。
 
 ## 仓库导航
 

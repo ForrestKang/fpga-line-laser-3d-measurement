@@ -1,0 +1,166 @@
+{
+ "passed": true,
+ "cases": [
+  {
+   "case": "empty",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 31
+  },
+  {
+   "case": "one_point",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 37
+  },
+  {
+   "case": "flat",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 6209
+  },
+  {
+   "case": "step",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 37577
+  },
+  {
+   "case": "step_gap",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 38028
+  },
+  {
+   "case": "groove",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 40408
+  },
+  {
+   "case": "reversed",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 115418
+  },
+  {
+   "case": "over_16_segments",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 62699
+  },
+  {
+   "case": "over_1024_points",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 106531
+  },
+  {
+   "case": "sequence",
+   "packets": 3,
+   "simulated": 3,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 38028
+  },
+  {
+   "case": "flags",
+   "packets": 1,
+   "simulated": 1,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 20844
+  },
+  {
+   "case": "r37_r41b_live01",
+   "packets": 9,
+   "simulated": 9,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 37343
+  },
+  {
+   "case": "r37_r41b_live05",
+   "packets": 5,
+   "simulated": 5,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 6993
+  },
+  {
+   "case": "r37_r41b_live06",
+   "packets": 27,
+   "simulated": 27,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 14939
+  },
+  {
+   "case": "r37_r41b_live07",
+   "packets": 26,
+   "simulated": 26,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 7796
+  },
+  {
+   "case": "r37_r41c_live01",
+   "packets": 26,
+   "simulated": 26,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 10837
+  },
+  {
+   "case": "r37_r41f_live02",
+   "packets": 23,
+   "simulated": 23,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 13823
+  },
+  {
+   "case": "r37_r41f_live03",
+   "packets": 29,
+   "simulated": 29,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 8174
+  },
+  {
+   "case": "r37_r41g_live01",
+   "packets": 17,
+   "simulated": 17,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 28391
+  },
+  {
+   "case": "r37_r41g_live02",
+   "packets": 20,
+   "simulated": 20,
+   "mismatches": [],
+   "mismatch_count": 0,
+   "max_solve_cycles": 16795
+  }
+ ],
+ "packets": 195
+}

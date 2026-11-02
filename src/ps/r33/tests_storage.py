@@ -15,7 +15,7 @@ from unittest.mock import patch
 
 import numpy as np
 
-from .protocol import HEADER_FIELDS, FINGERPRINT, assemble, identity
+from .protocol import HEADER_FIELDS, FINGERPRINT, assemble_r33 as assemble, identity
 from .storage import (AsyncWriter, FrameResult, StorageError, readback,
                       HEADER, TRAILER, NAME, MAX_BYTES, FORMAT)
 

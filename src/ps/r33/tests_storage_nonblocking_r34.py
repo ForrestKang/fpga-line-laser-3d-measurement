@@ -6,6 +6,7 @@ import tempfile
 import threading
 import time
 import unittest
+import zlib
 
 from .storage import AsyncWriter, FrameResult, StorageError, readback
 from .tests_storage import fixture
@@ -175,7 +176,9 @@ class NonblockingAdmissionTests(unittest.TestCase):
         values['metadata']['frame_id'] = 999
         values['receipt']['assembled_sha256'] = 'changed'
         for name, blob in snapshot.components:
-            self.assertEqual(hashlib.sha256(blob).hexdigest(),
+            encoding = next(part[1] for part in snapshot.encodings if part[0] == name)
+            logical = zlib.decompress(blob) if encoding == 'zlib' else blob
+            self.assertEqual(hashlib.sha256(logical).hexdigest(),
                 next(part[2] for part in snapshot.descriptors if part[0] == name))
         self.assertIs(writer.retained_on_failure[1], snapshot)
         self.assertEqual(writer.counters()['persisted'], 0)

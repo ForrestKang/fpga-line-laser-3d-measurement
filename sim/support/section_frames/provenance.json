@@ -1,0 +1,1413 @@
+{
+  "scope": "Unchanged historical static captures for offline section RTL regression; no current board execution",
+  "frames": 182,
+  "files": [
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/calibration_live.json",
+      "size": 1434,
+      "sha256": "87486b6b6c2c378d19f4bcadccc6446bb604588d16835fa79fdb90665a2d0120",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/status.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/status.json",
+      "size": 2870,
+      "sha256": "22ca93633d60f4db1a8a410f2fa225bcff219d42a613f433b8b197eefca12aa8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000000.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000000.gray8",
+      "size": 360960,
+      "sha256": "85fadcbfc2eeec0ae1fd58900e416b7346025c5e783f4a15fe251900a5cc2c2e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000000.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "fc3d06cc0b28fe6dbb5a607ee39187dc853195dc1f78a42959173520a6cde6da",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "bbad0ca2be2f9c07074ac2b9cb8e98dbe3c2a13f49892da7ab08c5241548f2c1",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "8a7260e233e46e61a78d0b62c88d84793e2c3fa487016b55756dd723919b9819",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "bb6ce8294a7a301c9b4b28b5e8be2fb423118995a05906989851f4d8530c7cf0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "7a76e75c1c8260bf44172fd307185c648ddcf71209e82c7ef2956f8bcbfba5ee",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "4ed421dd8311e61a960cb3ee37e24455518a82ad23f6594c48c065be490dd714",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "c45a0de5a6644aa31ce9cae87f117d8894655b6632d796ee783c37d69cb187e2",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live01/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live01/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "e26d06f862341dfb1c23011f1cb17600a1388b3e534c19c7a9ae6d38134590bf",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live01\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/calibration_live.json",
+      "size": 1434,
+      "sha256": "cdfe8a9f58123b0283e491c8cce45e235ca11de74ab0d8f3b0fd126b0939e9e8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/status.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/status.json",
+      "size": 3441,
+      "sha256": "85b32834c21312f9a018319db4643fa2b5a5adf84e8e01cc00662bdf81914f13",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "e9a4d7ede133ac79439099f49ed1b0edbaa39ba2c6bf627357800be1ffe47ef7",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "d1d0a9cc3e8c6601f95f39814fa54e3e8deb77bffb7e567cd48cf150e5aee008",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "9c0fa776f0a89f8b90b50edc5433a70786618f960f76dadcd156c8b9b9a212b2",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "50435efabbd7a63d5c26ef46d3114d94555a628dc519d2af559ee3a4ee84d733",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live05/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live05/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "144a95d6058b2e2e5d85e2ef1f44041c8578b543a18e0e13cbcd51f8093e9853",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live05\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/calibration_live.json",
+      "size": 1434,
+      "sha256": "a4a4a58905fee40e32fd32f5b7e9ec47cce5ae91cabc200431950bea5382e4a4",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/status.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/status.json",
+      "size": 3752,
+      "sha256": "e541a7ca326bf7f578626f032bdcfc40e40eb7afc8a12210fc332b15f83e6f57",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "291ef51e71d53f0e150daa485ba54705916430125d35bd7ded9dd628ac9fdd22",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "558475fb61107fb9acecaa878332fdcac4bfe8b7114bc60a46e1de926e4a4550",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "966af6c0d88a026a1552a693e89bcbd6adf6edfcf0236687d708117e84d9f98d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "d5f9b3d78b3ff99fd71c4a4c7192cc861548043709ac9b0b3a3c7134c2fd1d9c",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "655bc3bd4cd614b5fc98ecfeaf05d9821c42928ad3ff558a740064bf4a67ed06",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "1f63464a168dfb00c46896b4b08f3654f877891c13fd1797bd6d5accf09d295b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "1a496f9f391906a7eebcb74513e45120d939f7aa3209cc71ea27403e9ea36ef2",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "a70342053e0e5c891a4a1a74c3a8758299fd469390a1d9e83cae3a60688cd1d7",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "649cd0015d49d8219b540c8a30481b4ddc828be15b886655ace8ca2b86a5ba97",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "bd1b284be9c0b3cb6e81752e284a00f9f3ea4dc1772e431e9d5ce31f2104dfdb",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000300.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000330.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000330.gray8",
+      "size": 360960,
+      "sha256": "1e587b2472a5fd4d022573f0d29cb8037988ec04de79cfbf6730e82117740ced",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000330.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000360.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000360.gray8",
+      "size": 360960,
+      "sha256": "0bb498b422a19c0e33cc6ffd422e87f72aca2f5f9a7521d99ac823f5abd322bb",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000360.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000390.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000390.gray8",
+      "size": 360960,
+      "sha256": "f818e1cfa10a197da6dd46998905889c379f27645f82fdc0a407a43ce36c479e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000390.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000420.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000420.gray8",
+      "size": 360960,
+      "sha256": "56817aefc8446514ca02a89ac9af2e3a97c14570001ca7b9ceaa8d6f36ae19a6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000420.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000450.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000450.gray8",
+      "size": 360960,
+      "sha256": "697a82c2ebb1c2a7cc4f70566c5009fc99754641fcbc94c6cd6d87bc4a6380a7",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000450.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000480.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000480.gray8",
+      "size": 360960,
+      "sha256": "8f44e9608a3be860a72735896ef53926ed7e8b068702d64a330ef25e93b27f99",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000480.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000510.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000510.gray8",
+      "size": 360960,
+      "sha256": "b843f46dbc4a235245281e5ef83699f76ef9e5a90e6023ee17cd3d201bef5b60",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000510.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000540.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000540.gray8",
+      "size": 360960,
+      "sha256": "6362a2eef9860f2b78e6168beaf70e231c340bcb9cb7ca9a466964b6f2db2a30",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000540.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000570.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000570.gray8",
+      "size": 360960,
+      "sha256": "1828e5f8a9b468f12c9766a1314c0b9262597a8a1b512553f70faaee7f03304e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000570.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000600.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000600.gray8",
+      "size": 360960,
+      "sha256": "208596b071cbe6dec98852fd22e59d49581a050c65cbb6a4b101c0404cc495bc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000600.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000630.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000630.gray8",
+      "size": 360960,
+      "sha256": "7261d11cabb20d40cb98751f18d0404175a7ef0a7d136db8394280d1d7b48e86",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000630.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000660.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000660.gray8",
+      "size": 360960,
+      "sha256": "93243b0eadffdce1600c2c06108b3b5a26239c0de8fc60bdcc3e729dc36e79bc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000660.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000690.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000690.gray8",
+      "size": 360960,
+      "sha256": "f3c7d482a7811c9f1faf8c4c01b547b11657a39e62202ab5fbefbbfcc9cdb4ee",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000690.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000720.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000720.gray8",
+      "size": 360960,
+      "sha256": "86ac1e664d1e756862028d65af029d2f85e433af9f49c1bcad68638d3d394afa",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000720.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000750.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000750.gray8",
+      "size": 360960,
+      "sha256": "31a5ebcf21d200e157f21e92ba0638e2ee8ac2e4aa3eab5fd27942059dbc4261",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000750.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000780.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000780.gray8",
+      "size": 360960,
+      "sha256": "5ef1578efb0c97967d153068e314945b00dd5b49a56bac529d9f99a225d0fe50",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000780.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live06/raw_000810.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live06/raw_000810.gray8",
+      "size": 360960,
+      "sha256": "e7953614add18b1c40067dacb7123db7f96355480888f7ff1b3eff7b9c8bebd0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live06\\raw_000810.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/calibration_live.json",
+      "size": 1434,
+      "sha256": "dc04e716825ff97095b0c445406dc53acd116e91ca9a46c5cdbae3a964e2b342",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/status.json",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/status.json",
+      "size": 3791,
+      "sha256": "a142a28dd488beaa22dd612605bffcd509db199b27a271fc8375e2e70d12f0a9",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "7d14f603a7cb4435d479a6f78166c98e22218b85dae61ec60e93b2da52fb47d4",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "4dbe3b957ed17bfc8f7786cd5fe2fce31d5695242103d9f455adf6d6cd08e5e7",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "9d0a90f233c21fdb06f3caa5bde685eeab23a3ec5dc86d3705e9e20890a3b277",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "7cad244b94b345f8cc59c5e6ca42c82b73ffe4ade5aba5cd26536c59e90c4f01",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "6d24cceaa3f8f6cb3e00f3539d147d6a33506408ddf9c5e6760f5a42b5036825",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "351abd8b4098586cadf9f55e74fcaf45ea55a8c4ff6d497e41e57a3925c0c83e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "bbdf9a723023b047a8c3eee4d1d4223559b20ed9833317ce5e59a553a67deb80",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "cb30564acbd5067f2e6abb3d7612df4be1b28b030d9e48024b4a27b11e4a3bc8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "2f257b0eca42167d76cc9f256a3d4365466bfa60bc99a00b230e8be01a9aa9e8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "7cde45f7e7565719c16ed992f01d99c53e2b0dc8bd7217a6f1577995bfd6b7c3",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000300.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000330.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000330.gray8",
+      "size": 360960,
+      "sha256": "62cf6e055a5b9b4e5573a49d6446f1c08f33386570eb93bf82676e94f99e7c1e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000330.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000360.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000360.gray8",
+      "size": 360960,
+      "sha256": "0135814d9bfa5671f87066e4b6ee18858ec6c03c665ede73ca95faa0587029af",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000360.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000390.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000390.gray8",
+      "size": 360960,
+      "sha256": "2accd1861951edc3740c2b0fe44b7a75986672b851768d157bfc2cf7385723be",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000390.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000420.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000420.gray8",
+      "size": 360960,
+      "sha256": "ad82f4cc0f97bd01bf296481cfc62e3dfd4989e9b62efe493d2587e98a61f5cb",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000420.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000450.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000450.gray8",
+      "size": 360960,
+      "sha256": "68e7c62710c0e18c6bda11e089c417fc17692bd139ebb57823ebd40780b87f9f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000450.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000480.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000480.gray8",
+      "size": 360960,
+      "sha256": "01a46f8a5e89d1be3aa263f2d53d3fef1c09bc33687091b0c063a8c7df15e1bd",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000480.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000510.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000510.gray8",
+      "size": 360960,
+      "sha256": "4b6ae1dab74f9b3e774cfea1904e363a09601fe48c0d6b1d6e9d8bfbbbcd3ac6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000510.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000540.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000540.gray8",
+      "size": 360960,
+      "sha256": "361dd8dfb1f54da53668b35b713715bff09f42eee700a8c7a47a8cbd2d201cc8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000540.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000570.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000570.gray8",
+      "size": 360960,
+      "sha256": "24f3e4115194b0a694386013a255b62fa5cd4529b408da97763cf16bb5a30e80",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000570.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000600.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000600.gray8",
+      "size": 360960,
+      "sha256": "d54bd76833ee259e361461428cc2d3442df81d0d05c2eacedc238d3c69cf4535",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000600.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000630.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000630.gray8",
+      "size": 360960,
+      "sha256": "fc1d074863ca58750dc9a305692d660f039533242f45089ef328d8645978fc08",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000630.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000660.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000660.gray8",
+      "size": 360960,
+      "sha256": "6daa553042e58badf4c4e85a8ca2edd33b6099ba1d570803e5bbfffe5507a2e6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000660.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000690.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000690.gray8",
+      "size": 360960,
+      "sha256": "3af42abe04e7e71116214daecc284b89913d7e304ad0042eb7b836f64d2e01eb",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000690.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000720.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000720.gray8",
+      "size": 360960,
+      "sha256": "e3a75d703bc37c8b4f8735bedfe6166909ffacfed86f6fd41706f1422a3869b3",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000720.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000750.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000750.gray8",
+      "size": 360960,
+      "sha256": "3a1014accab06d855f573f9aabc3ca99f73cac7fa3b2ca89127bc68ad3715836",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000750.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41b_live07/raw_000780.gray8",
+      "restore": "fpga/verification/section/board/r37_r41b_live07/raw_000780.gray8",
+      "size": 360960,
+      "sha256": "4af92455113cbf164d4e306cc80eff1dbcbbe6007fd0ac1758419f228312d6e9",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41b_live07\\raw_000780.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/calibration_live.json",
+      "size": 1432,
+      "sha256": "7de199b0d3b3cf9622a105f51bd1b1b306f8f2a07621b6adf788cda244807c11",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/status.json",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/status.json",
+      "size": 18088,
+      "sha256": "5d7a81a011bb716febafa036fd42263b43dc0533c5c5432e2f65f8650ab68f95",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "274c2d2056df22f532940a8219889526c3b79b1ce939a70ebfb2df03f98a1c9f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "1eaf76e3f9967750b7cec2f3a1cc90adac918f361d8c692a51f6315d1f1f45d5",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "4976110cf906775da1f2a826a70f4a12ade934c4ac789614bb38037c73a2bc87",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "e16aef0f672a6c3d9f5826095acaae8abfdffa65b1b0ac4161634af8bbd8e55d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "bb7ad8ffdbc1e6128a4f2e67c22caefab1e263400ed9fe7b23c6974c7f8e113a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "2558c9e778ed24a53519377d23c926394546cd5babaf07b3a4061b6001e6d6a8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "320423d35ae88c86d0abbf6b8afc0a943b58c29855d28582300a8fd3704d191b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "9c072bd5004720c113787ee94b2ec91ba2e866a0136a4452c81987545e47043d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "9605f1cdbccfbca1902e792464cbdb8b1c88fe3e7d8b925d9655148895c1daf6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "578a4349e6089eccf66e330852c05f3a8d0c45e9ba2d13b78fe186f32116084e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000300.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000330.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000330.gray8",
+      "size": 360960,
+      "sha256": "9887ffa9eead4e761f91ff3145bb2a8da030910b2cbd717da940445ebb3f8639",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000330.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000360.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000360.gray8",
+      "size": 360960,
+      "sha256": "4e7952175e9f443e41c2da320a78474a1a0d61ccbfb3c08b74237568e04ec75f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000360.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000390.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000390.gray8",
+      "size": 360960,
+      "sha256": "4cc88658bf2c829c4a15f23f63a885d70d0a3915517d240486f380f5a270c5db",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000390.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000420.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000420.gray8",
+      "size": 360960,
+      "sha256": "e23747e8d12548a95d2440431e85e51ae546255b86bf9505c28405e06c5d6709",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000420.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000450.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000450.gray8",
+      "size": 360960,
+      "sha256": "e5021ec0c0f7001f41bf394d09be848ec854dd615cbe27a6c4030099d1b079b0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000450.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000480.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000480.gray8",
+      "size": 360960,
+      "sha256": "de769aefa26ceacd44fe2df1f964de4f1b527eb26294acbf7eea31d26a6f9124",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000480.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000510.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000510.gray8",
+      "size": 360960,
+      "sha256": "709d871d078c7197ccb96ed95005a221bfde89388dadf5869b24c9883255bc98",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000510.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000540.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000540.gray8",
+      "size": 360960,
+      "sha256": "748b14815f4b9ac17dc56fa1918df99b50218e4777d2362fe59a473e7200c2f2",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000540.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000570.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000570.gray8",
+      "size": 360960,
+      "sha256": "d8651c6599caa37b54f294df7cbe41efd0554b299184fcbc425c6436bb7720e4",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000570.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000600.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000600.gray8",
+      "size": 360960,
+      "sha256": "ebaf2817746dd0fce48a0e431160c933c320391b41b9fd85ed4c627e4ab2a35a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000600.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000630.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000630.gray8",
+      "size": 360960,
+      "sha256": "b4c6a69175cd555205989a41efadebf87049aa9e187421722ba9277b8316932f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000630.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000660.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000660.gray8",
+      "size": 360960,
+      "sha256": "50c7b723e237fa12f4f81611f9675a22bd2be09834fbe7fea9968ff86f002203",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000660.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000690.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000690.gray8",
+      "size": 360960,
+      "sha256": "7492adf52b90b0837fbe61265a418e8796d0c544d4994f4f369ac412bea2d448",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000690.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000720.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000720.gray8",
+      "size": 360960,
+      "sha256": "6a4302c595d4abe3e1778207a4311c59612b8f0bd88216e35e1ec613bac30bb6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000720.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000750.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000750.gray8",
+      "size": 360960,
+      "sha256": "23a9f3ff18c64d21dcefb2cf2d233d46680401d08542d12a257ebc33c6ddaa61",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000750.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41c_live01/raw_000780.gray8",
+      "restore": "fpga/verification/section/board/r37_r41c_live01/raw_000780.gray8",
+      "size": 360960,
+      "sha256": "679b5795697fd48e9358f0630dfa5bbdb422ec047762c21f5e7f00c466f2c833",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41c_live01\\raw_000780.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/calibration_live.json",
+      "size": 1434,
+      "sha256": "3c91adc9850491475f28466a5275c30ace7e99dca500f156b412b51c9d30dfb3",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/status.json",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/status.json",
+      "size": 29011,
+      "sha256": "8ef63f602ad9f09adaf2c2a78c895e22023a1857fbbf1b882b7d2adb2cefadf0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000015.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000015.gray8",
+      "size": 360960,
+      "sha256": "05ae299246664d0c0c6115eec1e023368608ff7edf1c9095c4d90b254f2e6fcc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000015.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "807d66f854b0169da303ea97b4b18abf169ef12d6d43754b83df33e90a614f7e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000045.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000045.gray8",
+      "size": 360960,
+      "sha256": "5cd9cab10e7ec091d822b508daa5329fc05801e5008514fdc17389bec70eb518",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000045.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "900f71c40d76293361c563f7564fc4c436d649f33658ff7598ee5b090dff4505",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000075.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000075.gray8",
+      "size": 360960,
+      "sha256": "b5b05c4dfc1b6bc77567d53ecfbbd230f723d17371e41ac7030506e9e9ecb929",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000075.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "bc7ff639897292d2de5fd6665f84dad7806f74205ad70038263fd529c564d4af",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000105.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000105.gray8",
+      "size": 360960,
+      "sha256": "8bebe63ce33f85d03e29d017e91fa2eeb83e037b7d983daa05c4c9f6a2f99235",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000105.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "8c89e819ba0f20f76c31727b6c1711f6999321682b3abf4c14cee3d6352c8611",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000135.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000135.gray8",
+      "size": 360960,
+      "sha256": "7e7644fbd99e4d2bc4917d14c7673c612af3d0dcde166155971bd8fa04aae26d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000135.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "6e83c207e4f583c8e411ea453a5ee2ed582962907a890d77eea6f58d040a80a6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000165.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000165.gray8",
+      "size": 360960,
+      "sha256": "b1032d504b772883c3317bea5cef287a0dad89575b9b243e2b11823c411f6758",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000165.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "62cf5bea83b880746bd4d47168cd7d8ecbb533c8d0db6c7450f6361b35da8932",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000195.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000195.gray8",
+      "size": 360960,
+      "sha256": "db5a8005e87a0e892859eb3d99d03830d83ce90439885e3ef1fce48b86ef62a9",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000195.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "4517972693e5446daa7fa6ee598ea97223fd59991af50a100536c81c87ef6087",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000225.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000225.gray8",
+      "size": 360960,
+      "sha256": "ef87da428f2e28aac8207aec07793cb644620b17309786d66e81a1fbafaa2f21",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000225.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "a97a4e029d46b2e4f29eccf1d6fe4de41173fc3be81ce83794cec50b9f0e5240",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000255.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000255.gray8",
+      "size": 360960,
+      "sha256": "103c7edd74d5465f7b7d87240fabe60bb0f2d43616b55ebf0374342d93cf1006",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000255.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "e46b7626bfc2e222fc8acec9bc732137d05693693fc2ca911ae706c858d3a32c",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000285.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000285.gray8",
+      "size": 360960,
+      "sha256": "344408fb66748968628c9151cadc3bb370cffe5475a5eff533eea00593b97d84",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000285.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "5a3ff895f8f339accb7f84fc72cc5e05348b903e6c67f38586bfc06727328e8f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000300.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000315.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000315.gray8",
+      "size": 360960,
+      "sha256": "4fa579cac3d3f57766373a2b2705c29fbbfb29ae67e048afc4e2a4d22acf5a37",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000315.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000330.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000330.gray8",
+      "size": 360960,
+      "sha256": "8ef2fe5ee8c0c552038072843615470f1c306b7ee4d6bfbc971c7f81bbdbdd85",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000330.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live02/raw_000345.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live02/raw_000345.gray8",
+      "size": 360960,
+      "sha256": "0af592e5e7c05727077c81ed1913ff232bf95238435bc2afdbccbfbb9c9842fc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live02\\raw_000345.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/calibration_live.json",
+      "size": 1434,
+      "sha256": "3c91adc9850491475f28466a5275c30ace7e99dca500f156b412b51c9d30dfb3",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/status.json",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/status.json",
+      "size": 24321,
+      "sha256": "10f97c08781363b779ad4e5c1f71a75f6e02fc653e016b0d9024c25ba5b0d4ef",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000015.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000015.gray8",
+      "size": 360960,
+      "sha256": "7df2e2673b926643a7f015a9f9306ee9cf0b075a02a2877df3e2d6a0c38a081b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000015.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "63e014f7edc4f5f10419c4ae623625934f673fbbea5bb5e767fd18dcb1b9eabf",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000045.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000045.gray8",
+      "size": 360960,
+      "sha256": "63add644e19071abe29f476f24cccffdf35dce3ba4c6fbea7a80c379f7343d53",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000045.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "bf70b4926b0a3bcc6508931019ae8cc965114af19d4988f786a221e9c16cd18e",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000075.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000075.gray8",
+      "size": 360960,
+      "sha256": "c5f9f92646868fa8a66b28239cc9eafa7de19c1d1ae3d366616d62d61bebac24",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000075.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "d39750bac6990586645463584de8d77b31faf6aae015365710d1ea9bed941cb6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000105.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000105.gray8",
+      "size": 360960,
+      "sha256": "9b1058e61b09e17d3db16ecbe1957898ddc237f43af9b48510e13518c3f7554f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000105.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "04d422e55498d537686149984c5ff1b71146c51cf99350b315b70577a8d24f83",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000135.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000135.gray8",
+      "size": 360960,
+      "sha256": "831dcfcc8db3145dd835c7414b5dd173c9b16c7badccd76f45b574a308c1f414",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000135.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "ba509339176013a5fc10fd009d0564b9d546f60255e91bd9ee1888be4d31ebdb",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000165.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000165.gray8",
+      "size": 360960,
+      "sha256": "250f301ad0a79dc934fa2e4111bad0cdd93af758f32664a90b2b8585491c4571",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000165.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "41e25f9c966e18d4d587b84a5faaef901c03195b960072b9f31b3cd0e9fe6a5b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000195.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000195.gray8",
+      "size": 360960,
+      "sha256": "396ce3245ae5499d169441e84b3dbc165c555f361c4737a0d7c0364cc64e8749",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000195.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "367031999d11094baf42c36c0640168df0575dead83a209215bbeedbc5b9582f",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000225.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000225.gray8",
+      "size": 360960,
+      "sha256": "0bf0a486ee8bd30154ee986618660c3d1e76f2f0d7e5a2730518a217bfe8fd8d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000225.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "0842514e787eb799db989502a067d624314fb5738965d160b791aae3bdb0cbf0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000255.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000255.gray8",
+      "size": 360960,
+      "sha256": "6037f889685c72e0cde813b2276df12cc26211478580ee730c287001b52475f6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000255.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "958becd1e43b5ed8948cfa910882e7c9b16682eb98c4e476c2594ec3e7299765",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000285.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000285.gray8",
+      "size": 360960,
+      "sha256": "37e6441ac8e9cbb751dcb4e7c36043e74a3ac8c67d5bcdd71822b54523aa4c5c",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000285.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "303f110670340dbb780af67ede3c70df23e6b559dda9db9307df5ac287a8b41b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000300.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000315.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000315.gray8",
+      "size": 360960,
+      "sha256": "b1498fc479acc6ecdaba8ca5af10eaa3232bc5d4185bc155590d02f15284a709",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000315.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000330.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000330.gray8",
+      "size": 360960,
+      "sha256": "8c23286e06be5befc090554fc32ab06465b93849f346bd0abb392b006aed9659",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000330.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000345.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000345.gray8",
+      "size": 360960,
+      "sha256": "ff5714fbea332b867a13c3c70d151f7ace9a12deb7bf2462aba1357b7a63b3f0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000345.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000360.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000360.gray8",
+      "size": 360960,
+      "sha256": "e3582da80e2171d7176b0051cc2da194941a3925c5f64f74343b67cf49e2cdfc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000360.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000375.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000375.gray8",
+      "size": 360960,
+      "sha256": "187363f3c6e99fa02c721494c0f7c2c0bada295d9e1b653be0f8fe8bd820ab09",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000375.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000390.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000390.gray8",
+      "size": 360960,
+      "sha256": "b4e62244054deb2ecd9487028aad8aa0d4feb97a8c9e34d904e95f424d3a49fc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000390.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000405.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000405.gray8",
+      "size": 360960,
+      "sha256": "a9cc4d9873eb49755da8bd11dff281279507e7cc6928a7f60aed1c4c25529f6a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000405.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000420.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000420.gray8",
+      "size": 360960,
+      "sha256": "04477e898bdddfb5419140b2a26d8cbc5bfeb4fa9b961daba99362b314e19597",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000420.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41f_live03/raw_000435.gray8",
+      "restore": "fpga/verification/section/board/r37_r41f_live03/raw_000435.gray8",
+      "size": 360960,
+      "sha256": "7c4b716b55a4be981046bbf5ab0808d3428273c178bf51226f075efe66a6f7c7",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41f_live03\\raw_000435.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/calibration_live.json",
+      "size": 1434,
+      "sha256": "f03197b5b006f06df59b8b82fc95aa0e08766c4a5f659f4741b1f91700ad59d4",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/status.json",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/status.json",
+      "size": 31994,
+      "sha256": "3356bafe7a42e140ad5b98ad99f86715da0bf88578d8bf23f8b8a641a5972b05",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000015.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000015.gray8",
+      "size": 360960,
+      "sha256": "daae8fbd0553d9291d44df486b0528bc3db33c19ec4ad928a07e015ca5780bc9",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000015.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "00eec98d22abb3e90d7934b54e3e765f709aa65748107cc42683f8f2ab7fdb8b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000045.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000045.gray8",
+      "size": 360960,
+      "sha256": "9016ea5d08ab3ac93eecfc204f69b5d234165f3c05c0cce93d7da2df9161a687",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000045.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "b1d22453581532dd7dc0a0111f18a9d626f7cabcc6cc9765fe48622823e06b0c",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000075.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000075.gray8",
+      "size": 360960,
+      "sha256": "5c0852dd5999da7ebee0cb5ebb30e9dc0cc07db3fa1eac56d818184ff228d183",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000075.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "f0327622895763a76e2c9b73a81b1d56cbcc7078688fd27ab7fecbd6d362e479",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000105.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000105.gray8",
+      "size": 360960,
+      "sha256": "f808a369aa92cd08170f6826e0a06e0ec1b60815a34cccdd987bc4fd27158c0a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000105.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "5ff6f746c03299577d414f48d5b51aca19f26d29380c0bf89afbd04e4f886eb0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000135.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000135.gray8",
+      "size": 360960,
+      "sha256": "364fd5b84843f5d8a04883fcb7a80c7b248a137688bea30bf6fc08393b5773df",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000135.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "a930ba950572155d93a0ef048c17c9b89c3c9475ac7b482194ff88526fd60db0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000165.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000165.gray8",
+      "size": 360960,
+      "sha256": "9759a26bae5b6eee1446341a9bcd5d9bd1a31afc4c7b3be8d41b15abc4c1a607",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000165.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "6bce4864e1643d93b6a9edca5419f80be53abbdcb528ab91da400347d3cc51fc",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000195.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000195.gray8",
+      "size": 360960,
+      "sha256": "5c043985f40091f0925ee3686627c78aab08fc4162ce53b916c4b056537c4a3a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000195.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "539b52d13bcbb7c66cbd3db9b6b7676bf4d64d3a32591e3c29b98cb3215dff4d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000225.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000225.gray8",
+      "size": 360960,
+      "sha256": "22ebe6d69d1058d4447cb278cf8e9bc2a5277e3ed29f5ee4284bb258e4431f09",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000225.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "a1e79fa9f1ac73a34fa1e4b2e16bf00bc5fdc6730d21526a6afbd7395db13b61",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live01/raw_000255.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live01/raw_000255.gray8",
+      "size": 360960,
+      "sha256": "968c8e94a497b7181b67bf9b851f2c3e25489a4686cbe530f56e81a28c246b37",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live01\\raw_000255.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/calibration_live.json",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/calibration_live.json",
+      "size": 1434,
+      "sha256": "f03197b5b006f06df59b8b82fc95aa0e08766c4a5f659f4741b1f91700ad59d4",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\calibration_live.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/status.json",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/status.json",
+      "size": 30206,
+      "sha256": "06805f5fdd983d7b2ed58d6123b646a418f1ff44585b5896947f92dc91591ea6",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\status.json"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000015.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000015.gray8",
+      "size": 360960,
+      "sha256": "b744fab97d8f16d55d90981d86bab0f74adb3382af7419f5055e9c2130b08c7b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000015.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000030.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000030.gray8",
+      "size": 360960,
+      "sha256": "94b5dd6f7eb168576b1d6a7f2783f1ae9d8797cb69b4d6cffbb1b6773dae5734",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000030.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000045.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000045.gray8",
+      "size": 360960,
+      "sha256": "a3df54c4d106902ec6ed84a0a2e698a299bf0f360c95dff1817363ef8bb147e0",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000045.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000060.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000060.gray8",
+      "size": 360960,
+      "sha256": "dd65dd07a53e12e5abf3e43d464015c74ee51912d39325d403b3b9da11e29e1a",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000060.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000075.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000075.gray8",
+      "size": 360960,
+      "sha256": "089554ec881233dadd243b180613c334f1d3a2a856c4c2fb965b60870b86385c",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000075.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000090.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000090.gray8",
+      "size": 360960,
+      "sha256": "354199ffb3021276184a3a3e161f5ac3d5fe35ecc1d9336fd09934ebbee07238",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000090.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000105.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000105.gray8",
+      "size": 360960,
+      "sha256": "62494933039c5dedc160f36c19080545349bd5eef2340d524fde8d144a2bb244",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000105.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000120.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000120.gray8",
+      "size": 360960,
+      "sha256": "80660d04fb36285c59f219f323197b15b2be619a64f6c97e8c0b03134a6fd040",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000120.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000135.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000135.gray8",
+      "size": 360960,
+      "sha256": "33c8890d430b05b5bdc8da4787f9e3370e0fccb675350640430007d7672810cd",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000135.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000150.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000150.gray8",
+      "size": 360960,
+      "sha256": "7137396f6297cb2354b8b8d3c56249a8deebd2744bd365c935da4747aeef3e40",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000150.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000165.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000165.gray8",
+      "size": 360960,
+      "sha256": "f2935cf5105cf9e84b015d00096eb47a478d6b1c24365692eec32ec23f238e08",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000165.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000180.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000180.gray8",
+      "size": 360960,
+      "sha256": "763c7e99a5c9f86c5f559697a274a1db9cf87b54711d89a5924eaaf2a5d810ed",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000180.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000195.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000195.gray8",
+      "size": 360960,
+      "sha256": "cf91b05f70cc02662feabe0804b0bfe40e2ee2a82c7904236b8171244774e86d",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000195.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000210.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000210.gray8",
+      "size": 360960,
+      "sha256": "82cae94205267ec020de74ae4ffa8fea10a2ea210337ca816eb15c00c88f88c5",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000210.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000225.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000225.gray8",
+      "size": 360960,
+      "sha256": "f2156b65eecaa7df08621088205858780b8aa8a4cfdaa5795b9993f5641d3bdd",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000225.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000240.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000240.gray8",
+      "size": 360960,
+      "sha256": "67d553e556759c5218086fb78377c64c1d06a20c64d6ca04b0a09fa4a68daba8",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000240.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000255.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000255.gray8",
+      "size": 360960,
+      "sha256": "871e59e1282fe7198460038a4af8b7a55eb3c3b74a0c0a417cb40b7ce0732c14",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000255.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000270.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000270.gray8",
+      "size": 360960,
+      "sha256": "f7f4052219b8fe23be89119adc23e4eb65797658f21a57bcab82b35fcceeda85",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000270.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000285.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000285.gray8",
+      "size": 360960,
+      "sha256": "408ab79370aa0ae74e240c0a7b9a43bea8a2dd02aa6f38ff1cabf99d74c86b9b",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000285.gray8"
+    },
+    {
+      "path": "sim/support/section_frames/r37_r41g_live02/raw_000300.gray8",
+      "restore": "fpga/verification/section/board/r37_r41g_live02/raw_000300.gray8",
+      "size": 360960,
+      "sha256": "a17cd360e2ded199dedfa603b28558127ad34658096cfcc07e909832a91a2cbf",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_r37_cdc_threshold_20261026_01\\stageA13\\boardprep21_session_board31\\board\\r37_r41g_live02\\raw_000300.gray8"
+    },
+    {
+      "path": "src/fpga/tests/tb_section_measure.sv",
+      "restore": "fpga/tests/tb_section_measure.sv",
+      "size": 3250,
+      "sha256": "2a8a0169bd5e78c93948525a8dc4f4d7da4900b37d5fd7fa87de9c7c31366d89",
+      "original": "D:\\Workspace\\CodexWork\\scan3d_final_20261029\\tests\\tb_section_measure.sv"
+    }
+  ]
+}

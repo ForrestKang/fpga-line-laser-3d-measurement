@@ -8,7 +8,7 @@ from types import MappingProxyType
 import numpy as np
 from sl_geometry.geometry import pixel_rays, intersect_plane, unrotate_points
 from .protocol import Frame
-from .geometry import load_calibration, parse_calibration, reconstruct_pair
+from .geometry_golden_r34 import load_calibration, parse_calibration, reconstruct_pair
 
 _LOCAL_CALIBRATION = 'D:/Workspace/CodexWork/scan3d_r30_pipeline_20261024_01/bundle/ARM_SOFTWARE16/inputs/T05/calibration.json'
 CALIBRATION_PATH = Path(os.environ.get('R33_TEST_CALIBRATION',

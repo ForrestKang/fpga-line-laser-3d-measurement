@@ -7,6 +7,7 @@ import tempfile
 import threading
 import types
 import unittest
+import zlib
 import weakref
 import gc
 
@@ -102,7 +103,8 @@ class GeometryFailureTests(unittest.TestCase):
         self.assertIsNone(reference())
         row = replay.preserve_pending(self.folder, self.ledger.snapshot())[0]
         for name, blob in result.components:
-            self.assert_component(row, name, blob)
+            encoding = next(part[1] for part in result.encodings if part[0] == name)
+            self.assert_component(row, name, zlib.decompress(blob) if encoding == 'zlib' else blob)
         self.assertEqual(self.ledger.status()['pending_bytes'], result.charge_bytes)
 
     def test_preparation_handoff_and_shared_source_bytes_remain_bounded(self):

@@ -23,7 +23,9 @@ import zlib
 
 import numpy as np
 
-from .protocol import ARCHIVE_MAGIC, FINGERPRINT, SEED_RETRY_FINGERPRINT, HEADER_FIELDS, assemble, identity
+from .protocol import (ARCHIVE_MAGIC, FINGERPRINT, BIN_FINGERPRINT,
+                       SEED_RETRY_FINGERPRINT, HEADER_FIELDS, assemble,
+                       assemble_r33, identity)
 
 FORMAT_V1 = 'R33_FULL_FRAME_JOURNAL_V1'
 # R38: V2 keeps the V1 transaction framing and logical SHA/CRC contract, but a
@@ -133,11 +135,28 @@ def _payload_identity(payload, *, crc_function=_crc):
 
 def _archive_fingerprint(header):
     revision=(header['algorithm_revision'],header['fixed_revision'],header['policy_revision'])
-    expected={(33,1,1):FINGERPRINT,(33,1,3):SEED_RETRY_FINGERPRINT}.get(revision)
+    expected={(33,1,1):FINGERPRINT,(33,1,2):BIN_FINGERPRINT,
+              (33,1,3):SEED_RETRY_FINGERPRINT}.get(revision)
     actual=struct.pack('<8I',*(header['fingerprint'+str(i)] for i in range(8))).hex()
     if expected is None or actual!=expected:
         raise ValueError('R33 archived algorithm identity mismatch')
     return expected
+
+
+def _decode_archived_primary(primary, frame_identity, algorithm_fp, header):
+    """Dispatch known envelopes without retrying a failed strict decoder."""
+    if len(primary) < 8:
+        raise ValueError('truncated archived primary envelope')
+    envelope = struct.unpack_from('<2I', primary)
+    if envelope == (0x33544850, 33):
+        decoder = assemble_r33
+    elif envelope == (0x35544850, 35):
+        decoder = assemble
+    else:
+        raise ValueError('unknown archived primary envelope')
+    return decoder(primary, expected_identity=frame_identity,
+                   expected_fingerprint=algorithm_fp,
+                   binning=header['policy_revision'] == 2)
 
 
 @dataclass(frozen=True, init=False)
@@ -738,7 +757,8 @@ def _validate_frame(stream, data_start, data_bytes, row, expected_offset, *,
             raise ValueError('R33 archived XYZ exceeds PL accepted count')
         xyz_digests[mode].update(xyz)
     if strict_protocol:
-        frame, _ = assemble(blobs['primary'], expected_identity=frame_identity, expected_fingerprint=algorithm_fp)
+        frame, _ = _decode_archived_primary(blobs['primary'], frame_identity,
+                                            algorithm_fp, header)
         if frame.payload != blobs['observations_r33']:
             raise ValueError('R33 strict primary/payload mismatch')
         if hasattr(frame, 'geometry_records'):
@@ -767,7 +787,8 @@ def _validate_frame(stream, data_start, data_bytes, row, expected_offset, *,
 def readback(output, *, strict_protocol=True, recover_incomplete_tail=False):
     """Stream-check complete transactions without loading a whole run in RAM.
 
-    Strict mode also reassembles every actual primary through the R33 decoder.
+    Strict mode selects a strict decoder by the explicit primary envelope
+    version; unknown envelopes and failed validations are never retried.
     Recovery may ignore only a physically incomplete final transaction. Complete
     corrupt transactions are rejected even in recovery mode. No live fsync ACK
     is inferred from file bytes.

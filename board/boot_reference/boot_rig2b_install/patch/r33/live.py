@@ -205,13 +205,20 @@ def close_live_owners(state, display, pfo3, controller, cam):
     return failures
 
 
-def measurement_quality(result, gray):
-    """Expose existing PL decisions and raw saturation; never reclassify points."""
+def measurement_quality(result, gray=None, *, raw_diagnostics=False):
+    """Use PL quality normally; Raw saturation comparison is explicitly opt-in."""
     rows = np.asarray(result.rows)
     decisions = int(result.header['frame_decisions'])
-    return dict(raw_sat250=int(np.count_nonzero(gray >= 250)),
+    measurement_count = int(result.header['measurement_count'])
+    raw_sat250 = None
+    if raw_diagnostics:
+        if gray is None:
+            raise ValueError('Raw is required for the saturation diagnostic')
+        raw_sat250 = int(np.count_nonzero(np.asarray(gray) >= 250))
+    return dict(raw_sat250=raw_sat250,
+                raw_quality_diagnostic=bool(raw_diagnostics),
                 pl_sat250=int(rows[:, 2].sum(dtype=np.uint64)),
-                local_measurement_count=int(result.header['measurement_count']),
+                local_measurement_count=measurement_count,
                 measurement_rows=int(np.count_nonzero(rows[:, 6])),
                 ambiguous_rows=int(np.count_nonzero(rows[:, 12])),
                 frame_decisions=decisions, measurement_frame_usable=bool(decisions & 1),
@@ -370,6 +377,8 @@ def main(argv=None):
     ap.add_argument('--output', type=Path, required=True)
     ap.add_argument('--duration-s', type=float, default=60.)
     ap.add_argument('--save-raw-every', type=int, default=0, help='keep every Nth raw frame (0: none)')
+    ap.add_argument('--diagnostic-raw-quality', action='store_true',
+                    help='explicitly scan Raw for saturation comparison; normal quality comes from PL')
     ap.add_argument('--pl-view', action=argparse.BooleanOptionalAction, default=True)
     ap.add_argument('--pl-view-voxel-mm', type=float, default=3.0,
                     help='PL view voxel; the grid is 64x64x96 voxels around the turntable axis')
@@ -494,6 +503,7 @@ def main(argv=None):
     from r33.scope import PFO3LiveScopeR41, PFO3LiveOverlapScopeR41
     from r33.geometry import load_calibration
     state = dict(schema='R41_LIVE_V1', pid=os.getpid(), phase='init', frames=0, motor='idle',
+                 raw_quality_diagnostic=bool(args.diagnostic_raw_quality),
                  laser='user_controlled', started_unix=time.time())
     write_json(out / 'status.json', state)
     lock = HardwareProcessLock(label='R41_LIVE_CAMERA_PL').acquire()
@@ -940,7 +950,9 @@ def main(argv=None):
                 show = prev | meas if args.view_preview else meas
                 xyz = geo[show, 1:4].view(np.int32).astype(np.float64) / 65536 if len(geo) else np.zeros((0, 3))
                 xyz_meas = int(meas.sum())
-                quality = measurement_quality(result, gray)
+                quality = measurement_quality(result,
+                    gray if args.diagnostic_raw_quality else None,
+                    raw_diagnostics=args.diagnostic_raw_quality)
                 state['measurement_quality'] = quality
                 if len(xyz):
                     points.append(np.column_stack((xyz, meas[show].astype(np.float64))))

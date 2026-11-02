@@ -3,7 +3,7 @@
 firmware/ 包含最终保存的 bit/HWH 和原 manifest；通过 build/restore_sources.py 恢复时保留 manifest 所引用的原始文件大小写。
 [Live Runtime](../src/ps/r33/live.py)为实时主入口，replay.py 为真实 PL 回灌入口；具体可用参数以 `python -m r33.live --help` / `python -m r33.replay --help` 为准（在已还原并配置好导入路径的环境）。
 boot_reference/ 是实际 boot/service 源码快照，仅供理解部署关系，不是自动安装指令。旧绝对路径、装置专用标定及清理策略需要逐项复核；没有打包历史授权 proof、motor_standing.json 或 authority.json。
-historical_outputs/ 是旧标定下的结果，不代表当前测量精度。源固件 manifest 的 runtime_guards 与 rig2b 后续软件存在漂移，详见 report/verified_status.md；本次不修改原 SHA 来掩盖漂移。
+historical_outputs/ 是旧标定下的结果。原交接包的两项软件绑定差异留在[旧manifest](firmware/history/manifest_before_repair.json)和原检查回执中；`source_freeze.json`保留原硬件冻结来源。修复后的软件组合由当前manifest的`runtime_validation_file`引用[独立运行时验证记录](firmware/runtime_validation.json)，具体测试范围见[验证汇总](../report/release_validation.json)。45份非生成硬件输入及bit/HWH保持不变；本轮没有重新布局布线或上板。
 
 
 ## 有限的实测证据子集

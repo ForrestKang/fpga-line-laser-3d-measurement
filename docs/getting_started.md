@@ -7,7 +7,7 @@
 | 用途 | 依赖 |
 |---|---|
 | 仓库与发布检查 | Python 3.10+，标准库 |
-| ARM离线回归 | `sim/requirements_pc.txt`：NumPy、Pillow、SciPy、fonttools |
+| ARM离线回归 | `sim/requirements_pc.txt`：NumPy、Pillow、SciPy、fonttools、OpenCV；本机C编译器 |
 | RTL集成 | Icarus Verilog（iverilog、vvp）及原脚本依赖 |
 | 完整工程实现 | Vivado 2025.2，XC7Z020器件支持 |
 | 真正板端运行 | PYNQ镜像与对应ARM/Python/PYNQ环境 |
@@ -40,16 +40,17 @@ python -B build/restore_sources.py --output ../scan3d_work
 python -m venv ../scan3d_venv
 # 激活自己的虚拟环境后：
 python -m pip install -r sim/requirements_pc.txt
-python -B sim/run_runtime_tests.py --work ../scan3d_work --output ../scan3d_pc_results
+python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_results --cc gcc
 ```
 
-历史结果为69项中61通过、7失败、1跳过，详见[已知问题](known_issues.md)。保留新结果，不覆盖`sim/results/`中的旧证据。
+此入口编译本机原生辅助库并执行所有打包的runtime测试模块，包含存储、协议、故障、页面和几何黄金模型；OpenCV用于图像及显示测试。`--cc`可指定编译器路径。主机库不等于ARM库，也不证明板端执行。最终结果见[验证汇总](../report/release_validation.json)，原失败证据保留在`sim/results/`。
 
 ## 5. RTL冒烟与完整构建
 
 ```powershell
 python -B sim/run_rtl_integration.py --work ../scan3d_work --output ../scan3d_rtl_results --iverilog iverilog --vvp vvp --cases empty
+python -B sim/run_section_rtl.py --work ../scan3d_work --output ../scan3d_section_results --iverilog iverilog --vvp vvp --workers 2
 python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
 ```
 
-构建使用另一组新目录。`empty`只代表空帧冒烟；不指定用例前先阅读[sim说明](../sim/readme.md)。完整实现及板端步骤见[构建与部署](build_and_deploy.md)。
+截面入口使用182帧随包历史原图和13包合成输入，核对195包寄存器与表字段；它不连接相机。完整19例整板RTL矩阵的显式参数见[sim说明](../sim/readme.md)，该包装器不指定`--cases`时只跑空帧。构建使用另一组新目录；本轮没有重新布局布线。完整实现及板端步骤见[构建与部署](build_and_deploy.md)。

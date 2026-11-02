@@ -18,7 +18,9 @@ python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_buil
 python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --runtime-root src/ps
 ```
 
-当前bit/HWH匹配，但[Live Runtime](../src/ps/r33/live.py)与[Section Measurement Driver](../src/ps/r33/pl_section.py)两项runtime guard不匹配，命令应返回失败。**不要只替换摘要、绕过加载器或将旧bit和新软件随意拼成已验证版本。** 先确定真实配套组合，再验证并生成新的发布清单，旧清单继续保留。
+旧交接包的两项runtime guard差异保留在[原清单](../board/firmware/history/manifest_before_repair.json)和原检查回执中。本轮保留bit/HWH、45份非生成硬件构建输入及旧`source_freeze.json`，修复后的软件组合另立[运行时验证记录](../board/firmware/runtime_validation.json)，由当前manifest的`runtime_validation_file`引用。新旧记录分别说明来源，不能用更新文件摘要替代行为测试。
+
+11项离线配套测试和27个归档primary子例已通过；完整软件及RTL矩阵结果见[验证汇总](../report/release_validation.json)。本轮没有重新布局布线或上板。电脑编译的动态库只用于主机测试，板端继续要求对应ARM架构及源/产物身份检查。
 
 ## 板端安装前
 

@@ -1,0 +1,119 @@
+{
+  "schema": "LOCAL_REVIEW_RELEASE_VALIDATION_V1",
+  "status": "OFFLINE_TESTED_LOCAL_REVIEW_ONLY",
+  "runtime": {
+    "tests_run": 279,
+    "passed": true,
+    "skipped": 0
+  },
+  "original_runtime_scope": {
+    "tests_run": 71,
+    "passed": true,
+    "skipped": 0
+  },
+  "support": {
+    "tests_run": 39,
+    "passed": true,
+    "skipped": [
+      [
+        "test_symlink_escape_is_rejected_when_supported (test_pynq_release_check.ReleaseCheckTests.test_symlink_escape_is_rejected_when_supported)",
+        "symlink and junction creation unavailable: OSError"
+      ]
+    ]
+  },
+  "pairing": {
+    "test_methods": 11,
+    "archived_primary_packets": 27,
+    "passed": true
+  },
+  "section": {
+    "packets": 195,
+    "passed": true
+  },
+  "full_rtl": {
+    "cases": 19,
+    "passed": true,
+    "field_reference_comparisons": 19,
+    "frozen_primary_comparisons": 8,
+    "comparison": "All 19 compare image records/geometry/moments against references; 8 also compare frozen primary except documented cycle fields; 11 have reference-only input coverage."
+  },
+  "evidence": [
+    {
+      "name": "runtime_complete",
+      "path": "report/verification/runtime_complete.json",
+      "size": 1440,
+      "sha256": "e137e47a7147c603c3b12dab11a441858ceab4d96e6afcc2630448bc6e7068e5"
+    },
+    {
+      "name": "runtime_original_scope",
+      "path": "report/verification/runtime_original_scope.json",
+      "size": 505,
+      "sha256": "ca41af086e6fee6014061f6d52b03e459612d7b2de4ee551277dfb136a96f484"
+    },
+    {
+      "name": "support_checks",
+      "path": "report/verification/support_checks.json",
+      "size": 359,
+      "sha256": "da29484c20e0aaee2c43df22d4e2acb6c421552efa1104e78f589ee668e00f75"
+    },
+    {
+      "name": "source_abi_native",
+      "path": "report/verification/source_abi_native.json",
+      "size": 1863,
+      "sha256": "f7614066d0e10b711539a951ae03bdbea80687b83d6562ec8195660747c5e03e"
+    },
+    {
+      "name": "pairing_test_summary",
+      "path": "report/verification/pairing_test_summary.json",
+      "size": 755,
+      "sha256": "2f50bc7b73aa8dcf68821761d542547782569e73b42689e6c3422a9d2d7c5a3a"
+    },
+    {
+      "name": "section_rtl",
+      "path": "report/verification/section_rtl.json",
+      "size": 3126,
+      "sha256": "3e6c8f1f394f908f34748ee72c3ed236340893c5a7c4ca3e55827e2dbefa53f9"
+    },
+    {
+      "name": "section_inputs_binding",
+      "path": "report/verification/section_inputs_binding.json",
+      "size": 408,
+      "sha256": "aa437c6face0cefc0df38c086dbae613878416b647fc70bec77b8377009bc96f"
+    },
+    {
+      "name": "full_rtl",
+      "path": "report/verification/full_rtl.json",
+      "size": 26515,
+      "sha256": "7b793017c5b06ca83e97fe54d8aba58d406f0140664a8db3240868b4de4a6f54"
+    }
+  ],
+  "runtime_validation_file": "board/firmware/runtime_validation.json",
+  "firmware_manifest_sha256": "4db88e84b6517954d943a6e10c09e10574a9e65e585eacfd107ad5d50014a81b",
+  "reproduced_commands": [
+    "python -B build/restore_sources.py --output <new-work>",
+    "python -B sim/run_release_tests.py --work <new-work> --output <new-results> --cc <host-gcc>",
+    "python -B sim/run_runtime_tests.py --work <new-work> --output <new-anchor-results>",
+    "python -B sim/test_release_pairing.py",
+    "python -B sim/run_section_rtl.py --work <new-work> --output <new-section> --iverilog <iverilog> --vvp <vvp> --workers 2",
+    "Full 19-case command is preserved in sim/readme.md"
+  ],
+  "changes": [
+    "Strict journal reader dispatches by explicit envelope version and validates all known policy fingerprints.",
+    "Normal steady-state quality consumes PL row/frame summaries; Raw comparison is an explicit diagnostic.",
+    "Mocks use complete validated protocol frames and exercise the intended camera/PL failures.",
+    "Portable test inputs include bounded original journals and all 182 section reference frames.",
+    "Legacy storage tests compare losslessly decoded logical contents under the declared V2 format."
+  ],
+  "constraints": {
+    "original_files_preserved": true,
+    "board_operated": false,
+    "submitted": false,
+    "git_pushed": false
+  },
+  "pending": [
+    "User manual review",
+    "New board validation of this repaired software combination",
+    "Signed commitment/authorization PDF",
+    "Repository visibility set by owner"
+  ]
+}

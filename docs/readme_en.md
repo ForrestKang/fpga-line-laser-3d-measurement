@@ -94,10 +94,10 @@ Restore the original source filenames and directory layout, then run the offline
 ```sh
 python -B build/restore_sources.py --output ../scan3d_work
 python -m pip install -r sim/requirements_pc.txt
-python -B sim/run_runtime_tests.py --work ../scan3d_work --output ../scan3d_pc_results
+python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_results --cc gcc
 ```
 
-Output directories must not already exist. The restoration map preserves the original source bytes and case-sensitive names. The dependency list is a PC environment guide, not a replacement for the PYNQ image or an environment lockfile. Read [Getting started](getting_started.md) for dependencies, RTL tests and expected results.
+The complete runtime suite requires a host C compiler and the declared Python dependencies, including OpenCV for image and display tests. Host-built libraries are PC test helpers, not ARM binaries. Output directories must not already exist. The restoration map preserves the original names and case-sensitive paths. Read [Getting started](getting_started.md) for the full section and integration RTL commands.
 
 ## Rebuild and deployment
 
@@ -107,7 +107,7 @@ Install Vivado 2025.2 with XC7Z020 support, then use a separate pair of new dire
 python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
 ```
 
-The entry point restores the sources and invokes the complete saved Tcl flow. It does not load a board. Review timing, resources, DRC, CDC and the matching firmware/runtime manifest before deployment. The current package has two runtime-guard mismatches that must be resolved before treating it as a matched deployment.
+The entry point restores the sources and invokes the complete saved Tcl flow. It does not load a board. Review timing, resources, DRC, CDC and firmware/runtime binding before deployment. The repaired software has a separate [runtime validation record](../board/firmware/runtime_validation.json); the [earlier manifest](../board/firmware/history/manifest_before_repair.json) and hardware source-freeze record are retained.
 
 Read [Build and deployment](build_and_deploy.md) and [Hardware interfaces](hardware.md) before operating the board. Boot files are device-specific references. Calibration, wiring, laser control and motion authority do not transfer automatically to another setup.
 
@@ -117,11 +117,13 @@ Read [Build and deployment](build_and_deploy.md) and [Hardware interfaces](hardw
 |---|---|
 | Sources, interfaces and restoration/build entry points | Collected; the source layout can be restored into a new directory |
 | Repository integrity and release-check utilities | Checked; repository CI covers this offline scope |
-| Inherited ARM application regression | 61 passed, 7 failed, 1 skipped out of 69 tests |
-| Firmware/runtime binding | bit/HWH match; 2 runtime guards remain mismatched |
-| RTL, implementation and board operation | Original evidence retained; not rerun for this documentation update |
+| Software repair | Complete protocol Mock, verified fault injection, PL-only default quality, strict versioned journal readback |
+| Complete runtime regression | Final execution counts and outcomes are in the [validation summary](../report/release_validation.json) |
+| Firmware/runtime pairing | 11 offline pairing tests and 27 archived primary packet cases passed; repaired runtime binding recorded separately |
+| Section RTL | 195 packets passed bitwise comparison: 182 historical camera frames plus 13 synthetic inputs |
+| Integration RTL, implementation and board operation | Matrix results are in the validation summary; no new place-and-route or board run in this repair |
 
-This is a documented handoff candidate with retained evidence and known issues. [Known issues](known_issues.md) lists their impact and the checks needed to close them. CI success does not replace the outstanding application or hardware acceptance results.
+Default frame quality uses PL summaries. Raw saturation comparison requires `--diagnostic-raw-quality` and does not change acceptance decisions; the existing initial-exposure probe remains independent. Strict journal readback explicitly selects the image-only or geometry-bearing decoder and supports the horizontal-pair policy. All 45 non-generated hardware build inputs and the bit/HWH remain unchanged. [Known issues](known_issues.md) separates PC verification from the board and physical checks still required.
 
 ## Repository guide
 

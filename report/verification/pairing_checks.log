@@ -1,0 +1,16 @@
+test_actual_archived_primary_packets_decode (__main__.ReleasePairingTests.test_actual_archived_primary_packets_decode) ... ok
+test_arm_native_binary_damage_is_rejected (__main__.ReleasePairingTests.test_arm_native_binary_damage_is_rejected) ... ok
+test_bad_primary_magic_is_rejected (__main__.ReleasePairingTests.test_bad_primary_magic_is_rejected) ... ok
+test_bad_section_magic_rejected (__main__.ReleasePairingTests.test_bad_section_magic_rejected) ... ok
+test_declared_algorithm_fingerprints_match_runtime (__main__.ReleasePairingTests.test_declared_algorithm_fingerprints_match_runtime) ... ok
+test_firmware_source_and_register_contract (__main__.ReleasePairingTests.test_firmware_source_and_register_contract) ... ok
+test_identity_mismatch_is_rejected (__main__.ReleasePairingTests.test_identity_mismatch_is_rejected) ... ok
+test_section_driver_configure_and_snapshot_stays_in_window (__main__.ReleasePairingTests.test_section_driver_configure_and_snapshot_stays_in_window) ... ok
+test_truncated_primary_is_rejected (__main__.ReleasePairingTests.test_truncated_primary_is_rejected) ... ok
+test_undeclared_section_does_not_create_mmio (__main__.ReleasePairingTests.test_undeclared_section_does_not_create_mmio) ... ok
+test_wrong_arm_architecture_is_rejected_even_with_matching_digest (__main__.ReleasePairingTests.test_wrong_arm_architecture_is_rejected_even_with_matching_digest) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.234s
+
+OK

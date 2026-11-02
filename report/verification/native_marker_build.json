@@ -1,0 +1,17 @@
+{
+  "schema": "R34_NATIVE_MARKER_BUILD_V1",
+  "source_sha256": "5e820e2d3fb7a232b6caeb8baf937a81e134bf3b4670b77aa2c2bbd782c71c35",
+  "output_sha256": "fcca2d23e5b2d6813c1e0daffb7b524c25f68bbf05be636d646c5a1d8d3fb1e2",
+  "output_bytes": 49338,
+  "machine": "AMD64",
+  "compiler": "D:\\software_installation\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\gcc.exe",
+  "flags": [
+    "-O3",
+    "-std=c99",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-shared"
+  ],
+  "display_only": true
+}

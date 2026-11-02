@@ -3,6 +3,7 @@ import contextlib
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import queue
 import sys
@@ -15,7 +16,7 @@ import zlib
 import numpy as np
 from . import replay
 
-TEMP = Path('D:/Workspace/CodexTemp/r33_replay_tests')
+TEMP = Path(os.environ.get('R33_TEST_TEMP', Path(tempfile.gettempdir()) / 'r33_replay_tests'))
 TEMP.mkdir(parents=True, exist_ok=True)
 
 
@@ -131,7 +132,11 @@ class ReplayTests(unittest.TestCase):
     if dma_hook:dma_hook(i)
     if i==fail_transport_index:
      self.failed_primary=b'partial-primary';raise RuntimeError('injected transport failure')
-    frame=types.SimpleNamespace(payload=('payload%d'%i).encode(),header={'processing_cycles_lo':42,'processing_cycles_hi':0})
+    # The production geometry packet wraps image observations in .base. Keep
+    # that interface even though this lifecycle test mocks both PL and geometry.
+    base=types.SimpleNamespace(payload=('payload%d'%i).encode(),
+     header={'processing_cycles_lo':42,'processing_cycles_hi':0})
+    frame=types.SimpleNamespace(payload=base.payload,header=base.header,base=base)
     return frame,('primary%d'%i).encode(),{},None
    def close(self):calls.append('transport_close')
   CloseError=type('ProcessDisplayCloseError',(RuntimeError,),{})
@@ -212,7 +217,10 @@ class ReplayTests(unittest.TestCase):
   def read_text(path,*a,**kw):
    if str(path).replace('\\','/')=='/proc/sys/kernel/random/boot_id':return 'fake-boot'
    return original_read(path,*a,**kw)
-  with patch.dict(sys.modules,modules),patch.object(Path,'read_text',read_text),patch.object(replay.shutil,'disk_usage',return_value=types.SimpleNamespace(free=100*1024**3)),contextlib.redirect_stdout(io.StringIO()):
+  # ``import r33.storage as module`` reads the package attribute as well as
+  # sys.modules. Keep both bound to the same fake so RAW_ENCODING cannot leak.
+  import r33
+  with patch.dict(sys.modules,modules),patch.object(r33,'storage',modules['r33.storage'],create=True),patch.object(Path,'read_text',read_text),patch.object(replay.shutil,'disk_usage',return_value=types.SimpleNamespace(free=100*1024**3)),contextlib.redirect_stdout(io.StringIO()):
    if fail_display_startup:
     with self.assertRaisesRegex(RuntimeError,'injected startup failure'):replay.run(args)
    elif fail_display_close:

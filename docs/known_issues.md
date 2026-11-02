@@ -2,13 +2,15 @@
 
 | 编号 | 当前事实 | 影响 | 闭合方式 |
 |---|---|---|---|
-| K01 | ARM继承回归69项：61通过、7失败、1跳过 | 不能宣布完整软件回归通过 | 保留旧失败，定位入口/截面/停止与清理问题，固定版本重跑 |
-| K02 | bit/HWH与清单匹配，但live.py、pl_section.py两项guard不匹配 | 现有固件与runtime不能作为同一已验证发布组合 | 找到配套源码或重建，验证后生成新清单，不改旧摘要冒充 |
-| K03 | 当前收录RTL运行只到empty冒烟 | 不覆盖完整实拍/异常矩阵 | 用固定源码执行所需完整用例 |
+| K01 | 旧Mock协议字段、故障注入检查及参考测试绑定已修复；完整回归另立记录 | 原七处失败不再作为当前版本的状态 | 以[验证汇总](../report/release_validation.json)的最终计数与失败清单判定 |
+| K02 | 11项离线配套测试、27个归档primary子例通过；新软件绑定独立记录 | 配套检查不等于板上运行 | 核对[运行时验证记录](../board/firmware/runtime_validation.json)及实际设备ABI |
+| K03 | 195包截面RTL逐位对照通过；整板RTL矩阵另行归档 | 空帧旧记录不代表本轮全部覆盖 | 范围和各用例结果见验证汇总 |
 | K04 | 本轮没有重新执行整板实现和板测 | 历史实现/板端数据不能算新版本测量 | 保存新构建、实际ABI、配置和完整板端回执 |
 | K05 | 部分历史采集只保留脱敏回执与量化点云 | 不能恢复全部Raw和运行来源 | 按提取清单解释；缺失保持缺失，不重跑冒充 |
 | K06 | 原转轴/光平面曾有联合调整，装置状态可能变化 | 旧标定不自动适用于其他安装状态 | 当前装置独立核验；模拟和参与拟合样件不作独立精度证明 |
 
-业务失败原日志见[pc_console.log](../sim/results/pc_console.log)及[结果JSON](../sim/results/pc_runtime_result.json)。新工具实际发现见[release检查](../sim/results/pynq_release_check_actual.json)。
+旧失败日志见[pc_console.log](../sim/results/pc_console.log)及[结果JSON](../sim/results/pc_runtime_result.json)，旧绑定差异见[原检查回执](../sim/results/pynq_release_check_actual.json)。历史记录保持原结论，当前修复另立证据。
+
+默认帧质量只读取PL摘要；Raw饱和对照必须显式启用`--diagnostic-raw-quality`，不改变接受判据，手动初始化曝光probe仍独立。严格存储读回按primary版本选择图像观测或几何观测解码器，并支持水平双像素模式，身份、CRC和拒绝检查保持严格。
 
 GitHub的Repository checks仅检查仓库文件、文档、源码恢复和发布工具自测。它通过也不改变上表业务/硬件门槛。仓库保留旧版本和失败记录，修复必须有对应新证据。

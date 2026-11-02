@@ -1,2 +1,6 @@
 # Preserve frozen HDL, runtime and evidence bytes across Windows/Linux checkout.
 * -text
+
+# Raw frames and journals are binary inputs.
+*.gray8 binary
+*.r33j binary

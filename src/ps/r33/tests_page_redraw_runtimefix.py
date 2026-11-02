@@ -1,5 +1,8 @@
 """Display-only optimization checks, without any hardware dependency."""
 import unittest
+import importlib.util
+import os
+from pathlib import Path
 from unittest.mock import patch
 
 import numpy as np
@@ -59,7 +62,14 @@ class RedrawTests(unittest.TestCase):
     def test_stripe_column_preserves_gaps_singletons_and_saturation(self):
         from PIL import ImageDraw
         from r33.profile_live import ROW_FIELDS
-        renderer = PageRenderer()
+        # This widget belongs to the retained earlier layout, not today's
+        # full-width camera page. Verify the actual frozen implementation.
+        base = Path(os.environ.get('R34_STORAGE_BASELINE',
+            str(Path(__file__).resolve().parents[2]/'test_fixtures/source_baseline')))
+        spec = importlib.util.spec_from_file_location('legacy_display_reference', base/'runtime/r33/ui_pages.py')
+        legacy = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(legacy)
+        renderer = legacy.PageRenderer()
         renderer._text = lambda *args, **kwargs: None
         rng = np.random.default_rng(17)
         for pattern in ('zero', 'full', 'fragmented'):

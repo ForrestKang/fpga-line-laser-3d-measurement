@@ -1,0 +1,215 @@
+{
+  "device": "xc7z020clg400-1",
+  "overlay_mode": "structured_light_profile_hdmi",
+  "regmap_version": 65536,
+  "diagnostic_version": 65537,
+  "profile_format_version": 2,
+  "frame_width": 752,
+  "frame_height": 480,
+  "addresses": {
+    "pipeline_control": 1136656384,
+    "camera_diagnostics": 1136721920,
+    "raw_dma": 1077936128,
+    "hdmi_vdma": 1078067200,
+    "hdmi_vtc": 1136787456,
+    "hdmi_dynclk": 1136852992,
+    "motor_controller": 1136918528,
+    "bsg1_guard": 1136984064
+  },
+  "overlay": "structured_light_motion_profile_hdmi",
+  "carrier_mode": "direct_wire",
+  "motion_enabled": false,
+  "angle_valid": false,
+  "frame_motion_metadata": {
+    "magic": 1129532721,
+    "abi": 65536,
+    "capabilities": 15,
+    "base": 1136721920,
+    "offset": 256,
+    "clock_hz": 100000000,
+    "timestamp_semantics": "captured SOF synchronized to system clock; not exposure"
+  },
+  "pfo3": {
+    "enabled": true,
+    "format": "PFO3",
+    "abi": 196609,
+    "algorithm_revision": 33,
+    "fixed_revision": 1,
+    "policy_revision": 1,
+    "frontend_base": 1073741824,
+    "dma_base": 1078132736,
+    "dma_sg_length_width": 24,
+    "parameter_fingerprint": "e7373198d746ed1992f3eaa4295837f442c2ed70a2e599206f8866ff25dcb04f",
+    "input_path": "DDR MM2S -> same PL kernel -> S2MM; camera Raw staged through DDR",
+    "normal_ARM_image_algorithms": false,
+    "hardware_verified": false,
+    "abi_version": 217088,
+    "coordinate_contract": "R33_UV_Q12_PLUS_R35_PL_XYZ_Q16",
+    "n_lanes": 2,
+    "geometry_revision": 1,
+    "same_run_seed_retry": false
+  },
+  "source_revision": "FINAL_TWO_LANE_125MHZ_PL_SECTION_LIVE_STREAM_SEED_RETRY",
+  "status": "OFFLINE_GATES_PASS_BOARD_NOT_YET_EXECUTED",
+  "preboard_passed": true,
+  "hardware_verified": false,
+  "deployment_performed": false,
+  "production_release_passed": false,
+  "compatible_abi_version": 217088,
+  "build_identifier_register_supported": false,
+  "threshold_feature_present": false,
+  "contract_file": "p2_board.json",
+  "contract_sha256": "f23ec1a10c75adac1ff8dc971e390a464c1e283a39faef853cb3a2e38a4f619c",
+  "source_sha256": "11debd4eb784d791f0e899ffb32a2d500f96d7e11d7aaa47112b390e1ab86913",
+  "source_freeze_sha256": "11debd4eb784d791f0e899ffb32a2d500f96d7e11d7aaa47112b390e1ab86913",
+  "compiled_source_receipt_sha256": "2630beff7047170f1d4988af2e7bc7632744ced33d2aff4b7cac8d85521a9f84",
+  "files": {
+    "bit": {
+      "path": "final.bit",
+      "size": 4045716,
+      "sha256": "db396f4c3e5c8276bfe426702589542799d37df7c981243f6b455da43a79c840"
+    },
+    "hwh": {
+      "path": "final.hwh",
+      "size": 842877,
+      "sha256": "5758de82e59ea3bbfb9b73da31c0a77bfa8b2ba2c80b65a8a92a107d137a20ea"
+    }
+  },
+  "physical_timing": {
+    "wns_ns": 0.23,
+    "whs_ns": 0.011,
+    "tns_ns": 0.0,
+    "ths_ns": 0.0,
+    "wpws_ns": 0.333
+  },
+  "utilization_percent": {
+    "lut": 73.51691729323308,
+    "ff": 47.840225563909776,
+    "bram": 78.92857142857143,
+    "dsp": 60.90909090909091
+  },
+  "runtime_guards": {
+    "r33/scope.py": "c805773024950a17a978d53c144b20b18674aac62b477035578030b43e862aba",
+    "r33/transport.py": "6b7e1978b3aa2d9c5fb87de7d4f8bd9198242480af125daa1da210eb3bba40a1",
+    "r33/display.py": "4cbe41ada8702a821ead0a5fdea1bf187d7b34cf49396f15fda0251d3a8f01f4",
+    "r33/live.py": "4b7d7e41bc3b0eeb7c40b060931cceff132e04e424a76c5eb206723fcc591193",
+    "r33/pl_section.py": "2756882d434cc4c972b4bb538232b5fb69fdd60db7bc2b4bacef983e9ae9713c",
+    "r33/page_state.py": "a1bc00596e60a615d9497f2cf57d4b20fc1f47404f1ce84553ddbb6e0a603af3",
+    "r33/scan_live.py": "8d20f185600c14e8fff89d43ec413a614d39f7b5852a52bbc88d6a56d602de8e",
+    "r33/pl_view.py": "e5928bbdbc6d9b04fd882c1f88ce0c67d39f8e26da0a4c20a20eca0a9fdd5ee1"
+  },
+  "pfo3_binning": {
+    "present": true,
+    "header_policy_revision": 2,
+    "fingerprint": "4096cc85066b693f5c4909c276e8c5e12f3f3f20c1ff5ff33ca45318214cfe2f",
+    "default": "on: the demo runs 2x binning, single seed",
+    "reference_sha256": "99c137b8e9032d8f902c25951a2f0de4b8ee091da4a4126a620510935cb23b2d",
+    "contract": "pair mean (a+b+1)>>1 -> R39 detector on 376x480; kind-0 first*2, last*2+1, u*2+2048 and geometry u in 752 pixels"
+  },
+  "pl_measure": {
+    "present": true,
+    "register_window": [
+      1280,
+      1535
+    ],
+    "magic": 1379152205,
+    "default_enabled": false,
+    "unit_result_sha256": "419e1aa55293c965b9731a0d613c705af226ed850aa447c0f267b2f89542d13b",
+    "driver": "r33/pl_measure.py",
+    "storage": "block RAM (b13)",
+    "unit_results_sha256": {
+      "MEASURE_R41_14_gap0": "419e1aa55293c965b9731a0d613c705af226ed850aa447c0f267b2f89542d13b",
+      "MEASURE_R41_14_gap1": "d105a952faa549de547f64742f5b662d77c3cbe579a35462747489e7f353019e",
+      "MEASURE_R41_14_gap2": "021f62e09dd3852ec0585a482784f2ee0ce48dbffe1cda4825f59d0da1fe3de9",
+      "MEASURE_R41_14_gap5": "568700b5255789a4be9ed120772766e957958403abc37c1514da51571553b10c"
+    }
+  },
+  "pl_laser_ae": {
+    "present": true,
+    "diag_registers": [
+      96,
+      124
+    ],
+    "default_enabled": false,
+    "sccb_register": 11,
+    "unit_result_sha256": "30d8215376e50d933801f01740d025b1427a3ff42c112095739a6ad7da05025e",
+    "ip_test_log_sha256": "3368eff64f70db3cd6ec71e1f65bd1e971f7067225796615e48e6dfa40bc6e30"
+  },
+  "removed_blocks": [
+    "r35_moments (no kind 4/5 records, footer words 30/31 = 0)",
+    "P2 Profile path: PROFILE_ENABLE=0 (row centroid, row FIFO, packer)",
+    "profile_dma (0x40410000)"
+  ],
+  "pl_cloud_view": {
+    "register_window": [
+      1024,
+      1279
+    ],
+    "magic": 1379151958,
+    "contract": "model/r40_model.py",
+    "display_only": true
+  },
+  "buttons": {
+    "present": true,
+    "register_window": [
+      1536,
+      1791
+    ],
+    "magic": 1379152450,
+    "default_debounce_cycles": 2000000,
+    "counter_bits": 8
+  },
+  "motor_scan": {
+    "present": true,
+    "pulses_per_revolution": 3200,
+    "guard_base": 1136984064,
+    "motor_base": 1136918528,
+    "default_enabled": false,
+    "current_run_authority_required": true
+  },
+  "motor_controller": {
+    "present": true,
+    "base_address": 1136918528
+  },
+  "boot_mode": "not_modified_by_this_delivery",
+  "automatic_camera_start": false,
+  "automatic_motor_start": false,
+  "route_dcp_sha256": "0f3e608188ce649d951ad7556638d0fec534df84f565443394c95a1dfa933b5b",
+  "build_admission_file": "ADMISSION_FINAL.json",
+  "build_admission_sha256": "ca0801c12bc41ae8d77de1b38d6b083bcecf197affcd3599c2690f6a84461129",
+  "inherited_protocol_template_sha256": "42fab77d0c48f7723bfb4ea6670a96cda5d16c578dca812354d5ede6e25852c2",
+  "source_freeze_file": "SOURCE_FREEZE.json",
+  "compiled_source_content_sha256": "f20f5fb474bc75624dc1213728e9d26e6ad464fe9d4eeb844237a100781c862a",
+  "section_measure": {
+    "present": true,
+    "register_window": [
+      1792,
+      2047
+    ],
+    "magic": 1397048141,
+    "version": 1,
+    "default_enabled": false,
+    "driver": "r33/pl_section.py"
+  },
+  "live_stream": {
+    "present": true,
+    "control": 36,
+    "counters": [
+      40,
+      44,
+      48,
+      52
+    ],
+    "path": "processing_pipeline/M_AXIS_RAW -> pfo3_frontend/S_AXIS_CAM; pfo3_frontend/M_AXIS_RAW -> raw_dma",
+    "default_enabled": false,
+    "early_booking": false,
+    "design": "docs/live_mode.md"
+  },
+  "seed_retry": {
+    "rtl": "rtl/r35_row.sv r35_direction_retry, rtl/r35_frontend.sv, rtl/r35_axi.sv policy_revision 3",
+    "origin": "scan3d_t02_stripefix_20261031_01 (reference/reference_seed_retry.py)",
+    "trigger": "sole local reason 32 (Newton fails at the max-curvature seed)",
+    "input": "752x480 full width only; 2x binning (policy 2) keeps the single seed",
+    "demo_mode": "off: T02 full turns 2026-10-31 (same placement) gave 65052 vs 51560 measurement points, roundness 0.08 vs 0.17 mm and PL 52.9 vs 26.4 fps for 2x binning; policy 3 stays in the bit"
+  }
+}

@@ -1,6 +1,7 @@
 """Run live.main itself with offline camera/PL/HDMI/motor adapters; no board access."""
 import contextlib
 import json
+import struct
 from pathlib import Path
 import tempfile
 import types
@@ -12,9 +13,91 @@ import numpy as np
 from . import live
 from .scan_live import StepScan
 from .tests_scan_live_r42 import Backend
+from .protocol import FINGERPRINT, HEADER_FIELDS, IDENTITY_FIELDS, PFO3Error
+from .protocol_r35 import assemble_r35
+
+
+def decoded_pl_frame(identity):
+    """A real decoded, frame-qualified packet with one geometrically valid point.
+
+    Image quality needs 120 supported rows. The other image observations are
+    explicit geometry rejects, retaining the one-point-per-view scan fixture.
+    """
+    count = 120
+    header = dict.fromkeys(HEADER_FIELDS, 0)
+    for key, value in identity.items():
+        if key + '_lo' in header:
+            header[key + '_lo'], header[key + '_hi'] = value & 0xffffffff, value >> 32
+        else:
+            header[key] = value
+    header.update(width=752, height=480, roi_x1=752, roi_y1=480, roi_pixels=752*480,
+                  algorithm_revision=33, fixed_revision=1, policy_revision=1)
+    header.update({'fingerprint'+str(i): value for i, value in
+                   enumerate(struct.unpack('<8I', bytes.fromhex(FINGERPRINT)))})
+    start = np.array([header[key] for key in HEADER_FIELDS], dtype='<u4')
+    sequence = identity['frame_id'] + 1
+    start[:5] = [0x35544850, 35, 752, 480, sequence]
+    local = np.zeros((count, 16), dtype='<u4')
+    local[:, 0], local[:, 1] = np.arange(count), np.arange(200, 200+count)
+    local[:, 2:4] = [299, 301]
+    local[:, 4], local[:, 5] = 300*4096, local[:, 1]*4096
+    local[:, 13] = (1 << 24) | (1 << 25) | (1 << 26)
+    rows = np.zeros((480, 16), dtype='<u4')
+    rows[:, 0] = np.arange(480)
+    rows[200:200+count, 1] = 200
+    rows[200:200+count, 4:8] = 1
+    rows[200:200+count, 8:10] = 3
+    rows[200:200+count, 10:12] = 200
+    geometry = np.zeros((count, 16), dtype='<u4')
+    geometry[:, 0] = np.arange(count)
+    geometry[:, 7] = (1 << 16) | 3
+    geometry[0, 1:7] = [65536, 2*65536, 100*65536]*2
+    geometry[0, 7] = 0x103
+    metadata = np.zeros((1, 16), dtype='<u4')
+    metadata[0, 0], metadata[0, 11:13] = identity['epoch'], [1, 2]
+    records = []
+    for tag, block in ((0, local), (1, local), (2, rows), (3, geometry), (6, metadata)):
+        tagged = np.empty((len(block), 17), dtype='<u4')
+        tagged[:, 0], tagged[:, 1:] = 0x35520000 | tag, block
+        records.append(tagged)
+    body = np.concatenate(records)
+    footer = np.zeros(32, dtype='<u4')
+    footer[:8] = [0x35544650, 35, count, count, count, count, count, count]
+    footer[11], footer[14], footer[16] = 1, 448813, 752*480
+    footer[23:27] = [sequence, 96+17*len(body), 1, 1]
+    footer[29] = count
+    primary = start.tobytes() + body.tobytes() + footer.tobytes()
+    frame, receipt = assemble_r35(primary, expected_identity=identity, backend='reference')
+    return frame, primary, receipt
 
 
 class LiveIntegrationTests(unittest.TestCase):
+    def test_transport_fixture_obeys_decoded_frame_contract(self):
+        identity = dict.fromkeys(IDENTITY_FIELDS, 0)
+        identity.update(frame_id=17, epoch=3, motor_steps=(1 << 32)+16)
+        frame, _, _ = decoded_pl_frame(identity)
+        self.assertEqual(set(frame.header), set(HEADER_FIELDS))
+        self.assertEqual(frame.header['frame_id'], 17)
+        self.assertEqual(frame.header['motor_steps_hi'], 1)
+        self.assertEqual(frame.header['frame_decisions'], 3)
+        self.assertEqual(frame.header['measurement_count'], 120)
+        self.assertEqual(frame.header['preview_count'], 120)
+        self.assertEqual(int(frame.rows[:, 6].sum()), 120)
+        self.assertEqual(int(frame.accepted('measurement').sum()), 120)
+        self.assertEqual(int(np.count_nonzero((frame.geometry_records[:, 7] & 0x101) == 0x101)), 1)
+        self.assertFalse(frame.records.flags.writeable or frame.geometry_records.flags.writeable)
+
+    def test_transport_fixture_still_uses_strict_protocol_rejection(self):
+        identity = dict.fromkeys(IDENTITY_FIELDS, 0)
+        _, primary, _ = decoded_pl_frame(identity)
+        bad_identity = dict(identity, frame_id=1)
+        with self.assertRaisesRegex(PFO3Error, 'identity mismatch'):
+            assemble_r35(primary, expected_identity=bad_identity, backend='reference')
+        bad_quality = bytearray(primary)
+        struct.pack_into('<I', bad_quality, len(primary)-32*4+25*4, 0)
+        with self.assertRaisesRegex(PFO3Error, 'frame quality decision inconsistent'):
+            assemble_r35(bad_quality, expected_identity=identity, backend='reference')
+
     def run_live(self, *, stop_button=False, camera_error=False, pl_error=False,
                  allow_motor=True, deadline=600., full=False, on_pl_packet=None,
                  camera_close_error=False, capture_busy_after_close=False, lingering_thread=False,
@@ -63,6 +146,7 @@ class LiveIntegrationTests(unittest.TestCase):
                     on_capture(captures[0])
                 now[0] += .2
                 if camera_error and captures[0] == 10:
+                    calls.append(('injected_camera_failure', captures[0]))
                     raise RuntimeError('injected camera failure')
                 return types.SimpleNamespace(pixels=bytes(752*480), sha256='mock-raw')
             def close(self):
@@ -78,20 +162,12 @@ class LiveIntegrationTests(unittest.TestCase):
             def run(self, gray, identity):
                 calls.append(('identity', dict(identity)))
                 if pl_error and identity['frame_id'] == 8:
+                    calls.append(('injected_pl_failure', identity['frame_id']))
                     raise RuntimeError('injected PFO3 failure')
-                records = np.zeros((1, 8), np.uint32)
-                records[0, 1], records[0, 4] = 200, 300*4096
-                geo = np.zeros((1, 8), np.uint32)
-                geo[0, 1:4] = [65536, 2*65536, 100*65536]
-                geo[0, 7] = 0x103
-                rows = np.zeros((480, 16), np.uint32)
-                rows[:, 0] = np.arange(480)
-                header = dict(processing_cycles_lo=448813, processing_cycles_hi=0)
-                result = types.SimpleNamespace(records=records, geometry_records=geo, rows=rows, header=header,
-                                               accepted=lambda _: np.array([True]))
+                result, primary, receipt = decoded_pl_frame(identity)
                 if on_pl_packet is not None:
-                    on_pl_packet(identity, geo)
-                return result, b'mock-primary', {}, None
+                    on_pl_packet(identity, result.geometry_records)
+                return result, primary, receipt, None
             def close(self): calls.append('pl.close')
         class Display:
             def __init__(self, *_): pass
@@ -199,6 +275,8 @@ class LiveIntegrationTests(unittest.TestCase):
             allow_motor=False, pipeline=True, pl_error=True)
         self.assertEqual(rc, 1)
         self.assertEqual(state['phase'], 'failed')
+        self.assertEqual(state['error'], 'injected PFO3 failure')
+        self.assertEqual(calls.count(('injected_pl_failure', 8)), 1)
         self.assertEqual(state['threads_alive_after_join'], [])
         self.assertIn('camera.close', calls)
         self.assertIn('pl.close', calls)
@@ -231,6 +309,10 @@ class LiveIntegrationTests(unittest.TestCase):
             with self.subTest(camera=camera_error):
                 rc, state, _, _, backend, calls, _ = self.run_live(camera_error=camera_error, pl_error=pl_error)
                 self.assertEqual(rc, 1)
+                expected = 'injected camera failure' if camera_error else 'injected PFO3 failure'
+                trigger = ('injected_camera_failure', 10) if camera_error else ('injected_pl_failure', 8)
+                self.assertEqual(state['error'], expected)
+                self.assertEqual(calls.count(trigger), 1)
                 self.assertEqual(state['scan']['state'], 'FAILED')
                 self.assertEqual((backend.stops, backend.closes), (1, 1))
                 self.assertIn('camera.close', calls)

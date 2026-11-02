@@ -1,33 +1,41 @@
 # 自主选题赛道提交核对
 
-依据：用户提供的 AMD 选题指南，第 3.3 节，PDF 第 22–25 页（印刷页 19–22），以及 PDF 第 28 页“其它”。不套用智能体开发赛道或具身智能赛道的工程要求。
+工程内容依据用户提供的AMD选题指南第3.3节；实际上传格式和大小按本轮报名后台截图执行。报名后台尚未提交。
 
-| 要求 | 本包位置 / 状态 |
+## 后台上传要求
+
+| 项目 | 格式与限制 | 当前准备状态 |
+|---|---|---|
+| 完整代码 | RAR，≤200MB | 从本工程生成`source_code.rar`；不用ZIP替代后台要求 |
+| 演示视频 | MP4、H.264，<3分钟、≤300MB | 使用已选定完整视频，发布前复核编码、时长和大小 |
+| 技术报告 | PDF，≤50MB | 报告完善后导出`design_report.pdf`；Word保留供编辑 |
+| 签署授权书 | PDF，≤50MB | 缺本队签署件；参考工程签署件不能用于本队 |
+| 海报（可选） | PDF或PPT，≤50MB | 匿名英文单页副本已准备；提交格式按后台选择 |
+| 作品全貌与板卡重要角度照片 | JPG/PNG，每张≤10MB，最多4张 | 本地准备3张真实照片/既有实际帧，不重复裁图凑数 |
+| 仓库链接 | GitHub地址 | 沿用`ForrestKang/pynq-structured-light`；公开待所有者操作 |
+| 文字字段 | 作品简介、3关键词 | 集中写入本地审阅目录的`readme.md` |
+
+当前后台格式已明确，不再将其列为未知。上传是否成功、报名组别及最终回执仍须在实际提交时核对。
+
+## 完整代码内应有的内容
+
+| 内容 | 本工程位置 |
 |---|---|
-| 完整实际采用的 RTL、PS、原生 C、约束与 BD | src/fpga、src/ps；未采用 HLS，不虚构 HLS 工程 |
-| 仿真与验证结果 | sim、build/evidence、src/ps/evidence；历史结果与本次打包检查分开 |
-| 综合、实现、资源、时钟与指标 | build/evidence/reports、board/firmware/admission_final.json |
-| 上板运行脚本、输出与参考对照 | board、src/ps、data；历史标定输出不能冒充当前精度 |
-| 可复现脚本 | build/reproduce.py、build/restore_sources.py、原 scripts/build_final.tcl |
-| 独立技能包及适用/失效条件 | skill/readme.md、skill/verify_bundle.py、skill/pynq_release_check.py |
-| 设计报告、AI 协作和纠错记录 | report/design_report.docx、report/design_report.pdf、report/ai_collaboration_records.md、report/ai_interaction_excerpts.md |
-| 纯英文小写目录和文件名 | 本包统一小写；恢复脚本在新工作目录恢复源码原始大小写，保持冻结源码字节不变 |
-| 开源仓库与可再分发许可证 | 沿用ForrestKang/pynq-structured-light及既有MIT许可，保留第三方原许可；仓库仍为私有，main为当前交付入口，公开访问待所有者开启 |
-| 初级组/高级组 | 待团队按学历组成确认；两组提交内容相同 |
-| 决赛英文单页海报 | 指南要求按 AMD 模板、不含队伍信息，A4 彩印带现场；已由既有AMD模板制作匿名英文单页PPTX及A4 PDF，见docs/media/，本地交付目录也保留 |
+| 实际采用的RTL、PS、原生C、约束与BD | `src/fpga/`、`src/ps/`；没有采用HLS，不虚构HLS工程 |
+| 仿真与验证结果 | `sim/`、`build/evidence/`、`src/ps/evidence/` |
+| 综合、实现、资源与时钟 | `build/evidence/reports/`、`board/firmware/admission_final.json` |
+| 上板脚本、输出及参考 | `board/`、`src/ps/`、`data/` |
+| 可复现构建 | `build/reproduce.py`、`build/restore_sources.py`及原Tcl入口 |
+| 可复用Skill | `skill/`，含说明、适用/失效条件、工具及自测 |
+| 报告与AI协作 | `report/design_report.docx`、`report/design_report.pdf`、[AI记录](ai_collaboration_records.md) |
+| 开源许可 | 继承既有MIT，第三方保持原许可，见[许可说明](third_party_notices.md) |
 
-指南文字要求小写，而示意图写 README.md。本包遵从更严格的小写命名，使用 readme.md。
-指南未在 3.3.5 工程目录里要求把完整开发历史、系统镜像、全部录像或聊天数据库塞进源码 ZIP，因此不随包带入。
-完整原始聊天日志未作为本包材料导出；AI文件提供真实可追溯节选及其来源性质，新增成对提示、实际回答与纠错，不冒充全部聊天记录。
+工程采用英文小写存档路径；恢复工具按来源映射恢复原始大小写。Skill和AI记录纳入同一份代码RAR，不生成独立压缩包。完整录像、整卡镜像、全部历史采集和聊天数据库不放入代码提交件。
 
-## 提交准备状态
+## 当前审核状态
 
-工程目录、源码、必要 IP、约束、构建/验证入口、固件、报告和可复用 skill 已归集。
-以下事项不得被“打包成功”掩盖：
-
-- 原 runtime 回归 7 失败、1 跳过，以及固件与后续 runtime 的两项冻结哈希差异尚未修复。
-- AI协作文件同时提供工程案例总结和真实交互节选；指南没有要求全量聊天数据库。
-- 仓库地址和既有MIT许可已核实；main发布入口已核对，公开状态和队伍组别仍需确认。指南对开源为“强烈要求”，本候选没有改变仓库可见性。
-- 匿名英文单页海报已另行交付并收录docs/media/；现场打印及后台栏目仍需按实际通知确认。
-
-只保留本次核对实际存在的材料，不以空白占位文件表示这些项目已经交付。
+- 报名后台尚未提交。
+- 本队签署授权书未提供，不能以参考项目文件充当。
+- 原仓库地址已确认，当前私有；所有者完成公开后再检查匿名访问。
+- 工程状态以[本轮验证汇总](release_validation.json)及独立软件绑定记录为准；旧失败继续保留。材料完整性检查不替代板端或实物验收。
+- 本地文件位置和待补项以审阅目录`readme.md`及[发布检查单](release_checklist.md)为准。
