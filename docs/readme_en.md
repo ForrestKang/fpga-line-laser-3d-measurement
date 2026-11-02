@@ -2,7 +2,7 @@
 
 **A compact PYNQ-Z2 instrument for non-contact profile measurement and rotary 3D scanning.**
 
-**English** | [简体中文](../readme.md)
+[![简体中文](media/language_zh_inactive.svg)](../readme.md) [![English](media/language_en_active.svg)](readme_en.md)
 
 [Quick start](getting_started.md) · [Architecture](architecture.md) · [Hardware](hardware.md) · [Build and deployment](build_and_deploy.md) · [Validation](validation.md)
 

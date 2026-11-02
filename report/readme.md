@@ -10,3 +10,5 @@ source_audit.md 是工程依赖审查；history/ 保留必要原说明与失败/
 third_party_notices.md 说明外部组件许可；license.md 继承既有仓库MIT许可，repository_and_license.md说明范围与私有状态。
 
 reproduction.md 为从零复现步骤；skill_development.md说明技能来源与验证；release_checklist.md列出正式提交前剩余工作。
+
+[真实AI提示、模型回答与纠错节选](ai_interaction_excerpts.md)补充原案例总结。

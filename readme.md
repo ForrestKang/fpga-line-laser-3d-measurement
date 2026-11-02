@@ -4,7 +4,7 @@
 
 基于 **PYNQ-Z2** 的小型线激光三维测量装置：相机采集激光条纹，FPGA完成亚像素提取、定点几何和截面统计，屏幕显示当前截面与逐步形成的点云，ARM负责扫描编排、界面、拼接与完整数据保存。
 
-**简体中文** | [English](docs/readme_en.md)
+[![简体中文](docs/media/language_zh_active.svg)](readme.md) [![English](docs/media/language_en_inactive.svg)](docs/readme_en.md)
 
 [快速开始](docs/getting_started.md) · [系统架构](docs/architecture.md) · [硬件接口](docs/hardware.md) · [构建与部署](docs/build_and_deploy.md) · [验证结果](docs/validation.md)
 

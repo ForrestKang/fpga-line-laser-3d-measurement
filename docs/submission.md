@@ -8,7 +8,7 @@
 | ARM与原生C | [src/ps](../src/ps) |
 | 固件与清单 | [board/firmware](../board/firmware) |
 | 验证与失败记录 | [sim](../sim/readme.md)、[build/evidence](../build/evidence)、[状态表](validation.md) |
-| AI协作与纠错 | [协作案例](../report/ai_collaboration_records.md) |
+| AI协作与纠错 | [协作案例](../report/ai_collaboration_records.md)、[真实交互节选](../report/ai_interaction_excerpts.md) |
 | 可复用技能 | [Skill索引](../skill/readme.md)、[开发说明](../report/skill_development.md) |
 | 复现与交接 | [复现步骤](../report/reproduction.md)、[发布检查单](../report/release_checklist.md) |
 | 匿名英文海报 | [PPTX](media/poster_en_anonymous.pptx)、[A4 PDF](media/poster_en_anonymous_a4.pdf) |
@@ -16,3 +16,5 @@
 完整原始录像、整卡镜像、全部历史采集和聊天数据库不塞入源码仓库。演示视频是独立提交件，保留在用户本地交付目录；后台格式、组别、上传入口与成功回执按实际通知核对。
 
 仓库沿用`ForrestKang/pynq-structured-light`，本次整理进入main并保留codex开发分支和所有历史分支。仓库暂保持私有，拥有者后续自行调整可见性。公开前须检查整个历史的隐私与第三方许可，本次仅审查新上传树。
+
+Skill已包含在工程的skill目录；独立Skill ZIP仅为上传方便，非本指南新增硬性要求。视频满足本次约定的三分钟以内、300MB以下；后台实际栏目和限制仍按报名系统核对。
