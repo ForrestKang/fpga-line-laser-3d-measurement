@@ -23,8 +23,8 @@
     },
     {
       "path": ".github/workflows/repository_checks.yml",
-      "size": 1466,
-      "sha256": "947006a5bec70e310daaa451a90ab2389eea1d1e42c7f21b3c8efe3b04e2e935"
+      "size": 1583,
+      "sha256": "6f86e7edd477b3e06316b5a5d2733df5d677efacdb722dd8573306b80d8375e5"
     },
     {
       "path": ".gitignore",
@@ -738,8 +738,8 @@
     },
     {
       "path": "report/skill_development.md",
-      "size": 2545,
-      "sha256": "2ebd488408af308d76b1659e64ab92c1a5f4a0b397c4b8ac0bdf30829fd8e2f1"
+      "size": 2968,
+      "sha256": "8e80f248237cc232bdbbcb0afbad054cf2e2048474304ced44dabc52263528cf"
     },
     {
       "path": "report/source_report_gate.json",
@@ -1030,6 +1030,11 @@
       "path": "sim/results/skill_cross_model.json",
       "size": 2540,
       "sha256": "143b76404a8b8d98494a163ac40fbc02b10b7e39708533563f19243b5735d636"
+    },
+    {
+      "path": "sim/results/skill_package.json",
+      "size": 1176,
+      "sha256": "464bdf1637b7985b5aa88c2be9b80819c2e7543d23a9cfeade24f6588dcb3a0d"
     },
     {
       "path": "sim/results/skill_portability.json",
@@ -2338,13 +2343,13 @@
     },
     {
       "path": "skill/readme.md",
-      "size": 12791,
-      "sha256": "3c53091ecf2ed07d0540baae0ce34a1a6d90de41e0645d3ecd2b9b0c7f22c6f0"
+      "size": 13525,
+      "sha256": "92f9a1544bd6644f65006fd57a899e20d7b27c38a8c709723cd4deacf6fc1159"
     },
     {
       "path": "skill/skill.md",
-      "size": 1752,
-      "sha256": "652213fba5a44e94d9beff659331a45333dd1d88893cbb3573e67b586167fdca"
+      "size": 1868,
+      "sha256": "d7e45b87cf081ca6f0bc8d07eb6f88708bc33f7001afbd3a8fe28c5039272bb2"
     },
     {
       "path": "skill/test_portability.py",
@@ -6207,9 +6212,19 @@
       "sha256": "852255b3489e78c22c312270a918b84458339249d80fead7526935d23db2b3ac"
     },
     {
+      "path": "tools/build_skill.py",
+      "size": 3158,
+      "sha256": "1181f4e71a3e52ea307440ea762782de2dd3918df0e282aa96293b9004e3f708"
+    },
+    {
       "path": "tools/check_repository.py",
       "size": 4413,
       "sha256": "21b3ca02f53126f6ebd1a0c424fc6b9a1173bd8eac8d283768e35abe51fc94d8"
+    },
+    {
+      "path": "tools/test_build_skill.py",
+      "size": 5502,
+      "sha256": "5f0a6d5b5fd2d79cae94672044811bc1034303f52ab8431c7b76d7f069f72c72"
     },
     {
       "path": "tools/test_repository_checks.py",

@@ -35,6 +35,8 @@ jobs:
         run: python -B skill/test_pynq_release_check.py
       - name: Portable skill independent-project tests
         run: python -B skill/test_portability.py
+      - name: Reproducible skill export and isolated consumer tests
+        run: python -B tools/test_build_skill.py
       - name: Restore exact original source layout
         run: python -B build/restore_sources.py --output "$RUNNER_TEMP/scan3d_restore"
       - name: State CI scope

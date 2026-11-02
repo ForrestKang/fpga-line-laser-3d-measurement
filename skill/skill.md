@@ -14,6 +14,8 @@ python -B <本目录>/pynq_release_check.py --manifest <清单> --runtime-root <
 python -B <本目录>/verify_bundle.py <待检查的工程根目录>
 ```
 
+检查结果指出哪个文件、哪项声明不匹配；只发现摘要差异时，不推断具体硬件故障。
+
 Overlay清单格式和退出码见[pynq_release_check.md](pynq_release_check.md)。需要保存检查器JSON时使用`--output <新文件>`，保留原输入及旧报告；检查失败不能通过自动重算清单摘要转成通过。
 
 返回匹配结果、具体问题、实际命令和输出范围。现有脚本验证文件内容和配套声明；设备型号兼容、实际加载、接口行为及算法精度使用目标工程自己的验证。
