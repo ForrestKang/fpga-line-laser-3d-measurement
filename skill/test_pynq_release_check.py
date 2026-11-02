@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import copy
 from contextlib import redirect_stdout
 import hashlib
 import io
@@ -11,6 +12,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import shutil
 import tempfile
 import unittest
 
@@ -197,6 +199,97 @@ class ReleaseCheckTests(unittest.TestCase):
         result = self.run_check()
         escape = result["runtime_guards"]["items"][-1]
         self.assertEqual("link_escapes_root", escape["error"])
+
+    def test_utf8_bom_manifest_is_supported_without_mutation(self) -> None:
+        self.manifest.write_text(json.dumps(self.data), encoding="utf-8-sig")
+        original = self.manifest.read_bytes()
+        self.assertTrue(self.run_check()["passed"])
+        self.assertEqual(original, self.manifest.read_bytes())
+
+    def test_duplicate_json_keys_are_rejected(self) -> None:
+        self.manifest.write_text('{"files": {}, "files": {}}', encoding="utf-8")
+        result = self.run_check()
+        self.assertFalse(result["passed"])
+        self.assertEqual("duplicate_json_key", result["errors"][0]["error"])
+
+    def test_excessively_nested_json_is_a_structured_failure(self) -> None:
+        self.manifest.write_text("[" * 2000 + "0" + "]" * 2000, encoding="utf-8")
+        result = self.run_check()
+        self.assertFalse(result["passed"])
+        self.assertEqual("manifest", result["errors"][0]["scope"])
+
+    def test_manifest_parser_recursion_error_is_structured(self) -> None:
+        from unittest.mock import patch
+        with patch.object(checker.json, "loads", side_effect=RecursionError("parser depth")):
+            result = self.run_check()
+        self.assertFalse(result["passed"])
+        self.assertIn("RecursionError", result["errors"][0]["error"])
+
+    def test_invalid_file_fields_return_structured_failure(self) -> None:
+        original = copy.deepcopy(self.data)
+        for field, values in {"size": [True, -1, 1.5, "3", None],
+                              "sha256": [None, "", "g" * 64],
+                              "path": ["../a.bit", "a\x00.bit", "./image.bit"]}.items():
+            for value in values:
+                with self.subTest(field=field, value=repr(value)):
+                    self.data = copy.deepcopy(original)
+                    self.data["files"]["bit"][field] = value
+                    self.write_manifest()
+                    result = self.run_check()
+                    self.assertFalse(result["passed"])
+                    self.assertTrue(result["errors"])
+
+    def test_missing_manifest_returns_structured_failure(self) -> None:
+        self.manifest.unlink()
+        result = self.run_check()
+        self.assertFalse(result["passed"])
+        self.assertEqual("manifest", result["errors"][0]["scope"])
+
+    def test_missing_report_parent_is_rejected(self) -> None:
+        with redirect_stdout(io.StringIO()):
+            code = checker.main(["--manifest", str(self.manifest), "--runtime-root", str(self.runtime),
+                                 "--output", str(self.root / "missing" / "report.json")])
+        self.assertEqual(2, code)
+        self.assertFalse((self.root / "missing").exists())
+
+    def _legacy_console(self, *, bad_driver: bool = False, output_error: bool = False):
+        unicode_root = self.root / "测试 目录"
+        fw, runtime = unicode_root / "overlay", unicode_root / "runtime"
+        shutil.copytree(self.firmware, fw)
+        shutil.copytree(self.runtime, runtime)
+        if bad_driver:
+            (runtime / "module.py").write_bytes(b"VERSION = 2\n")
+        report = unicode_root / ("missing/report.json" if output_error else "检查结果.json")
+        env = os.environ.copy()
+        env.update(PYTHONIOENCODING="cp950:strict", PYTHONUTF8="0")
+        completed = subprocess.run(
+            [__import__("sys").executable, "-B", str(Path(checker.__file__).resolve()),
+             "--manifest", str(fw / "manifest.json"), "--runtime-root", str(runtime),
+             "--output", str(report)],
+            env=env, capture_output=True, timeout=20,
+        )
+        self.assertNotIn(b"Traceback", completed.stderr, completed.stderr)
+        payload = json.loads(completed.stdout.decode("ascii"))
+        if report.exists():
+            self.assertEqual(payload, json.loads(report.read_text(encoding="utf-8")))
+        return completed.returncode, payload
+
+    def test_legacy_console_accepts_unicode_paths(self) -> None:
+        code, payload = self._legacy_console()
+        self.assertEqual(0, code)
+        self.assertTrue(payload["passed"])
+
+    def test_legacy_console_preserves_failure_status(self) -> None:
+        code, payload = self._legacy_console(bad_driver=True)
+        self.assertEqual(1, code)
+        self.assertFalse(payload["passed"])
+        self.assertEqual("sha256_mismatch", payload["runtime_guards"]["items"][0]["error"])
+
+    def test_legacy_console_preserves_output_error_status(self) -> None:
+        code, payload = self._legacy_console(output_error=True)
+        self.assertEqual(2, code)
+        self.assertFalse(payload["passed"])
+        self.assertEqual("output", payload["errors"][0]["scope"])
 
 
 def main() -> int:

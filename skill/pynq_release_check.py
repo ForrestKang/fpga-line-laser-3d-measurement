@@ -135,8 +135,8 @@ def _read_manifest(manifest_path: Path) -> dict[str, Any]:
         return parsed
 
     try:
-        parsed = json.loads(manifest_path.read_text(encoding="utf-8"), object_pairs_hook=reject_duplicate_keys)
-    except (OSError, UnicodeError, json.JSONDecodeError) as exc:
+        parsed = json.loads(manifest_path.read_text(encoding="utf-8-sig"), object_pairs_hook=reject_duplicate_keys)
+    except (OSError, UnicodeError, json.JSONDecodeError, RecursionError) as exc:
         raise ManifestError(f"manifest_read_or_json_error:{type(exc).__name__}") from exc
     if not isinstance(parsed, dict):
         raise ManifestError("manifest_root_must_be_object")
@@ -297,14 +297,15 @@ def main(argv: list[str] | None = None) -> int:
         except FileExistsError:
             print(json.dumps({"schema": SCHEMA, "passed": False, "errors": [
                 {"scope": "output", "error": "output_already_exists_not_overwritten", "path": args.output}
-            ]}, ensure_ascii=False, indent=2))
+            ]}, ensure_ascii=True, indent=2))
             return 2
         except OSError as exc:
             print(json.dumps({"schema": SCHEMA, "passed": False, "errors": [
                 {"scope": "output", "error": f"output_write_failed:{type(exc).__name__}", "path": args.output}
-            ]}, ensure_ascii=False, indent=2))
+            ]}, ensure_ascii=True, indent=2))
             return 2
-    print(serialized, end="")
+    # ASCII-safe JSON survives legacy Windows consoles; saved reports stay UTF-8.
+    print(json.dumps(result, ensure_ascii=True, indent=2))
     return 0 if result["passed"] else 1
 
 

@@ -46,6 +46,8 @@ python -B pynq_release_check.py --manifest ../filter_overlay/manifest.json --run
 
 标准输出为 JSON，包含 `passed`、`firmware_files`、`runtime_guards` 和 `errors`。退出码 `0` 表示全部声明项匹配，`1` 表示输入或文件错误，`2` 表示报告文件创建失败。
 
+清单接受UTF-8及带BOM的UTF-8。控制台JSON使用ASCII转义兼容旧Windows编码，保存的报告仍为UTF-8；JSON解码后的路径和字段保持原值。
+
 可选 `--output ../results/release_check.json` 保存报告；父目录须已存在，目标文件须尚不存在。脚本拒绝覆盖旧报告。
 
 ## 已验证的拒绝行为

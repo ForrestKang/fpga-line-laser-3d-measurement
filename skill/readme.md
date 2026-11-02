@@ -36,6 +36,8 @@ python -B test_portability.py
 
 `test_portability.py` 在临时目录建立图像滤波和信号采集两个独立的合成工程，使用不同的文件名和驱动目录。它检查正常配套、交叉混用驱动、目录迁移、脱离本仓库的独立调用，以及检查前后输入内容不变。测试中的板卡名称用于排除型号硬编码，bit/HWH 为测试字节，不是可加载固件。
 
+工具回归另覆盖损坏或缺失清单、重复JSON键、非法字段、中文与空格路径、UTF-8 BOM、旧编码控制台、报告防覆盖、链接和分块读取；结果见工程的`sim/results/skill_regression.json`。符号链接用例依运行环境记录跳过原因。
+
 `test_pynq_release_check.py` 和 `test_portability.py` 使用 `--report <新文件.json>` 保存测试报告；检查器 `pynq_release_check.py` 使用 `--output <新文件.json>` 保存检查结果，两者不能混用。已有报告不会被覆盖。复用测试结果保存在工程的 `sim/results/skill_portability.json`，本目录移到其他工程后可直接重新运行。
 
 ## 从开发失败中提炼的规则
