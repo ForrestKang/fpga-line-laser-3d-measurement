@@ -2,7 +2,7 @@
 `default_nettype none
 // Registered, shared-DSP Q30 geometry. One point in flight; caller applies the
 // final frame acceptance gate. Brown inversion uses five bounded iterations.
-module r35_geometry(
+module geometry_engine(
  input wire clk,rst,clear,
  input wire cfg_we,input wire [6:0] cfg_addr,input wire signed [63:0] cfg_wdata,
  input wire cfg_commit,input wire [31:0] cfg_epoch,
@@ -50,9 +50,9 @@ module r35_geometry(
  integer i;
  assign busy=state!=IDLE||out_valid;
  assign in_ready=state==IDLE&&!out_valid&&!cfg_commit&&!cfg_we;
- r35_geo_mul64 multiplier(.clk(clk),.rst(rst||clear),.start(mul_start),.a(op_a),.b(op_b),
+ geometry_multiplier multiplier(.clk(clk),.rst(rst||clear),.start(mul_start),.a(op_a),.b(op_b),
   .done(mul_done),.overflow(mul_overflow),.value(mul_value),.raw(mul_raw));
- r35_div_q30 divider(.clk(clk),.rst(rst||clear),.start(div_start),.a(op_a),.b(op_b),
+ fixed_point_divider divider(.clk(clk),.rst(rst||clear),.start(div_start),.a(op_a),.b(op_b),
   .busy(div_busy),.done(div_done),.overflow(div_overflow),.zero(div_zero),.value(div_value));
 
  task multiply(input signed [63:0] a,input signed [63:0] b,input [6:0] next_state);

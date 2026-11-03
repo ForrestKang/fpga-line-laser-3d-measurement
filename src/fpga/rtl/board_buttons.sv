@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-// R42: asynchronous active-high buttons; event counters never clear on read.
-module r42_buttons #(parameter [31:0] DEFAULT_DEBOUNCE_CYCLES=32'd2000000)(
+// board buttons: asynchronous active-high buttons; event counters never clear on read.
+module board_buttons #(parameter [31:0] DEFAULT_DEBOUNCE_CYCLES=32'd2000000)(
  input wire clk,input wire resetn,input wire [3:0] btn,
  input wire reg_we,input wire [7:0] reg_waddr,input wire [31:0] reg_wdata,
  input wire [3:0] reg_wstrb,input wire [7:0] reg_raddr,output reg [31:0] reg_rdata,

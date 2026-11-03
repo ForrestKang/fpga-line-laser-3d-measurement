@@ -18,9 +18,9 @@ if {$dispatch ni {0 1}} {error "DISPATCH must be 0/1"}
 if {$lanes ni {2 4 8}} {error "LANES must be 2/4/8"}
 file mkdir $out
 file mkdir $out/sources
-foreach name {r41_window_filter.sv r35_direction.sv r35_row.sv} {file copy $root/rtl/$name $out/sources/$name}
-read_verilog -sv [list $out/sources/r41_window_filter.sv $out/sources/r35_direction.sv $out/sources/r35_row.sv]
-synth_design -mode out_of_context -top r35_row -part xc7z020clg400-1 -generic [list LANES=$lanes DISPATCH=$dispatch BANKED_REQUESTS=$banked BANKED_RESULTS=$banked_results BALANCED_DISPATCH=$balanced]
+foreach name {shared_window_filter.sv direction_refiner.sv stripe_extractor.sv} {file copy $root/rtl/$name $out/sources/$name}
+read_verilog -sv [list $out/sources/shared_window_filter.sv $out/sources/direction_refiner.sv $out/sources/stripe_extractor.sv]
+synth_design -mode out_of_context -top stripe_extractor -part xc7z020clg400-1 -generic [list LANES=$lanes DISPATCH=$dispatch BANKED_REQUESTS=$banked BANKED_RESULTS=$banked_results BALANCED_DISPATCH=$balanced]
 create_clock -name sys_clk -period 10.000 [get_ports clk]
 report_utilization -hierarchical -file $out/utilization.rpt
 report_timing_summary -file $out/timing_synth.rpt

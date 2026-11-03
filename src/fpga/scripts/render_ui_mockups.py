@@ -14,7 +14,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 RT = ROOT / 'runtime'
 sys.path[:0] = [str(RT), str(RT / 'structured_light_system_geometry_v1/src/python'), str(ROOT / 'reference')]
-import geometry_reference_r35 as geo  # noqa: E402
+import geometry_reference as geo  # noqa: E402
 import reference_r39 as ref  # noqa: E402
 import reference_r41_bin2 as ref_bin  # noqa: E402
 from r33 import ui_theme as th  # noqa: E402

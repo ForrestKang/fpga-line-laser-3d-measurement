@@ -1,4 +1,4 @@
-"""R41 measurement unit verification: rtl/r41_measure.sv (Icarus) against an independent model.
+"""R41 measurement unit verification: rtl/profile_statistics.sv (Icarus) against an independent model.
 
 Random geometry records (valid/invalid, measurement/preview flags, points below/inside/above the
 Z histogram and outside the height bands) over many packets with commits, discards, an empty
@@ -136,7 +136,7 @@ def main():
     ev, expected = build_events()
     (out / 'events.hex').write_text('\n'.join(' '.join('%08x' % (w & M32) for w in e) for e in ev) + '\n')
     vvp = out / 'sim.vvp'
-    subprocess.run([str(IVER / 'iverilog.exe'), '-g2012', '-o', str(vvp), str(R40 / 'rtl/r41_measure.sv'),
+    subprocess.run([str(IVER / 'iverilog.exe'), '-g2012', '-o', str(vvp), str(R40 / 'rtl/profile_statistics.sv'),
                     str(R40 / 'tests/tb_r41_measure.sv')], check=True)
     gap = sys.argv[2] if len(sys.argv) > 2 else '5'       # idle cycles after each point (0: back-to-back)
     sim = subprocess.run([str(IVER / 'vvp.exe'), '-n', str(vvp), '+EVENTS=' + str(out / 'events.hex').replace('\\', '/'),

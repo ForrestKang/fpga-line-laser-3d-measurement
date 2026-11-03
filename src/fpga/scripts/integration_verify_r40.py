@@ -3,7 +3,7 @@
 R40 additions over the R39 script below: the PL cloud view is compiled in with its
 ingest enabled; (a) every case's primary stream must be byte-identical to the R39
 integration evidence (the view only snoops), and (b) the view's ingest counters must
-equal model/r40_model.py applied to that case's own geometry records.
+equal model/point_cloud_model.py applied to that case's own geometry records.
 
 R39 docstring follows. Adapted from scan3d_r36_frontend_timing_20261025_01/variants/front02/scripts/
 frontend_integration_verify.py. Differences:
@@ -25,7 +25,7 @@ OUT.mkdir(parents=True, exist_ok=False)
 VERIFY = ROOT / 'vendor/verification'
 R36 = Path('D:/Workspace/CodexWork/scan3d_r36_frontend_timing_20261025_01/variants/front02')
 sys.path.insert(0, str(VERIFY / 'r36_runtime' if (VERIFY / 'r36_runtime').is_dir() else R36 / 'runtime'))
-import geometry_reference_r35 as geo  # noqa: E402
+import geometry_reference as geo  # noqa: E402
 RUNTIME = ROOT / 'runtime12'
 sys.path[:0] = [str(RUNTIME), str(RUNTIME / 'structured_light_system_geometry_v1/src/python')]
 from r33.geometry import load_calibration  # noqa: E402
@@ -49,16 +49,16 @@ spec.loader.exec_module(old_ref)
 SIM = VERIFY / 'sim'
 RAM = ROOT / 'vendor/r31_baseline_copy/source_tree/pl/r25_next/rtl'
 IVER = Path('D:/Tools/structured_light_iverilog/bin')
-sources = [ROOT / 'rtl/r41_window_filter.sv', ROOT / 'baseline_rtl/r33_direction.sv',
-           ROOT / 'rtl/r35_direction.sv', ROOT / 'rtl/r35_row.sv', ROOT / 'rtl/r35_frontend.sv',
-           ROOT / 'rtl/r42_buttons.sv', ROOT / 'rtl/r35_axi.sv', ROOT / 'rtl/r35_geometry.sv', ROOT / 'rtl/r35_geo_mul64.sv',
-           ROOT / 'rtl/r35_div_q30.sv', ROOT / 'rtl/r35_point_cache.sv',
+sources = [ROOT / 'rtl/shared_window_filter.sv', ROOT / 'baseline_rtl/ridge_center_solver.sv',
+           ROOT / 'rtl/direction_refiner.sv', ROOT / 'rtl/stripe_extractor.sv', ROOT / 'rtl/pixel_frontend.sv',
+           ROOT / 'rtl/board_buttons.sv', ROOT / 'rtl/axi_packet_controller.sv', ROOT / 'rtl/geometry_engine.sv', ROOT / 'rtl/geometry_multiplier.sv',
+           ROOT / 'rtl/fixed_point_divider.sv', ROOT / 'rtl/point_cloud_cache.sv',
            RAM / 'pfo3_tdp_ram.sv', RAM / 'pfo3_banked_ram.sv',
-           ROOT / 'rtl/r40_cloud_view.sv', ROOT / 'rtl/r40_rams.sv', ROOT / 'rtl/r40_tables.sv',
-           ROOT / 'tests/xpm_stubs_sim.v', ROOT / 'tests/integration_axi_tb.sv', ROOT / 'rtl/r41_measure.sv']
+           ROOT / 'rtl/point_cloud_renderer.sv', ROOT / 'rtl/point_cloud_memory.sv', ROOT / 'rtl/point_cloud_tables.sv',
+           ROOT / 'tests/xpm_stubs_sim.v', ROOT / 'tests/integration_axi_tb.sv', ROOT / 'rtl/profile_statistics.sv']
 R39_EVIDENCE = VERIFY / 'R39_reference'
 sys.path.insert(0, str(ROOT / 'model'))
-import r40_model as view_model  # noqa: E402
+import point_cloud_model as view_model  # noqa: E402
 os.environ.update(TEMP='D:/Workspace/CodexTemp/r40_integration', TMP='D:/Workspace/CodexTemp/r40_integration')
 Path(os.environ['TEMP']).mkdir(parents=True, exist_ok=True)
 (OUT / 'sources').mkdir()
@@ -243,7 +243,7 @@ for case_name in cases:
     assert actual_geo == expected_geo, (case, 'geometry mismatch', len(actual_geo), len(expected_geo))
     assert footer[29] == len(actual_geo)
     moments = []
-    # b08: r35_moments removed; no kind 4/5 records, footer moment words zero.
+    # b08: moment_accumulator removed; no kind 4/5 records, footer moment words zero.
     assert groups[4] == groups[5] == [] and footer[30] == 0 and footer[31] == 0, case
     count = 0
     # R40 (a): PFO3 output unchanged by the snooping view. The only words allowed to
@@ -313,5 +313,5 @@ for case_name in cases:
 (OUT / 'RESULT.json').write_text(json.dumps(dict(passed=True, cases=results, source_sha256=source_sha,
     reference_sha256=hashlib.sha256((ROOT / 'reference/reference_r39.py').read_bytes()).hexdigest(),
     scope='full-size R40 RTL AXI simulation: R39 reference/decoder, primary == R39 evidence, '
-          'view ingest == r40_model; not a board run'), indent=2))
+          'view ingest == point_cloud_model; not a board run'), indent=2))
 print('R40_INTEGRATION_PASS', flush=True)

@@ -17,7 +17,7 @@ if {![info exists row_dispatch] || $row_dispatch ni {0 1}} {error "R43 row_dispa
 if {![info exists banked_requests] || $banked_requests ni {0 1}} {error "R43 banked_requests must explicitly be 0/1"}
 if {![info exists banked_results] || $banked_results ni {0 1}} {error "R43 banked_results must explicitly be 0/1"}
 if {![info exists balanced_dispatch] || $balanced_dispatch ni {0 1}} {error "R43 balanced_dispatch must explicitly be 0/1"}
-set_property verilog_define [list R43_ROW_LANES=$row_lanes R43_ROW_DISPATCH=$row_dispatch R43_BANKED_REQUESTS=$banked_requests R43_BANKED_RESULTS=$banked_results R43_BALANCED_DISPATCH=$balanced_dispatch] [get_filesets sources_1]
+set_property verilog_define [list DIRECTION_LANES=$row_lanes DIRECTION_DISPATCH=$row_dispatch BANKED_DIRECTION_REQUESTS=$banked_requests BANKED_DIRECTION_RESULTS=$banked_results BALANCED_DIRECTION_DISPATCH=$balanced_dispatch] [get_filesets sources_1]
 set_property ip_repo_paths [list [file join $handoff ip_repo]] [current_project]
 update_ip_catalog
 source [file join $handoff scripts project_inputs.tcl]
@@ -27,25 +27,25 @@ set r28_rtl {}
 foreach f $rtl_files {
  set base [file tail $f]
  switch $base {
-  structured_light_motion_profile_hdmi_top.sv {lappend r28_rtl [file join $root rtl r42_board_top.sv]}
-  pfo3_frontend_r25.sv {lappend r28_rtl [file join $root rtl r35_frontend.sv]}
-  pfo3_row_r25.sv {lappend r28_rtl [file join $root rtl r35_row.sv]}
-  pfo3_axi_r25.sv {lappend r28_rtl [file join $root rtl r35_axi.sv]}
-  pfo3_axi_bd_r25.v {lappend r28_rtl [file join $root rtl pfo3_axi_bd_r25.v]}
+  structured_light_motion_profile_hdmi_top.sv {lappend r28_rtl [file join $root rtl board_top.sv]}
+  pixel_frontend.sv {lappend r28_rtl [file join $root rtl pixel_frontend.sv]}
+  pfo3_row_r25.sv {lappend r28_rtl [file join $root rtl stripe_extractor.sv]}
+  axi_packet_controller.sv {lappend r28_rtl [file join $root rtl axi_packet_controller.sv]}
+  pfo3_axi_bd.v {lappend r28_rtl [file join $root rtl pfo3_axi_bd.v]}
   p2_capture_core.sv - p2_capture_metadata.sv - p2_processing_ip.sv - camera_signal_monitor.sv - pclk_frequency_meter.sv {lappend r28_rtl [file join $root rtl $base]}
   default {lappend r28_rtl $f}
  }
 }
 set rtl_files $r28_rtl
-lappend rtl_files [file join $root baseline_rtl r33_direction.sv] [file join $root rtl r41_window_filter.sv]
-foreach f {r35_geometry.sv r35_geo_mul64.sv r35_div_q30.sv r35_point_cache.sv} {lappend rtl_files [file join $root rtl $f]}
-lappend rtl_files [file join $root rtl r35_direction.sv]
-# R40 PL cloud view (instantiated inside pfo3_axi_r25).
-foreach f {r40_cloud_view.sv r40_rams.sv r40_tables.sv r41_laser_ae.sv r41_measure.sv section_measure.sv} {lappend rtl_files [file join $root rtl $f]}
-lappend rtl_files [file join $root rtl r42_buttons.sv]
+lappend rtl_files [file join $root baseline_rtl ridge_center_solver.sv] [file join $root rtl shared_window_filter.sv]
+foreach f {geometry_engine.sv geometry_multiplier.sv fixed_point_divider.sv point_cloud_cache.sv} {lappend rtl_files [file join $root rtl $f]}
+lappend rtl_files [file join $root rtl direction_refiner.sv]
+# R40 PL cloud view (instantiated inside axi_packet_controller).
+foreach f {point_cloud_renderer.sv point_cloud_memory.sv point_cloud_tables.sv laser_auto_exposure.sv profile_statistics.sv section_measure.sv} {lappend rtl_files [file join $root rtl $f]}
+lappend rtl_files [file join $root rtl board_buttons.sv]
 add_files -norecurse $rtl_files
 set_property include_dirs [file join $tree pl r25_next rtl] [get_filesets sources_1]
-lappend xdc_files [file join $root constraints r42_buttons.xdc]
+lappend xdc_files [file join $root constraints board_buttons.xdc]
 add_files -fileset constrs_1 -norecurse $xdc_files
 set_property top structured_light_motion_profile_hdmi_top [get_filesets sources_1]
 update_compile_order -fileset sources_1

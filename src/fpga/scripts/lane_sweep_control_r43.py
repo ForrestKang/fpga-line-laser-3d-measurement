@@ -3,7 +3,7 @@ from pathlib import Path
 import hashlib,json,os,subprocess,sys
 ROOT=Path(__file__).resolve().parents[1];OUT=Path(sys.argv[1]);OUT.mkdir(parents=True,exist_ok=False)
 BASE=Path(sys.argv[2]);IVER=Path('D:/Tools/structured_light_iverilog/bin')
-SRC=[ROOT/'rtl/r41_window_filter.sv',ROOT/'baseline_rtl/r33_direction.sv',ROOT/'rtl/r35_direction.sv',ROOT/'rtl/r35_row.sv',ROOT/'rtl/r35_frontend.sv',ROOT/'vendor/lane_sweep/rtl/pfo3_tdp_ram.sv',ROOT/'vendor/lane_sweep/rtl/pfo3_banked_ram.sv',ROOT/'tests/lane_sweep_tb.sv']
+SRC=[ROOT/'rtl/shared_window_filter.sv',ROOT/'baseline_rtl/ridge_center_solver.sv',ROOT/'rtl/direction_refiner.sv',ROOT/'rtl/stripe_extractor.sv',ROOT/'rtl/pixel_frontend.sv',ROOT/'vendor/lane_sweep/rtl/pfo3_tdp_ram.sv',ROOT/'vendor/lane_sweep/rtl/pfo3_banked_ram.sv',ROOT/'tests/lane_sweep_tb.sv']
 (OUT/'sources').mkdir()
 for p in SRC:(OUT/'sources'/p.name).write_bytes(p.read_bytes())
 rows=[]

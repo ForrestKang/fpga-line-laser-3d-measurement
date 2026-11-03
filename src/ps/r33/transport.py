@@ -312,7 +312,7 @@ class ActualPLTransportR25:
         return frame,receipt
 
     def configure_geometry(self, calibration, angle_rad, frame_id):
-        from geometry_reference_r35 import parameters
+        from geometry_reference import parameters
         p=parameters(calibration, angle_rad)
         if p[34]&8:raise PFO3Error('unsupported PL geometry calibration')
         self.geometry_binding=None

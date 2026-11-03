@@ -1,23 +1,23 @@
 `timescale 1ns/1ps
-// R43 production builds may select direction lanes without changing AXI/BD ports.
-`ifndef R43_ROW_LANES
-`define R43_ROW_LANES 2
+// parallel production builds may select direction lanes without changing AXI/BD ports.
+`ifndef DIRECTION_LANES
+`define DIRECTION_LANES 2
 `endif
-`ifndef R43_ROW_DISPATCH
-`define R43_ROW_DISPATCH 0
+`ifndef DIRECTION_DISPATCH
+`define DIRECTION_DISPATCH 0
 `endif
-`ifndef R43_BANKED_REQUESTS
-`define R43_BANKED_REQUESTS 0
+`ifndef BANKED_DIRECTION_REQUESTS
+`define BANKED_DIRECTION_REQUESTS 0
 `endif
 // Fully bounded framed pixel frontend. The graph is computed in PL from compact
 // row-qualified descriptors; the host never links candidates or scans pixels.
-`ifndef R43_BANKED_RESULTS
-`define R43_BANKED_RESULTS 0
+`ifndef BANKED_DIRECTION_RESULTS
+`define BANKED_DIRECTION_RESULTS 0
 `endif
-`ifndef R43_BALANCED_DISPATCH
-`define R43_BALANCED_DISPATCH 0
+`ifndef BALANCED_DIRECTION_DISPATCH
+`define BALANCED_DIRECTION_DISPATCH 0
 `endif
-module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRAPH=1,ROW_PREFETCH=1,ROW_LANES=`R43_ROW_LANES,ROW_DISPATCH=`R43_ROW_DISPATCH,ROW_BANKED_REQUESTS=`R43_BANKED_REQUESTS,ROW_BANKED_RESULTS=`R43_BANKED_RESULTS,ROW_BALANCED_DISPATCH=`R43_BALANCED_DISPATCH)(
+module pixel_frontend #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRAPH=1,ROW_PREFETCH=1,ROW_LANES=`DIRECTION_LANES,ROW_DISPATCH=`DIRECTION_DISPATCH,ROW_BANKED_REQUESTS=`BANKED_DIRECTION_REQUESTS,ROW_BANKED_RESULTS=`BANKED_DIRECTION_RESULTS,ROW_BALANCED_DISPATCH=`BALANCED_DIRECTION_DISPATCH)(
     input wire clk, rst,
     input wire start, abort,
     input wire bin_mode,
@@ -100,7 +100,7 @@ module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRA
  reg [31:0] delta_c,delta_w;
  reg edge_ok,eligible_a,eligible_b,eligible_node;
  reg output_eligible_node; // Frozen per node in OUT_ADDR; label traversal keeps live eligibility.
- reg output_row_overflow; // R39: this node's row exceeded 16 candidates, frozen with eligibility.
+ reg output_row_overflow; // reference: this node's row exceeded 16 candidates, frozen with eligibility.
  reg edge_reg;
  reg [14:0] edge_delta;
  // Acceptance is captured only after the synchronous root-support read settles.
@@ -116,10 +116,10 @@ module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRA
  wire [95:0] final_desc={held_desc[95:93],can_p,can_m,held_desc[90:0]};
  assign geometry_valid=state==G_SEND&&geometry_captured&&geometry_modes!=0&&!abort;
  assign geometry_modes={frame_preview_usable&&held_desc[92],frame_measurement_usable&&held_desc[91]};
- reg bin,pair_phase;          // R41: binning mode latched at start, pair position
+ reg bin,pair_phase;          // live measurement: binning mode latched at start, pair position
  reg seed_retry_active;      // policy 3: explicit algorithm version, full width only
  reg [7:0] pair_first;
- // R41 binning: binned centre -> W coordinates, same 23-bit mapping as the wire record.
+ // live measurement binning: binned centre -> W coordinates, same 23-bit mapping as the wire record.
  wire [22:0] desc_u_full={held_desc[39:18],1'b0}+23'd2048;
  assign geometry_u_q12=bin?{9'b0,desc_u_full}:{10'b0,held_desc[39:18]};
  assign geometry_v_q12=$signed({11'b0,node[12:4],12'b0})+$signed(held_desc[90:78]);
@@ -189,10 +189,10 @@ module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRA
  pfo3_banked_ram #(.WIDTH(15),.DEPTH(N)) stability_ram(
   clk,ma,addr_b,init_mem||(state==PAIR_APPLY&&pass==2&&stability_max_all>sta),init_mem?15'b0:stability_max_all,
   pair_mode,(state==PAIR_APPLY&&pass==2)?stability_wb_reg:4'b0,stability_write4,sta,stb,stability_b4);
- // R41 2x horizontal binning (bin latched at start): the first pixel of a pair is held, the
+ // live measurement 2x horizontal binning (bin latched at start): the first pixel of a pair is held, the
  // row engine gets the rounded pair mean with the second one. Input accounting is unchanged.
  wire [8:0] pair_sum={1'b0,pair_first}+{1'b0,pixel_data}+9'd1;
- r35_row #(.W(FRAME_WIDTH),.H(FRAME_HEIGHT),.PREFETCH(ROW_PREFETCH),.LANES(ROW_LANES),.DISPATCH(ROW_DISPATCH),.BANKED_REQUESTS(ROW_BANKED_REQUESTS),.BANKED_RESULTS(ROW_BANKED_RESULTS),.BALANCED_DISPATCH(ROW_BALANCED_DISPATCH)) row_engine(
+ stripe_extractor #(.W(FRAME_WIDTH),.H(FRAME_HEIGHT),.PREFETCH(ROW_PREFETCH),.LANES(ROW_LANES),.DISPATCH(ROW_DISPATCH),.BANKED_REQUESTS(ROW_BANKED_REQUESTS),.BANKED_RESULTS(ROW_BANKED_RESULTS),.BALANCED_DISPATCH(ROW_BALANCED_DISPATCH)) row_engine(
   .clk(clk),.rst(rst),.clear(clear_row),.bin(bin),.seed_retry_enable(seed_retry_active),.pixel_data(bin?pair_sum[8:1]:pixel_data),
   .pixel_valid(pixel_valid&&busy&&state==INGRESS&&!clear_row&&(!bin||pair_phase)),.pixel_ready(row_ready),
   .diag_data(local_diag),.diag_valid(local_valid),.diag_ready(record_ready&&state==INGRESS),
@@ -226,7 +226,7 @@ module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480,SPARSE_GRA
   eligible_b=pair_b<rc[4:0]&&!rc[5];
   edge_ok=eligible_a&&eligible_b&&delta_c<=24576&&delta_w<=8;
   eligible_node=(node[3:0]<rows[node>>4][4:0])&&!rows[node>>4][8];
-  next_can_p=output_eligible_node&&!ama&&sub>=3; // R39: overflow rows are already ineligible
+  next_can_p=output_eligible_node&&!ama&&sub>=3; // reference: overflow rows are already ineligible
   next_can_m=next_can_p&&sub>=8&&held_desc[69:50]>=73728;
   next_reason_p=0;next_reason_m=0;
   if(output_row_overflow)begin next_reason_p=6;next_reason_m=6;end

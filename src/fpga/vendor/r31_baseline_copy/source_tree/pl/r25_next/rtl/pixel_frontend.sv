@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 // Fully bounded framed pixel frontend. The graph is computed in PL from compact
 // row-qualified descriptors; the host never links candidates or scans pixels.
-module pfo3_frontend_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
+module pixel_frontend #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
 `include "pfo3_frontend_ports.svh"
 );
  localparam N=FRAME_HEIGHT*16;

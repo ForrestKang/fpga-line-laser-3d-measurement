@@ -1,7 +1,7 @@
 set root D:/Workspace/CodexWork/scan3d_pixel_frontend_20261021_25
 if {[get_property DIRECTORY [current_project]] ne "$root/pl/build/full_project_r25_v9"} {error WRONG_V9_ISOLATED_PROJECT}
 close_design
-foreach base {pfo3_frontend_r25.sv pfo3_row_r25.sv pfo3_tdp_ram.sv pfo3_frontend_ports.svh} {
+foreach base {pixel_frontend.sv pfo3_row_r25.sv pfo3_tdp_ram.sv pfo3_frontend_ports.svh} {
  set old [get_files -all -quiet */$base]
  if {[llength $old]!=1} {error "unexpected source count for $base: $old"}
  remove_files $old

@@ -19,7 +19,7 @@ module p2_capture_metadata (
     output reg [63:0] snapshot_timestamp,
     output reg [31:0] event_count
 );
-    // R37: shared global-only camera reset, generated once in capture_core.
+    // threshold: shared global-only camera reset, generated once in capture_core.
     // Capture abort/flush still cannot erase this SOF event mailbox.
     reg cam_toggle;
     reg [31:0] cam_id_mailbox;

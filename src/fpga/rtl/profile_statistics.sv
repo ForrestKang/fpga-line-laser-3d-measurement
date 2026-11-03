@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 `default_nettype none
-// R41 live measurement statistics over the PL geometry records of one PFO3 packet.
-// Read-only snoop of geo_out_record (same source and commit rule as r40_cloud_view): points
+// live measurement live measurement statistics over the PL geometry records of one PFO3 packet.
+// Read-only snoop of geo_out_record (same source and commit rule as point_cloud_renderer): points
 // count only for packets whose footer leaves without error; start/abort/error discard them.
 // Record words: [0] id, [1..3] camera X/Y/Z Q16 mm, [4..6] axis X/Y/Z Q16 mm, [7] flags
 // (bit8 valid, bit1 preview, bit0 measurement).
@@ -9,7 +9,7 @@
 //   N, camera Z min/max/sum + median (256-bin histogram), camera X/Y min/max,
 //   axis Z min/max, and 32 axis-height bands: count, min/max/sum of r^2 = ax^2 + ay^2 (Q32).
 // Registers (offset within the 0x500 window, 32-bit):
-//  00 magic 'R41M'         04 ctrl: b0 enable, b1 preview points (else measurement)
+//  00 magic 0x5234314D         04 ctrl: b0 enable, b1 preview points (else measurement)
 //  08 z_origin (Q16)       0C z_shift [4:0] (bin = 2^shift Q16 units)
 //  10 h_origin (Q16)       14 h_shift [4:0]          18 band select [4:0]
 //  20 committed packets    24 N                       28 z_min   2C z_max
@@ -30,7 +30,7 @@
 //    bank clears, port B = pipeline writes, otherwise a continuous read of the selected result
 //    band (address taken from the 0x18 write data in its own cycle, so a read issued a cycle
 //    after the select already returns the new band).
-module r41_measure(
+module profile_statistics(
  input  wire         clk,
  input  wire         rst,
  input  wire         geo_fire,

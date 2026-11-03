@@ -19,9 +19,9 @@ set r28_rtl {}
 foreach f $rtl_files {
  set base [file tail $f]
  switch $base {
-  pfo3_frontend_r25.sv {lappend r28_rtl [file join $production pfo3_frontend_r28.sv]}
+  pixel_frontend.sv {lappend r28_rtl [file join $production pfo3_frontend_r28.sv]}
   pfo3_row_r25.sv {lappend r28_rtl [file join $production pfo3_row_r28.sv]}
-  pfo3_axi_r25.sv {lappend r28_rtl [file join $production pfo3_axi_r25.sv]}
+  axi_packet_controller.sv {lappend r28_rtl [file join $production axi_packet_controller.sv]}
   default {lappend r28_rtl $f}
  }
 }

@@ -3,7 +3,7 @@
 // 64 height bins, two epoch banks. Word-addressed BRAM avoids a wasteful
 // 1024-bit-wide shallow memory. Updates serialize six genuine 32x32 products.
 // Q16 first moments; Q32 second moments. Statistics never replace full points.
-module r35_moments(
+module moment_accumulator(
  input wire clk,rst,start,finish,
  input wire signed [31:0] bin_origin_q16,input wire [5:0] bin_shift,
  input wire [255:0] in_record,input wire in_valid,output wire in_ready,

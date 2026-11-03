@@ -1,5 +1,5 @@
 `timescale 1ns/1ps
-// R40 PL point-cloud view. Contract: model/r40_model.py (bit-exact).
+// point cloud PL point-cloud view. Contract: model/point_cloud_model.py (bit-exact).
 //
 // aclk (100 MHz, PFO3 domain)
 //   snoop    read-only copy of accepted geometry records; never back-pressures PFO3
@@ -15,7 +15,7 @@
 //            Buffer swaps happen only on start-of-frame. Reset state is pure bypass.
 // DSP48 use is requested only on the multiplier registers (USE_DSP on signals);
 // adders, comparators and address arithmetic stay in fabric (b02 timing lesson).
-module r40_cloud_view(
+module point_cloud_renderer(
  input wire aclk,aresetn,
  input wire geo_fire,input wire [255:0] geo_record,
  input wire pkt_commit,pkt_discard,
@@ -118,8 +118,8 @@ module r40_cloud_view(
 
  // ---------------------------------------------------------------- renderer
  wire signed [15:0] sin_v,cos_v;
- r40_sin_rom sin_rom(.i(yaw_cur),.v(sin_v));
- r40_sin_rom cos_rom(.i(yaw_cur+10'd256),.v(cos_v));
+ sine_rom sin_rom(.i(yaw_cur),.v(sin_v));
+ sine_rom cos_rom(.i(yaw_cur+10'd256),.v(cos_v));
  reg signed [15:0] rs,rc;
  wire signed [16:0] nrs=-rs,nrc=-rc;          // |sin| <= 16384, so 17 bits are exact
  wire signed [16:0] prc=rc;
@@ -340,9 +340,9 @@ module r40_cloud_view(
  //  voxel B: every drain/clear/readback state, plus the cycle a pending write lands.
  wire va_en=r_state==R_RW1||r_state==R_RW2;
  wire vb_en=vb_we||d_state!=D_IDLE;
- r40_stage_ram stage(.clk(aclk),.we(push),.waddr(wr_ptr[10:0]),.wdata(q5vaddr),
+ staging_memory stage(.clk(aclk),.we(push),.waddr(wr_ptr[10:0]),.wdata(q5vaddr),
   .re(d_state==D_S1),.raddr(stage_raddr),.q(stage_q));
- r40_voxel_ram voxels(.clk(aclk),.en_a(va_en),.addr_a(va_addr),.q_a(va_q),
+ voxel_memory voxels(.clk(aclk),.en_a(va_en),.addr_a(va_addr),.q_a(va_q),
   .en_b(vb_en),.we_b(vb_we),.addr_b(vb_addr),.d_b(vb_d),.q_b(vb_q));
 
  xpm_cdc_handshake #(.DEST_EXT_HSK(0),.DEST_SYNC_FF(3),.INIT_SYNC_FF(0),.SIM_ASSERT_CHK(0),
@@ -368,7 +368,7 @@ module r40_cloud_view(
  reg st3_v,st3_l,st3_u,st3_w;reg [31:0] st3_d;
  reg st4_v,st4_l,st4_u,st4_w;reg [31:0] st4_d;
  wire [3:0] cb_q;wire [23:0] pal;
- r40_palette palette(.i(cb_q),.rgb(pal));
+ colour_palette palette(.i(cb_q),.rgb(pal));
  always @(posedge vclk)begin
   if(!vresetn)begin
    req_d<=0;pend<=0;pend_cfg<=0;act_cfg<=0;xc<=0;yc<=0;swap_tgl<=0;
@@ -395,6 +395,6 @@ module r40_cloud_view(
  // Colour A: writes, plus panel readback (only in R_FROZEN).
  // Colour B: b1 holds the st3 pixel and q_b the st4 pixel, so only advance while one
  // of them lies in the window; outside it (or with the overlay off) the port idles.
- r40_colour_ram colour(.clk_a(aclk),.en_a(ca_we||r_state==R_FROZEN),.we_a(ca_we),.addr_a(ca_addr),.d_a(ca_d),.q_a(ca_q),
+ colour_memory colour(.clk_a(aclk),.en_a(ca_we||r_state==R_FROZEN),.we_a(ca_we),.addr_a(ca_addr),.d_a(ca_d),.q_a(ca_q),
   .clk_b(vclk),.en_b(adv&&(st2_w||st3_w)),.addr_b(cb_addr),.q_b(cb_q));
 endmodule

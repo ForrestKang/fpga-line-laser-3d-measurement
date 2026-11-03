@@ -2,7 +2,7 @@
 // Transport wrapper: stable AXI-Lite control, AXIS32 unpack/serialize, no image math.
 // Header snapshots all64 configurable provenance words. Native records are retained
 // with kind tags; footer reports actual hardware counters. SG DMA owns full packet.
-module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
+module axi_packet_controller #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 aclk CLK",X_INTERFACE_PARAMETER="FREQ_HZ 100000000, ASSOCIATED_BUSIF S_AXI:S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn" *) input wire aclk,
  (* X_INTERFACE_INFO="xilinx.com:signal:reset:1.0 aresetn RST",X_INTERFACE_PARAMETER="POLARITY ACTIVE_LOW" *) input wire aresetn,
  (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input wire [11:0] s_axi_awaddr,
@@ -171,7 +171,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
    end
   end
  end
- pfo3_frontend_r25 #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
+ pixel_frontend #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
  .clk(aclk),.rst(!aresetn),.start(start_pulse),.abort(abort_pulse),
  .pixel_data(input_word[byte_index*8+:8]),.pixel_valid(pixel_valid),
  .pixel_sof(byte_count==0),.pixel_eof(input_last && byte_index==3),.pixel_ready(pixel_ready),

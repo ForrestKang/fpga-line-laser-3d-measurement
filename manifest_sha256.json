@@ -393,8 +393,8 @@
     },
     {
       "path": "build/restore_sources.py",
-      "size": 2169,
-      "sha256": "0fd2ea444acac6afa6a98862bdd6b67af90872cbcfa995494d1df6212bad5166"
+      "size": 2188,
+      "sha256": "c45d159502a3d112f51d48442de72c2c603a0e67ea658645b3b52b38d559ee47"
     },
     {
       "path": "data/calibration/install/camera_intrinsics_r41.json",
@@ -2073,8 +2073,8 @@
     },
     {
       "path": "sim/support/tests/integration_axi_final_tb.sv",
-      "size": 11470,
-      "sha256": "bde71591e41e9076857f147c9ef67257d6eb53778ea26cd216daebfe3459951b"
+      "size": 11479,
+      "sha256": "d4f947df9d4b3fd071a4054c2559259f8f07b5176a2b6b1294295d3ede1c2fc0"
     },
     {
       "path": "sim/support/tests/xpm_stubs_sim.v",
@@ -2283,8 +2283,8 @@
     },
     {
       "path": "sim/test_release_pairing.py",
-      "size": 7022,
-      "sha256": "c33490a9e713e94d0f69e73ce2aa5f281af89e94bfd7ceed8f68218c6e92b1a2"
+      "size": 9916,
+      "sha256": "144dc5248affbd669ff6c398f1a057978002bc540a2118aab3e66674acb72c59"
     },
     {
       "path": "sim/tools/build_skill.py",
@@ -2308,8 +2308,8 @@
     },
     {
       "path": "sim/tools/verify_release_pairing.py",
-      "size": 5343,
-      "sha256": "3c30c3948ea53cb24e844415ad6e323f872b478ecbd40adcc5ae1939e76baa0e"
+      "size": 6265,
+      "sha256": "428acececb67a4b50a245a0fa0165114f1b7fe21b209d72683182086eb711ad0"
     },
     {
       "path": "skill/pynq_release_check.md",
@@ -2353,28 +2353,28 @@
     },
     {
       "path": "source_map.json",
-      "size": 468380,
-      "sha256": "8ba8f1f3ba968feeb84a437d3a87cabeb4df93c37a53827640cad83500d8703c"
+      "size": 508714,
+      "sha256": "241e9f1e0034c73939300e48ff9050269e44efdc149b1c12307b7d003f09f77e"
     },
     {
-      "path": "src/fpga/baseline_rtl/r33_direction.sv",
-      "size": 4215,
-      "sha256": "7a77faa12b981f28073db9125cc7c6fadfce8d75df4cd587fd7520d385ee55d6"
+      "path": "src/fpga/baseline_rtl/ridge_center_solver.sv",
+      "size": 4221,
+      "sha256": "60c022709ff0149d86236a30c43463719f37a500ddaeee212b5b568eeec0096c"
     },
     {
-      "path": "src/fpga/baseline_rtl/r33_window_filter.sv",
-      "size": 5746,
-      "sha256": "582ee6bef2d955676dbf4d2762dd77c280b8c099201610af108fa2fb73f34375"
+      "path": "src/fpga/baseline_rtl/window_filter_reference.sv",
+      "size": 5752,
+      "sha256": "c2eee26bade5f69c16f0b3830423482fa0c959012c6a4f0d5291ed70f7670cd3"
     },
     {
       "path": "src/fpga/bd/block_design_r40.tcl",
-      "size": 65998,
-      "sha256": "26a5a09c0c2e094e4d09ec87eb33d7f0b4fcb31416d92c60b94ad2c00d9d4bb3"
+      "size": 65986,
+      "sha256": "6d36e39b15a6d0f25f5bf4d6b61965e551b953070dd4e4decb4bbbdce54a2b29"
     },
     {
       "path": "src/fpga/bd/block_design_r41_b14_reference.tcl",
-      "size": 65345,
-      "sha256": "f43cee5565a8c11b3e9020911ff972e8b20a1140247cdb7c33906adfd75de912"
+      "size": 65333,
+      "sha256": "9ce0a5b1cbc5fbaa455f5a46852888027e0baf5a7a4fa2b3581e7a214ee20a9f"
     },
     {
       "path": "src/fpga/board_scripts/archive_space_finish_r33.py",
@@ -2532,6 +2532,11 @@
       "sha256": "fed6d4240c684a2ff69025300425ce24a67267c885a7ea050b6144f3ccf3fec9"
     },
     {
+      "path": "src/fpga/constraints/board_buttons.xdc",
+      "size": 386,
+      "sha256": "1bf8471b5df350dd922c783eafc92dfc985118a724d644d3a399ab11fe234e6e"
+    },
+    {
       "path": "src/fpga/constraints/constrain_cdc_r37.tcl",
       "size": 13885,
       "sha256": "4d9639800dd4da91bcef055d5acaab2ec68504efc681739e05a2edd5a6f240d7"
@@ -2542,14 +2547,9 @@
       "sha256": "8ad844abdef4da5931c6eb7f390f24a0070afbbd04ddcba63bcef0fe7da9c7e0"
     },
     {
-      "path": "src/fpga/constraints/r42_buttons.xdc",
-      "size": 386,
-      "sha256": "1bf8471b5df350dd922c783eafc92dfc985118a724d644d3a399ab11fe234e6e"
-    },
-    {
-      "path": "src/fpga/model/r40_model.py",
-      "size": 7441,
-      "sha256": "3d03476a26a327b7aab1da194becaafa7ab421325ee22348e9e3e918f470435e"
+      "path": "src/fpga/model/point_cloud_model.py",
+      "size": 7463,
+      "sha256": "f406d7743eb9e155c19092182efc728102b16447bd8378d55c1c2ebf737e7908"
     },
     {
       "path": "src/fpga/model/section_measure_model.py",
@@ -2568,13 +2568,13 @@
     },
     {
       "path": "src/fpga/rtl/axi_packet_controller.sv",
-      "size": 24740,
-      "sha256": "ed50f40301bc6cae08852d69026356f16f4f0c5f8dbf84ae3cb438e63bd1ae5c"
+      "size": 24838,
+      "sha256": "dbb3eb76091c2b3d849da868693981de9280e428b23049219e79079eae3704d0"
     },
     {
       "path": "src/fpga/rtl/board_buttons.sv",
-      "size": 1825,
-      "sha256": "05d608690484d753df0e5d240797bbc8bdbd84cfe97b20d83ae514d7be2ab65d"
+      "size": 1837,
+      "sha256": "f72121217ac7f249df448d29e7100d31b646f19553287e795775e7c67ff15c4e"
     },
     {
       "path": "src/fpga/rtl/board_top.sv",
@@ -2583,38 +2583,38 @@
     },
     {
       "path": "src/fpga/rtl/camera_signal_monitor.sv",
-      "size": 31244,
-      "sha256": "e68f02a42c1b6ae80528458ea87ac07cd9d0d18661c71cd992e335834fa2c93c"
+      "size": 31250,
+      "sha256": "3e1d13315ba7e71918def5e41c55e6a644777786a930e30ecc8890e4fb45dfcc"
     },
     {
       "path": "src/fpga/rtl/direction_refiner.sv",
-      "size": 4778,
-      "sha256": "7b66f7551ed8c2239ed700ec57d3dcd11fa5fa7f22ce277ef7dd6bcb7abd3591"
+      "size": 4782,
+      "sha256": "988ddfc269b205f3cd9d447040e7d74507acde1f643dcfd4eedcff8b45a91b40"
     },
     {
       "path": "src/fpga/rtl/fixed_point_divider.sv",
-      "size": 2156,
-      "sha256": "1939853a1c12c6173c06e067217efec1fcdd6aa682e7f545d4f809ccd88c2c69"
+      "size": 2164,
+      "sha256": "accc2bb390f63c4332656a5b9747d28dcd1466b382324d08064cb322cf540dbb"
     },
     {
       "path": "src/fpga/rtl/geometry_engine.sv",
-      "size": 10273,
-      "sha256": "51e8c4c45d291901d70e0383deed3619e863ec3b0fae930046252dcc6b06ed9a"
+      "size": 10290,
+      "sha256": "2e47c9ee90f0479e9fcc395c699a6d80b525da2a2d9fe5c67b8e63c2de7fd718"
     },
     {
       "path": "src/fpga/rtl/geometry_multiplier.sv",
-      "size": 1010,
-      "sha256": "0cb3cf5408f7df9c4c27190df78f25ef0364a3a631da8021ec9797b955f02f32"
+      "size": 1016,
+      "sha256": "e9bfe772fac0ab2bdb7d42c59195b44b41ad2d725e664c6d638b783caa1c892a"
     },
     {
       "path": "src/fpga/rtl/laser_auto_exposure.sv",
-      "size": 5237,
-      "sha256": "796e7d314b433d98aecdb5b793be028187371ee76d935eb690f77adb2d789269"
+      "size": 5257,
+      "sha256": "788cf8db2945a14590bdfc7c7443235525e7c0db5ff5230c9390a7d03caf1c67"
     },
     {
       "path": "src/fpga/rtl/moment_accumulator.sv",
-      "size": 6191,
-      "sha256": "796a06dea8f93b361d683c45d80a6d97fd9c99c2ef5b6341edfc4d78a85700c2"
+      "size": 6198,
+      "sha256": "ef7d0866a7d9c946dddd08da66f17d7c025bd756458090dea34e36930ee31dd6"
     },
     {
       "path": "src/fpga/rtl/p2_async_fifo.sv",
@@ -2623,18 +2623,18 @@
     },
     {
       "path": "src/fpga/rtl/p2_capture_core.sv",
-      "size": 78621,
-      "sha256": "5d68be46e3df004cb49dc0976399fb7e909b8d74e64ca824b66b7b56d3583b8b"
+      "size": 78631,
+      "sha256": "d51148acbe21dfaca6d9cef5fafafd35e8c5ddd2930cb20caa8c97782b338d13"
     },
     {
       "path": "src/fpga/rtl/p2_capture_metadata.sv",
-      "size": 3839,
-      "sha256": "7095db98b5e73c4233db7b3636aae3e97c089737c823781c8fb751af1f23740a"
+      "size": 3845,
+      "sha256": "81ec00db1afdc46facd5cda25eebb28818e9b91b65325e7c9af54fb1ade5605a"
     },
     {
       "path": "src/fpga/rtl/p2_processing_ip.sv",
-      "size": 62409,
-      "sha256": "41c8ef2534ae7ed86c6988e8d30d8ce9026058159a2332e8c75d13c7dbbae143"
+      "size": 62438,
+      "sha256": "96e692fac66491abb44644d9d1b57dc6d5d3e9d61369188fcddf069386701ce8"
     },
     {
       "path": "src/fpga/rtl/pclk_frequency_meter.sv",
@@ -2643,63 +2643,63 @@
     },
     {
       "path": "src/fpga/rtl/pfo3_axi_bd.v",
-      "size": 7754,
-      "sha256": "7ca21f4b17899a05da0665e0c880d5b6e0371f86d6316d83454c28704a1e62ea"
+      "size": 7767,
+      "sha256": "628aa2624b1230846a9437f0dbe786a568846afd13d131b1f5d861fe39fa2d9a"
     },
     {
       "path": "src/fpga/rtl/pipelined_moment_accumulator.sv",
-      "size": 5515,
-      "sha256": "55c4e9186ca49106611e24f0ec08fd9b18d72d7aa17ddad82f5612d270e03f91"
+      "size": 5522,
+      "sha256": "af064bcb4fd3984df3f31aaab8b692c1f04ce1bf4ab0e668667d1773cf87ed91"
     },
     {
       "path": "src/fpga/rtl/pixel_frontend.sv",
-      "size": 25338,
-      "sha256": "83758a4d83833de3d1e4cb2aa141520cf4ee6f86f1bc212dbd4788678f79024d"
+      "size": 25466,
+      "sha256": "1db1ad1dd3aa266a59bb1f713a3f83444c9f86d0845e9caab575a93e97870495"
     },
     {
       "path": "src/fpga/rtl/point_cloud_cache.sv",
-      "size": 1409,
-      "sha256": "10f9f8b8905623b6819cf9bb0f6b8a7b10e266ccfc08c2e4f48ffe71973fcea1"
+      "size": 1411,
+      "sha256": "c69e2fc062fb65701c6cd994e6e3dc67a0c098adefa47b2b190ca074845860d5"
     },
     {
       "path": "src/fpga/rtl/point_cloud_memory.sv",
-      "size": 2302,
-      "sha256": "1423df7ecddf6fe12ed9ee8450c20c289e0ae200b25a9c45c0958a1787a8806a"
+      "size": 2323,
+      "sha256": "3a725c02e6a3ddfe20bb612294960a8d1b584a1b13c06fabe2af3343ca092df6"
     },
     {
       "path": "src/fpga/rtl/point_cloud_renderer.sv",
-      "size": 18992,
-      "sha256": "e816271d4d2858b833864557120dab79515f0557e833d9eee76343d442495fbf"
+      "size": 19010,
+      "sha256": "ce66a328c1352e612d2157563aaf2cb948854970686372b17c338dc097105c09"
     },
     {
       "path": "src/fpga/rtl/point_cloud_tables.sv",
-      "size": 26441,
-      "sha256": "9fa898f664593af423612b0623d62d485082f35248ca6a8db11b7a58e13cd4d6"
+      "size": 26449,
+      "sha256": "6eda66e81ae30186079d8d36b0423bf2084b781cc4f0753248193f16f57e8bbf"
     },
     {
       "path": "src/fpga/rtl/profile_statistics.sv",
-      "size": 13731,
-      "sha256": "a7159ed7be06ca76f88edc099363b91b262886118136f50bf45ba66d608763e9"
+      "size": 13761,
+      "sha256": "0e3d656979de660808d4ed6edd2b7c8e4105f6011c0a59caaf8e5ba8e1404069"
     },
     {
       "path": "src/fpga/rtl/section_measure.sv",
-      "size": 41601,
-      "sha256": "3befbd13cc7679ac94975d4921dd8dff3a315a9fd64f2251128e9081fd25b0ad"
+      "size": 41608,
+      "sha256": "855a1e2989f0e16653e9d9ec755aef620330424b7c18adf157f0e892646e0537"
     },
     {
       "path": "src/fpga/rtl/shared_window_filter.sv",
-      "size": 6050,
-      "sha256": "41f3b7f83f9bfe94f1e061b14f453c8166b2b1f4bd4fab55f9d26b5f8f0513de"
+      "size": 6072,
+      "sha256": "47e5e2b6ce69bc4f03bc79a5c8c2bf2672fbbf8029b9f099be07f08284071cd0"
     },
     {
       "path": "src/fpga/rtl/stripe_extractor.sv",
-      "size": 19064,
-      "sha256": "9f4a8f8f9d1ed51fb3f05c4077f5692a32781d714f135c9efc7ff918a5fa679b"
+      "size": 19119,
+      "sha256": "81ec9ccf7ef2874295dcf0827081657576caafd32e5a86fb02b890f6f4eb492f"
     },
     {
       "path": "src/fpga/scripts/audit_failed_static01.py",
-      "size": 9068,
-      "sha256": "10610b4786978417fab59c215190764381986e26e351a22a99defdeb56569acd"
+      "size": 9060,
+      "sha256": "3671626d172178792798242a906801ef60b46d1e37f3dab925870df4dd72b1a1"
     },
     {
       "path": "src/fpga/scripts/build_final.tcl",
@@ -2743,8 +2743,8 @@
     },
     {
       "path": "src/fpga/scripts/create_project_r43.tcl",
-      "size": 4192,
-      "sha256": "92796f6f3c1d5bcfab516b1cde06374709bae93f2a535ad6e87f5d91654e490b"
+      "size": 4316,
+      "sha256": "1cb55508da1676579a1469057e8f05530fb47c065c278baabad1501557d56717"
     },
     {
       "path": "src/fpga/scripts/eval_t02_scan.py",
@@ -2788,28 +2788,28 @@
     },
     {
       "path": "src/fpga/scripts/frozen_baseline_compare_r43.py",
-      "size": 11324,
-      "sha256": "ff19915871a0a8e9e6dead1b68df7e9ff48d34a2a00458684381ff3b3688779e"
+      "size": 11392,
+      "sha256": "ef67ef25b0a0bd5090b8303b14683e258276d5d98898a029c3c6e1a1a7fef403"
     },
     {
       "path": "src/fpga/scripts/integration_verify_final.py",
-      "size": 22778,
-      "sha256": "9dad4dceaebfa771cf654b29bb9b5a68d762b308b01f02882cb022d19450ba97"
+      "size": 22895,
+      "sha256": "7e07615cdbad69ea7df91612203c87c86c8adc232fca2bf5a6a0c31370eb1d39"
     },
     {
       "path": "src/fpga/scripts/integration_verify_r40.py",
-      "size": 18208,
-      "sha256": "28217a23a5110373f3b03ec79d790f2407100f76e0dcbda5355a21bb13ecf54a"
+      "size": 18325,
+      "sha256": "90a85e035a7a02cc297911e4421a2db4b459eb4fb40ba1de07d7ebf671ba257d"
     },
     {
       "path": "src/fpga/scripts/lane_real_frames.py",
-      "size": 4395,
-      "sha256": "86a4ed7241e82b73c777d5bb7a544063c53fd0ab334042e440e05baeb1438e77"
+      "size": 4419,
+      "sha256": "17bae5cdb07760ed0d62e0c12395455ee94f5e36cd09698a39f1831850598e39"
     },
     {
       "path": "src/fpga/scripts/lane_sweep_control_r43.py",
-      "size": 2555,
-      "sha256": "c1352ae6dc1c584f73a52616aa773850ca8d3aa611f533a2d26368c1a0a447bd"
+      "size": 2579,
+      "sha256": "d2071ca2651f6a6b61d08d73880af2f4a5c93aeef4bae7fb63a4e51bee91ecdc"
     },
     {
       "path": "src/fpga/scripts/lane_sweep_final_configs_r43.py",
@@ -2818,8 +2818,8 @@
     },
     {
       "path": "src/fpga/scripts/lane_sweep_ooc_r43.tcl",
-      "size": 2143,
-      "sha256": "356147eedf84b6b4ca0886dbc8e9327117838516cfb808b12c3651805e928bff"
+      "size": 2184,
+      "sha256": "c7f1a47a37fed5e672600c782a6f74f8f14d497d5764bbbc070b2caedd1b8fc8"
     },
     {
       "path": "src/fpga/scripts/lane_sweep_paths_r43.tcl",
@@ -2828,43 +2828,43 @@
     },
     {
       "path": "src/fpga/scripts/lane_sweep_r43.py",
-      "size": 7170,
-      "sha256": "5467d7c4a6cfb7fb933dca53b044a7064d3c44dfdf054d721bb6f89a8e8dc9ff"
+      "size": 7194,
+      "sha256": "c5f52b9e94c4f565719fa9c91dde46475c390e408f66904ec53f924d101c8a08"
     },
     {
       "path": "src/fpga/scripts/lane_sweep_report_r43.py",
-      "size": 9516,
-      "sha256": "4656bd1733a75427bde7627c863576052baf09023445302d62d26415b20b304a"
+      "size": 9558,
+      "sha256": "c10fa03b7c4a30f0a6f00fb5c338e4406bac1a335b98eda4ef67fa26872ca212"
     },
     {
       "path": "src/fpga/scripts/prepare_final_integration.py",
-      "size": 2689,
-      "sha256": "07db225e5e040a25c1ded7316d73985fea0fe7aeef7691c3b37640d819437c44"
+      "size": 2737,
+      "sha256": "0ef59322f63b3c8bfd2f001d5961bab58fc7246c5cd666cfe9964efa11eed36e"
     },
     {
       "path": "src/fpga/scripts/prepare_final_regression.py",
-      "size": 6137,
-      "sha256": "647e963e35a45578d0bd0a286463e6f318904327b0de5f29e56fcf7e0428cc14"
+      "size": 6151,
+      "sha256": "6b72f67201d73d949b7037f75202ddee5afc22c97b7b8083f0eac07c4436c45a"
     },
     {
       "path": "src/fpga/scripts/r40_unit_verify.py",
-      "size": 8339,
-      "sha256": "c181da6ddb7392afbe1de2455e59031212e4c38a509c273891467b562f029714"
+      "size": 8401,
+      "sha256": "667a3665a4ba5f3f504307cb47813654e1125b55d724d56695efa47818da04a8"
     },
     {
       "path": "src/fpga/scripts/r41_ae_verify.py",
-      "size": 4847,
-      "sha256": "4c750c697664eb12a9caead6861d49962538ca4d65036ffa184050d531749bfa"
+      "size": 4861,
+      "sha256": "913433b7d7d91c5c405e303de8f7a748dfc7eba411f0393f6f186a53c13ec40a"
     },
     {
       "path": "src/fpga/scripts/r41_measure_verify.py",
-      "size": 8126,
-      "sha256": "076051570b351dcb27ba08380474f397e55ded8f3a639fdd9f4ae81529eb247b"
+      "size": 8140,
+      "sha256": "543418c37f2b3e84e97cfc3ffb21924cad095d42f27d7f55343bdc1839190c00"
     },
     {
       "path": "src/fpga/scripts/render_ui_mockups.py",
-      "size": 7173,
-      "sha256": "31f40f03f903bd187b2ae33b486005eb9a8d6f25f83ab45ee05a0b123791c9f1"
+      "size": 7169,
+      "sha256": "5f9976f7e7af89364559968bdcfc7321b14360bd9968f3ba633d462252a760d9"
     },
     {
       "path": "src/fpga/scripts/replay_pages.py",
@@ -2993,8 +2993,8 @@
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/bd/block_design_v9.original.tcl",
-      "size": 66766,
-      "sha256": "bb53971742c2a8a6983244c2a010b831b4eb965f1db6cb30130693597c42a769"
+      "size": 66754,
+      "sha256": "d1b23186e52592e53fe1e6e35bfe3db6b1a90674073f7915930cd40127151d16"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/ip_repo/axi_dynclk_v1_0/component.xml",
@@ -3092,9 +3092,9 @@
       "sha256": "ea423d7699dbd137e807c03ebac0455a07debcd9f7dbab37d645939204ac8b82"
     },
     {
-      "path": "src/fpga/vendor/r31_baseline_copy/r28_production/pfo3_axi_r25.sv",
-      "size": 11281,
-      "sha256": "db2f06ed8a195e71584ef43f9a0c2ba5c4318a249176afe7c572ddaf61135683"
+      "path": "src/fpga/vendor/r31_baseline_copy/r28_production/axi_packet_controller.sv",
+      "size": 11290,
+      "sha256": "47c028154357b21ed48b27d8f409608d524570ad99fb186bcd6e8ceeb2c90eef"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/r28_production/pfo3_frontend_r28.sv",
@@ -3123,13 +3123,13 @@
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/scripts/create_project_r28.tcl",
-      "size": 2220,
-      "sha256": "8ecfb767c783edc1d332ca40a143384e272d4ea1c373f65e1f373d19fdeea079"
+      "size": 2235,
+      "sha256": "96c6c4617f1132ed289a93a41ed5bb77bd0b5717f73e365b1b21ff6fdb73f5c1"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/scripts/project_inputs.tcl",
-      "size": 2521,
-      "sha256": "1c9d1100c10baea91b5549456a3a8fd15f06b9c53f07fe634ac4683d09e97d7e"
+      "size": 2523,
+      "sha256": "0de63fb2e7e89fc760462a87c4038dfb3432dc61ee4941a407231b9f308d5cc2"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/scripts/snapshot_compiled.py",
@@ -3138,8 +3138,8 @@
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/host/generate_bd_wrapper_r25.py",
-      "size": 848,
-      "sha256": "62cff478ead1860a25c7b1aea0482bd5282468d5b4a7ca4c7ee63dd8b122e885"
+      "size": 858,
+      "sha256": "8c2d37cce364a413d89e8b3c64e332e11314abb5aa0ecf8c3909155b6ac7fe4d"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/host/hash_compiled_v9.py",
@@ -3153,8 +3153,8 @@
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/host/vivado_r25_v9/prepare.tcl",
-      "size": 1402,
-      "sha256": "90c3fff3fa547738169d1d0878749df98902b1af997cd1536c0694f9c9709a85"
+      "size": 1399,
+      "sha256": "73a4de1bcc60ea96c16993717894a1f57eaae6872b1ff034d0bec5b7d36d93b1"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/baseline/constraints/b_motion_pins.xdc",
@@ -3202,6 +3202,11 @@
       "sha256": "4150a2522ca400d8d1fee4cb7977763a3bc863a6c55206b9cc52d58e01a93524"
     },
     {
+      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/axi_packet_controller.sv",
+      "size": 11097,
+      "sha256": "65392b874ba293884fddcf2391ff7368639b938793b5968d88a2c4903194ac5b"
+    },
+    {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/build_full_r25.tcl",
       "size": 3498,
       "sha256": "7e52195a78cab7284dc47f7b1430941f4af6679b3c7a52c0c44910cb676f76dd"
@@ -3212,19 +3217,14 @@
       "sha256": "ad7573288e11058c328b5e046b6302aad67d333def91badd2cea4ac4c4b75f9a"
     },
     {
-      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/pfo3_axi_bd_r25.v",
-      "size": 4063,
-      "sha256": "84c033a3e37ffb4320635ca658f63371fb994b8f3f03b17ab3bf3d80bd22c14f"
-    },
-    {
-      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/pfo3_axi_r25.sv",
-      "size": 11091,
-      "sha256": "c92e81d3b07b297b99db6e1551d77b8f0ae079b6d0b51799489d4d3d610c0495"
+      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/pfo3_axi_bd.v",
+      "size": 4068,
+      "sha256": "b974552bf3b7ab0d41032f8eae360366d64b71d5f966b83528d691f2c2cec48d"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/prepare_bd_r25.tcl",
-      "size": 4489,
-      "sha256": "bdd27d3b883c144654c82fc8c2e19b31c5586a602ec6ca89eb9508fe40c3c438"
+      "size": 4490,
+      "sha256": "dd8723ca8563741beeb9498d751483856d64827fd74c3e39bb15ceb1c062752e"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/integration/resume_bd_r25.tcl",
@@ -3382,11 +3382,6 @@
       "sha256": "0a7828dd03a76c2eb53bc6afdcbeb9a2a28ba8b8e03e5f81470d910712921d24"
     },
     {
-      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/rtl/pfo3_frontend_r25.sv",
-      "size": 18144,
-      "sha256": "ddd67a64f9fee5c10072771ad8c28081a0cd60535a382d6e3af5e7feaac88a40"
-    },
-    {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/rtl/pfo3_row_r25.sv",
       "size": 10605,
       "sha256": "35e42dc2b939797bcb8abc6d19694ac337f0f622a23f2b7150a4c0fed977654d"
@@ -3397,24 +3392,29 @@
       "sha256": "3d1af35fa9b062bd525f5d444ee1c76fc48b8ed1adf8390e062576d25773177b"
     },
     {
+      "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/rtl/pixel_frontend.sv",
+      "size": 18141,
+      "sha256": "51bf7a3177c05ba7396a50b326bb35e5d2e8eb4c93899e281fc683497278edd1"
+    },
+    {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/scripts/sim.tcl",
       "size": 803,
       "sha256": "7f9b5e7f811aa50693cbe4c8194083ee4be633df3a1495c5fe88bfb18dfae6f0"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/scripts/synth.tcl",
-      "size": 1192,
-      "sha256": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054"
+      "size": 1186,
+      "sha256": "44cd6230ce7494446a53775b3c07c8b6e4242e6b4d5255f13cfef27758844d36"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/scripts/synth_v8.tcl",
-      "size": 1190,
-      "sha256": "ca11fc30f14edef7182f4cacb5ec63aa96e1141bdf13041e0035dc9a3c10e55c"
+      "size": 1184,
+      "sha256": "48c2ad4122c5d0b584177839226352acb0f3e20881b067ab0d8d547291a2fd4a"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/scripts/synth_v9.tcl",
-      "size": 1192,
-      "sha256": "e31685627924f7b8a23bafafff9b428c6635573a95e067ce5a034988c7ba4054"
+      "size": 1186,
+      "sha256": "44cd6230ce7494446a53775b3c07c8b6e4242e6b4d5255f13cfef27758844d36"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/sim/pfo3_frontend_serial_baseline.sv",
@@ -3423,18 +3423,18 @@
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/sim/tb_pfo3_faults.sv",
-      "size": 4073,
-      "sha256": "0bf31494fd37c36c7b420c8ebff646ddab62409dfdc9268115c33ddf69aee298"
+      "size": 4070,
+      "sha256": "3fd30aee8a82352acf56b519b839f5634fc581e0d1fb3b148389bd2c689df7a4"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/sim/tb_pfo3_graph4.sv",
-      "size": 4122,
-      "sha256": "1f562304c7962e309559b8198ef76565a71567e62e9748f9c8042efc6a4da7d3"
+      "size": 4119,
+      "sha256": "eae05a8053717b7190a449eedb4b0fddcd0554f5fc5bf19a3887af4d90cbd870"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/sim/tb_pfo3_r25.sv",
-      "size": 4226,
-      "sha256": "e113b4b2260c07ca1c745cefc625f65e270fdce32663542a46b58138ca0aaadf"
+      "size": 4223,
+      "sha256": "3a701c5ef2a2b71549e9bb3c2452d010f1d53c52bcdf7dbda215d68deac5e1dd"
     },
     {
       "path": "src/fpga/vendor/r31_baseline_copy/source_tree/pl/r25_next/source_manifest.json",
@@ -3953,8 +3953,8 @@
     },
     {
       "path": "src/ps/candidate/pfo3_hwh_r25.py",
-      "size": 3731,
-      "sha256": "b87f469a19d84c0e566ad9a7b09f4c7a5089fed1cc7a87fd38b4a9c50c7976ed"
+      "size": 3754,
+      "sha256": "192b38c96e3e12c9472283e711620695db97e05f84c7153aece3e7684d49320e"
     },
     {
       "path": "src/ps/candidate/pfo3_persistence_r25.py",
@@ -4443,8 +4443,8 @@
     },
     {
       "path": "src/ps/r33/geometry_pl_r35.py",
-      "size": 1579,
-      "sha256": "f782aee2364968b968d8e461dcb2223620d0f1ba310738627b80bdc8c8ae8d2a"
+      "size": 1575,
+      "sha256": "2798886186282f3d3218c07473050a6353b2887f79697a660b7337ed33da9025"
     },
     {
       "path": "src/ps/r33/live.py",
@@ -4518,8 +4518,8 @@
     },
     {
       "path": "src/ps/r33/pl_measure.py",
-      "size": 4122,
-      "sha256": "c769a18d3a6d0e92ef8a59b3339d44615244ab387e4747e0250c6d020e966ead"
+      "size": 4129,
+      "sha256": "55ad25feff27fba247debda0388759ab165783233a5624d8d702274bcd6be1f7"
     },
     {
       "path": "src/ps/r33/pl_section.py",
@@ -4748,8 +4748,8 @@
     },
     {
       "path": "src/ps/r33/transport.py",
-      "size": 27774,
-      "sha256": "6b7e1978b3aa2d9c5fb87de7d4f8bd9198242480af125daa1da210eb3bba40a1"
+      "size": 27770,
+      "sha256": "14ac88b946c3d58501fdfb5efcf0a80d171f5da93754ee40e7e0549f4e4c4e8f"
     },
     {
       "path": "src/ps/r33/ui_pages.py",
@@ -4788,8 +4788,8 @@
     },
     {
       "path": "src/ps/runtime_readme.md",
-      "size": 4249,
-      "sha256": "5df23df5bd91faad2bf69044392c15cb9a5a5c2733c6e58f1fde9d9a0632ea8e"
+      "size": 4255,
+      "sha256": "c65ad175f73b050406806277b67af7ef8ab1ca0ab40debe2b6e06140bd8f3d40"
     },
     {
       "path": "src/ps/structured_light_system_algorithm_v1/board/scripts/b_alignment_preview.py",

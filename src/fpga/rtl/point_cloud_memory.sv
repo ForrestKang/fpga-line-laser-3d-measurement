@@ -1,13 +1,13 @@
 `timescale 1ns/1ps
-// R40 cloud-view memories, written in Vivado block-RAM inference templates.
-// Read latency is fixed and part of the r40_cloud_view contract.
-// R40 b04: every port has an enable (BRAM EN + output register CE). The caller holds
+// point cloud cloud-view memories, written in Vivado block-RAM inference templates.
+// Read latency is fixed and part of the point_cloud_renderer contract.
+// point cloud b04: every port has an enable (BRAM EN + output register CE). The caller holds
 // it high for the whole read pipeline whose data it consumes, so results are unchanged;
 // idle ports stop toggling to cut BRAM dynamic power.
 
 // Voxel occupancy: port A read-only (renderer), port B read/write (commit, clear,
 // readback). One clock, latency 2 on both ports (BRAM output register).
-module r40_voxel_ram #(parameter DEPTH=12288,AW=14)(
+module voxel_memory #(parameter DEPTH=12288,AW=14)(
  input wire clk,
  input wire en_a,input wire [AW-1:0] addr_a,output reg [31:0] q_a,
  input wire en_b,input wire we_b,input wire [AW-1:0] addr_b,input wire [31:0] d_b,output reg [31:0] q_b
@@ -24,7 +24,7 @@ module r40_voxel_ram #(parameter DEPTH=12288,AW=14)(
 endmodule
 
 // Commit staging FIFO storage: simple dual port, read latency 1.
-module r40_stage_ram #(parameter DEPTH=2048,AW=11,W=19)(
+module staging_memory #(parameter DEPTH=2048,AW=11,W=19)(
  input wire clk,input wire we,input wire [AW-1:0] waddr,input wire [W-1:0] wdata,
  input wire re,input wire [AW-1:0] raddr,output reg [W-1:0] q
 );
@@ -38,7 +38,7 @@ endmodule
 // Double-buffered 4-bit colour panel. Port A (render clock): write + readback,
 // latency 2, gated by en_a. Port B (video clock): read-only, latency 2, both stages
 // gated by en_b so a stalled video pipeline holds its data.
-module r40_colour_ram #(parameter DEPTH=107520,AW=17)(
+module colour_memory #(parameter DEPTH=107520,AW=17)(
  input wire clk_a,input wire en_a,input wire we_a,input wire [AW-1:0] addr_a,input wire [3:0] d_a,output reg [3:0] q_a,
  input wire clk_b,input wire en_b,input wire [AW-1:0] addr_b,output reg [3:0] q_b
 );

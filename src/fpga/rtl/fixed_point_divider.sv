@@ -2,7 +2,7 @@
 `default_nettype none
 // Signed Q30 division. Restoring division of abs(a)<<30 by abs(b).
 // Fixed 96 iterations, no combinational '/', nearest-even quotient.
-module r35_div_q30(
+module fixed_point_divider(
  input wire clk,rst,start,
  input wire signed [63:0] a,b,
  output reg busy,done,overflow,zero,

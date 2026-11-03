@@ -2,7 +2,7 @@
 `default_nettype none
 // Two 1024-point banks form one bounded FIFO. Occupancy owns storage until the
 // output handshake; neither pointer may advance on a stalled transfer.
-module r35_point_cache #(parameter ADDR_BITS=11)(
+module point_cloud_cache #(parameter ADDR_BITS=11)(
  input wire clk,rst,clear,
  input wire [255:0] in_data,input wire in_valid,output wire in_ready,
  output reg [255:0] out_data,output reg out_valid,input wire out_ready,

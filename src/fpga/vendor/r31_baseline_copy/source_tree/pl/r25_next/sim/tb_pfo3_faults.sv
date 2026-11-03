@@ -8,7 +8,7 @@ module tb_pfo3_faults;
  wire [511:0] record_data;wire [1:0] record_kind;
  wire [31:0] error_code,measurement_count,preview_count;
  wire frame_measurement_usable,frame_preview_usable;
- pfo3_frontend_r25 #(.FRAME_WIDTH(64),.FRAME_HEIGHT(8)) dut(
+ pixel_frontend #(.FRAME_WIDTH(64),.FRAME_HEIGHT(8)) dut(
   .clk(clk),.rst(rst),.start(start),.abort(abort),.pixel_data(pixel_data),
   .pixel_valid(pixel_valid),.pixel_sof(pixel_sof),.pixel_eof(pixel_eof),.pixel_ready(pixel_ready),
   .record_data(record_data),.record_kind(record_kind),.record_valid(record_valid),.record_ready(record_ready),

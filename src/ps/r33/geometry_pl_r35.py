@@ -2,7 +2,7 @@
 import time
 from collections import Counter
 import numpy as np
-from geometry_reference_r35 import REASONS,parameters
+from geometry_reference import REASONS,parameters
 from .geometry_golden_r34 import GeometryResult
 
 def reconstruct_pair(frame,calibration,*,angle_rad=0.):

@@ -7,15 +7,17 @@ import os
 import shutil
 import tempfile
 import unittest
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(ROOT / 'src/ps'), str(ROOT / 'sim/tools')]
 import numpy as np
-from verify_release_pairing import verify, native_library_check
+from verify_release_pairing import verify, native_library_check, compiled_source_sha
 from r33.protocol import assemble, HEADER_FIELDS, identity, FINGERPRINT, BIN_FINGERPRINT, SEED_RETRY_FINGERPRINT
 from r33.pl_section import PLSection, MAGIC, BASE, declared
 from r33.profile_live import SectionBasis, ProfileConfig
 from candidate.pfo3_r25 import PFO3Error
+from candidate.pfo3_hwh_r25 import audit_hwh
 
 
 class MemoryMMIO:
@@ -48,6 +50,53 @@ class ReleasePairingTests(unittest.TestCase):
     def test_firmware_source_and_register_contract(self):
         result = verify(ROOT)
         self.assertTrue(result['passed'], result)
+
+    def test_existing_firmware_hwh_still_accepted(self):
+        self.assertTrue(audit_hwh(ROOT / 'board/firmware/final.hwh')['passed'])
+
+    def test_functional_hwh_module_name_is_accepted_with_same_contract(self):
+        expected = audit_hwh(ROOT / 'board/firmware/final.hwh')
+        tree = ET.parse(ROOT / 'board/firmware/final.hwh')
+        frontend = next(m for m in tree.findall('.//MODULE') if m.get('INSTANCE') == 'pfo3_frontend')
+        frontend.set('MODTYPE', 'pfo3_axi_bd')
+        with tempfile.TemporaryDirectory(dir=os.environ.get('TEMP')) as folder:
+            path = Path(folder) / 'functional.hwh'
+            tree.write(path, encoding='utf-8')
+            self.assertEqual(audit_hwh(path), expected)
+            frontend.set('MODTYPE', 'unrelated_frontend')
+            tree.write(path, encoding='utf-8')
+            with self.assertRaisesRegex(ValueError, 'wrong PFO3 module reference'):
+                audit_hwh(path)
+
+    def test_renamed_rtl_preserves_original_compiled_content(self):
+        entries = json.loads((ROOT / 'source_map.json').read_text(encoding='utf-8'))
+        renamed = [e for e in entries if e['path'].startswith('src/fpga/rtl/') and e.get('naming')]
+        self.assertGreaterEqual(len(renamed), 19)
+        for entry in renamed:
+            with self.subTest(source=entry['path']):
+                self.assertEqual(compiled_source_sha(ROOT / entry['path'], entry),
+                                 entry['naming']['original_sha256'])
+
+    def test_non_naming_rtl_edit_is_rejected(self):
+        entries = json.loads((ROOT / 'source_map.json').read_text(encoding='utf-8'))
+        entry = next(e for e in entries if e['path'] == 'src/fpga/rtl/geometry_engine.sv')
+        with tempfile.TemporaryDirectory(dir=os.environ.get('TEMP')) as folder:
+            damaged = Path(folder) / 'geometry_engine.sv'
+            damaged.write_bytes((ROOT / entry['path']).read_bytes() + b'\nwire altered_logic;\n')
+            with self.assertRaisesRegex(ValueError, 'provenance mismatch'):
+                compiled_source_sha(damaged, entry)
+
+    def test_damaged_renamed_identifier_is_not_hidden_by_inverse_mapping(self):
+        entries = json.loads((ROOT / 'source_map.json').read_text(encoding='utf-8'))
+        entry = next(e for e in entries if e['path'] == 'src/fpga/rtl/geometry_engine.sv')
+        with tempfile.TemporaryDirectory(dir=os.environ.get('TEMP')) as folder:
+            damaged = Path(folder) / 'geometry_engine.sv'
+            raw = bytearray((ROOT / entry['path']).read_bytes())
+            start = entry['naming']['inverse_edits'][0][0]
+            raw[start] ^= 1
+            damaged.write_bytes(raw)
+            with self.assertRaisesRegex(ValueError, 'current source integrity'):
+                compiled_source_sha(damaged, entry)
 
     def test_declared_algorithm_fingerprints_match_runtime(self):
         self.assertEqual(self.manifest['pfo3']['parameter_fingerprint'], FINGERPRINT)

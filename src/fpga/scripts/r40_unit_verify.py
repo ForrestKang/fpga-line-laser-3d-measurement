@@ -1,4 +1,4 @@
-"""R40 unit verification: r40_cloud_view (Icarus) against model/r40_model.py.
+"""R40 unit verification: point_cloud_renderer (Icarus) against model/point_cloud_model.py.
 
 Point stream: every frame of a verified board archive (axis XYZ Q16, one packet per
 frame) plus synthetic packets for each ingest rule:
@@ -23,7 +23,7 @@ import numpy as np
 R40 = Path(__file__).resolve().parents[1]
 sys.path[:0] = [str(R40 / 'model'), str(R40 / 'runtime'),
                 'D:/Workspace/CodexWork/scan3d_r39_row_overflow_20261027_01/tools']
-import r40_model as M  # noqa: E402
+import point_cloud_model as M  # noqa: E402
 
 IVER = Path('D:/Tools/structured_light_iverilog/bin')
 ARCHIVE = Path('D:/Workspace/CodexWork/scan3d_r37_cdc_threshold_20261026_01/stageA13/'
@@ -112,16 +112,16 @@ def pattern():
 def main():
     out = Path(sys.argv[1]).resolve()
     out.mkdir(parents=True, exist_ok=False)
-    tables = R40 / 'rtl' / 'r40_tables.sv'
+    tables = R40 / 'rtl' / 'point_cloud_tables.sv'
     if not tables.exists():
         tables.write_text(M.tables_sv(), encoding='ascii')
     if tables.read_text(encoding='ascii') != M.tables_sv():
-        raise SystemExit('rtl/r40_tables.sv differs from the model tables')
+        raise SystemExit('rtl/point_cloud_tables.sv differs from the model tables')
     frames = frames_q16()
     ev = build_events(frames)
     ing = model_ingest(ev)
     write_inputs(out, ev)
-    srcs = [R40 / 'rtl' / n for n in ('r40_cloud_view.sv', 'r40_rams.sv', 'r40_tables.sv')]
+    srcs = [R40 / 'rtl' / n for n in ('point_cloud_renderer.sv', 'point_cloud_memory.sv', 'point_cloud_tables.sv')]
     srcs += [R40 / 'tests' / 'xpm_stubs_sim.v', R40 / 'tests' / 'tb_r40_view.sv']
     subprocess.run([str(IVER / 'iverilog.exe'), '-g2012', '-o', str(out / 'sim.vvp'), *map(str, srcs)],
                    check=True, cwd=out)

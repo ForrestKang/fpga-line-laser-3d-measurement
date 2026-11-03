@@ -147,7 +147,7 @@ module p2_capture_core #(
     // Configuration is sampled exactly once, on acceptance.  The camera
     // mailbox remains stable for the complete transaction.
     reg [2:0] snap_feature_mode;
-    // R22_PMC2_INTEGRATION: mode6 owns a separate versioned packet, while
+    // PMC2_INTEGRATION: mode6 owns a separate versioned packet, while
     // unchanged Raw bytes still cross the original FIFO and AXIS DMA.
     wire snap_multi_mode = MULTI_CANDIDATE_ENABLE && snap_feature_mode == 6;
     reg [31:0] snap_feature_revision, snap_exposure_revision, snap_multi_quality;
@@ -293,7 +293,7 @@ module p2_capture_core #(
     wire [32:0] raw_fifo_rd_data;
     wire row_fifo_wr_ready, row_fifo_rd_valid;
     wire [351:0] row_fifo_rd_data;
-    // R37: registered write-clock levels precede the standard level CDC.
+    // threshold: registered write-clock levels precede the standard level CDC.
     // Destination reset gating retains the original asserted busy value.
     reg raw_wr_busy_source, row_wr_busy_source;
     wire raw_wr_busy_level, row_wr_busy_level;
@@ -573,7 +573,7 @@ module p2_capture_core #(
     // ROW events retain the P1 256-bit transaction contract.
     reg row_wr_valid;
     reg [351:0] row_wr_data;
-    // R40 b09: with PROFILE_ENABLE=0 nothing is ever written, but an XPM FIFO macro is not
+    // point cloud b09: with PROFILE_ENABLE=0 nothing is ever written, but an XPM FIFO macro is not
     // trimmed by synthesis (10 RAMB36). Build it only when the Profile path exists; the
     // disabled branch drives the values an empty, idle FIFO would.
     generate if (PROFILE_ENABLE) begin : g_row_fifo

@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 // Shared complete-run detector, generated independent direction engines and
-// bounded, ordered candidate retirement. Row barriers preserve R33 summaries.
-module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH=0,BANKED_REQUESTS=0,BANKED_RESULTS=0,BALANCED_DISPATCH=0,SEED_RETRY=1)(
+// bounded, ordered candidate retirement. Row barriers preserve packet summaries.
+module stripe_extractor #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH=0,BANKED_REQUESTS=0,BANKED_RESULTS=0,BALANCED_DISPATCH=0,SEED_RETRY=1)(
  input wire clk,rst,clear,input wire bin,input wire seed_retry_enable,input wire [7:0] pixel_data,input wire pixel_valid,
  output wire pixel_ready,output reg [511:0] diag_data,output reg diag_valid,input wire diag_ready,
  output reg slot_we,output reg [12:0] slot_addr,output reg [95:0] slot_data,
@@ -11,7 +11,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
 );
  localparam DEPTH=LANES*QUEUE_DEPTH, AW=$clog2(DEPTH), QW=$clog2(QUEUE_DEPTH);
  localparam SCAN=0,CLOSE=1,DRAIN=2,ROW=3,FIN=4;
- // R41 binning mode: WLR binned pixels per row (bin=0: W, the R39 path).
+ // live measurement binning mode: WLR binned pixels per row (bin=0: W, the reference path).
  wire [9:0] WLR=bin?10'(W/2):10'(W);
  reg [2:0] state;
  // One-entry elastic feature stage. Strength and threshold are evaluated
@@ -29,7 +29,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
  wire signed [12:0] neg_yy=-$signed({wf_yy[11],wf_yy});
  wire [11:0] wf_strength=wf_border?12'd0:((neg_xx>neg_yy)?(neg_xx>0?neg_xx[11:0]:12'd0):(neg_yy>0?neg_yy[11:0]:12'd0));
  assign wf_ready=!fv||fr;
- r41_window_filter #(.W(W),.H(H)) window_core(
+ shared_window_filter #(.W(W),.H(H)) window_core(
   .clk(clk),.rst(rst),.clear(clear),.half(bin),.pixel_data(pixel_data),.pixel_valid(pixel_valid),.pixel_ready(pixel_ready),
   .feat_valid(wf_valid),.feat_ready(wf_ready),.feat_x(wf_x),.feat_y(wf_y),.feat_raw(wf_raw),.feat_smooth_q4(wf_smooth),
   .feat_gx_q2(wf_gx),.feat_gy_q2(wf_gy),.feat_hxx_q2(wf_xx),.feat_hxy_q2(wf_xy),.feat_hyy_q2(wf_yy),
@@ -120,7 +120,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
   end else if(BALANCED_DISPATCH)begin
    selected_lane=dispatch_id[0];
   end else begin
-   // R43 optional work-conserving dispatch. A queued or executing request
+   // parallel optional work-conserving dispatch. A queued or executing request
    // counts once. Rotating ties avoid pinning clustered stripes to lane zero.
    // Ordered metadata retirement below is unchanged, so IDs/records stay stable.
    for(part=0;part<LANES;part=part+1)begin
@@ -157,7 +157,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
   assign lane_start[g]=qcount[g]!=0&&lane_ready[g];
   if(SEED_RETRY)begin: bounded_retry
    wire [81:0] alt_req=retry_metadata[rid];
-   r35_direction_retry core(.clk(clk),.rst(rst),.clear(clear),.start(lane_start[g]),
+   direction_retry core(.clk(clk),.rst(rst),.clear(clear),.start(lane_start[g]),
     .features(features),.alternate(alt_req[59:0]),
     .eligible(seed_retry_enable && req[147:141]==0 && alt_req[81:70]>=48 && alt_req[69:60]!=req[61:52]),
     .ready(lane_ready[g]),.done(lane_done[g]),.center_valid(lane_center_valid[g]),
@@ -165,7 +165,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
     .normal_x(lane_nx[g]),.normal_y(lane_ny[g]));
   end else begin: frozen_single_seed
    assign lane_retry_used[g]=0;
-   r35_direction core(.clk(clk),.rst(rst),.clear(clear),.start(lane_start[g]),
+   direction_refiner core(.clk(clk),.rst(rst),.clear(clear),.start(lane_start[g]),
     .gx($signed(features[11:0])),.gy($signed(features[23:12])),
     .hxx($signed(features[35:24])),.hxy($signed(features[47:36])),.hyy($signed(features[59:48])),
     .ready(lane_ready[g]),.done(lane_done[g]),.center_valid(lane_center_valid[g]),
@@ -181,7 +181,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
  wire [9:0] center_x=r[51]?alt_m[69:60]:m[61:52];
  wire [23:0] center_gradient=r[51]?alt_m[23:0]:m[171:148];
  wire [21:0] uq=$signed({2'b0,center_x,12'b0})+$signed(du);
- // R41: wire coordinates of a binned candidate in W pixels (pair 2j,2j+1 -> centre 2u+0.5).
+ // live measurement: wire coordinates of a binned candidate in W pixels (pair 2j,2j+1 -> centre 2u+0.5).
  wire [22:0] uq_full={uq,1'b0}+23'd2048;
  wire [23:0] vq=$signed({3'b0,m[70:62],12'b0})+$signed(dv);
  wire [19:0] peak_q12=m[82:71]>1023?20'hfffff:{m[80:71],10'b0};
@@ -251,7 +251,7 @@ module r35_row #(parameter W=752,H=480,PREFETCH=1,LANES=2,QUEUE_DEPTH=4,DISPATCH
      qualified_count<=qualified_count+1;row_local<=row_local+1;
      // Internal descriptor extension: preserve the original low 78 bits and
      // use reserved bits [90:78] for signed refined V offset. Wire diagnostics
-     // retain the unchanged R33 512-bit format.
+     // retain the unchanged packet 512-bit format.
      if(row_local<16)begin slot_we<=1;slot_addr<=m[70:62]*16+row_local;slot_data<={5'b0,dv,m[90:83],peak_q12,10'(m[51:42]-m[41:32]+1),uq,m[17:0]};end
      else overflow<=1;
     end
@@ -308,7 +308,7 @@ endmodule
 // Versioned, bounded same-run seed retry. Original legal results are returned
 // unchanged. A failed alternate also returns the original diagnostic exactly.
 // One existing direction engine is reused, not a second arithmetic pipeline.
-module r35_direction_retry(
+module direction_retry(
  input wire clk,rst,clear,start,input wire [59:0] features,alternate,
  input wire eligible,output wire ready,output reg done,center_valid,retry_used,
  output reg signed [12:0] du_q12,dv_q12,
@@ -323,7 +323,7 @@ module r35_direction_retry(
  wire signed [12:0] core_du,core_dv;
  wire signed [11:0] core_nx,core_ny;
  assign ready=state==IDLE&&core_ready;
- r35_direction solver(.clk(clk),.rst(rst),.clear(clear),.start(launch),
+ direction_refiner solver(.clk(clk),.rst(rst),.clear(clear),.start(launch),
   .gx($signed(request[11:0])),.gy($signed(request[23:12])),
   .hxx($signed(request[35:24])),.hxy($signed(request[47:36])),.hyy($signed(request[59:48])),
   .ready(core_ready),.done(core_done),.center_valid(core_valid),

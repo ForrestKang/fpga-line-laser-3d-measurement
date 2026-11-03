@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 // R33 single shared 3x3 raw window. All derivative planes refer to one center.
 // No reflected/replicated pixels are accepted as supported measurements.
-module r33_window_filter #(parameter W=752, H=480)(
+module window_filter_reference #(parameter W=752, H=480)(
  input wire clk, rst, clear,
  input wire [7:0] pixel_data,
  input wire pixel_valid,

@@ -21,7 +21,7 @@ module tb_pfo3_graph4;
  reg ended4=0,ended1=0;
  reg [31:0] rng=32'h4bb47f1a;
  integer center,width;
- pfo3_frontend_r25 #(.FRAME_WIDTH(752),.FRAME_HEIGHT(H)) dut(
+ pixel_frontend #(.FRAME_WIDTH(752),.FRAME_HEIGHT(H)) dut(
   .clk(clk),.rst(rst),.start(start),.abort(abort),.pixel_data(pixel_data),
   .pixel_valid(pixel_valid),.pixel_sof(pixel_sof),.pixel_eof(pixel_eof),
   .record_ready(record_ready),.record_data(rd4),.record_kind(rk4),.record_valid(rv4),

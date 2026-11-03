@@ -11,6 +11,22 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def compiled_source_sha(path, entry):
+    """Undo recorded name-only edits before comparing the frozen build input."""
+    raw = Path(path).read_bytes()
+    if entry and (len(raw) != entry['size'] or hashlib.sha256(raw).hexdigest() != entry['sha256']):
+        raise ValueError('Source naming provenance mismatch: current source integrity: ' + str(path))
+    naming = entry.get('naming', {})
+    for start, end, original in reversed(naming.get('inverse_edits', [])):
+        if not 0 <= start <= end <= len(raw):
+            raise ValueError('Invalid source naming edit')
+        raw = raw[:start] + original.encode('utf-8') + raw[end:]
+    result = hashlib.sha256(raw).hexdigest()
+    if naming and result != naming['original_sha256']:
+        raise ValueError('Source naming provenance mismatch: ' + str(path))
+    return result
+
+
 def native_library_check(directory, source, output):
     directory = Path(directory)
     receipt = json.loads((directory / (output + '.json')).read_text(encoding='utf-8'))
@@ -38,17 +54,18 @@ def verify(root):
         check(kind, path.is_file() and path.stat().st_size == entry['size']
               and sha(path) == entry['sha256'])
     compiled = json.loads((fw / 'compiled_sources_sha256.json').read_text(encoding='utf-8'))
-    # Published files use functional names; restore paths retain the exact names
-    # used by the frozen build. Compare the original bytes without rewriting them.
-    source_paths = {e['restore'].casefold(): root / e['path']
+    # Keep the original compiled-source evidence unchanged. Naming metadata
+    # reverses only the reviewed spelling edits for the original-byte check.
+    source_entries = {(e.get('naming', {}).get('original_restore') or e['restore']).casefold(): e
                     for e in json.loads((root / 'source_map.json').read_text(encoding='utf-8'))
                     if e.get('restore')}
     original, generated, failed = [], [], []
     for name, expected in compiled.items():
         rel = name.replace('\\', '/').split('/scan3d_final_20261029/', 1)[-1]
-        path = source_paths.get(('fpga/' + rel).casefold(), root / 'src/fpga' / rel.lower())
+        entry = source_entries.get(('fpga/' + rel).casefold(), {})
+        path = root / entry.get('path', 'src/fpga/' + rel.lower())
         if path.is_file():
-            (original if sha(path) == expected else failed).append(rel)
+            (original if compiled_source_sha(path, entry) == expected else failed).append(rel)
         elif any(part in rel for part in ('.gen/', '.srcs/', '/ipshared/')):
             generated.append(rel)
         else:

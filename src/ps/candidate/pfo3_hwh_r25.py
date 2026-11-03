@@ -18,7 +18,7 @@ def audit_hwh(path):
     for key,value in values.items():
         if not params.get(key) or {int(raw,0) for raw in params[key]}!={value}:
             raise ValueError('HWH DMA parameter mismatch: '+key)
-    if frontend.get('MODTYPE')!='pfo3_axi_bd_r25':raise ValueError('wrong PFO3 module reference')
+    if frontend.get('MODTYPE') not in ('pfo3_axi_bd', 'pfo3_axi_bd_r25'):raise ValueError('wrong PFO3 module reference')
     frame_params={p.get('NAME'):p.get('VALUE') for p in frontend.findall('./PARAMETERS/PARAMETER')}
     if frame_params.get('FRAME_WIDTH')!='752' or frame_params.get('FRAME_HEIGHT')!='480':
         raise ValueError('PFO3 native frame dimensions mismatch')

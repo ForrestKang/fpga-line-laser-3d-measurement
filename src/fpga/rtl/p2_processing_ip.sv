@@ -155,7 +155,7 @@ module p2_processing_ip #(
     wire control_reset = !system_resetn | !s_axi_control_aresetn;
     wire diag_reset = !system_resetn | !s_axi_diag_aresetn;
 
-    // R22_PMC2_REGISTERS, control offsets0x7c..0x94; idle-only writes.
+    // PMC2_REGISTERS, control offsets0x7c..0x94; idle-only writes.
     reg [31:0] multi_cfg_revision,multi_exposure_revision,multi_quality,multi_step,multi_residual,multi_config;
     reg [7:0] threshold_reg;
     reg [15:0] roi_start_x, roi_start_y, roi_end_x, roi_end_y;
@@ -290,7 +290,7 @@ module p2_processing_ip #(
         .metadata_timestamp(metadata_timestamp), .metadata_event_count(metadata_event_count)
     );
 
-    // R24 RHI1 passive observer; AXI clocks already share system_clk.
+    // integrity RHI1 passive observer; AXI clocks already share system_clk.
     reg integrity_enable, integrity_clear;
     reg [31:0] integrity_sequence;
     wire [31:0] integrity_status, integrity_id, integrity_count;
@@ -683,7 +683,7 @@ module p2_processing_ip #(
     reg [1:0] d_diag_wait;
     reg sccb_start_pulse;
     reg sccb_read_not_write;
-    // R41 laser auto-exposure (rtl/r41_laser_ae.sv) on the Raw stream, sharing the SCCB master.
+    // live measurement laser auto-exposure (rtl/laser_auto_exposure.sv) on the Raw stream, sharing the SCCB master.
     reg [31:0] ae_ctrl_reg, ae_limits_reg, ae_target_reg;
     reg ae_clear_pulse, ae_rows_load, ae_start_pulse, ae_owner;
     reg [15:0] ae_rows_load_value;
@@ -716,7 +716,7 @@ module p2_processing_ip #(
     // SCCB is an open-drain two-wire bus.  The P2 copy uses bounded
     // clock-stretch and ACK waits so a missing camera cannot hold the PL
     // state machine forever.
-    r41_laser_ae u_laser_ae (
+    laser_auto_exposure u_laser_ae (
         .clk(system_clk), .rst(system_reset),
         .raw_data(m_axis_raw_tdata), .raw_fire(m_axis_raw_tvalid && m_axis_raw_tready),
         .raw_last(m_axis_raw_tlast),

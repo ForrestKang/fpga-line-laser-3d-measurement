@@ -15,8 +15,8 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 IVER = Path('D:/Tools/structured_light_iverilog/bin')
 BOARD = Path('D:/Workspace/CodexWork/scan3d_r37_cdc_threshold_20261026_01/stageA13/boardprep21_session_board31/board')
-SOURCES = ['rtl/r41_window_filter.sv', 'baseline_rtl/r33_direction.sv', 'rtl/r35_direction.sv', 'rtl/r35_row.sv',
-           'rtl/r35_frontend.sv', 'vendor/lane_sweep/rtl/pfo3_tdp_ram.sv', 'vendor/lane_sweep/rtl/pfo3_banked_ram.sv',
+SOURCES = ['rtl/shared_window_filter.sv', 'baseline_rtl/ridge_center_solver.sv', 'rtl/direction_refiner.sv', 'rtl/stripe_extractor.sv',
+           'rtl/pixel_frontend.sv', 'vendor/lane_sweep/rtl/pfo3_tdp_ram.sv', 'vendor/lane_sweep/rtl/pfo3_banked_ram.sv',
            'tests/tb_frontend_lanes.sv']
 # name: (lanes, dispatch, banked requests, banked results, balanced dispatch)
 CONFIGS = {'2_static': (2, 0, 0, 0, 0), '4_balanced': (4, 1, 1, 1, 1), '8_static': (8, 0, 1, 1, 0)}

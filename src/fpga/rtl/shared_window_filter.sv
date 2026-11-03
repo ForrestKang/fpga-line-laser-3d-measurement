@@ -1,8 +1,8 @@
 `timescale 1ns/1ps
-// R33 single shared 3x3 raw window. All derivative planes refer to one center.
-// R41: runtime row length WL (half=1: W/2 binned pixels per row; half=0: W, unchanged R33).
+// packet single shared 3x3 raw window. All derivative planes refer to one center.
+// live measurement: runtime row length WL (half=1: W/2 binned pixels per row; half=0: W, unchanged packet).
 // No reflected/replicated pixels are accepted as supported measurements.
-module r41_window_filter #(parameter W=752, H=480)(
+module shared_window_filter #(parameter W=752, H=480)(
  input wire clk, rst, clear,
  input wire half,
  input wire [7:0] pixel_data,

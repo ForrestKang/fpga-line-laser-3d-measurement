@@ -48,7 +48,7 @@ PL 几何角度固定0；PS 复用现有 TurntableModel 的逆转轴变换，不
 ## PC 验证
 
 ```powershell
-& 'D:/NUECSDC-FPGA/structured_light_system_algorithm_v1/.venv/Scripts/python.exe' -I -B -X utf8 ./run_tests_r42.py --report ./evidence/<新编号>.json
+& 'D:/NUECSDC-FPGA/structured_light_system_algorithm_v1/.venv/Scripts/python.exe' -I -B -X utf8 ./run_interface_tests.py --report ./evidence/<新编号>.json
 ```
 
 覆盖真实主循环而非孤立演示：完整200位置、期限、BTN0 STOP、相机/PFO3故障、默认禁运动；另以真实 MotorController/GuardController 配仓库 MockTransport 验证正常与卡住中止。历史 MockGuard 的 enable_pin 极性与物理 active-low EN 不同，仅测试夹具修正极性；生产门禁不放宽。

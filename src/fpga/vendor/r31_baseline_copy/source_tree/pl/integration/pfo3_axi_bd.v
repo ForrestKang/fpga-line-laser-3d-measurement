@@ -1,5 +1,5 @@
 // Generated transport wrapper, no image computation.
-module pfo3_axi_bd_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
+module pfo3_axi_bd #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
 
  (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 aclk CLK",X_INTERFACE_PARAMETER="FREQ_HZ 100000000, ASSOCIATED_BUSIF S_AXI:S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn" *) input wire aclk,
  (* X_INTERFACE_INFO="xilinx.com:signal:reset:1.0 aresetn RST",X_INTERFACE_PARAMETER="POLARITY ACTIVE_LOW" *) input wire aresetn,
@@ -31,7 +31,7 @@ module pfo3_axi_bd_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  (* X_INTERFACE_INFO="xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input wire m_axis_tready,
  (* X_INTERFACE_INFO="xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output wire m_axis_tlast
 );
-pfo3_axi_r25 #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
+axi_packet_controller #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
 .aclk(aclk),
 .aresetn(aresetn),
 .s_axi_awaddr(s_axi_awaddr),

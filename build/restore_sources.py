@@ -1,4 +1,4 @@
-"""Restore exact original source names into a NEW directory. Never touches hardware."""
+"""Restore buildable sources with functional module names into a NEW directory. Never touches hardware."""
 import argparse
 import hashlib
 import json

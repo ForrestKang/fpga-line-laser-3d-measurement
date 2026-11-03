@@ -2,7 +2,7 @@
 // Transport wrapper: stable AXI-Lite control, AXIS32 unpack/serialize, no image math.
 // Header snapshots all64 configurable provenance words. Native records are retained
 // with kind tags; footer reports actual hardware counters. SG DMA owns full packet.
-module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
+module axi_packet_controller #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 aclk CLK",X_INTERFACE_PARAMETER="FREQ_HZ 100000000, ASSOCIATED_BUSIF S_AXI:S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn" *) input wire aclk,
  (* X_INTERFACE_INFO="xilinx.com:signal:reset:1.0 aresetn RST",X_INTERFACE_PARAMETER="POLARITY ACTIVE_LOW" *) input wire aresetn,
  (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input wire [11:0] s_axi_awaddr,

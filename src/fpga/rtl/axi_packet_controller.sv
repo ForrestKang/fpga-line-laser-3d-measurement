@@ -2,7 +2,7 @@
 // Transport wrapper: stable AXI-Lite control, AXIS32 unpack/serialize, no image math.
 // Header snapshots all64 configurable provenance words. Native records are retained
 // with kind tags; footer reports actual hardware counters. SG DMA owns full packet.
-module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
+module axi_packet_controller #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  (* X_INTERFACE_INFO="xilinx.com:signal:clock:1.0 aclk CLK",X_INTERFACE_PARAMETER="FREQ_HZ 100000000, ASSOCIATED_BUSIF S_AXI:S_AXIS:M_AXIS, ASSOCIATED_RESET aresetn" *) input wire aclk,
  (* X_INTERFACE_INFO="xilinx.com:signal:reset:1.0 aresetn RST",X_INTERFACE_PARAMETER="POLARITY ACTIVE_LOW" *) input wire aresetn,
  (* X_INTERFACE_INFO="xilinx.com:interface:aximm:1.0 S_AXI AWADDR" *) input wire [11:0] s_axi_awaddr,
@@ -32,7 +32,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  (* X_INTERFACE_INFO="xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) output wire m_axis_tvalid,
  (* X_INTERFACE_INFO="xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input wire m_axis_tready,
  (* X_INTERFACE_INFO="xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output wire m_axis_tlast,
- // R40: HDMI VDMA stream passes through the PL cloud view (video clock domain).
+ // point cloud: HDMI VDMA stream passes through the PL cloud view (video clock domain).
  input wire vclk,input wire vresetn,
  input wire [31:0] s_axis_video_tdata,input wire s_axis_video_tvalid,output wire s_axis_video_tready,
  input wire s_axis_video_tlast,input wire s_axis_video_tuser,
@@ -83,7 +83,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  wire [31:0] moment_accepted,moment_rejected;
  reg [31:0] geo_record_count;
  reg view_we;reg [7:0] view_waddr;reg [31:0] view_wdata;wire [31:0] view_rdata;
- // R41 live measurement statistics (rtl/r41_measure.sv), registers 0x500-0x5ff.
+ // live measurement live measurement statistics (rtl/profile_statistics.sv), registers 0x500-0x5ff.
  reg meas_we;wire [31:0] meas_rdata;
  reg sec_we;wire [31:0] sec_rdata;
  wire [31:0] buttons_rdata;
@@ -203,7 +203,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
    if(s_axi_wvalid && s_axi_wready)begin wdata<=s_axi_wdata;wstrb<=s_axi_wstrb;wheld<=1;end
    if(awheld && wheld && !s_axi_bvalid)begin
     awheld<=0;wheld<=0;s_axi_bvalid<=1;
-    // R40 cloud view registers 0x400-0x4ff: full-word writes, any time.
+    // point cloud cloud view registers 0x400-0x4ff: full-word writes, any time.
     view_we<=awaddr[11:8]==4&&wstrb==4'hf;view_waddr<=awaddr[7:0];view_wdata<=wdata;
     meas_we<=awaddr[11:8]==5&&wstrb==4'hf;
     sec_we<=awaddr[11:8]==7&&wstrb==4'hf;
@@ -319,9 +319,9 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
    end
   end
  end
- pfo3_frontend_r25 #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
+ pixel_frontend #(.FRAME_WIDTH(FRAME_WIDTH),.FRAME_HEIGHT(FRAME_HEIGHT)) core(
  .clk(aclk),.rst(!aresetn),.start(core_start),.abort(abort_pulse),
- .bin_mode(snapshot[33]==32'd2),   // R41: header policy_revision 2 = 2x horizontal binning
+ .bin_mode(snapshot[33]==32'd2),   // live measurement: header policy_revision 2 = 2x horizontal binning
  .seed_retry_mode(snapshot[33]==32'd3), // policy_revision 3: same-run seed retry (full width)
  .pixel_data(input_word[byte_index*8+:8]),.pixel_valid(pixel_valid),
  .pixel_sof(byte_count==0),.pixel_eof(input_last && byte_index==3),.pixel_ready(pixel_ready),
@@ -342,22 +342,22 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
  assign geo_out_ready=cache_in_ready&&moment_in_ready;
  assign cache_ready=state==WAIT_REC&&!record_valid;
  assign moment_out_ready=state==WAIT_REC&&!record_valid&&!cache_valid;
- r35_geometry geometry(.clk(aclk),.rst(!aresetn),.clear(abort_pulse),
+ geometry_engine geometry(.clk(aclk),.rst(!aresetn),.clear(abort_pulse),
   .cfg_we(geo_cfg_we),.cfg_addr(geo_cfg_addr),.cfg_wdata(geo_cfg_data),.cfg_commit(geo_cfg_commit),.cfg_epoch(geo_epoch),
   .cfg_ready(geo_cfg_ready),.cfg_error(geo_cfg_error),.in_valid(geometry_valid),.in_ready(geometry_ready),
   .u_q12(geometry_u),.v_q12(geometry_v),.candidate_id(geometry_id),.mode_bits(geometry_modes),
   .out_valid(geo_out_valid),.out_ready(geo_out_ready),.out_record(geo_out_record),.out_epoch(geo_out_epoch),
   .busy(geo_busy),.point_cycles(geo_point_cycles));
- r35_point_cache point_cache(.clk(aclk),.rst(!aresetn),.clear(start_pulse||abort_pulse),
+ point_cloud_cache point_cache(.clk(aclk),.rst(!aresetn),.clear(start_pulse||abort_pulse),
   .in_data(geo_out_record),.in_valid(geo_out_valid&&moment_in_ready),.in_ready(cache_in_ready),
   .out_data(cache_data),.out_valid(cache_valid),.out_ready(cache_ready),.occupancy(cache_occupancy),.high_water(cache_high_water));
- // R40: read-only snoop of geometry records; a packet commits its points only when
+ // point cloud: read-only snoop of geometry records; a packet commits its points only when
  // its last footer beat leaves without error. Start/abort/error discard.
  wire foot_last=out_fire&&state==FOOT&&index==31;
- r42_buttons buttons(.clk(aclk),.resetn(aresetn),.btn(btn),
+ board_buttons buttons(.clk(aclk),.resetn(aresetn),.btn(btn),
   .reg_we(buttons_we),.reg_waddr(awaddr[7:0]),.reg_wdata(wdata),.reg_wstrb(wstrb),
   .reg_raddr(s_axi_araddr[7:0]),.reg_rdata(buttons_rdata),.level(),.counts());
- r41_measure measure(.clk(aclk),.rst(!aresetn),
+ profile_statistics measure(.clk(aclk),.rst(!aresetn),
   .geo_fire(geo_out_valid&&geo_out_ready),.geo_record(geo_out_record),
   .pkt_commit(foot_last&&footer_snapshot[17]==0),
   .pkt_discard(start_pulse||abort_pulse||(foot_last&&footer_snapshot[17]!=0)),
@@ -371,7 +371,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
   .pkt_discard(start_pulse||abort_pulse||(foot_last&&footer_snapshot[17]!=0)),
   .reg_we(sec_we),.reg_waddr(view_waddr),.reg_wdata(view_wdata),
   .reg_raddr(s_axi_araddr[7:0]),.reg_rdata(sec_rdata));
- r40_cloud_view view(.aclk(aclk),.aresetn(aresetn),
+ point_cloud_renderer view(.aclk(aclk),.aresetn(aresetn),
   .geo_fire(geo_out_valid&&geo_out_ready),.geo_record(geo_out_record),
   .pkt_commit(foot_last&&footer_snapshot[17]==0),
   .pkt_discard(start_pulse||abort_pulse||(foot_last&&footer_snapshot[17]!=0)),
@@ -382,7 +382,7 @@ module pfo3_axi_r25 #(parameter FRAME_WIDTH=752,FRAME_HEIGHT=480)(
   .s_video_tlast(s_axis_video_tlast),.s_video_tuser(s_axis_video_tuser),
   .m_video_tdata(m_axis_video_tdata),.m_video_tvalid(m_axis_video_tvalid),.m_video_tready(m_axis_video_tready),
   .m_video_tlast(m_axis_video_tlast),.m_video_tuser(m_axis_video_tuser));
- // R40 b08: r35_moments removed (its height-bin statistics had no consumer). The finish
+ // point cloud b08: moment_accumulator removed (its height-bin statistics had no consumer). The finish
  // handshake is kept so the footer still follows the last geometry record; no kind 4/5
  // records are emitted and footer words 30/31 read 0. 0x314/0x318 stay writable and are
  // still echoed in the kind 6 metadata record, so the ARM register ABI is unchanged.

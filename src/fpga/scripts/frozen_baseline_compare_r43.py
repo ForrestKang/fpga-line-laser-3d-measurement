@@ -13,8 +13,8 @@ import time
 ROOT = Path(__file__).resolve().parents[1]
 BASE = Path('D:/Workspace/CodexWork/scan3d_r42_buttons_boot_20261029_01')
 IVER = Path('D:/Tools/structured_light_iverilog/bin')
-SOURCE_RELS = ('rtl/r41_window_filter.sv', 'baseline_rtl/r33_direction.sv',
-               'rtl/r35_direction.sv', 'rtl/r35_row.sv', 'rtl/r35_frontend.sv')
+SOURCE_RELS = ('rtl/shared_window_filter.sv', 'baseline_rtl/ridge_center_solver.sv',
+               'rtl/direction_refiner.sv', 'rtl/stripe_extractor.sv', 'rtl/pixel_frontend.sv')
 RAMS = ('pfo3_tdp_ram.sv', 'pfo3_banked_ram.sv')
 CASES = ('T05', 'T06', 'cluster16', 'noise')
 
@@ -62,9 +62,9 @@ def main():
     candidate_tb = out/'sources/current_r43/lane_sweep_tb.sv'
     candidate_tb.write_text(tb)
     baseline_tb = out/'sources/frozen_r42/lane_sweep_tb.sv'
-    old = 'pfo3_frontend_r25 #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H),.ROW_LANES(LANES),.ROW_DISPATCH(DISPATCH),.ROW_BANKED_REQUESTS(BANKED_REQUESTS),.ROW_BANKED_RESULTS(BANKED_RESULTS),.ROW_BALANCED_DISPATCH(BALANCED_DISPATCH)) dut(.*);'
+    old = 'pixel_frontend #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H),.ROW_LANES(LANES),.ROW_DISPATCH(DISPATCH),.ROW_BANKED_REQUESTS(BANKED_REQUESTS),.ROW_BANKED_RESULTS(BANKED_RESULTS),.ROW_BALANCED_DISPATCH(BALANCED_DISPATCH)) dut(.*);'
     assert tb.count(old) == 1, 'Unexpected TB instantiation; refuse blind derivation'
-    baseline_tb.write_text(tb.replace(old, 'pfo3_frontend_r25 #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H)) dut(.*);'))
+    baseline_tb.write_text(tb.replace(old, 'pixel_frontend #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H)) dut(.*);'))
     sources['tb'] = dict(original=str(tb_original), original_sha256=digest(tb_original),
                          candidate_sha256=digest(candidate_tb), frozen_derived_sha256=digest(baseline_tb),
                          change='Only remove R43-only frontend parameters for frozen original frontend; stimulus and output checks unchanged.')
@@ -86,13 +86,13 @@ def main():
     earlier = ROOT/'evidence/LANE_SWEEP_R43_01'
     old_result = json.loads((earlier/'RESULT.json').read_text())
     assert old_result['passed'] and old_result['lanes'][0] == 2
-    for name in ('r41_window_filter.sv','r33_direction.sv','r35_direction.sv','r35_row.sv',*RAMS):
+    for name in ('shared_window_filter.sv','ridge_center_solver.sv','direction_refiner.sv','stripe_extractor.sv',*RAMS):
         assert digest(earlier/'sources'/name) == digest(out/'sources/frozen_r42'/name), 'Earlier baseline source differs: '+name
-    old_front = (earlier/'sources/r35_frontend.sv').read_text()
-    old_front = old_front.replace('// R43 production builds may select direction lanes without changing AXI/BD ports.\n`ifndef R43_ROW_LANES\n`define R43_ROW_LANES 2\n`endif\n', '')
-    old_front = old_front.replace(',ROW_LANES=`R43_ROW_LANES', '').replace(', .LANES(ROW_LANES)', '')
+    old_front = (earlier/'sources/pixel_frontend.sv').read_text()
+    old_front = old_front.replace('// R43 production builds may select direction lanes without changing AXI/BD ports.\n`ifndef DIRECTION_LANES\n`define DIRECTION_LANES 2\n`endif\n', '')
+    old_front = old_front.replace(',ROW_LANES=`DIRECTION_LANES', '').replace(', .LANES(ROW_LANES)', '')
     old_front = old_front.replace(', .LANES(ROW_LANES)', '').replace(',.LANES(ROW_LANES)', '')
-    assert old_front == (out/'sources/frozen_r42/r35_frontend.sv').read_text(), 'Earlier frontend differs beyond 2-lane parameter plumbing'
+    assert old_front == (out/'sources/frozen_r42/pixel_frontend.sv').read_text(), 'Earlier frontend differs beyond 2-lane parameter plumbing'
     rows = []
     reused = []
     for case in ('T05','T06','noise'):
@@ -103,7 +103,7 @@ def main():
             assert digest(src)==metric[key]
             target=out/f'{case}_frozen_r42.{suffix}'
             shutil.copyfile(src,target)
-        reused.append(dict(case=case,result=str(earlier/'RESULT.json'),result_sha256=digest(earlier/'RESULT.json'),actual_compiled_row_sha256=digest(earlier/'sources/r35_row.sv'),frontend_adapter_proven_default_two_lane=True))
+        reused.append(dict(case=case,result=str(earlier/'RESULT.json'),result_sha256=digest(earlier/'RESULT.json'),actual_compiled_row_sha256=digest(earlier/'sources/stripe_extractor.sv'),frontend_adapter_proven_default_two_lane=True))
         rows.append(dict(variant='frozen_r42',case=case,reused=True,**{k:metric[k] for k in ('cycles','processing_cycles','records','geometry','record_sha256','geometry_sha256')}))
     (out/'SOURCE_AUDIT.json').write_text(json.dumps(dict(sources=sources,reused=reused,input_sha256={k:digest(v) for k,v in input_paths.items()}),indent=2))
     configs=[('frozen_r42',2,0,0,0),('r43_2static',2,0,1,1),('r43_2dynamic',2,1,1,1),('r43_8static',8,0,1,1)]
@@ -167,7 +167,7 @@ def main():
                 entry[suffix+'_candidate_sha256']=hashlib.sha256(b).hexdigest()
             comparisons.append(entry)
     passed=all(x['records_byte_equal'] and x['geometry_byte_equal'] for x in comparisons)
-    result=dict(passed=passed,evidence_kind='FULL_SIZE_RTL_SIMULATION_FROZEN_R42_COMPARISON_NOT_BOARD',resolution=[752,480],baseline_row_sha256=digest(out/'sources/frozen_r42/r35_row.sv'),sources=sources,reused_baseline_evidence=reused,configs=configs,cases=CASES,all_noncycle_record_fields_compared=True,geometry_uv_order_modes_compared=True,processing_cycle_difference_allowed=True,results=rows,comparisons=comparisons,elapsed_s=time.time()-started)
+    result=dict(passed=passed,evidence_kind='FULL_SIZE_RTL_SIMULATION_FROZEN_R42_COMPARISON_NOT_BOARD',resolution=[752,480],baseline_row_sha256=digest(out/'sources/frozen_r42/stripe_extractor.sv'),sources=sources,reused_baseline_evidence=reused,configs=configs,cases=CASES,all_noncycle_record_fields_compared=True,geometry_uv_order_modes_compared=True,processing_cycle_difference_allowed=True,results=rows,comparisons=comparisons,elapsed_s=time.time()-started)
     (out/'RESULT.json').write_text(json.dumps(result,indent=2)+'\n')
     print('ALL_PASS' if passed else 'MISMATCH',flush=True)
     raise SystemExit(0 if passed else 2)

@@ -27,13 +27,13 @@ set rtl_files [list \
   [file join $tree {pl/rtl/motion/motor_control_bd.v}] \
   [file join $tree {pl/rtl/motion/b_motion_guard.sv}] \
   [file join $tree {pl/rtl/motion/b_motion_guard_bd.v}] \
-  [file join $tree {pl/integration/pfo3_axi_r25.sv}] \
+  [file join $tree {pl/integration/axi_packet_controller.sv}] \
   [file join $tree {pl/r25_next/rtl/pfo3_banked_ram.sv}] \
   [file join $tree {pl/r25_next/rtl/pfo3_frontend_ports.svh}] \
-  [file join $tree {pl/r25_next/rtl/pfo3_frontend_r25.sv}] \
+  [file join $tree {pl/r25_next/rtl/pixel_frontend.sv}] \
   [file join $tree {pl/r25_next/rtl/pfo3_row_r25.sv}] \
   [file join $tree {pl/r25_next/rtl/pfo3_tdp_ram.sv}] \
-  [file join $tree {pl/integration/pfo3_axi_bd_r25.v}] \
+  [file join $tree {pl/integration/pfo3_axi_bd.v}] \
   [file join $tree {pl/build/full_project_r25/structured_light_motion_profile_hdmi_top.sv}]]
 set xdc_files [list \
   [file join $tree {pl/baseline/constraints/p2_pins.xdc}] \

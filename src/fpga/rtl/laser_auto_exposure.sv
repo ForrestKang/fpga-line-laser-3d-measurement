@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
 `default_nettype none
-// R41 laser auto-exposure (PL). Watches the Raw stream the capture IP already sends to raw_dma
+// live measurement laser auto-exposure (PL). Watches the Raw stream the capture IP already sends to raw_dma
 // (4 pixels per beat, byte 0 first) and, after each frame, steps the MT9V034 coarse exposure
 // (register 0x0B) through the existing SCCB master:
 //   saturated (>=250) count > sat_limit      -> rows - max(1, rows/4)   (x0.75)
@@ -9,7 +9,7 @@
 // clamped to [min_rows, max_rows]. After a successful write it waits settle_frames frames
 // before deciding again (the sensor applies a new exposure one to two frames later).
 // Disabled by default; software turns the sensor's own AEC off and loads `rows` first.
-module r41_laser_ae(
+module laser_auto_exposure(
  input  wire        clk,
  input  wire        rst,
  // Raw stream tap (observe only)

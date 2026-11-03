@@ -18,7 +18,7 @@ module tb_pfo3_r25;
  wire [63:0] processing_cycles;
  wire frame_measurement_usable,frame_preview_usable;
  wire [31:0] frame_quality_flags,ambiguous_rows;
- pfo3_frontend_r25 #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H)) dut(.*);
+ pixel_frontend #(.FRAME_WIDTH(W),.FRAME_HEIGHT(H)) dut(.*);
  reg [7:0] image[0:W*H-1];
  integer pos=0,cycles=0,fd,count_diag=0,count_patch=0,count_row=0,mode=0;
  integer pair_cycles=0,input_blocked_cycles=0,output_blocked_cycles=0,phase_fd;

@@ -46,7 +46,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# p2_processing_bd, motor_control_bd, b_motion_guard_bd, pfo3_axi_bd_r25, axis_bgrx_to_rgb24_bd_wrapper
+# p2_processing_bd, motor_control_bd, b_motion_guard_bd, pfo3_axi_bd, axis_bgrx_to_rgb24_bd_wrapper
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -176,7 +176,7 @@ if { $bCheckModules == 1 } {
 p2_processing_bd\
 motor_control_bd\
 b_motion_guard_bd\
-pfo3_axi_bd_r25\
+pfo3_axi_bd\
 axis_bgrx_to_rgb24_bd_wrapper\
 "
 
@@ -1122,7 +1122,7 @@ proc create_root_design { parentCell } {
 
 
   # Create instance: pfo3_frontend, and set properties
-  set block_name pfo3_axi_bd_r25
+  set block_name pfo3_axi_bd
   set block_cell_name pfo3_frontend
   if { [catch {set pfo3_frontend [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
      catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}

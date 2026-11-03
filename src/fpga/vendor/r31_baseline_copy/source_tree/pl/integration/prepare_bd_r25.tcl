@@ -18,8 +18,8 @@ foreach f [get_files -quiet] {
 }
 if {$replacements<20} {error "incomplete R25 source rebinding $replacements"}
 add_files -norecurse [glob $root/pl/r25/rtl/*.sv $root/pl/r25/rtl/*.svh]
-add_files -norecurse $root/pl/integration/pfo3_axi_r25.sv
-add_files -norecurse $root/pl/integration/pfo3_axi_bd_r25.v
+add_files -norecurse $root/pl/integration/axi_packet_controller.sv
+add_files -norecurse $root/pl/integration/pfo3_axi_bd.v
 set_property include_dirs $root/pl/r25/rtl [get_filesets sources_1]
 foreach f [get_files -quiet *.xdc] {
  set new $root/pl/baseline/constraints/[file tail $f]
@@ -30,7 +30,7 @@ set bd [get_files -quiet */sl_profile_hdmi.bd]
 open_bd_design $bd
 update_module_reference [get_ips *processing_pipeline*]
 set_property -dict [list CONFIG.COMPACT_POLICY_ENABLE 0 CONFIG.FEATURE_DMA_ENABLE 0 CONFIG.MULTI_CANDIDATE_ENABLE 0 CONFIG.RHI_ENABLE 0] [get_bd_cells processing_pipeline]
-set pfo [create_bd_cell -type module -reference pfo3_axi_bd_r25 pfo3_frontend]
+set pfo [create_bd_cell -type module -reference pfo3_axi_bd pfo3_frontend]
 set dma [create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 pfo3_dma]
 set_property -dict [list CONFIG.c_include_sg 1 CONFIG.c_sg_include_stscntrl_strm 0 CONFIG.c_sg_length_width 24 CONFIG.c_include_mm2s 1 CONFIG.c_include_s2mm 1 CONFIG.c_include_mm2s_dre 0 CONFIG.c_include_s2mm_dre 0 CONFIG.c_m_axis_mm2s_tdata_width 32 CONFIG.c_s_axis_s2mm_tdata_width 32 CONFIG.c_m_axi_mm2s_data_width 64 CONFIG.c_m_axi_s2mm_data_width 64 CONFIG.c_mm2s_burst_size 16 CONFIG.c_s2mm_burst_size 16] $dma
 set_property CONFIG.NUM_MI 10 [get_bd_cells control_interconnect]

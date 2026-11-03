@@ -1,6 +1,6 @@
 """R41 PL live measurement control: pfo3_frontend registers 0x500-0x5ff only.
 
-The PL (rtl/r41_measure.sv) accumulates per-packet statistics over the PL geometry records of
+The PL (rtl/profile_statistics.sv) accumulates per-packet statistics over the PL geometry records of
 every committed PFO3 packet; this module configures it and converts the last packet's results to
 millimetres. Camera-frame values (distance Z, X/Y extent) need only the camera/laser calibration;
 axis-frame values (height range, per-band radius) are meaningful only with a calibrated turntable

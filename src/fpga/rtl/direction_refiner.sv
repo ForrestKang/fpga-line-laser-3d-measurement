@@ -2,7 +2,7 @@
 // Continuous fixed-point normal from one Hessian power iteration, followed by
 // Newton projection delta=-(g.n)n/(n.H.n). This is not an exact eigen solver.
 // One request at a time. Each accepted offset is bounded to +/-0.5 pixel.
-module r35_direction(
+module direction_refiner(
  input wire clk,rst,clear,start,
  input wire signed [11:0] gx,gy,hxx,hxy,hyy,
  output wire ready,

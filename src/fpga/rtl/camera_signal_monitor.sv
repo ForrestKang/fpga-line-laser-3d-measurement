@@ -58,7 +58,7 @@ module camera_signal_monitor #(
     localparam [31:0] ERR_TIMEOUT          = 32'h00000020;
     localparam [31:0] ERR_COMMAND_REJECTED = 32'h80000000;
 
-    // R37: production wrapper shares the core global-only reset with the
+    // threshold: production wrapper shares the core global-only reset with the
     // metadata mailbox. Standalone tests retain an independent local option.
     wire cam_domain_resetn;
     generate

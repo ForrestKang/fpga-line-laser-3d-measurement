@@ -19,7 +19,7 @@ from verify_static_primary_final import ROOT, _count_geometry, _decode_primary
 sys.path.insert(0, str(ROOT / "runtime/structured_light_system_geometry_v1/src/python"))
 import numpy as np
 from r33.geometry_golden_r34 import load_calibration
-from geometry_reference_r35 import parameters, reconstruct
+from geometry_reference import parameters, reconstruct
 
 
 def sha(data):
@@ -32,7 +32,7 @@ def audit(run):
     freeze = json.loads(freeze_path.read_text(encoding="utf-8-sig"))
     sources = ["runtime/r33/protocol.py", "runtime/r33/protocol_r35.py",
                "runtime/candidate/pfo3_r25.py", "runtime/r33/geometry_golden_r34.py",
-               "runtime/geometry_reference_r35.py"]
+               "runtime/geometry_reference.py"]
     source_checks = []
     for name in sources:
         digest = sha((ROOT / name).read_bytes())

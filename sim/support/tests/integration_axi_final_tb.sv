@@ -44,7 +44,7 @@ module integration_axi_tb;
  wire m_axis_raw_tvalid,m_axis_raw_tlast;reg m_axis_raw_tready=1;
  wire live_capture_request;reg cam_ready=0;
  integer live_n=0,live_done=0,cam_frames=0,cw;
- pfo3_axi_r25 dut(.*);
+ axi_packet_controller dut(.*);
  // camera core: a request starts one frame after a short FV wait; words at about camera speed
  always @(posedge aclk)if(live_capture_request&&cam_ready)begin
   cam_ready<=0;

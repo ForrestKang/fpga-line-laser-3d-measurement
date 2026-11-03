@@ -1,7 +1,7 @@
 `timescale 1ns/1ps
 `default_nettype none
 // Section measurement of the laser profile, per committed PFO3 packet (model/section_measure_model.py).
-// Read-only snoop of geo_out_record, same commit rule as r41_measure.
+// Read-only snoop of geo_out_record, same commit rule as profile_statistics.
 //
 // Collect: window points projected into the laser plane, s = (p-o).e_s, h = (p-o).e_h (Q16 mm),
 //          stored in a 1024 x 64 point memory.

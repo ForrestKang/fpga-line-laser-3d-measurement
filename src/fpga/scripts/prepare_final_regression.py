@@ -47,7 +47,7 @@ def main():
     text = text.replace("ROOT / 'runtime12'", "ROOT / 'runtime'")
     text = text.replace("ROOT / 'tests/xpm_stubs_sim.v'", f"Path({str(OLD / 'tests/xpm_stubs_sim.v')!r})")
     text = text.replace("ROOT / 'tests/integration_axi_tb.sv'", "ROOT / 'tests/integration_axi_final_tb.sv'")
-    text = text.replace("ROOT / 'rtl/r41_measure.sv']", "ROOT / 'rtl/r41_measure.sv', ROOT / 'rtl/section_measure.sv']")
+    text = text.replace("ROOT / 'rtl/profile_statistics.sv']", "ROOT / 'rtl/profile_statistics.sv', ROOT / 'rtl/section_measure.sv']")
     # Optional section mode enables the actual AXI-connected snoop for each input.
     text = text.replace("for case_name in cases:", "section_mode = os.environ.get('FINAL_SECTION_TEST') == '1'\nfor case_name in cases:")
     needle = "    run([IVER / 'vvp.exe', OUT / 'sim.vvp', '+INPUT=' + str(input_hex), '+CONFIG=' + str(cfg),\n         '+HEADER=' + str(hdr), '+OUTPUT=' + str(stream)], case + '.log')"

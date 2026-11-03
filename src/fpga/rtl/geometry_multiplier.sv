@@ -2,7 +2,7 @@
 `default_nettype none
 // Single registered signed multiplier shared by the geometry microsequencer.
 // Q30 output is rounded to nearest even; raw product is retained for gates.
-module r35_geo_mul64(
+module geometry_multiplier(
  input wire clk,rst,start,
  input wire signed [63:0] a,b,
  output reg done,overflow,

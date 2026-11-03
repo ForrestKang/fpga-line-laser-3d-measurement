@@ -1,4 +1,4 @@
-"""R41 laser AE unit verification: rtl/r41_laser_ae.sv (Icarus) against an independent model.
+"""R41 laser AE unit verification: rtl/laser_auto_exposure.sv (Icarus) against an independent model.
 
 For every scenario the model renders the same frames from the exposure the testbench reports
 (sensor_rows), recomputes the saturated count and peak, and replays the control rule, settle
@@ -72,7 +72,7 @@ def main():
     out = Path(sys.argv[1]).resolve()
     out.mkdir(parents=True, exist_ok=False)
     vvp = out / 'sim.vvp'
-    subprocess.run([str(IVER / 'iverilog.exe'), '-g2012', '-o', str(vvp), str(R40 / 'rtl/r41_laser_ae.sv'),
+    subprocess.run([str(IVER / 'iverilog.exe'), '-g2012', '-o', str(vvp), str(R40 / 'rtl/laser_auto_exposure.sv'),
                     str(R40 / 'tests/tb_r41_laser_ae.sv')], check=True)
     results, ok = {}, True
     for name, over in SCENARIOS.items():
