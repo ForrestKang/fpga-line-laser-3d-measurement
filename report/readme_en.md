@@ -4,7 +4,7 @@
 
 [![简体中文](images/language_zh_inactive.svg)](../readme.md) [![English](images/language_en_active.svg)](readme_en.md)
 
-[PC tests](#start-on-a-pc) · [Wiring](#wiring-and-interfaces) · [Build and board-startup](#build-and-board-startup) · [Technical report](design_report.pdf)
+[PC tests](#start-on-a-pc) · [Build and board-startup](#build-and-board-startup) · [Technical report](design_report.pdf)
 
 ![System hardware: PYNQ-Z2, line laser and turntable](images/system_photo.png)
 
@@ -44,7 +44,7 @@ Accumulated cloud, angular progress, diameter profile and scan records.
 
 ## Hardware/software partition
 
-![Pixel processing, geometry, ARM runtime and display partition](images/system_architecture.svg)
+![Pixel processing, geometry, ARM runtime and display partition](images/system_architecture.png)
 
 | Programmable logic | ARM processing system |
 |---|---|
@@ -113,24 +113,6 @@ python -B sim/run_section_rtl.py --work ../scan3d_work --output ../scan3d_sectio
 ```
 
 The section test compares 195 packets from 182 archived frames and 13 synthetic inputs against the fixed-point model. Integration defaults to one empty-frame case; see [simulation instructions](../sim/readme.md) for all 19 cases. Use fresh restored work and output directories for another RTL run that creates derived scripts. These commands do not connect to hardware.
-
-## Wiring and interfaces
-
-The camera is an MT9V034 supplying 752 × 480, 8-bit grayscale. The instrument uses a 650 nm line laser, STEP/DIR/EN and guard signals for the turntable, and 1280 × 720 HDMI. This repository contains an overlay and software, not a complete SD-card system image.
-
-The [camera XDC](../src/fpga/vendor/r31_baseline_copy/source_tree/pl/baseline/constraints/p2_pins.xdc) records the following **FPGA package pins, not camera-header positions**. Match the XDC, board schematic and camera pinout before wiring. Power and motor-driver connections depend on the actual hardware documentation; unresolved connections must be confirmed.
-
-| Signal | FPGA package pins, LVCMOS33 |
-|---|---|
-| DATA[0..7] | T14, U12, U13, V13, V15, T15, R16, U17 |
-| LV / FV / PCLK | V17 / V18 / U18 |
-| RESET_N / STANDBY | T16 / R17 |
-| SDA / SCL | P16 / P15 |
-| BTN0 / BTN1 / BTN2 / BTN3 | D19 / D20 / L20 / L19 |
-
-Other interfaces are defined in the [top-level RTL](../src/fpga/rtl/board_top.sv), [constraints](../src/fpga/constraints/) and [BD Tcl](../src/fpga/bd/block_design_r40.tcl). GP0 controls registers; HP0 carries Raw DMA, HP1 HDMI VDMA and HP2 processing-result DMA. HP3 is unused. The system domain is 100 MHz, video is 125 MHz, and camera PCLK crosses through CDC logic.
-
-The frontend base is `0x40000000`, with magic `0x57334650`, ABI `0x00035000` and feature `31`. Window `0x300` commits geometry parameters and binds epoch/SHA; `0x500` is measurement statistics, `0x600` buttons and `0x700` section measurement. Consult the [AXI RTL](../src/fpga/rtl/axi_packet_controller.sv) and [drivers](../src/ps/r33/) for register semantics. Read the actual ABI after loading. Parameter changes revoke prior admission until a valid commit completes.
 
 ## Build and board startup
 

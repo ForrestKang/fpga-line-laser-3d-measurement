@@ -528,8 +528,8 @@
     },
     {
       "path": "readme.md",
-      "size": 12751,
-      "sha256": "a58417e92cbd634a399cc09b6974a3c5e8dfa4c7314b0a70cc80325eaa394294"
+      "size": 11141,
+      "sha256": "37fd7cece93f3261ec13c7d45591a2d2aa2bc0ee092f91fd4a9c95a329cc46d2"
     },
     {
       "path": "report/ai_collaboration_records.md",
@@ -623,13 +623,13 @@
     },
     {
       "path": "report/images/poster.pdf",
-      "size": 642779,
-      "sha256": "317386adfd1454171fd9cf16bf13f4d38ba2f9cfa5d1299d59f8bfcc81b18dc7"
+      "size": 611269,
+      "sha256": "8c5d7fe6d3238daaab7abeeb34e93c6a9ad6624c117991263e2bc3991a2fe75b"
     },
     {
       "path": "report/images/poster.pptx",
-      "size": 1461548,
-      "sha256": "ed446064305a337ef2b7af2333c30d0aa00691733d2d7a410a95c6d51b2ecf20"
+      "size": 1404163,
+      "sha256": "765745791a31188d618b636b99a301aeccbc72e534af85a0eb43bc62373e6547"
     },
     {
       "path": "report/images/readme_media_sources.json",
@@ -652,9 +652,9 @@
       "sha256": "4099685eb01f32c9ab7c26b28ec9103f96c23c3c9503838fe8200041ab9082e0"
     },
     {
-      "path": "report/images/system_architecture.svg",
-      "size": 9938,
-      "sha256": "d51a4203d776250a9a897f6496d1a5196b04d92ebb28c21dc742e18c5e86dbbd"
+      "path": "report/images/system_architecture.png",
+      "size": 187090,
+      "sha256": "485aaa24b6f715f9b8e965d47ca4fc5167b611875ba166b790a599420b9f69e4"
     },
     {
       "path": "report/images/system_photo.png",
@@ -668,8 +668,8 @@
     },
     {
       "path": "report/readme_en.md",
-      "size": 14642,
-      "sha256": "768fd307bf121079b2d4b6b4cde21134429b46073bc8f5b0e97da60bc4675bd7"
+      "size": 12852,
+      "sha256": "6768133477c8b601edb65ac295ec685b6dc7aa098ca9e2214f12d8c0c801c792"
     },
     {
       "path": "report/release_validation.json",

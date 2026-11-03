@@ -6,7 +6,7 @@
 
 [![简体中文](report/images/language_zh_active.svg)](readme.md) [![English](report/images/language_en_inactive.svg)](report/readme_en.md)
 
-[电脑测试](#先在电脑运行) · [接线与接口](#接线与接口) · [构建与板端启动](#构建与板端启动) · [技术报告](report/design_report.pdf)
+[电脑测试](#先在电脑运行) · [构建与板端启动](#构建与板端启动) · [技术报告](report/design_report.pdf)
 
 ![系统硬件：开发板、相机、线激光与转台](report/images/system_photo.png)
 
@@ -44,7 +44,7 @@
 
 ## 处理分工
 
-![PL与ARM处理分工](report/images/system_architecture.svg)
+![PL与ARM处理分工](report/images/system_architecture.png)
 
 | 处理侧 | 主要职责 |
 |---|---|
@@ -104,24 +104,6 @@ python -B sim/run_section_rtl.py --work ../scan3d_work --output ../scan3d_sectio
 ```
 
 截面测试使用182帧历史原图和13包合成输入，与定点模型逐位核对195包。整链入口默认只跑空帧，完整19例命令见[sim说明](sim/readme.md)；再次运行会派生脚本的RTL入口时使用新的恢复目录。这些命令不连接板卡。
-
-## 接线与接口
-
-相机为MT9V034，输入752×480、8位灰度；线激光为650 nm，转台使用STEP、DIR、EN及守护信号，HDMI输出1280×720。系统为overlay和运行软件，不含通用SD镜像。
-
-相机引脚依据为[相机XDC](src/fpga/vendor/r31_baseline_copy/source_tree/pl/baseline/constraints/p2_pins.xdc)，下表是**FPGA封装引脚，不是相机排针序号**。接线时须与开发板原理图和相机针脚表逐项对应；电源和转台驱动接法以实际硬件资料为准，未确认项不得猜测。
-
-| 信号 | FPGA封装引脚（LVCMOS33） |
-|---|---|
-| DATA[0..7] | T14、U12、U13、V13、V15、T15、R16、U17 |
-| LV / FV / PCLK | V17 / V18 / U18 |
-| RESET_N / STANDBY | T16 / R17 |
-| SDA / SCL | P16 / P15 |
-| BTN0 / BTN1 / BTN2 / BTN3 | D19 / D20 / L20 / L19 |
-
-其他接口见[顶层RTL](src/fpga/rtl/board_top.sv)、[约束](src/fpga/constraints/)和[BD重建脚本](src/fpga/bd/block_design_r40.tcl)。GP0用于控制，HP0承载Raw DMA、HP1承载HDMI VDMA、HP2承载处理结果DMA，HP3未启用。系统域100 MHz、视频域125 MHz，相机PCLK经CDC进入系统域。
-
-Frontend基址为`0x40000000`：当前magic=`0x57334650`、ABI=`0x00035000`、feature=`31`。`0x300`窗口提交几何参数并绑定epoch/SHA，`0x500`为测量统计，`0x600`为按键，`0x700`为截面测量。寄存器读写语义见[AXI源码](src/fpga/rtl/axi_packet_controller.sv)和[驱动](src/ps/r33/)。加载后须读回实际ABI；参数改变会撤销旧准入，完成有效提交后才能开始处理。
 
 ## 构建与板端启动
 
