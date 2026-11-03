@@ -528,13 +528,13 @@
     },
     {
       "path": "readme.md",
-      "size": 11141,
-      "sha256": "37fd7cece93f3261ec13c7d45591a2d2aa2bc0ee092f91fd4a9c95a329cc46d2"
+      "size": 11953,
+      "sha256": "45f684d9351d531ae5d7f0dad562321fe20c0edafe5686a369d800e07ec31ca6"
     },
     {
       "path": "report/ai_collaboration_records.md",
-      "size": 1583,
-      "sha256": "a82641748f1f6a986aae320dbe9b3c27b2c888745c70f1cda4418dafe3c4d371"
+      "size": 2395,
+      "sha256": "f329bf335b0ee4876b18a43a15df95ad89fcbf0c5fb6a11c79b6cca0c7981bf6"
     },
     {
       "path": "report/calibration_photos/checkerboard_pairs.png",
@@ -568,13 +568,13 @@
     },
     {
       "path": "report/design_report.docx",
-      "size": 8991898,
-      "sha256": "09605629de4cce15896ab3e0df8284a14b37207220d7b2ab58078a76a6ab5503"
+      "size": 8992121,
+      "sha256": "41767f0cd4b79d75cc36f0bb70be913987a2949c6030352a40273c8d214458b5"
     },
     {
       "path": "report/design_report.pdf",
-      "size": 4505502,
-      "sha256": "0a8fc83e4dbf54df4d624137b1591a6100e6884979036e2c6a4f83930eb7eaff"
+      "size": 4507565,
+      "sha256": "4a2fc458027e0428c6007836b1a9e7fde772a0de58e90d194d93182d3a6b8c48"
     },
     {
       "path": "report/history/original_package_manifest.json",
@@ -668,13 +668,13 @@
     },
     {
       "path": "report/readme_en.md",
-      "size": 12852,
-      "sha256": "6768133477c8b601edb65ac295ec685b6dc7aa098ca9e2214f12d8c0c801c792"
+      "size": 13300,
+      "sha256": "246405e7e463d470dd1038871d4661ff013ce5086068b4361110114babaeb88a"
     },
     {
       "path": "report/release_validation.json",
-      "size": 4433,
-      "sha256": "19c9454ea59a98513d8cbd6b7a92e06d829de8c05ebf605c9072881ea4cb10fe"
+      "size": 4835,
+      "sha256": "aecea32e09175570086af4c3b1bdb554d583ea8464b7aed0e72d48f4ad322920"
     },
     {
       "path": "report/sim_support_map.json",
@@ -933,8 +933,8 @@
     },
     {
       "path": "sim/results/repository_layout.json",
-      "size": 1090,
-      "sha256": "1bad4f0b8c760611990cffef825b705f03435450b664d5b1e04dc0ca975a1a2a"
+      "size": 1060,
+      "sha256": "2e4eec0b5fe401aec0772771950b713f050245c51254d20182a25dc4dd8717ef"
     },
     {
       "path": "sim/results/repository_runtime.json",
@@ -2353,8 +2353,8 @@
     },
     {
       "path": "source_map.json",
-      "size": 508718,
-      "sha256": "5cf4486d2f047c2b25793e5d39caafaaa0a5607e3fc67b8ac807ab4f83229867"
+      "size": 508760,
+      "sha256": "1d2b359bd445f48f602722e5751593eae017d9d151cd89cc8861bd2f3a77280b"
     },
     {
       "path": "src/fpga/baseline_rtl/ridge_center_solver.sv",

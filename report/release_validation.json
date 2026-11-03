@@ -115,5 +115,18 @@
     "New board validation of this repaired software combination",
     "Signed commitment/authorization PDF",
     "Repository visibility set by owner"
-  ]
+  ],
+  "snapshot_scope": "Original offline software-repair validation; constraints and pending describe that test run.",
+  "submission_materials": {
+    "authorization": "private standalone PDF, intentionally excluded from repository and source archive",
+    "engineering_layout": [
+      "src",
+      "sim",
+      "build",
+      "board",
+      "data",
+      "skill",
+      "report"
+    ]
+  }
 }

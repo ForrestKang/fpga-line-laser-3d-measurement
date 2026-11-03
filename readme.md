@@ -158,6 +158,8 @@ BTN1、BTN2、BTN3分别直接进入实时、截面和扫描页；BTN0发出开�
 
 ## 仓库导航
 
+本工程按选题指南第3.3.5节的七类目录组织。采用手写RTL与PS侧软件，未采用HLS；无需另外提供空的HLS工程。源码文件名保持小写英文；`readme.md`承担指南中`README.md`的项目入口作用，`skill/readme.md`说明各项技能的范围、用法、验证效果和失效条件。
+
 | 目录 | 内容 |
 |---|---|
 | [src/](src/) | FPGA RTL、XDC、BD、ARM运行时、原生C、字体与必要IP |
@@ -169,6 +171,8 @@ BTN1、BTN2、BTN3分别直接进入实时、截面和扫描页；BTN0发出开�
 | [report/](report/design_report.pdf) | 技术报告、图像、验证与AI协作记录 |
 
 [技术报告PDF](report/design_report.pdf) · [可编辑Word](report/design_report.docx) · [AI协作记录](report/ai_collaboration_records.md) · [可复用工具开发](report/skill_development.md)
+
+资源与时钟原始报告在`build/evidence/reports/`，前端基线在`build/evidence/baseline_reports/`；报告中的资源前后对比标明了截面测量硬件化这一功能变化。仿真输入与参考结果由`sim/support/`及`source_map.json`绑定；板端回执和点云对比在`board/evidence/`与`board/historical_outputs/`。从下载、恢复、软件验证、RTL验证到完整构建的顺序见上面的命令；各步骤使用新的工作和输出目录。
 
 ## 许可证
 

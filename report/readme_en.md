@@ -167,6 +167,8 @@ Retain the source commit, firmware/library identity, configuration, complete com
 
 ## Repository guide
 
+The seven directories follow section 3.3.5 of the competition guide. The implementation uses handwritten RTL and PS software, so no HLS project is required. Lowercase `readme.md` files serve as the project and skill entry points. Baseline and final implementation reports are under `build/evidence/baseline_reports/` and `build/evidence/reports/`; the technical report identifies the added section-measurement hardware in its resource comparison.
+
 | Directory | Contents |
 |---|---|
 | [src/](../src/) | FPGA RTL, XDC, BD, ARM runtime, native C, fonts and required IP |

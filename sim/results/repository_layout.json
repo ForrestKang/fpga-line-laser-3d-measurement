@@ -22,7 +22,7 @@
   "restored_sources": true,
   "hardware_operations": 0,
   "signed_authorization_in_repository": false,
-  "report_pages": 27,
+  "report_pages": 29,
   "changes": [
     "Consolidate project instructions into Chinese and English readme",
     "Move images under report and utility scripts under sim",
@@ -39,6 +39,6 @@
     "native_powerpoint_open_and_render_passed": true,
     "architecture_diagram": "grouped SVG based on actual RTL",
     "school_information_permitted_on_poster": true,
-    "school_emblem": "Anhui University official blue outline"
+    "repository_emblem": "none"
   }
 }
