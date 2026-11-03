@@ -568,13 +568,13 @@
     },
     {
       "path": "report/design_report.docx",
-      "size": 7679967,
-      "sha256": "7743e4c09d27c86032c9c1476474fafa6c6f08ccf25e5fd3f229aaa92cce6c83"
+      "size": 7680060,
+      "sha256": "bf498deaa1b184bce480741e1331602b7abd9f146ff1783f0dbe9914bd9b2a7c"
     },
     {
       "path": "report/design_report.pdf",
-      "size": 2217614,
-      "sha256": "90dd55e8eb7d3fea7e81fa7dcdeb52d7a1d4f789ea30eb7b7b00bf584cf02418"
+      "size": 4370192,
+      "sha256": "8d980cf099235abce15e01762ac2ea5af02f5507c2cb9d2ec3c255d73a5e8fa6"
     },
     {
       "path": "report/history/original_package_manifest.json",
@@ -2353,8 +2353,8 @@
     },
     {
       "path": "source_map.json",
-      "size": 508714,
-      "sha256": "241e9f1e0034c73939300e48ff9050269e44efdc149b1c12307b7d003f09f77e"
+      "size": 508720,
+      "sha256": "cc33134240a4b51d1e8ea4df60de8f1885a84bfae3450a36ff63eab32e036b14"
     },
     {
       "path": "src/fpga/baseline_rtl/ridge_center_solver.sv",
