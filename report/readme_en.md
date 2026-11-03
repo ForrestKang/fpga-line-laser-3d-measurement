@@ -128,9 +128,9 @@ The [camera XDC](../src/fpga/vendor/r31_baseline_copy/source_tree/pl/baseline/co
 | SDA / SCL | P16 / P15 |
 | BTN0 / BTN1 / BTN2 / BTN3 | D19 / D20 / L20 / L19 |
 
-Other interfaces are defined in the [top-level RTL](../src/fpga/rtl/r42_board_top.sv), [constraints](../src/fpga/constraints/) and [BD Tcl](../src/fpga/bd/block_design_r40.tcl). GP0 controls registers; HP0 carries Raw DMA, HP1 HDMI VDMA and HP2 processing-result DMA. HP3 is unused. The system domain is 100 MHz, video is 125 MHz, and camera PCLK crosses through CDC logic.
+Other interfaces are defined in the [top-level RTL](../src/fpga/rtl/board_top.sv), [constraints](../src/fpga/constraints/) and [BD Tcl](../src/fpga/bd/block_design_r40.tcl). GP0 controls registers; HP0 carries Raw DMA, HP1 HDMI VDMA and HP2 processing-result DMA. HP3 is unused. The system domain is 100 MHz, video is 125 MHz, and camera PCLK crosses through CDC logic.
 
-The frontend base is `0x40000000`, with magic `0x57334650`, ABI `0x00035000` and feature `31`. Window `0x300` commits geometry parameters and binds epoch/SHA; `0x500` is measurement statistics, `0x600` buttons and `0x700` section measurement. Consult the [AXI RTL](../src/fpga/rtl/r35_axi.sv) and [drivers](../src/ps/r33/) for register semantics. Read the actual ABI after loading. Parameter changes revoke prior admission until a valid commit completes.
+The frontend base is `0x40000000`, with magic `0x57334650`, ABI `0x00035000` and feature `31`. Window `0x300` commits geometry parameters and binds epoch/SHA; `0x500` is measurement statistics, `0x600` buttons and `0x700` section measurement. Consult the [AXI RTL](../src/fpga/rtl/axi_packet_controller.sv) and [drivers](../src/ps/r33/) for register semantics. Read the actual ABI after loading. Parameter changes revoke prior admission until a valid commit completes.
 
 ## Build and board startup
 

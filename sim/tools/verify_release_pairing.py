@@ -38,10 +38,15 @@ def verify(root):
         check(kind, path.is_file() and path.stat().st_size == entry['size']
               and sha(path) == entry['sha256'])
     compiled = json.loads((fw / 'compiled_sources_sha256.json').read_text(encoding='utf-8'))
+    # Published files use functional names; restore paths retain the exact names
+    # used by the frozen build. Compare the original bytes without rewriting them.
+    source_paths = {e['restore'].casefold(): root / e['path']
+                    for e in json.loads((root / 'source_map.json').read_text(encoding='utf-8'))
+                    if e.get('restore')}
     original, generated, failed = [], [], []
     for name, expected in compiled.items():
         rel = name.replace('\\', '/').split('/scan3d_final_20261029/', 1)[-1]
-        path = root / 'src/fpga' / rel.lower()
+        path = source_paths.get(('fpga/' + rel).casefold(), root / 'src/fpga' / rel.lower())
         if path.is_file():
             (original if sha(path) == expected else failed).append(rel)
         elif any(part in rel for part in ('.gen/', '.srcs/', '/ipshared/')):
@@ -57,7 +62,7 @@ def verify(root):
     check('frontend_hwh_address', any(e.get('INSTANCE') == 'pfo3_frontend'
           and int(e['BASEVALUE'], 16) == manifest['pfo3']['frontend_base']
           and int(e['HIGHVALUE'], 16) - int(e['BASEVALUE'], 16) + 1 >= 4096 for e in ranges))
-    rtl = (root / 'src/fpga/rtl/r35_axi.sv').read_text(encoding='utf-8')
+    rtl = (root / 'src/fpga/rtl/axi_packet_controller.sv').read_text(encoding='utf-8')
     section = (root / 'src/fpga/rtl/section_measure.sv').read_text(encoding='utf-8')
     section_decl = manifest['section_measure']
     check('section_register_contract', section_decl['present'] and section_decl['register_window'] == [0x700, 0x7ff]

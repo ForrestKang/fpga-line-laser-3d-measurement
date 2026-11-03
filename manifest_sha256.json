@@ -528,8 +528,8 @@
     },
     {
       "path": "readme.md",
-      "size": 12741,
-      "sha256": "bec3a2810f50427c84fadbc95fee2e522ab6c8a04a8ca6dfd73224e83a22c02a"
+      "size": 12751,
+      "sha256": "a58417e92cbd634a399cc09b6974a3c5e8dfa4c7314b0a70cc80325eaa394294"
     },
     {
       "path": "report/ai_collaboration_records.md",
@@ -668,8 +668,8 @@
     },
     {
       "path": "report/readme_en.md",
-      "size": 14632,
-      "sha256": "3bca1365b4f2257ec22e10d30f5aeae388285d2d88f30483ed3dcea44a7abc29"
+      "size": 14642,
+      "sha256": "768fd307bf121079b2d4b6b4cde21134429b46073bc8f5b0e97da60bc4675bd7"
     },
     {
       "path": "report/release_validation.json",
@@ -2308,8 +2308,8 @@
     },
     {
       "path": "sim/tools/verify_release_pairing.py",
-      "size": 4920,
-      "sha256": "e37a00d626889657c6628c9d29f810422e0b159abfe6f694cd1c81127d49e9ce"
+      "size": 5343,
+      "sha256": "3c30c3948ea53cb24e844415ad6e323f872b478ecbd40adcc5ae1939e76baa0e"
     },
     {
       "path": "skill/pynq_release_check.md",
@@ -2353,8 +2353,8 @@
     },
     {
       "path": "source_map.json",
-      "size": 468279,
-      "sha256": "684addcd168dcacc3f692631150e65617d328d4372d619279bf88e78a520c035"
+      "size": 468380,
+      "sha256": "8ba8f1f3ba968feeb84a437d3a87cabeb4df93c37a53827640cad83500d8703c"
     },
     {
       "path": "src/fpga/baseline_rtl/r33_direction.sv",
@@ -2567,9 +2567,54 @@
       "sha256": "99c137b8e9032d8f902c25951a2f0de4b8ee091da4a4126a620510935cb23b2d"
     },
     {
+      "path": "src/fpga/rtl/axi_packet_controller.sv",
+      "size": 24740,
+      "sha256": "ed50f40301bc6cae08852d69026356f16f4f0c5f8dbf84ae3cb438e63bd1ae5c"
+    },
+    {
+      "path": "src/fpga/rtl/board_buttons.sv",
+      "size": 1825,
+      "sha256": "05d608690484d753df0e5d240797bbc8bdbd84cfe97b20d83ae514d7be2ab65d"
+    },
+    {
+      "path": "src/fpga/rtl/board_top.sv",
+      "size": 2502,
+      "sha256": "a3239f31a65d56bb5c9500bedcc00a4af72a5896a84a070485b6e65f69202959"
+    },
+    {
       "path": "src/fpga/rtl/camera_signal_monitor.sv",
       "size": 31244,
       "sha256": "e68f02a42c1b6ae80528458ea87ac07cd9d0d18661c71cd992e335834fa2c93c"
+    },
+    {
+      "path": "src/fpga/rtl/direction_refiner.sv",
+      "size": 4778,
+      "sha256": "7b66f7551ed8c2239ed700ec57d3dcd11fa5fa7f22ce277ef7dd6bcb7abd3591"
+    },
+    {
+      "path": "src/fpga/rtl/fixed_point_divider.sv",
+      "size": 2156,
+      "sha256": "1939853a1c12c6173c06e067217efec1fcdd6aa682e7f545d4f809ccd88c2c69"
+    },
+    {
+      "path": "src/fpga/rtl/geometry_engine.sv",
+      "size": 10273,
+      "sha256": "51e8c4c45d291901d70e0383deed3619e863ec3b0fae930046252dcc6b06ed9a"
+    },
+    {
+      "path": "src/fpga/rtl/geometry_multiplier.sv",
+      "size": 1010,
+      "sha256": "0cb3cf5408f7df9c4c27190df78f25ef0364a3a631da8021ec9797b955f02f32"
+    },
+    {
+      "path": "src/fpga/rtl/laser_auto_exposure.sv",
+      "size": 5237,
+      "sha256": "796e7d314b433d98aecdb5b793be028187371ee76d935eb690f77adb2d789269"
+    },
+    {
+      "path": "src/fpga/rtl/moment_accumulator.sv",
+      "size": 6191,
+      "sha256": "796a06dea8f93b361d683c45d80a6d97fd9c99c2ef5b6341edfc4d78a85700c2"
     },
     {
       "path": "src/fpga/rtl/p2_async_fifo.sv",
@@ -2597,104 +2642,59 @@
       "sha256": "273cc674afdedb01c4801b2248030d5475d19408c15d43191f5c22eb70d36571"
     },
     {
-      "path": "src/fpga/rtl/pfo3_axi_bd_r25.v",
+      "path": "src/fpga/rtl/pfo3_axi_bd.v",
       "size": 7754,
       "sha256": "7ca21f4b17899a05da0665e0c880d5b6e0371f86d6316d83454c28704a1e62ea"
     },
     {
-      "path": "src/fpga/rtl/r35_axi.sv",
-      "size": 24740,
-      "sha256": "ed50f40301bc6cae08852d69026356f16f4f0c5f8dbf84ae3cb438e63bd1ae5c"
-    },
-    {
-      "path": "src/fpga/rtl/r35_direction.sv",
-      "size": 4778,
-      "sha256": "7b66f7551ed8c2239ed700ec57d3dcd11fa5fa7f22ce277ef7dd6bcb7abd3591"
-    },
-    {
-      "path": "src/fpga/rtl/r35_div_q30.sv",
-      "size": 2156,
-      "sha256": "1939853a1c12c6173c06e067217efec1fcdd6aa682e7f545d4f809ccd88c2c69"
-    },
-    {
-      "path": "src/fpga/rtl/r35_frontend.sv",
-      "size": 25338,
-      "sha256": "83758a4d83833de3d1e4cb2aa141520cf4ee6f86f1bc212dbd4788678f79024d"
-    },
-    {
-      "path": "src/fpga/rtl/r35_geo_mul64.sv",
-      "size": 1010,
-      "sha256": "0cb3cf5408f7df9c4c27190df78f25ef0364a3a631da8021ec9797b955f02f32"
-    },
-    {
-      "path": "src/fpga/rtl/r35_geometry.sv",
-      "size": 10273,
-      "sha256": "51e8c4c45d291901d70e0383deed3619e863ec3b0fae930046252dcc6b06ed9a"
-    },
-    {
-      "path": "src/fpga/rtl/r35_moments.sv",
-      "size": 6191,
-      "sha256": "796a06dea8f93b361d683c45d80a6d97fd9c99c2ef5b6341edfc4d78a85700c2"
-    },
-    {
-      "path": "src/fpga/rtl/r35_moments_opt.sv",
+      "path": "src/fpga/rtl/pipelined_moment_accumulator.sv",
       "size": 5515,
       "sha256": "55c4e9186ca49106611e24f0ec08fd9b18d72d7aa17ddad82f5612d270e03f91"
     },
     {
-      "path": "src/fpga/rtl/r35_point_cache.sv",
+      "path": "src/fpga/rtl/pixel_frontend.sv",
+      "size": 25338,
+      "sha256": "83758a4d83833de3d1e4cb2aa141520cf4ee6f86f1bc212dbd4788678f79024d"
+    },
+    {
+      "path": "src/fpga/rtl/point_cloud_cache.sv",
       "size": 1409,
       "sha256": "10f9f8b8905623b6819cf9bb0f6b8a7b10e266ccfc08c2e4f48ffe71973fcea1"
     },
     {
-      "path": "src/fpga/rtl/r35_row.sv",
-      "size": 19064,
-      "sha256": "9f4a8f8f9d1ed51fb3f05c4077f5692a32781d714f135c9efc7ff918a5fa679b"
-    },
-    {
-      "path": "src/fpga/rtl/r40_cloud_view.sv",
-      "size": 18992,
-      "sha256": "e816271d4d2858b833864557120dab79515f0557e833d9eee76343d442495fbf"
-    },
-    {
-      "path": "src/fpga/rtl/r40_rams.sv",
+      "path": "src/fpga/rtl/point_cloud_memory.sv",
       "size": 2302,
       "sha256": "1423df7ecddf6fe12ed9ee8450c20c289e0ae200b25a9c45c0958a1787a8806a"
     },
     {
-      "path": "src/fpga/rtl/r40_tables.sv",
+      "path": "src/fpga/rtl/point_cloud_renderer.sv",
+      "size": 18992,
+      "sha256": "e816271d4d2858b833864557120dab79515f0557e833d9eee76343d442495fbf"
+    },
+    {
+      "path": "src/fpga/rtl/point_cloud_tables.sv",
       "size": 26441,
       "sha256": "9fa898f664593af423612b0623d62d485082f35248ca6a8db11b7a58e13cd4d6"
     },
     {
-      "path": "src/fpga/rtl/r41_laser_ae.sv",
-      "size": 5237,
-      "sha256": "796e7d314b433d98aecdb5b793be028187371ee76d935eb690f77adb2d789269"
-    },
-    {
-      "path": "src/fpga/rtl/r41_measure.sv",
+      "path": "src/fpga/rtl/profile_statistics.sv",
       "size": 13731,
       "sha256": "a7159ed7be06ca76f88edc099363b91b262886118136f50bf45ba66d608763e9"
-    },
-    {
-      "path": "src/fpga/rtl/r41_window_filter.sv",
-      "size": 6050,
-      "sha256": "41f3b7f83f9bfe94f1e061b14f453c8166b2b1f4bd4fab55f9d26b5f8f0513de"
-    },
-    {
-      "path": "src/fpga/rtl/r42_board_top.sv",
-      "size": 2502,
-      "sha256": "a3239f31a65d56bb5c9500bedcc00a4af72a5896a84a070485b6e65f69202959"
-    },
-    {
-      "path": "src/fpga/rtl/r42_buttons.sv",
-      "size": 1825,
-      "sha256": "05d608690484d753df0e5d240797bbc8bdbd84cfe97b20d83ae514d7be2ab65d"
     },
     {
       "path": "src/fpga/rtl/section_measure.sv",
       "size": 41601,
       "sha256": "3befbd13cc7679ac94975d4921dd8dff3a315a9fd64f2251128e9081fd25b0ad"
+    },
+    {
+      "path": "src/fpga/rtl/shared_window_filter.sv",
+      "size": 6050,
+      "sha256": "41f3b7f83f9bfe94f1e061b14f453c8166b2b1f4bd4fab55f9d26b5f8f0513de"
+    },
+    {
+      "path": "src/fpga/rtl/stripe_extractor.sv",
+      "size": 19064,
+      "sha256": "9f4a8f8f9d1ed51fb3f05c4077f5692a32781d714f135c9efc7ff918a5fa679b"
     },
     {
       "path": "src/fpga/scripts/audit_failed_static01.py",
@@ -4402,7 +4402,7 @@
       "sha256": "72d8d6feb11a4420aa5eed98b2c76bdbb8f1a015e4e17c20156b807228d6e933"
     },
     {
-      "path": "src/ps/geometry_reference_r35.py",
+      "path": "src/ps/geometry_reference.py",
       "size": 5297,
       "sha256": "937740bcd4873880fa23302ec97eb6666f2c76b4cd208ce99f2eee8950a70624"
     },
@@ -4762,11 +4762,6 @@
       "sha256": "c5bcf89300bef5a0f9dbe705233ec1a90b20867b7abe226eb27cf8fb37597c08"
     },
     {
-      "path": "src/ps/r42_runtime_readme.md",
-      "size": 4249,
-      "sha256": "5df23df5bd91faad2bf69044392c15cb9a5a5c2733c6e58f1fde9d9a0632ea8e"
-    },
-    {
       "path": "src/ps/reference_candidate/features.py",
       "size": 64660,
       "sha256": "b0a74e831ea54df69ef3bba0cedc0b6e91178c048418ca98dd1d5fec8900c654"
@@ -4782,14 +4777,19 @@
       "sha256": "25d4641923767e4cad2273952027879db545f28a62376d75d5dee3d49b1836d9"
     },
     {
+      "path": "src/ps/run_interface_tests.py",
+      "size": 1654,
+      "sha256": "fcedbb9a1002030aadd2f74ced81a76a202651f97a4c007894b129d672720581"
+    },
+    {
       "path": "src/ps/run_tests_final_section.py",
       "size": 1687,
       "sha256": "0eda82e80689ee8c52013c90edccbd0b92c14edc2454dcf30757392438176ada"
     },
     {
-      "path": "src/ps/run_tests_r42.py",
-      "size": 1654,
-      "sha256": "fcedbb9a1002030aadd2f74ced81a76a202651f97a4c007894b129d672720581"
+      "path": "src/ps/runtime_readme.md",
+      "size": 4249,
+      "sha256": "5df23df5bd91faad2bf69044392c15cb9a5a5c2733c6e58f1fde9d9a0632ea8e"
     },
     {
       "path": "src/ps/structured_light_system_algorithm_v1/board/scripts/b_alignment_preview.py",

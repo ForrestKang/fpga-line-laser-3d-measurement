@@ -119,9 +119,9 @@ python -B sim/run_section_rtl.py --work ../scan3d_work --output ../scan3d_sectio
 | SDA / SCL | P16 / P15 |
 | BTN0 / BTN1 / BTN2 / BTN3 | D19 / D20 / L20 / L19 |
 
-其他接口见[顶层RTL](src/fpga/rtl/r42_board_top.sv)、[约束](src/fpga/constraints/)和[BD重建脚本](src/fpga/bd/block_design_r40.tcl)。GP0用于控制，HP0承载Raw DMA、HP1承载HDMI VDMA、HP2承载处理结果DMA，HP3未启用。系统域100 MHz、视频域125 MHz，相机PCLK经CDC进入系统域。
+其他接口见[顶层RTL](src/fpga/rtl/board_top.sv)、[约束](src/fpga/constraints/)和[BD重建脚本](src/fpga/bd/block_design_r40.tcl)。GP0用于控制，HP0承载Raw DMA、HP1承载HDMI VDMA、HP2承载处理结果DMA，HP3未启用。系统域100 MHz、视频域125 MHz，相机PCLK经CDC进入系统域。
 
-Frontend基址为`0x40000000`：当前magic=`0x57334650`、ABI=`0x00035000`、feature=`31`。`0x300`窗口提交几何参数并绑定epoch/SHA，`0x500`为测量统计，`0x600`为按键，`0x700`为截面测量。寄存器读写语义见[AXI源码](src/fpga/rtl/r35_axi.sv)和[驱动](src/ps/r33/)。加载后须读回实际ABI；参数改变会撤销旧准入，完成有效提交后才能开始处理。
+Frontend基址为`0x40000000`：当前magic=`0x57334650`、ABI=`0x00035000`、feature=`31`。`0x300`窗口提交几何参数并绑定epoch/SHA，`0x500`为测量统计，`0x600`为按键，`0x700`为截面测量。寄存器读写语义见[AXI源码](src/fpga/rtl/axi_packet_controller.sv)和[驱动](src/ps/r33/)。加载后须读回实际ABI；参数改变会撤销旧准入，完成有效提交后才能开始处理。
 
 ## 构建与板端启动
 
