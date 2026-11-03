@@ -623,13 +623,13 @@
     },
     {
       "path": "report/images/poster.pdf",
-      "size": 620409,
-      "sha256": "66fd5db31b3f30c5a62ec301af44ea8fdac43b9786f9cd8464473c68db27696e"
+      "size": 642779,
+      "sha256": "317386adfd1454171fd9cf16bf13f4d38ba2f9cfa5d1299d59f8bfcc81b18dc7"
     },
     {
       "path": "report/images/poster.pptx",
-      "size": 1403743,
-      "sha256": "643cfe23e3ac3e1a5027b685e880b973a0b1869b33b1aeb5c52251c05f708868"
+      "size": 1461548,
+      "sha256": "ed446064305a337ef2b7af2333c30d0aa00691733d2d7a410a95c6d51b2ecf20"
     },
     {
       "path": "report/images/readme_media_sources.json",
@@ -933,8 +933,8 @@
     },
     {
       "path": "sim/results/repository_layout.json",
-      "size": 1026,
-      "sha256": "307ff32491f358069e479b68f2b5dcda4da16bef712886a10bc7df2f6eb58a92"
+      "size": 1090,
+      "sha256": "1bad4f0b8c760611990cffef825b705f03435450b664d5b1e04dc0ca975a1a2a"
     },
     {
       "path": "sim/results/repository_runtime.json",

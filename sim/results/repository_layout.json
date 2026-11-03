@@ -38,6 +38,7 @@
     "format": "pptx",
     "native_powerpoint_open_and_render_passed": true,
     "architecture_diagram": "grouped SVG based on actual RTL",
-    "school_information_permitted_on_poster": true
+    "school_information_permitted_on_poster": true,
+    "school_emblem": "Anhui University official blue outline"
   }
 }
