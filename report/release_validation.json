@@ -11,16 +11,6 @@
     "passed": true,
     "skipped": 0
   },
-  "support": {
-    "tests_run": 39,
-    "passed": true,
-    "skipped": [
-      [
-        "test_symlink_escape_is_rejected_when_supported (test_pynq_release_check.ReleaseCheckTests.test_symlink_escape_is_rejected_when_supported)",
-        "symlink and junction creation unavailable: OSError"
-      ]
-    ]
-  },
   "pairing": {
     "test_methods": 11,
     "archived_primary_packets": 27,
@@ -49,12 +39,6 @@
       "path": "report/verification/runtime_original_scope.json",
       "size": 505,
       "sha256": "ca41af086e6fee6014061f6d52b03e459612d7b2de4ee551277dfb136a96f484"
-    },
-    {
-      "name": "support_checks",
-      "path": "report/verification/support_checks.json",
-      "size": 359,
-      "sha256": "da29484c20e0aaee2c43df22d4e2acb6c421552efa1104e78f589ee668e00f75"
     },
     {
       "name": "source_abi_native",

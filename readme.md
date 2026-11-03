@@ -114,12 +114,11 @@ python -m pip install -r sim/requirements_pc.txt
 ### 第二步 检查文件并恢复工程
 
 ```powershell
-python -B skill/verify_bundle.py .
 python -B sim/tools/check_repository.py
 python -B build/restore_sources.py --output ../scan3d_work
 ```
 
-前两条检查工程文件和脚本结构；第三条在上一级新建`scan3d_work/`，恢复完整工作布局。成功后应能看到`scan3d_work/fpga/`、`scan3d_work/runtime/`及`scan3d_work/firmware/`。输出目录必须原先不存在；重跑时换一个新目录名，保留上次结果。
+第一条检查工程结构、文档链接和脚本语法；第二条在上一级新建`scan3d_work/`，恢复完整工作布局。成功后应能看到`scan3d_work/fpga/`、`scan3d_work/runtime/`及`scan3d_work/firmware/`。输出目录必须原先不存在；重跑时换一个新目录名，保留上次结果。
 
 ### 第三步 运行完整软件测试
 
@@ -153,7 +152,6 @@ python -B sim/run_section_rtl.py --work ../scan3d_section_work --output ../scan3
 
 ```powershell
 python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
-python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --runtime-root src/ps
 ```
 
 完整构建从恢复后的`fpga/scripts/build_final.tcl`开始，默认双方向通道、四个dispatch/banking开关为0，不静默升级IP。输出含日志、资源、setup/hold、脉宽、DRC、CDC报告及bit/HWH和manifest。历史seedretry脚本依赖未提供的route.dcp，请使用上述完整入口。
@@ -180,7 +178,7 @@ BTN1、BTN2、BTN3分别直接进入实时、截面和扫描页；BTN0发出开�
 | 完整运行时 | 279项通过，覆盖协议、几何、界面、存储与故障处理 |
 | 入口与三页界面 | 71项通过，属于完整运行时测试范围 |
 | 软件固件配套 | 11项通过，核对27份数据包、接口及原生库架构 |
-| 通用PYNQ Skill | 4项离线复用测试通过，覆盖两个无关合成工程、驱动混用拒绝、目录迁移与独立调用 |
+| 通用PYNQ Skill | DMA诊断、参考结果比对及性能分析工作流；9项独立导出测试通过 |
 | 截面测量RTL | 195包与定点模型逐位一致 |
 | 整链RTL | 19例全尺寸输入通过，覆盖空帧、噪声、饱和及候选溢出 |
 
@@ -211,7 +209,7 @@ BTN1、BTN2、BTN3分别直接进入实时、截面和扫描页；BTN0发出开�
 | [build/](build/) | 文件名恢复、完整构建入口及实现报告 |
 | [board/](board/readme.md) | 固件、manifest、板端证据与启动参考 |
 | [data/](data/) | 标定、输入与参考数据 |
-| [skill/](skill/readme.md) | 可复用包校验、固件/runtime绑定检查 |
+| [skill/](skill/readme.md) | 通用DMA、参考结果与性能资源诊断流程 |
 | [report/](report/design_report.pdf) | 技术报告、图像、验证与AI协作记录 |
 
 [技术报告PDF](report/design_report.pdf) · [可编辑Word](report/design_report.docx) · [AI协作记录](report/ai_collaboration_records.md) · [可复用工具开发](report/skill_development.md)

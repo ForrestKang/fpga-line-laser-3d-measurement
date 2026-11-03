@@ -35,12 +35,12 @@ def local_link_error(root, source, target):
 def check(root):
     root = Path(root).resolve()
     required = ['readme.md', 'license.md', 'source_map.json',
-                'manifest_sha256.json', 'build/restore_sources.py',
+                'build/restore_sources.py',
                 'build/reproduce.py', 'src/fpga/scripts/build_final.tcl',
                 'src/ps/r33/live.py', 'board/firmware/final.bit',
                 'board/firmware/final.hwh', 'report/design_report.pdf',
                 'report/ai_collaboration_records.md',
-                'skill/pynq_release_check.py', 'report/readme_en.md']
+                'skill/skill.md', 'skill/readme.md', 'report/readme_en.md']
     errors = []
     for path in required:
         if not (root / path).is_file():

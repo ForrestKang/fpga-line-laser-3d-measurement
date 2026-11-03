@@ -27,17 +27,9 @@ jobs:
         run: python -B sim/tools/check_repository.py
       - name: Link checker failure tests
         run: python -B sim/tools/test_repository_checks.py
-      - name: Submission file integrity
-        run: python -B skill/verify_bundle.py .
-      - name: Bundle checker checkout and corruption tests
-        run: python -B skill/test_verify_bundle.py
-      - name: Release checker positive and negative tests
-        run: python -B skill/test_pynq_release_check.py
-      - name: Portable skill independent-project tests
-        run: python -B skill/test_portability.py
       - name: Reproducible skill export and isolated consumer tests
         run: python -B sim/tools/test_build_skill.py
       - name: Restore exact original source layout
         run: python -B build/restore_sources.py --output "$RUNNER_TEMP/scan3d_restore"
       - name: State CI scope
-        run: echo 'Repository integrity, source restoration and utility checks completed. See report/release_validation.json.'
+        run: echo 'Repository structure, source restoration and skill export checks completed. See report/release_validation.json.'

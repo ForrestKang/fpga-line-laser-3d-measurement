@@ -97,8 +97,6 @@ Run from the repository root. Python 3.10+ is sufficient for package checks. Run
 git clone https://github.com/ForrestKang/pynq-structured-light.git
 cd pynq-structured-light
 python -B sim/tools/check_repository.py
-python -B skill/verify_bundle.py .
-python -B skill/test_pynq_release_check.py
 python -B build/restore_sources.py --output ../scan3d_work
 python -m pip install -r sim/requirements_pc.txt
 python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_results --cc gcc
@@ -118,7 +116,6 @@ The section test compares 195 packets from 182 archived frames and 13 synthetic 
 
 ```sh
 python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
-python -B skill/pynq_release_check.py --manifest board/firmware/manifest.json --runtime-root src/ps
 ```
 
 The build restores sources and invokes `fpga/scripts/build_final.tcl`, using two direction lanes and four dispatch/banking switches set to zero. It does not silently upgrade IP. Outputs include logs, resource, setup/hold, pulse-width, DRC and CDC reports, bit/HWH and manifest. The historical seedretry helper needs an unavailable route.dcp; use the complete entry point above.
@@ -145,7 +142,7 @@ Frame records retain Raw grayscale, primary hardware streams, observations, meas
 | Runtime | 279 tests passed: protocol, geometry, interface, storage and fault handling |
 | Entry point and three pages | 71 passed, a subset of the complete runtime scope |
 | Firmware/runtime pairing | 11 passed, checking 27 packets, register interfaces and native-library architecture |
-| Reusable PYNQ skill | 4 offline tests passed across two unrelated synthetic projects, mixed-driver rejection, relocation and standalone use |
+| Reusable PYNQ skill | DMA, reference-comparison and performance workflows; nine standalone export tests passed |
 | Section RTL | 195 packets matched the fixed-point model bit for bit |
 | Integrated RTL | 19 full-resolution cases passed, including empty frames, noise, saturation and candidate overflow |
 
@@ -176,7 +173,7 @@ The seven directories follow section 3.3.5 of the competition guide. The impleme
 | [build/](../build/) | Filename restoration, full build and implementation evidence |
 | [board/](../board/readme.md) | Firmware, manifest, board evidence and boot references |
 | [data/](../data/) | Calibration, input and reference data |
-| [skill/](../skill/readme.md) | Reusable bundle and firmware/runtime checks |
+| [skill/](../skill/readme.md) | Reusable DMA, reference-comparison and performance workflows |
 | [report/](design_report.pdf) | Technical report, images, validation and AI collaboration records |
 
 [Technical report PDF](design_report.pdf) · [Editable Word report](design_report.docx) · [AI collaboration records](ai_collaboration_records.md) · [Reusable tool development](skill_development.md)

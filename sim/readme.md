@@ -27,6 +27,6 @@ python sim/run_section_rtl.py --work <new_work> --output <new_section_results> -
 
 该入口先检查原图尺寸、包数和输入/源文件身份，再运行原截面验证脚本。`--validate-inputs-only`仅检查输入；不能当作RTL通过。离线配套检查可运行`python -B sim/test_release_pairing.py`，它不访问板卡。
 路径适配只发生在恢复后的新工作目录，原验证脚本与断言保持在提交包内。
-包内历史验证输入和冻结期望来自 sim/support，source_map.json 记录原路径、SHA 与恢复位置。
+包内历史验证输入和冻结期望来自 sim/support，source_map.json 记录源文件与恢复位置。
 
 运行时279项、配套11项、截面195包与整链19例测试结果见[验证汇总](../report/release_validation.json)。

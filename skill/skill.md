@@ -1,25 +1,28 @@
 ---
-name: pynq-overlay-check
-description: Offline checks for PYNQ overlay files and their host drivers, including mixed releases, missing or changed files, unsafe manifest paths and independently reusable package checks. Use for file pairing and handoff verification; file checks do not load an overlay or validate live hardware.
+name: pynq-engineering-workflow
+description: 根据PYNQ工程的实际接口、驱动、日志与参考数据，诊断DMA和缓存生命周期、逐字段比较结果、分析性能与资源。适用于工程调试与方案评审，不自动连接或操作硬件。
 ---
 
-# PYNQ Overlay 与驱动配套检查
+# PYNQ工程诊断工作流
 
-识别用户指定的清单、主机程序目录及输出位置。先用已有文件完成检查，文件任务不要求板型、寄存器地址或在线设备；存在多个候选时按来源确认目标，不任取首个文件。
+先识别用户指定的工程、输入资料和允许动作，再按问题选取[使用说明](readme.md)中的一个流程。不要从旧工程套用板型、寄存器地址、图像尺寸、单位或误差阈值；只读取当前任务需要的资料。
 
-本目录工具只依赖Python 3.10及以上的标准库，可直接调用：
+## DMA与缓存
 
-```text
-python -B <本目录>/pynq_release_check.py --manifest <清单> --runtime-root <主机程序目录>
-python -B <本目录>/verify_bundle.py <待检查的工程根目录>
-```
+从实际HWH/BD和驱动确认simple/SG模式、MM2S/S2MM、数据宽度、长度、对齐及完成语义。将缓冲申请、CPU写入、设备访问、CPU读取、释放画成时间顺序。依据缓冲coherent属性和驱动行为判断flush/invalidate；设备或消费者仍在使用时不得复用底层内存。
 
-检查结果指出哪个文件、哪项声明不匹配；只发现摘要差异时，不推断具体硬件故障。
+先区分等待未完成、人工中止、软件超时异常和硬件错误。日志只有“等待5秒后人工停止”时，不能据此判定DMA超时或宣称硬件无错误。需要设备动作时沿用用户已有授权，缺少授权只完成资料分析，不擅自复位或重新加载。
 
-Overlay清单格式和退出码见[pynq_release_check.md](pynq_release_check.md)。需要保存检查器JSON时使用`--output <新文件>`，保留原输入及旧报告；检查失败不能通过自动重算清单摘要转成通过。
+## 黄金参考比对
 
-返回匹配结果、具体问题、实际命令和输出范围。现有脚本验证文件内容和配套声明；设备型号兼容、实际加载、接口行为及算法精度使用目标工程自己的验证。
+先确认同一输入、帧身份、字段、形状、记录数、单位、顺序和定点规则，再比较数值。仅在合同允许时按身份排序；不能放宽误差或丢弃失败点来消除差异。分别报告缺失、重复、非有限值、首个差异及最大误差。允许修复时保留失败样本，并在相同输入下重跑。
 
-用户进一步要求DMA诊断、黄金参考比对或性能分析时，按需读取[readme.md](readme.md)中对应任务模板，确认驱动与工具能力，再使用目标工程既有入口；不要把文件校验器当作通用DMA或仿真执行器。
+## 性能与资源
 
-脚本自测入口为`test_pynq_release_check.py`、`test_verify_bundle.py`和`test_portability.py`。这套技能不自动连接硬件、不写寄存器、不加载固件。
+分开统计计算、等待、传输、显示、持久化和结束阶段。并行阶段按真实时间线计算，不能直接把各阶段耗时相加；入队时间不代表持久化完成。
+
+读报告时保留器件、时钟、配置和综合/布局布线阶段。OOC资源与时序仅说明该模块；整板WNS、WHS、TNS、CDC和吞吐由整板报告及相应测试确认。缺失的值写缺少，不补成0。
+
+## 输出
+
+给出已确认事实、仍需证据的原因、具体改动或下一条可执行检查，以及验证结果。已有授权且能独立推进的工作继续完成；只有缺少必要输入或出现任务指定的停止条件才暂停对应步骤。保留原输入、错误和失败结果。
