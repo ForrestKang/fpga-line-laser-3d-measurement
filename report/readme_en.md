@@ -200,3 +200,5 @@ Retain the source commit, firmware/library identity, configuration, complete com
 ## License
 
 Original project code, tests and documentation retain the repository's [MIT license](../license.md). Vendor IP, external reference code and fonts retain their original licenses; see [third-party notices](third_party_notices.md).
+
+[Bilingual poster PPTX](images/poster.pptx)

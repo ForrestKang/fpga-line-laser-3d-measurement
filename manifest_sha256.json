@@ -528,8 +528,8 @@
     },
     {
       "path": "readme.md",
-      "size": 12689,
-      "sha256": "df4f0c5d534160adec1db3edda80ca55dee985a85bef2efadc0d8cd0b5830f9f"
+      "size": 12741,
+      "sha256": "bec3a2810f50427c84fadbc95fee2e522ab6c8a04a8ca6dfd73224e83a22c02a"
     },
     {
       "path": "report/ai_collaboration_records.md",
@@ -622,14 +622,14 @@
       "sha256": "e19a4cb31a30a5c52700d200ea8960be273f578b75239d53bfb2a0794d7ee12e"
     },
     {
-      "path": "report/images/poster_en_anonymous.pptx",
-      "size": 1420225,
-      "sha256": "67aaada0652df4862528ac259c6d36dad3e01bac76e2c56c897757de4c259d66"
+      "path": "report/images/poster.pdf",
+      "size": 620409,
+      "sha256": "66fd5db31b3f30c5a62ec301af44ea8fdac43b9786f9cd8464473c68db27696e"
     },
     {
-      "path": "report/images/poster_en_anonymous_a4.pdf",
-      "size": 390386,
-      "sha256": "020b3f37d079313dfff662d461f3f52681a5c242e579d8c2a0d1638f0cbacfa2"
+      "path": "report/images/poster.pptx",
+      "size": 1403743,
+      "sha256": "643cfe23e3ac3e1a5027b685e880b973a0b1869b33b1aeb5c52251c05f708868"
     },
     {
       "path": "report/images/readme_media_sources.json",
@@ -668,8 +668,8 @@
     },
     {
       "path": "report/readme_en.md",
-      "size": 14587,
-      "sha256": "f108b7718f106b57e858f97d7592b08cfae57cf3954c779b130f5ddd4631552e"
+      "size": 14632,
+      "sha256": "3bca1365b4f2257ec22e10d30f5aeae388285d2d88f30483ed3dcea44a7abc29"
     },
     {
       "path": "report/release_validation.json",
@@ -933,8 +933,8 @@
     },
     {
       "path": "sim/results/repository_layout.json",
-      "size": 737,
-      "sha256": "67cac2bf0b6d15888222f9e512022b339f0ff9ac6fa2d9af61b0d92bb22c1010"
+      "size": 1026,
+      "sha256": "307ff32491f358069e479b68f2b5dcda4da16bef712886a10bc7df2f6eb58a92"
     },
     {
       "path": "sim/results/repository_runtime.json",

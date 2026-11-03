@@ -191,3 +191,5 @@ BTN1、BTN2、BTN3分别直接进入实时、截面和扫描页；BTN0发出开�
 ## 许可证
 
 自有新代码、测试和文档沿用仓库[MIT许可证](license.md)。厂商IP、外部参考代码及字体保留原许可，详见[第三方说明](report/third_party_notices.md)。
+
+[中英文海报PPTX](report/images/poster.pptx)

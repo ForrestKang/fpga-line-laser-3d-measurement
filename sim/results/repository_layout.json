@@ -28,5 +28,16 @@
     "Move images under report and utility scripts under sim",
     "Remove duplicate instruction pages",
     "Clear poster author metadata"
-  ]
+  ],
+  "poster": {
+    "slides": 2,
+    "languages": [
+      "zh-CN",
+      "en"
+    ],
+    "format": "pptx",
+    "native_powerpoint_open_and_render_passed": true,
+    "architecture_diagram": "grouped SVG based on actual RTL",
+    "school_information_permitted_on_poster": true
+  }
 }
