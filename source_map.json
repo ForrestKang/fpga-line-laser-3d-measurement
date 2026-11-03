@@ -1,12 +1,5 @@
 [
   {
-    "path": "report/history/original_package_manifest.json",
-    "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\MANIFEST_SHA256.json",
-    "restore": null,
-    "size": 263650,
-    "sha256": "3eeba68858bc660becc470b6e51ea2639367dc763ba8ea8a96ffafa303b22f8c"
-  },
-  {
     "path": "board/boot_reference/boot/boot.py",
     "original": "D:\\NUECSDC-FPGA\\FINAL_BOARD_PACKAGE_20261101\\1_board_image\\boot\\boot.py",
     "restore": "boot_reference/boot/boot.py",
