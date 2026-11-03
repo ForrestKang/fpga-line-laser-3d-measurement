@@ -383,8 +383,8 @@
     },
     {
       "path": "build/readme.md",
-      "size": 511,
-      "sha256": "53e8018d172680d0b4674d7243b04bc8df5c4cab817b61c71300aab98b017e59"
+      "size": 1599,
+      "sha256": "a236bb67131cae10762830e292aa11797ee049346a7387ac3ddfff7ee8ef4642"
     },
     {
       "path": "build/reproduce.py",
@@ -528,8 +528,8 @@
     },
     {
       "path": "readme.md",
-      "size": 11953,
-      "sha256": "45f684d9351d531ae5d7f0dad562321fe20c0edafe5686a369d800e07ec31ca6"
+      "size": 14021,
+      "sha256": "6cca0c8892d23fa889b0ce07df129a9949f0d494cb3cc5e54223a069c8c2df17"
     },
     {
       "path": "report/ai_collaboration_records.md",

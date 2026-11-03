@@ -8,6 +8,21 @@
 
 [电脑测试](#先在电脑运行) · [构建与板端启动](#构建与板端启动) · [技术报告](report/design_report.pdf)
 
+## 工程包怎么使用
+
+本RAR是完整工程包，包含设计源码、仿真输入与结果、综合实现报告、板端程序与实测数据、技能包和设计报告。解压后先进入`smart_line_laser_3d_measurement/`，在能看到本说明、`src/`和`build/`的目录打开终端。使用RAR的读者不需要再下载Git仓库。
+
+| 你要做什么 | 先看哪里 |
+|---|---|
+| 了解作品原理与实测结果 | [技术报告](report/design_report.pdf) |
+| 在电脑上复现程序和验证结果 | 本页[先在电脑运行](#先在电脑运行)，依次完成环境准备、工程恢复和测试 |
+| 重新运行RTL仿真 | [仿真说明](sim/readme.md)，含空帧、完整19例及195包截面测试命令 |
+| 用Vivado重新生成固件 | [构建说明](build/readme.md) |
+| 在PYNQ上运行相机和界面 | [板端说明](board/readme.md)，使用当前装置的标定与配置 |
+| 在其他题目里复用技能 | [技能说明](skill/readme.md) |
+
+`src/`是按提交规范归类的源码。`build/restore_sources.py`会在新目录中恢复编译和测试需要的`fpga/`、`runtime/`、`firmware/`及相关数据布局；后续构建和测试使用这个恢复目录。原RAR解压目录保持不动。
+
 ![系统硬件：开发板、相机、线激光与转台](report/images/system_photo.png)
 
 ## 作品做什么
@@ -82,28 +97,57 @@
 
 ## 先在电脑运行
 
-从仓库根目录执行。Python 3.10+可完成文件检查；软件回归另需本机C编译器和`sim/requirements_pc.txt`中的NumPy、Pillow、SciPy、fonttools、OpenCV。RTL测试使用Icarus Verilog（iverilog、vvp）；完整实现需要Vivado 2025.2和XC7Z020器件支持。依赖清单不是版本锁文件，复现时保留实际版本。
+### 第一步 准备环境
+
+安装Python 3.10或以上，并确认终端能运行`python`。完整软件测试还需要可从命令行调用的gcc；RTL仿真需要Icarus Verilog的`iverilog`和`vvp`；重新生成固件需要Vivado 2025.2及XC7Z020器件支持。仅查看报告无需安装这些工具。
+
+在工程包根目录执行：
 
 ```powershell
-git clone https://github.com/ForrestKang/pynq-structured-light.git
-cd pynq-structured-light
-python -B sim/tools/check_repository.py
-python -B skill/verify_bundle.py .
-python -B skill/test_pynq_release_check.py
-python -B build/restore_sources.py --output ../scan3d_work
+python --version
+gcc --version
 python -m pip install -r sim/requirements_pc.txt
+```
+
+依赖包括NumPy、Pillow、SciPy、fonttools和OpenCV。建议在独立Python环境中安装；`sim/requirements_pc.txt`列出所需依赖，运行结果会记录实际测试环境。
+
+### 第二步 检查文件并恢复工程
+
+```powershell
+python -B skill/verify_bundle.py .
+python -B sim/tools/check_repository.py
+python -B build/restore_sources.py --output ../scan3d_work
+```
+
+前两条检查工程文件和脚本结构；第三条在上一级新建`scan3d_work/`，恢复完整工作布局。成功后应能看到`scan3d_work/fpga/`、`scan3d_work/runtime/`及`scan3d_work/firmware/`。输出目录必须原先不存在；重跑时换一个新目录名，保留上次结果。
+
+### 第三步 运行完整软件测试
+
+仍在工程包根目录执行：
+
+```powershell
 python -B sim/run_release_tests.py --work ../scan3d_work --output ../scan3d_pc_results --cc gcc
 python -B sim/test_release_pairing.py
 ```
 
-恢复器依据`source_map.json`还原原始大小写和目录，生成`fpga/`、`runtime/`、`firmware/`及测试所需相邻路径。所有工作与输出目录应为新目录。电脑构建的动态库只用于电脑测试，板端须使用对应ARM架构的库。
+第一条会先构建电脑使用的原生辅助库，再执行全部279项运行时测试；结果写入`scan3d_pc_results/result.json`，详细日志在同目录`console.log`。第二条核对软件、接口和配套固件。检查结果中的通过、失败和跳过项，不只看程序是否退出。电脑生成的动态库用于电脑测试，板端使用ARM架构的库。
+
+### 第四步 运行RTL仿真
+
+先用空帧检查仿真环境：
 
 ```powershell
 python -B sim/run_rtl_integration.py --work ../scan3d_work --output ../scan3d_rtl_results --iverilog iverilog --vvp vvp --cases empty
-python -B sim/run_section_rtl.py --work ../scan3d_work --output ../scan3d_section_results --iverilog iverilog --vvp vvp --workers 2
 ```
 
-截面测试使用182帧历史原图和13包合成输入，与定点模型逐位核对195包。整链入口默认只跑空帧，完整19例命令见[sim说明](sim/readme.md)；再次运行会派生脚本的RTL入口时使用新的恢复目录。这些命令不连接板卡。
+截面模块使用182帧历史原图和13包合成输入，逐位核对195包。为这一组测试单独恢复一个工作目录：
+
+```powershell
+python -B build/restore_sources.py --output ../scan3d_section_work
+python -B sim/run_section_rtl.py --work ../scan3d_section_work --output ../scan3d_section_results --iverilog iverilog --vvp vvp --workers 2
+```
+
+完整19例整链仿真的命令与结果位置见[仿真说明](sim/readme.md)。这些步骤均在电脑上执行，不连接板卡。
 
 ## 构建与板端启动
 

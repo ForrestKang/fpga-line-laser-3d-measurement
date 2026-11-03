@@ -1,5 +1,26 @@
-# 构建与报告
+# 用Vivado重新生成固件
 
-优先使用 reproduce.py。它先校验并恢复冻结源码，再调用 Vivado 2025.2 原始 build_final.tcl。输出目录必须不存在，防止覆盖历史构建。
-evidence/ 为已有实现报告/日志；其中 source freeze 内的绝对路径属于原构建记录，source_map.json 提供打包来源映射。
-不随包带 route.dcp、所有 IP 生成缓存和历史版本，因此原 finalize_seedretry.tcl 只能作为历史脚本审阅，不能作为本包的重建捷径。
+## 需要的环境
+
+安装Vivado 2025.2及XC7Z020器件支持，并使`vivado`可从终端调用；Python应可从同一终端运行。设计源码、约束、BD/IP重建脚本已经放在工程包中，生成缓存由本机工具创建。
+
+## 执行步骤
+
+1. 解压工程包，在含`src/`、`sim/`和`build/`的根目录打开终端。
+2. 选择两个尚不存在的目录：一个存放恢复后的源码，一个存放本次Vivado工程和构建结果。
+3. 执行：
+
+```powershell
+python -B build/reproduce.py --work ../scan3d_build_work --output ../scan3d_build_output --vivado vivado
+```
+
+`reproduce.py`先恢复源码，再调用`fpga/scripts/build_final.tcl`，依次重建工程、综合、布局布线、输出报告并检查实现门槛。默认双方向通道，不修改运行算法或提高时钟要求。
+
+## 到哪里看结果
+
+- `scan3d_build_work/`：恢复后的`fpga/`、`runtime/`、`firmware/`及验证依赖。
+- `scan3d_build_output/reports/`：本次综合资源、实现资源、setup/hold、脉宽、DRC、CDC和功耗等报告。
+- `scan3d_build_output/artifacts/final.bit`：通过实现检查后生成的bit文件；检查失败时保留错误和报告，不生成通过版本。
+- 工程包`board/firmware/`：随包提供的配套bit、HWH和manifest，可按[板端说明](../board/readme.md)核对。
+
+`build/evidence/`保留已有构建报告和前后对比数据，便于与新构建比较。完整构建使用本页的`reproduce.py`入口；它不依赖旧的route.dcp，不会给板卡加载固件。
