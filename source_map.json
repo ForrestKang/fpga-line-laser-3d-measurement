@@ -7892,25 +7892,25 @@
     "path": "report/design_report.docx",
     "original": "D:\\Workspace\\CodexWork\\scan3d_report_calibration_20261101_01\\智能线激光三维测量系统_技术文档_三样件与标定照片版.docx",
     "restore": null,
-    "size": 8991918,
-    "sha256": "6e8240f477dc908730ea2aa0ee90e564162ae5dbd90986ba6b4655ad804bd03f",
+    "size": 8991898,
+    "sha256": "09605629de4cce15896ab3e0df8284a14b37207220d7b2ab58078a76a6ab5503",
     "prior_source": {
       "size": 8034702,
       "sha256": "779e9486cc01c58181edb2bf6dfdec116b708ea7bc4ed34f24035d082f3e380e"
     },
-    "change_scope": "stabilized original diagram rendering; text, formulas and measurements unchanged"
+    "change_scope": "merged agent experience into section 4.2 to follow report template"
   },
   {
     "path": "report/design_report.pdf",
     "original": "D:\\Workspace\\CodexWork\\scan3d_report_calibration_20261101_01\\智能线激光三维测量系统_三样件与标定照片预览.pdf",
     "restore": null,
-    "size": 4506183,
-    "sha256": "2d68cd895bb26197a3e8ae23fa24ad87336e2508b32cdb36a0f3815a3812cf3f",
+    "size": 4505502,
+    "sha256": "0a8fc83e4dbf54df4d624137b1591a6100e6884979036e2c6a4f83930eb7eaff",
     "prior_source": {
       "size": 1818354,
       "sha256": "9e775356a3c1cb960bf0a5eccb7c17ee2208e31e5410ae44170153e04351c263"
     },
-    "change_scope": "stabilized original diagram rendering; text, formulas and measurements unchanged"
+    "change_scope": "merged agent experience into section 4.2 to follow report template"
   },
   {
     "path": "report/calibration_photos/checkerboard_pairs.png",
