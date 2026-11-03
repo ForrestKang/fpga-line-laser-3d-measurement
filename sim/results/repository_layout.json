@@ -1,0 +1,32 @@
+{
+  "schema": "REPOSITORY_LAYOUT_CHECK_V1",
+  "passed": true,
+  "directories": [
+    "src",
+    "sim",
+    "build",
+    "board",
+    "data",
+    "skill",
+    "report"
+  ],
+  "runtime": {
+    "tests": 279,
+    "passed": 279,
+    "failed": 0,
+    "skipped": 0
+  },
+  "release_pairing_tests": 11,
+  "utility_test_methods": 71,
+  "utility_skipped": 4,
+  "restored_sources": true,
+  "hardware_operations": 0,
+  "signed_authorization_in_repository": false,
+  "report_pages": 27,
+  "changes": [
+    "Consolidate project instructions into Chinese and English readme",
+    "Move images under report and utility scripts under sim",
+    "Remove duplicate instruction pages",
+    "Clear poster author metadata"
+  ]
+}

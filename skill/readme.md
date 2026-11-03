@@ -15,12 +15,12 @@
 
 ```powershell
 New-Item -ItemType Directory -Force D:/skill_packages | Out-Null
-python -B tools/build_skill.py --output D:/skill_packages/pynq_overlay_skill.zip
+python -B sim/tools/build_skill.py --output D:/skill_packages/pynq_overlay_skill.zip
 ```
 
 解压后，将`pynq-overlay-check`整个目录放入目标工程的`.agents/skills/`，再重新加载目标工程的技能列表。不要只复制入口文件，脚本和说明必须随目录一起保留。`validation/`是测试记录，留在安装目录外即可。
 
-仓库的`skill.md`在打包时转换为标准`SKILL.md`，保持提交源码文件名小写。导出采用固定文件清单，包含两个检查器、说明和独立自测，不带本项目固件、标定、运行数据或凭据；相同源码和Python/zlib环境重复打包，ZIP逐字节一致。导出回归在仓库根目录运行`python -B tools/test_build_skill.py`，验证包内工具脱离源码目录仍可运行。
+仓库的`skill.md`在打包时转换为标准`SKILL.md`，保持提交源码文件名小写。导出采用固定文件清单，包含两个检查器、说明和独立自测，不带本项目固件、标定、运行数据或凭据；相同源码和Python/zlib环境重复打包，ZIP逐字节一致。导出回归在仓库根目录运行`python -B sim/tools/test_build_skill.py`，验证包内工具脱离源码目录仍可运行。
 
 ## 使用方法
 

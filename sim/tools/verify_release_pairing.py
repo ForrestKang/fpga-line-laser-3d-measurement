@@ -77,7 +77,7 @@ def verify(root):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
+    ap.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[2])
     ap.add_argument('--output', type=Path)
     args = ap.parse_args()
     result = verify(args.root)

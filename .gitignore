@@ -44,3 +44,9 @@ Thumbs.db
 *.key
 id_rsa
 id_ed25519
+
+# Signed team authorization belongs only in the private submission field.
+authorization*.pdf
+commitment*.pdf
+*承诺*.pdf
+*授权书*.pdf

@@ -21,7 +21,7 @@
       "skipped": 0
     },
     {
-      "script": "tools/test_build_skill.py",
+      "script": "sim/tools/test_build_skill.py",
       "exit_code": 0,
       "test_methods": 6,
       "skipped": 0

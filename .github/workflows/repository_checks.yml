@@ -24,9 +24,9 @@ jobs:
         with:
           python-version: '3.11'
       - name: Structure, links and Python syntax
-        run: python -B tools/check_repository.py
+        run: python -B sim/tools/check_repository.py
       - name: Link checker failure tests
-        run: python -B tools/test_repository_checks.py
+        run: python -B sim/tools/test_repository_checks.py
       - name: Submission file integrity
         run: python -B skill/verify_bundle.py .
       - name: Bundle checker checkout and corruption tests
@@ -36,8 +36,8 @@ jobs:
       - name: Portable skill independent-project tests
         run: python -B skill/test_portability.py
       - name: Reproducible skill export and isolated consumer tests
-        run: python -B tools/test_build_skill.py
+        run: python -B sim/tools/test_build_skill.py
       - name: Restore exact original source layout
         run: python -B build/restore_sources.py --output "$RUNNER_TEMP/scan3d_restore"
       - name: State CI scope
-        run: echo 'Repository integrity, source restoration and utility checks completed. See docs/validation.md.'
+        run: echo 'Repository integrity, source restoration and utility checks completed. See report/release_validation.json.'

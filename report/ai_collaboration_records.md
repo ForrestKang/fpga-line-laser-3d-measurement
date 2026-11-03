@@ -16,4 +16,4 @@
 
 模型回答：“明白，你要的是之前程序直接生成的界面图，不是手机拍显示器的照片。”
 
-协作内容：按用户反馈，用页面程序生成的实时、截面、扫描三张界面图替换拍屏照片，统一中英文入口；保留原测量数值。产物为[实时页](../docs/media/live_page.png)、[截面页](../docs/media/section_page.png)、[扫描页](../docs/media/scan_page.png)，图像来源见[记录](../docs/media/readme_media_sources.json)。
+协作内容：按用户反馈，用页面程序生成的实时、截面、扫描三张界面图替换拍屏照片，统一中英文入口；保留原测量数值。产物为[实时页](images/live_page.png)、[截面页](images/section_page.png)、[扫描页](images/scan_page.png)，图像来源见[记录](images/readme_media_sources.json)。

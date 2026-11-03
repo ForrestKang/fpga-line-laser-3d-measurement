@@ -35,7 +35,7 @@ class BuildSkillTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.base = Path(self.temp.name)
         self.root = self.base / 'source'
-        source = Path(__file__).resolve().parents[1]
+        source = Path(__file__).resolve().parents[2]
         for name in SKILL_FILES:
             dest = self.root / 'skill' / name
             dest.parent.mkdir(parents=True, exist_ok=True)

@@ -9,7 +9,7 @@ import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
-sys.path[:0] = [str(ROOT / 'src/ps'), str(ROOT / 'tools')]
+sys.path[:0] = [str(ROOT / 'src/ps'), str(ROOT / 'sim/tools')]
 import numpy as np
 from verify_release_pairing import verify, native_library_check
 from r33.protocol import assemble, HEADER_FIELDS, identity, FINGERPRINT, BIN_FINGERPRINT, SEED_RETRY_FINGERPRINT

@@ -40,13 +40,14 @@ def check(root):
                 'src/ps/r33/live.py', 'board/firmware/final.bit',
                 'board/firmware/final.hwh', 'report/design_report.pdf',
                 'report/ai_collaboration_records.md',
-                'skill/pynq_release_check.py', 'docs/troubleshooting.md']
+                'skill/pynq_release_check.py', 'report/readme_en.md']
     errors = []
     for path in required:
         if not (root / path).is_file():
             errors.append({'path': path, 'error': 'required_file_missing'})
-    documents = [root / 'readme.md', root / 'contributing.md', root / 'security.md']
-    documents += sorted((root / 'docs').glob('*.md'))
+    documents = [root / 'readme.md', root / 'board/readme.md', root / 'sim/readme.md']
+    documents += sorted((root / 'report').glob('*.md'))
+    documents += sorted((root / 'skill').glob('*.md'))
     link_count = 0
     # Deliberately exclude frozen historical reports: they preserve original
     # workstation paths and are not newly authored repository navigation.
@@ -62,12 +63,12 @@ def check(root):
                 errors.append({'path': source.relative_to(root).as_posix(),
                                'target': target, 'error': error})
     py_count = 0
-    presentation_documents = [root / 'readme.md', *(root / 'docs').glob('*.md'),
+    presentation_documents = [root / 'readme.md',
                               *(root / 'report').glob('*.md'), *(root / 'skill').glob('*.md'),
                               root / 'board/readme.md', root / 'sim/readme.md']
     for source in presentation_documents:
         if source.is_file():
-            aliases = reader_aliases(source.read_text(encoding='utf-8'), source.name == 'hardware.md')
+            aliases = reader_aliases(source.read_text(encoding='utf-8'), source.name in {'hardware.md', 'readme.md', 'readme_en.md'})
             if aliases:
                 errors.append({'path': source.relative_to(root).as_posix(),
                                'error': 'internal_alias_in_reader_facing_text', 'tokens': aliases})
@@ -90,7 +91,7 @@ def check(root):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[2])
     args = parser.parse_args()
     result = check(args.root)
     print(json.dumps(result, ensure_ascii=False, indent=2))
