@@ -94,8 +94,8 @@ The resource and timing figures are recorded in the [implementation report](sour
 Run from the repository root. Python 3.10+ is sufficient for package checks. Runtime tests also need a host C compiler and NumPy, Pillow, SciPy, fonttools and OpenCV from `sim/requirements_pc.txt`. RTL tests use Icarus Verilog (`iverilog`, `vvp`). Full implementation requires Vivado 2025.2 with XC7Z020 device support. Record actual tool and package versions; the dependency list is not a lock file.
 
 ```sh
-git clone https://github.com/ForrestKang/pynq-structured-light.git
-cd pynq-structured-light
+git clone https://github.com/ForrestKang/fpga-line-laser-3d-measurement.git
+cd fpga-line-laser-3d-measurement
 python -B sim/tools/check_repository.py
 python -B build/restore_sources.py --output ../scan3d_work
 python -m pip install -r sim/requirements_pc.txt

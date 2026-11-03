@@ -9,6 +9,6 @@
 | DejaVu 字体子集 | src/ps/assets/fonts/license_dejavu.txt |
 | AMD Vivado/XPM/PS7 等工具提供内容 | 使用安装的 Vivado 2025.2 生成/解析，按 AMD 对应许可使用；本包没有携带工具安装包或许可证密钥 |
 
-已定位此前上传的仓库 `ForrestKang/pynq-structured-light`，其 `license.md` 为MIT许可，明确适用于新编写的自有代码、测试和文档。本工程继承该既有文本，未另行选择许可证。
+本仓库 `ForrestKang/fpga-line-laser-3d-measurement` 的 `license.md` 为MIT许可，明确适用于新编写的自有代码、测试和文档。本工程继承该既有文本，未另行选择许可证。
 外部参考文件、厂商IP、BSD或OFL组件仍按原许可分发，不被上述MIT文本重新授权。
 原系统依赖（PYNQ、NumPy、Pillow 等）不打包虚拟环境，按各自来源安装。
